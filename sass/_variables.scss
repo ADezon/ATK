@@ -1,0 +1,49 @@
+@import "susy";
+@import "breakpoint";
+
+$susy: (
+        columns: 12,
+        gutters: 1/4,
+);
+@include global-box-sizing(border-box);
+
+/* All variables here */
+$full-large: max-width 1550px;
+$x-large: max-width 1400px;
+$large: max-width 1280px;
+$intermedio: max-width 1024px;
+$medium: max-width 980px;
+$tablet: max-width 720px;
+$mobile: max-width 480px;
+
+/**
+ FONTS
+**/
+
+/* <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet"> */
+$webfont: 'Titillium Web', sans-serif;
+
+/**
+ FONT SIZE
+**/
+
+/**
+ COLORS
+**/
+$black: #000000;
+$greydark: #333;
+$greymedium: #58585A;
+$grey: #E4E4E4;
+$gris2:  #979797;
+$gris3:  #9C9E9F;
+$white: #FFFFFF;
+$whitealt:  #DDDDDD;
+$pink: #D30572;
+$rosa2: #D40072;
+$rosa3: #E7007A;
+$pinkdark: #8D0E57;
+$fadepinkleft: #E7007A;
+$fadepinkright: #F26DB3;
+
+
+

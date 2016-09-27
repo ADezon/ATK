@@ -1,0 +1,251 @@
+#header{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  #topbar{
+    background-color: $grey;
+    padding: 9px 0;
+    @include breakpoint($tablet) {
+      display: none;
+    }
+      .links-topbar{
+        li{
+          position: relative;
+          display: block;
+          float: left;
+          padding-right: 32px;
+          span{
+            position: relative;
+            display: block;
+            text-align: left;
+            float: left;
+            color:$greymedium;
+            padding-right: 5px;
+            font-size: 18px;
+          }
+          a{
+            position: relative;
+            display: block;
+            text-align: left;
+            float: left;
+            font-size: 13px;
+            color: $greymedium;
+            padding-top:5px;
+            &:hover{
+              text-decoration: underline;
+              text-decoration-color: $greymedium;
+            }
+          }
+        }
+      }
+      .search{
+        position: relative;
+        display: block;
+        float: left;
+        margin-right: 10px;
+        cursor: pointer;
+        .icon-search{
+          font-size: 14px;
+          line-height: 20px;
+          color: $greymedium;
+        }
+      }
+      .language-selector{
+        position: relative;
+        display: block;
+        float: left;
+        li{
+          position: relative;
+          display: block;
+          float: left;
+          a{
+            position: relative;
+            display: block;
+            text-align: left;
+            font-size: 13px;
+            line-height: 20px;
+            color: $greydark;
+            text-transform: uppercase;
+          }
+        }
+      }
+  }
+  #head{
+    background: $fadepinkleft; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, $fadepinkleft , $fadepinkright); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, $fadepinkleft, $fadepinkright); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, $fadepinkleft, $fadepinkright); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, $fadepinkleft , $fadepinkright); /* Standard syntax */
+    padding: 0;
+    height: 72px;
+    .logo{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      float: left;
+      img{
+        position: relative;
+        display: block;
+      }
+    }
+    #nav-main{
+      position: relative;
+      display: block;
+      float: left;
+      @include breakpoint($tablet) {
+        display: none;
+      }
+      li{
+        position: relative;
+        display: block;
+        float: left;
+        padding: 20px 15px;
+        &:hover{
+          font-weight: bold;
+          border-bottom: 8px solid $greydark;
+        }
+        &:first-child{
+          a{
+            border-left:0;
+          }
+        }
+        a{
+          position: relative;
+          display: block;
+          text-align: left;
+          font-size: 18px;
+          line-height: 27px;
+          color: $white;
+          padding: 0;
+          /*FALTA EL BORDE SEPARADOR*/
+          &.current{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .button-login-client{
+      position: relative;
+      display: block;
+      float: left;
+      border-radius: 3px;
+      background-color: $greydark;
+      color: $white;
+      height: 36px;
+      padding: 8px 11px;
+      margin:18px 0;
+      text-align: left;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      @include breakpoint($tablet) {
+        padding: 8px 5px;
+        font-size: 12px;
+      }
+      .icons{
+        position: relative;
+        display: block;
+        text-align: left;
+        float: left;
+        font-size: 20px;
+        line-height: 22px;
+        color: $white;
+        padding-right: 5px;
+      }
+    }
+    .menu-mobile{
+      float: left;
+      margin: 23px 10px;
+      position: relative;
+      display: none;
+      color: $white;
+      @include breakpoint($tablet) {
+        display: block;
+      }
+      .icon-menu{
+        display: block;
+        font-size: 20px;
+        height: 26px;
+        line-height: 25px;
+        position: relative;
+      }
+    }
+  }
+  #nav-main-mobile{
+    background-color: $grey;
+    display: none;
+    @include breakpoint($tablet) {
+      display: block;
+    }
+    ul{
+      li{
+        @include span(6 of 12 last);
+        float:left;
+        &:hover{
+          font-weight: bold;
+          color: $greydark;
+
+        }
+        &:first-child{
+          a{
+            border-left:0;
+          }
+        }
+        a{
+          color: $greymedium;
+          display: block;
+          font-size: 18px;
+          height: 50px;
+          line-height: 27px;
+          margin: 0 auto;
+          padding: 8px 0;
+          position: relative;
+          text-align: center;
+          width: 50%;
+          &.current{
+            font-weight: bold;
+          }
+          &:hover{
+            border-bottom: 8px solid $greydark;
+          }
+        }
+      }
+    }
+  }
+  #nav-private, #nav-business{
+    background-color: $greydark;
+    padding: 0;
+    @include breakpoint($tablet) {
+      display: none;
+    }
+    li{
+      @include span(3 of 12);
+      &.last{
+        @include last;
+      }
+      &:hover{
+        background-color: $grey;
+      }
+      a{
+        position: relative;
+        display: block;
+        text-align: center;
+        padding: 14px 0;
+        font-size: 14px;
+        line-height: 16px;
+        color: $white;
+        font-weight: bold;
+        &:hover{
+          color: $greydark;
+        }
+        .icons{
+          font-size: 20px;
+          color: $pink;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
