@@ -1,20 +1,25 @@
 #header{
   position: relative;
   display: block;
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
   #topbar{
     background-color: $grey;
     padding: 9px 0;
+    overflow: visible;
+    height: 39px;
     @include breakpoint($tablet) {
       display: none;
+    }
+    .content{
+      overflow: visible;
     }
       .links-topbar{
         li{
           position: relative;
           display: block;
           float: left;
-          padding-right: 32px;
+          padding-right: 22px;
           span{
             position: relative;
             display: block;
@@ -51,22 +56,77 @@
           color: $greymedium;
         }
       }
-      .language-selector{
+      .languages{
         position: relative;
         display: block;
         float: left;
-        li{
+        ul{
           position: relative;
           display: block;
-          float: left;
-          a{
-            position: relative;
+          li{
             display: block;
-            text-align: left;
-            font-size: 13px;
-            line-height: 20px;
-            color: $greydark;
-            text-transform: uppercase;
+            position: relative;
+            .portlet-language{
+              display: block;
+              position: relative;
+              .portlet-body{
+                display: block;
+                position: relative;
+                &:hover{
+                  span{
+                    &:after{
+                      content: "\e913";
+                    }
+                  }
+                  a{
+                    display: block;
+                  }
+                }
+                span{
+                  color: $greydark;
+                  cursor: pointer;
+                  display: block;
+                  font-size: 13px;
+                  line-height: 20px;
+                  padding: 0 10px 10px 10px;
+                  position: relative;
+                  text-align: left;
+                  text-transform: uppercase;
+                  &:after{
+                    /* use !important to prevent issues with browser extensions that change fonts */
+                    font-family: 'atelecom-icons' !important;
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    /* Better Font Rendering =========== */
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    content: "\e914";
+                  }
+                }
+                a{
+                  background-color: $grey;
+                  color: $greymedium;
+                  cursor: pointer;
+                  display: none;
+                  font-size: 13px;
+                  line-height: 20px;
+                  padding: 10px;
+                  position: absolute;
+                  top: 30px;
+                  right:0;
+                  text-align: center;
+                  text-transform: uppercase;
+                  z-index: 9999;
+                  &:hover{
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -105,6 +165,12 @@
           font-weight: bold;
           border-bottom: 8px solid $greydark;
         }
+        &.current{
+          border-bottom: 8px solid $greydark;
+          a{
+            font-weight: bold;
+          }
+        }
         &:first-child{
           a{
             border-left:0;
@@ -119,10 +185,35 @@
           color: $white;
           padding: 0;
           /*FALTA EL BORDE SEPARADOR*/
-          &.current{
-            font-weight: bold;
-          }
         }
+      }
+    }
+    .button-alerts{
+      position: relative;
+      display: block;
+      float: left;
+      border-radius: 3px;
+      background-color: $yellow;
+      color: $pink;
+      height: 36px;
+      padding: 8px;
+      margin:18px 5px;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: bold;
+      @include breakpoint($tablet) {
+        padding: 8px 5px;
+        font-size: 12px;
+      }
+      .icons{
+        position: relative;
+        display: block;
+        text-align: center;
+        float: left;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 22px;
+        color: $pink;
       }
     }
     .button-login-client{
@@ -134,7 +225,7 @@
       color: $white;
       height: 36px;
       padding: 8px 11px;
-      margin:18px 0;
+      margin:18px 5px;
       text-align: left;
       font-size: 14px;
       line-height: 20px;
@@ -183,10 +274,15 @@
       li{
         @include span(6 of 12 last);
         float:left;
+        &.current{
+          a{
+            font-weight: bold;
+            border-bottom: 8px solid $greydark;
+          }
+        }
         &:hover{
           font-weight: bold;
           color: $greydark;
-
         }
         &:first-child{
           a{
@@ -204,9 +300,6 @@
           position: relative;
           text-align: center;
           width: 50%;
-          &.current{
-            font-weight: bold;
-          }
           &:hover{
             border-bottom: 8px solid $greydark;
           }
@@ -217,33 +310,114 @@
   #nav-private, #nav-business{
     background-color: $greydark;
     padding: 0;
+    overflow: visible;
+    .content{
+      overflow: visible;
+      height: 50px;
+    }
     @include breakpoint($tablet) {
       display: none;
     }
-    li{
-      @include span(3 of 12);
-      &.last{
-        @include last;
-      }
-      &:hover{
-        background-color: $grey;
-      }
-      a{
-        position: relative;
-        display: block;
-        text-align: center;
-        padding: 14px 0;
-        font-size: 14px;
-        line-height: 16px;
-        color: $white;
-        font-weight: bold;
-        &:hover{
-          color: $greydark;
+    .level-0{
+      li{
+        @include span(3 of 12);
+        &.last{
+          @include last;
         }
-        .icons{
-          font-size: 20px;
-          color: $pink;
-          padding-right: 5px;
+        &:hover{
+          background-color: $grey;
+        }
+        & > a{
+          position: relative;
+          display: block;
+          text-align: center;
+          padding: 14px 0;
+          font-size: 14px;
+          line-height: 16px;
+          color: $white;
+          font-weight: bold;
+          &:hover{
+            color: $greydark;
+          }
+          .icons{
+            font-size: 20px;
+            color: $pink;
+            padding-right: 5px;
+          }
+        }
+        .sub-menu-container{
+          background-color: $grey;
+          left: 0;
+          position: absolute;
+          top: 50px;
+          width: 100%;
+          display: block;
+          z-index: 9999;
+          .links-container{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 40px 0;
+            @include span(12 of 12 last);
+            @include break;
+            .level-1{
+              @include span(3 of 12 last);
+              float: left;
+              padding: 0 5%;
+              .menu-title{
+                position: relative;
+                display: block;
+                width:100%;
+                color:$greydark;
+                text-align: left;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: bold;
+                padding: 0 0 18px 0;
+                &:hover{
+                  text-decoration: underline;
+                }
+              }
+              li{
+                position: relative;
+                display: block;
+                width:100%;
+                clear: both;
+                a{
+                  position: relative;
+                  display: block;
+                  width:100%;
+                  color: $greydark;
+                  text-align: left;
+                  font-size: 14px;
+                  padding: 5px 0;
+                  line-height: 18px;
+                  font-weight: normal;
+                  &:hover{
+                    text-decoration:underline;
+                  }
+                }
+              }
+            }
+          }
+          .menu-banner-container{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 40px 0;
+            @include span(12 of 12 last);
+            @include break;
+            .banner-item{
+              @include span(3 of 12 last);
+              float: left;
+              img{
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                width: 220px;
+              }
+            }
+          }
         }
       }
     }

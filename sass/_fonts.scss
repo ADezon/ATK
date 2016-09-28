@@ -25,6 +25,12 @@
 }
 
 
+.icon-select_up:before {
+  content: "\e913";
+}
+.icon-select_down:before {
+  content: "\e914";
+}
 .icon-menu:before {
   content: "\e912";
 }
@@ -82,3 +88,4 @@
 .icon-tv:before {
   content: "\e90d";
 }
+
