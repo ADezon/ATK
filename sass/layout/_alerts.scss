@@ -176,11 +176,18 @@
   }
 }
 
+// Alerta de Cookies
 .cc-window {
   opacity: 1;
-  transition: opacity 1s ease
+  background-color: rgba(51,51,51,0.9);
+  transition: opacity 1s ease;
+  max-width: 1280px;
+  margin: 0 auto;
 }
-
+.cc-btn {
+  background-color: white;
+  border-radius: 3px;
+}
 .cc-window.cc-invisible {
   opacity: 0
 }
@@ -257,9 +264,16 @@
 }
 
 .cc-link {
-  opacity: .8;
+  font-family: "Titillium Web", Verdana;
+  float: right;
+  margin-right: 30px;
   display: inline-block;
-  padding: .2em
+  padding: .2em;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
 }
 
 .cc-link:hover {
@@ -271,14 +285,15 @@
 }
 
 .cc-btn {
+  color: $pink;
   display: block;
   padding: .4em .8em;
   font-size: .9em;
   font-weight: 700;
-  border-width: 2px;
-  border-style: solid;
+  border: medium none;
   text-align: center;
-  white-space: nowrap
+  white-space: nowrap;
+  text-transform: uppercase;
 }
 
 .cc-banner .cc-btn:last-child {
@@ -383,7 +398,12 @@
 
 .cc-banner .cc-message {
   -ms-flex: 1;
-  flex: 1
+  flex: 1;
+  color: white;
+  font-family: "Titillium Web";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .cc-compliance {
