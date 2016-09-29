@@ -8,8 +8,11 @@
     <link rel="stylesheet" type="text/css" href="css/at-styles.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
+
+
     <script src="js/main.js"></script>
-    <script src="/js/at.js"></script>
+    <script src="/js/alerts.js"></script>
 
 
 
@@ -83,12 +86,29 @@
                 </ul>
             </div>
             <div class="right">
-                <a class="button-alerts" href="#" title=""><span class="icons icon-alerts"></span></a>
+                <a class="button-alerts" href="#" title="">
+                    <span class="icons icon-alerts"></span>
+                    <!--IN THE FUTURE, IF THERE IS MORE THAN ONE ALERT THIS HAS TO BE FILLED UP WITH THE NUMBER OF TOTAL ALERTS-->
+                    <span class="counter-alerts">99</span>
+                </a>
                 <a class="button-login-client" href="#" title=""><span class="icons icon-client"></span><span>ACCÉS CLIENT</span></a>
             </div>
         </div>
     </div>
     <!-- END REGION HEAD -->
+
+    <!-- BEGIN REGION BUTTON ALERTS MOBILE -->
+    <div id="button-alerts-mobile" class="container">
+        <div class="content">
+            <a class="button-alerts" href="#" title="">
+                <span class="icons icon-alerts"></span>
+                <span class="counter-alerts">99</span>
+            </a>
+            <div class="text-alerts-mobile">Hi ha noves alertes</div>
+            <span class="icons icon-close"></span>
+        </div>
+    </div>
+    <!-- END REGION BUTTON ALERTS MOBILE -->
 
     <!-- BEGIN REGION NAV MAIN MOBILE -->
     <div id="nav-main-mobile" class="container">
@@ -731,15 +751,15 @@
 <!-- END FOOTER -->
 
 <!-- BEGIN ALERTS CONTENT -->
-<!--PLEASE LOAD  src="/js/at.js" SCRIPT IN HEAD-->
+<!--PLEASE LOAD  src="/js/alerts.js" SCRIPT IN HEAD-->
 <div class="alert-wrapper">
     <div class="container">
         <div class="alert-close">
-            <!--<span class="icons icon-close"></span>-->
+            <span class="icons icon-close"></span>
         </div>
         <div class="alert-title">
             <span class="icons icon-alerts"></span>
-            Este es el TITULo de una ALERTA
+            Avís de interrupció del servei (Este es el TITULO de una ALERTA)
         </div>
 
             <div class="alert-body">
@@ -748,5 +768,32 @@
     </div>
 </div>
 <!--END ALERTS CONTENT-->
+
+<!-- BEGIN COOKIES-->
+<!--You have to INJECT the content (per language) into JS Variables-->
+<!--policyUrl = INNEr Site URL for politica cookies-->
+customMessage = 'Este sitio usa cookies. Si continuas navengando aceptas su uso.',
+linkTitle = "Mas información",
+dimissTitle = "Entendido";
+
+<script>
+    var
+    policyUrl = "http://www.google.com",
+    customMessage = 'Este sitio usa cookies. Si continuas navengando aceptas su uso.',
+    linkTitle = "Mas información",
+    dimissTitle = "Entendido";
+
+
+    window.cookieconsent.initialise({
+    "palette":{"popup":{"background":"#000"},"button":{"background":"#f1d600"}},
+    "content":{
+        "message":customMessage,
+        "dismiss":dimissTitle,
+        "link":linkTitle,
+        "href":policyUrl
+    }
+});</script>
+<!-- END COOKIES-->
+
 </body>
 </html>

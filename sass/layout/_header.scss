@@ -189,31 +189,8 @@
       }
     }
     .button-alerts{
-      position: relative;
-      display: block;
-      float: left;
-      border-radius: 3px;
-      background-color: $yellow;
-      color: $pink;
-      height: 36px;
-      padding: 8px;
-      margin:18px 5px;
-      text-align: left;
-      text-transform: uppercase;
-      font-weight: bold;
       @include breakpoint($tablet) {
-        padding: 8px 5px;
-        font-size: 12px;
-      }
-      .icons{
-        position: relative;
-        display: block;
-        text-align: center;
-        float: left;
-        font-size: 25px;
-        font-weight: bold;
-        line-height: 22px;
-        color: $pink;
+        display: none;
       }
     }
     .button-login-client{
