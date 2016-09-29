@@ -274,7 +274,11 @@
   font-weight: 700;
   line-height: 20px;
   text-decoration: none;
-}
+  @include breakpoint($intermedio) {
+    float: none;
+  }
+
+  }
 
 .cc-link:hover {
   opacity: 1
