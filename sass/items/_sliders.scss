@@ -1,0 +1,55 @@
+.slides {
+  li {
+    max-height: 488px;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .block-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      .inner-container {
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+        background: white;
+        position: relative;
+
+        .custom-htmlfree {
+          float: left;
+          width: 100%;
+
+          .position-left,
+          .position-right {
+            width: 250px;
+            background-color: white;
+            margin-top: 6%;
+            padding: 20px;
+          }
+          .position-left { float: left; }
+          .position-right { float: right; }
+
+          .field-title {
+            color: $pink;
+            font-weight: 600;
+            font-size: 21px;
+            margin-bottom:16px;
+          }
+          .field-body {
+            font-size: 18px;
+            color: $greymedium;
+
+          }
+
+        }
+      }
+    }
+  }
+
+  .flex-direction-nav a {
+    opacity: 1;
+  }
+}

@@ -25,6 +25,12 @@
 }
 
 
+.icon-left:before {
+  content: "\e916";
+}
+.icon-right:before {
+  content: "\e917";
+}
 .icon-close:before {
   content: "\e915";
 }
@@ -91,5 +97,6 @@
 .icon-tv:before {
   content: "\e90d";
 }
+
 
 

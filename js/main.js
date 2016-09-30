@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     $(".menu > ul > li").hover(function(e) {
         if ($(window).width() > 720) {
-            $(this).children("ul").stop(true, false).fadeToggle(150);
+            $(this).children(".container-submenu").stop(true, false).fadeToggle(250);
             e.preventDefault();
         }
     });
@@ -26,15 +26,55 @@ $(document).ready(function() {
 
     $(".menu > ul > li").click(function() {
         if ($(window).width() <= 720) {
-            $(this).children("ul").fadeToggle(150);
+            $(this).children(".container-submenu").fadeToggle(250);
         }
     });
     //If width is less or equal to 943px dropdowns are displayed on click (thanks Aman Jain from stackoverflow)
 
     $(".menu-mobile").click(function(e) {
         $(".menu > ul").toggleClass('show-on-mobile');
+        $("#topbar").toggleClass('show-on-mobile');
         e.preventDefault();
     });
     //when clicked on mobile-menu, normal menu is shown as a list, classic rwd menu story (thanks mwl from stackoverflow)
 
+
+
+    // ENQUIRE SCRIPTS
+    enquire.register("screen and (max-width:720px)", {
+
+        // OPTIONAL
+        // If supplied, triggered when a media query matches.
+        match : function() {
+            $("#topbar").appendTo("#header");
+        },
+
+        // OPTIONAL
+        // If supplied, triggered when the media query transitions
+        // *from a matched state to an unmatched state*.
+        unmatch : function() {
+            $(".menu > ul").removeClass('show-on-mobile');
+            $("#topbar").removeClass('show-on-mobile');
+            $("#topbar").insertBefore("#head");
+        },
+
+        // OPTIONAL
+        // If supplied, triggered once, when the handler is registered.
+        setup : function() {
+
+        },
+
+        // OPTIONAL, defaults to false
+        // If set to true, defers execution of the setup function
+        // until the first time the media query is matched
+        deferSetup : true,
+
+        // OPTIONAL
+        // If supplied, triggered when handler is unregistered.
+        // Place cleanup code here
+        destroy : function() {
+
+        }
+
+    });
 });
