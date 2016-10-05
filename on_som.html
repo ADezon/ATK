@@ -17,11 +17,12 @@
     <!--END STYLES-->
 
 
-    <!--BEGIN SCRIPTS -->
+    <!--BEGIN SCRIPTS-->
     <!--************************************-->
     <!--BEGIN GLOBAL-->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
     <script src="/js/enquire.min.js"></script>
     <script src="js/main.js"></script>
@@ -29,12 +30,21 @@
 
     <!--BEGIN INYECTED AS REQUIRED-->
     <script src="/js/flexslider/jquery.flexslider-min.js"></script>
-    <script src="/js/init-slider.js"></script>
     <script src="/js/alerts.js"></script>
     <!--END INYECTED AS REQUIRED-->
 
     <!--END SCRIPTS -->
 
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 400px;
+        }
+    </style>
 
     <title>Title (VAR TITLE from plattform)</title>
 </head>
@@ -441,226 +451,204 @@
     </div>
     <!--END REGION NAV PRIVATE-->
 
+</div>
+<!-- END HEADER-->
 
-
-    <!--BEGIN GLOBAL AND GENERAL TEMPLATE FOR CONTENT-->
-    <!--This will contain the main BODY for common pages.-->
-    <!--IT HAS two SIDEBARS-->
-    <div id="main-content" class="container">
-        <div class="content">
-            <div class="breadcrumb">
-                Inici / <a href="#">Abuelo</a> / <a href="#">Padre</a> / Hijo (current page)
-            </div>
-
-            <h1 class="main-title">Avís legal</h1>
+<!--BEGIN SPECIFIC PAGE ON SOM-->
+<div class="basic-page container">
+    <div class="content">
+        <div class="breadcrumb">
+            Inici / <a href="#">Abuelo</a> / <a href="#">Padre</a> / Hijo (current page)
         </div>
-        <div class="content">
-            <dl class="numbered-lists">
-                <div class="half-page">
-                    <dt>
-                        <p>El domini d'Internet <a href="www.andorratelecom.ad" title="">www.andorratelecom.ad</a> així com tots els drets de propietat intel·lectual o industrial del lloc web, el seu disseny, logotips, signes distintius i continguts són propietat d'Andorra Telecom, entitat dedicada a la prestació en exclusiva del servei públic universal de telecomunicacions d'Andorra i altres activitats associades a les comunicacions electròniques, amb NRT A-710646-J i domicili social al c. Mn. Lluís Pujol, 8-14, Santa Coloma, AD500 Andorra la Vella, Principat d'Andorra.</p>
-                    </dt>
-                    <dt>
-                        <p>La visita a aquest lloc web atribueix la condició d'usuari al visitant, amb independència de la condició de client que aquest usuari pugui tenir amb Andorra Telecom.</p>
-                    </dt>
-                    <dt>
-                        <p>L'usuari, mitjançant l'accés a tots els continguts que formen part del lloc web, pot visitar, obtenir informació de productes i serveis, adreçar sol·licituds i/o comunicacions, així com gestionar els seus propis serveis en qualitat de client. Aquest accés implica l'acceptació plena i sense reserves de totes les disposicions i els termes d'ús que conté aquest avís legal. L'objectiu d'aquest lloc web és oferir als clients i/o usuaris informació relativa a productes i serveis d'Andorra Telecom així com facilitar la gestió comercial, tècnica i administrativa en línia dels serveis contractats pel client.</p>
-                    </dt>
-                    <dt>
-                    <p>Andorra Telecom es reserva la facultat d'efectuar, en qualsevol moment i sense necessitat d'avís previ, modificacions i actualitzacions de la informació que conté el lloc web o de la configuració i/o presentació d'aquest.</p>
-                    </dt>
-                    <dt>
-                    <p>Tant l'accés al lloc web d'Andorra Telecom com l'ús que es pugui fer de la informació que conté són responsabilitat exclusiva de l'usuari.</p>
-                    <p>L'usuari és responsable de totes les accions que efectuï amb el seu identificador d'usuari. En concret, és responsable de triar, com a clau i com a recordatori d'aquesta, mots clau complexos i difícils d'esbrinar, emprant signes de puntuació, caràcters especials i lletres majúscules/minúscules.</p>
-                    <p>En concret, l'usuari ha d'evitar triar paraules que estiguin relacionades amb ell mateix, o fàcils d'esbrinar. Andorra Telecom no respon de cap conseqüència, dany o perjudici que es pugui derivar del dit accés a la informació.</p>
-                    </dt>
-                </div>
-                <div class="half-page">
-                    <dt>
-                    <p>Andorra Telecom declina qualsevol responsabilitat sobre la disponibilitat tècnica, dels continguts de les pàgines web a les quals l'usuari pugui accedir mitjançant un enllaç inclòs en el portal web, així com els danys causats als equips de l'usuari.</p>
 
-                    <p>Andorra Telecom tampoc no respon del funcionament inadequat del seu portal web per causes imputables a tasques de manteniment, incidències que afectin operadors internacionals, una configuració defectuosa dels equipaments de l'usuari o la incapacitat per admetre els sistemes informàtics indispensables per poder fer ús del servei.</p>
-                    </dt>
-                    <dt>
-                        <p>De conformitat amb la Llei 15/2003, del 18 de desembre, qualificada de protecció de dades personals, Andorra Telecom garanteix que totes les dades que puguin ser facilitades pels usuaris es tractaran amb absoluta confidencialitat.</p>
+        <h1 class="main-title">On som</h1>
 
-                        <p>El client/usuari queda informat i presta el seu consentiment per a la incorporació de les seves dades als fitxers automatitzats d'Andorra Telecom inscrits en l'Agència Andorrana de Protecció de Dades i per al tractament automatitzat d'aquestes, incloent-hi les dades a què l'empresa tingui accés com a conseqüència de la seva navegació per aquest lloc web, per a les finalitats d'enviament de comunicacions comercials, de comercialització de productes i serveis, de manteniment de la seva relació contractual i de gestió amb Andorra Telecom, per tal d'adequar les nostres ofertes comercials a les seves característiques particulars.</p>
-
-                        <h3 class="pink"><strong>Finalitats addicionals:</strong></h3>
-                        <p>El client atorga el seu consentiment perquè les dades que faciliti a Andorra Telecom mitjançant qualsevol dels formularis de registre siguin utilitzades per a les finalitats següents:</p>
-
-                        <p>Enviament per part d'Andorra Telecom de comunicacions comercials de productes i/o serveis, tant propis com de tercers amb qui Andorra Telecom pugui haver arribat a un acord, ja sigui per correu postal, correu electrònic, SMS, MMS o qualsevol altre mètode de comunicació, electrònic o no. Aquest tractament pot incloure la realització de trucades comercials per part d'Andorra Telecom o per tercers en nom seu.</p>
-                        <p>Andorra Telecom garanteix, en tot cas, l'exercici dels drets d'accés, rectificació, cancel·lació i oposició, en els termes que estableix la legislació, dirigint una comunicació a l'adreça electrònica <a href="mailto:protecciodades@andorratelecom.ad">protecciodades@andorratelecom.ad</a>, o bé al seu domicili social, al c. Mn. Lluís Pujol, 8-14, Santa Coloma, AD500 Andorra la Vella, Principat d'Andorra.</p>
-                    </dt>
-                    <dt>
-                        <p>Aquest lloc web s'opera des del Principat d'Andorra, i els seus termes d'ús es regeixen per les lleis del Principat d'Andorra. Les parts se sotmeten a la jurisdicció exclusiva dels tribunals andorrans, que han de resoldre d'acord amb el dret vigent al Principat d'Andorra.</p>
-                    </dt>
-                </div>
-            </dl>
+        <div class="field-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in odio sagittis, laoreet ex ac, sollicitudin augue.</p>
         </div>
     </div>
-    <!--BEGIN GLOBAL AND GENERAL TEMPLATE FOR CONTENT-->
+    <div class="map-container">
+        <div class="legend">
+            <ul>
+                <li class="social">Seu Social</li>
+                <li class="comercial">Agència Comercial</li>
+                <li class="client">Punts d'atenció al client</li>
+                <li class="spaces">Espais Connectem</li>
+            </ul>
+        </div>
+
+        <!--THIS IS A PRIVATE-PERSONAL API KEY. YOU MUST PROVIDE THE CORRECT ONE-->
+        <!--AIzaSyCYW42M0aJDKz-ayDZywdTDJAmd3Kfvq90-->
 
 
+        <div id="map"><img src="images/i-region-map-temp.png" alt="Mapa temporal" /></div>
+        <script type="text/javascript">
 
-    <!-- BEGIN FOOTER -->
-    <div id="footer">
-        <!-- BEGIN FOOTER LINKS -->
-        <div id="footer-links" class="container">
-            <div class="content">
-                <div class="column-footer">
-                    <h3>Coneix-nos</h3>
-                    <ul>
-                        <li>
-                            <a href="#" title="">La corporació</a>
-                        </li>
-                        <li>
-                            <a href="#" title="">Sala de premsa</a>
-                        </li>
-                        <li>
-                            <a href="#" title="">Memòries</a>
-                        </li>
-                        <li>
-                            <a href="#" title="">Portal Proveïdors</a>
-                        </li>
-                        <li>
-                            <a href="#" title="">Contractacions Proveïdors/Tercers</a>
-                        </li>
-                        <li>
-                            <a href="#" title="">Configurador de Tarifes</a>
-                        </li>
-                    </ul>
+            var map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: -34.397, lng: 150.644},
+                    zoom: 8
+                });
+            }
+
+        </script>
+    </div>
+    <div class="content">
+        <h2 class="global-subtitle">Telèfons de contacte</h2>
+        <div class="contact_phone">
+            <div class="half-page">
+                <div class="contact_phone_element">
+                    <div class="phone_number">115</div>
+                    <div class="phone_name">Servei d’atenció al client</div>
+                    <div class="phone_info"><p>De 8h a 24h (dilluns a divendres) i de 9h a 23h (dissabtes i diumenges).</p><p>Per pèrdua o robatori d'un terminal mòbil, l'horari és de 24hrs tots els dies de la setmana.</p></div>
                 </div>
-                <div class="column-footer">
-                    <h3>Contacte</h3>
-                    <ul>
-                        <li>
-                            <a href="#" title="">Localitzador de punts d’atenció</a>
-                        </li>
-                        <li>
-                            <a href="#" title="">Telèfons d’atenció al client</a>
-                        </li>
-                        <li>
-                            <a href="#" title="">Formulari de contacte</a>
-                        </li>
-                        <li>
-                            <a href="#" title="">Formulari de reclamació</a>
-                        </li>
-                    </ul>
+                <div class="contact_phone_element">
+                    <div class="phone_number">111</div>
+                    <div class="phone_name">Informació telefònica nacional i internacional</div>
+                    <div class="phone_info"><p>Horari: de 7h a 24h. 365 dies a l'any.</p></div>
                 </div>
-                <div class="column-footer">
-                    <h3>Informació</h3>
-                    <ul>
-                        <li>
-                            <a href="#" title="">FAQ’S</a>
-                        </li>
-                        <li>
-                            <a href="#" title="">Política de Privacitat</a>
-                        </li>
-                        <li>
-                            <a href="#" title="">Política de cookies</a>
-                        </li>
-                        <li>
-                            <a href="#" title="">Avís legal</a>
-                        </li>
-                        <li>
-                            <a href="#" title="">Mapa web</a>
-                        </li>
-                    </ul>
+            </div>
+            <div class="half-page">
+                <div class="contact_phone_element">
+                    <div class="phone_number">00376 301115</div>
+                    <div class="phone_name">Servei d'atenció al client, des de l'estranger</div>
+                    <div class="phone_info"><p>De 8h a 24h (dilluns a divendres) i de 9h a 23h (dissabtes i diumenges).</p><p>Per pèrdua o robatori d'un terminal mòbil, l'horari és de 24hrs tots els dies de la setmana.</p></div>
                 </div>
-                <div class="column-footer last">
-                    <a class="button-action" href="#" title=""><span
-                            class="icons icon-email"></span><span>CORREU.ANDORRA.AD</span></a>
-                    <a class="button-action" href="#" title="">TREBALLA AMB NOSALTRES</a>
-                    <h3>Subscriu-te a la nostra newsletter!</h3>
-                    <!-- FORM INPUT -->
-                    <!-- FORM SUBMIT -->
-                    <h3>Segueix-nos a les nostres xarxes</h3>
-                    <ul class="social-links">
-                        <li>
-                            <a href="#" title=""><span class="icons icon-facebook"></span></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><span class="icons icon-twitter"></span></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><span class="icons icon-googleplus"></span></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><span class="icons icon-instagram"></span></a>
-                        </li>
-                    </ul>
-                    <h3>Servei d'atenció al client</h3>
-                    <span class="phone-callcenter">115</span>
+                <div class="contact_phone_element">
+                    <div class="phone_number">875 000</div>
+                    <div class="phone_name">Servei d'atenció al client, des de l'estranger</div>
+                    <div class="phone_info"><p>Horari: de 8h a 18h.</p></div>
                 </div>
             </div>
         </div>
-        <!-- END FOOTER LINKS -->
-        <!-- BEGIN LEGAL -->
-        <div id="legal" class="container">
-            <div class="content">
-                <div class="copyright">
-                    Copyright © Andorra Telecom 2016
-                </div>
+    </div>
+</div>
+<!--END SPECIFIC PAGE ON SOM-->
+
+
+<!-- BEGIN FOOTER -->
+<div id="footer">
+    <!-- BEGIN FOOTER LINKS -->
+    <div id="footer-links" class="container">
+        <div class="content">
+            <div class="column-footer">
+                <h3>Coneix-nos</h3>
                 <ul>
+                    <li>
+                        <a href="#" title="">La corporació</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Sala de premsa</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Memòries</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Portal Proveïdors</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Contractacions Proveïdors/Tercers</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Configurador de Tarifes</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column-footer">
+                <h3>Contacte</h3>
+                <ul>
+                    <li>
+                        <a href="#" title="">Localitzador de punts d’atenció</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Telèfons d’atenció al client</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Formulari de contacte</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Formulari de reclamació</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column-footer">
+                <h3>Informació</h3>
+                <ul>
+                    <li>
+                        <a href="#" title="">FAQ’S</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Política de Privacitat</a>
+                    </li>
                     <li>
                         <a href="#" title="">Política de cookies</a>
                     </li>
                     <li>
-                        <a href="#" title="">Protecció de dades</a>
-                    </li>
-                    <li>
-                        <a href="#" title="">Avis legal</a>
+                        <a href="#" title="">Avís legal</a>
                     </li>
                     <li>
                         <a href="#" title="">Mapa web</a>
                     </li>
                 </ul>
             </div>
+            <div class="column-footer last">
+                <a class="button-action" href="#" title=""><span
+                        class="icons icon-email"></span><span>CORREU.ANDORRA.AD</span></a>
+                <a class="button-action" href="#" title="">TREBALLA AMB NOSALTRES</a>
+                <h3>Subscriu-te a la nostra newsletter!</h3>
+                <!-- FORM INPUT -->
+                <!-- FORM SUBMIT -->
+                <h3>Segueix-nos a les nostres xarxes</h3>
+                <ul class="social-links">
+                    <li>
+                        <a href="#" title=""><span class="icons icon-facebook"></span></a>
+                    </li>
+                    <li>
+                        <a href="#" title=""><span class="icons icon-twitter"></span></a>
+                    </li>
+                    <li>
+                        <a href="#" title=""><span class="icons icon-googleplus"></span></a>
+                    </li>
+                    <li>
+                        <a href="#" title=""><span class="icons icon-instagram"></span></a>
+                    </li>
+                </ul>
+                <h3>Servei d'atenció al client</h3>
+                <span class="phone-callcenter">115</span>
+            </div>
         </div>
-        <!-- END LEGAL -->
     </div>
-    <!-- END FOOTER -->
-
-    <!-- BEGIN ALERTS CONTENT -->
-    <!--PLEASE LOAD  src="/js/alerts.js" SCRIPT IN HEAD-->
-    <div class="alert-wrapper">
-        <div class="container">
-            <div class="alert-close">
-                <span class="icons icon-close"></span>
+    <!-- END FOOTER LINKS -->
+    <!-- BEGIN LEGAL -->
+    <div id="legal" class="container">
+        <div class="content">
+            <div class="copyright">
+                Copyright © Andorra Telecom 2016
             </div>
-            <div class="alert-title">
-                <span class="icons icon-alerts"></span>
-                Avís de interrupció del servei.
-            </div>
-
-            <div class="alert-body">
-                Este es el cuerpo HTML del mensaje. Puede contener <strong>HTML</strong> por ejemplo <a
-                    href="www.google.com" target="_blank">un enlace</a>.
-            </div>
+            <ul>
+                <li>
+                    <a href="#" title="">Política de cookies</a>
+                </li>
+                <li>
+                    <a href="#" title="">Protecció de dades</a>
+                </li>
+                <li>
+                    <a href="#" title="">Avis legal</a>
+                </li>
+                <li>
+                    <a href="#" title="">Mapa web</a>
+                </li>
+            </ul>
         </div>
     </div>
-    <!--END ALERTS CONTENT-->
-    <!-- BEGIN COOKIES-->
-    <!--You have to INJECT the content (per language) into JS Variables-->
-    <!--policyUrl, customMessage, linkTitle AND  dimissTitle-->
-    <script>
-        var
-                policyUrl = "http://www.google.com",
-                customMessage = 'Este sitio usa cookies. Si continuas navengando aceptas su uso.',
-                linkTitle = "Mas información",
-                dimissTitle = "Entendido";
+    <!-- END LEGAL -->
+</div>
+<!-- END FOOTER -->
 
-        window.cookieconsent.initialise({
-//    "palette":{"popup":{"background":"#000"},"button":{"background":"#f1d600"}},
-            "content": {
-                "message": customMessage,
-                "dismiss": dimissTitle,
-                "link": linkTitle,
-                "href": policyUrl
-            }
-        });</script>
-    <!-- END COOKIES-->
 
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYW42M0aJDKz-ayDZywdTDJAmd3Kfvq90&callback=initialize">
+</script>
 </body>
 </html>

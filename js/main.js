@@ -77,4 +77,31 @@ $(document).ready(function() {
         }
 
     });
+
+
+
+    // PHONEBOOK REORDER DIVS INFORMATION
+    // DELETE MAP LINK OPEN (MAP IS VISIBLE)
+    $(".companyDetail .companyInfo .companyMapClosed").each(function(){
+        $(this).remove();
+    });
+    // MOVE MAP (FIRST ELEMENT OF companyInfo)
+    $(".companyDetail .companyInfo .companyMap").each(function(){
+        $(this).prependTo($(this).parent());
+    });
+    // MOVE CONTACT (LAST ELEMENT OF companyInfo)
+    $(".companyDetail .companyInfo .companyContact").each(function(){
+        $(this).appendTo($(this).parent());
+    });
+    // MOVE ADDRESS AND SENDOPTIONS (ADD WRAPPER)
+    $(".companyInfo .companyAddress").each(function(index) {
+        $(this).next(".companySendOptions ").andSelf().wrapAll("<div class='companyAddressSendOptions'></div>")
+    });
+    // MOVE ADDRESS/SENDOPTIONS AND CONTACT(ADD WRAPPER)
+    $(".companyInfo .companyAddressSendOptions").each(function(index) {
+        $(this).next(".companyContact ").andSelf().wrapAll("<div class='right'></div>")
+    });
+
+    // OPEN / CLOSE INFO PHONEBOOK
+   
 });

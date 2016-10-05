@@ -134,6 +134,19 @@
 #region-signup{
   padding: 52px 0;
   background-color: $greydark;
+  h2{
+    position: relative;
+    display:block;
+    color: $white;
+    font-size: 30px;
+    line-height: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    @include breakpoint($tablet) {
+      font-size:20px;
+      line-height: 26px;
+    }
+  }
   ul{
     margin-top: 20px;
     li{

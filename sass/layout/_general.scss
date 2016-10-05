@@ -2,70 +2,74 @@ body{
   font-family: $webfont;
 }
 .container{
-  position: relative;
   display: block;
   overflow: hidden;
+  position: relative;
   width: 100%;
   .content{
-    position: relative;
+    @include clearfix();
     display: block;
-    overflow: hidden;
-    max-width: 1024px;
-    padding: 0 10px;
     margin:0 auto;
+    max-width: 1024px;
+    overflow: hidden;
+    padding: 0 10px;
+    position: relative;
     &.content-big{
       max-width: 1280px;
       padding: 0;
     }
     .left{
-      position: relative;
       display: block;
       float: left;
+      position: relative;
     }
     .right{
-      position: relative;
       display: block;
       float: right;
+      position: relative;
     }
     .clear{
       clear: both;
     }
+    .pink{
+      color:$pink;
+    }
     a{
       text-decoration: none;
       &.button-pink{
-        position: relative;
-        display: block;
-        text-align: center;
-        border-radius: 3px;
         background-color: $pink;
+        border-radius: 3px;
         color: $white;
-        height: 32px;
+        display: block;
         font-size:16px;
-        line-height: 20px;
-        padding: 8px 11px;
-        margin: 0 auto;
-        width: 180px;
         font-weight: bold;
+        height: 32px;
+        line-height: 20px;
+        margin: 0 auto;
+        padding: 8px 11px;
+        position: relative;
+        text-align: center;
         text-transform: uppercase;
+        width: 180px;
         @include breakpoint($tablet) {
           font-size:14px;
           line-height: 18px;
         }
       }
       &.button-action{
-        position: relative;
-        display: block;
-        text-align: center;
-        border-radius: 3px;
         background-color: $pinkdark;
+        border-radius: 3px;
         color: $white;
-        height: 36px;
+        display: block;
         font-size:16px;
-        padding: 10px 11px;
         font-weight: bold;
-        width: 100%;
-        text-transform: uppercase;
+        height: 36px;
         margin-bottom: 20px;
+        padding: 10px 11px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
         .icons{
           font-size: 18px;
           padding-right: 5px;
@@ -73,17 +77,272 @@ body{
       }
     }
     h2{
-      position: relative;
-      display:block;
-      color: $white;
-      font-size: 30px;
-      line-height: 46px;
-      text-align: center;
-      margin-bottom: 25px;
-      @include breakpoint($tablet) {
-        font-size:20px;
-        line-height: 26px;
+      &.global-subtitle{
+        color: $greydark;
+        display: block;
+        font-size: 30px;
+        line-height: 46px;
+        margin-bottom: 25px;
+        position: relative;
+        text-align: center;
+        &:after{
+          content:"";
+          border-bottom: 2px solid $pink;
+          display: block;
+          height: 2px;
+          position: relative;
+          margin: 0 auto;
+          text-align: center;
+          width: 130px;
+          padding-top: 15px;
+        }
+        @include breakpoint($tablet) {
+          font-size:20px;
+          line-height: 26px;
+        }
       }
+    }
+    h3{
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 20px;
+      margin: 15px 0;
+    }
+    p{
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+    /* Breadcrumb & Title */
+    .breadcrumb{
+      color: #9c9e9f;
+      font-size: 12px;
+      line-height: 15px;
+      margin: 15px 0 25px 0;
+      a{
+        color: #9c9e9f;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 15px;
+        margin: 15px 0 25px 0;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    h1{
+      &.main-title{
+        clear: both;
+        color: $black;
+        display: block;
+        font-size: 30px;
+        line-height: 34px;
+        margin: 25px 0;
+        position: relative;
+      }
+    }
+    /* Field Body */
+    .field-body{
+      p{
+        color:$greymedium;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        @include breakpoint($tablet) {
+          font-size:14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+.half-page {
+  float: left;
+  width: 50%;
+  padding: 0 15px 0 0;
+  box-sizing: border-box;
+  @include breakpoint($tablet) {
+    width: 100%;
+  }
+}
+
+// AVISO LEGAL
+.numbered-lists {
+  counter-reset: this-list-counter;
+  display: block;
+  margin-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+  dt {
+    &:first-child{
+      &:before{
+        margin-top: 0;
+      }
+    }
+    &:before {
+      border: 3px solid $pink;
+      border-radius: 50%;
+      clear: both;
+      color: $pink;
+      content: counter(this-list-counter);
+      counter-increment: this-list-counter;
+      display: block;
+      float:left;
+      font-size: 20px;
+      font-weight: bold;
+      height: 41px;
+      line-height: 35px;
+      margin-bottom: 20px;
+      margin-top:25px;
+      position: relative;
+      text-align: center;
+      width: 41px;
+    }
+    p{
+      clear: both;
+      a{
+        color: $pink;
+      }
+    }
+  }
+}
+
+// ON SOM
+.contact_phone{
+  display: block;
+  margin: 40px 0;
+  overflow: hidden;
+  position: relative;
+}
+.contact_phone_element{
+  display: block;
+  margin-bottom: 60px;
+  overflow: hidden;
+  padding: 0 20px;
+  position: relative;
+  .phone_number{
+    color: $pink;
+    display: block;
+    font-size: 60px;
+    line-height: 70px;
+    position: relative;
+    text-align: center;
+  }
+  .phone_name{
+    color: $greydark;
+    display: block;
+    font-size: 20px;
+    line-height:30px;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+  }
+  .phone_info{
+    color: #4a4a4a;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    text-align: center;
+    p{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.map-container{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 400px;
+  margin: 40px 0 60px 0;
+  .legend{
+    max-width: 1024px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    ul{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      float: left;
+      background-color: $white;
+      padding: 20px 40px;
+      margin-top: 30px;
+      @include breakpoint($tablet) {
+        background-color: #f4f4f4;
+        margin-top: 0;
+        width: 100%;
+        float: none;
+        clear: both;
+        padding: 10px;
+      }
+      li{
+        font-size: 14px;
+        line-height: 21px;
+        clear: both;
+        text-align: left;
+        position: relative;
+        display: block;
+        padding: 2px 0;
+        @include breakpoint($tablet) {
+          clear: none;
+          width:50%;
+          float: left;
+        }
+        &:before{
+          position: relative;
+          line-height: 22px;
+          display: block;
+          float: left;
+          content:"";
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          margin: 5px;
+        }
+        &.social{
+          &:before{
+            background-color: $black;
+          }
+        }
+        &.comercial{
+          &:before{
+            background-color: $pinkdark;
+          }
+        }
+        &.client{
+          &:before{
+            background-color: $pink;
+          }
+        }
+        &.spaces{
+          &:before{
+            background-color: $greymedium;
+          }
+        }
+      }
+    }
+  }
+  #map{
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    @include breakpoint($tablet) {
+     position: relative;
+    }
+    img {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
     }
   }
 }
