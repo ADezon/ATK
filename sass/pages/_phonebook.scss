@@ -1,0 +1,572 @@
+.linea_cerca {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  .capsa_cerca{
+    display: block;
+    margin: 0 auto;
+    max-width: 1024px;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+    a{
+      color: $greydark;
+      display: block;
+      float: left;
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0 auto;
+      max-width: 1024px;
+      overflow: hidden;
+      padding: 0 10px;
+      position: relative;
+      text-decoration: none;
+      width: 100%;
+      &:before{
+        background: transparent url("../images/i-dropdown-close.png") no-repeat scroll center center;
+        content: "";
+        display: block;
+        float: left;
+        height: 15px;
+        padding-right: 40px;
+        position: relative;
+        width: 15px;
+      }
+      &:after{
+        /* use !important to prevent issues with browser extensions that change fonts */
+        content: "\e914";
+        font-family: 'atelecom-icons' !important;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        line-height: 1;
+        text-transform: none;
+
+        /* Better Font Rendering =========== */
+        speak: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+  }
+  .cerca_avancada_section{
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    display: block;
+    overflow: hidden;
+    padding: 40px 0;
+    position: relative;
+    fieldset{
+      display: block;
+      margin: 0 auto;
+      max-width: 1024px;
+      overflow: hidden;
+      padding: 20px 10px;
+      position: relative;
+      width: 100%;
+      .aui-fieldset-content{
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        .aui-field{
+          display: block;
+          float: left;
+          overflow: hidden;
+          position: relative;
+          width: 25%;
+          label.aui-field-label{
+            clear: both;
+            color: $greydark;
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            height: auto;
+            line-height: 22px;
+            min-height: 46px;
+            position: relative;
+          }
+        }
+      }
+    }
+    .netejar_form{
+      display: block;
+      margin: 0 auto;
+      max-width: 1024px;
+      overflow: hidden;
+      padding: 10px 10px;
+      position: relative;
+      width: 100%;
+      a{
+        color: $pink;
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.rao_social{
+  display: block;
+  margin: 40px auto 20px;
+  max-width: 1024px;
+  overflow: hidden;
+  padding: 0 10px;
+  position: relative;
+  width: 100%;
+  & > .aui-widget{
+    display: block;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 45%;
+    @include breakpoint($mobile) {
+      width: 80%;
+    }
+    .aui-field-input{
+      background-color: #f7f7f7;
+      border: none;
+      color: $gris3;
+      display: block;
+      height: 37px;
+      margin: 0;
+      overflow: hidden;
+      padding: 10px;
+      position: relative;
+      width: 100%;
+    }
+    .aui-toolbar{
+      display: none;
+    }
+  }
+  input.rao_img{
+    background: $pink url("../images/i-search.png") no-repeat center center;
+    border: 1px solid $pink;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 37px;
+    margin-left: 1%;
+    overflow: hidden;
+    padding:10px;
+    position: relative;
+    width: 40px;
+  }
+}
+#show-form-tab{
+  display: none;
+}
+.search-criteria-results{
+  background-color: #f5f5f5;
+  border-top: 1px solid #c7c7c7;
+  .caixa_criteri{
+    display: block;
+    margin:0 auto;
+    max-width: 1024px;
+    overflow: hidden;
+    padding: 60px 10px 0;
+    position: relative;
+    h2{
+      color: $greymedium;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+    .criteria_row{
+      clear: both;
+      color: $greymedium;
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 18px;
+      margin-bottom: 10px;
+      position: relative;
+      .caixa_criteri_label{
+        display: block;
+        float: left;
+        font-weight: bold;
+        overflow: hidden;
+        position: relative;
+      }
+      .caixa_criteri_value{
+        display: block;
+        float: left;
+        font-weight: normal;
+        overflow: hidden;
+        padding-left: 10px;
+        position: relative;
+      }
+    }
+  }
+  .show_results_section{
+    .lfr-search-container{
+      @include clearfix();
+      display: block;
+      margin:0 auto;
+      max-width: 1024px;
+      overflow: hidden;
+      padding: 60px 10px;
+      position: relative;
+      .results-grid{
+        table.taglib-search-iterator{
+          background-color: $white;
+          display: table;
+          position: relative;
+          width: 100%;
+          tbody{
+            tr.results-header{
+              th{
+                background-color: #cfd1d2;
+                color:$white;
+                font-size: 14px;
+                line-height: 18px;
+                padding: 10px 25px;
+                text-align: left;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: 25%;
+                @include breakpoint($tablet) {
+                  display: block;
+                  width: 100%;
+                }
+                .result-column-name{
+                  a{
+                    color:$white;
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-align: left;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                  }
+                }
+              }
+            }
+            tr.results-row{
+              td{
+                font-weight: normal;
+                text-align: left;
+                vertical-align: middle;
+                .guia-caixa-row-container{
+                  border-bottom: 1px solid #cfd1d2;
+                  display: block;
+                  overflow: hidden;
+                  position: relative;
+                  .guia-caixa-row{
+                    display: block;
+                    overflow: hidden;
+                    position: relative;
+                    width: 100%;
+                    .la-guia-table-cell{
+                      color: $greymedium;
+                      display: block;
+                      float: left;
+                      font-size: 14px;
+                      font-weight: bold;
+                      height: auto;
+                      line-height: 18px;
+                      min-height: 39px;
+                      overflow: hidden;
+                      padding: 10px 25px;
+                      text-align: left;
+                      text-transform: capitalize;
+                      vertical-align: middle;
+                      width: 25%;
+                      @include breakpoint($tablet) {
+                        display: block;
+                        width: 100%;
+                      }
+                      &.la-guia-table-cell-first{
+                        cursor: pointer;
+                      }
+                    }
+                  }
+                }
+                .companyDetail{
+                  border-bottom: 1px solid #cfd1d2;
+                  display: block;
+                  overflow: hidden;
+                  position: relative;
+                  .companyInfo{
+                    border-top: 1px dotted #cfd1d2;
+                    clear: both;
+                    display: block;
+                    overflow: hidden;
+                    position: relative;
+                    &:first-child{
+                     border-top: none;
+                    }
+                    .companyMap{
+                      display: block;
+                      float: left;
+                      height: 100%;
+                      overflow: hidden;
+                      padding-right: 5%;
+                      position: relative;
+                      text-indent: -99999px;
+                      width: 50%;
+                      @include breakpoint($tablet) {
+                        padding-right: 0;
+                        width: 100%;
+                      }
+                    }
+                    .right{
+                      display: block;
+                      float: right;
+                      overflow: hidden;
+                      position: relative;
+                      width: 50%;
+                      @include breakpoint($tablet) {
+                        width: 100%;
+                      }
+                      .companyAddressSendOptions{
+                        color:$greymedium;
+                        display: block;
+                        float: left;
+                        font-size: 14px;
+                        height: 100%;
+                        overflow: hidden;
+                        padding: 30px 5% 30px 0;
+                        position: relative;
+                        width: 50%;
+                        @include breakpoint($tablet) {
+                          padding: 30px 25px;
+                          width: 100%;
+                        }
+                        .companyAddress{
+                          clear: both;
+                          display: block;
+                          margin-bottom: 10px;
+                          overflow: hidden;
+                          position: relative;
+                          p{
+                            font-size: 14px;
+                            line-height: 20px;
+                          }
+                        }
+                        .companySendOptions{
+                          clear: both;
+                          display: block;
+                          overflow: hidden;
+                          position: relative;
+                          li{
+                            background-color: $pink;
+                            border-radius: 5px;
+                            color: $white;
+                            display: block;
+                            float: left;
+                            font-size: 12px;
+                            line-height: 14px;
+                            margin: 0 2% 0 0;
+                            padding: 5px 10px;
+                            position: relative;
+                            text-align: center;
+                            text-transform: uppercase;
+                            width: 46%;
+                          }
+                        }
+                      }
+                      .companyContact{
+                        color:$greymedium;
+                        display: block;
+                        float: left;
+                        font-size: 14px;
+                        font-weight: bold;
+                        height: 100%;
+                        line-height: 18px;
+                        overflow: hidden;
+                        padding: 30px 25px 30px 25px;
+                        position: relative;
+                        width: 50%;
+                        @include breakpoint($tablet) {
+                          padding: 15px 25px;
+                          width: 100%;
+                        }
+                        li{
+                          padding: 5px 0;
+                          &.email{
+                            &:before{
+                              /* use !important to prevent issues with browser extensions that change fonts */
+                              color: $pink;
+                              content: "\e907";
+                              font-family: 'atelecom-icons' !important;
+                              font-size: 21px;
+                              font-style: normal;
+                              font-variant: normal;
+
+                              /* Better Font Rendering =========== */
+                              font-weight: normal;
+                              line-height: 21px;
+                              padding-right: 10px;
+                              text-transform: none;
+                              vertical-align: middle;
+                              speak: none;
+                              -webkit-font-smoothing: antialiased;
+                              -moz-osx-font-smoothing: grayscale;
+                            }
+                          }
+                          &.fax{
+                            &:before{
+                              /* use !important to prevent issues with browser extensions that change fonts */
+                              color: $pink;
+                              content: "\e91b";
+                              font-family: 'atelecom-icons' !important;
+                              font-size: 21px;
+                              font-style: normal;
+                              font-variant: normal;
+
+                              /* Better Font Rendering =========== */
+                              font-weight: normal;
+                              line-height: 21px;
+                              padding-right: 10px;
+                              text-transform: none;
+                              vertical-align: middle;
+                              speak: none;
+                              -webkit-font-smoothing: antialiased;
+                              -moz-osx-font-smoothing: grayscale;
+                            }
+                          }
+                          &.landPhone{
+                            &:before{
+                              /* use !important to prevent issues with browser extensions that change fonts */
+                              color: $pink;
+                              content: "\e918";
+                              font-family: 'atelecom-icons' !important;
+                              font-size: 21px;
+                              font-style: normal;
+                              font-variant: normal;
+
+                              /* Better Font Rendering =========== */
+                              font-weight: normal;
+                              line-height: 21px;
+                              padding-right: 10px;
+                              text-transform: none;
+                              vertical-align: middle;
+                              speak: none;
+                              -webkit-font-smoothing: antialiased;
+                              -moz-osx-font-smoothing: grayscale;
+                            }
+                          }
+                          &.mobilePhone{
+                            &:before{
+                              /* use !important to prevent issues with browser extensions that change fonts */
+                              color: $pink;
+                              content: "\e909";
+                              font-family: 'atelecom-icons' !important;
+                              font-size: 21px;
+                              font-style: normal;
+                              font-variant: normal;
+
+                              /* Better Font Rendering =========== */
+                              font-weight: normal;
+                              line-height: 21px;
+                              padding-right: 10px;
+                              text-transform: none;
+                              vertical-align: middle;
+                              speak: none;
+                              -webkit-font-smoothing: antialiased;
+                              -moz-osx-font-smoothing: grayscale;
+                            }
+                          }
+                          &.web{
+                            &:before{
+                              /* use !important to prevent issues with browser extensions that change fonts */
+                              color: $pink;
+                              content: "\e91a";
+                              font-family: 'atelecom-icons' !important;
+                              font-size: 21px;
+                              font-style: normal;
+                              font-variant: normal;
+
+                              /* Better Font Rendering =========== */
+                              font-weight: normal;
+                              line-height: 21px;
+                              padding-right: 10px;
+                              text-transform: none;
+                              vertical-align: middle;
+                              speak: none;
+                              -webkit-font-smoothing: antialiased;
+                              -moz-osx-font-smoothing: grayscale;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .companyCaptcha {
+                    display: block;
+                    padding: 20px 25px;
+                    position: relative;
+                    .sendOption {
+                      clear: both;
+                      display: block;
+                      overflow: hidden;
+                      position: relative;
+                      .divContainerRowLaGuia {
+                        display: block;
+                        overflow: hidden;
+                        padding: 10px 0;
+                        position: relative;
+                        strong {
+                          color: #4a4a4a;
+                          display: block;
+                          font-weight: bold;
+                          padding-bottom: 5px;
+                          position: relative;
+                        }
+                        input {
+                          background-color: #f7f7f7;
+                          border: 1px solid #f7f7f7;
+                          font-size: 14px;
+                          height: 37px;
+                          line-height: 18px;
+                          padding: 10px;
+                          width: 25%;
+                          @include breakpoint($tablet) {
+                            width: 50%;
+                          }
+                          @include breakpoint($mobile) {
+                            width: 100%;
+                          }
+                          &[type="button"] {
+                            background-color: $pink;
+                            border: 1px solid $pink;
+                            border-radius: 5px;
+                            color: $white;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                          }
+                        }
+                        .ctrl-holder-text-verification-link {
+                          color: #4a4a4a;
+                          font-size: 12px;
+                          line-height: 16px;
+                          padding: 5px 0;
+                          width: 25%;
+                          @include breakpoint($tablet) {
+                            width: 50%;
+                          }
+                          @include breakpoint($mobile) {
+                            width: 100%;
+                          }
+                          a {
+                            color: $pink;
+                            font-weight: bold;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+
+    }
+  }
+}

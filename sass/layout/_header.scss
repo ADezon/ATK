@@ -1,63 +1,63 @@
 #header{
-  position: relative;
   display: block;
   overflow: visible;
+  position: relative;
   width: 100%;
   #topbar{
     background-color: $grey;
-    padding: 9px 0;
-    overflow: visible;
     height: 39px;
+    overflow: visible;
+    padding: 9px 0;
     @include breakpoint($tablet) {
       display: none;
     }
     &.show-on-mobile{
-      position: relative;
+      clear: both;
       display: block;
       float:none;
-      clear: both;
-      overflow: hidden;
       height: auto;
+      overflow: hidden;
+      position: relative;
       .content{
         .left{
-          position: relative;
+          clear: both;
           display: block;
           float:none;
-          clear: both;
           overflow: hidden;
+          position: relative;
           width: 100%;
         }
         .right{
-          position: relative;
+          clear: both;
           display: block;
           float:none;
-          clear: both;
           overflow: hidden;
+          position: relative;
           width: 100%;
         }
         .links-topbar{
-          position: relative;
+          clear: both;
           display: block;
           float:none;
-          clear: both;
           overflow: hidden;
+          position: relative;
           li{
-            position: relative;
+            clear: both;
             display: block;
             float:none;
-            clear: both;
             padding:0;
+            position: relative;
             span{
               display: none;
             }
             a{
-              position: relative;
+              color: $greymedium;
               display: block;
-              text-align: left;
               float: left;
               font-size: 14px;
-              color: $greymedium;
               padding:15px 0;
+              position: relative;
+              text-align: left;
               &:hover{
                 text-decoration: underline;
                 text-decoration-color: $greymedium;
@@ -66,32 +66,32 @@
           }
         }
         .search{
-          position: relative;
+          border-bottom: 1px solid $whitealt;
+          border-top: 1px solid $whitealt;
+          clear: both;
           display: block;
           float:none;
-          clear: both;
-          overflow: hidden;
-          border-top: 1px solid $whitealt;
-          border-bottom: 1px solid $whitealt;
-          padding: 10px 0;
           margin: 0;
+          overflow: hidden;
+          padding: 10px 0;
+          position: relative;
           &:hover{
             .search-form{
               float: right;
-              width:78%;
               margin-left: 2%;
+              width:78%;
             }
           }
           .search-form{
-            width:78%;
-            margin-left: 2%;
-            height:30px;
-            position: relative;
+            background-color: transparent;
+            border: none;
+            color: $greymedium;
             display: block;
             float: right;
-            border: none;
-            background-color: transparent;
-            color: $greymedium;
+            height:30px;
+            margin-left: 2%;
+            position: relative;
+            width:78%;
             &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
               color: $gris3;
             }
@@ -106,35 +106,35 @@
             }
           }
           .icon-search{
-            position: relative;
+            color: $greymedium;
             display: block;
             float: left;
-            width: 10%;
-            text-align: center;
             font-size: 24px;
             line-height: 30px;
-            color: $greymedium;
+            position: relative;
+            text-align: center;
+            width: 10%;
           }
           .icon-right {
-            position: relative;
+            color: $greymedium;
             display: block;
             float: right;
-            width: 10%;
-            text-align: center;
             font-size: 24px;
             line-height: 30px;
-            color: $greymedium;
+            position: relative;
+            text-align: center;
+            width: 10%;
           }
         }
         .languages{
-          position: relative;
+          clear: both;
           display: block;
           float:none;
-          clear: both;
           overflow: hidden;
+          position: relative;
           ul{
-            position: relative;
             display: block;
+            position: relative;
             li{
               display: block;
               position: relative;
@@ -164,10 +164,10 @@
                     line-height: 20px;
                     padding: 10px;
                     position: relative;
-                    top: 0;
                     right:0;
                     text-align: center;
                     text-transform: uppercase;
+                    top: 0;
                     width: 33%;
                     &:after{
                       display: none;
@@ -185,27 +185,27 @@
       padding: 0 20px;
       .links-topbar{
         li{
-          position: relative;
           display: block;
           float: left;
           padding-right: 22px;
+          position: relative;
           span{
-            position: relative;
-            display: block;
-            text-align: left;
-            float: left;
             color:$greymedium;
-            padding-right: 5px;
+            display: block;
+            float: left;
             font-size: 18px;
+            padding-right: 5px;
+            position: relative;
+            text-align: left;
           }
           a{
-            position: relative;
+            color: $greymedium;
             display: block;
-            text-align: left;
             float: left;
             font-size: 13px;
-            color: $greymedium;
             padding-top:5px;
+            position: relative;
+            text-align: left;
             &:hover{
               text-decoration: underline;
               text-decoration-color: $greymedium;
@@ -214,27 +214,27 @@
         }
       }
       .search{
-        position: relative;
         display: block;
         float: left;
         margin-right: 10px;
+        position: relative;
         &:hover{
           .search-form{
-            width:250px;
-            position: relative;
             display: block;
             float: left;
+            position: relative;
+            width:250px;
           }
         }
         .search-form{
-          display: none;
-          border-bottom: 1px solid $gris3;
-          border-top:none;
-          border-right:none;
-          border-left:none;
           background-color: transparent;
-          margin-right: 10px;
+          border-bottom: 1px solid $gris3;
+          border-left:none;
+          border-right:none;
+          border-top:none;
           color: $greymedium;
+          display: none;
+          margin-right: 10px;
           &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             color: $gris3;
           }
@@ -249,30 +249,30 @@
           }
         }
         .icon-search{
-          position: relative;
+          color: $greymedium;
           display: block;
           float: left;
           font-size: 14px;
           line-height: 20px;
-          color: $greymedium;
+          position: relative;
         }
         .icon-right{
-          position: relative;
+          color: $greymedium;
+          cursor: pointer;
           display: none;
           float: left;
           font-size: 14px;
           line-height: 20px;
-          color: $greymedium;
-          cursor: pointer;
+          position: relative;
         }
       }
       .languages{
-        position: relative;
         display: block;
         float: left;
+        position: relative;
         ul{
-          position: relative;
           display: block;
+          position: relative;
           li{
             display: block;
             position: relative;
@@ -304,17 +304,17 @@
                   text-transform: uppercase;
                   &:after{
                     /* use !important to prevent issues with browser extensions that change fonts */
+                    content: "\e914";
                     font-family: 'atelecom-icons' !important;
-                    speak: none;
                     font-style: normal;
-                    font-weight: normal;
                     font-variant: normal;
-                    text-transform: none;
+                    font-weight: normal;
                     line-height: 1;
+                    text-transform: none;
                     /* Better Font Rendering =========== */
+                    speak: none;
                     -webkit-font-smoothing: antialiased;
                     -moz-osx-font-smoothing: grayscale;
-                    content: "\e914";
                   }
                 }
                 a{
@@ -326,10 +326,10 @@
                   line-height: 20px;
                   padding: 10px;
                   position: absolute;
-                  top: 30px;
                   right:0;
                   text-align: center;
                   text-transform: uppercase;
+                  top: 30px;
                   z-index: 9999;
                   &:hover{
                     font-weight: bold;
@@ -348,33 +348,33 @@
     background: -o-linear-gradient(right, $fadepinkleft, $fadepinkright); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, $fadepinkleft, $fadepinkright); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, $fadepinkleft , $fadepinkright); /* Standard syntax */
-    padding: 0;
     height: 72px;
+    padding: 0;
     .logo{
-      position: relative;
       display: block;
-      overflow: hidden;
       float: left;
+      overflow: hidden;
+      position: relative;
       img{
-        position: relative;
         display: block;
+        position: relative;
       }
     }
     #nav-main{
-      position: relative;
       display: block;
       float: left;
+      position: relative;
       @include breakpoint($tablet) {
         display: none;
       }
       li{
-        position: relative;
         display: block;
         float: left;
         padding: 20px 15px;
+        position: relative;
         &:hover{
-          font-weight: bold;
           border-bottom: 8px solid $greydark;
+          font-weight: bold;
         }
         &.current{
           border-bottom: 8px solid $greydark;
@@ -388,13 +388,13 @@
           }
         }
         a{
-          position: relative;
+          color: $white;
           display: block;
-          text-align: left;
           font-size: 18px;
           line-height: 27px;
-          color: $white;
           padding: 0;
+          position: relative;
+          text-align: left;
           /*FALTA EL BORDE SEPARADOR*/
         }
       }
@@ -405,41 +405,41 @@
       }
     }
     .button-login-client{
-      position: relative;
+      background-color: $greydark;
+      border-radius: 3px;
+      color: $white;
       display: block;
       float: left;
-      border-radius: 3px;
-      background-color: $greydark;
-      color: $white;
-      height: 36px;
-      padding: 8px 11px;
-      margin:18px 5px;
-      text-align: left;
       font-size: 14px;
-      line-height: 20px;
-      text-transform: uppercase;
       font-weight: bold;
+      height: 36px;
+      line-height: 20px;
+      margin:18px 5px;
+      padding: 8px 11px;
+      position: relative;
+      text-align: left;
+      text-transform: uppercase;
       @include breakpoint($tablet) {
-        padding: 8px 5px;
         font-size: 12px;
+        padding: 8px 5px;
       }
       .icons{
-        position: relative;
+        color: $white;
         display: block;
-        text-align: left;
         float: left;
         font-size: 20px;
         line-height: 22px;
-        color: $white;
         padding-right: 5px;
+        position: relative;
+        text-align: left;
       }
     }
     .menu-mobile{
+      color: $white;
+      display: none;
       float: left;
       margin: 23px 10px;
       position: relative;
-      display: none;
-      color: $white;
       @include breakpoint($tablet) {
         display: block;
       }
@@ -464,13 +464,13 @@
         float:left;
         &.current{
           a{
-            font-weight: bold;
             border-bottom: 8px solid $greydark;
+            font-weight: bold;
           }
         }
         &:hover{
-          font-weight: bold;
           color: $greydark;
+          font-weight: bold;
         }
         &:first-child{
           a{
@@ -498,8 +498,8 @@
 
   #nav-private, #nav-business{
     background-color: $greydark;
-    padding: 0;
     overflow: visible;
+    padding: 0;
     .content{
       overflow: visible;
     }
@@ -513,15 +513,15 @@
   .menu {
     position: static;
     > ul {
-      margin: 0 auto;
-      width: 100%;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
       list-style: none;
-      padding: 0;
       //position: relative;
       /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
       &:before,
       &:after {
         content: "";
@@ -532,11 +532,11 @@
       }
       /*LEVEL 0*/
       > li {
-        float: left;
-        padding: 0;
-        margin: 0;
         background: transparent;
         cursor: pointer;
+        float: left;
+        margin: 0;
+        padding: 0;
         @include span(3 of 12);
         &.active{
           .title-level-1{
@@ -550,44 +550,44 @@
           background-color: $grey;
         }
         .title-level-1{
-          position: relative;
-          display: block;
-          text-align: center;
-          padding: 14px 0;
-          font-size: 14px;
-          line-height: 16px;
           color: $white;
+          display: block;
+          font-size: 14px;
           font-weight: bold;
+          line-height: 16px;
+          padding: 14px 0;
+          position: relative;
+          text-align: center;
           &:hover{
             color: $greydark;
           }
           .icons{
-            font-size: 20px;
             color: $pink;
+            font-size: 20px;
             padding-right: 5px;
           }
         }
         a {
-          text-decoration: none;
-          padding: 1.5em 3em;
           display: block;
+          padding: 1.5em 3em;
+          text-decoration: none;
         }
         &:hover {
           background: #f0f0f0;
         }
         .container-submenu{
-          display: none;
-          width: 100%;
           background-color: $grey;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          display: none;
+          left: 0;
+          list-style: none;
+          margin: 0;
           padding: 20px;
           position: absolute;
+          width: 100%;
           z-index: 99;
-          left: 0;
-          margin: 0;
-          list-style: none;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          box-sizing: border-box;
           &:before,
           &:after {
             content: "";
@@ -599,17 +599,17 @@
           > ul {
             margin: 0 auto;
             max-width: 1280px;
-            position: relative;
             overflow: hidden;
+            position: relative;
             width: 100%;
             /* LEVEL 1 */
             > li {
-              margin: 0;
-              list-style: none;
-              width: 25%;
-              padding: 0 5%;
               background: none;
               float: left;
+              list-style: none;
+              margin: 0;
+              padding: 0 5%;
+              width: 25%;
               &.banners-mmenu{
                 clear: both;
                 display: block;
@@ -641,30 +641,30 @@
               }
               a {
                 color:$greydark;
-                padding: 0;
                 display: block;
+                padding: 0;
                 .menu-title{
-                  position: relative;
-                  display: block;
-                  width:100%;
                   color:$greydark;
-                  text-align: left;
+                  display: block;
                   font-size: 14px;
-                  line-height: 20px;
                   font-weight: bold;
+                  line-height: 20px;
+                  position: relative;
+                  text-align: left;
+                  width:100%;
                   &:hover{
                     text-decoration: underline;
                   }
                 }
               }
               > ul {
-                display: block;
-                padding: 0;
-                margin: 10px 0 0;
-                list-style: none;
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
                 box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                display: block;
+                list-style: none;
+                margin: 10px 0 0;
+                padding: 0;
                 &:before,
                 &:after {
                   content: "";
@@ -675,19 +675,19 @@
                 }
                 > li {
                   float: left;
-                  width: 100%;
-                  padding: 10px 0;
                   margin: 0;
+                  padding: 10px 0;
+                  width: 100%;
                   a {
                     border: 0;
-                    position: relative;
-                    display: block;
-                    width:100%;
                     color: $greydark;
-                    text-align: left;
+                    display: block;
                     font-size: 14px;
-                    line-height: 18px;
                     font-weight: normal;
+                    line-height: 18px;
+                    position: relative;
+                    text-align: left;
+                    width:100%;
                     &:hover{
                       text-decoration:underline;
                     }
@@ -696,9 +696,9 @@
               }
             }
             &.normal-sub {
-              width: auto;
               left: auto;
               padding: 10px 20px;
+              width: auto;
               > li {
                 width: 100%;
                 a {

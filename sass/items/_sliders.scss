@@ -9,16 +9,16 @@
         width: 100%;
       }
       .block-container {
+        left: 0;
         position: absolute;
         top: 0;
-        left: 0;
         width: 100%;
         .inner-container {
-          width: 100%;
-          max-width: 1080px;
-          margin: 0 auto;
           background: white;
+          margin: 0 auto;
+          max-width: 1080px;
           position: relative;
+          width: 100%;
 
           .custom-htmlfree {
             float: left;
@@ -26,23 +26,23 @@
 
             .position-left,
             .position-right {
-              width: 250px;
               background-color: white;
               margin-top: 6%;
               padding: 20px;
+              width: 250px;
             }
             .position-left { float: left; }
             .position-right { float: right; }
 
             .field-title {
               color: $pink;
-              font-weight: 600;
               font-size: 21px;
+              font-weight: 600;
               margin-bottom:16px;
             }
             .field-body {
-              font-size: 18px;
               color: $greymedium;
+              font-size: 18px;
 
             }
 
@@ -53,20 +53,20 @@
   }
 
   .flex-direction-nav {
-    width: 100%;
+    margin: 0 auto;
     max-width: 1280px;
     position: relative;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .flex-direction-nav a {
-    top: -242px;
     opacity: 1 !important;
+    top: -242px;
   }
   .flex-direction-nav .flex-next,
   .flex-direction-nav .flex-prev {
-    opacity: 1 !important;
     color: transparent;
+    opacity: 1 !important;
     text-shadow: none;
     &:before {
       content: '';
@@ -86,27 +86,27 @@
 
 
 .small-banner {
-  width: 100%;
   background-color: $grey;
   padding: 30px 0 26px 0;
+  width: 100%;
 
 
   .slider-four.small {
-    width: 100%;
-    max-width: 1240px;
     margin: 0 auto;
+    max-width: 1240px;
+    width: 100%;
 
     .item {
-      text-align: center;
-      font-size: 21px;
       color: $pink;
-      width: 80%;
+      font-size: 21px;
       margin: 0 auto;
+      text-align: center;
+      width: 80%;
 
       &.picture {
+        margin: 0 auto 10px auto;
         min-height: 52px;
         vertical-align: baseline;
-        margin: 0 auto 10px auto;
       }
       a {
         color: $pink;
@@ -117,20 +117,20 @@
 
 
   .flex-direction-nav {
-    width: 100%;
+    margin: 0 auto;
     max-width: 1280px;
     position: relative;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .flex-direction-nav a {
-    top: -34px;
     opacity: 1 !important;
+    top: -34px;
   }
   .flex-direction-nav .flex-next,
   .flex-direction-nav .flex-prev {
-    opacity: 1 !important;
     color: transparent;
+    opacity: 1 !important;
     text-shadow: none;
     &:before {
       content: '';
