@@ -1,0 +1,150 @@
+.container {
+  form{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 20px 0 40px 0;
+    .message-error{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      background-color: #fce5f1;
+      padding: 15px;
+      margin-bottom: 20px;
+      p{
+        position: relative;
+        display: block;
+        color: $pink;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    fieldset{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      float: left;
+      width: 25%;
+      margin-bottom: 20px;
+      padding: 0 15px;
+      box-sizing: border-box;
+      &.first{
+        padding-left:0;
+      }
+      &.last{
+        padding-right:0;
+      }
+      &.big-fieldset{
+        width: 30%;
+      }
+      &.small-fieldset{
+        width: 20%;
+      }
+      &.box-message{
+        position: relative;
+        display: block;
+        clear: both;
+        width: 100%;
+        min-height: 135px;
+        margin: 0;
+        padding: 0;
+      }
+      .title-field{
+        position: relative;
+        display: block;
+        clear: both;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+        color: $gris3;
+      }
+      input[type=text]{
+        position: relative;
+        display: block;
+        clear: both;
+        width: 100%;
+        margin: 8px 0;
+        &.field-error{
+          border: 1px solid $pink;
+        }
+      }
+      textarea{
+        position: relative;
+        display: block;
+        clear: both;
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        min-height: 135px;
+        color: $gris3;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .message-error-field{
+        position: relative;
+        display: block;
+        clear: both;
+        font-size: 11px;
+        line-height: 16px;
+        color: $pink;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+    .info-form{
+      p{
+        position: relative;
+        display: block;
+        clear: both;
+        font-size: 11px;
+        line-height: 16px;
+        color: $gris3;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+    .captcha{
+      margin:20px 0;
+      position: relative;
+      display: block;
+      clear: both;
+    }
+    .checkboxCSS{
+      margin:20px 0;
+      position: relative;
+      display: block;
+      clear: both;
+      span{
+        font-size: 13px;
+        line-height: 18px;
+        color: $gris3;
+        a{
+          font-size: 13px;
+          line-height: 18px;
+          color: $pink;
+          &:hover{
+            font-weight: bold;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .contact-send{
+      margin:20px 0;
+      width: 111px;
+      float: left;
+      clear: both;
+      position: relative;
+      display: block;
+    }
+  }
+  #more-contacts{
+    position: relative;
+    display: block;
+    background-color: #f5f5f5;
+    padding: 40px 0;
+  }
+}
