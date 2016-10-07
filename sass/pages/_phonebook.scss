@@ -1,6 +1,5 @@
 .linea_cerca {
   display: block;
-  overflow: hidden;
   position: relative;
   .capsa_cerca{
     display: block;
@@ -54,28 +53,36 @@
     border-bottom: 1px solid #cccccc;
     border-top: 1px solid #cccccc;
     display: block;
-    overflow: hidden;
     padding: 40px 0;
     position: relative;
     fieldset{
       display: block;
       margin: 0 auto;
       max-width: 1024px;
-      overflow: hidden;
       padding: 20px 10px;
       position: relative;
       width: 100%;
       .aui-fieldset-content{
         display: block;
-        overflow: hidden;
         position: relative;
         width: 100%;
-        .aui-field{
+        .aui-field-select{
           display: block;
           float: left;
-          overflow: hidden;
           position: relative;
           width: 25%;
+          padding-right: 60px;
+          @include breakpoint($tablet) {
+            width: 50%;
+            padding-right: 30px;
+            margin: 20px 0;
+          }
+          @include breakpoint($mobile) {
+            width: 100%;
+            float: none;
+            clear: both;
+            padding: 0;
+          }
           label.aui-field-label{
             clear: both;
             color: $greydark;
@@ -86,6 +93,125 @@
             line-height: 22px;
             min-height: 46px;
             position: relative;
+            @include breakpoint($mobile) {
+              min-height: auto;
+            }
+          }
+          .jqTransformSelectWrapper {
+            width: auto !important;
+            position: relative;
+            height: 37px;
+            padding: 8px 10px;
+            font-size: 16px;
+            line-height: 18px;
+            background-color:$white;
+            color: $greydark;
+            border: 1px solid $gris2;
+            margin-top: 10px;
+            div span {
+              background-color:transparent;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 18px;
+              position: absolute;
+              white-space: nowrap;
+              padding: 0;
+              width: auto !important;
+              overflow: hidden;
+              cursor: pointer;
+            }
+            a.jqTransformSelectOpen {
+              display: block;
+              position: absolute;
+              right: 0;
+              width: 21px;
+              height: 22px;
+              background-color:transparent;
+              text-decoration: none;
+              &:before{
+                position: relative;
+                display: block;
+                /* use !important to prevent issues with browser extensions that change fonts */
+                font-family: 'atelecom-icons' !important;
+                speak: none;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+
+                /* Better Font Rendering =========== */
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                content: "\e914";
+                font-size: 20px;
+                color: $black;
+              }
+            }
+            ul {
+              font-weight: normal;
+              line-height: 16px;
+              position: absolute;
+              width: 100% !important;
+              top: 35px;
+              left: 0;
+              list-style: none;
+              background-color: $white;
+              border: 1px solid $gris2;
+              margin: 0;
+              padding: 0;
+              height: auto;
+              overflow: auto;
+              z-index: 10;
+              a {
+                display: block;
+                padding: 5px;
+                text-decoration: none;
+                color: $greydark;
+                background-color: $white;
+                &.selected {
+                  background: #fce6f1;
+                  color: $greydark;
+                }
+                &:hover,
+                &.selected:hover {
+                  background: $pink;
+                  color: $white;
+                }
+              }
+            }
+          }
+          .jqTransformHidden {
+            display: none;
+          }
+          .ui-widget{
+            position: relative;
+            display: block;
+            .ui-combobox{
+              position: absolute;
+              top: 1px;
+              left: 1px;
+              height: 36px;
+              width: 85%;
+              z-index: 10;
+              .ui-combobox-input {
+                height: 35px;
+                color: $greydark !important;
+                padding: 10px;
+                margin-left: 0;
+                width: 100%;
+                font-size: 16px !important;
+                line-height: 18px !important;
+                border: 0 !important;
+                background: $white;
+              }
+              .ui-button {
+                border: 0!important;
+              }
+              .ui-icon {
+                background: none!important;
+              }
+            }
           }
         }
       }

@@ -169,6 +169,21 @@
                     text-transform: uppercase;
                     top: 0;
                     width: 33%;
+                    &:before{
+                      width: 1px;
+                      height: 12px;
+                      background-color: #58585A;
+                      position: relative;
+                      display: block;
+                      float: left;
+                      content: "";
+                      margin: 5px 0px;
+                    }
+                    &:first-child{
+                      &:before{
+                        display: none;
+                      }
+                    }
                     &:after{
                       display: none;
                     }
@@ -370,19 +385,37 @@
       li{
         display: block;
         float: left;
-        padding: 20px 15px;
+        padding: 0;
         position: relative;
-        &:hover{
-          border-bottom: 8px solid $greydark;
-          font-weight: bold;
-        }
-        &.current{
-          border-bottom: 8px solid $greydark;
+        &:hover, &.current{
           a{
             font-weight: bold;
+            &:after{
+              content: "";
+              height: 8px;
+              background-color: $greydark;
+              width: 95%;
+              margin: 0 auto;
+              margin-top: 14px;
+              position: relative;
+              display: block;
+              overflow: hidden;
+              clear: both;
+            }
           }
         }
         &:first-child{
+          &:after {
+            content: "";
+            height: 20px;
+            background-color: $white;
+            width: 1px;
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 26px 0;
+            float: left;
+          }
           a{
             border-left:0;
           }
@@ -391,11 +424,11 @@
           color: $white;
           display: block;
           font-size: 18px;
-          line-height: 27px;
-          padding: 0;
+          line-height: 28px;
+          padding: 22px 15px 0 15px;
           position: relative;
           text-align: left;
-          /*FALTA EL BORDE SEPARADOR*/
+          float: left;
         }
       }
     }
@@ -462,17 +495,36 @@
       li{
         @include span(6 of 12 last);
         float:left;
-        &.current{
+        padding: 0;
+        &:hover, &.current{
           a{
-            border-bottom: 8px solid $greydark;
             font-weight: bold;
+            &:after{
+              content: "";
+              height: 8px;
+              background-color: $greydark;
+              width: 60%;
+              margin: 0 auto;
+              margin-top: 14px;
+              position: relative;
+              display: block;
+              overflow: hidden;
+              clear: both;
+            }
           }
         }
-        &:hover{
-          color: $greydark;
-          font-weight: bold;
-        }
         &:first-child{
+          &:after {
+            content: "";
+            height: 20px;
+            background-color: $greymedium;
+            width: 1px;
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin: 26px 0;
+            float: left;
+          }
           a{
             border-left:0;
           }
@@ -481,16 +533,13 @@
           color: $greymedium;
           display: block;
           font-size: 18px;
+          line-height: 28px;
           height: 50px;
-          line-height: 27px;
-          margin: 0 auto;
-          padding: 8px 0;
-          position: relative;
+          width: 99%;
           text-align: center;
-          width: 50%;
-          &:hover{
-            border-bottom: 8px solid $greydark;
-          }
+          padding: 22px 15px 0 15px;
+          position: relative;
+          float: left;
         }
       }
     }
@@ -548,6 +597,9 @@
         }
         &:hover{
           background-color: $grey;
+          @include breakpoint($tablet) {
+            background-color: $greydark;
+          }
         }
         .title-level-1{
           color: $white;
@@ -560,6 +612,9 @@
           text-align: center;
           &:hover{
             color: $greydark;
+            @include breakpoint($tablet) {
+              color: $white;
+            }
           }
           .icons{
             color: $pink;
@@ -574,6 +629,9 @@
         }
         &:hover {
           background: #f0f0f0;
+          @include breakpoint($tablet) {
+            background-color: $greydark;
+          }
         }
         .container-submenu{
           background-color: $grey;
@@ -643,6 +701,9 @@
                 color:$greydark;
                 display: block;
                 padding: 0;
+                @include breakpoint($tablet) {
+                  color: $white;
+                }
                 .menu-title{
                   color:$greydark;
                   display: block;
@@ -652,6 +713,9 @@
                   position: relative;
                   text-align: left;
                   width:100%;
+                  @include breakpoint($tablet) {
+                    color: $white;
+                  }
                   &:hover{
                     text-decoration: underline;
                   }
@@ -747,6 +811,8 @@
           }
           .container-submenu{
             position: relative;
+            padding: 0;
+            background-color: $greymedium;
             > ul {
               &.normal-sub {
                 width: 100%;
@@ -754,9 +820,12 @@
               > li {
                 float: none;
                 width: 100%;
-                margin-top: 20px;
+                padding: 10px 21px 10px 47px;
+                margin: 0;
+                border-top: 1px solid $gris3;
                 &:first-child {
                   margin: 0;
+                  border: none;
                 }
                 &.banners-mmenu{
                   display: none;

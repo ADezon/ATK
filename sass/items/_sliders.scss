@@ -13,6 +13,13 @@
         position: absolute;
         top: 0;
         width: 100%;
+        @include breakpoint($intermedio) {
+          position: relative;
+          display: block;
+          width: 100%;
+          left: auto;
+          top: auto;
+        }
         .inner-container {
           background: white;
           margin: 0 auto;
@@ -30,6 +37,11 @@
               margin-top: 6%;
               padding: 20px;
               width: 250px;
+              @include breakpoint($intermedio) {
+                float: none;
+                width: 100%;
+                margin: 0;
+              }
             }
             .position-left { float: left; }
             .position-right { float: right; }
@@ -73,11 +85,11 @@
     }
   }
   .flex-direction-nav .flex-next {
-    background: url("/images/icon-arrow-r.png") no-repeat 0 0 transparent;
+    background: url("../images/icon-arrow-r.png") no-repeat 0 0 transparent;
     right: 10px !important;
   }
   .flex-direction-nav .flex-prev {
-    background: url("/images/icon-arrow-l.png") no-repeat 0 0 transparent;
+    background: url("../images/icon-arrow-l.png") no-repeat 0 0 transparent;
     left: 10px !important;
   }
 
@@ -137,11 +149,11 @@
     }
   }
   .flex-direction-nav .flex-next {
-    background: url("/images/icon-arrow-r.png") no-repeat 0 0 transparent;
+    background: url("../images/icon-arrow-r.png") no-repeat 0 0 transparent;
     right: -69px !important;
   }
   .flex-direction-nav .flex-prev {
-    background: url("/images/icon-arrow-l.png") no-repeat 0 0 transparent;
+    background: url("../images/icon-arrow-l.png") no-repeat 0 0 transparent;
     left: -69px !important;
   }
 }

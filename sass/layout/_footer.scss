@@ -103,6 +103,9 @@
           float: left;
           margin-bottom: 10px;
           text-align: center;
+          &:nth-child(2n+1){
+            border-left: none;
+          }
         }
         a{
           color: $white;

@@ -61,7 +61,7 @@ body{
         border-radius: 3px;
         color: $white;
         display: block;
-        font-size:16px;
+        font-size:12px;
         font-weight: bold;
         height: 36px;
         margin-bottom: 20px;
@@ -72,9 +72,43 @@ body{
         width: 100%;
         .icons{
           font-size: 18px;
+          vertical-align: text-bottom;
           padding-right: 5px;
         }
       }
+    }
+    input[type=submit]{
+      &.button-pink{
+        background-color: $pink;
+        border-radius: 5px;
+        color: $white;
+        display: block;
+        font-size:16px;
+        font-weight: bold;
+        height: 32px;
+        line-height: 20px;
+        padding: 8px 11px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        width: 180px;
+        margin: 5px auto;
+        border: none;
+        cursor: pointer;
+        @include breakpoint($tablet) {
+          font-size:14px;
+          line-height: 18px;
+        }
+      }
+    }
+    input[type=text]{
+      height: 37px;
+      font-size: 14px;
+      line-height: 18px;
+      padding: 10px;
+      color: $gris3;
+      background-color: $white;
+      border: 1px solid $gris2;
     }
     h2{
       &.global-subtitle{
@@ -152,6 +186,37 @@ body{
           font-size:14px;
           line-height: 18px;
         }
+      }
+    }
+    /* Page with sidebar */
+    .sidebar{
+      position: relative;
+      display: block;
+      float: left;
+      width: 25%;
+      padding-right: 5%;
+      margin-bottom: 40px;
+      @include breakpoint($medium) {
+        width: 35%;
+      }
+      @include breakpoint($tablet) {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+    }
+    .content-ws{
+      position: relative;
+      display: block;
+      float: left;
+      width: 75%;
+      margin-bottom: 40px;
+      @include breakpoint($medium) {
+        width: 65%;
+      }
+      @include breakpoint($tablet) {
+        width: 100%;
+        margin-bottom: 20px;
       }
     }
   }
