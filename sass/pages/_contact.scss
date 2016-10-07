@@ -1,5 +1,5 @@
 .container {
-  form{
+  form#contact-form{
     position: relative;
     display: block;
     overflow: hidden;
@@ -27,7 +27,6 @@
       display: block;
       overflow: hidden;
       float: left;
-      width: 25%;
       margin-bottom: 20px;
       padding: 0 15px;
       box-sizing: border-box;
@@ -39,9 +38,55 @@
       }
       &.big-fieldset{
         width: 30%;
+        @include breakpoint($tablet) {
+          width: 50%;
+          min-height: 100px;
+          &.odd{
+            padding-left: 0;
+            padding-right: 15px;
+          }
+          &.even{
+            padding-left: 15px;
+            padding-right: 0;
+          }
+        }
+        @include breakpoint($mobile) {
+          width: 100%;
+          min-height: auto;
+          padding: 0;
+          &.odd{
+            padding: 0;
+          }
+          &.even{
+            padding: 0;
+          }
+        }
       }
       &.small-fieldset{
         width: 20%;
+        @include breakpoint($tablet) {
+          width: 50%;
+          min-height: 100px;
+          &.odd{
+            padding-left: 0;
+            padding-right: 15px;
+          }
+          &.even{
+            padding-left: 15px;
+            padding-right: 0;
+          }
+        }
+        @include breakpoint($mobile) {
+          width: 100%;
+          min-height: auto;
+          padding: 0;
+          &.odd{
+            padding: 0;
+          }
+          &.even{
+            padding: 0;
+          }
+        }
       }
       &.box-message{
         position: relative;
