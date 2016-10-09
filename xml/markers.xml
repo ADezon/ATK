@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<markers>
+	<marker name="Seu Social" address="Mn. Lluis Pujol, 8-14 - AD500 Santa Coloma - Principat d'Andorra" lat="42.4973607" lng="1.4989885" type="seu" />
+	<marker name="Agencia Comercial" address="Carrer Prat de la Creu, 2, d’Andorra la Vella" lat="42.5087435" lng="1.5264895" type="agencia" />
+	<marker name="La Massana" address="La Massana - Avinguda de Sant Antoni núm. 29, a l'oficina de Tramits del Comú de la Massana." lat="42.5448609" lng="1.5133166" type="punts_atencio" />
+	<marker name="Pas de la Casa" address="Carrer Sant Jordi, núm.2, El Pas de la Casa" lat="42.5448609" lng="1.5133166" type="punts_atencio" />
+	<marker name="Sant Julià de Lòria" address="Sant Julià de Lòria - Plaça de la Germandat" lat="42.4651228" lng="1.4886004" type="punts_atencio" />
+	<marker name="Espais Conectem" address="Andorra la Vella - Av. Meritxell 112" lat="42.5082802" lng="1.530496" type="espais" />
+</markers>

@@ -23,14 +23,19 @@
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
             integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
+
+    <!--THIS IS A PRIVATE-PERSONAL API KEY. YOU MUST PROVIDE THE CORRECT ONE-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCYW42M0aJDKz-ayDZywdTDJAmd3Kfvq90"></script>
+    <!--THIS IS A PRIVATE-PERSONAL API KEY. YOU MUST PROVIDE THE CORRECT ONE-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
     <script src="./js/enquire.min.js"></script>
     <script src="./js/main.js"></script>
     <!--END GLOBAL-->
 
     <!--BEGIN INYECTED AS REQUIRED-->
-    <script src="./js/flexslider/jquery.flexslider-min.js"></script>
-    <script src="./js/init-slider.js"></script>
+    <!--<script src="./js/flexslider/jquery.flexslider-min.js"></script>-->
+    <!--<script src="./js/init-slider.js"></script>-->
     <script src="./js/alerts.js"></script>
     <script src="./js/phonebook.js"></script>
     <!--END INYECTED AS REQUIRED-->
@@ -475,28 +480,28 @@
             <ul>
                 <li>
                     <div class="checkboxCSS">
-                        <input type="checkbox" value="None" id="cb_social" name="check" />
+                        <input id="cb_social" type="checkbox" onclick="toggleGroup('seu')" checked="checked">
                         <label for="cb_social"></label>
                         <span><span class="circle black"></span>Seu Social</span>
                     </div>
                 </li>
                 <li>
                     <div class="checkboxCSS">
-                        <input type="checkbox" value="None" id="cb_comercial" name="check" />
+                        <input id="cb_comercial" type="checkbox" onclick="toggleGroup('agencia')" checked="checked">
                         <label for="cb_comercial"></label>
                         <span><span class="circle pinkdark"></span>Agència Comercial</span>
                     </div>
                 </li>
                 <li>
                     <div class="checkboxCSS">
-                        <input type="checkbox" value="None" id="cb_client" name="check" />
+                        <input id="cb_client" type="checkbox" onclick="toggleGroup('punts_atencio')" checked="checked">
                         <label for="cb_client"></label>
                         <span><span class="circle pink"></span>Punts d'atenció al client</span>
                     </div>
                 </li>
                 <li>
                     <div class="checkboxCSS">
-                        <input type="checkbox" value="None" id="cb_espais" name="check" />
+                        <input id="cb_espais" type="checkbox" onclick="toggleGroup('espais')" checked="checked">
                         <label for="cb_espais"></label>
                         <span><span class="circle greymedium"></span>Espais Connectem</span>
                     </div>
@@ -504,84 +509,188 @@
             </ul>
         </div>
 
-        <!--THIS IS A PRIVATE-PERSONAL API KEY. YOU MUST PROVIDE THE CORRECT ONE-->
-        <!--AIzaSyCYW42M0aJDKz-ayDZywdTDJAmd3Kfvq90-->
-        <!--USE THIS on PRODUCTION WITH API KEY-->
-        <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initialize"></script>-->
+        <div id="map" style="width: 100%; height: 400px;"></div>
 
-
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCYW42M0aJDKz-ayDZywdTDJAmd3Kfvq90"></script>
-        <script type="text/javascript">
-            var markers = [];
-            function initialize() {
-
-                var centerAT = {lat: 40.977046, lng: -0.449116};
-
-                var mapOptions = {
-                    zoom: 18,
-                    scrollwheel: false,
-                    center: centerAT,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
+        <script>
+            function xmlParse(str) {
+                if (typeof ActiveXObject != 'undefined' && typeof GetObject != 'undefined') {
+                    var doc = new ActiveXObject('Microsoft.XMLDOM');
+                    doc.loadXML(str);
+                    return doc;
                 }
-                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
+                if (typeof DOMParser != 'undefined') {
+                    return (new DOMParser()).parseFromString(str, 'text/xml');
+                }
 
-                var locations = [
-                    ['<h2>Seu social</h2> Esto es una prueba', 40.976690, -0.446734, 'http://www.google.com/intl/en_us/mapfiles/ms/micons/green-dot.png'],
-                    ['Agència Comercial', 40.976900, -0.448279, 'http://maps.google.com/mapfiles/marker_black.png'],
-                    ['Punts d\'atenció al client', 40.977297, -0.448562, 'http://maps.google.com/mapfiles/marker_black.png'],
-                    ['Espais Connectem', 40.977297, -0.448558, 'http://maps.google.com/mapfiles/marker_black.png']
-                ];
+                return createElement('div', null);
+            }
+            var infoWindow = new google.maps.InfoWindow();
+            var customIcons = {
+                seu: {
+                    icon: './images/icons/seu.png'
+                },
+                agencia: {
+                    icon: './images/icons/agencia.png'
+                },
+                punts_atencio: {
+                    icon: './images/icons/atencio.png'
+                },
+                espais: {
+                    icon: './images/icons/espais.png'
+                }
+            };
 
+            var markerGroups = {
+                "seu": [],
+                "agencia": [],
+                "punts_atencio": [],
+                "espais": []
+            };
 
-                var marker, i;
-                var infowindow = new google.maps.InfoWindow();
-
-
-                google.maps.event.addListener(map, 'click', function() {
-                    infowindow.close();
+            function load() {
+                var map = new google.maps.Map(document.getElementById("map"), {
+                    center: new google.maps.LatLng(42.510165, 1.516373),
+                    zoom: 12,
+                    scrollwheel: false,
+                    mapTypeId: 'roadmap'
                 });
+                var infoWindow = new google.maps.InfoWindow();
 
-                // Definicion de MARCADORES
-                for (i = 0; i < locations.length; i++) {
-                    marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                        map: map,
-                        icon: locations[i][3]
-                    });
 
-                    google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                        return function() {
-                            infowindow.setContent(locations[i][0]);
-                            infowindow.open(map, marker);
-                        }
-                    })(marker, i));
 
-                    markers.push(marker);
+                map.set('styles', [{
+                    zoomControl: false
+                }, {
+                    featureType: "road.highway",
+                    elementType: "geometry.fill",
+                    stylers: [{
+                        color: "#ffd986"
+                    }]
+                }, {
+                    featureType: "road.arterial",
+                    elementType: "geometry.fill",
+                    stylers: [{
+                        color: "#9e574f"
+                    }]
+                }, {
+                    featureType: "road.local",
+                    elementType: "geometry.fill",
+                    stylers: [{
+                        color: "#d0cbc0"
+                    }, {
+                        weight: 1.1
+                    }
+
+                    ]
+                }, {
+                    featureType: 'road',
+                    elementType: 'labels',
+                    stylers: [{
+                        saturation: -100
+                    }]
+                }, {
+                    featureType: 'landscape',
+                    elementType: 'geometry',
+                    stylers: [{
+                        hue: '#ffff00'
+                    }, {
+                        gamma: 1.4
+                    }, {
+                        saturation: 82
+                    }, {
+                        lightness: 96
+                    }]
+                }, {
+                    featureType: 'poi.school',
+                    elementType: 'geometry',
+                    stylers: [{
+                        hue: '#fff700'
+                    }, {
+                        lightness: -15
+                    }, {
+                        saturation: 99
+                    }]
+                }]);
+
+
+                var url = 'http://www.explorer.dev/xml/markers.xml';
+                var  xmlContent;
+                downloadUrl(url, function(data, responseCode) {
+                    if(responseCode == 200 && typeof data.responseText !== "undefined") {
+                        xmlContent = data.responseText;
+                    } else {
+                        xmlContent = '<markers><marker name="Castelo" address="Rua da Condessa de Valença" lat="38.64351973190569" lng="-8.216521812152905" type="monumento" /><marker name="Anta 1 de Tourais" address="Estrada Nacional 114" lat="38.64260059929888" lng="-8.159376865959189" type="monumento" /><marker name="Hotel da Ameira" address="Herdade da Ameira" lat="38.64109640475479" lng="-8.180432206726096" type="hotel" /><marker name="Hotel Montemor" address="Avenida Gago Coutinho 8, 7050-248 Montemor-o-Novo" lat="38.64925541964039" lng="-8.216489625644726" type="hotel" /><marker name="Restaurante Monte Alentejano" address="Av. Gago Coutinho 8" lat="38.6492329" lng="-8.216665" type="restaurantes" /><marker name="Restaurante A Ribeira" address="Rua de São Domingos" lat="38.6347498199708" lng="-8.206468892765088" type="restaurantes" /><marker name="Núcleo Museológico do Convento de S. Domingos" address="" lat="38.643139" lng="-8.212732" type="museus" /><marker name="Centro Interpretativo do Castelo de Montemor-o-Novo" address="Rua Condessa de Valença" lat="38.64258748216167" lng="-8.21467108793263" type="museus" /></markers>';
+                    }
+                    var xml = xmlParse(xmlContent);
+                    var markers = xml.documentElement.getElementsByTagName("marker");
+                    for (var i = 0; i < markers.length; i++) {
+                        var name = markers[i].getAttribute("name");
+                        var address = markers[i].getAttribute("address");
+                        var type = markers[i].getAttribute("type");
+
+                        var point = new google.maps.LatLng(
+                                parseFloat(markers[i].getAttribute("lat")),
+                                parseFloat(markers[i].getAttribute("lng")));
+                        var html = "<b>" + name + "</b> <br/>" + address;
+                        var marker = createMarker(point, name, address, type, map);
+                        bindInfoWindow(marker, map, infoWindow, html);
+                    }
+                });
+            }
+
+            function createMarker(point, name, address, type, map) {
+                var icon = customIcons[type] || {};
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: point,
+                    icon: icon.icon,
+                    shadow: icon.shadow,
+                    type: type
+                });
+                if (!markerGroups[type]) markerGroups[type] = [];
+                markerGroups[type].push(marker);
+                var html = "<b>" + name + "</b> <br/>" + address;
+                bindInfoWindow(marker, map, infoWindow, html);
+                return marker;
+            }
+
+            function toggleGroup(type) {
+                for (var i = 0; i < markerGroups[type].length; i++) {
+                    var marker = markerGroups[type][i];
+                    if (!marker.getVisible()) {
+                        marker.setVisible(true);
+                    } else {
+                        marker.setVisible(false);
+                    }
                 }
             }
 
-            google.maps.event.addDomListener(window, 'load', initialize);
+            function bindInfoWindow(marker, map, infoWindow, html) {
+                google.maps.event.addListener(marker, 'click', function () {
+                    infoWindow.setContent(html);
+                    infoWindow.open(map, marker);
 
-            $('.legend .social').click(function () {
-                google.maps.event.trigger(markers[0], 'click');
-            });
+                });
+            }
 
-            console.log(markers);
+            function downloadUrl(url, callback) {
+                var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest();
 
-            $('#cb_social').change(function() {
-                if($(this).is(":checked")) {
-                    // we set locator for ITEM
-                    console.log('checked');
+                request.onreadystatechange = function () {
+                    if (request.readyState == 4) {
+                        request.onreadystatechange = doNothing;
+                        callback(request, request.status);
+                    }
+                };
 
-                } else {
-                    // we unset locator for ITEM
-                    console.log('unchecked');
-                }
-            });
+                request.open('GET', url, true);
+                request.send(null);
+            }
 
+            function doNothing() {}
+            google.maps.event.addDomListener(window, 'load', load);
         </script>
-        <div id="map" style="width: 100%; height: 400px;"></div>
     </div>
     <div class="content">
         <h2 class="global-subtitle">Telèfons de contacte</h2>

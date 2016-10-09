@@ -75,6 +75,17 @@
             &:hover{
               span{
                 font-weight: bold;
+                &.counter-filter{
+                  background-color: $pinklight;
+                }
+              }
+            }
+            &:active{
+              span{
+                font-weight: bold;
+                &.counter-filter{
+                  background-color: $pinkdark;
+                }
               }
             }
             span{
@@ -173,12 +184,12 @@
           }
           &.call{
             &:before {
-              content: "\e902";
+              content: "\e91c";
             }
             @include breakpoint($tablet) {
               .right {
                 &:before {
-                  content: "\e902";
+                  content: "\e91c";
                 }
               }
             }
@@ -338,7 +349,7 @@
               display: block;
               float: left;
               font-size: 20px;
-              line-height: 24px; 
+              line-height: 24px;
               color:$pink;
             }
             .icon-right{

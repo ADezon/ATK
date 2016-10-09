@@ -452,6 +452,12 @@
       position: relative;
       text-align: left;
       text-transform: uppercase;
+      &:hover{
+        background-color: $greymedium;
+      }
+      &:active{
+        background-color: $black;
+      }
       @include breakpoint($tablet) {
         font-size: 12px;
         padding: 8px 5px;

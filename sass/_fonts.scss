@@ -24,7 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.icon-hands:before {
+  content: "\e919";
+}
+.icon-headphones:before {
+  content: "\e91c";
+}
 .icon-landphone:before {
   content: "\e918";
 }
