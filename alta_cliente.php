@@ -24,35 +24,34 @@
         </div>
 
 
-        <fieldset class="box-client-name">
+        <fieldset class="box-client-name small-fieldset first">
           <span class="title-field">Nom *</span>
           <input name="number-client" type="text" class="field-error" />
           <span class="message-error-field">Aquest camp és obligatori</span>
         </fieldset>
 
-        <fieldset class="box-client-surname">
+        <fieldset class="box-client-surname big-fieldset last">
           <span class="title-field">Cognoms *</span>
           <input name="number-client" type="text" class="field-error" />
           <span class="message-error-field">Aquest camp és obligatori</span>
         </fieldset>
 
-        <fieldset class="box-client-phone">
+        <fieldset class="box-client-phone small-fieldset first">
           <span class="title-field">Telèfon *</span>
           <input name="client-email" type="text"/>
         </fieldset>
 
-        <fieldset class="box-client-email">
+        <fieldset class="box-client-email big-fieldset last">
           <span class="title-field">Correu electrònic *</span>
           <input name="client-email" type="text"/>
         </fieldset>
 
-        <fieldset class="box-client-type">
-          <span class="title-field">Tipus de client</span>
+        <fieldset class="box-client-type small-fieldset first">
+          <span class="title-field">Tipus de client *</span>
           <select name="client-type">
             <option  value="zero" selected>Lorem ipsum</option>
             <option value="one">One</option>
             <option value="two">Two</option>
-
           </select>
         </fieldset>
 
@@ -65,7 +64,7 @@
           <label for="cb_conditions"></label>
           <span>Accepto les <a href="#">condicions legals</a></span>
         </div>
-        <input value="Enregistrar" class="register-send button-pink" type="submit" />
+        <input value="Enviar" class="alta-client-send button-pink" type="submit" />
       </form>
     </div>
 

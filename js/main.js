@@ -6,6 +6,7 @@ $(document).ready(function() {
 //
 // 1. MEGAMENU
 // 2. ENQUIRE (RESPONSIVE)
+// 3. TOOLTIPSTER
 //
 
     //

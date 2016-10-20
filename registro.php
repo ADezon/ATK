@@ -1,7 +1,10 @@
 <?php include 'includes/header.php'; ?>
 
+<!--IMPORTANT:: REQUIRES LOAD jquery.tooltipster.min.js BEFORE register.js -->
+<!--AND   tooltipster.css-->
+<!--SEE: header.php TO guess ORDER of LOADING -->
 
-<!--BEGIN SPECIFIC PAGE ON SOM-->
+<!--BEGIN SPECIFIC PAGE REGISTER-->
 <div class="basic-page cont-wrapper">
   <div class="content">
 
@@ -56,12 +59,24 @@
         <fieldset class="box-number-invoice">
           <span class="title-field">Número de factura: STA-201608- *</span>
           <input name="number-invoice" type="text"/>
+
+          <div id="tooltip-number-invoice" class="tooltip-wrapper">
+            <img src="/images/question.png" />
+            <span class="icons icon-question"></span>
+          </div>
+
         </fieldset>
         <fieldset class="box-two-digit">
           <span class="title-field">2 últims dígits del compte bancari *</span>
           <input name="two-digit" type="text"/>
+          <div id="tooltip-two-digits" class="tooltip-wrapper">
+            <img src="/images/question.png" />
+            <span class="icons icon-question"></span>
+          </div>
+
         </fieldset>
         <div class="captcha">
+          <img src="/images/captcha.png">
           <!-- Insert recaptcha. https://www.google.com/recaptcha/intro/index.html -->
         </div>
         <div class="checkboxCSS">

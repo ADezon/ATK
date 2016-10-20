@@ -1,4 +1,5 @@
 .cont-wrapper {
+  //PAGE REGISTER USER
   form#register-form{
     position: relative;
     display: block;
@@ -50,13 +51,21 @@
         position: relative;
         display: block;
         clear: both;
-        width: 100%;
+        width: 90%;
+        float: left;
         background-color: $greysoft;
         border: 1px solid $greysoft;
         margin: 8px 0;
         &.field-error{
           border: 1px solid $pink;
         }
+      }
+
+      .tooltip-wrapper {
+        float: left;
+        cursor: pointer;
+        margin-top: 15px;
+        margin-left: 10px;
       }
       .message-error-field{
         position: relative;
@@ -100,11 +109,9 @@
         a{
           font-size: 13px;
           line-height: 18px;
-          color: $pink;
-          &:hover{
-            font-weight: bold;
-            text-decoration: underline;
-          }
+          color: $gris3;
+          font-weight: bold;
+          text-decoration: underline;
         }
       }
     }
@@ -126,7 +133,7 @@
     position: relative;
     display: block;
     overflow: hidden;
-    margin: 20px 0 0 50px;
+    margin: 20px 0 40px 0;
     h2{
       position: relative;
       display: block;
@@ -141,25 +148,268 @@
         position: relative;
         display: block;
         clear: both;
-        margin-bottom: 50px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        @include breakpoint($mobile) {
+         margin-bottom: 40px;
+        }
         span{
           position: relative;
           display: block;
           font-size: 21px;
-          line-height: 26px;
+          text-align: left;
+          float: left;
+          width: 68%;
+          line-height: 25px;
           color: $greydark;
-          text-align: center;
+          @include breakpoint($mobile) {
+            float: none;
+            clear: both;
+            width: 100%;
+            text-align: center;
+          }
           &.icons{
             position: relative;
             display: block;
             font-size: 50px;
             line-height: 55px;
             color: $pink;
+            float: left;
+            width: 30%;
             text-align: center;
+            margin-right: 2%;
             margin-bottom: 10px;
+            @include breakpoint($mobile) {
+              float: none;
+              clear: both;
+              width: 100%;
+              text-align: center;
+            }
           }
         }
       }
     }
+  }
+
+  //PAGE REGISTER CLIENT
+  form#alta-client-form{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 20px 0 40px 0;
+    .message-error{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      background-color: #fce5f1;
+      padding: 15px;
+      margin-bottom: 20px;
+      p{
+        position: relative;
+        display: block;
+        color: $pink;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    fieldset{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      float: left;
+      margin-bottom: 20px;
+      padding: 0 15px;
+      box-sizing: border-box;
+      &.first{
+        padding-left:0;
+      }
+      &.last{
+        padding-right:0;
+      }
+      &.big-fieldset{
+        width: 60%;
+        @include breakpoint($tablet) {
+          width: 50%;
+          min-height: 100px;
+          &.odd{
+            padding-left: 0;
+            padding-right: 15px;
+          }
+          &.even{
+            padding-left: 15px;
+            padding-right: 0;
+          }
+        }
+        @include breakpoint($mobile) {
+          width: 100%;
+          min-height: auto;
+          padding: 0;
+          &.odd{
+            padding: 0;
+          }
+          &.even{
+            padding: 0;
+          }
+        }
+      }
+      &.small-fieldset{
+        width: 40%;
+        @include breakpoint($tablet) {
+          width: 50%;
+          min-height: 100px;
+          &.odd{
+            padding-left: 0;
+            padding-right: 15px;
+          }
+          &.even{
+            padding-left: 15px;
+            padding-right: 0;
+          }
+        }
+        @include breakpoint($mobile) {
+          width: 100%;
+          min-height: auto;
+          padding: 0;
+          &.odd{
+            padding: 0;
+          }
+          &.even{
+            padding: 0;
+          }
+        }
+      }
+      &.box-message{
+        position: relative;
+        display: block;
+        clear: both;
+        width: 100%;
+        min-height: 135px;
+        margin: 0;
+        padding: 0;
+      }
+      .title-field{
+        position: relative;
+        display: block;
+        clear: both;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+        color: $gris3;
+      }
+      input[type=text]{
+        position: relative;
+        display: block;
+        clear: both;
+        width: 100%;
+        margin: 8px 0;
+        background-color: $greysoft;
+        border: 1px solid $greysoft;
+        &.field-error{
+          border: 1px solid $pink;
+        }
+      }
+      select{
+        position: relative;
+        display: block;
+        clear: both;
+        height: 36px;
+        width: 100%;
+        margin: 8px 0;
+        padding: 0 10px;
+        background-color: $white;
+        border: 1px solid $gris2;
+        &.field-error{
+          border: 1px solid $pink;
+        }
+      }
+      textarea{
+        position: relative;
+        display: block;
+        clear: both;
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        min-height: 135px;
+        color: $gris3;
+        background-color: $greysoft;
+        border: 1px solid $greysoft;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .message-error-field{
+        position: relative;
+        display: block;
+        clear: both;
+        font-size: 11px;
+        line-height: 16px;
+        color: $pink;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+    .info-form{
+      p{
+        position: relative;
+        display: block;
+        clear: both;
+        font-size: 11px;
+        line-height: 16px;
+        color: $gris3;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+    .captcha{
+      margin:20px 0;
+      position: relative;
+      display: block;
+      clear: both;
+    }
+    .checkboxCSS{
+      margin:20px 0;
+      position: relative;
+      display: block;
+      clear: both;
+      span{
+        font-size: 13px;
+        line-height: 18px;
+        color: $gris3;
+        a{
+          font-size: 13px;
+          line-height: 18px;
+          color: $gris3;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+    }
+    input[type=submit].alta-client-send{
+      margin:20px 0;
+      width: 111px;
+      float: left;
+      clear: both;
+      position: relative;
+      display: block;
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
+    }
+  }
+}
+.tooltipster-default{
+  border-radius: 5px;
+  border: 2px solid $fadepinkright;
+  background: $fadepinkright;
+  color: $fadepinkright;
+}
+.tooltipster-content {
+  background-color: white;
+  color: $pink;
+
+  a {
+    color: $pinkdark;
   }
 }

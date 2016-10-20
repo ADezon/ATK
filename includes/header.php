@@ -8,14 +8,16 @@
 
   <!--BEGIN STYLES-->
   <!--************************************-->
+  <!--BEGIN INYECTED AS REQUIRED-->
+  <link rel="stylesheet" type="text/css" href="./js/flexslider/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="./js/tooltipster/css/tooltipster.css">
+  <!--END INYECTED AS REQUIRED-->
+
   <!--BEGIN GLOBAL-->
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/at-styles.css">
   <!--BEGIN GLOBAL-->
 
-  <!--BEGIN INYECTED AS REQUIRED-->
-  <link rel="stylesheet" type="text/css" href="./js/flexslider/flexslider.css">
-  <!--END INYECTED AS REQUIRED-->
   <!--END STYLES-->
 
 
@@ -29,6 +31,8 @@
   <!--THIS IS A PRIVATE-PERSONAL API KEY. YOU MUST PROVIDE THE CORRECT ONE-->
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
   <script src="./js/enquire.min.js"></script>
+  <script src="./js/tooltipster/js/jquery.tooltipster.min.js"></script>
+  <script src="./js/register.js"></script>
   <script src="./js/main.js"></script>
   <script>
     var timering = 7000;
@@ -44,17 +48,6 @@
 
   <!--END SCRIPTS -->
 
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    #map {
-      height: 400px;
-    }
-  </style>
-  
   <title>Title (VAR TITLE from plattform)</title>
 </head>
 <body>
