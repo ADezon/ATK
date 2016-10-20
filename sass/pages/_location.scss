@@ -1,0 +1,55 @@
+.cont-wrapper{
+  .map-container{
+    #map{
+      .info-wrapper{
+        position: relative;
+        width: 350px;
+        display: block;
+        overflow: hidden;
+        .infowindow-image{
+          position: relative;
+          display: block;
+          float: left;
+          width: 93px;
+          margin-right: 20px;
+        }
+        .infowindow-infocontainer{
+          position: relative;
+          display: block;
+          float: left;
+          width: 220px;
+          a{
+            position: relative;
+            display: block;
+            clear: both;
+            font-size: 18px;
+            line-height: 22px;
+            color:$pink;
+            margin-bottom: 15px;
+            text-decoration: none;
+          }
+          label{
+            position: relative;
+            display: block;
+            clear: both;
+            font-size: 11px;
+            line-height: 16px;
+            color:$black;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+          }
+          .horaris-infowindow{
+            position: relative;
+            display: block;
+            clear: both;
+            font-size: 12px;
+            line-height: 19px;
+            color:$greymedium;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+.cont-wrapper {
+  form#register-form{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 20px 20% 40px 0;
+    @include breakpoint($tablet) {
+      margin: 20px 0 40px 0;
+    }
+    h3{
+      font-size: 18px;
+      line-height: 22px;
+    }
+    .message-error{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      background-color: #fce5f1;
+      padding: 15px;
+      margin-bottom: 20px;
+      p{
+        position: relative;
+        display: block;
+        color: $pink;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    fieldset{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      clear:none;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      .title-field{
+        position: relative;
+        display: block;
+        clear: both;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+        color: $gris3;
+      }
+      input[type=text]{
+        position: relative;
+        display: block;
+        clear: both;
+        width: 100%;
+        background-color: $greysoft;
+        border: 1px solid $greysoft;
+        margin: 8px 0;
+        &.field-error{
+          border: 1px solid $pink;
+        }
+      }
+      .message-error-field{
+        position: relative;
+        display: block;
+        clear: both;
+        font-size: 11px;
+        line-height: 16px;
+        color: $pink;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+    .info-form{
+      p{
+        position: relative;
+        display: block;
+        clear: both;
+        font-size: 11px;
+        line-height: 16px;
+        color: $gris3;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+    .captcha{
+      margin:20px 0;
+      position: relative;
+      display: block;
+      clear: both;
+    }
+    .checkboxCSS{
+      margin:10px 0;
+      position: relative;
+      display: block;
+      float: left;
+      padding-right: 20px;
+      span{
+        font-size: 13px;
+        line-height: 18px;
+        color: $gris3;
+        a{
+          font-size: 13px;
+          line-height: 18px;
+          color: $pink;
+          &:hover{
+            font-weight: bold;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    input[type=submit].register-send{
+      margin:20px 0;
+      width: 200px;
+      float: left;
+      clear: both;
+      position: relative;
+      display: block;
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
+    }
+  }
+  .info-banner-vertical{
+    background-color: $greysoft;
+    padding: 30px 60px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 20px 0 0 50px;
+    h2{
+      position: relative;
+      display: block;
+      font-size: 30px;
+      line-height: 35px;
+      color: $greydark;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    ul{
+      li{
+        position: relative;
+        display: block;
+        clear: both;
+        margin-bottom: 50px;
+        span{
+          position: relative;
+          display: block;
+          font-size: 21px;
+          line-height: 26px;
+          color: $greydark;
+          text-align: center;
+          &.icons{
+            position: relative;
+            display: block;
+            font-size: 50px;
+            line-height: 55px;
+            color: $pink;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

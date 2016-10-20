@@ -2,7 +2,6 @@
 
   .slides {
     li {
-      max-height: 488px;
       overflow: hidden;
       position: relative;
       @include breakpoint($intermedio) {

@@ -519,3 +519,69 @@
 .cc-floating.cc-theme-edgeless .cc-btn + .cc-btn {
   margin-left: 0
 }
+
+.cont-wrapper{
+  .content{
+    .reclaim {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 20px 0;
+      background-color: $pink_superlight;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 30px 36px;
+      @include breakpoint($mobile) {
+        padding: 30px 15px;
+      }
+      .icon-reclaim{
+        position: relative;
+        display: block;
+        float: left;
+        padding-right: 20px;
+        @include breakpoint($tablet) {
+          width: 20%;
+        }
+        .icons{
+          font-size: 50px;
+          line-height: 55px;
+          color: $pink;
+          @include breakpoint($mobile) {
+            font-size: 25px;
+            line-height: 30px;
+          }
+        }
+      }
+      .text-reclaim{
+        position: relative;
+        display: block;
+        float: left;
+        @include breakpoint($tablet) {
+          width: 80%;
+        }
+        h2 {
+          color: $greymedium;
+          font-size: 22px;
+          line-height: 22px;
+          font-weight: bold;
+          @include breakpoint($mobile) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+
+        a {
+          color: $rosa2;
+          text-decoration: underline;
+          font-size: 16px;
+          line-height: 28px;
+          font-weight: bold;
+          @include breakpoint($mobile) {
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
