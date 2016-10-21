@@ -24,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-question:before {
+  content: "\e91d";
+}
+
 .icon-hands:before {
   content: "\e919";
 }

@@ -13,8 +13,7 @@
         </div>
     </div>
     <div class="map-container">
-        <div class="legend">
-
+        <form class="legend">
             <ul>
                 <li>
                     <div class="checkboxCSS">
@@ -45,7 +44,7 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </form>
 
         <div id="map" style="width: 100%; height: 400px;"></div>
 

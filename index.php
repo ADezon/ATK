@@ -1,5 +1,6 @@
-<?php include 'includes/header.php'; ?>
-
+<!-- -->
+<?php include 'includes/header_loged.php'; ?>
+<!-- -->
         
 <!--BEGIN BIG BANNER-->
 <!--requires     <link rel="stylesheet" type="text/css" href="js/flexslider/flexslider.css">-->

@@ -1,0 +1,97 @@
+//PAGINATOR DESKTOP
+.results-paginator{
+  color: $greymedium;
+  display: block;
+  float: right;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  text-align: right;
+  @include breakpoint($tablet) {
+    display: none;
+  }
+  li{
+    display: block;
+    float: left;
+    position: relative;
+    &.active {
+      a{
+        border: 1px solid $pink;
+        border-radius: 50%;
+        display: block;
+        font-weight: bold;
+        position: relative;
+      }
+    }
+    .icons{
+      color:$pink;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    a{
+      color:$greymedium;
+      display: block;
+      font-size: 14px;
+      height: 22px;
+      line-height: 22px;
+      margin: 2px 5px;
+      padding: 0;
+      position: relative;
+      text-align: center;
+      width: 22px;
+      &:hover{
+        border: 1px solid $pink;
+        border-radius: 50%;
+        display: block;
+        font-weight: bold;
+        position: relative;
+      }
+    }
+  }
+}
+
+//PAGINATOR MOBILE
+.results-paginator-mobile{
+  background-color: $grey;
+  color: $greydark;
+  display: none;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  @include breakpoint($tablet) {
+    display: block;
+  }
+  li{
+    display: block;
+    float: left;
+    position: relative;
+    width:10%;
+    &.number-page{
+      display: block;
+      float: left;
+      position: relative;
+      width: 80%;
+    }
+    .icon-left{
+      color:$pink;
+      display: block;
+      float: left;
+      font-size: 20px;
+      line-height: 24px;
+      position: relative;
+    }
+    .icon-right{
+      color:$pink;
+      display: block;
+      float: right;
+      font-size: 20px;
+      line-height: 24px;
+      position: relative;
+    }
+  }
+}

@@ -267,101 +267,6 @@
             }
           }
         }
-        .results-paginator{
-          position: relative;
-          display: block;
-          clear: both;
-          float: right;
-          text-align: right;
-          font-size: 14px;
-          line-height: 18px;
-          color: $greymedium;
-          @include breakpoint($tablet) {
-            display: none;
-          }
-          li{
-            position: relative;
-            display: block;
-            float: left;
-            &.active {
-              a{
-                border: 1px solid $pink;
-                border-radius: 50%;
-                position: relative;
-                display: block;
-                font-weight: bold;
-              }
-            }
-            .icons{
-              font-size: 14px;
-              line-height: 18px;
-              color:$pink;
-            }
-            a{
-              text-align: center;
-              padding: 0;
-              position: relative;
-              display: block;
-              font-size: 14px;
-              line-height: 22px;
-              width: 22px;
-              height: 22px;
-              margin: 2px 5px;
-              color:$greymedium;
-              &:hover{
-                border: 1px solid $pink;
-                border-radius: 50%;
-                position: relative;
-                font-weight: bold;
-                display: block;
-              }
-            }
-          }
-        }
-        .results-paginator-mobile{
-          position: relative;
-          overflow: hidden;
-          display: none;
-          background-color: $grey;
-          color: $greydark;
-          text-align: center;
-          font-size: 14px;
-          line-height: 18px;
-          font-weight: bold;
-          padding: 15px;
-          margin-top: 20px;
-          @include breakpoint($tablet) {
-            display: block;
-          }
-          li{
-            position: relative;
-            display: block;
-            float: left;
-            width:10%;
-            &.number-page{
-              position: relative;
-              display: block;
-              float: left;
-              width: 80%;
-            }
-            .icon-left{
-              position: relative;
-              display: block;
-              float: left;
-              font-size: 20px;
-              line-height: 24px;
-              color:$pink;
-            }
-            .icon-right{
-              position: relative;
-              display: block;
-              float: right;
-              font-size: 20px;
-              line-height: 24px;
-              color:$pink;
-            }
-          }
-        }
       }
     }
   }
@@ -445,9 +350,10 @@
          }
        }
        input.search-value-input{
-         clear:both;
+         clear: both;
          display: block;
          margin-bottom: 5px;
+         margin-top: 0;
          position: relative;
          @include breakpoint($tablet) {
            clear: both;
@@ -460,7 +366,9 @@
        }
        .checkboxCSS{
          display: block;
-         float:left;
+         float: left;
+         clear: none;
+         margin: 0;
          padding-right: 10px;
          position: relative;
          @include breakpoint($tablet) {

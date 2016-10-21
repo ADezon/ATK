@@ -33,6 +33,7 @@
   <script src="./js/enquire.min.js"></script>
   <script src="./js/tooltipster/js/jquery.tooltipster.min.js"></script>
   <script src="./js/register.js"></script>
+  <script src="./js/dinamiclogin.js"></script>
   <script src="./js/main.js"></script>
   <script>
     var timering = 7000;
@@ -128,7 +129,7 @@
           <span class="icons icon-alerts"></span>
           <span class="counter-alerts">99</span>
         </a>
-        <a class="button-login-client" href="#" title=""><span class="icons icon-client"></span><span>ACCÉS CLIENT</span></a>
+        <div class="button-login-client" href="#" title=""><span class="icons icon-client"></span><span>ACCÉS CLIENT</span></div>
       </div>
     </div>
   </div>
@@ -152,6 +153,10 @@
         </fieldset>
         <input value="Entrar" class="login-send button-pink" type="submit" />
       </form>
+      <div class="goto-register">
+        <span>No ets client d’Andorra Telecom?</span>
+        <a href="#">Enregistra’t</a>
+      </div>
     </div>
   </div>
 
@@ -401,10 +406,10 @@
           </div>
         </li>
       </ul>
-      <a class="button-client-area">
+      <div class="button-client-area">
         <span class="icons icon-client"></span>
         <span>Área client</span>
-      </a>
+      </div>
     </div>
   </div>
   <!--END REGION NAV PRIVATE-->

@@ -93,4 +93,30 @@ $(document).ready(function() {
     // END ENQUIRE (RESPONSIVE)
     //
 
+
+    // LOGIN
+    $(function() {
+        var button = $('.button-client-area');
+        var buttonMobile = $('.button-login-client');
+        var box = $('.container-client-area');
+        button.mouseup(function(login) {
+            box.toggle();
+            button.toggleClass('active');
+            buttonMobile.toggleClass('active');
+            box.toggleClass('active');
+        });
+    });
+
+    // LOGIN MOBILE
+    $(function() {
+        var button = $('.button-client-area');
+        var buttonMobile = $('.button-login-client');
+        var box = $('.container-client-area');
+        buttonMobile.mouseup(function(loginMobile) {
+            box.toggle();
+            buttonMobile.toggleClass('active');
+            button.toggleClass('active');
+            box.toggleClass('active');
+        });
+    });
 });

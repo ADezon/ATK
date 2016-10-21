@@ -18,7 +18,7 @@
         </div>
         <div class="search-value-form right">
           <form>
-              <div class="left">
+              <fieldset class="left">
                   <input class="search-value-input" type="text" name="search" placeholder="Cercar">
                   <div class="checkboxCSS">
                       <input type="checkbox" value="empresa" id="cb_empresa" name="check" />
@@ -30,10 +30,10 @@
                       <label for="cb_particular"></label>
                       <span>Particular</span>
                   </div>
-              </div>
-              <div class="right">
+              </fieldset>
+              <fieldset class="right">
                   <input value="Enviar" class="search-value-send button-pink" type="submit" />
-              </div>
+              </fieldset>
           </form>
         </div>
     </div>

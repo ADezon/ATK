@@ -61,7 +61,6 @@
           <input name="number-invoice" type="text"/>
 
           <div id="tooltip-number-invoice" class="tooltip-wrapper">
-            <img src="/images/question.png" />
             <span class="icons icon-question"></span>
           </div>
 
@@ -70,7 +69,6 @@
           <span class="title-field">2 últims dígits del compte bancari *</span>
           <input name="two-digit" type="text"/>
           <div id="tooltip-two-digits" class="tooltip-wrapper">
-            <img src="/images/question.png" />
             <span class="icons icon-question"></span>
           </div>
 
