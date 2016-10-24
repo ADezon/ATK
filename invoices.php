@@ -374,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="button-pink">DESCARREGA SELECCIONATS</a>
+                <a href="https://ftp.drupal.org/files/projects/download-7.x-2.5.zip" class="button-pink">DESCARREGA SELECCIONATS</a>
                 <ul class="results-paginator">
                     <li><a href="#"><span class="icons icon-left"></span></a></li>
                     <li class="active"><a href="#">1</a></li>

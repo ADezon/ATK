@@ -1,6 +1,6 @@
 .cont-wrapper {
   //PAGE REGISTER USER
-  form#register-form{
+  form#register-form {
     display: block;
     margin: 20px 20% 40px 0;
     overflow: hidden;
@@ -30,20 +30,20 @@
         }
       }
     }
-    .checkboxCSS{
+    .checkboxCSS {
       clear: none;
       float: left;
       margin:10px 0;
       padding-right: 20px;
     }
-    input[type=submit].register-send{
+    input[type=submit].register-send {
       width: 200px;
       @include breakpoint($mobile) {
         width: 100%;
       }
     }
   }
-  .info-banner-vertical{
+  .info-banner-vertical {
     background-color: $greysoft;
     display: block;
     margin: 20px 0 40px 0;
@@ -59,8 +59,8 @@
       position: relative;
       text-align: center;
     }
-    ul{
-      li{
+    ul {
+      li {
         clear: both;
         display: block;
         margin-bottom: 20px;
@@ -69,7 +69,7 @@
         @include breakpoint($mobile) {
          margin-bottom: 40px;
         }
-        span{
+        span {
           color: $greydark;
           display: block;
           float: left;
@@ -84,7 +84,7 @@
             text-align: center;
             width: 100%;
           }
-          &.icons{
+          &.icons {
             color: $pink;
             display: block;
             float: left;
@@ -108,24 +108,31 @@
   }
 
   //PAGE REGISTER CLIENT
-  form#alta-client-form{
+  form#alta-client-form {
     display: block;
     margin: 20px 0 40px 0;
     overflow: hidden;
     position: relative;
-    fieldset{
-      &.big-fieldset{
+    fieldset {
+      &.big-fieldset {
         width: 60%;
       }
-      &.small-fieldset{
+      &.small-fieldset {
         width: 40%;
       }
     }
-    input[type=submit].alta-client-send{
+    input[type=submit].alta-client-send {
       width: 111px;
       @include breakpoint($mobile) {
         width: 100%;
       }
     }
+  }
+
+
+  #invoice-wrapper,
+  #mobil-wrapper,
+  #register-info-wrapper {
+    display: none;
   }
 }

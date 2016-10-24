@@ -56,7 +56,7 @@
         </fieldset>
 
         <div class="captcha">
-          <img src="/images/captcha.png">
+          <img src="./images/captcha.png">
           <!-- Insert recaptcha. https://www.google.com/recaptcha/intro/index.html -->
         </div>
         <div class="checkboxCSS">
