@@ -66,15 +66,27 @@
 
         <div id="mobil-wrapper">
           <fieldset class="box-number-client">
-            <span class="title-field">Número</span>
+            <span class="title-field">Número de telèfon mòbil +(376)</span>
             <input name="number-client" type="text" class=""/>
 <!--            class="field-error" make outlined border-->
 <!--            <span class="message-error-field">Aquest camp és obligatori</span>-->
           </fieldset>
+
+          <fieldset class="box-id-client">
+            <span class="title-field">Passaport, DNI o permís de residència</span>
+            <input name="dni-id-client" type="text" class=""/>
+            <!--            class="field-error" make outlined border-->
+            <!--            <span class="message-error-field">Aquest camp és obligatori</span>-->
+          </fieldset>
         </div>
-
-
+        
         <div id="invoice-wrapper">
+
+          <fieldset class="box-number-client">
+            <span class="title-field">Número de client</span>
+            <input name="number-invoice" type="text"/>
+          </fieldset>
+
           <fieldset class="box-number-invoice">
             <span class="title-field">Número de factura: STA-201608-</span>
             <input name="number-invoice" type="text"/>
