@@ -588,6 +588,88 @@
         }
       }
     }
+    .request-successfully{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 20px 0;
+      width: 100%;
+      box-sizing: border-box;
+      .icon-request{
+        position: relative;
+        display: block;
+        float: left;
+        border: 2px solid #71b12a;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        @include breakpoint($tablet) {
+          width: 20%;
+        }
+        .icons{
+          font-size: 12px;
+          line-height: 35px;
+          color: #71b12a;
+          text-align: center;
+        }
+      }
+      .text-request{
+        position: relative;
+        display: block;
+        float: left;
+        font-size: 18px;
+        line-height: 35px;
+        padding-left: 20px;
+        font-weight: bold;
+        color: $black;
+        margin: 0;
+        @include breakpoint($tablet) {
+          width: 80%;
+        }
+      }
+    }
+    .title-w-icon{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 20px 0;
+      width: 100%;
+      box-sizing: border-box;
+      .icon-title{
+        position: relative;
+        display: block;
+        float: left;
+        text-align: center;
+        .icons{
+          font-size: 40px;
+          line-height: 40px;
+          color: $pink;
+          text-align: center;
+        }
+      }
+      .text-title{
+        position: relative;
+        display: block;
+        float: left;
+        font-size: 18px;
+        line-height: 40px;
+        padding-left: 10px;
+        font-weight: bold;
+        color: $black;
+        margin: 0;
+      }
+      .text-subtitle{
+        position: relative;
+        display: block;
+        clear: both;
+        font-size: 18px;
+        line-height: 21px;
+        padding-left: 50px;
+        color: $greymedium;
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -741,6 +823,104 @@
     }
   }
 
+}
 
+// Flotantes LOGIN (pop-up)
+.general-alert-wrapper {
+  background: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  opacity: 0; // 0
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all .15s ease-in; // CHANGE OPACITY to "1" in order to TEST
+  visibility: hidden; // hidden
+  width: 100%;
+  z-index: 25; // CHANGE VISIBILITY to "visible" in order to TEST
+
+  .content-general-wrapper {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(27, 36, 50, .15);
+    margin: 8% auto;
+    position: relative;
+    width: 360px;
+    z-index: 10;
+    @include breakpoint($tablet) {
+      width: 80%;
+    }
+    @include breakpoint($mobile) {
+      width: 90%;
+    }
+
+    &:target {
+      animation: .6s both action;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .alert-general-close {
+      box-sizing: border-box;
+      color: $pink;
+      cursor: pointer;
+      clear: both;
+      position: relative;
+      text-align: right;
+      width: 100%;
+      display: block;
+      overflow: hidden;
+      padding: 22px 20px 0;
+      .icons {
+        color: $pink;
+        display: block;
+        float: right;
+        font-size: 30px;
+        font-weight: normal;
+        position: relative;
+        text-align: center;
+      }
+    }
+
+    .alert-general-title {
+      box-sizing: border-box;
+      color: $black;
+      font-size: 21px;
+      font-weight: bold;
+      line-height: 36px;
+      overflow: hidden;
+      padding: 0 20px;
+      width: 100%;
+      @include breakpoint($tablet) {
+        font-size: 16px;
+        line-height: 21px;
+      }
+      .icons {
+        color: $pink;
+        display: block;
+        float: left;
+        font-size: 36px;
+        font-weight: normal;
+        line-height: 36px;
+        margin-right: 10px;
+        position: relative;
+        text-align: center;
+      }
+    }
+    .alert-general-body {
+      clear: both;
+      color: $pink;
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 32px;
+      padding: 10px 25px 100px 25px;
+      @include breakpoint($tablet) {
+        font-size: 14px;
+        line-height: 28px;
+      }
+    }
+  }
 
 }

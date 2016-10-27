@@ -13,12 +13,8 @@
     <h1 class="main-title">Registre d’usuari</h1>
 
     <div class="field-body">
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque
-        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-        veritatis et quasi architecto
-        vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-        aspernatur.</p>
+      <p>Si ets clients d’Andorra Telecom i encara no estàs registrat, no saps què t’estàs perdent.
+        Registra’t en menys d’un minut i gaudeix de tots els avantatges i possibilitats que t’oferim a la nostra web</p>
     </div>
 
     <div class="reclaim">
@@ -26,7 +22,7 @@
         <span class="icons icon-client"></span>
       </div>
       <div class="text-reclaim">
-        <h2>Encara no ets client D’Andorra Telecom?</h2>
+        <h2>Encara no ets client d’Andorra Telecom?</h2>
         <a href="#">Fes-te client</a>
       </div>
     </div>
@@ -79,7 +75,7 @@
             <!--            <span class="message-error-field">Aquest camp és obligatori</span>-->
           </fieldset>
         </div>
-        
+
         <div id="invoice-wrapper">
 
           <fieldset class="box-number-client">
@@ -115,14 +111,14 @@
             <label for="cb_conditions"></label>
             <span>Accepto les <a href="#">condicions legals</a></span>
           </div>
-          <input value="Enregistrar" class="register-send button-pink" type="submit"/>
+          <input value="Registrar" class="register-send button-pink" type="submit"/>
         </div>
 
       </form>
     </div>
     <div class="half-page">
       <div class="info-banner-vertical">
-        <h2>Raons per registrar-te a l'àrea clients</h2>
+        <h2>Avantatges de registrar-te</h2>
         <ul>
           <li>
             <div class="element-signup"><span
@@ -131,7 +127,7 @@
           </li>
           <li>
             <div class="element-signup"><span
-                class="icons icon-offer"></span><span>Disfruta ofertes exclusives</span>
+                class="icons icon-offer"></span><span>Gaudeix d’ofertes exclusives per a tu</span>
             </div>
           </li>
           <li>
@@ -141,7 +137,7 @@
           </li>
           <li class="last">
             <div class="element-signup"><span
-                class="icons icon-alerts"></span><span>Crea i edita els teus alertes</span>
+                class="icons icon-alerts"></span><span>Gestiona i modifica els teus productes contractats</span>
             </div>
           </li>
         </ul>

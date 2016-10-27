@@ -220,7 +220,7 @@
 <!-- BEGIN REGION SIGNUP-->
 <div id="region-signup" class="cont-wrapper">
     <div class="content content-big">
-        <h2>Raons per registrar-te a l'àrea clients</h2>
+        <h2>Avantatges de registrar-te a l’àrea clients:</h2>
         <a class="button-pink" href="#" title="">Registra't ara</a>
         <ul>
             <li>
@@ -229,7 +229,7 @@
             </li>
             <li>
                 <div class="element-signup"><span
-                        class="icons icon-offer"></span><span>Disfruta ofertes exclusives</span></div>
+                        class="icons icon-offer"></span><span>Gaudeix d’ofertes exclusives</span></div>
             </li>
             <li>
                 <div class="element-signup"><span class="icons icon-data"></span><span>Modifica les teves dades</span>
@@ -237,7 +237,7 @@
             </li>
             <li class="last">
                 <div class="element-signup"><span
-                        class="icons icon-alerts"></span><span>Crea i edita els teus alertes</span></div>
+                        class="icons icon-alerts"></span><span>Gestiona els productes contractats</span></div>
             </li>
         </ul>
     </div>

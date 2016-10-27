@@ -6,42 +6,39 @@
   <div id="footer-links" class="cont-wrapper">
     <div class="content">
       <div class="column-footer">
-        <h3>Coneix-nos</h3>
+        <h3>Coneix Andorra Telecom</h3>
         <ul>
           <li>
-            <a href="#" title="">La corporació</a>
+            <a href="#" title="">Qui som</a>
           </li>
           <li>
-            <a href="#" title="">Sala de premsa</a>
+            <a href="#" title="">Innovació</a>
           </li>
           <li>
-            <a href="#" title="">Memòries</a>
+            <a href="#" title="">Esdeveniments</a>
           </li>
           <li>
-            <a href="#" title="">Portal Proveïdors</a>
+            <a href="#" title="">Acció social</a>
           </li>
           <li>
-            <a href="#" title="">Contractacions Proveïdors/Tercers</a>
-          </li>
-          <li>
-            <a href="#" title="">Configurador de Tarifes</a>
+            <a href="#" title="">Notícies</a>
           </li>
         </ul>
       </div>
       <div class="column-footer">
-        <h3>Contacte</h3>
+        <h3>On trobar-nos</h3>
         <ul>
           <li>
-            <a href="#" title="">Localitzador de punts d’atenció</a>
+            <a href="#" title="">On som</a>
           </li>
           <li>
-            <a href="#" title="">Telèfons d’atenció al client</a>
+            <a href="#" title="">Contacte</a>
           </li>
           <li>
-            <a href="#" title="">Formulari de contacte</a>
+            <a href="#" title="">Petició de Reclamació</a>
           </li>
           <li>
-            <a href="#" title="">Formulari de reclamació</a>
+            <a href="#" title="">Petició de Reclamació</a>
           </li>
         </ul>
       </div>
@@ -52,16 +49,10 @@
             <a href="#" title="">FAQ’S</a>
           </li>
           <li>
-            <a href="#" title="">Política de Privacitat</a>
+            <a href="#" title="">Condicions Particulars</a>
           </li>
           <li>
-            <a href="#" title="">Política de cookies</a>
-          </li>
-          <li>
-            <a href="#" title="">Avís legal</a>
-          </li>
-          <li>
-            <a href="#" title="">Mapa web</a>
+            <a href="#" title="">Legislació Aplicable</a>
           </li>
         </ul>
       </div>
@@ -101,13 +92,13 @@
       </div>
       <ul>
         <li>
-          <a href="#" title="">Política de cookies</a>
+          <a href="#" title="">Política de Privacitat</a>
         </li>
         <li>
-          <a href="#" title="">Protecció de dades</a>
+          <a href="#" title="">Política de Galetes</a>
         </li>
         <li>
-          <a href="#" title="">Avis legal</a>
+          <a href="#" title="">Avís legal</a>
         </li>
         <li>
           <a href="#" title="">Mapa web</a>

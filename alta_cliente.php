@@ -10,9 +10,7 @@
     <h1 class="main-title">Vull ser client</h1>
 
     <div class="field-body">
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-        vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+      <p>Si vols ser client d’Andorra Telecom t’ho posem fàcil. Omple el següent formulari i comença a gaudir dels serveis que tenim preparats per a tu!</p>
     </div>
 
 

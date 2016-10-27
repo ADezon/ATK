@@ -9,7 +9,8 @@
         <h1 class="main-title">Contacta amb nosaltres</h1>
 
         <div class="field-body">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+            <p>Tens algun dubte, proposta o suggeriment que vulguis fer-nos arribar?
+                No t’ho pensis dues vegades! Omple el següent formulari, amb la teva consulta, i et donarem resposta al més aviat possible.</p>
         </div>
 
         <form id="contact-form">
@@ -42,6 +43,7 @@
                 <p>* Camps obligatoris</p>
             </div>
             <div class="captcha">
+                <img src="./images/captcha.png">
                 <!-- Insert recaptcha. https://www.google.com/recaptcha/intro/index.html -->
             </div>
             <div class="checkboxCSS">
@@ -57,17 +59,17 @@
             <div class="more-contacts-element">
                 <span class="more-contacts-icon"><span class="icons icon-mobile"></span></span>
                 <span class="more-contacts-title">Truca’ns sense cost</span>
-                <span class="more-contacts-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+                <span class="more-contacts-description">Truca’ns als 115, o al +376301115, si truques des de l’estranger</span>
             </div>
             <div class="more-contacts-element">
                 <span class="more-contacts-icon"><span class="icons icon-hands"></span></span>
                 <span class="more-contacts-title">Vine'ns a veure</span>
-                <span class="more-contacts-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+                <span class="more-contacts-description">Vine a l’agència comercial. Localitza la nostra <a href="">agència</a></span>
             </div>
             <div class="more-contacts-element last">
                 <span class="more-contacts-icon"><span class="icons icon-headphones"></span></span>
                 <span class="more-contacts-title">Et truquem nosaltres</span>
-                <span class="more-contacts-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+                <span class="more-contacts-description">Deixa’ns les teves dades i et truquem nosaltres per a resoldre qualsevol dubte que tinguis.</span>
             </div>
         </div>
     </div>

@@ -1,0 +1,176 @@
+// FORM TRAFFIC
+#traffic-config-form{
+  width: 65%;
+  @include breakpoint($tablet) {
+    width: 100%;
+  }
+  h4{
+    clear: both;
+  }
+  fieldset{
+    clear: both;
+    padding: 0;
+    width: 100%;
+    .checkbox-custom{
+      float: left;
+      width: 50%;
+      clear: none;
+      margin: 15px 0 0 0;
+      @include breakpoint($tablet) {
+        width: 100%;
+      }
+    }
+    .radio-list{
+      margin: 20px 0;
+      border-top: 1px solid #cfd1d2;
+      width: 50%;
+      height: auto;
+      position: relative;
+      display: block;
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
+      .radio-custom{
+        border-bottom: 1px solid #cfd1d2;
+        padding-bottom: 15px;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+// FORM TRAFFIC REQUEST CODE
+#traffic-request-code-form{
+  .box-number-mobile{
+    @include breakpoint($mobile) {
+      padding: 0;
+      width: 100%;
+    }
+    span{
+      position: relative;
+      display: block;
+      float: left;
+      color: $black;
+      font-size: 16px;
+      line-height: 37px;
+      margin: 8px 0;
+      padding-right: 10px;
+      @include breakpoint($mobile) {
+        width: 20%;
+      }
+    }
+    input[type=text]{
+      position: relative;
+      display: block;
+      float: left;
+      clear: none;
+      width: 170px;
+      @include breakpoint($mobile) {
+        width: 80%;
+      }
+    }
+    input[type=submit]{
+      position: relative;
+      display: block;
+      float: left;
+      margin: 8px 10px;
+      clear: none;
+      height: 37px;
+      @include breakpoint($mobile) {
+        margin: 8px 0;
+      }
+    }
+  }
+}
+#traffic-validate-code-form{
+  .box-validate-code{
+    @include breakpoint($mobile) {
+      padding: 0;
+      width: 100%;
+    }
+    input[type=text]{
+      position: relative;
+      display: block;
+      float: left;
+      clear: none;
+      width: 170px;
+      @include breakpoint($mobile) {
+         width: 100%;
+       }
+    }
+    input[type=submit]{
+      position: relative;
+      display: block;
+      float: left;
+      margin: 8px 10px;
+      clear: none;
+      height: 37px;
+      @include breakpoint($mobile) {
+        margin: 8px 0;
+      }
+    }
+  }
+}
+
+.info-banner-horizontal{
+  background-color: $greysoft;
+  display: block;
+  margin: 20px 0 40px 0;
+  overflow: hidden;
+  padding: 30px 60px;
+  position: relative;
+  clear: both;
+  h2{
+    color: $greymedium;
+    display: block;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+  }
+  ul {
+    li {
+      float:left;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      width: 25%;
+      @include breakpoint($tablet) {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      span {
+        color: $greydark;
+        display: block;
+        clear: both;
+        font-size: 21px;
+        line-height: 25px;
+        position: relative;
+        text-align: center;
+        padding: 0 30px;
+        &.icons {
+          color: $pink;
+          display: block;
+          clear: both;
+          font-size: 50px;
+          line-height: 55px;
+          margin: 0 0 10px 0;
+          position: relative;
+          text-align: center;
+          width: 100%;
+          padding: 0;
+          @include breakpoint($mobile) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+#traffic-selectors {
+  display: none;
+}
+.close-trigger {
+  cursor: pointer;
+}

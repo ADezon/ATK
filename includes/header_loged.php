@@ -32,6 +32,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
     <script src="./js/enquire.min.js"></script>
     <script src="./js/tooltipster/js/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="./js/main.js"></script>
     <script>
         var timering = 7000;

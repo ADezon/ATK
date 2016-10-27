@@ -15,13 +15,15 @@
                     <p>Tens una <strong>factura del període entre el 20/04/2016 i el 19/05/2016 pendent de pagament</strong> per un import de <strong>50,53 €</strong>.</p>
                     <a class="button-pay-invoice" href="#">Pagar factura</a>
                 </div>
-
+                <div class="alert-invoice-unpaid">
+                    <p><strong>Disposes de factures pendents de pagament.</strong> Pots abonar-les fàcilment de forma online.</p>
+                    <a class="button-pay-invoice" href="#">Veure el detall</a>
+                </div>
                 <h1 class="main-title">Factures</h1>
 
                 <div class="field-body">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                        vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+                    <p>A continuació, et mostrem el llistat de les teves últimes factures, on podràs consultar-les en detall i descarregar-te-les.
+                        Si vols veure les factures associades a un altre dels teus comptes, selecciona’l i es desplegaran seguidament.</p>
                 </div>
             </div>
         </div>
