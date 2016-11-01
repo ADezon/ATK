@@ -46,10 +46,10 @@
                 <img src="./images/captcha.png">
                 <!-- Insert recaptcha. https://www.google.com/recaptcha/intro/index.html -->
             </div>
-            <div class="checkboxCSS">
-                <input type="checkbox" value="ok_conditions" id="cb_conditions" name="check" />
-                <label for="cb_conditions"></label>
-                <span>Accepto les <a href="#">condicions legals</a></span>
+            <div class="checkbox-custom">
+                <input type="checkbox" id="cb-conditions" name="cb-selector">
+                <label for="cb-conditions">Accepto les <a href="#">condicions legals</a></label>
+                <div class="checkbox-css"></div>
             </div>
             <input value="Enviar" class="contact-send button-pink" type="submit" />
     </div>
@@ -63,7 +63,7 @@
             </div>
             <div class="more-contacts-element">
                 <span class="more-contacts-icon"><span class="icons icon-hands"></span></span>
-                <span class="more-contacts-title">Vine'ns a veure</span>
+                <span class="more-contacts-title">Vine a veure’ns</span>
                 <span class="more-contacts-description">Vine a l’agència comercial. Localitza la nostra <a href="">agència</a></span>
             </div>
             <div class="more-contacts-element last">

@@ -16,31 +16,31 @@
         <form class="legend">
             <ul>
                 <li>
-                    <div class="checkboxCSS">
-                        <input id="cb_social" type="checkbox" onclick="toggleGroup('seu')" checked="checked">
-                        <label for="cb_social"></label>
-                        <span><span class="circle black"></span>Seu Social</span>
+                    <div class="checkbox-custom">
+                        <input type="checkbox" id="cb-option-1" name="cb-selector" onclick="toggleGroup('seu')" checked="checked">
+                        <label for="cb-option-1"><span class="circle black"></span>Seu Social</label>
+                        <div class="checkbox-css"></div>
                     </div>
                 </li>
                 <li>
-                    <div class="checkboxCSS">
-                        <input id="cb_comercial" type="checkbox" onclick="toggleGroup('agencia')" checked="checked">
-                        <label for="cb_comercial"></label>
-                        <span><span class="circle pinkdark"></span>Agència Comercial</span>
+                    <div class="checkbox-custom">
+                        <input type="checkbox" id="cb-option-2" name="cb-selector" onclick="toggleGroup('agencia')" checked="checked">
+                        <label for="cb-option-2"><span class="circle pinkdark"></span>Agència Comercial</label>
+                        <div class="checkbox-css"></div>
                     </div>
                 </li>
                 <li>
-                    <div class="checkboxCSS">
-                        <input id="cb_client" type="checkbox" onclick="toggleGroup('punts_atencio')" checked="checked">
-                        <label for="cb_client"></label>
-                        <span><span class="circle pink"></span>Punts d'atenció al client</span>
+                    <div class="checkbox-custom">
+                        <input type="checkbox" id="cb-option-3" name="cb-selector" onclick="toggleGroup('punts_atencio')" checked="checked">
+                        <label for="cb-option-3"><span class="circle pink"></span>Punts d'atenció al client</label>
+                        <div class="checkbox-css"></div>
                     </div>
                 </li>
                 <li>
-                    <div class="checkboxCSS">
-                        <input id="cb_espais" type="checkbox" onclick="toggleGroup('espais')" checked="checked">
-                        <label for="cb_espais"></label>
-                        <span><span class="circle greymedium"></span>Espais Connectem</span>
+                    <div class="checkbox-custom">
+                        <input type="checkbox" id="cb-option-4" name="cb-selector" onclick="toggleGroup('espais')" checked="checked">
+                        <label for="cb-option-4"><span class="circle greymedium"></span>Espais Connectem</label>
+                        <div class="checkbox-css"></div>
                     </div>
                 </li>
             </ul>

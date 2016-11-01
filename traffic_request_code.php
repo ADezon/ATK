@@ -7,9 +7,10 @@
             <?php include 'includes/breadcrumb.php'; ?>
 
             <h1 class="main-title">El trànsit</h1>
-            <h2 class="main-subtitle">Vols rebre al teu mòbil o configurar les notificacions sobre l’estat del trànsit?</h2>
+            <h2 class="main-subtitle">Vols rebre al teu mòbil notificacions sobre l’estat del trànsit?</h2>
             <div class="field-body">
-                <p>Facilita’ns el teu número i gaudiràs d’un <strong>servei d’alertes completament gratuït</strong>.</p>
+                <p>Facilita’ns el teu número i gaudiràs d’un <strong>servei d’alertes completament gratuït.</strong><br />
+                    Si ja estàs donat d’alta al servei, també pots configurar les teves alertes afegint el teu número a continuació.</p>
             </div>
 
             <form id="traffic-request-code-form">

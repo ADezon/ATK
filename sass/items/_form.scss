@@ -156,6 +156,7 @@ form{
       display: block;
       height: 36px;
       margin: 8px 0;
+      padding-left: 8px;
       position: relative;
       width: 100%;
       &.field-error{
@@ -496,13 +497,20 @@ form{
     label{
       display: block;
       position: relative;
-      font-size: 16px;
+      font-size: 13px;
       color: $greymedium;
-      line-height: 21px;
+      line-height: 19px;
       padding: 0 0 0 25px;
       z-index: 9;
       cursor: pointer;
       -webkit-transition: all 0.25s linear;
+      a{
+        color: $gris3;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 19px;
+        text-decoration: underline !important;
+      }
     }
     .checkbox-css{
       background-color:#f5f3f3;
@@ -512,7 +520,7 @@ form{
       border: 1px solid #979797;
       height: 13px;
       width: 13px;
-      margin: 4px 0;
+      margin: 3px 0;
       left: 0;
       top:0;
       z-index: 5;

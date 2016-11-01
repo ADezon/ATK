@@ -13,8 +13,8 @@
                 <p class="text-title">Introducció codi d’activació</p>
             </div>
             <div class="field-body">
-                <p>Gràcies per utilitzar aquest servei. En breus moments rebràs un SMS al teu mòbil amb un codi.</p>
-                <p>Introdueix el codi rebut a la casella. </p>
+                <p>A continuació, introdueix el codi d’activació que t’hem enviat al teu mòbil i prem enviar.
+                </p>
             </div>
 
             <form id="traffic-validate-code-form">
@@ -28,7 +28,7 @@
             <div class="title-w-icon toclose">
                 <div class="icon-title close-trigger"><span class="icons icon-close-rounded"></span></div>
                 <p class="text-title">Introducció codi d’activació</p>
-                <p class="text-subtitle">Sed ut perspiciatis unde omnis iste natus error </p>
+                <p class="text-subtitle">El codi d’activació és erroni, torna a internar-ho!</p>
             </div>
         </div>
     </div>

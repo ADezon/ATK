@@ -12,6 +12,13 @@
       padding: 0;
       width: 100%;
       clear: both;
+      .radio-custom{
+        position: relative;
+        display: block;
+        float: left;
+        clear: none;
+        margin: 10px 60px 10px 0;
+      }
       input[type=text]{
         width: 90%;
         float: left;
@@ -30,7 +37,7 @@
         }
       }
     }
-    .checkboxCSS {
+    .checkbox-custom {
       clear: none;
       float: left;
       margin:10px 0;

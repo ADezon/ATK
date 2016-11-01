@@ -20,15 +20,15 @@
           <form>
               <fieldset class="left">
                   <input class="search-value-input" type="text" name="search" placeholder="Cercar">
-                  <div class="checkboxCSS">
-                      <input type="checkbox" value="empresa" id="cb_empresa" name="check" />
-                      <label for="cb_empresa"></label>
-                      <span>Empresa</span>
+                  <div class="checkbox-custom">
+                      <input type="checkbox" id="cb-option-empresa" name="cb-selector">
+                      <label for="cb-option-empresa">Empresa</label>
+                      <div class="checkbox-css"></div>
                   </div>
-                  <div class="checkboxCSS">
-                      <input type="checkbox" value="particular" id="cb_particular" name="check" />
-                      <label for="cb_particular"></label>
-                      <span>Particular</span>
+                  <div class="checkbox-custom">
+                      <input type="checkbox" id="cb-option-particular" name="cb-selector">
+                      <label for="cb-option-particular">Particular</label>
+                      <div class="checkbox-css"></div>
                   </div>
               </fieldset>
               <fieldset class="right">

@@ -152,9 +152,9 @@
         @include breakpoint($tablet) {
          display: none;
         }
-        .checkboxCSS{
+        .checkbox-custom{
           input[type=checkbox], label{
-            margin: 7px 21px;
+            margin: 8px 21px;
           }
         }
         span{
@@ -234,9 +234,9 @@
           border-right: none;
           border-top: 1px solid #cfd1d2;
         }
-        .checkboxCSS{
+        .checkbox-custom{
           input[type=checkbox], label{
-            margin: 7px 21px;
+            margin: 8px 21px;
           }
         }
         span, a{

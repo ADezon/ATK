@@ -37,27 +37,17 @@
 <!--        </div>-->
         <h3>Dades d’usuari</h3>
         <fieldset class="box-number-client">
-
-          <div class="custom-checks-container">
             <span class="title-field">Vull fer l’alta per:</span>
-
-            <div class="custom-checks">
-              <ul>
-                <li>
-                  <input type="radio" id="mobile-option" name="selector">
-                  <label for="mobile-option">Mòbil</label>
-                  <div class="check"></div>
-                </li>
-
-                <li>
-                  <input type="radio" id="invoice-option" name="selector">
-                  <label for="invoice-option">Codi de factura</label>
-                  <div class="check"></div>
-                </li>
-
-              </ul>
+            <div class="radio-custom">
+              <input type="radio" id="mobile-option" name="selector">
+              <label for="mobile-option">Mòbil</label>
+              <div class="radio-css"></div>
             </div>
-          </div>
+            <div class="radio-custom">
+              <input type="radio" id="invoice-option" name="selector">
+              <label for="invoice-option">Codi de factura</label>
+              <div class="radio-css"></div>
+            </div>
         </fieldset>
 
         <div id="mobil-wrapper">
@@ -105,11 +95,10 @@
             <img src="./images/captcha.png">
             <!-- Insert recaptcha. https://www.google.com/recaptcha/intro/index.html -->
           </div>
-          <div class="checkboxCSS">
-            <input type="checkbox" value="ok_conditions" id="cb_conditions"
-                   name="check"/>
-            <label for="cb_conditions"></label>
-            <span>Accepto les <a href="#">condicions legals</a></span>
+          <div class="checkbox-custom">
+            <input type="checkbox" id="cb-conditions" name="cb-selector">
+            <label for="cb-conditions">Accepto les <a href="#">condicions legals</a></label>
+            <div class="checkbox-css"></div>
           </div>
           <input value="Registrar" class="register-send button-pink" type="submit"/>
         </div>
