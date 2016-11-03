@@ -58,17 +58,17 @@
             <h1 class="main-title">També ens pots contactar així:</h1>
             <div class="more-contacts-element">
                 <span class="more-contacts-icon"><span class="icons icon-mobile"></span></span>
-                <span class="more-contacts-title">Truca’ns sense cost</span>
+                <span class="more-contacts-title">Truca’ns sense cost.</span>
                 <span class="more-contacts-description">Truca’ns als 115, o al +376301115, si truques des de l’estranger</span>
             </div>
             <div class="more-contacts-element">
                 <span class="more-contacts-icon"><span class="icons icon-hands"></span></span>
-                <span class="more-contacts-title">Vine a veure’ns</span>
+                <span class="more-contacts-title">Vine a veure’ns.</span>
                 <span class="more-contacts-description">Vine a l’agència comercial. Localitza la nostra <a href="">agència</a></span>
             </div>
             <div class="more-contacts-element last">
                 <span class="more-contacts-icon"><span class="icons icon-headphones"></span></span>
-                <span class="more-contacts-title">Et truquem nosaltres</span>
+                <span class="more-contacts-title">Et truquem nosaltres.</span>
                 <span class="more-contacts-description">Deixa’ns les teves dades i et truquem nosaltres per a resoldre qualsevol dubte que tinguis.</span>
             </div>
         </div>

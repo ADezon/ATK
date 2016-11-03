@@ -17,21 +17,18 @@
           avantatges del servei!
         </p>
       </div>
-
       <form id="traffic-config-form">
         <h4>Què vols fer?</h4>
         <fieldset class="box-suscription-alert">
           <div class="radio-list">
             <div class="radio-custom">
               <input type="radio" id="vull-rebre" name="radio-selector">
-              <label for="vull-rebre">Vull rebre un avís dels canvis de la xarxa
-                viària</label>
+              <label for="vull-rebre">Vull rebre notificacions sobre l’estat del trànsit</label>
               <div class="radio-css"></div>
             </div>
             <div class="radio-custom">
               <input type="radio" id="no-vull-rebre" name="radio-selector">
-              <label for="no-vull-rebre">No vull rebre més alertes de
-                trànsit</label>
+              <label for="no-vull-rebre">No vull rebre més notificacions de trànsit</label>
               <div class="radio-css"></div>
             </div>
           </div>
@@ -169,7 +166,7 @@
               <div class="checkbox-css"></div>
             </div>
           </fieldset>
-          <h4>Vull rebre les alarmes els dies següents</h4>
+          <h4>Vull rebre les alertes els dies següents:</h4>
           <fieldset class="box-traffic-alerts clear">
             <div class="half-page">
               <div class="checkbox-custom no-ft">

@@ -14,7 +14,7 @@
 
     <div class="field-body">
       <p>Si ets clients d’Andorra Telecom i encara no estàs registrat, no saps què t’estàs perdent.
-        Registra’t en menys d’un minut i gaudeix de tots els avantatges i possibilitats que t’oferim a la nostra web</p>
+        Registra’t en menys d’un minut i gaudeix de tots els avantatges i possibilitats que t’oferim a la nostra web.</p>
     </div>
 
     <div class="reclaim">
@@ -107,7 +107,7 @@
     </div>
     <div class="half-page">
       <div class="info-banner-vertical">
-        <h2>Avantatges de registrar-te</h2>
+        <h2>Avantatges de registrar-te:</h2>
         <ul>
           <li>
             <div class="element-signup"><span
