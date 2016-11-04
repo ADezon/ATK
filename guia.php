@@ -9,13 +9,14 @@
         <h1 class="main-title">Guia</h1>
 
         <div class="field-body">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto vitae dicta sunt explicabo.</p>
+            <p>Vols trobar el número de telèfon d’algú conegut o d’una empresa en concret? Amb la Guia t’ho posem fàcil.
+               Troba números de particulars i d’empreses d’Andorra d’una manera ràpida i senzilla: Selecciona si es tracta d’un particular o empresa,
+               el tipus d’activitat, si escau, i la parròquia a la qual pertany, i et mostrarem els resultats que responguin als teus criteris de cerca.</p>
         </div>
     </div>
     <!-- BEGIN SEARCH PHONEBOOK FORM-->
     <form method="post">
       <div class="phonebook-search-elements">
-         <link rel="stylesheet" href="/la-guia-portlet/css/base/jquery.ui.all.css">
          <!-- ----------------- select autocomplete --------------->
          <style>
           /* scrollbar*/
@@ -1813,6 +1814,75 @@
                                      </div>
                                  </div>
                              </div>
+
+                            <div class="results-row">
+                               <div class="results-row-content">
+                                  <div class="guia-caixa-row-container">
+                                     <div class="guia-caixa-row">
+                                        <div class="la-guia-table-cell la-guia-table-cell-first">A-TRACCIO-A</div>
+                                        <div class="la-guia-table-cell">Empresa</div>
+                                        <div class="la-guia-table-cell">disseny i creacio grafica</div>
+                                        <div class="la-guia-table-cell la-guia-table-cell-last">867588</div>
+                                     </div>
+                                  </div>
+                                  <div class="companyDetail">
+                                     <div class="companyInfo">
+                                        <div class="companyMap">
+                                           <div class="mapContainer"></div>
+                                           <input class="mapContainerAddress" type="hidden" value="Carrer Ciutat de Valls 16 , Andorra la Vella,  Andorra la Vella" name="address_0_0">
+                                        </div>
+                                        <div class="right">
+                                           <div class="companyAddressSendOptions"><div class="companyAddress">
+                                                 <p class="cAddress"> Carrer Ciutat de Valls 16  Andorra la Vella<br> Andorra la Vella
+                                                 </p>
+                                              </div><ul class="companySendOptions ">
+                                                 <li class="sendSms">&gt; Enviar SMS</li>
+                                                 <li class="sendEmail">&gt; Enviar Email</li>
+                                              </ul>
+                                           </div>
+                                           <ul class="companyContact">
+                                              <li class="landPhone"> 867588 </li>
+                                           </ul>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+
+                            <div class="results-row">
+                               <div class="results-row-content">
+                                  <div class="guia-caixa-row-container">
+                                     <div class="guia-caixa-row">
+                                        <div class="la-guia-table-cell la-guia-table-cell-first">A-TRACCIO-A</div>
+                                        <div class="la-guia-table-cell">Empresa</div>
+                                        <div class="la-guia-table-cell">disseny i creacio grafica</div>
+                                        <div class="la-guia-table-cell la-guia-table-cell-last">867588</div>
+                                     </div>
+                                  </div>
+                                  <div class="companyDetail">
+                                     <div class="companyInfo">
+                                        <div class="companyMap">
+                                           <div class="mapContainer"></div>
+                                           <input class="mapContainerAddress" type="hidden" value="Carrer Ciutat de Valls 16 , Andorra la Vella,  Andorra la Vella" name="address_0_0">
+                                        </div>
+                                        <div class="right">
+                                           <div class="companyAddressSendOptions"><div class="companyAddress">
+                                                 <p class="cAddress"> Carrer Ciutat de Valls 16  Andorra la Vella<br> Andorra la Vella
+                                                 </p>
+                                              </div><ul class="companySendOptions ">
+                                                 <li class="sendSms">&gt; Enviar SMS</li>
+                                                 <li class="sendEmail">&gt; Enviar Email</li>
+                                              </ul>
+                                           </div>
+                                           <ul class="companyContact">
+                                              <li class="landPhone"> 867588 </li>
+                                           </ul>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+
                          </div>
                      </div>
                  </div>
