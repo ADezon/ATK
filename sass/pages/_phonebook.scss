@@ -439,7 +439,7 @@
                 }
                 .companyDetail{
                   border-bottom: 1px solid #cfd1d2;
-                  display: block;
+                  display: none;
                   overflow: hidden;
                   position: relative;
                   .companyInfo{
@@ -494,7 +494,7 @@
                           padding: 30px 25px;
                           width: 100%;
                         }
-                        .companyAddress{
+                        .companyAddress {
                           clear: both;
                           display: block;
                           margin-bottom: 10px;

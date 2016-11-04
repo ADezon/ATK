@@ -15,8 +15,7 @@ $(document).ready(function () {
         });
     });
 
-    $(document).mouseup(function (e)
-    {
+    $(document).mouseup(function (e) {
         var container = $('.alert-wrapper .cont-wrapper');
 
         if (!container.is(e.target) // if the target of the click isn't the container...

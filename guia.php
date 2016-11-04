@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+<?php include 'includes/header_guia.php'; ?>
 
 
 <!--BEGIN SPECIFIC PAGE GUIA-->
@@ -1614,7 +1614,7 @@
                            </select>
                         </div>
                         <span class="ui-combobox">
-                           <input class="ui-autocomplete-input ui-state-default ui-combobox-input" value="Qualsevol">
+                           <input id="auto-complete-data" class="ui-autocomplete-input ui-state-default ui-combobox-input" value="Qualsevol">
                            <a tabindex="-1" title="Show All Items" class="ui-button ui-widget ui-state-default ui-button-icon-only ui-corner-right ui-combobox-toggle" role="button" aria-disabled="false">
                               <span class="ui-button-icon-primary ui-icon ui-icon-triangle-1-s"></span><span class="ui-button-text"></span></a>
                         </span>
@@ -1799,7 +1799,7 @@
                                              </div>
                                              <div class="right">
                                                 <div class="companyAddressSendOptions"><div class="companyAddress">
-                                                         <p class="cAddress"> Carrer Ciutat de Valls 16  Andorra la Vella<br> Andorra la Vella
+                                                         <p class="cAddress">Carrer Ciutat de Valls 16  Andorra la Vella<br> Andorra la Vella
                                                          </p>
                                                      </div><ul class="companySendOptions ">
                                                          <li class="sendSms">&gt; Enviar SMS</li>
@@ -1893,23 +1893,41 @@
 </div>
 <!--END SPECIFIC PAGE GUIA-->
 
-<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-   $('.capsa_cerca a').click(function (e) {
-      e.preventDefault();
-      $('.cerca_avancada_section').toggle('fold');
-      $('.aui-field-select ul').hide();
-   });
-   $('a.jqTransformSelectOpen').click(function (e) {
-      e.preventDefault();
-      $('.aui-field-select ul').hide();
-      $(this).siblings('ul').toggle(200);
-   });
+<!--<script>-->
+<!--TEST de Autocomplete-->
+<!--   var availableTags = [-->
+<!--      "ActionScript",-->
+<!--      "AppleScript",-->
+<!--      "Asp",-->
+<!--      "BASIC",-->
+<!--      "C",-->
+<!--      "C++",-->
+<!--      "Clojure",-->
+<!--      "COBOL",-->
+<!--      "ColdFusion",-->
+<!--      "Erlang",-->
+<!--      "Fortran",-->
+<!--      "Groovy",-->
+<!--      "Haskell",-->
+<!--      "Java",-->
+<!--      "JavaScript",-->
+<!--      "Lisp",-->
+<!--      "Perl",-->
+<!--      "PHP",-->
+<!--      "Python",-->
+<!--      "Ruby",-->
+<!--      "Scala",-->
+<!--      "Scheme"-->
+<!--   ];-->
+<!--   $( "#auto-complete-data" ).autocomplete({-->
+<!--      source: availableTags-->
+<!--   });-->
+<!--</script>-->
 
-   $('.jqTransformSelectWrapper ul li a').click(function (e) {
-      e.preventDefault();
-      $(this).parent().parent().hide(200);
-   })
-</script>
+<div class="floating-sms-emails">
+
+
+</div>
+
 
 <?php include 'includes/footer.php'; ?>

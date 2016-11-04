@@ -26,15 +26,17 @@
   <!--BEGIN GLOBAL-->
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+
   <!--THIS IS A PRIVATE-PERSONAL API KEY. YOU MUST PROVIDE THE CORRECT ONE-->
 <!--  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCYW42M0aJDKz-ayDZywdTDJAmd3Kfvq90"></script>-->
   <!--THIS IS A PRIVATE-PERSONAL API KEY. YOU MUST PROVIDE THE CORRECT ONE-->
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
   <script src="./js/enquire.min.js"></script>
-  <script src="./js/tooltipster/js/jquery.tooltipster.min.js"></script>
-  <script src="./js/register.js"></script>
   <script src="./js/dinamiclogin.js"></script>
   <script src="./js/main.js"></script>
+
   <script>
     var timering = 7000;
   </script>
@@ -44,6 +46,7 @@
   <script src="./js/flexslider/jquery.flexslider-min.js"></script>
   <script src="./js/init-slider.js"></script>
   <script src="./js/alerts.js"></script>
+  <script src="./js/phonebook.js"></script>
   <!--END INYECTED AS REQUIRED-->
 
   <!--END SCRIPTS -->
