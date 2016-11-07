@@ -2097,90 +2097,57 @@
 
                       <!-- START SEND SMS AND Emails-->
                       <div class="sms-sender">
+                        <div class="destination-message"></div>
+
                         <fieldset class="sendOption">
                           <span class="title-field">Número Mòbil (+376)</span>
-                          <input type="text" name="numeroMovil" size="13" title="Número Mòbil">
+                          <input type="text" class="mobilenumber"
+                                 name="numeroMovil" size="13"
+                                 title="Número Mòbil">
 
                           <div class="divContainerRowLaGuia">
                             <div class="taglib-guia-captcha">
 
-                               <span class="title-field">Imatge de seguretat</span>
-                               <img alt="captcha" class="captcha"
-                                    src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_SMS&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aACADEMIA+MASEGOSA_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=2&amp;t=1478419731612 ">
+                              <span
+                                class="title-field">Imatge de seguretat</span>
+                              <img alt="captcha" class="captcha"
+                                   src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_SMS&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aACADEMIA+MASEGOSA_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=2&amp;t=1478419731612 ">
 
-                                <div class="ctrl-holder-text-verification-link">
-                                  En cas de no reconeixer les lletres
-
-                                  de la imatge pots <a class="" id="setCaptcha"
-                                                       href="#">
-                                    recarregar-la </a></div>
-                              <div id="verificationDiv"
-                                   class="ctrl-holder-cell"><input
-                                  name="uinm_captchaText"
-                                  size="21" type="text" value=""
-                                  title="Text captcha"></div>
-                            </div>
+                              <div class="ctrl-holder-text-verification-link">
+                                En cas de no reconeixer les lletres de la imatge pots <a class="" href="#">
+                                  recarregar-la </a></div>
+                              <input name="uinm_captchaText"
+                                     size="21" type="text" value=""
+                                     title="Text captcha"></div>
                           </div>
-                          <div class="divContainerRowLaGuia">
-                            <div class="divContainerCellPreFiller"></div>
-                            <div class="divContainerCellFiller">
-                              <div class="aui-button-holder "><input
-                                  type="button" value="Enviar SMS"
-                                  class="button-pink"
-                                  onclick="sendSms();">
-                              </div>
-                            </div>
-                          </div>
+                          <input type="button" value="Enviar SMS"
+                                 class="button-pink sendsmstrigger">
                         </fieldset>
                       </div>
 
                       <div class="email-sender">
-                        <fieldset class="sendOption">
-                          <meta http-equiv="Pragma" content="no-cache">
-                          <meta http-equiv="Expires" content="-1">
-                          <div class="divContainerRowLaGuia adjustLaGuia2">
-                              <span class="title-field">Email</span>
-                            <div
-                              class="divContainerCellRestoLaGuia inputTextLaGuia">
-                              <input type="text"
-                                     id="_laguia_WAR_laguiaportlet_INSTANCE_q3El_email"
-                                     name="email" size="13" title="Email">
-                            </div>
-                          </div>
-                          <div class="divContainerRowLaGuia">
-                            <div class="taglib-guia-captcha">
-                              <div class="izquierda">
-                                 <span class="title-field">Imatge de seguretat</span>
-                                 <img alt="captcha" class="captcha"
-                                    src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_MAIL&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aLES+CLASSES+MARISOL+NAVARRO_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=3&amp;t=1478495528990 ">
-                                <div
-                                  class="ctrl-holder-text-verification-link">
-                                  En cas de no reconeixer les lletres
+                        <div class="destination-message"></div>
 
-                                  de la imatge pots <a class=""
-                                                       id="setCaptcha"
-                                                       href="javascript:ocey_actualizar();">
-                                    recarregar-la </a></div>
-                              </div>
-                              <div id="verificationDiv"
-                                   class="ctrl-holder-cell derecha"><input
-                                  id="captchaText" name="ocey_captchaText"
-                                  size="21" type="text" value=""
-                                  title="Text captcha"></div>
-                            </div>
-                          </div>
-                          <div class="divContainerRowLaGuia">
-                            <div class="divContainerCellPreFiller"></div>
-                            <div class="divContainerCellFiller">
-                              <div class="aui-button-holder "><input class="button-pink"
-                                  type="button" value="Enviar Email"
-                                  onclick="sendEmail();">
-                              </div>
-                            </div>
-                          </div>
+                        <fieldset class="sendOption">
+                          <span class="title-field">Email</span>
+                          <input type="text" name="email" size="13"
+                                 title="Email">
+
+                          <span class="title-field">Imatge de seguretat</span>
+                          <img alt="captcha" class="captcha"
+                               src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_MAIL&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aLES+CLASSES+MARISOL+NAVARRO_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=3&amp;t=1478495528990 ">
+                          <div
+                            class="ctrl-holder-text-verification-link">
+                            En cas de no reconeixer les lletres
+                            de la imatge pots <a href="#">
+                              recarregar-la </a></div>
+                          <input name="ocey_captchaText" size="21" type="text"
+                                 value="" title="Text captcha">
+                          <input class="button-pink sendemailtrigger"
+                                 type="button" value="Enviar Email">
                         </fieldset>
                       </div>
-                       <!-- END SMS AND Emails-->
+                      <!-- END SMS AND Emails-->
 
                     </div>
                   </div>
@@ -2238,87 +2205,54 @@
                       </div>
                        <!-- START SEND SMS AND Emails-->
                        <div class="sms-sender">
+                          <div class="destination-message"></div>
+
                           <fieldset class="sendOption">
                              <span class="title-field">Número Mòbil (+376)</span>
-                             <input type="text" name="numeroMovil" size="13" title="Número Mòbil">
+                             <input type="text" class="mobilenumber"
+                                    name="numeroMovil" size="13"
+                                    title="Número Mòbil">
 
                              <div class="divContainerRowLaGuia">
                                 <div class="taglib-guia-captcha">
 
-                                   <span class="title-field">Imatge de seguretat</span>
+                              <span
+                                class="title-field">Imatge de seguretat</span>
                                    <img alt="captcha" class="captcha"
                                         src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_SMS&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aACADEMIA+MASEGOSA_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=2&amp;t=1478419731612 ">
 
                                    <div class="ctrl-holder-text-verification-link">
-                                      En cas de no reconeixer les lletres
-
-                                      de la imatge pots <a class="" id="setCaptcha"
-                                                           href="#">
+                                      En cas de no reconeixer les lletres de la imatge pots <a class="" href="#">
                                          recarregar-la </a></div>
-                                   <div id="verificationDiv"
-                                        class="ctrl-holder-cell"><input
-                                        name="uinm_captchaText"
-                                        size="21" type="text" value=""
-                                        title="Text captcha"></div>
-                                </div>
+                                   <input name="uinm_captchaText"
+                                          size="21" type="text" value=""
+                                          title="Text captcha"></div>
                              </div>
-                             <div class="divContainerRowLaGuia">
-                                <div class="divContainerCellPreFiller"></div>
-                                <div class="divContainerCellFiller">
-                                   <div class="aui-button-holder "><input
-                                        type="button" value="Enviar SMS"
-                                        class="button-pink"
-                                        onclick="sendSms();">
-                                   </div>
-                                </div>
-                             </div>
+                             <input type="button" value="Enviar SMS"
+                                    class="button-pink sendsmstrigger">
                           </fieldset>
                        </div>
 
                        <div class="email-sender">
-                          <fieldset class="sendOption">
-                             <meta http-equiv="Pragma" content="no-cache">
-                             <meta http-equiv="Expires" content="-1">
-                             <div class="divContainerRowLaGuia adjustLaGuia2">
-                                <span class="title-field">Email</span>
-                                <div
-                                  class="divContainerCellRestoLaGuia inputTextLaGuia">
-                                   <input type="text"
-                                          id="_laguia_WAR_laguiaportlet_INSTANCE_q3El_email"
-                                          name="email" size="13" title="Email">
-                                </div>
-                             </div>
-                             <div class="divContainerRowLaGuia">
-                                <div class="taglib-guia-captcha">
-                                   <div class="izquierda">
-                                      <span class="title-field">Imatge de seguretat</span>
-                                      <img alt="captcha" class="captcha"
-                                           src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_MAIL&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aLES+CLASSES+MARISOL+NAVARRO_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=3&amp;t=1478495528990 ">
-                                      <div
-                                        class="ctrl-holder-text-verification-link">
-                                         En cas de no reconeixer les lletres
+                          <div class="destination-message"></div>
 
-                                         de la imatge pots <a class=""
-                                                              id="setCaptcha"
-                                                              href="javascript:ocey_actualizar();">
-                                            recarregar-la </a></div>
-                                   </div>
-                                   <div id="verificationDiv"
-                                        class="ctrl-holder-cell derecha"><input
-                                        id="captchaText" name="ocey_captchaText"
-                                        size="21" type="text" value=""
-                                        title="Text captcha"></div>
-                                </div>
-                             </div>
-                             <div class="divContainerRowLaGuia">
-                                <div class="divContainerCellPreFiller"></div>
-                                <div class="divContainerCellFiller">
-                                   <div class="aui-button-holder "><input class="button-pink"
-                                                                          type="button" value="Enviar Email"
-                                                                          onclick="sendEmail();">
-                                   </div>
-                                </div>
-                             </div>
+                          <fieldset class="sendOption">
+                             <span class="title-field">Email</span>
+                             <input type="text" name="email" size="13"
+                                    title="Email">
+
+                             <span class="title-field">Imatge de seguretat</span>
+                             <img alt="captcha" class="captcha"
+                                  src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_MAIL&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aLES+CLASSES+MARISOL+NAVARRO_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=3&amp;t=1478495528990 ">
+                             <div
+                               class="ctrl-holder-text-verification-link">
+                                En cas de no reconeixer les lletres
+                                de la imatge pots <a href="#">
+                                   recarregar-la </a></div>
+                             <input name="ocey_captchaText" size="21" type="text"
+                                    value="" title="Text captcha">
+                             <input class="button-pink sendemailtrigger"
+                                    type="button" value="Enviar Email">
                           </fieldset>
                        </div>
                        <!-- END SMS AND Emails-->
@@ -2375,89 +2309,57 @@
                           </div>
                         </div>
                       </div>
+
                        <!-- START SEND SMS AND Emails-->
                        <div class="sms-sender">
+                          <div class="destination-message"></div>
+
                           <fieldset class="sendOption">
                              <span class="title-field">Número Mòbil (+376)</span>
-                             <input type="text" name="numeroMovil" size="13" title="Número Mòbil">
+                             <input type="text" class="mobilenumber"
+                                    name="numeroMovil" size="13"
+                                    title="Número Mòbil">
 
                              <div class="divContainerRowLaGuia">
                                 <div class="taglib-guia-captcha">
 
-                                   <span class="title-field">Imatge de seguretat</span>
+                              <span
+                                class="title-field">Imatge de seguretat</span>
                                    <img alt="captcha" class="captcha"
                                         src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_SMS&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aACADEMIA+MASEGOSA_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=2&amp;t=1478419731612 ">
 
                                    <div class="ctrl-holder-text-verification-link">
-                                      En cas de no reconeixer les lletres
-
-                                      de la imatge pots <a class="" id="setCaptcha"
-                                                           href="#">
+                                      En cas de no reconeixer les lletres de la imatge pots <a class="" href="#">
                                          recarregar-la </a></div>
-                                   <div id="verificationDiv"
-                                        class="ctrl-holder-cell"><input
-                                        name="uinm_captchaText"
-                                        size="21" type="text" value=""
-                                        title="Text captcha"></div>
-                                </div>
+                                   <input name="uinm_captchaText"
+                                          size="21" type="text" value=""
+                                          title="Text captcha"></div>
                              </div>
-                             <div class="divContainerRowLaGuia">
-                                <div class="divContainerCellPreFiller"></div>
-                                <div class="divContainerCellFiller">
-                                   <div class="aui-button-holder "><input
-                                        type="button" value="Enviar SMS"
-                                        class="button-pink"
-                                        onclick="sendSms();">
-                                   </div>
-                                </div>
-                             </div>
+                             <input type="button" value="Enviar SMS"
+                                    class="button-pink sendsmstrigger">
                           </fieldset>
                        </div>
 
                        <div class="email-sender">
-                          <fieldset class="sendOption">
-                             <meta http-equiv="Pragma" content="no-cache">
-                             <meta http-equiv="Expires" content="-1">
-                             <div class="divContainerRowLaGuia adjustLaGuia2">
-                                <span class="title-field">Email</span>
-                                <div
-                                  class="divContainerCellRestoLaGuia inputTextLaGuia">
-                                   <input type="text"
-                                          id="_laguia_WAR_laguiaportlet_INSTANCE_q3El_email"
-                                          name="email" size="13" title="Email">
-                                </div>
-                             </div>
-                             <div class="divContainerRowLaGuia">
-                                <div class="taglib-guia-captcha">
-                                   <div class="izquierda">
-                                      <span class="title-field">Imatge de seguretat</span>
-                                      <img alt="captcha" class="captcha"
-                                           src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_MAIL&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aLES+CLASSES+MARISOL+NAVARRO_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=3&amp;t=1478495528990 ">
-                                      <div
-                                        class="ctrl-holder-text-verification-link">
-                                         En cas de no reconeixer les lletres
+                          <div class="destination-message"></div>
 
-                                         de la imatge pots <a class=""
-                                                              id="setCaptcha"
-                                                              href="javascript:ocey_actualizar();">
-                                            recarregar-la </a></div>
-                                   </div>
-                                   <div id="verificationDiv"
-                                        class="ctrl-holder-cell derecha"><input
-                                        id="captchaText" name="ocey_captchaText"
-                                        size="21" type="text" value=""
-                                        title="Text captcha"></div>
-                                </div>
-                             </div>
-                             <div class="divContainerRowLaGuia">
-                                <div class="divContainerCellPreFiller"></div>
-                                <div class="divContainerCellFiller">
-                                   <div class="aui-button-holder "><input class="button-pink"
-                                                                          type="button" value="Enviar Email"
-                                                                          onclick="sendEmail();">
-                                   </div>
-                                </div>
-                             </div>
+                          <fieldset class="sendOption">
+                             <span class="title-field">Email</span>
+                             <input type="text" name="email" size="13"
+                                    title="Email">
+
+                             <span class="title-field">Imatge de seguretat</span>
+                             <img alt="captcha" class="captcha"
+                                  src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_MAIL&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aLES+CLASSES+MARISOL+NAVARRO_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=3&amp;t=1478495528990 ">
+                             <div
+                               class="ctrl-holder-text-verification-link">
+                                En cas de no reconeixer les lletres
+                                de la imatge pots <a href="#">
+                                   recarregar-la </a></div>
+                             <input name="ocey_captchaText" size="21" type="text"
+                                    value="" title="Text captcha">
+                             <input class="button-pink sendemailtrigger"
+                                    type="button" value="Enviar Email">
                           </fieldset>
                        </div>
                        <!-- END SMS AND Emails-->

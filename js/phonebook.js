@@ -57,20 +57,41 @@ $(document).ready(function () {
         $(this).closest('.results-row-content').children('.email-sender').slideToggle();
     });
 
+    // Triggering ACTIONS
+    $('.sendsmstrigger').click(function () {
+        var mobile = $(this).closest('.sendOption').find('input[name="numeroMovil"]').val();
+        var captcha = $(this).closest('.sendOption').find('input[name="uinm_captchaText"]').val();
+        var messagePlaceHolder = $(this).closest('.sms-sender').find('.destination-message');
+
+        // Assign handlers immediately after making the request,
+        // and remember the jqxhr object for this request
+        $.post( "includes/fake_api.php", { mobile: mobile, captchatext: captcha })
+            .done(function(data) {
+                messagePlaceHolder.html(data);
+            })
+            .fail(function(data) {
+                messagePlaceHolder.html(data);
+            });
+    });
+
+    $('.sendemailtrigger').click(function () {
+        var emailtosend = $(this).closest('.sendOption').find('input[name="email"]').val();
+        var captcha = $(this).closest('.sendOption').find('input[name="ocey_captchaText"]').val();
+        var messagePlaceHolder = $(this).closest('.email-sender').find('.destination-message');
+
+        // Assign handlers immediately after making the request,
+        // and remember the jqxhr object for this request
+        $.post( "includes/fake_api.php", { useremail: emailtosend, captchatext: captcha })
+            .done(function(data) {
+                messagePlaceHolder.html(data);
+            })
+            .fail(function() {
+                messagePlaceHolder.html(data);
+            });
+    });
+
 
 });
-
-// Out of READY Scope
-function sendSms() {
-
-    alert('Clicking here should SEND values to Plattform');
-
-}
-function sendEmail() {
-
-    alert('Clicking here should SEND values to Plattform');
-
-}
 
 //
 // END PHONEBOOK
