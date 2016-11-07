@@ -6,14 +6,14 @@ $(document).ready(function () {
     // Open/Close Advanced Search
     $('.capsa_cerca a').click(function (e) {
         e.preventDefault();
-        $('.cerca_avancada_section').toggle('fold');
+        $('.cerca_avancada_section').slideToggle();
         $('.aui-field-select ul').hide();
     });
 
     // Open/Close items
     $('a.jqTransformSelectOpen').click(function (e) {
         e.preventDefault();
-        $(this).siblings('ul').toggle(200);
+        $(this).siblings('ul').slideToggle(200);
     });
 
     $('.jqTransformSelectWrapper ul li a').click(function (e) {
@@ -42,19 +42,19 @@ $(document).ready(function () {
 
     // Fold-Unfold Results
     $('.guia-caixa-row-container').click(function() {
-       $(this).siblings('.companyDetail').toggle('fold');
+       $(this).siblings('.companyDetail').slideToggle();
     });
 
     // Unfold sending SMS
     $('.sendSms').click(function (e) {
         $('.email-sender').hide();
-       $(this).closest('.results-row-content').children('.sms-sender').toggle();
+       $(this).closest('.results-row-content').children('.sms-sender').slideToggle();
     });
 
     // Unfold sending Emails
     $('.sendEmail').click(function (e) {
         $('.sms-sender').hide();
-        $(this).closest('.results-row-content').children('.email-sender').toggle();
+        $(this).closest('.results-row-content').children('.email-sender').slideToggle();
     });
 
 
