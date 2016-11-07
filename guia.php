@@ -2127,7 +2127,7 @@
                               <div class="aui-button-holder "><input
                                   type="button" value="Enviar SMS"
                                   class="button-pink"
-                                  onclick="_laguia_WAR_laguiaportlet_INSTANCE_q3El_2_0_sendSmsGuia();">
+                                  onclick="sendSms();">
                               </div>
                             </div>
                           </div>
@@ -2174,7 +2174,7 @@
                             <div class="divContainerCellFiller">
                               <div class="aui-button-holder "><input class="button-pink"
                                   type="button" value="Enviar Email"
-                                  onclick="_laguia_WAR_laguiaportlet_INSTANCE_q3El_3_0_sendEmailGuia();">
+                                  onclick="sendEmail();">
                               </div>
                             </div>
                           </div>
@@ -2268,7 +2268,7 @@
                                    <div class="aui-button-holder "><input
                                         type="button" value="Enviar SMS"
                                         class="button-pink"
-                                        onclick="_laguia_WAR_laguiaportlet_INSTANCE_q3El_2_0_sendSmsGuia();">
+                                        onclick="sendSms();">
                                    </div>
                                 </div>
                              </div>
@@ -2315,7 +2315,7 @@
                                 <div class="divContainerCellFiller">
                                    <div class="aui-button-holder "><input class="button-pink"
                                                                           type="button" value="Enviar Email"
-                                                                          onclick="_laguia_WAR_laguiaportlet_INSTANCE_q3El_3_0_sendEmailGuia();">
+                                                                          onclick="sendEmail();">
                                    </div>
                                 </div>
                              </div>
@@ -2407,7 +2407,7 @@
                                    <div class="aui-button-holder "><input
                                         type="button" value="Enviar SMS"
                                         class="button-pink"
-                                        onclick="_laguia_WAR_laguiaportlet_INSTANCE_q3El_2_0_sendSmsGuia();">
+                                        onclick="sendSms();">
                                    </div>
                                 </div>
                              </div>
@@ -2454,7 +2454,7 @@
                                 <div class="divContainerCellFiller">
                                    <div class="aui-button-holder "><input class="button-pink"
                                                                           type="button" value="Enviar Email"
-                                                                          onclick="_laguia_WAR_laguiaportlet_INSTANCE_q3El_3_0_sendEmailGuia();">
+                                                                          onclick="sendEmail();">
                                    </div>
                                 </div>
                              </div>

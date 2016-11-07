@@ -1,7 +1,8 @@
-$(document).ready(function () {
 //
 // PHONEBOOK JS
 //
+$(document).ready(function () {
+
     // Open/Close Advanced Search
     $('.capsa_cerca a').click(function (e) {
         e.preventDefault();
@@ -55,7 +56,22 @@ $(document).ready(function () {
         $('.sms-sender').hide();
         $(this).closest('.results-row-content').children('.email-sender').toggle();
     });
+
+
+});
+
+// Out of READY Scope
+function sendSms() {
+
+    alert('Clicking here should SEND values to Plattform');
+
+}
+function sendEmail() {
+
+    alert('Clicking here should SEND values to Plattform');
+
+}
+
 //
 // END PHONEBOOK
 //
-});
