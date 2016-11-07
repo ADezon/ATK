@@ -349,7 +349,6 @@
           color: $greymedium;
           margin-bottom: 30px;
         }
-
         .table-search-iterator{
           background-color: $white;
           display: block;
@@ -390,7 +389,7 @@
                 }
               }
             }
-            .results-row{
+            .results-row {
               display: block;
               overflow: hidden;
               position: relative;
@@ -500,9 +499,17 @@
                           margin-bottom: 10px;
                           overflow: hidden;
                           position: relative;
-                          p{
+                          .cAddress{
                             font-size: 14px;
                             line-height: 20px;
+                            span{
+                              position: relative;
+                              display: block;
+                              clear: both;
+                              strong{
+                                font-weight: bold;
+                              }
+                            }
                           }
                         }
                         .companySendOptions{
@@ -523,7 +530,8 @@
                             position: relative;
                             text-align: center;
                             text-transform: uppercase;
-                            width: 46%;
+                            width: 48%;
+                            cursor: pointer;
                           }
                         }
                       }
@@ -720,6 +728,34 @@
                   }
                 }
               }
+              .sms-sender,
+              .email-sender {
+                width: 100%;
+                float: left;
+                padding: 20px;
+                display: none;
+
+                .sendOption {
+                  width: 50%;
+                  float: right;
+                }
+                .captcha {
+                  margin: 10px 10px 0 0;
+                  float: left;
+                }
+                .ctrl-holder-text-verification-link {
+                  color: $gris3;
+                  font-size: 12px;
+                  font-style: italic;
+                  margin-top: 10px;
+                }
+                .ctrl-holder-cell {
+                  margin-top: 6px;
+                  float: left;
+                  width: 100%;                }
+              }
+
+
             }
           }
         }

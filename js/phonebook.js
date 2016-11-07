@@ -44,6 +44,17 @@ $(document).ready(function () {
        $(this).siblings('.companyDetail').toggle('fold');
     });
 
+    // Unfold sending SMS
+    $('.sendSms').click(function (e) {
+        $('.email-sender').hide();
+       $(this).closest('.results-row-content').children('.sms-sender').toggle();
+    });
+
+    // Unfold sending Emails
+    $('.sendEmail').click(function (e) {
+        $('.sms-sender').hide();
+        $(this).closest('.results-row-content').children('.email-sender').toggle();
+    });
 //
 // END PHONEBOOK
 //

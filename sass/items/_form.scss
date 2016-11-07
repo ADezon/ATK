@@ -1,4 +1,4 @@
-form{
+//form{
   // TITLE FORM
   h3{
     font-size: 18px;
@@ -46,7 +46,7 @@ form{
   }
 
   // FIELDSET
-  fieldset{
+  fieldset {
     box-sizing: border-box;
     display: block;
     float: left;
@@ -209,7 +209,8 @@ form{
   }
 
   // SEND BUTTON
-  input[type=submit].button-pink {
+  input[type=submit].button-pink,
+  input[type=button].button-pink {
     background-color: $pink;
     border: none;
     border-radius: 5px;
@@ -227,7 +228,7 @@ form{
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    width: 111px;
+    //width: 111px;
     @include breakpoint($mobile) {
       width: 100%;
     }
@@ -550,5 +551,5 @@ form{
     <div class="checkbox-css"></div>
   </div>
   */
-}
+
 
