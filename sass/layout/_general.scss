@@ -1,6 +1,15 @@
 body{
   font-family: $webfont;
 }
+// BEGIN OVERRIDE LR defaults
+#wrapper {
+  padding-top: 0;
+}
+.container-fluid {
+  padding: 0;
+}
+// END OVERRIDE LR defaults
+
 .cont-wrapper{
   display: block;
   overflow: hidden;
