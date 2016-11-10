@@ -51,16 +51,19 @@
     display: block;
     float: left;
     margin-bottom: 20px;
-    overflow: hidden;
-    padding: 0 15px;
+    overflow: visible;
+    padding: 0;
     position: relative;
+    width: 100%;
+
     &.first{
-      padding-left:0;
+      padding: 0 15px 0 0;
     }
     &.last{
-      padding-right:0;
+      padding: 0 0 0 15px;
     }
     &.big-fieldset{
+      padding: 0 15px;
       width: 30%;
       @include breakpoint($tablet) {
         min-height: 100px;
@@ -87,6 +90,7 @@
       }
     }
     &.small-fieldset{
+      padding: 0 15px;
       width: 20%;
       @include breakpoint($tablet) {
         min-height: 100px;
@@ -552,4 +556,11 @@
   </div>
   */
 
-
+.cont-wrapper form#register-form .half-form {
+  fieldset {
+    width: 100%;
+    input {
+      width: 50%;
+    }
+  }
+}

@@ -2,7 +2,7 @@
   //PAGE REGISTER USER
   form#register-form {
     display: block;
-    margin: 20px 20% 40px 0;
+    margin: 0;
     overflow: hidden;
     position: relative;
     @include breakpoint($tablet) {
@@ -142,4 +142,9 @@
   #register-info-wrapper {
     display: none;
   }
+}
+.outside-item {
+  position: absolute;
+  right: 0;
+  width: 45%;
 }

@@ -64,7 +64,6 @@ $(document).ready(function () {
         var messagePlaceHolder = $(this).closest('.sms-sender').find('.destination-message');
 
         // Assign handlers immediately after making the request,
-        // and remember the jqxhr object for this request
         $.post( "includes/fake_api.php", { mobile: mobile, captchatext: captcha })
             .done(function(data) {
                 messagePlaceHolder.html(data);

@@ -1,6 +1,15 @@
 body{
   font-family: $webfont;
 }
+// BEGIN OVERRIDE LR defaults
+#wrapper {
+  padding-top: 0;
+}
+.container-fluid {
+  padding: 0;
+}
+// END OVERRIDE LR defaults
+
 .cont-wrapper{
   display: block;
   overflow: hidden;
@@ -67,7 +76,6 @@ body{
       }
     }
     h1{
-      &.main-title{
         clear: both;
         color: $black;
         display: block;
@@ -75,7 +83,6 @@ body{
         line-height: 34px;
         margin: 25px 0;
         position: relative;
-      }
     }
     h2{
       &.main-subtitle{
@@ -94,19 +101,19 @@ body{
       position: relative;
       display: block;
       margin-bottom: 25px;
-      p{
-        color:$greymedium;
-        font-size: 18px;
-        line-height: 25px;
-        margin-bottom: 10px;
-        @include breakpoint($tablet) {
-          font-size:14px;
-          line-height: 18px;
-        }
-        strong{
-          font-weight: bold;
-        }
-      }
+    }
+  }
+  p{
+    color:$greymedium;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 18px;
+    }
+    strong{
+      font-weight: bold;
     }
   }
 }
@@ -273,6 +280,10 @@ p{
     }
   }
 }
-
-
-
+.small-item-info {
+  width: 100%;
+  float: left;
+  p {
+    font-size: 14px;
+  }
+}
