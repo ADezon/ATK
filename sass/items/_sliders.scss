@@ -70,6 +70,10 @@
           }
         }
       }
+      &:before {
+        content: "";
+        display: none;
+      }
     }
   }
 
@@ -78,6 +82,10 @@
     max-width: 1240px;
     position: relative;
     width: 100%;
+    li:before{
+      content: "";
+      display: none;
+    }
   }
 
   .flex-direction-nav a {
@@ -123,6 +131,10 @@
   padding: 30px 0 26px 0;
   width: 100%;
 
+  li:before {
+    content: "";
+    display: none;
+  }
 
   .slider-four.small {
     margin: 0 auto;
@@ -156,6 +168,10 @@
     max-width: 1240px;
     position: relative;
     width: 100%;
+    li:before {
+      content: "";
+      display: none;
+    }
   }
 
   .flex-direction-nav a {

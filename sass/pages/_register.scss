@@ -110,6 +110,10 @@
             }
           }
         }
+        &:before {
+          content: "";
+          display: none;
+        }
       }
     }
   }
@@ -136,15 +140,19 @@
     }
   }
 
-
   #invoice-wrapper,
   #mobil-wrapper,
   #register-info-wrapper {
     display: none;
   }
 }
-.outside-item {
-  position: absolute;
-  right: 0;
-  width: 45%;
+input[type=text].register-sms-insert-code {
+  float: left;
+  width: 40%;
+  clear: none;
+}
+input[type=submit].register-sms-send-code {
+  float: left;
+  clear: none;
+  margin: 10px 0 0 20px;
 }

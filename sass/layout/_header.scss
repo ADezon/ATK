@@ -63,6 +63,10 @@
                 text-decoration-color: $greymedium;
               }
             }
+            &:before {
+              content: "";
+              display: none;
+            }
           }
         }
         .search{
@@ -190,6 +194,10 @@
                   }
                 }
               }
+              &:before {
+                content: "";
+                display: none;
+              }
             }
           }
         }
@@ -225,6 +233,10 @@
               text-decoration: underline;
               text-decoration-color: $greymedium;
             }
+          }
+          &:before {
+            content: "";
+            display: none;
           }
         }
       }
@@ -352,6 +364,10 @@
                 }
               }
             }
+            &:before {
+              content: "";
+              display: none;
+            }
           }
         }
       }
@@ -432,6 +448,10 @@
           position: relative;
           text-align: left;
           float: left;
+        }
+        &:before {
+          content: "";
+          display: none;
         }
       }
     }
@@ -809,6 +829,10 @@
   }
 
   .menu {
+    li:before {
+        content: "";
+        display: none;
+    }
     position: static;
     > ul {
       box-sizing: border-box;

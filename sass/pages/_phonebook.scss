@@ -533,6 +533,10 @@
                             text-transform: uppercase;
                             width: 48%;
                             cursor: pointer;
+                            &:before {
+                              content: "";
+                              display: none;
+                            }
                           }
                         }
                       }

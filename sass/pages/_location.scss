@@ -33,6 +33,10 @@
           width: 100%;
         }
         li{
+          &:before {
+            content: "";
+            display: none;
+          }
           clear: both;
           display: block;
           font-size: 14px;

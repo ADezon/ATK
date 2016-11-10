@@ -140,6 +140,10 @@
   ul{
     margin-top: 20px;
     li{
+      &:before {
+        content: "";
+        display: none;
+      }
       @include span(3 of 12);
       float:left;
       margin-bottom: 20px;

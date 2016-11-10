@@ -15,11 +15,8 @@
         </div>
 
         <form>
-        <fieldset>
-            <input type="text" id="codi" placeholder="introdueix codi">
-        </fieldset>
-
-        <input type="submit" value="Validar" class="button-pink">
+            <input type="text" id="codi" placeholder="introdueix codi" class="register-sms-insert-code">
+            <input type="submit" value="Validar" class="register-sms-send-code">
         </form>
         
     </div>

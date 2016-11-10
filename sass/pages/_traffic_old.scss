@@ -1,5 +1,5 @@
 // FORM TRAFFIC
-.traffic-config-form {
+#traffic-config-form{
   width: 65%;
   @include breakpoint($tablet) {
     width: 100%;
@@ -47,7 +47,7 @@
 }
 
 // FORM TRAFFIC REQUEST CODE
-.traffic-request-code-form {
+#traffic-request-code-form{
   .box-number-mobile{
     @include breakpoint($mobile) {
       padding: 0;
@@ -89,7 +89,7 @@
     }
   }
 }
-.traffic-validate-code-form {
+#traffic-validate-code-form{
   .box-validate-code{
     @include breakpoint($mobile) {
       padding: 0;
@@ -171,10 +171,6 @@
             width: 100%;
           }
         }
-      }
-      &:before {
-        content: "";
-        display: none;
       }
     }
   }

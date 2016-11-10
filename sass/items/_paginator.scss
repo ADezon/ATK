@@ -11,6 +11,10 @@
     display: none;
   }
   li{
+    &:before {
+      content: "";
+      display: none;
+    }
     display: block;
     float: left;
     position: relative;
