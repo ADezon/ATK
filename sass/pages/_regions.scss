@@ -193,6 +193,11 @@
           }
         }
       }
+      &:nth-child(2) .element-signup {
+        @include breakpoint ($tablet) {
+          border: none;
+        }
+      }
     }
   }
 }

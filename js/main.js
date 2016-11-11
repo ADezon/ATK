@@ -69,6 +69,7 @@ $(document).ready(function() {
             $(".menu > ul").removeClass('show-on-mobile');
             $("#topbar").removeClass('show-on-mobile');
             $("#topbar").insertBefore("#head");
+            $('a.menu-mobile').removeClass('open');
         },
 
         // OPTIONAL

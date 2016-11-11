@@ -88,7 +88,7 @@
                 var map = new google.maps.Map(document.getElementById("map"), {
                     center: new google.maps.LatLng(42.510165, 1.516373),
                     zoom: 12,
-//                    scrollwheel: false,
+                    scrollwheel: false,
                     mapTypeId: 'roadmap'
                 });
                 var infoWindow = new google.maps.InfoWindow();

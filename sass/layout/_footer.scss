@@ -4,6 +4,10 @@
   position: relative;
   width: 100%;
   margin-top: 40px;
+  li:before {
+    content: "";
+    display: none;
+  }
   #footer-links{
     background: $pink url("../images/bg-pattern-footer.png") no-repeat 100% 100%;
     padding: 70px 0 60px 0;
