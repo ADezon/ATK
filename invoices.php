@@ -56,8 +56,10 @@
                 </div>
                 <div class="invoices-list">
                     <div class="invoices-list-title">
+
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb-all-invoices">&nbsp;</label>
                                 <input type="checkbox" value="all_invoices_selector" id="cb-all-invoices" name="cb-selector">
                                 <div class="checkbox-css"></div>
                             </div>
@@ -78,6 +80,7 @@
                     <div class="invoices-list-row">
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb_invoice_0010289864">&nbsp;</label>
                                 <input type="checkbox" value="0010289864_invoice_selector" id="cb_invoice_0010289864" name="cb-selector-table">
                                 <div class="checkbox-css"></div>
                             </div>
@@ -103,6 +106,7 @@
                     <div class="invoices-list-row">
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb_invoice_0010289865">&nbsp;</label>
                                 <input type="checkbox" value="0010289865_invoice_selector" id="cb_invoice_0010289865" name="cb-selector-table">
                                 <div class="checkbox-css"></div>
                             </div>
@@ -128,6 +132,7 @@
                     <div class="invoices-list-row">
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb_invoice_0010289866">&nbsp;</label>
                                 <input type="checkbox" value="0010289866_invoice_selector" id="cb_invoice_0010289866" name="cb-selector-table">
                                 <div class="checkbox-css"></div>
                             </div>
@@ -153,6 +158,7 @@
                     <div class="invoices-list-row">
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb_invoice_0010289867">&nbsp;</label>
                                 <input type="checkbox" value="0010289867_invoice_selector" id="cb_invoice_0010289867" name="cb-selector-table">
                                 <div class="checkbox-css"></div>
                             </div>
@@ -178,6 +184,7 @@
                     <div class="invoices-list-row">
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb_invoice_0010289868">&nbsp;</label>
                                 <input type="checkbox" value="0010289868_invoice_selector" id="cb_invoice_0010289868" name="cb-selector-table">
                                 <div class="checkbox-css"></div>
                             </div>
@@ -203,6 +210,7 @@
                     <div class="invoices-list-row">
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb_invoice_0010289869">&nbsp;</label>
                                 <input type="checkbox" value="0010289869_invoice_selector" id="cb_invoice_0010289869" name="cb-selector-table">
                                 <div class="checkbox-css"></div>
                             </div>
@@ -228,6 +236,7 @@
                     <div class="invoices-list-row">
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb_invoice_0010289870">&nbsp;</label>
                                 <input type="checkbox" value="0010289870_invoice_selector" id="cb_invoice_0010289870" name="cb-selector-table">
                                 <div class="checkbox-css"></div>
                             </div>
@@ -253,6 +262,7 @@
                     <div class="invoices-list-row">
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb_invoice_0010289871">&nbsp;</label>
                                 <input type="checkbox" value="0010289871_invoice_selector" id="cb_invoice_0010289871" name="cb-selector-table">
                                 <div class="checkbox-css"></div>
                             </div>
@@ -278,6 +288,7 @@
                     <div class="invoices-list-row">
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb_invoice_0010289872">&nbsp;</label>
                                 <input type="checkbox" value="0010289872_invoice_selector" id="cb_invoice_0010289872" name="cb-selector-table">
                                 <div class="checkbox-css"></div>
                             </div>
@@ -303,6 +314,7 @@
                     <div class="invoices-list-row">
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb_invoice_0010289873">&nbsp;</label>
                                 <input type="checkbox" value="0010289873_invoice_selector" id="cb_invoice_0010289873" name="cb-selector-table">
                                 <div class="checkbox-css"></div>
                             </div>
@@ -328,6 +340,7 @@
                     <div class="invoices-list-row">
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb_invoice_0010289874">&nbsp;</label>
                                 <input type="checkbox" value="0010289874_invoice_selector" id="cb_invoice_0010289874" name="cb-selector-table">
                                 <div class="checkbox-css"></div>
                             </div>
@@ -353,6 +366,7 @@
                     <div class="invoices-list-row">
                         <div class="invoices-list-cb">
                             <div class="checkbox-custom">
+                                <label for="cb_invoice_0010289875">&nbsp;</label>
                                 <input type="checkbox" value="0010289875_invoice_selector" id="cb_invoice_0010289875" name="cb-selector-table">
                                 <div class="checkbox-css"></div>
                             </div>

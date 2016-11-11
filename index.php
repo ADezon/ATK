@@ -62,7 +62,7 @@
                 <div class="block-container">
                     <div class="inner-container">
                         <div class="custom-htmlfree">
-                            <div class="position-left">
+                            <div class="position-center">
                                 <div class="field-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                                 <div class="field-body">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

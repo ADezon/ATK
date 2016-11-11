@@ -55,6 +55,17 @@
             .position-left { float: left; }
             .position-right { float: right; }
 
+            .position-center {
+              background-color: white;
+              padding: 20px;
+              width: 450px;
+              margin: 6% auto 0 auto;
+              @include breakpoint($intermedio) {
+                float: none;
+                width: 100%;
+                margin: 0;
+              }
+            }
             .field-title {
               color: $pink;
               font-size: 21px;
@@ -121,8 +132,6 @@
     background: url("../images/icon-arrow-l.png") no-repeat 0 0 transparent;
     left: 15px !important;
   }
-
-
 }
 
 
@@ -201,4 +210,9 @@
       left: -25px !important;
     }
   }
+}
+
+.flex-control-nav li:before {
+  content: "";
+  display: none;
 }

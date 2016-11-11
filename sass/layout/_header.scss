@@ -809,6 +809,10 @@
           position: relative;
           float: left;
         }
+        &:before {
+          content: "";
+          display: none;
+        }
       }
     }
   }

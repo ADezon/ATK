@@ -6,209 +6,38 @@ h1 {
   color: $black;
   display: block;
   font-size: 30px;
-  font-weight: bold;
   line-height: 34px;
   margin: 25px 0;
   position: relative;
 }
-h2 {
-  font-size: 21px;
-  line-height: 28px;
-
+h2{
   &.main-subtitle{
     clear: both;
     color: $greymedium;
     display: block;
+    font-size: 21px;
+    line-height: 25px;
     position: relative;
     font-weight: bold;
     margin: 0 0 25px 0;
   }
-  &.global-subtitle{
-    color: $greydark;
-    display: block;
-    font-size: 30px;
-    line-height: 46px;
-    margin-bottom: 25px;
-    position: relative;
-    text-align: center;
-    &:after{
-      border-bottom: 2px solid $pink;
-      content:"";
-      display: block;
-      height: 2px;
-      margin: 0 auto;
-      padding-top: 15px;
-      position: relative;
-      text-align: center;
-      width: 130px;
-    }
-    @include breakpoint($tablet) {
-      font-size:20px;
-      line-height: 26px;
-    }
-  }
 }
-h3{
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 28px;
-  margin: 15px 0;
-  @include breakpoint ($tablet) {
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
-h4 {
-  margin: 15px 0;
-}
-h5 {
-  margin: 15px 0;
-}
-h6 {
-  margin: 15px 0;
-}
+
 ul {
   list-style: none;
 }
 li {
-  margin-bottom: 8px;
   &:before {
     content: "\e921";
     font-family: 'atelecom-icons' !important;
-    font-size: 12px;
+    font-size: 30px;
     color: $pink;
-    padding-right: 8px;
   }
   &.no-bullets {
     &:before {
       display: none;
     }
   }
-}
-table {
-  width: 100%;
-  font-size: 14px;
-  line-height: 18px;
-  caption {
-    color: white;
-    font-size: 28px;
-    background-color: $pinklight;
-    text-align: center;
-    padding: 2%;
-
-  }
-  thead {
-    background-color: #cfd1d2;
-    td {
-      padding: 1% 2%;
-      box-sizing: border-box;
-      color: white;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-  }
-  tbody {
-    tr {
-      border: 1px solid #cfd1d2;
-
-      td {
-        padding: 1% 2%;
-        font-size: 14px;
-        font-weight: 400;
-        color: #333333;
-      }
-    }
-  }
-}
-
-.half-page {
-  float: left;
-  width: 50%;
-  @include breakpoint($tablet) {
-    width: 100%;
-  }
-}
-
-// GENERAL CLASSES AND TAGS
-.left{
-  display: block;
-  float: left;
-  position: relative;
-}
-.right{
-  display: block;
-  float: right;
-  position: relative;
-}
-.clear{
-  clear: both;
-}
-.pink{
-  color:$pink;
-}
-a{
-  text-decoration: none;
-  color: $pink;
-  &.button-pink{
-    background-color: $pink;
-    border-radius: 3px;
-    color: $white;
-    display: block;
-    font-size:16px;
-    font-weight: bold;
-    height: 32px;
-    line-height: 20px;
-    margin: 0 auto;
-    padding: 6px 11px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    width: 180px;
-    &.bp-w-auto{
-      width: auto;
-    }
-    &:hover{
-      background-color: $pinklight;
-    }
-    &:active{
-      background-color: $pinkdark;
-    }
-    @include breakpoint($tablet) {
-      font-size:14px;
-      line-height: 18px;
-    }
-  }
-  &.button-action{
-    background-color: $pinkdark;
-    border-radius: 3px;
-    color: $white;
-    display: block;
-    font-size:12px;
-    font-weight: bold;
-    height: 36px;
-    margin-bottom: 20px;
-    padding: 10px 11px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
-    &:hover{
-      background-color: $pinklight;
-    }
-    &:active{
-      background-color: $pinkdark;
-    }
-    .icons{
-      font-size: 18px;
-      vertical-align: text-bottom;
-      padding-right: 5px;
-    }
-  }
-}
-p{
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 12px;
 }
 // BEGIN OVERRIDE LR defaults
 #wrapper {
@@ -309,6 +138,127 @@ p{
       font-weight: bold;
     }
   }
+}
+.half-page {
+  float: left;
+  width: 50%;
+  @include breakpoint($tablet) {
+    width: 100%;
+  }
+}
+
+// GENERAL CLASSES AND TAGS
+.left{
+  display: block;
+  float: left;
+  position: relative;
+}
+.right{
+  display: block;
+  float: right;
+  position: relative;
+}
+.clear{
+  clear: both;
+}
+.pink{
+  color:$pink;
+}
+a{
+  text-decoration: none;
+  color: $pink;
+  &.button-pink{
+    background-color: $pink;
+    border-radius: 3px;
+    color: $white;
+    display: block;
+    font-size:16px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 6px 11px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 180px;
+    &.bp-w-auto{
+      width: auto;
+    }
+    &:hover{
+      background-color: $pinklight;
+    }
+    &:active{
+      background-color: $pinkdark;
+    }
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 18px;
+    }
+  }
+  &.button-action{
+    background-color: $pinkdark;
+    border-radius: 3px;
+    color: $white;
+    display: block;
+    font-size:12px;
+    font-weight: bold;
+    height: 36px;
+    margin-bottom: 20px;
+    padding: 10px 11px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    &:hover{
+      background-color: $pinklight;
+    }
+    &:active{
+      background-color: $pinkdark;
+    }
+    .icons{
+      font-size: 18px;
+      vertical-align: text-bottom;
+      padding-right: 5px;
+    }
+  }
+}
+h2{
+  &.global-subtitle{
+    color: $greydark;
+    display: block;
+    font-size: 30px;
+    line-height: 46px;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+    &:after{
+      border-bottom: 2px solid $pink;
+      content:"";
+      display: block;
+      height: 2px;
+      margin: 0 auto;
+      padding-top: 15px;
+      position: relative;
+      text-align: center;
+      width: 130px;
+    }
+    @include breakpoint($tablet) {
+      font-size:20px;
+      line-height: 26px;
+    }
+  }
+}
+h3{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 15px 0;
+}
+p{
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 // AVISO LEGAL
