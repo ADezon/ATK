@@ -245,23 +245,20 @@
         float: left;
         margin-right: 10px;
         position: relative;
-        &:hover{
-          .search-form{
-            display: block;
-            float: left;
-            position: relative;
-            width:250px;
-          }
-        }
         .search-form{
           background-color: transparent;
           border-bottom: 1px solid $gris3;
           border-left:none;
           border-right:none;
           border-top:none;
+          position: relative;
           color: $greymedium;
           display: none;
-          margin-right: 10px;
+          margin: 0 10px 0 0;
+          float: left;
+          width: 250px;
+          font-size: 12px;
+          height: 20px;
           &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             color: $gris3;
           }
@@ -275,6 +272,11 @@
             color: $gris3;
           }
         }
+        &:hover{
+          .search-form{
+            display: block;
+          }
+        }
         .icon-search{
           color: $greymedium;
           display: block;
@@ -282,6 +284,7 @@
           font-size: 14px;
           line-height: 20px;
           position: relative;
+          cursor: pointer;
         }
         .icon-right{
           color: $greymedium;
