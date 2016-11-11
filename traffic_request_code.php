@@ -35,21 +35,21 @@
                     <li>
                         <div class="element-banner-h">
                             <!--<span class="icons icon-snow-chains"></span>-->
-                            <span class="icons icon-mobile"></span>
+                            <span class="icons icon-wheel"></span>
                             <span>Ús de cadenes (neu)</span>
                         </div>
                     </li>
                     <li>
                         <div class="element-banner-h">
                             <!--<span class="icons icon-road-retentions"></span>-->
-                            <span class="icons icon-mobile"></span>
+                            <span class="icons icon-cars"></span>
                             <span>Retencions</span>
                         </div>
                     </li>
                     <li class="last">
                         <div class="element-banner-h">
                             <!--<span class="icons icon-road-cuts"></span>-->
-                            <span class="icons icon-mobile"></span>
+                            <span class="icons icon-attention"></span>
                             <span>Talls a la xarxa viària Andorrana</span>
                         </div>
                     </li>
