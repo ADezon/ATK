@@ -63,7 +63,7 @@ fieldset {
     padding: 0 0 0 15px;
   }
   &.big-fieldset {
-    padding: 0 15px;
+    padding: 0;
     width: 30%;
     @include breakpoint($tablet) {
       min-height: 100px;
@@ -90,7 +90,7 @@ fieldset {
     }
   }
   &.small-fieldset {
-    padding: 0 15px;
+    padding: 0;
     width: 20%;
     @include breakpoint($tablet) {
       min-height: 100px;
@@ -105,7 +105,7 @@ fieldset {
       }
     }
     @include breakpoint($mobile) {
-      min-height: auto;
+      min-height: inherit;
       padding: 0;
       width: 100%;
       &.odd {

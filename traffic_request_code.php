@@ -28,7 +28,7 @@
                     <li>
                         <div class="element-banner-h">
                             <!--<span class="icons icon-road-accidents"></span>-->
-                            <span class="icons icon-cone"></span>
+                            <span class="icons icon-mobile"></span>
                             <span>Accidents viàris</span>
                         </div>
                     </li>

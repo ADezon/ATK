@@ -8,7 +8,6 @@
     height: 39px;
     overflow: visible;
     padding: 9px 0;
-    float: left;
     @include breakpoint($tablet) {
       display: none;
     }
