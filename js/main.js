@@ -101,9 +101,11 @@ $(document).ready(function() {
 
 
     // 3. LOGUIN System
+    // Pre-RESPONSIVE (Before SCALE)
     if ($(window).width() > 720) {
         // Abre el MENU Logueado
         $('#header .container-client-area.logged-area').addClass('active').show();
+    } else {
     }
 
     $(function() {

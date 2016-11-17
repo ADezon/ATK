@@ -16,7 +16,7 @@
       display: block;
       float:none;
       height: auto;
-      overflow: hidden;
+      overflow: visible;
       position: relative;
       .content{
         .left{
@@ -31,7 +31,7 @@
           clear: both;
           display: block;
           float:none;
-          overflow: hidden;
+          overflow: visible;
           position: relative;
           width: 100%;
         }
@@ -134,8 +134,9 @@
           clear: both;
           display: block;
           float:none;
-          overflow: hidden;
+          overflow: visible;
           position: relative;
+          height: 38px;
           ul{
             display: block;
             position: relative;
@@ -173,16 +174,17 @@
                     text-transform: uppercase;
                     top: 0;
                     width: 33%;
-                    &:before{
-                      width: 1px;
-                      height: 12px;
-                      background-color: #58585A;
-                      position: relative;
-                      display: block;
-                      float: left;
-                      content: "";
-                      margin: 5px 0px;
-                    }
+                    // Quitamos IMAGEN pk ya NO hay
+                    //&:before{
+                    //  width: 1px;
+                    //  height: 12px;
+                    //  background-color: #58585A;
+                    //  position: relative;
+                    //  display: block;
+                    //  float: left;
+                    //  content: "";
+                    //  margin: 5px 0;
+                    //}
                     &:first-child{
                       &:before{
                         display: none;
@@ -199,6 +201,10 @@
                 display: none;
               }
             }
+          }
+          #sub-menu-lang {
+            top: 46px !important;
+            width: 100% !important;
           }
         }
       }
@@ -356,7 +362,7 @@
                   display: none;
                   padding: 0 10px;
                   position: absolute;
-                  right:0;
+                  left:0;
                   height: auto;
                   text-align: center;
                   text-transform: uppercase;

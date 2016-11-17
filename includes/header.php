@@ -97,8 +97,10 @@
                     <div id="sub-menu-lang">
                     <a href="http://172.17.2.9:8080/es/web/guest/home"
                        class="taglib-language-list-text last" lang="es-ES">ESP</a>
-                    <a href="http://172.17.2.9:8080/es/web/guest/home"
+                    <a href="http://172.17.2.9:8080/en/web/guest/home"
                        class="taglib-language-list-text last" lang="en-EN">ENG</a>
+                      <a href="http://172.17.2.9:8080/en/web/guest/home"
+                         class="taglib-language-list-text last" lang="fr-FR">FRA</a>
                   </div>
                 </div>
               </div>
