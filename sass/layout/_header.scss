@@ -313,6 +313,9 @@
                 display: block;
                 position: relative;
                 &:hover{
+                  #sub-menu-lang {
+                    display: block;
+                  }
                   span{
                     &:after{
                       content: "\e913";
@@ -347,20 +350,34 @@
                     -moz-osx-font-smoothing: grayscale;
                   }
                 }
-                a{
+                #sub-menu-lang {
                   background-color: $grey;
-                  color: $greymedium;
                   cursor: pointer;
                   display: none;
-                  font-size: 13px;
-                  line-height: 20px;
-                  padding: 10px;
+                  padding: 0 10px;
                   position: absolute;
                   right:0;
+                  height: auto;
                   text-align: center;
                   text-transform: uppercase;
                   top: 30px;
                   z-index: 30;
+                }
+                a{
+                  background-color: $grey;
+                  color: $greymedium;
+                  cursor: pointer;
+                  font-size: 13px;
+                  line-height: 20px;
+                  padding: 0 0 10px 0;
+                  position: relative;
+                  &:first-child {
+                    padding: 10px 0;
+                  }
+
+
+
+
                   &:hover{
                     font-weight: bold;
                   }
@@ -500,7 +517,7 @@
           color: $pink;
         }
       }
-      &.active-loged{
+      &.active-logged{
         background-color: #FFFFFF;
         color: $greydark;
         .icons{
@@ -672,89 +689,117 @@
           font-weight: bold;
         }
       }
-      &.box-client-loged{
-        padding:20px 0 50px;
-        .menu-pages-client{
+    }
+    &.logged-area {
+      position: relative;
+      display: none;
+      max-width: 100%;
+      margin: 0 auto;
+      z-index: 20;
+      @include breakpoint($tablet) {
+        position: relative;
+        width: 100%;
+        padding: 0 15px 30px 15px;
+        background-color: #808080;
+      }
+      .box-client-logged{
+        border-radius: 0 0 3px 3px;
+        box-shadow:  0 1px 2px 1px rgba(50, 50, 50, 0.25);
+        -webkit-box-shadow: 0 1px 2px 1px rgba(50, 50, 50, 0.25);
+        -moz-box-shadow:    0 1px 2px 1px rgba(50, 50, 50, 0.25);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: block;
+        width: 100%;
+        background-color: $white;
+        padding:10px 0;
+        @include breakpoint($tablet) {
           position: relative;
           display: block;
+          top: 0;
+        }
+        .menu-pages-client {
+          position: relative;
+          display: block;
+          width: 100%;
+          max-width: 1280px;
+          margin: 0 auto;
           overflow: hidden;
           li{
             position: relative;
             display: block;
-            clear: both;
-            width: 100%;
+            float: left;
+            width: 16%;
+            border-right: 1px solid #9b9b9b;
+            @include breakpoint($tablet) {
+              float: none;
+              clear: both;
+              border: none;
+              width: 100%;
+            }
+            &.logout{
+              width: 20%;
+              border: none;
+              @include breakpoint($tablet) {
+               width: 100%;
+                background-color: #f5f5f5;
+              }
+              a{
+                position: relative;
+                display: block;
+                float: right;
+                color: $pink;
+                text-decoration: none;
+                span{
+                  position: relative;
+                  display: block;
+                  float: left;
+                  font-size: 16px;
+                  line-height: 21px;
+                  @include breakpoint($tablet) {
+                    font-size: 16px;
+                    line-height: 21px;
+                  }
+                }
+                .icons{
+                  position: relative;
+                  display: block;
+                  float: left;
+                  font-size: 21px;
+                  line-height: 21px;
+                  padding-left: 5px;
+                }
+              }
+            }
             a{
               position: relative;
               display: block;
-              padding: 17px 20px;
+              text-align: center;
+              padding: 10px;
               color: $greydark;
-              font-size: 14px;
-              line-height: 18px;
+              font-size: 16px;
+              line-height: 21px;
               text-decoration: none;
               @include breakpoint($tablet) {
                 font-size: 16px;
+                padding: 10px 40px;
                 line-height: 21px;
+                text-align: left;
               }
               &:hover{
-                background-color: #f5f5f5;
                 font-weight: bold;
+                @include breakpoint($tablet) {
+                  background-color: #f5f5f5;
+                }
               }
-            }
-          }
-        }
-        .banner-client-loged{
-          position: relative;
-          display: block;
-          overflow: hidden;
-          padding: 17px 20px;
-          @include breakpoint($tablet) {
-           display: none;
-          }
-          img{
-            position: relative;
-            display: block;
-            width: auto;
-            margin: 0 auto;
-          }
-        }
-        .logout{
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width:100%;
-          height: 50px;
-          padding: 17px 20px;
-          background-color: #f5f5f5;
-          a{
-            position: relative;
-            display: block;
-            float: right;
-            color: $pink;
-            text-decoration: none;
-            span{
-              position: relative;
-              display: block;
-              float: left;
-              font-size: 16px;
-              line-height: 21px;
-              @include breakpoint($tablet) {
-                font-size: 16px;
-                line-height: 21px;
-              }
-            }
-            .icons{
-              position: relative;
-              display: block;
-              float: left;
-              font-size: 21px;
-              line-height: 21px;
-              padding-left: 5px;
             }
           }
         }
       }
     }
   }
+
 
   #nav-main-mobile{
     background-color: $grey;
@@ -921,7 +966,7 @@
           padding: 20px;
           position: absolute;
           width: 100%;
-          z-index: 15;
+          z-index: 50;
           &:before,
           &:after {
             content: "";
@@ -1066,7 +1111,7 @@
       font-size: 14px;
       line-height: 16px;
       padding: 14px 0;
-      &.active, &.active-loged{
+      &.active, &.active-logged{
         color: $greydark;
         background-color: $white;
         .icons{

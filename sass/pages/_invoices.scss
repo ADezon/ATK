@@ -61,6 +61,31 @@
       }
     }
   }
+  &.period-selector {
+    background-color: white;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    display: block;
+    padding: 40px 0;
+    position: relative;
+    select {
+      float: left;
+      background-color: $white;
+      border: 1px solid $gris2;
+      clear: none;
+      display: block;
+      height: 36px;
+      margin: 0;
+      position: relative;
+      width: 190px;
+      padding: 0 8px;
+    }
+    input[type="submit"] {
+      float: left;
+      clear: none;
+      margin: 2px 32px;
+    }
+  }
   &.result-invoices{
     clear: both;
     display: block;

@@ -166,12 +166,43 @@ a{
     width: 180px;
     &.bp-w-auto{
       width: auto;
+      word-break: keep-all;
     }
     &:hover{
       background-color: $pinklight;
     }
     &:active{
       background-color: $pinkdark;
+    }
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 18px;
+    }
+  }
+  &.button-black{
+    background-color: black;
+    border-radius: 3px;
+    color: $white;
+    display: block;
+    font-size:16px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 6px 11px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 180px;
+    &.bp-w-auto{
+      width: auto;
+      word-break: keep-all;
+    }
+    &:hover{
+      background-color: grey;
+    }
+    &:active{
+      background-color: $gris2;
     }
     @include breakpoint($tablet) {
       font-size:14px;

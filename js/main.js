@@ -6,7 +6,7 @@ $(document).ready(function() {
 //
 // 1. MEGAMENU
 // 2. ENQUIRE (RESPONSIVE)
-// 3. TOOLTIPSTER
+// 3. LOGUIN System
 //
 
     //
@@ -60,6 +60,7 @@ $(document).ready(function() {
         // If supplied, triggered when a media query matches.
         match : function() {
             $("#topbar").appendTo("#header");
+            $('#header .container-client-area.logged-area').removeClass('active').hide();
         },
 
         // OPTIONAL
@@ -70,6 +71,9 @@ $(document).ready(function() {
             $("#topbar").removeClass('show-on-mobile');
             $("#topbar").insertBefore("#head");
             $('a.menu-mobile').removeClass('open');
+
+            // Abre el MENU Logueado
+            $('#header .container-client-area.logged-area').addClass('active').show();
         },
 
         // OPTIONAL
@@ -96,7 +100,12 @@ $(document).ready(function() {
     //
 
 
-    // LOGIN
+    // 3. LOGUIN System
+    if ($(window).width() > 720) {
+        // Abre el MENU Logueado
+        $('#header .container-client-area.logged-area').addClass('active').show();
+    }
+
     $(function() {
         var button = $('.button-client-area');
         var buttonMobile = $('.button-login-client');
@@ -109,6 +118,7 @@ $(document).ready(function() {
         });
     });
 
+    
     // LOGIN MOBILE
     $(function() {
         var button = $('.button-client-area');

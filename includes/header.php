@@ -94,8 +94,11 @@
                 <div class="portlet-borderless-container" style="">
                   <div class="portlet-body">
                     <span class="taglib-language-list-text" lang="es-CA">CAT</span>
+                    <div id="sub-menu-lang">
                     <a href="http://172.17.2.9:8080/es/web/guest/home"
                        class="taglib-language-list-text last" lang="es-ES">ESP</a>
+                    <a href="http://172.17.2.9:8080/es/web/guest/home"
+                       class="taglib-language-list-text last" lang="en-EN">ENG</a>
                   </div>
                 </div>
               </div>
