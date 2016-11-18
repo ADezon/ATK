@@ -43,7 +43,7 @@
             .position-left,
             .position-right {
               background-color: white;
-              margin-top: 10%;
+              margin-top: 6%;
               padding: 20px;
               width: 250px;
               @include breakpoint($intermedio) {
@@ -59,7 +59,7 @@
               background-color: white;
               padding: 20px;
               width: 450px;
-              margin: 10% auto 0 auto;
+              margin: 6% auto 0 auto;
               @include breakpoint($intermedio) {
                 float: none;
                 width: 100%;

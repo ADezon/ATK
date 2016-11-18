@@ -1104,7 +1104,7 @@
     }
     .button-client-area{
       @include span(3 of 12 last);
-      cursor: pointer;
+      cursor: default;
       position: relative;
       display: block;
       float: right;
