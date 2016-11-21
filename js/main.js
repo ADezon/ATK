@@ -61,11 +61,15 @@ $(document).ready(function() {
         match : function() {
             $("#topbar").appendTo("#header");
             $('#header .container-client-area.logged-area').removeClass('active').hide();
+            // Remove margin MENU logged
+            $('.logged-in #nav-private').css('margin-bottom', '0');
+
         },
 
         // OPTIONAL
         // If supplied, triggered when the media query transitions
         // *from a matched state to an unmatched state*.
+        // In this case we're working on BIG Screens
         unmatch : function() {
             $(".menu > ul").removeClass('show-on-mobile');
             $("#topbar").removeClass('show-on-mobile');
@@ -74,6 +78,8 @@ $(document).ready(function() {
 
             // Abre el MENU Logueado
             $('#header .container-client-area.logged-area').addClass('active').show();
+            $('.logged-in #nav-private').css('margin-bottom', '60px');
+
         },
 
         // OPTIONAL
@@ -105,14 +111,15 @@ $(document).ready(function() {
     if ($(window).width() > 720) {
         // Abre el MENU Logueado
         $('#header .container-client-area.logged-area').addClass('active').show();
+        $('.logged-in #nav-private').css('margin-bottom', '60px');
     } else {
     }
 
     $(function() {
-        var button = $('.button-client-area');
+        var button = $('.button-client-area').not(".active-logged");
         var buttonMobile = $('.button-login-client');
         var box = $('.container-client-area');
-        button.mouseup(function(login) {
+        button.mouseup(function() {
             box.toggle();
             button.toggleClass('active');
             buttonMobile.toggleClass('active');
@@ -126,7 +133,7 @@ $(document).ready(function() {
         var button = $('.button-client-area');
         var buttonMobile = $('.button-login-client');
         var box = $('.container-client-area');
-        buttonMobile.mouseup(function(loginMobile) {
+        buttonMobile.mouseup(function() {
             box.toggle();
             buttonMobile.toggleClass('active');
             button.toggleClass('active');
