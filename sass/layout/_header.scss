@@ -1104,11 +1104,7 @@
     }
     .button-client-area{
       @include span(3 of 12 last);
-<<<<<<< HEAD
       cursor: auto;
-=======
-      cursor: default;
->>>>>>> a6d307d1b13226f71bc3c444c2a6881dc935f265
       position: relative;
       display: block;
       float: right;
