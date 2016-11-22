@@ -1,5 +1,6 @@
 body{
   font-family: $webfont;
+  position: relative;
 }
 h1 {
   clear: both;
@@ -128,7 +129,6 @@ table {
     width: 100%;
   }
 }
-
 // GENERAL CLASSES AND TAGS
 .left{
   display: block;

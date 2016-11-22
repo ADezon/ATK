@@ -135,6 +135,16 @@ fieldset {
     line-height: 24px;
     position: relative;
   }
+  // LIFERAY CONTROL LABEL
+  .control-label {
+    clear: both;
+    color: $gris3;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    position: relative;
+  }
 }
 
 // FORM ELEMENTS
@@ -231,10 +241,11 @@ input[type=button] {
   font-size: 16px;
   font-weight: bold;
   height: 32px;
-  line-height: 20px;
+  line-height: 16px;
   margin: 20px 0;
-  padding: 8px 11px;
+  padding: 8px 22px;
   position: relative;
+  font-family: "Titillium Web", sans-serif;
   text-align: center;
   text-transform: uppercase;
   //width: 111px;
@@ -616,7 +627,7 @@ input[type=button] {
 }
 
 
-.cont-wrapper form#register-form .half-form {
+.cont-wrapper .register-form .half-form {
   fieldset {
     width: 100%;
     input {

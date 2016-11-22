@@ -1,4 +1,4 @@
-<?php include 'includes/header_loged.php'; ?>
+<?php include 'includes/header_loged_profile.php'; ?>
 
 
     <!--BEGIN SPECIFIC PAGE PROFILE-->
