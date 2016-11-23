@@ -710,9 +710,10 @@
       }
       .box-client-logged{
         border-radius: 0 0 3px 3px;
-        box-shadow:  0 1px 2px 1px rgba(50, 50, 50, 0.25);
-        -webkit-box-shadow: 0 1px 2px 1px rgba(50, 50, 50, 0.25);
-        -moz-box-shadow:    0 1px 2px 1px rgba(50, 50, 50, 0.25);
+        //box-shadow:  0 1px 2px 1px rgba(50, 50, 50, 0.25);
+        //-webkit-box-shadow: 0 1px 2px 1px rgba(50, 50, 50, 0.25);
+        //-moz-box-shadow:    0 1px 2px 1px rgba(50, 50, 50, 0.25);
+        border-bottom: 1px solid #cccccc;
         position: absolute;
         top: 50px;
         left: 0;

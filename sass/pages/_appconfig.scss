@@ -1,0 +1,401 @@
+#config-app-text{
+  background-color: #f5f5f5;
+}
+#config-app-content {
+  .content{
+    h2.global-subtitle{
+      position: relative;
+      display: block;
+      clear: both;
+      margin-top: 60px;
+    }
+    .sidebar{
+      padding-right: 0;
+      p{
+        position: relative;
+        display: block;
+        float: left;
+        font-size: 16px;
+        line-height: 21px;
+        margin-top: 20px;
+        .icons{
+          &:before{
+            text-align: center;
+            font-size: 50px;
+            color: $pink;
+          }
+        }
+      }
+    }
+    .content-ws{
+      padding-left: 5%;
+      @include breakpoint($tablet) {
+        padding: 0;
+      }
+      .permissions-list{
+        clear: both;
+        display: block;
+        float: left;
+        margin: 20px 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        .permissions-list-title{
+          background-color: $gris3;
+          clear: both;
+          display: block;
+          overflow: hidden;
+          position: relative;
+          span{
+            color: $white;
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 30px;
+            padding: 10px 0;
+            position: relative;
+            text-align: left;
+            text-transform: uppercase;
+            @include breakpoint($tablet) {
+              text-align: center;
+              line-height: 20px;
+            }
+          }
+          .permissions-list-number{
+            display: block;
+            float: left;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+          }
+          .permissions-list-user{
+            display: block;
+            float: left;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+          }
+          .permissions-list-action{
+            display: block;
+            float: right;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+          }
+        }
+        .permissions-list-row{
+          border-bottom: 1px solid $gris2;
+          clear: both;
+          display: block;
+          overflow: hidden;
+          padding: 3px 0;
+          position: relative;
+          @include breakpoint($tablet) {
+            border-bottom: 1px solid #cfd1d2;
+            border-left: none;
+            border-right: none;
+            border-top: 1px solid #cfd1d2;
+          }
+          span, a{
+            color: $greydark;
+            display: block;
+            font-size: 14px;
+            line-height: 33px;
+            padding: 10px 0;
+            position: relative;
+            text-align: left;
+            @include breakpoint($tablet) {
+              text-align: center;
+              line-height: 20px;
+            }
+          }
+          .permissions-list-number{
+            display: block;
+            float: left;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            span, a{
+              color: $pink;
+              font-weight: bold;
+            }
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+            a{
+              color: $pink;
+              text-decoration: underline;
+            }
+          }
+          .permissions-list-user{
+            display: block;
+            float: left;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+            a{
+              color: $pink;
+              text-decoration: underline;
+            }
+          }
+          .permissions-list-action{
+            display: block;
+            float: right;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+            .checkbox-custom-switch{
+              float: right;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+      .devices-list{
+        clear: both;
+        display: block;
+        float: left;
+        margin: 20px 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        .devices-list-title{
+          background-color: $gris3;
+          clear: both;
+          display: block;
+          overflow: hidden;
+          position: relative;
+          span{
+            color: $white;
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 30px;
+            padding: 10px 0;
+            position: relative;
+            text-align: left;
+            text-transform: uppercase;
+            @include breakpoint($tablet) {
+              text-align: center;
+              line-height: 20px;
+            }
+          }
+          .devices-list-device{
+            display: block;
+            float: left;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+          }
+          .devices-list-number{
+            display: block;
+            float: left;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+          }
+          .devices-list-user{
+            display: block;
+            float: left;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+          }
+          .devices-list-action{
+            display: block;
+            float: right;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+          }
+        }
+        .devices-list-row{
+          border-bottom: 1px solid $gris2;
+          clear: both;
+          display: block;
+          overflow: hidden;
+          padding: 3px 0;
+          position: relative;
+          @include breakpoint($tablet) {
+            border-bottom: 1px solid #cfd1d2;
+            border-left: none;
+            border-right: none;
+            border-top: 1px solid #cfd1d2;
+          }
+          span, a{
+            color: $greydark;
+            display: block;
+            font-size: 14px;
+            line-height: 33px;
+            padding: 10px 0;
+            position: relative;
+            text-align: left;
+            @include breakpoint($tablet) {
+              text-align: center;
+              line-height: 20px;
+            }
+          }
+          .devices-list-device{
+            display: block;
+            float: left;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            span, a{
+              font-weight: bold;
+            }
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+            a{
+              color: $pink;
+              text-decoration: underline;
+            }
+          }
+          .devices-list-number{
+            display: block;
+            float: left;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+            a{
+              color: $pink;
+              text-decoration: underline;
+            }
+          }
+          .devices-list-user{
+            display: block;
+            float: left;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+            a{
+              color: $pink;
+              text-decoration: underline;
+            }
+          }
+          .devices-list-action{
+            display: block;
+            float: right;
+            padding: 0 2%;
+            position: relative;
+            width: 23%;
+            @include breakpoint($intermedio) {
+              width: 23%;
+            }
+            @include breakpoint($tablet) {
+              width: 33.3%;
+            }
+            span, a{
+              text-align: right;
+              float: right;
+              position: relative;
+              display: block;
+              font-size: 14px;
+              line-height: 33px;
+              padding: 10px 0;
+              color: $pink;
+              span{
+                padding:0;
+              }
+              &.icons{
+                font-size: 18px;
+                line-height: 33px;
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+      }
+      .reclaim{
+        .icon-reclaim{
+          padding-right: 60px;
+        }
+        .text-reclaim{
+          h2{
+            width: 70%;
+          }
+          a.button-pink{
+            margin: 25px 0;
+          }
+        }
+      }
+      .button-pink{
+        float: left;
+        margin: 0;
+      }
+    }
+  }
+}

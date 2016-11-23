@@ -587,6 +587,15 @@
             font-size: 12px;
             line-height: 16px;
           }
+          &.button-pink{
+            margin: 25px 0;
+            color: $white;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: bold;
+            float: left;
+          }
         }
       }
     }
@@ -606,9 +615,6 @@
         width: 35px;
         height: 35px;
         text-align: center;
-        @include breakpoint($tablet) {
-          width: 20%;
-        }
         .icons {
           font-size: 12px;
           line-height: 35px;
@@ -628,6 +634,7 @@
         margin: 0;
         @include breakpoint($tablet) {
           width: 80%;
+          line-height: 22px;
         }
       }
     }
