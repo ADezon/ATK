@@ -240,6 +240,10 @@
               text-decoration-color: $greymedium;
             }
           }
+          &:before {
+            content: "";
+            display: none;
+          }
         }
       }
       .search{
@@ -320,7 +324,7 @@
                   }
                   span{
                     &:after{
-                      content: "\e915";
+                      content: "\e913";
                     }
                   }
                   a{
@@ -339,7 +343,7 @@
                   text-transform: uppercase;
                   &:after{
                     /* use !important to prevent issues with browser extensions that change fonts */
-                    content: "\e916";
+                    content: "\e914";
                     font-family: 'atelecom-icons' !important;
                     font-style: normal;
                     font-variant: normal;
@@ -385,6 +389,10 @@
                   }
                 }
               }
+            }
+            &:before {
+              content: "";
+              display: none;
             }
           }
         }
@@ -466,6 +474,10 @@
           position: relative;
           text-align: left;
           float: left;
+        }
+        &:before {
+          content: "";
+          display: none;
         }
       }
     }
@@ -640,7 +652,7 @@
         top:auto;
         right: auto;
       }
-      form#login-client{
+      form.login-client{
           position: relative;
           display: block;
           overflow: hidden;
@@ -732,11 +744,6 @@
               clear: both;
               border: none;
               width: 100%;
-            }
-            &.active {
-              a {
-                font-weight: bold;
-              }
             }
             &.logout{
               width: 20%;
@@ -857,6 +864,10 @@
           position: relative;
           float: left;
         }
+        &:before {
+          content: "";
+          display: none;
+        }
       }
     }
   }
@@ -877,6 +888,10 @@
   }
 
   .menu {
+    li:before {
+        content: "";
+        display: none;
+    }
     position: static;
     > ul {
       box-sizing: border-box;

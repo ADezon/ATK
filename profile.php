@@ -29,10 +29,11 @@
                         <p>ajimenezvidal@gmail.com</p>
                         <h4>Contrasenya</h4>
                         <p>******</p>
+                        <a href="#" class="button-pink">Editar</a>
                     </div>
                 </div>
                 <div class="half-page">
-                    <h1 class="main-title"><span class="icons icon-client"></span>Direcció</h1>
+                    <h1 class="main-title"><span class="icons icon-address"></span>Direcció</h1>
                     <div class="profile-info-data">
                         <h4>Carrer</h4>
                         <p>Andorra, Andorra la Vella, Andorra la Vella, Pere d’Urg, Mont Duca</p>
@@ -49,7 +50,7 @@
             </div>
             <div class="profile-info-element clear">
                 <div class="half-page">
-                    <h1 class="main-title"><span class="icons icon-alerts"></span>Facturació</h1>
+                    <h1 class="main-title"><span class="icons icon-invoice"></span>Facturació</h1>
                     <div class="profile-info-data">
                         <h4>Selecciona el teu compte</h4>
                         <select>

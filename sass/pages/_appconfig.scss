@@ -18,20 +18,16 @@
         font-size: 16px;
         line-height: 21px;
         margin-top: 20px;
-      }
-      .icon-container {
-        position: relative;
-        width: 100%;
-        text-align: center;
-        display: block;
-        float: left;
-        font-size: 16px;
-        line-height: 21px;
-        margin-top: 20px;
         .icons{
+          &.icon-arrow-rightleft{
+            padding: 0 2%;
+            &:before{
+              font-size: 35px;
+            }
+          }
           &:before{
             text-align: center;
-            font-size: 76px;
+            font-size: 55px;
             color: $pink;
           }
         }
@@ -391,7 +387,10 @@
       }
       .reclaim{
         .icon-reclaim{
-          padding-right: 60px;
+          padding-right: 50px;
+          .icon-searchdevice{
+            font-size: 70px;
+          }
         }
         .text-reclaim{
           h2{

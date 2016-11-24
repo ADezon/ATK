@@ -15,7 +15,7 @@
         <div class="content">
             <h2 class="global-subtitle">Permisos usuaris</h2>
             <div class="sidebar">
-                <div class="icon-container"><span class="icons icon-communicate big-icon"></span></div>
+                <p><span class="icons icon-client"></span><span class="icons icon-arrow-rightleft"></span><span class="icons icon-mobile"></span></p>
                 <p>Desactiva les línies a les que vols treure l’accés.</p>
             </div>
             <div class="content-ws">
@@ -40,7 +40,7 @@
                         </div>
                         <div class="permissions-list-action">
                             <label class="checkbox-custom-switch">
-                                <input type="checkbox" checked>
+                                <input type="checkbox">
                                 <div class="switch"></div>
                             </label>
                         </div>
@@ -68,7 +68,7 @@
                         </div>
                         <div class="permissions-list-action">
                             <label class="checkbox-custom-switch">
-                                <input type="checkbox" checked>
+                                <input type="checkbox">
                                 <div class="switch"></div>
                             </label>
                         </div>
@@ -77,19 +77,82 @@
             </div>
             <h2 class="global-subtitle">Connexions al teu descodificador</h2>
             <div class="sidebar">
-                <div class="icon-container"><span class="icons icon-device big-icon"></span></div>
+                <p><span class="icons icon-device"></span></p>
                 <p>Gestiona i controla, quins dispositius estan enllaçats s al teu descodificador.</p>
             </div>
             <div class="content-ws">
                 <div class="reclaim">
                     <div class="icon-reclaim">
-                        <span class="icons icon-search-glare"></span>
+                        <span class="icons icon-searchdevice"></span>
                     </div>
                     <div class="text-reclaim">
                         <h2>Vols saber qui està enllaçat al teu descodificador? </h2>
                         <a href="#" class="button-pink">CERCAR DISPOSITIUS</a>
                     </div>
                 </div>
+                <div class="devices-list">
+                    <div class="devices-list-title">
+                        <div class="devices-list-device">
+                            <span>DISPOSITIU</span>
+                        </div>
+                        <div class="devices-list-number">
+                            <span>NÚMERO MÒBIL</span>
+                        </div>
+                        <div class="devices-list-user">
+                            <span>NOM USUARI APP</span>
+                        </div>
+                        <div class="devices-list-action">
+
+                        </div>
+                    </div>
+                    <div class="devices-list-row">
+                        <div class="devices-list-device">
+                            <span>Lorem ipsum</span>
+                        </div>
+                        <div class="devices-list-number">
+                            <span>7877887</span>
+                        </div>
+                        <div class="devices-list-user">
+                            <span>Nom usuari</span>
+                        </div>
+                        <div class="devices-list-action">
+                            <a href="#"><span class="icons icon-eject"></span><span>Expulsar</span></a>
+                        </div>
+                    </div>
+                    <div class="devices-list-row">
+                        <div class="devices-list-device">
+                            <span>Lorem ipsum</span>
+                        </div>
+                        <div class="devices-list-number">
+                            <span>6656656</span>
+                        </div>
+                        <div class="devices-list-user">
+                            <span>Nom usuari</span>
+                        </div>
+                        <div class="devices-list-action">
+                            <a href="#"><span class="icons icon-eject"></span><span>Expulsar</span></a>
+                        </div>
+                    </div>
+                    <div class="devices-list-row">
+                        <div class="devices-list-device">
+                            <span>Lorem ipsum</span>
+                        </div>
+                        <div class="devices-list-number">
+                            <span>2322332</span>
+                        </div>
+                        <div class="devices-list-user">
+                            <span>Nom usuari</span>
+                        </div>
+                        <div class="devices-list-action">
+                            <a href="#"><span class="icons icon-eject"></span><span>Expulsar</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="request-successfully">
+                    <div class="icon-request "><span class="icons icon-check"></span></div>
+                    <p class="text-request">Dispositius expulsats amb èxit.</p>
+                </div>
+                <a href="#" class="button-pink">TORNAR A CERCAR</a>
             </div>
         </div>
     </div>

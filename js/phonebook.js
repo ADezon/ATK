@@ -6,7 +6,6 @@ $(document).ready(function () {
     // Open/Close Advanced Search
     $('.capsa_cerca a').click(function (e) {
         e.preventDefault();
-        $(this).toggleClass('opened');
         $('.cerca_avancada_section').slideToggle();
         $('.aui-field-select ul').hide();
     });
@@ -14,7 +13,6 @@ $(document).ready(function () {
     // Open/Close items
     $('a.jqTransformSelectOpen').click(function (e) {
         e.preventDefault();
-        $(this).toggleClass('opened')
         $(this).siblings('ul').slideToggle(200);
     });
 
@@ -39,7 +37,6 @@ $(document).ready(function () {
             && container.has(e.target).length === 0) // ... nor a descendant of the container
         {
             $('.aui-field-select ul').hide();
-            $('.jqTransformSelectOpen').removeClass('opened');
         }
     });
 

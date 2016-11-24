@@ -128,7 +128,7 @@
             </div>
             <div class="invoices-list-downloads">
               <a target="_blank" href="./uploaded_files/pdf_atelecom.pdf">
-                <img class="icons-download" src="./images/icon-pdf.png" alt=""/>
+                <span class="icons icon-pdf"></span>
               </a>
               <a target="_blank" href="./uploaded_files/excel_atelecom.xls">
                 <img class="icons-download" src="./images/icon-excel.png"
@@ -156,7 +156,7 @@
             </div>
             <div class="invoices-list-downloads">
               <a target="_blank" href="./uploaded_files/pdf_atelecom.pdf">
-                <img class="icons-download" src="./images/icon-pdf.png" alt=""/>
+                <span class="icons icon-pdf"></span>
               </a>
               <a target="_blank" href="./uploaded_files/excel_atelecom.xls">
                 <img class="icons-download" src="./images/icon-excel.png"
@@ -184,7 +184,7 @@
             </div>
             <div class="invoices-list-downloads">
               <a target="_blank" href="./uploaded_files/pdf_atelecom.pdf">
-                <img class="icons-download" src="./images/icon-pdf.png" alt=""/>
+                <span class="icons icon-pdf"></span>
               </a>
               <a target="_blank" href="./uploaded_files/excel_atelecom.xls">
                 <img class="icons-download" src="./images/icon-excel.png"
@@ -212,7 +212,7 @@
             </div>
             <div class="invoices-list-downloads">
               <a target="_blank" href="./uploaded_files/pdf_atelecom.pdf">
-                <img class="icons-download" src="./images/icon-pdf.png" alt=""/>
+                <span class="icons icon-pdf"></span>
               </a>
               <a target="_blank" href="./uploaded_files/excel_atelecom.xls">
                 <img class="icons-download" src="./images/icon-excel.png"
@@ -240,7 +240,7 @@
             </div>
             <div class="invoices-list-downloads">
               <a target="_blank" href="./uploaded_files/pdf_atelecom.pdf">
-                <img class="icons-download" src="./images/icon-pdf.png" alt=""/>
+                <span class="icons icon-pdf"></span>
               </a>
               <a target="_blank" href="./uploaded_files/excel_atelecom.xls">
                 <img class="icons-download" src="./images/icon-excel.png"
@@ -268,7 +268,7 @@
             </div>
             <div class="invoices-list-downloads">
               <a target="_blank" href="./uploaded_files/pdf_atelecom.pdf">
-                <img class="icons-download" src="./images/icon-pdf.png" alt=""/>
+                <span class="icons icon-pdf"></span>
               </a>
               <a target="_blank" href="./uploaded_files/excel_atelecom.xls">
                 <img class="icons-download" src="./images/icon-excel.png"
@@ -296,7 +296,7 @@
             </div>
             <div class="invoices-list-downloads">
               <a target="_blank" href="./uploaded_files/pdf_atelecom.pdf">
-                <img class="icons-download" src="./images/icon-pdf.png" alt=""/>
+                <span class="icons icon-pdf"></span>
               </a>
               <a target="_blank" href="./uploaded_files/excel_atelecom.xls">
                 <img class="icons-download" src="./images/icon-excel.png"
@@ -324,7 +324,7 @@
             </div>
             <div class="invoices-list-downloads">
               <a target="_blank" href="./uploaded_files/pdf_atelecom.pdf">
-                <img class="icons-download" src="./images/icon-pdf.png" alt=""/>
+                <span class="icons icon-pdf"></span>
               </a>
               <a target="_blank" href="./uploaded_files/excel_atelecom.xls">
                 <img class="icons-download" src="./images/icon-excel.png"
@@ -352,7 +352,7 @@
             </div>
             <div class="invoices-list-downloads">
               <a target="_blank" href="./uploaded_files/pdf_atelecom.pdf">
-                <img class="icons-download" src="./images/icon-pdf.png" alt=""/>
+                <span class="icons icon-pdf"></span>
               </a>
               <a target="_blank" href="./uploaded_files/excel_atelecom.xls">
                 <img class="icons-download" src="./images/icon-excel.png"
@@ -380,7 +380,7 @@
             </div>
             <div class="invoices-list-downloads">
               <a target="_blank" href="./uploaded_files/pdf_atelecom.pdf">
-                <img class="icons-download" src="./images/icon-pdf.png" alt=""/>
+                <span class="icons icon-pdf"></span>
               </a>
               <a target="_blank" href="./uploaded_files/excel_atelecom.xls">
                 <img class="icons-download" src="./images/icon-excel.png"
@@ -408,7 +408,7 @@
             </div>
             <div class="invoices-list-downloads">
               <a target="_blank" href="./uploaded_files/pdf_atelecom.pdf">
-                <img class="icons-download" src="./images/icon-pdf.png" alt=""/>
+                <span class="icons icon-pdf"></span>
               </a>
               <a target="_blank" href="./uploaded_files/excel_atelecom.xls">
                 <img class="icons-download" src="./images/icon-excel.png"
@@ -436,7 +436,7 @@
             </div>
             <div class="invoices-list-downloads">
               <a target="_blank" href="./uploaded_files/pdf_atelecom.pdf">
-                <img class="icons-download" src="./images/icon-pdf.png" alt=""/>
+                <span class="icons icon-pdf"></span>
               </a>
               <a target="_blank" href="./uploaded_files/excel_atelecom.xls">
                 <img class="icons-download" src="./images/icon-excel.png"

@@ -23,168 +23,146 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-@font-face {
-  font-family: 'atelecom-icons';
-  src:  url('fonts/atelecom-icons.eot?8mqs51');
-  src:  url('fonts/atelecom-icons.eot?8mqs51#iefix') format('embedded-opentype'),
-  url('fonts/atelecom-icons.ttf?8mqs51') format('truetype'),
-  url('fonts/atelecom-icons.woff?8mqs51') format('woff'),
-  url('fonts/atelecom-icons.svg?8mqs51#atelecom-icons') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'atelecom-icons' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .icon-arrow-rightleft:before {
-  content: "\e92c";
+  content: "\e92e";
 }
-.icon-pdf:before {
-  content: "\e92d";
-}
-.icon-logout:before {
+.icon-payinvoice:before {
   content: "\e92b";
 }
-.icon-eject:before {
-  content: "\e92a";
+.icon-pdf:before {
+  content: "\e92c";
 }
-.icon-communicate:before {
-  content: "\e927";
+.icon-searchdevice:before {
+  content: "\e92d";
 }
-.icon-device:before {
-  content: "\e928";
-}
-.icon-search-glare:before {
-  content: "\e929";
-}
-.icon-invoices:before {
-  content: "\e900";
-}
-.icon-addresses:before {
-  content: "\e901";
-}
-.icon-alerts:before {
-  content: "\e902";
-}
-.icon-call:before {
-  content: "\e903";
-}
-.icon-callcenter:before {
-  content: "\e904";
-}
-.icon-client:before {
-  content: "\e905";
-}
-.icon-computer:before {
-  content: "\e906";
-}
-.icon-consumption:before {
-  content: "\e907";
-}
-.icon-data:before {
-  content: "\e908";
-}
-.icon-email:before {
-  content: "\e909";
-}
-.icon-house:before {
-  content: "\e90a";
-}
-.icon-mobile:before {
-  content: "\e90b";
-}
-.icon-offer:before {
-  content: "\e90c";
-}
-.icon-phone:before {
-  content: "\e90d";
-}
-.icon-search:before {
-  content: "\e90e";
-}
-.icon-tv:before {
-  content: "\e90f";
-}
-.icon-instagram:before {
-  content: "\e910";
-}
-.icon-twitter:before {
-  content: "\e911";
-}
-.icon-facebook:before {
-  content: "\e912";
-}
-.icon-googleplus:before {
-  content: "\e913";
-}
-.icon-menu:before {
-  content: "\e914";
-}
-.icon-select_up:before {
-  content: "\e915";
-}
-.icon-select_down:before {
-  content: "\e916";
-}
-.icon-close:before {
-  content: "\e917";
-}
-.icon-left:before {
-  content: "\e918";
-}
-.icon-right:before {
-  content: "\e919";
-}
-.icon-landphone:before {
-  content: "\e91a";
-}
-.icon-hands:before {
-  content: "\e91b";
-}
-.icon-web:before {
-  content: "\e91c";
-}
-.icon-fax:before {
-  content: "\e91d";
-}
-.icon-headphones:before {
-  content: "\e91e";
-}
-.icon-question:before {
-  content: "\e91f";
-}
-.icon-close-rounded:before {
-  content: "\e920";
-}
-.icon-cars:before {
-  content: "\e921";
-}
-.icon-check:before {
-  content: "\e922";
-}
-.icon-point:before {
-  content: "\e923";
-}
-.icon-cone:before {
-  content: "\e924";
-}
-.icon-wheel:before {
+.icon-time:before {
   content: "\e925";
 }
-.icon-attention:before {
+.icon-logout:before {
   content: "\e926";
 }
+.icon-invoice:before {
+  content: "\e927";
+}
+.icon-eject:before {
+  content: "\e928";
+}
+.icon-device:before {
+  content: "\e929";
+}
+.icon-address:before {
+  content: "\e92a";
+}
+.icon-cone:before {
+  content: "\e922";
+}
+.icon-wheel:before {
+  content: "\e923";
+}
+.icon-attention:before {
+  content: "\e924";
+}
+.icon-point:before {
+  content: "\e921";
+}
+.icon-cars:before {
+  content: "\e91f";
+}
+.icon-alerts:before {
+  content: "\e900";
+}
+.icon-call:before {
+  content: "\e901";
+}
+.icon-callcenter:before {
+  content: "\e902";
+}
+.icon-client:before {
+  content: "\e903";
+}
+.icon-computer:before {
+  content: "\e904";
+}
+.icon-consumption:before {
+  content: "\e905";
+}
+.icon-data:before {
+  content: "\e906";
+}
+.icon-email:before {
+  content: "\e907";
+}
+.icon-house:before {
+  content: "\e908";
+}
+.icon-mobile:before {
+  content: "\e909";
+}
+.icon-offer:before {
+  content: "\e90a";
+}
+.icon-phone:before {
+  content: "\e90b";
+}
+.icon-search:before {
+  content: "\e90c";
+}
+.icon-tv:before {
+  content: "\e90d";
+}
+.icon-instagram:before {
+  content: "\e90e";
+}
+.icon-twitter:before {
+  content: "\e90f";
+}
+.icon-facebook:before {
+  content: "\e910";
+}
+.icon-googleplus:before {
+  content: "\e911";
+}
+.icon-menu:before {
+  content: "\e912";
+}
+.icon-select_up:before {
+  content: "\e913";
+}
+.icon-select_down:before {
+  content: "\e914";
+}
+.icon-close:before {
+  content: "\e915";
+}
+.icon-left:before {
+  content: "\e916";
+}
+.icon-right:before {
+  content: "\e917";
+}
+.icon-landphone:before {
+  content: "\e918";
+}
+.icon-hands:before {
+  content: "\e919";
+}
+.icon-web:before {
+  content: "\e91a";
+}
+.icon-fax:before {
+  content: "\e91b";
+}
+.icon-headphones:before {
+  content: "\e91c";
+}
+.icon-question:before {
+  content: "\e91d";
+}
+.icon-close-rounded:before {
+  content: "\e91e";
+}
+.icon-check:before {
+  content: "\e920";
+}
+
+

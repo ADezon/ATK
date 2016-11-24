@@ -174,7 +174,7 @@
                 <li>
                     <a href="#">Consum</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="#">Configura la App</a>
                 </li>
                 <li class="logout">

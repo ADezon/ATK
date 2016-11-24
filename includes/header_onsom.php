@@ -145,7 +145,7 @@
 
   <div class="container-client-area">
     <div class="box-client-area">
-      <form id="login-client">
+      <form class="login-client">
         <div class="message-error">
           <p>Missatge d'error de login</p>
         </div>

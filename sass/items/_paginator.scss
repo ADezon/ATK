@@ -11,6 +11,10 @@
     display: none;
   }
   li{
+    &:before {
+      content: "";
+      display: none;
+    }
     display: block;
     float: left;
     position: relative;
@@ -92,6 +96,10 @@
       font-size: 20px;
       line-height: 24px;
       position: relative;
+    }
+    &:before {
+      content: "";
+      display: none;
     }
   }
 }
