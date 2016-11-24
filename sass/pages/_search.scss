@@ -54,7 +54,7 @@
             &:after{
               /* use !important to prevent issues with browser extensions that change fonts */
               color: $black;
-              content: "\e917";
+              content: "\e919";
               display: block;
               float: right;
               font-family: 'atelecom-icons' !important;
@@ -160,7 +160,7 @@
           }
           &.mobile{
             &:before {
-              content: "\e909";
+              content: "\e90b";
             }
             @include breakpoint($tablet) {
               .right {
@@ -172,7 +172,7 @@
           }
           &.email{
             &:before {
-              content: "\e907";
+              content: "\e909";
             }
             @include breakpoint($tablet) {
               .right {
@@ -184,12 +184,12 @@
           }
           &.call{
             &:before {
-              content: "\e91c";
+              content: "\e91e";
             }
             @include breakpoint($tablet) {
               .right {
                 &:before {
-                  content: "\e91c";
+                  content: "\e91e";
                 }
               }
             }

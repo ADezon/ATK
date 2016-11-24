@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="SvgjsSvg1017"
+   version="1.1"
+   width="95.4877180357139"
+   height="66.75"
+   viewBox="0 0 95.4877180357139 66.75"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="device.svg">
+  <metadata
+     id="metadata4305">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     id="namedview4303"
+     showgrid="false"
+     inkscape:zoom="13.76779"
+     inkscape:cx="47.671225"
+     inkscape:cy="33.375"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="SvgjsSvg1017" />
+  <title
+     id="title4288">Fill 1</title>
+  <desc
+     id="desc4290">Created with Avocode.</desc>
+  <defs
+     id="SvgjsDefs1018" />
+  <path
+     id="SvgjsPath1019"
+     d="m 81.704394,4.958166 c -1.36,-2.5999995 -4.030002,-4.21999948 -6.960002,-4.21999948 l -54.7,0 c -2.93,0 -5.6,1.61999998 -6.96,4.21999948 -0.06,0.09 -12.0599993,32.450001 -12.0599993,32.490001 -0.30000001,0.84 -0.49000001,1.75 -0.49000001,2.68 l 0,17.92 c 0,4.34 3.52000011,7.87 7.85000051,7.87 l 78.5400008,0 c 4.32,0 7.85,-3.53 7.85,-7.87 l 0,-17.92 c 0.02,-0.95 -0.15,-1.84 -0.46,-2.68 -0.02,-0.04 -12.56,-32.400001 -12.61,-32.490001 z m -63.670002,2.14 c 0.47,-0.8 1.32,-1.28 2.27,-1.28 l 54.26,0.07 c 0.93,0 1.78,0.49 2.26,1.3 l 9.970002,25.070001 -78.2200008,0 4.7299988,-12.56 7.59,0 c 1.45,0 2.62,-1.17 2.62,-2.62 0,-1.45 -1.17,-2.63 -2.62,-2.63 l -5.6,0 z m 71.530002,50.950001 c 0,1.45 -1.17,2.63 -2.61,2.63 l -78.5700008,0 c -1.4400004,0 -2.6100004,-1.17 -2.6100004,-2.63 l 0,-17.92 c 0,-1.45 1.16,-2.62 2.6100004,-2.62 l 78.5500008,0 c 1.44,0 2.61,1.17 2.61,2.62 l 0,17.92 z"
+     inkscape:connector-curvature="0"
+     style="fill:#d40072;fill-opacity:1" />
+  <path
+     id="SvgjsPath1021"
+     d="M358.66 1002L347.74 1002C347.33 1002 347 1003.17 347 1004.62C347 1006.07 347.33 1007.25 347.74 1007.25L358.66 1007.25C359.07000000000005 1007.25 359.39000000000004 1006.08 359.39000000000004 1004.62C359.39000000000004 1003.17 359.07000000000005 1002 358.66 1002 "
+     fill="#d40072"
+     fill-opacity="1"
+     transform="matrix(1,0,0,1,-332.75614098214305,-955.625)" />
+  <path
+     id="SvgjsPath1023"
+     d="M399.68 1002L396.85 1002C395.83000000000004 1002 395 1003.17 395 1004.62C395 1006.07 395.83 1007.25 396.85 1007.25L399.68 1007.25C400.71 1007.25 401.54 1006.08 401.54 1004.62C401.54 1003.17 400.71000000000004 1002 399.68 1002 "
+     fill="#d40072"
+     fill-opacity="1"
+     transform="matrix(1,0,0,1,-332.75614098214305,-955.625)" />
+  <path
+     id="SvgjsPath1025"
+     d="M388.68 1002L385.85 1002C384.83000000000004 1002 384 1003.17 384 1004.62C384 1006.07 384.83 1007.25 385.85 1007.25L388.68 1007.25C389.71 1007.25 390.54 1006.08 390.54 1004.62C390.54 1003.17 389.71000000000004 1002 388.68 1002 "
+     fill="#d40072"
+     fill-opacity="1"
+     transform="matrix(1,0,0,1,-332.75614098214305,-955.625)" />
+  <path
+     id="SvgjsPath1027"
+     d="M410.68 1002L407.85 1002C406.83000000000004 1002 406 1003.17 406 1004.62C406 1006.07 406.83 1007.25 407.85 1007.25L410.68 1007.25C411.71 1007.25 412.54 1006.08 412.54 1004.62C412.54 1003.17 411.71000000000004 1002 410.68 1002 "
+     fill="#d40072"
+     fill-opacity="1"
+     transform="matrix(1,0,0,1,-332.75614098214305,-955.625)" />
+</svg>

@@ -240,10 +240,6 @@
               text-decoration-color: $greymedium;
             }
           }
-          &:before {
-            content: "";
-            display: none;
-          }
         }
       }
       .search{
@@ -324,7 +320,7 @@
                   }
                   span{
                     &:after{
-                      content: "\e913";
+                      content: "\e915";
                     }
                   }
                   a{
@@ -343,7 +339,7 @@
                   text-transform: uppercase;
                   &:after{
                     /* use !important to prevent issues with browser extensions that change fonts */
-                    content: "\e914";
+                    content: "\e916";
                     font-family: 'atelecom-icons' !important;
                     font-style: normal;
                     font-variant: normal;
@@ -389,10 +385,6 @@
                   }
                 }
               }
-            }
-            &:before {
-              content: "";
-              display: none;
             }
           }
         }
@@ -474,10 +466,6 @@
           position: relative;
           text-align: left;
           float: left;
-        }
-        &:before {
-          content: "";
-          display: none;
         }
       }
     }
@@ -745,6 +733,11 @@
               border: none;
               width: 100%;
             }
+            &.active {
+              a {
+                font-weight: bold;
+              }
+            }
             &.logout{
               width: 20%;
               border: none;
@@ -864,10 +857,6 @@
           position: relative;
           float: left;
         }
-        &:before {
-          content: "";
-          display: none;
-        }
       }
     }
   }
@@ -888,10 +877,6 @@
   }
 
   .menu {
-    li:before {
-        content: "";
-        display: none;
-    }
     position: static;
     > ul {
       box-sizing: border-box;

@@ -34,7 +34,7 @@
       }
       &:after{
         /* use !important to prevent issues with browser extensions that change fonts */
-        content: "\e914";
+        content: "\e916";
         font-family: 'atelecom-icons' !important;
         font-style: normal;
         font-variant: normal;
@@ -46,6 +46,9 @@
         speak: none;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+      }
+      &.opened:after {
+        content: "\e915";
       }
     }
   }
@@ -146,9 +149,12 @@
                 /* Better Font Rendering =========== */
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
-                content: "\e914";
+                content: "\e916";
                 font-size: 20px;
                 color: $black;
+              }
+              &.opened:before {
+                content: "\e915";
               }
             }
             ul {
@@ -562,7 +568,7 @@
                             &:before{
                               /* use !important to prevent issues with browser extensions that change fonts */
                               color: $pink;
-                              content: "\e907";
+                              content: "\e909";
                               font-family: 'atelecom-icons' !important;
                               font-size: 21px;
                               font-style: normal;
@@ -583,7 +589,7 @@
                             &:before{
                               /* use !important to prevent issues with browser extensions that change fonts */
                               color: $pink;
-                              content: "\e91b";
+                              content: "\e91d";
                               font-family: 'atelecom-icons' !important;
                               font-size: 21px;
                               font-style: normal;
@@ -604,7 +610,7 @@
                             &:before{
                               /* use !important to prevent issues with browser extensions that change fonts */
                               color: $pink;
-                              content: "\e918";
+                              content: "\e91a";
                               font-family: 'atelecom-icons' !important;
                               font-size: 21px;
                               font-style: normal;
@@ -625,7 +631,7 @@
                             &:before{
                               /* use !important to prevent issues with browser extensions that change fonts */
                               color: $pink;
-                              content: "\e909";
+                              content: "\e90b";
                               font-family: 'atelecom-icons' !important;
                               font-size: 21px;
                               font-style: normal;
@@ -646,7 +652,7 @@
                             &:before{
                               /* use !important to prevent issues with browser extensions that change fonts */
                               color: $pink;
-                              content: "\e91a";
+                              content: "\e91c";
                               font-family: 'atelecom-icons' !important;
                               font-size: 21px;
                               font-style: normal;

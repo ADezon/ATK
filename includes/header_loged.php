@@ -174,11 +174,11 @@
                 <li>
                     <a href="#">Consum</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#">Configura la App</a>
                 </li>
                 <li class="logout">
-                    <a href="#"><span>Desconectar</span><span class="icons icon-client"></span></a>
+                    <a href="#"><span>Desconectar</span><span class="icons icon-logout"></span></a>
                 </li>
             </ul>
         </div>

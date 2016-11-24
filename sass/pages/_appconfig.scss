@@ -18,10 +18,20 @@
         font-size: 16px;
         line-height: 21px;
         margin-top: 20px;
+      }
+      .icon-container {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        display: block;
+        float: left;
+        font-size: 16px;
+        line-height: 21px;
+        margin-top: 20px;
         .icons{
           &:before{
             text-align: center;
-            font-size: 50px;
+            font-size: 76px;
             color: $pink;
           }
         }
