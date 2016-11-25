@@ -99,33 +99,6 @@
        padding: 0;
       }
     }
-    .invoices-select{
-      display: block;
-      float: left;
-      position: relative;
-      @include breakpoint($tablet) {
-        padding: 10px;
-      }
-      h3{
-        color: $greydark;
-        display: block;
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 21px;
-        position: relative;
-      }
-      select{
-        background-color: $white;
-        border: 1px solid $gris2;
-        clear: both;
-        display: block;
-        height: 36px;
-        margin: 0;
-        position: relative;
-        width: 190px;
-        padding: 0 8px;
-      }
-    }
     .invoices-counter-paginator{
       display: block;
       float: right;
@@ -168,6 +141,113 @@
       overflow: hidden;
       position: relative;
       width: 100%;
+      &.invoices-list-pay{
+        .invoices-list-title {
+          background-color: $gris3;
+          padding: 5px 0px;
+          .invoices-list-cb{
+            float: right;
+            margin-top: 5px;
+          }
+          .invoices-list-number{
+            padding: 0 2%;
+          }
+          .invoices-list-date{
+            padding: 0 2%;
+            width: 20%;
+            @include breakpoint($intermedio) {
+              width: 20%;
+            }
+          }
+          .invoices-list-amount{
+            float: right;
+            span, a{
+              text-align: right;
+            }
+          }
+          .invoices-list-downloads {
+            float: left;
+          }
+        }
+        .invoices-list-row {
+          border-bottom: 1px solid #a9a9a9;
+          border-left: none;
+          border-right: none;
+          padding: 8px 0;
+          .invoices-list-cb{
+            float: right;
+          }
+          .invoices-list-number{
+            padding: 0 2%;
+            span, a{
+              color: $greydark;
+              text-decoration: none;
+            }
+          }
+          .invoices-list-date{
+            padding: 0 2%;
+            width: 20%;
+            @include breakpoint($intermedio) {
+              width: 20%;
+            }
+            span, a{
+             font-weight: bold;
+              text-transform: none;
+            }
+          }
+          .invoices-list-amount{
+            float: right;
+            span, a{
+              text-align: right;
+              color: $pink;
+            }
+          }
+          .invoices-list-downloads {
+            float: left;
+            span, a{
+              color: $pink;
+              text-decoration: underline;
+              width: 100%;
+              font-size: 14px;
+              padding: 5px 0;
+              line-height: 20px;
+              text-transform: none;
+            }
+          }
+        }
+        .invoices-list-result{
+          position: relative;
+          display: block;
+          float: right;
+          background-color: $greysoft;
+          width: 30%;
+          padding: 20px 35px 20px 25px;
+          .text-total{
+            position: relative;
+            display: block;
+            float: left;
+            width: 40%;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: bold;
+          }
+          .amount-total{
+            position: relative;
+            display: block;
+            float: right;
+            font-weight: bold;
+            color: $pink;
+            font-size: 30px;
+            line-height: 34px;
+          }
+        }
+        .button-pay{
+          clear: both;
+          float: right;
+          margin: 20px 0;
+          width: 30%;
+        }
+      }
       .invoices-list-title{
         background-color: #cfd1d2;
         clear: both;
@@ -176,11 +256,6 @@
         position: relative;
         @include breakpoint($tablet) {
          display: none;
-        }
-        .checkbox-custom{
-          input[type=checkbox], label{
-            margin: 8px 21px;
-          }
         }
         span{
           color: $white;
@@ -379,10 +454,36 @@
     }
     a.button-pink {
       float:left;
-      width: 230px;
       @include breakpoint($tablet) {
         display: none;
       }
     }
+  }
+}
+.invoices-select{
+  display: block;
+  float: left;
+  position: relative;
+  @include breakpoint($tablet) {
+    padding: 10px;
+  }
+  h3{
+    color: $greydark;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
+    position: relative;
+  }
+  select{
+    background-color: $white;
+    border: 1px solid $gris2;
+    clear: both;
+    display: block;
+    height: 36px;
+    margin: 0;
+    position: relative;
+    width: 190px;
+    padding: 0 8px;
   }
 }
