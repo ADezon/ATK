@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="half-page">
-          <h1 class="main-title"><span class="icons icon-client"></span>Direcció
+          <h1 class="main-title"><span class="icons icon-addresses"></span>Direcció
           </h1>
           <div class="profile-info-data">
             <h4>Carrer</h4>
@@ -53,7 +53,7 @@
       </div>
       <div class="profile-info-element clear">
         <div class="half-page">
-          <h1 class="main-title"><span class="icons icon-alerts"></span>Facturació
+          <h1 class="main-title"><span class="icons icon-invoices"></span>Facturació
           </h1>
           <div class="profile-info-data">
             <h4>Selecciona el teu compte</h4>
@@ -125,7 +125,6 @@
           <!--                            <p>Missatge d'error del FORM</p>-->
           <!--                        </div>-->
 
-
           <fieldset class="box-client-number">
             <h4>Número del client</h4>
             <p>9141994200113748633</p>
@@ -164,8 +163,12 @@
     </div>
 
   </div>
-  <!--IMPORTANT:: REQUIRES LOAD src="/js/dinamiclogin.js" SCRIPT IN HEAD-->
-  <!--END POP-UP LOGUIN CONTENT-->
+  <!--IMPORTANT:: REQUIRES LOAD src="/js/dinamicglobalalert.js" SCRIPT IN HEAD-->
+  <!--END POP-UP GLOBAL ALERT CONTENT-->
 
+<script language="javascript">
+  $( document ).ready(function() {
+    revealalert();
+  });</script>
 
 <?php include 'includes/footer.php'; ?>

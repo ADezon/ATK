@@ -51,6 +51,7 @@
   <script src="./js/init-slider.js"></script>
   <script src="./js/alerts.js"></script>
   <script src="./js/phonebook.js"></script>
+  <script src="./js/dinamicglobalalert.js"></script>
   <!--END INYECTED AS REQUIRED-->
 
   <!--END SCRIPTS -->
@@ -157,8 +158,6 @@
     </div>
   </div>
   <!-- END REGION HEAD -->
-
-
     <div class="container-client-area logged-area">
         <div class="box-client-logged">
             <ul class="menu-pages-client">

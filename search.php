@@ -32,7 +32,7 @@
                   </div>
               </fieldset>
               <fieldset class="right">
-                  <input value="Enviar" class="search-value-send button-pink" type="submit" />
+                  <input value="Cercar" class="search-value-send button-pink" type="submit" />
               </fieldset>
           </form>
         </div>

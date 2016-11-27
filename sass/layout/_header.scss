@@ -174,17 +174,11 @@
                     text-transform: uppercase;
                     top: 0;
                     width: 33%;
-                    // Quitamos IMAGEN pk ya NO hay
-                    //&:before{
-                    //  width: 1px;
-                    //  height: 12px;
-                    //  background-color: #58585A;
-                    //  position: relative;
-                    //  display: block;
-                    //  float: left;
-                    //  content: "";
-                    //  margin: 5px 0;
-                    //}
+
+                    @include breakpoint ($tablet) {
+                      text-transform: none;
+                      font-weight: bold;
+                    }
                     &:first-child{
                       &:before{
                         display: none;
@@ -201,10 +195,6 @@
                 display: none;
               }
             }
-          }
-          #sub-menu-lang {
-            top: 46px !important;
-            width: 100% !important;
           }
         }
       }
@@ -324,7 +314,7 @@
                   }
                   span{
                     &:after{
-                      content: "\e913";
+                      content: "\e915";
                     }
                   }
                   a{
@@ -343,7 +333,7 @@
                   text-transform: uppercase;
                   &:after{
                     /* use !important to prevent issues with browser extensions that change fonts */
-                    content: "\e914";
+                    content: "\e916";
                     font-family: 'atelecom-icons' !important;
                     font-style: normal;
                     font-variant: normal;
@@ -368,6 +358,22 @@
                   text-transform: uppercase;
                   top: 30px;
                   z-index: 30;
+
+                  @include breakpoint ($tablet) {
+                    display: block !important;
+                    position: relative;
+                    float: left;
+                    padding: 0;
+                    top: 8px;
+                    text-transform: none;
+
+                    a {
+                     border-left: 1px solid grey;
+                      padding: 2px 14px;
+                      font-weight: 400;
+                      text-transform: none;
+                    }
+                }
                 }
                 a{
                   background-color: $grey;
@@ -924,7 +930,11 @@
           @include last;
         }
         &:hover{
+          color: black;
           background-color: $grey;
+          span {
+            color: black;
+          }
           @include breakpoint($tablet) {
             background-color: $greydark;
           }

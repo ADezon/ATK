@@ -170,8 +170,11 @@
     </div>
 
   </div>
-  <!--IMPORTANT:: REQUIRES LOAD src="/js/dinamiclogin.js" SCRIPT IN HEAD-->
+  <!--IMPORTANT:: REQUIRES LOAD src="/js/dinamicglobalalert.js" SCRIPT IN HEAD-->
   <!--END POP-UP LOGUIN CONTENT-->
-
+  <script language="javascript">
+    $( document ).ready(function() {
+      revealalert();
+    });</script>
 
 <?php include 'includes/footer.php'; ?>

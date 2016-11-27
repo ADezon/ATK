@@ -33,8 +33,6 @@
   <script
     src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
   <script src="./js/enquire.min.js"></script>
-  <script src="./js/tooltipster/js/jquery.tooltipster.min.js"></script>
-  <script src="./js/dinamicglobalalert.js"></script>
   <script src="./js/main.js"></script>
   <script>
     var timering = 7000;
@@ -42,10 +40,7 @@
   <!--END GLOBAL-->
 
   <!--BEGIN INYECTED AS REQUIRED-->
-  <script src="./js/flexslider/jquery.flexslider-min.js"></script>
-  <script src="./js/init-slider.js"></script>
-  <script src="./js/alerts.js"></script>
-  <script src="./js/phonebook.js"></script>
+  <script src="./js/dinamicglobalalert.js"></script>
   <!--END INYECTED AS REQUIRED-->
 
   <!--END SCRIPTS -->

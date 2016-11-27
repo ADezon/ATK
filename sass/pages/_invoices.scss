@@ -99,6 +99,13 @@
        padding: 0;
       }
     }
+    &.result-invoices-pay{
+      .content{
+        @include breakpoint($tablet) {
+          padding: 0 10px;
+        }
+      }
+    }
     .invoices-counter-paginator{
       display: block;
       float: right;
@@ -144,29 +151,44 @@
       &.invoices-list-pay{
         .invoices-list-title {
           background-color: $gris3;
-          padding: 5px 0px;
+          padding: 5px 0;
+          display: block;
           .invoices-list-cb{
             float: right;
             margin-top: 5px;
+            @include breakpoint($tablet) {
+              width: 10%;
+              padding: 0 2%;
+              display: block;
+            }
           }
           .invoices-list-number{
             padding: 0 2%;
+            @include breakpoint($tablet) {
+              width: 30%;
+            }
           }
           .invoices-list-date{
             padding: 0 2%;
             width: 20%;
-            @include breakpoint($intermedio) {
-              width: 20%;
+            @include breakpoint($tablet) {
+              width: 30%;
             }
           }
           .invoices-list-amount{
             float: right;
+            @include breakpoint($tablet) {
+              width: 30%;
+            }
             span, a{
               text-align: right;
             }
           }
           .invoices-list-downloads {
             float: left;
+            @include breakpoint($tablet) {
+              display: none;
+            }
           }
         }
         .invoices-list-row {
@@ -176,9 +198,20 @@
           padding: 8px 0;
           .invoices-list-cb{
             float: right;
+            @include breakpoint($tablet) {
+              width: 10%;
+              padding: 0 2%;
+              display: block;
+            }
           }
           .invoices-list-number{
             padding: 0 2%;
+            @include breakpoint($tablet) {
+              width: 30%;
+              span, a {
+                text-align: left;
+              }
+            }
             span, a{
               color: $greydark;
               text-decoration: none;
@@ -190,6 +223,12 @@
             @include breakpoint($intermedio) {
               width: 20%;
             }
+            @include breakpoint($tablet) {
+              width: 30%;
+              span, a {
+                text-align: left;
+              }
+            }
             span, a{
              font-weight: bold;
               text-transform: none;
@@ -197,6 +236,10 @@
           }
           .invoices-list-amount{
             float: right;
+            @include breakpoint($tablet) {
+              width: 30%;
+              padding: 0 2%;
+            }
             span, a{
               text-align: right;
               color: $pink;
@@ -204,6 +247,9 @@
           }
           .invoices-list-downloads {
             float: left;
+            @include breakpoint($tablet) {
+              display: none;
+            }
             span, a{
               color: $pink;
               text-decoration: underline;
@@ -222,6 +268,9 @@
           background-color: $greysoft;
           width: 30%;
           padding: 20px 35px 20px 25px;
+          @include breakpoint($tablet) {
+            width: 100%;
+          }
           .text-total{
             position: relative;
             display: block;
