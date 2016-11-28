@@ -94,16 +94,16 @@
                 <span id="p_82"></span>
                 <div class="portlet-borderless-container" style="">
                   <div class="portlet-body">
-                    <span class="taglib-language-list-text" lang="es-CA">CAT</span>
+                    <span class="taglib-language-list-text" lang="es-CA">Cat</span>
                     <div id="sub-menu-lang">
                       <a href="http://172.17.2.9:8080/es/web/guest/home"
                          class="taglib-language-list-text last"
-                         lang="es-ES">ESP</a>
+                         lang="es-ES">Esp</a>
                       <a href="http://172.17.2.9:8080/es/web/guest/home"
                          class="taglib-language-list-text last"
-                         lang="en-EN">ENG</a>
+                         lang="en-EN">Eng</a>
                       <a href="http://172.17.2.9:8080/en/web/guest/home"
-                         class="taglib-language-list-text last" lang="fr-FR">FRA</a>
+                         class="taglib-language-list-text last" lang="fr-FR">Fra</a>
                     </div>
                   </div>
                 </div>

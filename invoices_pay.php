@@ -135,7 +135,7 @@
 
 
   <!--ALERT FOR FLOATING DATA-->
-  <div class="general-alert-wrapper">
+  <div class="general-alert-wrapper fixedone">
     <div class="content-general-wrapper wide-alert">
       <div class="alert-general-close">
         <span class="icons icon-close"></span>
