@@ -996,3 +996,55 @@
   }
 }
 
+
+// AJAX RESPONSES
+.cont-wrapper.ajax-loading {
+  min-height: 700px;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+}
+.loading-data-ajax {
+  background: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  opacity: 1; // 0
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all .15s ease-in; // CHANGE OPACITY to "1" in order to TEST
+  visibility: visible; // hidden
+  width: 100%;
+  z-index: 25; // CHANGE VISIBILITY to "visible" in order to TEST
+
+  .ajax-general-wrapper {
+    margin: 18% auto;
+    position: relative;
+    width: 166px;
+    z-index: 10;
+    @include breakpoint($tablet) {
+      margin: 40% auto;
+      width: 60%;
+    }
+    @include breakpoint($mobile) {
+      width: 40%;
+      margin: 70% auto;
+    }
+    &:target {
+      animation: .6s both action;
+      opacity: 1;
+      visibility: visible;
+    }
+    img {
+      width: 100%;
+    }
+    .loader-message {
+      animation: fadeIn 0.5s infinite alternate;
+      width: 100%;
+      text-align: center;
+      font-style: italic;
+    }
+  }
+}

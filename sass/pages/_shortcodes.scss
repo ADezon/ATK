@@ -1,32 +1,54 @@
 /* GENERAL */
 .bg-grey{
-  background-color: #f5f5f5;
+  background-color: $products-bggrey;
   padding: 40px 0;
 }
+
+/*
+* 0. SHORTCODE LAYOUT
+* 1. SHORTCODE 3COLUMNS
+* 2. SHORTCODE TEXTPHOTO
+* 3. SHORTCODE 2COLUMNS
+* 4. SHORTCODE ACCORDION
+* 5. SHORTCODE STEP
+* 6. SHORTCODE TABS
+* 7. SHORTCODE PROGRESS
+* 8. SHORTCODE LIST MENU
+* 9. SHORTCODE PRODUCTS
+* 10. SHORTCODE SLIDER CHANNELS
+* 11. SHORTCODE LIST HELP
+* 12. SHORTCODE BUTTONS/LINKS & BANNER
+*/
+
+/*
+* 0. SHORTCODE LAYOUT
+*/
 .shortcode-container {
   margin-bottom: 40px;
 }
 .w-bottomline {
-  padding-bottom: 35px;
   border-bottom: 1px solid #979797;
+  padding-bottom: 35px;
 }
 
-/* SHORTCODE 3COLUMNS */
+/*
+* 1. SHORTCODE 3COLUMNS
+*/
 .three-columns-row {
-  position: relative;
-  display: block;
-  overflow: hidden;
   clear: both;
+  display: block;
   margin: 20px 0;
+  overflow: hidden;
+  position: relative;
   .three-columns-element {
     @include span(4 of 12);
-    position: relative;
     float: left;
-    text-align: center;
-    margin-top: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
     padding: 0 20px;
-    @include breakpoint($intermedio) {
+    position: relative;
+    text-align: center;
+    @include breakpoint($tablet) {
       margin-right: 0;
       width: 100%;
     }
@@ -34,143 +56,105 @@
       margin-right: 0;
     }
     .three-columns-icon {
-      text-align: center;
-      position: relative;
       display: block;
       margin-bottom: 20px;
+      position: relative;
+      text-align: center;
+      @include breakpoint($tablet) {
+        margin-bottom: 10px;
+      }
       .icons {
         color: $pink;
         font-size: 40px;
         line-height: 45px;
+        @include breakpoint($tablet) {
+          font-size: 58px;
+          line-height: 62px;
+        }
       }
     }
     .three-columns-title {
-      position: relative;
-      display: block;
       clear: both;
+      color: $greydark;
+      display: block;
       font-size: 20px;
       line-height: 25px;
-      color: $greydark;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      position: relative;
       text-align: center;
     }
     .three-columns-description {
-      position: relative;
-      display: block;
       clear: both;
+      color: #4a4a4a;
+      display: block;
       font-size: 14px;
       line-height: 18px;
-      color: #4a4a4a;
       margin-bottom: 20px;
+      position: relative;
       text-align: center;
     }
   }
 }
-
-/* SHORTCODE 2COLUMNS */
-.two-columns-row{
-  position: relative;
-  display: block;
-  overflow: hidden;
-  clear: both;
-  margin: 20px 0;
-  .two-columns-element{
-    @include span(6 of 12);
-    position: relative;
-    float: left;
-    text-align: center;
-    padding: 0 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    @include breakpoint($intermedio) {
-      width: 100%;
-    }
-    &.last{
-      margin-right:0;
-    }
-    .two-columns-icon{
-      text-align: left;
-      position: relative;
-      display: block;
-      float: left;
-      width: 15%;
-      .icons{
-        color: $pink;
-        font-size: 40px;
-        line-height: 45px;
+.three-cols-variation{
+  .three-columns-element{
+    .three-columns-description{
+      padding: 0 15%;
+      @include breakpoint($tablet) {
+        padding: 0 25%;
       }
-    }
-    .two-columns-info{
-      position: relative;
-      display: block;
-      float: left;
-      width: 85%;
-      .two-columns-title{
-        position: relative;
-        display: block;
-        clear: both;
-        font-size: 20px;
-        line-height: 25px;
-        color: $greydark;
-        margin-bottom: 10px;
-        text-align: left;
-      }
-      .two-columns-description{
-        position: relative;
-        display: block;
-        clear: both;
-        font-size: 14px;
-        line-height: 18px;
-        color:#4a4a4a;
-        margin-bottom: 20px;
-        text-align: left;
+      @include breakpoint($mobile) {
+        padding: 0;
       }
     }
   }
 }
 
-/* SHORTCODE TEXTPHOTO */
+/*
+* 2. SHORTCODE TEXTPHOTO
+*/
 .section-content-ti{
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 20px 0;
   clear: both;
+  display: block;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
   width: 100%;
   .content-ti-text{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    width: 70%;
-    padding: 0 15px;
     color: #4a4a4a;
+    display: block;
     font-size: 14px;
     line-height: 22px;
+    overflow: hidden;
+    padding: 0 15px;
+    position: relative;
+    width: 70%;
+    @include breakpoint($tablet) {
+      width: 100%;
+    }
   }
   .content-ti-img{
-    position: relative;
     display: block;
+    max-width: 302px;
     overflow: hidden;
-    width: 30%;
     padding: 0 15px;
-    img{
-      position: relative;
-      display: block;
-      overflow: hidden;
+    position: relative;
+    width: 30%;
+    @include breakpoint($tablet) {
+      float: none;
+      margin: 20px auto;
       width: 100%;
-      max-width: 302px;
     }
   }
 }
 .content-box-pinksoft{
-  position: relative;
-  display: block;
-  overflow: hidden;
-  clear: both;
-  width: 100%;
-  margin: 20px 0;
-  padding: 30px 7%;
   background-color: $pink_superlight;
+  clear: both;
+  display: block;
+  margin: 20px 0;
+  overflow: hidden;
+  padding: 30px 7%;
+  position: relative;
+  width: 100%;
   p{
     color: #4a4a4a;
     font-size: 14px;
@@ -178,88 +162,208 @@
   }
 }
 
-/* SHORTCODE ACCORDION (PENDIENTE) */
-//.ui-accordion-header {
-//  .ui-icon {
-//    //float: right;
-//    //background: none;
-//    width: 30px;
-//    height: 26px;
-//    &:before {
-//      color: #000000;
-//      content: "\e919";
-//      display: block;
-//      float: right;
-//      font-family: 'atelecom-icons' !important;
-//      font-size: 12px;
-//      font-style: normal;
-//      font-variant: normal;
-//      font-weight: bold;
-//      line-height: 1;
-//      padding: 3px 0;
-//      position: relative;
-//      text-transform: none;
-//      speak: none;
-//      -webkit-font-smoothing: antialiased;
-//      -moz-osx-font-smoothing: grayscale;
-//    }
-//  }
-//}
-/* SHORTCODE STEP */
-h3.title-step{
+
+/*
+* 3. SHORTCODE 2COLUMNS
+*/
+.two-columns-row{
+  clear: both;
+  display: block;
+  margin: 20px 0;
+  overflow: hidden;
   position: relative;
+  .two-columns-element{
+    @include span(6 of 12);
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+    @include breakpoint($tablet) {
+      width: 100%;
+    }
+    &.last{
+      margin-right:0;
+    }
+    .two-columns-icon{
+      display: block;
+      float: left;
+      position: relative;
+      text-align: left;
+      width: 15%;
+      @include breakpoint($mobile) {
+        width: 25%;
+      }
+      .icons{
+        color: $pink;
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+    .two-columns-info{
+      display: block;
+      float: left;
+      position: relative;
+      width: 85%;
+      @include breakpoint($mobile) {
+        width: 75%;
+      }
+      .two-columns-title{
+        clear: both;
+        color: $greydark;
+        display: block;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        position: relative;
+        text-align: left;
+        @include breakpoint($mobile) {
+          font-size: 16px;
+          line-height: 21px;
+          margin-bottom: 5px;
+        }
+      }
+      .two-columns-description{
+        clear: both;
+        color:#4a4a4a;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+        position: relative;
+        text-align: left;
+      }
+    }
+  }
+}
+
+/*
+* 4. SHORTCODE ACCORDION
+*/
+.ui-state-active {
+  background-color: $products-bggrey;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-bottom, .ui-corner-right, .ui-corner-tr {
+  background-color: $products-bggrey;
+  border: medium none;
+  border-radius: 0;
+  color: $products-fontcolor;
+  outline: none;
+}
+.ui-accordion-header-icon {
+  display: none;
+}
+.ui-accordion .ui-accordion-header {
+  font-size: 16px;
+  padding: 10px 60px 10px 30px;
+  @include breakpoint($mobile) {
+    padding: 10px 12% 10px 7%;
+  }
+  &:before {
+    color: $pink; // MORE
+    content: '\e931';
+    font-family: 'atelecom-icons' !important;
+    font-size: 22px;
+    position: absolute;
+    right: 10px;
+    top: 38%;
+    transition: all 1s ease-in;
+  }
+}
+.ui-accordion .ui-accordion-header-active {
+  color: $products-fontcolor;
+  &:before {
+    content: '\e92f'; // LESS
+  }
+}
+.ui-accordion .ui-accordion-content {
+  font-size: 14px;
+}
+.cont-wrapper .ui-accordion-content p {
+  font-size: 14px;
+}
+
+/*
+* 5. SHORTCODE STEP
+*/
+h3.title-step{
+  clear: both;
   display: block;
   overflow: hidden;
-  clear: both;
+  position: relative;
   .rounded-number{
-    position: relative;
-    display: block;
-    float: left;
-    width: 42px;
-    height: 42px;
-    line-height: 36px;
-    color: $pink;
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
     border: 3px solid $pink;
     border-radius: 50%;
-  }
-  .title-step-text{
-    position: relative;
+    color: $pink;
     display: block;
     float: left;
+    font-size: 28px;
+    font-weight: bold;
+    height: 42px;
     line-height: 36px;
+    position: relative;
+    text-align: center;
+    width: 42px;
+  }
+  .title-step-text{
     color: $pink;
+    display: block;
+    float: left;
     font-size: 16px;
     font-weight: bold;
-    text-align: left;
+    line-height: 36px;
     padding-left: 15px;
+    position: relative;
+    text-align: left;
   }
 }
 .content-step{
-  position: relative;
+  clear: both;
   display: block;
   overflow: hidden;
-  clear: both;
   padding:20px 7%;
+  position: relative;
+  @include breakpoint($tablet) {
+    padding:10px 0;
+  }
   .content-step-img{
-    position: relative;
     display: block;
     float: left;
-    width: 20%;
     padding: 0 15px;
-    img{
-      max-width: 138px;
+    position: relative;
+    width: 20%;
+    @include breakpoint($tablet) {
+      width:50%;
+    }
+    @include breakpoint($mobile) {
+      float: none;
+      padding: 10px 0;
       width: 100%;
+    }
+    img{
+      display: block;
+      max-width: 320px;
+      position: relative;
+      width: 100%;
+      @include breakpoint($mobile) {
+        margin: 0 auto;
+      }
     }
   }
   .content-step-text{
-    position: relative;
     display: block;
     float: left;
-    width: 80%;
     padding: 0 15px;
+    position: relative;
+    width: 80%;
+    @include breakpoint($tablet) {
+      width:50%;
+    }
+    @include breakpoint($mobile) {
+      padding: 10px 0;
+      width: 100%;
+    }
     p{
       color: #4a4a4a;
       font-size: 14px;
@@ -268,53 +372,149 @@ h3.title-step{
   }
 }
 
-/* SHORTCODE TABS (PENDIENTE) */
+/*
+* 6.  SHORTCODE TABS
+*/
+.shortcode-container{
+  .ui-tabs{
+    background-color: transparent;
+    border: none;
+    border-radius: none;
+    margin: 0;
+    padding: 0;
+    .ui-tabs-nav{
+      background-color: transparent;
+      border: none;
+      border-radius: none;
+      margin: 0;
+      padding: 0;
+      .ui-tabs-tab{
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        color: $greydark;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 23px;
+        margin: 0;
+        @include breakpoint($mobile) {
+          width: 25%;
+        }
+        &:before{
+          background-color: $gris2;
+          content: "";
+          display: block;
+          float: left;
+          height: 23px;
+          margin: 9px 0;
+          position: relative;
+          width:1px;
+          @include breakpoint($mobile) {
+            display: none;
+          }
+        }
+        &.ui-tabs-active{
+          background-color: $greysoft;
+          border-right: none;
+          margin: 0;
+          &:before{
+            display: none;
+          }
+          & + .ui-tabs-tab{
+            &:before{
+              display: none;
+            }
+          }
+          a{
+            color: $pink;
+            outline: none;
+          }
+        }
+        &:first-child{
+          &:before{
+            display: none;
+          }
+        }
+        .ui-tabs-anchor {
+          outline: none;
+          padding: 9px 20px;
+        }
+      }
+    }
+    .ui-tabs-panel{
+      background-color: $greysoft;
+      border: none;
+      border-radius: none;
+      margin: 0;
+      padding: 30px 8%;
+      p{
+        color: #4a4a4a;
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+}
 
-/* SHORTCODE PROGRESS (PENDIENTE) */
+/*
+* 7.  SHORTCODE PROGRESS
+*/
 .progress {
+  display: table;
   list-style: none;
   margin: 45px 0;
   padding: 0;
-  display: table;
   table-layout: fixed;
   width: 100%;
-
   > li {
-    position: relative;
-    display: table-cell;
-    text-align: center;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
     color: $gris3;
+    display: table-cell;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    position: relative;
+    text-align: center;
+    @include breakpoint($tablet) {
+      font-size: 14px;
+      line-height: 18px;
+    }
     &:before {
-      content: attr(data-step);
-      font-weight: bold;
-      color: $gris3;
-      display: block;
-      margin: 0 auto 10px;
       background: $greysoft;
       border: 3px solid $gris3;
-      width: 54px;
-      height: 54px;
-      text-align: center; //IE8 doesn't inherit this style
-      line-height: 48px;
-      font-size: 30px;
       border-radius: 100%;
+      color: $gris3;
+      content: attr(data-step);
+      display: block;
+      font-size: 30px;
+      font-weight: bold;
+      height: 54px;
+      line-height: 48px;
+      margin: 0 auto 10px;
       position: relative;
-      z-index: 1000;
+      text-align: center;
+      width: 54px;
+      z-index: 2;
+      @include breakpoint($tablet) {
+        font-size: 20px;
+        height: 40px;
+        line-height: 34px;
+        width: 40px;
+      }
     }
     &:after {
-      content: '';
-      position: absolute;
-      display: block;
       background: $gris3;
-      width: 100%;
+      content: '';
+      display: block;
       height: 2px;
-      top: 25px;
       left: 50%;
-      margin-left: 1.5em\9;
+      margin-left: 0;
+      position: absolute;
+      top: 25px;
+      width: 100%;
       z-index: 0;
+      @include breakpoint($tablet) {
+        top: 18px;
+      }
     }
     &:last-child:after {
       display: none;
@@ -323,23 +523,27 @@ h3.title-step{
       color: $pink;
 
       &:before{
-        color:  $pink;
         background: $greysoft;
         border: 3px solid $pink;
+        color:  $pink;
         /* use !important to prevent issues with browser extensions that change fonts */
+        content: "\e922";
         font-family: 'atelecom-icons' !important;
-        speak: none;
+        font-size: 16px;
         font-style: normal;
-        font-weight: normal;
         font-variant: normal;
-        text-transform: none;
+        font-weight: normal;
 
         /* Better Font Rendering =========== */
+        line-height: 48px;
+        text-transform: none;
+        speak: none;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        content: "\e922";
-        font-size: 16px;
-        line-height: 48px;
+        @include breakpoint($tablet) {
+          font-size: 14px;
+          line-height: 34px;
+        }
       }
       &:after {
         background: $pink;
@@ -349,31 +553,32 @@ h3.title-step{
       color: $pink;
 
       &:before {
-        color:  $pink;
         background: $greysoft;
         border: 3px solid $pink;
+        color:  $pink;
       }
     }
   }
 }
-/* Needed for IE8 */
 .progress__last:after {
   display: none!important;
 }
 
-/* SHORTCODE LIST MENU */
+/*
+* 8. SHORTCODE LIST MENU
+*/
 ul.menu-list{
-  position: relative;
   display: block;
-  overflow: hidden;
-  width: 100%;
   max-width: 160px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
   li{
-    position: relative;
-    display: block;
-    overflow: hidden;
     clear: both;
+    display: block;
     margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
     &:hover, &.active{
       span, a{
         color: $pink;
@@ -381,147 +586,264 @@ ul.menu-list{
       }
     }
     span, a{
-      text-align: left;
-      position: relative;
+      color: $greydark;
+      cursor: pointer;
       display: block;
       float: left;
-      color: $greydark;
       font-size: 16px;
       line-height:22px;
-      cursor: pointer;
+      position: relative;
+      text-align: left;
       &.icons{
-        float: right;
-        text-align: right;
         color: black;
-        font-weight: bold;
+        float: right;
         font-size: 16px;
+        font-weight: bold;
         line-height: 22px;
+        text-align: right;
       }
     }
   }
 }
 
-/* SHORTCODE PRODUCTS */
+/*
+* 9. SHORTCODE PRODUCTS
+*/
 .product-prices{
-  padding: 0 10%;
-  position: relative;
   display: block;
   overflow: hidden;
+  padding: 0 10%;
+  position: relative;
+  @include breakpoint($tablet) {
+    padding: 0;
+  }
   .product-prices-general{
-    position: relative;
-    display: block;
     clear: both;
-    width: 100%;
+    display: block;
     margin: 20px 0;
+    position: relative;
+    width: 100%;
     .product-prices-title{
+      color: $greydark;
       font-size: 30px;
       line-height: 34px;
       text-align: center;
-      color: $greydark;
+      @include breakpoint($mobile) {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
     .product-prices-price{
+      color: $greydark;
       font-size: 72px;
       line-height: 76px;
       text-align: center;
-      color: $greydark;
+      @include breakpoint($mobile) {
+        font-size: 40px;
+        line-height: 44px;
+      }
       .price-month{
         font-size: 30px;
         line-height: 34px;
+        @include breakpoint($mobile) {
+          font-size: 20px;
+          line-height: 24px;
+        }
       }
     }
     .button-pink{
-      width: 240px;
       margin: 0 auto;
+      width: 240px;
     }
   }
   .product-prices-others{
-    position: relative;
     display: block;
     float: left;
-    width: 50%;
     margin: 20px 0;
+    position: relative;
+    width: 50%;
+    @include breakpoint($tablet) {
+      margin: 20px;
+      width: auto;
+    }
+    @include breakpoint($mobile) {
+      margin: 20px 0;
+      width: 50%;
+    }
     .product-prices-mini-section{
-      font-size: 14px;
-      line-height: 18px;
-      text-align: left;
       color: #4a4a4a;
+      font-size: 14px;
       font-weight: bold;
+      line-height: 18px;
       margin-bottom: 25px;
+      text-align: left;
       a{
         color: $pink;
-        text-decoration: underline;
         font-weight: normal;
+        text-decoration: underline;
         &:hover{
           font-weight: bold;
         }
       }
     }
     .product-prices-mini-title{
+      color: $greydark;
       font-size: 20px;
       line-height: 24px;
       text-align: left;
-      color: $greydark;
+      @include breakpoint($mobile) {
+        font-size: 16px;
+        line-height: 21px;
+      }
     }
     .product-prices-mini-price{
+      color: $greydark;
       font-size: 40px;
       line-height: 44px;
       text-align: left;
-      color: $greydark;
+      @include breakpoint($mobile) {
+        font-size: 30px;
+        line-height: 34px;
+      }
       .price-month{
         font-size: 20px;
         line-height: 24px;
+        @include breakpoint($mobile) {
+          font-size: 16px;
+          line-height: 21px;
+        }
       }
     }
   }
 }
 .product-features{
-  position: relative;
   display: block;
   overflow: hidden;
+  position: relative;
   .product-features-element{
-    position: relative;
     display: block;
-    overflow: hidden;
     margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
     .product-features-title{
-      font-size: 20px;
-      line-height: 24px;
-      font-weight: 400;
       color: $greydark;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
       margin: 0 0 10px 0;
+      @include breakpoint($mobile) {
+        font-size: 16px;
+        line-height: 21px;
+      }
     }
     .product-features-text{
-      font-size: 14px;
-      line-height: 18px;
-      font-weight: normal;
       color: #4a4a4a;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 18px;
       margin-bottom: 10px;
     }
   }
 }
 
-/* SHORTCODE 3 COLUMNS ALT (PENDIENTE) */
+/*
+* 10. SHORTCODE SLIDER CHANNELS
+*/
+.cont-wrapper .content.sliders {
+  overflow: visible;
+  .slider-multiple-desktop {
+    margin-top: 40px;
+    .slider-deskt {
+      li {
+        //width: 860px;
 
-/* SHORTCODE SLIDER CHANNELS (PENDIENTE) */
+        .six-items {
+          float: left;
+          margin: 0 30px 30px 0;
+          width: 14%;
+          &.last {
+            margin: 0 0 30px 0;
+          }
+          img {
+            width: 100%;
+          }
+        }
 
-/* SHORTCODE LIST HELP */
+      }
+    }
+    @include breakpoint ($mobile) {
+      display: none;
+    }
+    .flex-direction-nav .flex-next {
+      font-size: 0;
+      &:before {
+        content: "\e92e";
+        font-family: 'atelecom-icons' !important;
+        font-size: 38px;
+        color: $pink;
+        padding-right: 8px;
+      }
+    }
+    .flex-direction-nav .flex-nav-prev {
+      a.flex-prev {
+        font-size: 0;
+        &:before {
+          content: "\e930";
+          font-family: 'atelecom-icons' !important;
+          font-size: 38px;
+          color: $pink;
+          padding-right: 8px;
+        }
+      }
+    }
+
+    .flex-direction-nav a {
+      opacity: 1;
+      top: 58%;
+    }
+  }
+
+  .slider-single-mobile {
+    display: none;
+    @include breakpoint ($mobile) {
+      display: block;
+    }
+    .flex-direction-nav {
+      display: none;
+    }
+  }
+}
+
+/*
+* 11. SHORTCODE LIST HELP
+*/
 .help-list {
   counter-reset: this-list-counter;
   display: block;
   margin-bottom: 40px;
   overflow: hidden;
   position: relative;
+  @include breakpoint($mobile) {
+    margin-top: 18px;
+  }
   dt {
     margin-bottom: 18px;
     margin-top: 18px;
+    @include breakpoint($mobile) {
+      margin-top: 0;
+    }
     a {
-      line-height: 18px;
-      color: #4a4a4a;
-      font-size: 16px;
-      position: relative;
-      display: block;
       clear: both;
+      color: #4a4a4a;
+      display: block;
+      font-size: 16px;
+      line-height: 18px;
       overflow: hidden;
+      position: relative;
+      @include breakpoint($tablet) {
+        font-size: 14px;
+        line-height: 16px;
+      }
       &:before {
         border: 2px solid $pink;
         border-radius: 50%;
@@ -534,8 +856,8 @@ ul.menu-list{
         font-size: 14px;
         font-weight: bold;
         height: 22px;
-        margin-right: 15px;
         line-height: 18px;
+        margin-right: 15px;
         position: relative;
         text-align: center;
         width: 22px;
@@ -544,20 +866,104 @@ ul.menu-list{
         font-weight: bold;
       }
       span{
-        position: relative;
         display: block;
         float: left;
+        position: relative;
         &.icons{
-          position: relative;
+          color: $black;
           display: block;
           float: left;
           font-size: 14px;
           line-height: 18px;
-          color: $black;
+          position: relative;
         }
       }
     }
   }
 }
 
-/* SHORTCODE BUTTONS & LINKS HELP (PENDIENTE) */
+/*
+* 12. SHORTCODE BUTTONS/LINKS & BANNER
+*/
+.shortcode-container{
+  /* BUTTONS/LINKS */
+  /* BEGIN SOLO PARA MOSTRARLOS CENTRADOS COMO EN EL DISEÑO... NO SE UTILIZA ESTE CONTENEDOR CUANDO LO USEN SUELTOS */
+  .links-list{
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 470px;
+    @include breakpoint($mobile) {
+      width: 100%;
+    }
+  }
+  /* END SOLO PARA MOSTRARLOS CENTRADOS COMO EN EL DISEÑO... NO SE UTILIZA ESTE CONTENEDOR CUANDO LO USEN SUELTOS */
+  a.button-shortcode{
+    display: block;
+    float: left;
+    margin: 0 10px;
+    position: relative;
+    text-decoration: underline;
+    &.button-pink{
+      text-decoration: none;
+      width: auto;
+      @include breakpoint($mobile) {
+        margin: 10px 0;
+        width: 100%;
+      }
+    }
+    &.button-active{
+      background-color: $greymedium;
+      border-radius: 3px;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: bold;
+      height: 32px;
+      line-height: 20px;
+      padding: 6px 11px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: auto;
+      @include breakpoint($mobile) {
+        margin: 10px 0;
+        width: 100%;
+      }
+    }
+    &.button-disabled{
+      background-color: #cfd1d2;
+      border-radius: 3px;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: bold;
+      height: 32px;
+      line-height: 20px;
+      padding: 6px 11px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: auto;
+      @include breakpoint($mobile) {
+        margin: 10px 0;
+        width: 100%;
+      }
+    }
+  }
+  /* BANNER */
+  .banner-ads{
+    clear: both;
+    display: block;
+    margin: 20px 0;
+    position: relative;
+    .banner-ads-img{
+      display: block;
+      height: 215px;
+      margin: 0 auto;
+      max-width: 940px;
+      position: relative;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

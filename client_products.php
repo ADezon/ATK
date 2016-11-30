@@ -120,7 +120,7 @@
     <!--END POP-UP GLOBAL ALERT CONTENT-->
 
     <script language="JavaScript">
-        revealalert();
+//        revealalert();
         $( document ).ready(function() {
             $('input.button-alert').click(function (e) {
                 e.preventDefault();

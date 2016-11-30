@@ -41,14 +41,11 @@
 
   <!--BEGIN INYECTED AS REQUIRED-->
   <script src="./js/flexslider/jquery.flexslider-min.js"></script>
-  <script src="./js/init-slider.js"></script>
-  <script src="./js/alerts.js"></script>
-  <script src="./js/phonebook.js"></script>
   <!--END INYECTED AS REQUIRED-->
 
   <!--END SCRIPTS -->
 
-  <title>Title (VAR TITLE from plattform)</title>
+  <title>Products >> Short CODES</title>
 </head>
 <body>
 <!--[if lt IE 8]><p class="browser-upgrade">Estas usando un navegador <strong>desactualizado</strong>. Por favor, <a

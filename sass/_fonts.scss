@@ -23,8 +23,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-more:before {
+
+
+.icon-next-rounded:before {
   content: "\e92e";
+}
+.icon-prev-rounded:before {
+  content: "\e930";
+}
+.icon-more:before {
+  content: "\e931";
 }
 .icon-less:before {
   content: "\e92f";
