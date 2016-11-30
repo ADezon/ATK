@@ -302,11 +302,33 @@ p{
       }
     }
     /* Breadcrumb & Title */
-    .breadcrumb{
+    .breadcrumb-container{
       color: #9c9e9f;
       font-size: 12px;
       line-height: 15px;
       margin: 15px 0 25px 0;
+      height: 12px;
+
+      .portlet-title-text,
+      .hide-accessible {
+        display: none;
+      }
+      .breadcrumb {
+        li {
+          float: left;
+          margin-right: 4px;
+          &:before {
+            content: " / ";
+          }
+          &:first-child:before {
+            content: '';
+          }
+          &.not-link a {
+            font-weight: 400;
+          }
+        }
+      }
+
       a{
         color: #9c9e9f;
         font-size: 12px;

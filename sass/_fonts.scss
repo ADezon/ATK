@@ -23,8 +23,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
+.icon-more:before {
+  content: "\e92e";
+}
+.icon-less:before {
+  content: "\e92f";
+}
 .icon-arrow-rightleft:before {
   content: "\e92c";
 }

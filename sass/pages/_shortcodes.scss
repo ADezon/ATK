@@ -1,0 +1,563 @@
+/* GENERAL */
+.bg-grey{
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+.shortcode-container {
+  margin-bottom: 40px;
+}
+.w-bottomline {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #979797;
+}
+
+/* SHORTCODE 3COLUMNS */
+.three-columns-row {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  clear: both;
+  margin: 20px 0;
+  .three-columns-element {
+    @include span(4 of 12);
+    position: relative;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    @include breakpoint($intermedio) {
+      margin-right: 0;
+      width: 100%;
+    }
+    &.last {
+      margin-right: 0;
+    }
+    .three-columns-icon {
+      text-align: center;
+      position: relative;
+      display: block;
+      margin-bottom: 20px;
+      .icons {
+        color: $pink;
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+    .three-columns-title {
+      position: relative;
+      display: block;
+      clear: both;
+      font-size: 20px;
+      line-height: 25px;
+      color: $greydark;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .three-columns-description {
+      position: relative;
+      display: block;
+      clear: both;
+      font-size: 14px;
+      line-height: 18px;
+      color: #4a4a4a;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+}
+
+/* SHORTCODE 2COLUMNS */
+.two-columns-row{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  clear: both;
+  margin: 20px 0;
+  .two-columns-element{
+    @include span(6 of 12);
+    position: relative;
+    float: left;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @include breakpoint($intermedio) {
+      width: 100%;
+    }
+    &.last{
+      margin-right:0;
+    }
+    .two-columns-icon{
+      text-align: left;
+      position: relative;
+      display: block;
+      float: left;
+      width: 15%;
+      .icons{
+        color: $pink;
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+    .two-columns-info{
+      position: relative;
+      display: block;
+      float: left;
+      width: 85%;
+      .two-columns-title{
+        position: relative;
+        display: block;
+        clear: both;
+        font-size: 20px;
+        line-height: 25px;
+        color: $greydark;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+      .two-columns-description{
+        position: relative;
+        display: block;
+        clear: both;
+        font-size: 14px;
+        line-height: 18px;
+        color:#4a4a4a;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+/* SHORTCODE TEXTPHOTO */
+.section-content-ti{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 20px 0;
+  clear: both;
+  width: 100%;
+  .content-ti-text{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 70%;
+    padding: 0 15px;
+    color: #4a4a4a;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .content-ti-img{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 30%;
+    padding: 0 15px;
+    img{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      max-width: 302px;
+    }
+  }
+}
+.content-box-pinksoft{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+  margin: 20px 0;
+  padding: 30px 7%;
+  background-color: $pink_superlight;
+  p{
+    color: #4a4a4a;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+/* SHORTCODE ACCORDION (PENDIENTE) */
+//.ui-accordion-header {
+//  .ui-icon {
+//    //float: right;
+//    //background: none;
+//    width: 30px;
+//    height: 26px;
+//    &:before {
+//      color: #000000;
+//      content: "\e919";
+//      display: block;
+//      float: right;
+//      font-family: 'atelecom-icons' !important;
+//      font-size: 12px;
+//      font-style: normal;
+//      font-variant: normal;
+//      font-weight: bold;
+//      line-height: 1;
+//      padding: 3px 0;
+//      position: relative;
+//      text-transform: none;
+//      speak: none;
+//      -webkit-font-smoothing: antialiased;
+//      -moz-osx-font-smoothing: grayscale;
+//    }
+//  }
+//}
+/* SHORTCODE STEP */
+h3.title-step{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  clear: both;
+  .rounded-number{
+    position: relative;
+    display: block;
+    float: left;
+    width: 42px;
+    height: 42px;
+    line-height: 36px;
+    color: $pink;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid $pink;
+    border-radius: 50%;
+  }
+  .title-step-text{
+    position: relative;
+    display: block;
+    float: left;
+    line-height: 36px;
+    color: $pink;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+  }
+}
+.content-step{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  clear: both;
+  padding:20px 7%;
+  .content-step-img{
+    position: relative;
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 0 15px;
+    img{
+      max-width: 138px;
+      width: 100%;
+    }
+  }
+  .content-step-text{
+    position: relative;
+    display: block;
+    float: left;
+    width: 80%;
+    padding: 0 15px;
+    p{
+      color: #4a4a4a;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+/* SHORTCODE TABS (PENDIENTE) */
+
+/* SHORTCODE PROGRESS (PENDIENTE) */
+.progress {
+  list-style: none;
+  margin: 45px 0;
+  padding: 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+
+  > li {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: $gris3;
+    &:before {
+      content: attr(data-step);
+      font-weight: bold;
+      color: $gris3;
+      display: block;
+      margin: 0 auto 10px;
+      background: $greysoft;
+      border: 3px solid $gris3;
+      width: 54px;
+      height: 54px;
+      text-align: center; //IE8 doesn't inherit this style
+      line-height: 48px;
+      font-size: 30px;
+      border-radius: 100%;
+      position: relative;
+      z-index: 1000;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      background: $gris3;
+      width: 100%;
+      height: 2px;
+      top: 25px;
+      left: 50%;
+      margin-left: 1.5em\9;
+      z-index: 0;
+    }
+    &:last-child:after {
+      display: none;
+    }
+    &.is-complete {
+      color: $pink;
+
+      &:before{
+        color:  $pink;
+        background: $greysoft;
+        border: 3px solid $pink;
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'atelecom-icons' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\e922";
+        font-size: 16px;
+        line-height: 48px;
+      }
+      &:after {
+        background: $pink;
+      }
+    }
+    &.is-active {
+      color: $pink;
+
+      &:before {
+        color:  $pink;
+        background: $greysoft;
+        border: 3px solid $pink;
+      }
+    }
+  }
+}
+/* Needed for IE8 */
+.progress__last:after {
+  display: none!important;
+}
+
+/* SHORTCODE LIST MENU */
+ul.menu-list{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  max-width: 160px;
+  li{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 15px;
+    &:hover, &.active{
+      span, a{
+        color: $pink;
+        font-weight: bold;
+      }
+    }
+    span, a{
+      text-align: left;
+      position: relative;
+      display: block;
+      float: left;
+      color: $greydark;
+      font-size: 16px;
+      line-height:22px;
+      cursor: pointer;
+      &.icons{
+        float: right;
+        text-align: right;
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+/* SHORTCODE PRODUCTS */
+.product-prices{
+  padding: 0 10%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  .product-prices-general{
+    position: relative;
+    display: block;
+    clear: both;
+    width: 100%;
+    margin: 20px 0;
+    .product-prices-title{
+      font-size: 30px;
+      line-height: 34px;
+      text-align: center;
+      color: $greydark;
+    }
+    .product-prices-price{
+      font-size: 72px;
+      line-height: 76px;
+      text-align: center;
+      color: $greydark;
+      .price-month{
+        font-size: 30px;
+        line-height: 34px;
+      }
+    }
+    .button-pink{
+      width: 240px;
+      margin: 0 auto;
+    }
+  }
+  .product-prices-others{
+    position: relative;
+    display: block;
+    float: left;
+    width: 50%;
+    margin: 20px 0;
+    .product-prices-mini-section{
+      font-size: 14px;
+      line-height: 18px;
+      text-align: left;
+      color: #4a4a4a;
+      font-weight: bold;
+      margin-bottom: 25px;
+      a{
+        color: $pink;
+        text-decoration: underline;
+        font-weight: normal;
+        &:hover{
+          font-weight: bold;
+        }
+      }
+    }
+    .product-prices-mini-title{
+      font-size: 20px;
+      line-height: 24px;
+      text-align: left;
+      color: $greydark;
+    }
+    .product-prices-mini-price{
+      font-size: 40px;
+      line-height: 44px;
+      text-align: left;
+      color: $greydark;
+      .price-month{
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+.product-features{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  .product-features-element{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .product-features-title{
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 400;
+      color: $greydark;
+      margin: 0 0 10px 0;
+    }
+    .product-features-text{
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: normal;
+      color: #4a4a4a;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* SHORTCODE 3 COLUMNS ALT (PENDIENTE) */
+
+/* SHORTCODE SLIDER CHANNELS (PENDIENTE) */
+
+/* SHORTCODE LIST HELP */
+.help-list {
+  counter-reset: this-list-counter;
+  display: block;
+  margin-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+  dt {
+    margin-bottom: 18px;
+    margin-top: 18px;
+    a {
+      line-height: 18px;
+      color: #4a4a4a;
+      font-size: 16px;
+      position: relative;
+      display: block;
+      clear: both;
+      overflow: hidden;
+      &:before {
+        border: 2px solid $pink;
+        border-radius: 50%;
+        clear: both;
+        color: $pink;
+        content: counter(this-list-counter);
+        counter-increment: this-list-counter;
+        display: block;
+        float: left;
+        font-size: 14px;
+        font-weight: bold;
+        height: 22px;
+        margin-right: 15px;
+        line-height: 18px;
+        position: relative;
+        text-align: center;
+        width: 22px;
+      }
+      &:hover{
+        font-weight: bold;
+      }
+      span{
+        position: relative;
+        display: block;
+        float: left;
+        &.icons{
+          position: relative;
+          display: block;
+          float: left;
+          font-size: 14px;
+          line-height: 18px;
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+/* SHORTCODE BUTTONS & LINKS HELP (PENDIENTE) */
