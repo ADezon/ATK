@@ -442,49 +442,49 @@
                 <div class="slider-deskt">
                     <ul class="slides">
                         <li>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
                             <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
                             <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
                             <div class="six-items last"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
 
                             <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
                             <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
                             <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items last"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+                            <div class="six-items last"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
                         </li>
                         <li>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
                             <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
                             <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
                             <div class="six-items last"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
 
                             <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
                             <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
                             <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items last"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+                            <div class="six-items last"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
                         </li>
                         <li>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items last"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg&text=imatge+slide"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg&text=imatge+slide"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                            <div class="six-items last"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg&text=imatge+slide"/></a></div>
 
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
-                            <div class="six-items last"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg&text=imatge+slide"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg&text=imatge+slide"/></a></div>
+                            <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                            <div class="six-items last"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg&text=imatge+slide"/></a></div>
                         </li>
 
                     </ul>
@@ -509,32 +509,59 @@
             <div class="slider-single-mobile">
                 <!-- Slider FOR MOBILE (one item per SLIDE )-->
                 <div class="slider-mob">
-                    <ul class="slides">
-                        <li><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></li>
-                        <li><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></li>
-                        <li><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></li>
-                        <li><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></li>
-                        <li><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></li>
-                        <li><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></li>
-                        <li><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></li>
-                        <li><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></li>
-                        <li><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></li>
-                        <li><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></li>
-                        <li><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></li>
-                        <li><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a></li>
-                    </ul>
+                    <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                    <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a></div>
+                    <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                    <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a></div>
+                    <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                    <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a></div>
+                    <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                    <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a></div>
+                    <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                    <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a></div>
+                    <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                    <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a></div>
                 </div>
                 <script language="JavaScript">
                     $(document).ready(function () {
                         var timering = 7000;
                         // SINGLE FLEXSLIDER.
-                        $('.slider-mob').flexslider({
-                            animation: "slide",
-                            slideshowSpeed: timering,
-                            itemWidth: 310,
-                            itemMargin: 10,
-                            minItems: 1,
-                            maxItems: 1
+//                        $('.slider-mob').flexslider({
+//                            animation: "slide",
+//                            slideshowSpeed: timering,
+//                            itemWidth: 410,
+//                            itemMargin: 10,
+//                            minItems: 1,
+//                            maxItems: 1,
+//                            directionNav: false,
+//                            controlNav: false
+//                        });
+
+                        // http://kenwheeler.github.io/slick/
+                        $('.slider-mob').slick({
+                            centerMode: true,
+                            centerPadding: '10px',
+                            slidesToShow: 3,
+                            responsive: [
+                                {
+                                    breakpoint: 720,
+                                    settings: {
+                                        arrows: false,
+                                        centerMode: true,
+                                        centerPadding: '40px',
+                                        slidesToShow: 3
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        arrows: false,
+                                        centerMode: true,
+                                        centerPadding: '40px',
+                                        slidesToShow: 1
+                                    }
+                                }
+                            ]
                         });
                     });
                 </script>

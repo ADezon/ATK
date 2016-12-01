@@ -10,6 +10,7 @@
   <!--************************************-->
   <!--BEGIN INYECTED AS REQUIRED-->
   <link rel="stylesheet" type="text/css" href="./js/flexslider/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="./js/slick-1.6.0/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./js/tooltipster/css/tooltipster.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <!--END INYECTED AS REQUIRED-->
@@ -41,6 +42,7 @@
 
   <!--BEGIN INYECTED AS REQUIRED-->
   <script src="./js/flexslider/jquery.flexslider-min.js"></script>
+  <script src="./js/slick-1.6.0/slick/slick.min.js"></script>
   <!--END INYECTED AS REQUIRED-->
 
   <!--END SCRIPTS -->

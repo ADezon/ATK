@@ -1,5 +1,5 @@
 /* GENERAL */
-.bg-grey{
+.bg-grey {
   background-color: $products-bggrey;
   padding: 40px 0;
 }
@@ -26,6 +26,7 @@
 .shortcode-container {
   margin-bottom: 40px;
 }
+
 .w-bottomline {
   border-bottom: 1px solid #979797;
   padding-bottom: 35px;
@@ -95,9 +96,10 @@
     }
   }
 }
-.three-cols-variation{
-  .three-columns-element{
-    .three-columns-description{
+
+.three-cols-variation {
+  .three-columns-element {
+    .three-columns-description {
       padding: 0 15%;
       @include breakpoint($tablet) {
         padding: 0 25%;
@@ -112,14 +114,14 @@
 /*
 * 2. SHORTCODE TEXTPHOTO
 */
-.section-content-ti{
+.section-content-ti {
   clear: both;
   display: block;
   margin: 20px 0;
   overflow: hidden;
   position: relative;
   width: 100%;
-  .content-ti-text{
+  .content-ti-text {
     color: #4a4a4a;
     display: block;
     font-size: 14px;
@@ -132,7 +134,7 @@
       width: 100%;
     }
   }
-  .content-ti-img{
+  .content-ti-img {
     display: block;
     max-width: 302px;
     overflow: hidden;
@@ -146,7 +148,8 @@
     }
   }
 }
-.content-box-pinksoft{
+
+.content-box-pinksoft {
   background-color: $pink_superlight;
   clear: both;
   display: block;
@@ -155,24 +158,23 @@
   padding: 30px 7%;
   position: relative;
   width: 100%;
-  p{
+  p {
     color: #4a4a4a;
     font-size: 14px;
     line-height: 22px;
   }
 }
 
-
 /*
 * 3. SHORTCODE 2COLUMNS
 */
-.two-columns-row{
+.two-columns-row {
   clear: both;
   display: block;
   margin: 20px 0;
   overflow: hidden;
   position: relative;
-  .two-columns-element{
+  .two-columns-element {
     @include span(6 of 12);
     float: left;
     margin-bottom: 10px;
@@ -183,10 +185,10 @@
     @include breakpoint($tablet) {
       width: 100%;
     }
-    &.last{
-      margin-right:0;
+    &.last {
+      margin-right: 0;
     }
-    .two-columns-icon{
+    .two-columns-icon {
       display: block;
       float: left;
       position: relative;
@@ -195,13 +197,13 @@
       @include breakpoint($mobile) {
         width: 25%;
       }
-      .icons{
+      .icons {
         color: $pink;
         font-size: 40px;
         line-height: 45px;
       }
     }
-    .two-columns-info{
+    .two-columns-info {
       display: block;
       float: left;
       position: relative;
@@ -209,7 +211,7 @@
       @include breakpoint($mobile) {
         width: 75%;
       }
-      .two-columns-title{
+      .two-columns-title {
         clear: both;
         color: $greydark;
         display: block;
@@ -224,9 +226,9 @@
           margin-bottom: 5px;
         }
       }
-      .two-columns-description{
+      .two-columns-description {
         clear: both;
-        color:#4a4a4a;
+        color: #4a4a4a;
         display: block;
         font-size: 14px;
         line-height: 18px;
@@ -244,6 +246,7 @@
 .ui-state-active {
   background-color: $products-bggrey;
 }
+
 .ui-corner-all, .ui-corner-top, .ui-corner-bottom, .ui-corner-right, .ui-corner-tr {
   background-color: $products-bggrey;
   border: medium none;
@@ -251,9 +254,11 @@
   color: $products-fontcolor;
   outline: none;
 }
+
 .ui-accordion-header-icon {
   display: none;
 }
+
 .ui-accordion .ui-accordion-header {
   font-size: 16px;
   padding: 10px 60px 10px 30px;
@@ -271,15 +276,18 @@
     transition: all 1s ease-in;
   }
 }
+
 .ui-accordion .ui-accordion-header-active {
   color: $products-fontcolor;
   &:before {
     content: '\e92f'; // LESS
   }
 }
+
 .ui-accordion .ui-accordion-content {
   font-size: 14px;
 }
+
 .cont-wrapper .ui-accordion-content p {
   font-size: 14px;
 }
@@ -287,12 +295,12 @@
 /*
 * 5. SHORTCODE STEP
 */
-h3.title-step{
+h3.title-step {
   clear: both;
   display: block;
   overflow: hidden;
   position: relative;
-  .rounded-number{
+  .rounded-number {
     border: 3px solid $pink;
     border-radius: 50%;
     color: $pink;
@@ -306,7 +314,7 @@ h3.title-step{
     text-align: center;
     width: 42px;
   }
-  .title-step-text{
+  .title-step-text {
     color: $pink;
     display: block;
     float: left;
@@ -318,30 +326,31 @@ h3.title-step{
     text-align: left;
   }
 }
-.content-step{
+
+.content-step {
   clear: both;
   display: block;
   overflow: hidden;
-  padding:20px 7%;
+  padding: 20px 7%;
   position: relative;
   @include breakpoint($tablet) {
-    padding:10px 0;
+    padding: 10px 0;
   }
-  .content-step-img{
+  .content-step-img {
     display: block;
     float: left;
     padding: 0 15px;
     position: relative;
     width: 20%;
     @include breakpoint($tablet) {
-      width:50%;
+      width: 50%;
     }
     @include breakpoint($mobile) {
       float: none;
       padding: 10px 0;
       width: 100%;
     }
-    img{
+    img {
       display: block;
       max-width: 320px;
       position: relative;
@@ -351,20 +360,20 @@ h3.title-step{
       }
     }
   }
-  .content-step-text{
+  .content-step-text {
     display: block;
     float: left;
     padding: 0 15px;
     position: relative;
     width: 80%;
     @include breakpoint($tablet) {
-      width:50%;
+      width: 50%;
     }
     @include breakpoint($mobile) {
       padding: 10px 0;
       width: 100%;
     }
-    p{
+    p {
       color: #4a4a4a;
       font-size: 14px;
       line-height: 22px;
@@ -375,20 +384,20 @@ h3.title-step{
 /*
 * 6.  SHORTCODE TABS
 */
-.shortcode-container{
-  .ui-tabs{
+.shortcode-container {
+  .ui-tabs {
     background-color: transparent;
     border: none;
     border-radius: none;
     margin: 0;
     padding: 0;
-    .ui-tabs-nav{
+    .ui-tabs-nav {
       background-color: transparent;
       border: none;
       border-radius: none;
       margin: 0;
       padding: 0;
-      .ui-tabs-tab{
+      .ui-tabs-tab {
         background-color: transparent;
         border: none;
         border-radius: 0;
@@ -400,7 +409,7 @@ h3.title-step{
         @include breakpoint($mobile) {
           width: 25%;
         }
-        &:before{
+        &:before {
           background-color: $gris2;
           content: "";
           display: block;
@@ -408,30 +417,30 @@ h3.title-step{
           height: 23px;
           margin: 9px 0;
           position: relative;
-          width:1px;
+          width: 1px;
           @include breakpoint($mobile) {
             display: none;
           }
         }
-        &.ui-tabs-active{
+        &.ui-tabs-active {
           background-color: $greysoft;
           border-right: none;
           margin: 0;
-          &:before{
+          &:before {
             display: none;
           }
-          & + .ui-tabs-tab{
-            &:before{
+          & + .ui-tabs-tab {
+            &:before {
               display: none;
             }
           }
-          a{
+          a {
             color: $pink;
             outline: none;
           }
         }
-        &:first-child{
-          &:before{
+        &:first-child {
+          &:before {
             display: none;
           }
         }
@@ -441,13 +450,13 @@ h3.title-step{
         }
       }
     }
-    .ui-tabs-panel{
+    .ui-tabs-panel {
       background-color: $greysoft;
       border: none;
       border-radius: none;
       margin: 0;
       padding: 30px 8%;
-      p{
+      p {
         color: #4a4a4a;
         font-size: 14px;
         line-height: 22px;
@@ -522,10 +531,10 @@ h3.title-step{
     &.is-complete {
       color: $pink;
 
-      &:before{
+      &:before {
         background: $greysoft;
         border: 3px solid $pink;
-        color:  $pink;
+        color: $pink;
         /* use !important to prevent issues with browser extensions that change fonts */
         content: "\e922";
         font-family: 'atelecom-icons' !important;
@@ -555,46 +564,47 @@ h3.title-step{
       &:before {
         background: $greysoft;
         border: 3px solid $pink;
-        color:  $pink;
+        color: $pink;
       }
     }
   }
 }
+
 .progress__last:after {
-  display: none!important;
+  display: none !important;
 }
 
 /*
 * 8. SHORTCODE LIST MENU
 */
-ul.menu-list{
+ul.menu-list {
   display: block;
   max-width: 160px;
   overflow: hidden;
   position: relative;
   width: 100%;
-  li{
+  li {
     clear: both;
     display: block;
     margin-bottom: 15px;
     overflow: hidden;
     position: relative;
-    &:hover, &.active{
-      span, a{
+    &:hover, &.active {
+      span, a {
         color: $pink;
         font-weight: bold;
       }
     }
-    span, a{
+    span, a {
       color: $greydark;
       cursor: pointer;
       display: block;
       float: left;
       font-size: 16px;
-      line-height:22px;
+      line-height: 22px;
       position: relative;
       text-align: left;
-      &.icons{
+      &.icons {
         color: black;
         float: right;
         font-size: 16px;
@@ -609,7 +619,7 @@ ul.menu-list{
 /*
 * 9. SHORTCODE PRODUCTS
 */
-.product-prices{
+.product-prices {
   display: block;
   overflow: hidden;
   padding: 0 10%;
@@ -617,13 +627,13 @@ ul.menu-list{
   @include breakpoint($tablet) {
     padding: 0;
   }
-  .product-prices-general{
+  .product-prices-general {
     clear: both;
     display: block;
     margin: 20px 0;
     position: relative;
     width: 100%;
-    .product-prices-title{
+    .product-prices-title {
       color: $greydark;
       font-size: 30px;
       line-height: 34px;
@@ -633,7 +643,7 @@ ul.menu-list{
         line-height: 24px;
       }
     }
-    .product-prices-price{
+    .product-prices-price {
       color: $greydark;
       font-size: 72px;
       line-height: 76px;
@@ -642,7 +652,7 @@ ul.menu-list{
         font-size: 40px;
         line-height: 44px;
       }
-      .price-month{
+      .price-month {
         font-size: 30px;
         line-height: 34px;
         @include breakpoint($mobile) {
@@ -651,12 +661,12 @@ ul.menu-list{
         }
       }
     }
-    .button-pink{
+    .button-pink {
       margin: 0 auto;
       width: 240px;
     }
   }
-  .product-prices-others{
+  .product-prices-others {
     display: block;
     float: left;
     margin: 20px 0;
@@ -670,23 +680,23 @@ ul.menu-list{
       margin: 20px 0;
       width: 50%;
     }
-    .product-prices-mini-section{
+    .product-prices-mini-section {
       color: #4a4a4a;
       font-size: 14px;
       font-weight: bold;
       line-height: 18px;
       margin-bottom: 25px;
       text-align: left;
-      a{
+      a {
         color: $pink;
         font-weight: normal;
         text-decoration: underline;
-        &:hover{
+        &:hover {
           font-weight: bold;
         }
       }
     }
-    .product-prices-mini-title{
+    .product-prices-mini-title {
       color: $greydark;
       font-size: 20px;
       line-height: 24px;
@@ -696,7 +706,7 @@ ul.menu-list{
         line-height: 21px;
       }
     }
-    .product-prices-mini-price{
+    .product-prices-mini-price {
       color: $greydark;
       font-size: 40px;
       line-height: 44px;
@@ -705,7 +715,7 @@ ul.menu-list{
         font-size: 30px;
         line-height: 34px;
       }
-      .price-month{
+      .price-month {
         font-size: 20px;
         line-height: 24px;
         @include breakpoint($mobile) {
@@ -716,16 +726,17 @@ ul.menu-list{
     }
   }
 }
-.product-features{
+
+.product-features {
   display: block;
   overflow: hidden;
   position: relative;
-  .product-features-element{
+  .product-features-element {
     display: block;
     margin-bottom: 20px;
     overflow: hidden;
     position: relative;
-    .product-features-title{
+    .product-features-title {
       color: $greydark;
       font-size: 20px;
       font-weight: 400;
@@ -736,7 +747,7 @@ ul.menu-list{
         line-height: 21px;
       }
     }
-    .product-features-text{
+    .product-features-text {
       color: #4a4a4a;
       font-size: 14px;
       font-weight: normal;
@@ -751,26 +762,50 @@ ul.menu-list{
 */
 .cont-wrapper .content.sliders {
   overflow: visible;
+
+  // DESKTOP ONLY
   .slider-multiple-desktop {
     margin-top: 40px;
-    .slider-deskt {
-      li {
-        //width: 860px;
 
+    .slider-deskt {
+
+      .six-items {
+        float: left;
+        margin: 0 30px 30px 0;
+        width: 14%;
+
+        &.last {
+          margin: 0 0 30px 0;
+        }
+        // Tablet
+        @include breakpoint ($tablet) {
+          width: 13%;
+          margin: 0 18px 18px 0;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 720px)  {
         .six-items {
           float: left;
           margin: 0 30px 30px 0;
           width: 14%;
+
           &.last {
             margin: 0 0 30px 0;
           }
-          img {
-            width: 100%;
-          }
         }
-
       }
     }
+    @include breakpoint ($tablet) {
+      margin-left: 6%;
+      width: 94%;
+    }
+
+
     @include breakpoint ($mobile) {
       display: none;
     }
@@ -779,7 +814,7 @@ ul.menu-list{
       &:before {
         content: "\e92e";
         font-family: 'atelecom-icons' !important;
-        font-size: 38px;
+        font-size: 28px;
         color: $pink;
         padding-right: 8px;
       }
@@ -790,7 +825,7 @@ ul.menu-list{
         &:before {
           content: "\e930";
           font-family: 'atelecom-icons' !important;
-          font-size: 38px;
+          font-size: 28px;
           color: $pink;
           padding-right: 8px;
         }
@@ -803,13 +838,30 @@ ul.menu-list{
     }
   }
 
+  // MOBILE ONLY
   .slider-single-mobile {
+    width: 100%;
+    margin: 0 auto;
     display: none;
     @include breakpoint ($mobile) {
       display: block;
     }
-    .flex-direction-nav {
-      display: none;
+    img {
+      width: 302px;
+      margin: 0 2px;
+
+      @media screen and (max-width: 375px)  {
+        width: 255px;
+        margin: 0 4px;
+      }
+      @media screen and (max-width: 360px)  {
+        width: 250px;
+        margin: 2px;
+      }
+      @media screen and (max-width: 320px)  {
+        width: 210px;
+        margin: 3px;
+      }
     }
   }
 }
@@ -862,14 +914,14 @@ ul.menu-list{
         text-align: center;
         width: 22px;
       }
-      &:hover{
+      &:hover {
         font-weight: bold;
       }
-      span{
+      span {
         display: block;
         float: left;
         position: relative;
-        &.icons{
+        &.icons {
           color: $black;
           display: block;
           float: left;
@@ -885,10 +937,10 @@ ul.menu-list{
 /*
 * 12. SHORTCODE BUTTONS/LINKS & BANNER
 */
-.shortcode-container{
+.shortcode-container {
   /* BUTTONS/LINKS */
   /* BEGIN SOLO PARA MOSTRARLOS CENTRADOS COMO EN EL DISEÑO... NO SE UTILIZA ESTE CONTENEDOR CUANDO LO USEN SUELTOS */
-  .links-list{
+  .links-list {
     display: block;
     margin: 0 auto;
     overflow: hidden;
@@ -899,13 +951,13 @@ ul.menu-list{
     }
   }
   /* END SOLO PARA MOSTRARLOS CENTRADOS COMO EN EL DISEÑO... NO SE UTILIZA ESTE CONTENEDOR CUANDO LO USEN SUELTOS */
-  a.button-shortcode{
+  a.button-shortcode {
     display: block;
     float: left;
     margin: 0 10px;
     position: relative;
     text-decoration: underline;
-    &.button-pink{
+    &.button-pink {
       text-decoration: none;
       width: auto;
       @include breakpoint($mobile) {
@@ -913,7 +965,7 @@ ul.menu-list{
         width: 100%;
       }
     }
-    &.button-active{
+    &.button-active {
       background-color: $greymedium;
       border-radius: 3px;
       color: #FFFFFF;
@@ -931,7 +983,7 @@ ul.menu-list{
         width: 100%;
       }
     }
-    &.button-disabled{
+    &.button-disabled {
       background-color: #cfd1d2;
       border-radius: 3px;
       color: #FFFFFF;
@@ -951,12 +1003,12 @@ ul.menu-list{
     }
   }
   /* BANNER */
-  .banner-ads{
+  .banner-ads {
     clear: both;
     display: block;
     margin: 20px 0;
     position: relative;
-    .banner-ads-img{
+    .banner-ads-img {
       display: block;
       height: 215px;
       margin: 0 auto;
