@@ -1026,7 +1026,7 @@
     z-index: 10;
     @include breakpoint($tablet) {
       margin: 40% auto;
-      width: 60%;
+      width: 30%;
     }
     @include breakpoint($mobile) {
       width: 40%;
@@ -1041,10 +1041,11 @@
       width: 100%;
     }
     .loader-message {
-      animation: fadeIn 0.5s infinite alternate;
+      animation: fadeIn 0.8s infinite alternate;
       width: 100%;
       text-align: center;
       font-style: italic;
+      text-shadow: 0 0 6px white;
     }
   }
 }

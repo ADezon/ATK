@@ -70,7 +70,7 @@ h6 {
 ul {
   list-style: none;
 }
-li.w-bullets {
+li.bullets-rosa{
   margin-bottom: 8px;
   &:before {
     content: "\e923";
@@ -105,6 +105,7 @@ table {
       color: white;
       font-weight: bold;
       text-transform: uppercase;
+      width: auto;
     }
   }
   tbody {
@@ -117,6 +118,20 @@ table {
         font-weight: 400;
         color: #333333;
       }
+    }
+  }
+  &.tres-columnas {
+    td {
+      vertical-align: top;
+    }
+    td:nth-child(1) {
+      width: 16%;
+    }
+    td:nth-child(2) {
+      width: 30%;
+    }
+    td:nth-child(3) {
+      width: 54%;
     }
   }
 }
@@ -148,6 +163,7 @@ table {
 a{
   text-decoration: none;
   color: $pink;
+  width: auto;
   &.button-pink{
     background-color: $pink;
     border-radius: 3px;
