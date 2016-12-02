@@ -174,12 +174,10 @@
                     text-transform: uppercase;
                     top: 0;
                     width: 33%;
-                    border-radius: 0 !important;
 
                     @include breakpoint ($tablet) {
                       text-transform: none;
                       font-weight: bold;
-                      text-transform: uppercase;
                     }
                     &:first-child{
                       &:before{
@@ -370,12 +368,12 @@
                     text-transform: none;
 
                     a {
-                     border-left: 1px solid grey;
+                      border-left: 1px solid grey;
                       padding: 2px 14px;
                       font-weight: 400;
-                      text-transform: uppercase;
+                      text-transform: none;
                     }
-                }
+                  }
                 }
                 a{
                   background-color: $grey;
@@ -495,9 +493,9 @@
       }
     }
     .button-login-client{
-      background-color: $greydark;
+      background-color: #FFFFFF;
       border-radius: 3px;
-      color: $white;
+      color: $greydark;
       display: none;
       float: left;
       font-size: 14px;
@@ -516,10 +514,10 @@
         padding: 8px 5px;
       }
       &:hover{
-        background-color: $greymedium;
+        background-color: #FFFFFF;
       }
       &:active{
-        background-color: $black;
+        background-color: #FFFFFF;
       }
       &.active{
         margin-bottom: 0;
@@ -534,12 +532,20 @@
       &.active-logged{
         background-color: #FFFFFF;
         color: $greydark;
+        height: auto;
+        @include breakpoint($mob_smallest) {
+          box-sizing: border-box;
+          height: 48px;
+          overflow: hidden;
+          border-radius: 6px;
+          padding: 5px;
+        }
         .icons{
           color: $pink;
         }
       }
       .icons{
-        color: $white;
+        color: $greydark;
         display: block;
         float: left;
         font-size: 20px;
@@ -547,6 +553,29 @@
         padding-right: 5px;
         position: relative;
         text-align: left;
+      }
+
+      .client-full-name {
+        text-align: center;
+        &:before {
+          content: "\e905";
+          font-family: 'atelecom-icons' !important;
+          font-size: 20px;
+          color: $pink;
+          padding-right: 8px;
+          font-weight: normal;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          @include breakpoint ($mob_smallest) {
+            font-size: 14px;
+          }
+        }
+
+        @include breakpoint ($mob_smallest) {
+          width: 128px;
+          line-height: 18px;
+
+        }
       }
     }
     .menu-mobile{
@@ -661,22 +690,22 @@
         right: auto;
       }
       form.login-client{
-          position: relative;
-          display: block;
-          overflow: hidden;
-          fieldset{
-            width: 100%;
-            clear: none;
-            margin-bottom: 10px;
-            padding: 0;
-          }
+        position: relative;
+        display: block;
+        overflow: hidden;
+        fieldset{
+          width: 100%;
+          clear: none;
+          margin-bottom: 10px;
+          padding: 0;
+        }
       }
       .goto-register{
         position: absolute;
         bottom: 0;
         left: 0;
         width:100%;
-        height: 80px;
+        height: 90px;
         padding: 17px 20px;
         background-color: #f5f5f5;
         span{
@@ -757,7 +786,7 @@
               width: 20%;
               border: none;
               @include breakpoint($tablet) {
-               width: 100%;
+                width: 100%;
                 background-color: #f5f5f5;
               }
               a{
@@ -897,8 +926,8 @@
 
   .menu {
     li:before {
-        content: "";
-        display: none;
+      content: "";
+      display: none;
     }
     position: static;
     > ul {
@@ -1115,7 +1144,7 @@
         }
       }
     }
-    .button-client-area{
+    .button-client-area {
       @include span(3 of 12 last);
       cursor: auto;
       position: relative;
@@ -1124,26 +1153,38 @@
       height: 50px;
       text-transform: uppercase;
       background-color: $pink;
-      text-align: center;
       color:$white;
       font-weight: bold;
       font-size: 14px;
       line-height: 16px;
       padding: 14px 0;
-      &.active, &.active-logged{
+      &.active, &.active-logged {
         color: $greydark;
         background-color: $white;
         .icons{
           color: $pink;
         }
       }
-      .icons{
+      .client-full-name {
+        text-align: center;
+        &:before {
+          content: "\e905";
+          font-family: 'atelecom-icons' !important;
+          font-size: 20px;
+          color: $pink;
+          padding-right: 8px;
+          font-weight: normal;
+        }
+      }
+      .icons {
+        float: left;
         color: $white;
         font-size: 20px;
         padding-right: 5px;
+        padding-left: 6%;
       }
       @include breakpoint($tablet) {
-       display: none;
+        display: none;
       }
     }
   }

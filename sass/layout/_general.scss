@@ -173,13 +173,13 @@ a{
     background-color: $pink;
     border-radius: 3px;
     color: $white;
-    display: block;
+    display: inline;
     font-size:16px;
     font-weight: bold;
     height: 32px;
     line-height: 20px;
     margin: 0 auto;
-    padding: 6px 11px;
+    padding: 6px 22px;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -202,15 +202,14 @@ a{
     background-color: black;
     border-radius: 3px;
     color: $white;
-    display: block;
+    display: inline;
     font-size:16px;
     font-weight: bold;
     height: 32px;
     line-height: 20px;
     margin: 0 auto;
-    padding: 6px 11px;
+    padding: 6px 16px;
     position: relative;
-    text-align: center;
     text-transform: uppercase;
     width: 180px;
     &.bp-w-auto{
@@ -232,12 +231,12 @@ a{
     background-color: $pinkdark;
     border-radius: 3px;
     color: $white;
-    display: block;
+    display: inline;
     font-size:12px;
     font-weight: bold;
     height: 36px;
     margin-bottom: 20px;
-    padding: 10px 11px;
+    padding: 10px 16px;
     position: relative;
     text-align: center;
     text-transform: uppercase;

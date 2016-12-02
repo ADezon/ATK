@@ -221,7 +221,8 @@
 <div id="region-signup" class="cont-wrapper">
     <div class="content content-big">
         <h2>Avantatges de registrar-te a l’àrea clients:</h2>
-        <a class="button-pink" href="#" title="">Registra't ara</a>
+        <div class="full-centered"><a class="button-pink" href="#" title="">Registra't ara</a></div>
+
         <ul>
             <li>
                 <div class="element-signup"><span
