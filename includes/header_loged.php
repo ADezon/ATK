@@ -153,7 +153,7 @@
           <span class="counter-alerts">99</span>
         </a>
         <div class="button-login-client active-logged" href="#" title=""><span
-            class="icons icon-client"></span><span>Hola, Alejandra</span></div>
+            class="icons icon-client"></span><span>Hola, RAMIS KHALIKOV</span></div>
       </div>
     </div>
   </div>
@@ -446,7 +446,7 @@
       </ul>
       <div class="button-client-area active-logged">
         <span class="icons icon-client"></span>
-        <span>Hola, Alejandra</span>
+        <span>Hola, RAMIS KHALIKOV</span>
       </div>
     </div>
   </div>

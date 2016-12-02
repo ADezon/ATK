@@ -174,10 +174,12 @@
                     text-transform: uppercase;
                     top: 0;
                     width: 33%;
+                    border-radius: 0 !important;
 
                     @include breakpoint ($tablet) {
                       text-transform: none;
                       font-weight: bold;
+                      text-transform: uppercase;
                     }
                     &:first-child{
                       &:before{
@@ -371,7 +373,7 @@
                      border-left: 1px solid grey;
                       padding: 2px 14px;
                       font-weight: 400;
-                      text-transform: none;
+                      text-transform: uppercase;
                     }
                 }
                 }

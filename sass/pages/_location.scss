@@ -5,9 +5,8 @@
     margin: 40px 0 60px 0;
     overflow: hidden;
     position: relative;
-    background-color: $pink;
     @include breakpoint($mobile) {
-      height: 548px;
+      height: 490px;
     }
     .legend{
       margin: 0 auto;

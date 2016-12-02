@@ -18,6 +18,10 @@
         font-size: 16px;
         line-height: 21px;
         margin-top: 20px;
+        &.app-icons-container {
+          text-align: center;
+          width: 100%;
+        }
         .icons{
           &.icon-arrow-rightleft{
             padding: 0 2%;
