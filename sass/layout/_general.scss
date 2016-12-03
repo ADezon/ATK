@@ -88,6 +88,11 @@ li.bullets-rosa {
 .full-centered {
   width: 100%;
   text-align: center;
+  margin-bottom: 12px;
+}
+.separador {
+  width: 100%;
+  margin-bottom: 12px;
 }
 
 table {
@@ -169,19 +174,15 @@ a{
   text-decoration: none;
   color: $pink;
   width: auto;
-  &.button-pink{
+  &.button-pink {
     background-color: $pink;
     border-radius: 3px;
     color: $white;
     display: inline;
     font-size:16px;
     font-weight: bold;
-    height: 32px;
-    line-height: 20px;
-    margin: 0 auto;
+    line-height: 30px;
     padding: 6px 22px;
-    position: relative;
-    text-align: center;
     text-transform: uppercase;
     &.bp-w-auto{
       width: auto;
@@ -232,15 +233,12 @@ a{
     border-radius: 3px;
     color: $white;
     display: inline;
-    font-size:12px;
+    font-size: 12px;
+    line-height: 36px;
     font-weight: bold;
-    height: 36px;
-    margin-bottom: 20px;
-    padding: 10px 16px;
-    position: relative;
-    text-align: center;
+    padding: 6px 16px;
     text-transform: uppercase;
-    width: 100%;
+    width: auto;
     &:hover{
       background-color: $pinklight;
     }

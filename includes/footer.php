@@ -57,9 +57,14 @@
         </ul>
       </div>
       <div class="column-footer last">
-        <a class="button-action" href="#" title=""><span
-            class="icons icon-email"></span><span>CORREU.ANDORRA.AD</span></a>
-        <a class="button-action" href="#" title="">TREBALLA AMB NOSALTRES</a>
+        <div class="separador">
+          <a class="button-action" href="#" title=""><span class="icons icon-email"></span>
+            <span>CORREU.ANDORRA.AD</span></a>
+        </div>
+        <div class="separador">
+          <a class="button-action" href="#" title="">TREBALLA AMB NOSALTRES</a>
+        </div>
+
         <h3>Subscriu-te a la nostra newsletter!</h3>
         <!-- FORM INPUT -->
         <!-- FORM SUBMIT -->
