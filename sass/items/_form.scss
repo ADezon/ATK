@@ -64,7 +64,7 @@ fieldset {
   }
   &.big-fieldset {
     padding: 0;
-    width: 30%;
+    width: 58%;
     @include breakpoint($tablet) {
       min-height: 100px;
       width: 50%;
@@ -91,7 +91,8 @@ fieldset {
   }
   &.small-fieldset {
     padding: 0;
-    width: 20%;
+    width: 40%;
+    margin-right: 2%;
     @include breakpoint($tablet) {
       min-height: 100px;
       width: 50%;

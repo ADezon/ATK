@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body{
   font-family: $webfont;
   position: relative;
@@ -86,9 +89,13 @@ li.bullets-rosa {
   }
 }
 .full-centered {
+  float: left;
   width: 100%;
   text-align: center;
   margin-bottom: 12px;
+}
+.tx-right {
+  text-align: right;
 }
 .separador {
   width: 100%;
@@ -164,13 +171,13 @@ table {
   float: right;
   position: relative;
 }
-.clear{
+.clear {
   clear: both;
 }
-.pink{
+.pink {
   color:$pink;
 }
-a{
+a {
   text-decoration: none;
   color: $pink;
   width: auto;
@@ -181,7 +188,7 @@ a{
     display: inline;
     font-size:16px;
     font-weight: bold;
-    line-height: 30px;
+    //line-height: 30px;
     padding: 6px 22px;
     text-transform: uppercase;
     &.bp-w-auto{
@@ -198,6 +205,9 @@ a{
       font-size:14px;
       line-height: 18px;
     }
+  }
+  &.underlined {
+    text-decoration: underline;
   }
   &.button-black{
     background-color: black;

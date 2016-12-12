@@ -957,9 +957,11 @@ ul.menu-list {
     margin: 0 10px;
     position: relative;
     text-decoration: underline;
+    line-height: 32px;
     &.button-pink {
       text-decoration: none;
       width: auto;
+      padding: 0px 12px;
       @include breakpoint($mobile) {
         margin: 10px 0;
         width: 100%;

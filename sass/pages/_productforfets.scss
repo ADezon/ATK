@@ -1,0 +1,282 @@
+.list-product-forfets{
+  ul{
+    .forfets-element{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      padding: 25px 0;
+      margin-top: 18px;
+      &.odd{
+        background-color:$greysoft;
+      }
+      &.even{
+        background-color:$white;
+      }
+      .reveal-info {
+        display: none;
+        @include breakpoint($mobile) {
+          display: block;
+        }
+        width: 60%;
+        text-align: center;
+        font-size: 16px;
+        margin: 0 auto;
+        cursor: pointer;
+        padding: 22px 0;
+        &:before {
+          font-family: 'atelecom-icons' !important;
+          speak: none;
+          color: $pink;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          content: '\e931';
+          margin-right: 10px;
+        }
+        &:after {
+          font-family: 'atelecom-icons' !important;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          content: '\e916';
+          margin-left: 6px;
+          font-size: 20px;
+          position: absolute;
+        }
+        &.opened:before {
+          content: '\e92f';
+        }
+        &.opened:after {
+          content: '\e915';
+        }
+      }
+      .expandible-info{
+        @include breakpoint($tablet) {
+          position: relative;
+          display: block;
+          overflow: hidden;
+        }
+        @include breakpoint($mobile) {
+          display: none;
+          padding: 0 40px;
+        }
+      }
+      .forfets-element-column{
+        position: relative;
+        display: block;
+        float: left;
+        width: 20%;
+        padding: 22px 15px;
+        @include breakpoint($tablet) {
+          width: 33.3% !important;
+        }
+        @include breakpoint($mobile) {
+          width: 100% !important;
+          float: none;
+          clear: both;
+        }
+        &.title-forfet{
+          position: relative;
+          display: block;
+          float: left;
+          font-size: 21px;
+          line-height: 22px;
+          color: $pink;
+          padding: 0 15px;
+          @include breakpoint($tablet) {
+            width: 100%;
+            float: none;
+            clear: both;
+            text-align: center;
+          }
+          span{
+            position: relative;
+            display: block;
+            float: left;
+            margin-top: 12px;
+            @include breakpoint($tablet) {
+              float: none;
+              text-align: center;
+              display: inline-block;
+            }
+            &.number-forfet{
+              font-size: 72px;
+              line-height: 75px;
+              margin-top: 0;
+              padding-left: 20px;
+            }
+          }
+        }
+        &.data-forfet{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          width: 15%;
+          .icons{
+            position: relative;
+            display: block;
+            float: left;
+            padding-right: 10px;
+            color: $pink;
+            font-size: 34px;
+            line-height: 30px;
+          }
+          .data-forfet-info{
+            position: relative;
+            display: block;
+            float: left;
+            margin-top: -8px;
+            .data-forfet-title{
+              position: relative;
+              display: block;
+              clear: both;
+              color: $pink;
+              font-size: 16px;
+              line-height: 21px;
+            }
+            .data-forfet-content{
+              position: relative;
+              display: block;
+              clear: both;
+              color: $greydark;
+              font-weight: bold;
+              font-size: 22px;
+              line-height: 26px;
+            }
+          }
+        }
+        &.calls-forfet{
+          width: 25%;
+          position: relative;
+          display: block;
+          overflow: hidden;
+          .icons{
+            position: relative;
+            display: block;
+            float: left;
+            padding-right: 10px;
+            color: $pink;
+            font-size: 34px;
+            line-height: 30px;
+          }
+          .calls-forfet-info{
+            position: relative;
+            display: block;
+            float: left;
+            .calls-forfet-title{
+              position: relative;
+              display: block;
+              clear: both;
+              color: $pink;
+              font-size: 16px;
+              line-height: 21px;
+            }
+            .calls-forfet-content{
+              position: relative;
+              display: block;
+              clear: both;
+              color: $greydark;
+              font-size: 16px;
+              line-height: 21px;
+              strong{
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        &.sms-forfet{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          .icons{
+            position: relative;
+            display: block;
+            float: left;
+            padding-right: 10px;
+            color: $pink;
+            font-size: 34px;
+            line-height: 30px;
+          }
+          .sms-forfet-info{
+            position: relative;
+            display: block;
+            float: left;
+            .sms-forfet-title{
+              position: relative;
+              display: block;
+              clear: both;
+              color: $pink;
+              font-size: 16px;
+              line-height: 21px;
+            }
+            .sms-forfet-content{
+              position: relative;
+              display: block;
+              clear: both;
+              color: $greydark;
+              font-weight: bold;
+              font-size: 22px;
+              line-height: 26px;
+            }
+          }
+        }
+        &.price-forfet{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          text-align: center;
+
+          @include breakpoint($tablet) {
+            width: 100%;
+            float: none;
+            clear: both;
+          }
+          .price-forfet-price{
+            color: $greydark;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 55px;
+            position: relative;
+            display: block;
+            //float: right;
+
+            @include breakpoint($tablet) {
+              float: none;
+              text-align: center;
+            }
+          }
+          .price-month{
+            font-size: 18px;
+            line-height: 22px;
+          }
+          .button-pink{
+            position: relative;
+            //display: block;
+            clear: both;
+            text-align: center;
+            @include breakpoint($tablet) {
+              width: 50%;
+              margin: 0 auto;
+            }
+            @include breakpoint($mobile) {
+              width: 100%;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+

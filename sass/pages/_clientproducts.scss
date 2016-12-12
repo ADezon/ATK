@@ -9,28 +9,38 @@
       width: 111px;
       margin-left: 10px;
       margin-top: 53px;
+      @include breakpoint ($mobile){
+        margin-top: 12px;
+      }
     }
   }
-  &.result-client-products{
-    .services-selector{
+  &.result-client-products {
+    .services-selector {
       position: relative;
       display: block;
       clear: both;
       margin: 40px 0;
-      .services-element{
+      .services-element {
         position: relative;
         display: block;
         width: 100%;
         overflow: hidden;
+        cursor: pointer;
         clear: both;
         background-color: $greysoft;
         padding: 25px 40px;
         margin-bottom: 20px;
+
+        @include breakpoint ($mobile){
+          padding: 16px 20px;
+        }
+
         .services-title{
           position: relative;
           display: block;
           float: left;
           width: 50%;
+          text-align: center;
           .icons{
             position: relative;
             display: block;
@@ -39,6 +49,10 @@
             line-height: 40px;
             color: $pink;
             margin-right: 20px;
+            @include breakpoint($mobile) {
+              float: none;
+              margin: 0;
+            }
           }
           p{
             position: relative;
@@ -50,22 +64,17 @@
             color: $black;
             font-size: 18px;
             font-weight: bold;
+            @include breakpoint($mobile) {
+              float: none;
+            }
           }
         }
-        .services-price{
+        .services-price {
           position: relative;
           display: block;
           float: right;
           width: 50%;
-          .icons{
-            position: relative;
-            display: block;
-            float: right;
-            font-size: 20px;
-            line-height: 40px;
-            color: $pink;
-            margin-left: 20px;
-          }
+
           p{
             position: relative;
             display: block;
@@ -76,7 +85,36 @@
             color: $black;
             font-size: 24px;
             font-weight: bold;
+            @include breakpoint($mobile) {
+              font-size: 32px;
+              margin-top: 16px;
+            }
+
+            &:after {
+              content: '\e931';
+              color: $pink;
+              font-size: 26px;
+              font-family: 'atelecom-icons' !important;
+              speak: none;
+              font-style: normal;
+              font-weight: normal;
+              font-variant: normal;
+              text-transform: none;
+              line-height: 1;
+              -webkit-font-smoothing: antialiased;
+              margin-left: 24px;
+              position: relative;
+              top: 2px;
+              @include breakpoint($mobile) {
+                margin-left: 10px;
+              }
+            }
           }
+        }
+      }
+      &.opened {
+        .services-price p:after {
+          content: '\e92f';
         }
       }
     }
@@ -84,47 +122,95 @@
   &.config-client-products{
     .sidebar{
       width: 40%;
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
     }
     .content-ws{
       width: 60%;
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
     }
     h3{
       color: $greydark;
     }
-    .service-selected{
-      position: relative;
-      display: block;
-      width:100%;
-      .title-service-selected{
-        position: relative;
-        display: block;
-        width:50%;
+      .services-container {
+        width: 100%;
         float: left;
-        font-size: 21px;
-        line-height: 25px;
-        font-weight: bold;
-        color: $greydark;
-        text-align: left;
+        margin-top: 22px;
+        @include breakpoint ($mobile){
+          margin-top: 12px;
+        }
       }
-      .price-service-selected{
-        position: relative;
-        display: block;
-        width:50%;
-        float: right;
-        font-size: 30px;
-        line-height: 34px;
-        font-weight: bold;
-        color: $greydark;
-        text-align: right;
+      .services-big {
+        float: left;
+        width: 70%;
+      }
+      .services-small {
+        float: left;
+        width: 30%;
+        .big {
+          font-size: 32px;
+          line-height: 56px;
+          font-weight: 600;
+        }
+      }
+      .prod-title,
+      .prod-description {
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 600;
+      }
+      .producte {
+        margin-bottom: 24px;
+
+        .icons {
+          float: left;
+          font-size: 24px;
+        }
+        .contactat {
+
+        }
+      }
+      .pin-element:before {
+        content: '*** ';
+        color: $pink;
+      }
+
+    .service-items {
+      width: 100%;
+      li {
+        border-top: 1px solid $gris2;
+        padding: 14px 0;
+        &:last-child {
+          border-bottom: 1px solid $gris2;
+        }
+        .service-item:after {
+          content: '\e933';
+          color: $pink;
+          float: right;
+          margin-right: 14px;
+          font-family: 'atelecom-icons' !important;
+          font-size: 12px;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+        }
       }
     }
     .config-box{
+      float: left;
+      width: 100%;
       position: relative;
       display: block;
-      clear: both;
       background-color: $greysoft;
       padding: 20px;
-      margin-bottom: 40px;
+      margin: 40px 0;
       .title-config-box{
         font-size: 16px;
         line-height: 22px;
@@ -134,6 +220,205 @@
         text-align: center;
         width: 100%;
       }
+      .inner-box {
+        @include span(12 of 12);
+        background-color: white;
+        padding: 30px 15px;
+
+        img {
+          vertical-align: middle;
+          width: 100%;
+        }
+
+        >div {
+          @include gallery(4 of 12);
+        }
+        .prod-description {
+          color: $pink;
+          font-size: 21px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .service-status {
+      &:before {
+        content: '\e923';
+        margin-right: 6px;
+        font-family: 'atelecom-icons' !important;
+        font-size: 12px;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+      }
+      &.active:before {
+        color: $pink;
+      }
+      &.inactive:before {
+        color: $greymedium;
+      }
+
+      a {
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+      }
     }
   }
 }
+.general-alert-wrapper .content-general-wrapper.clientproducts {
+  width: 470px;
+  margin: 4% auto;
+  @include breakpoint($mobile){
+    width: 98%;
+  }
+  .alert-general-title {
+    h2 {
+      float: left;
+      line-height: 34px;
+      &.alta-success {
+        margin-bottom: 16px;
+        &:before {
+          content: "\e934";
+          font-family: 'atelecom-icons' !important;
+          font-size: 30px;
+          color: $green;
+          padding-right: 12px;
+          position: relative;
+          top: 8px;
+        }
+      }
+      &.half {
+        width: 50%;
+        @include breakpoint($mobile){
+          width: 100%;
+        }
+      }
+    }
+    img {
+      float: right;
+      margin-right: 7%;
+      @include breakpoint($mobile) {
+
+      }
+    }
+    @include breakpoint($tablet){
+      margin-top: 0;
+    }
+    @include breakpoint($mobile){
+      margin-top: -32px;
+    }
+  }
+  .alert-general-body {
+    @include clearfix();
+    padding: 10px 25px;
+
+    .checkbox-custom label a {
+      color: $pink;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    label {
+      color: black;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    select {
+      width: 50%;
+    }
+
+    input[type=text] {
+      width: 80%;
+      @include breakpoint ($mobile) {
+        width: 100%;
+      }
+    }
+    input[type=submit].centered, input[type=button].centered {
+      display: inline;
+      float: none;
+    }
+
+    #password-strength-text {
+      text-align: right;
+      width: 80%;
+      margin-bottom: 0;
+      .feble {
+        font-weight: bold;
+        color: red;
+      }
+      .mitja {
+        font-weight: bold;
+        color: $orange;
+      }
+      .alta {
+        font-weight: bold;
+        color: $green;
+      }
+    }
+
+    // BAR STRENGTH
+    meter {
+      background-color: rgba(0, 0, 0, 0.1);
+      float: left;
+      margin: 0;
+      width: 80%;
+      height: 10px;
+    }
+    //
+    meter::-webkit-meter-bar {
+      background: none;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    /* Webkit based browsers */
+    meter[value=".25"]::-webkit-meter-optimum-value { background: red; }
+    meter[value=".5"]::-webkit-meter-optimum-value { background: $orange; }
+    meter[value=".75"]::-webkit-meter-optimum-value { background: $green; }
+    meter[value="1"]::-webkit-meter-optimum-value { background: $green; }
+
+    /* Gecko based browsers */
+    meter[value=".25"]::-moz-meter-bar { background: red; }
+    meter[value=".5"]::-moz-meter-bar { background: $orange; }
+    meter[value=".75"]::-moz-meter-bar { background: $green; }
+    meter[value="1"]::-moz-meter-bar { background: $green; }
+
+    .success {
+      font-size: 21px;
+    }
+    .download-app {
+      font-size: 16px;
+    }
+    .app-icons {
+      float: none;
+      clear: both;
+      height: 60px;
+      img {
+        float: left;
+        width: 40%;
+        margin: 2% 5% 2%;
+      }
+    }
+
+    .inner-box {
+      @include span(12 of 12);
+      background-color: white;
+      padding: 16px 4px;
+
+      img {
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      > div {
+        @include gallery(3 of 12);
+      }
+      > div {
+        margin-bottom: 2%;
+      }
+    }
+  }
+}
+

@@ -54,7 +54,7 @@ $(document).ready(function() {
     //
     // 2. ENQUIRE (RESPONSIVE)
     //
-    enquire.register("screen and (max-width:720px)", {
+    enquire.register("screen and (max-width:768px)", {
 
         // OPTIONAL
         // If supplied, triggered when a media query matches.
@@ -63,7 +63,7 @@ $(document).ready(function() {
             $('#header .container-client-area.logged-area').removeClass('active').hide();
             // Remove margin MENU logged
             $('.logged-in #nav-private').css('margin-bottom', '0');
-
+            // console.log('antes de los 720');
         },
 
         // OPTIONAL
@@ -76,6 +76,7 @@ $(document).ready(function() {
             $("#topbar").insertBefore("#head");
             $('a.menu-mobile').removeClass('open');
 
+            // console.log('pasados los 720');
             // Abre el MENU Logueado
             $('#header .container-client-area.logged-area').addClass('active').show();
             $('.logged-in #nav-private').css('margin-bottom', '60px');
@@ -108,7 +109,7 @@ $(document).ready(function() {
 
     // 3. LOGUIN System
     // Pre-RESPONSIVE (Before SCALE)
-    if ($(window).width() > 720) {
+    if ($(window).width() > 768) {
         // Abre el MENU Logueado
         $('#header .container-client-area.logged-area').addClass('active').show();
         $('.logged-in #nav-private').css('margin-bottom', '60px');
@@ -127,7 +128,6 @@ $(document).ready(function() {
         });
     });
 
-    
     // LOGIN MOBILE
     $(function() {
         var button = $('.button-client-area');

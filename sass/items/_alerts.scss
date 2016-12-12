@@ -989,6 +989,9 @@
     // ANCHO Wrapper
     &.wide-alert {
       width: 550px;
+      @include breakpoint($mobile) {
+        width: 98%;
+      }
     }
   }
   &.fixedone {
