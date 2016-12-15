@@ -1,0 +1,110 @@
+.with-bottom {
+  margin-bottom: 40px;
+}
+.big-icon-container {
+  float: left;
+  margin-right: 30px;
+  [class^="icon-"], [class*=" icon-"] {
+    font-size: 80px;
+    color: $pink;
+  }
+}
+.align-w-big-icon-container {
+  padding-left: 142px;
+}
+
+.h-one-like {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.soft-title {
+  color: $greymedium;
+  font-size: 30px;
+  font-weight: 400;
+}
+.big-content-header {
+  margin-bottom: 40px;
+  float: left;
+  width: 100%;
+}
+
+/* @TODO revisar si esaplicable a TODA implementación de "half-page"*/
+.prepagament {
+  .half-page:first-child {
+    padding-right: 30px;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+.box-info-data {
+  background-color: $products-bggrey;
+  padding: 12px 22px 22px;
+  margin: 30px 0;
+  float: left;
+  width: 100%;
+
+  h4 {
+    margin: 15px 0 0 0;
+  }
+
+  .full-centered {
+    margin: 6px 0 18px 0;
+  }
+  .modul-prepagament {
+    @include clearfix();
+    width: 100%;
+
+    >div {
+      float: left;
+      padding: 20px 0;
+      margin-right: 10px;
+    }
+    input[type=text] {
+      background-color: white;
+      width: 52%;
+      float: left;
+      clear: none;
+    }
+    input[type=submit], input[type=button] {
+      clear: none;
+      margin: 10px 0 10px 10px;
+    }
+  }
+  .gallery {
+    @include span(12 of 12);
+
+    >div {
+      @include gallery(4 of 12);
+      background-color: white;
+      text-align: center;
+    }
+
+    .inner-item {
+      background-color: white;
+      text-align: center;
+      width: 100%;
+    }
+    .pink {
+      color: $pink;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+    .hard {
+      color: $greymedium;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+    .action-message {
+      color: $greymedium;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 16px;
+      border-top: 10px solid $products-bggrey;
+      padding-top: 10px;
+    }
+  }
+}

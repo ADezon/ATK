@@ -122,13 +122,13 @@
   &.config-client-products{
     .sidebar{
       width: 40%;
-      @include breakpoint($mobile) {
+      @include breakpoint($tablet) {
         width: 100%;
       }
     }
     .content-ws{
       width: 60%;
-      @include breakpoint($mobile) {
+      @include breakpoint($tablet) {
         width: 100%;
       }
     }
@@ -141,6 +141,19 @@
         margin-top: 22px;
         @include breakpoint ($mobile){
           margin-top: 12px;
+        }
+        .switch-checks-list{
+          li .info-check span {
+            @include breakpoint ($mobile){
+              line-height: 21px;
+            }
+          }
+          .checkbox-custom-switch{
+            @include breakpoint ($mobile){
+              clear: both;
+              float: left;
+            }
+          }
         }
       }
       .services-big {
@@ -172,6 +185,16 @@
         .contactat {
 
         }
+      }
+      .info-list-producte{
+        li{
+          margin-bottom: 10px;
+        }
+      }
+      .info-detail-producte{
+        font-weight: bold;
+        float: right;
+        color: $pink;
       }
       .pin-element:before {
         content: '*** ';
@@ -238,6 +261,10 @@
           font-size: 21px;
           font-weight: bold;
         }
+      }
+      h5 {
+        color: $pink;
+        font-size: 22px;
       }
     }
 

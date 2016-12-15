@@ -24,7 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.icon-call-money:before {
+  content: "\e936";
+}
+.icon-sim:before {
+  content: "\e935";
+}
 .icon-check-rounded:before {
   content: "\e934";
 }

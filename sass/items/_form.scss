@@ -572,6 +572,25 @@ input[type=button] {
       display: block;
       overflow: hidden;
       border-bottom: 1px solid #cfd1d2;
+      .info-check{
+        position: relative;
+        display: block;
+        max-width: 75%;
+        float: left;
+        span{
+          position: relative;
+          display: block;
+          float: left;
+          line-height: 33px;
+          color: $greydark;
+          font-size: 16px;
+          &.little-info-check{
+            clear: both;
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+      }
       span{
         position: relative;
         display: block;
@@ -582,6 +601,7 @@ input[type=button] {
       }
       .checkbox-custom-switch{
         float: right;
+        margin: 10px 0;
       }
     }
 }

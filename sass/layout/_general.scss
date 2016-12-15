@@ -72,6 +72,16 @@ h6 {
 }
 ul {
   list-style: none;
+  &.line-bullet li {
+    color: #58585A;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    &:before {
+      content: '- ';
+    }
+  }
+
 }
 li.bullets-rosa {
   margin-bottom: 8px;
@@ -388,8 +398,23 @@ p{
       font-weight: bold;
     }
   }
+  &.bg-lightpink {
+    background-color: $pink_superlight;
+    padding: 40px 0;
+    a {
+      text-decoration: underline;
+    }
+  }
 }
-
+.seventy {
+  width: 70%;
+  @include breakpoint($mobile) {
+    width: 100%;
+  }
+}
+.hard {
+  font-weight: bold;
+}
 // AVISO LEGAL
 .numbered-lists {
   counter-reset: this-list-counter;
