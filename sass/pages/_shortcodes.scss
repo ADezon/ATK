@@ -2,6 +2,9 @@
 .bg-grey {
   background-color: $products-bggrey;
   padding: 40px 0;
+  &.corporative {
+    padding: 30px 0;
+  }
 }
 
 /*
@@ -94,6 +97,25 @@
       position: relative;
       text-align: center;
     }
+    .highlighted {
+      color: $pink;
+      font-size: 80px;
+      line-height: 114px;
+      font-weight: bold;
+      @include breakpoint($mobile) {
+        font-size: 60px;
+        line-height: 74px;
+      }
+    }
+    .highlight-info {
+      color: $pink;
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: uppercase;
+      @include breakpoint($mobile) {
+        font-size: 20px;
+      }
+    }
   }
 }
 
@@ -159,7 +181,22 @@
   position: relative;
   width: 100%;
   p {
-    color: #4a4a4a;
+    color: $products-fontcolor;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.content-box-greysoft {
+  background-color: $products-bggrey;
+  clear: both;
+  display: block;
+  margin: 20px 0;
+  overflow: hidden;
+  padding: 30px 7%;
+  position: relative;
+  width: 100%;
+  p {
+    color: $products-fontcolor;
     font-size: 14px;
     line-height: 22px;
   }
@@ -194,8 +231,11 @@
       position: relative;
       text-align: left;
       width: 15%;
+      @include breakpoint($tablet) {
+        text-align: center;
+      }
       @include breakpoint($mobile) {
-        width: 25%;
+        width: 100%;
       }
       .icons {
         color: $pink;
@@ -224,6 +264,7 @@
           font-size: 16px;
           line-height: 21px;
           margin-bottom: 5px;
+          text-align: center;
         }
       }
       .two-columns-description {
@@ -274,6 +315,9 @@
     right: 10px;
     top: 38%;
     transition: all 1s ease-in;
+    @include breakpoint($tablet) {
+      top: 22%;
+    }
   }
 }
 
@@ -788,7 +832,7 @@ ul.menu-list {
         }
       }
 
-      @media only screen and (max-width: 720px)  {
+      @media only screen and (max-width: 720px) {
         .six-items {
           float: left;
           margin: 0 30px 30px 0;
@@ -804,7 +848,6 @@ ul.menu-list {
       margin-left: 6%;
       width: 94%;
     }
-
 
     @include breakpoint ($mobile) {
       display: none;
@@ -850,15 +893,15 @@ ul.menu-list {
       width: 302px;
       margin: 0 2px;
 
-      @media screen and (max-width: 375px)  {
+      @media screen and (max-width: 375px) {
         width: 255px;
         margin: 0 4px;
       }
-      @media screen and (max-width: 360px)  {
+      @media screen and (max-width: 360px) {
         width: 250px;
         margin: 2px;
       }
-      @media screen and (max-width: 320px)  {
+      @media screen and (max-width: 320px) {
         width: 210px;
         margin: 3px;
       }
@@ -956,52 +999,11 @@ ul.menu-list {
     float: left;
     margin: 0 10px;
     position: relative;
-    text-decoration: underline;
     line-height: 32px;
-    &.button-pink {
-      text-decoration: none;
-      width: auto;
-      padding: 0px 12px;
-      @include breakpoint($mobile) {
-        margin: 10px 0;
-        width: 100%;
-      }
-    }
-    &.button-active {
-      background-color: $greymedium;
-      border-radius: 3px;
-      color: #FFFFFF;
-      font-size: 16px;
-      font-weight: bold;
-      height: 32px;
-      line-height: 20px;
-      padding: 6px 11px;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      width: auto;
-      @include breakpoint($mobile) {
-        margin: 10px 0;
-        width: 100%;
-      }
-    }
-    &.button-disabled {
-      background-color: #cfd1d2;
-      border-radius: 3px;
-      color: #FFFFFF;
-      font-size: 16px;
-      font-weight: bold;
-      height: 32px;
-      line-height: 20px;
-      padding: 6px 11px;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      width: auto;
-      @include breakpoint($mobile) {
-        margin: 10px 0;
-        width: 100%;
-      }
+    @include breakpoint($mobile) {
+      display: block;
+      width: 100%;
+      margin: 4px 0;
     }
   }
   /* BANNER */
@@ -1018,6 +1020,133 @@ ul.menu-list {
       position: relative;
       width: 100%;
       object-fit: cover;
+    }
+  }
+
+  // Seccion WEB CORPORATIVA
+  &.corporative {
+
+    h2.global-subtitle {
+      border: medium none;
+      text-align: left;
+      &:after {
+        display: none;
+      }
+      margin-bottom: 6%;
+      @include breakpoint ($mobile){
+        text-align: center;
+      }
+    }
+
+    .items-container {
+      @include span(12);
+
+      > div {
+        @include gallery(4 of 12);
+        text-align: center;
+        margin-bottom: 6%;
+        @include breakpoint ($mobile){
+          width: 100%;
+          margin: 0 0 15px 0 !important;
+        }
+
+        > div {
+          margin-bottom: 6px;
+        }
+        .person {
+          margin-top: 14px;
+          color: $pink;
+          font-size: 18px;
+        }
+        .department {
+          color: $products-fontcolor;
+          font-size: 16px;
+          margin-bottom: 12px;
+        }
+        .social {
+          color: $products-fontcolor;
+          font-size: 14px;
+          line-height: 18px;
+          .linkedin:before {
+            content: "\e937";
+            /* use !important to prevent issues with browser extensions that change fonts */
+            font-family: 'atelecom-icons' !important;
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            /* Better Font Rendering =========== */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin-right: 4px;
+          }
+          .email:before {
+            content: '@';
+            font-weight: bold;
+            margin-right: 4px;
+          }
+        }
+
+      }
+    }
+  }
+}
+.cont-wrapper.shortcode-container.corporative {
+  margin-bottom: 50px;
+}
+
+
+/* BEGIN Corporative custom */
+.shortcode-container.corporative {
+  .two-columns-row {
+    .two-columns-element {
+      padding: 0;
+    }
+    .two-columns-image {
+      width: 50%;
+      float: left;
+      img {
+        width: 100%;
+      }
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
+    }
+    .two-columns-info {
+      width: 50%;
+      padding: 1% 6%;
+      @include breakpoint($tablet) {
+        width: 85%;
+        padding: 0;
+      }
+      .two-columns-title {
+        font-size: 18px;
+        line-height: 20px;
+        color: $pink;
+        text-transform: uppercase;
+        @include breakpoint($tablet) {
+          text-align: left;
+        }
+      }
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
+    }
+  }
+  a.button-shortcode.button-active {
+    background-color: white;
+    border: 1px solid $pink;
+    color: $pink;
+    &:hover {
+      color: #ffffff;
+      background-color: $pinklight;
+    }
+  }
+  h2.global-subtitle {
+    @include breakpoint($tablet) {
+      text-align: center;
     }
   }
 }

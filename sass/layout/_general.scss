@@ -26,7 +26,7 @@ h2 {
     font-weight: bold;
     margin: 0 0 25px 0;
   }
-  &.global-subtitle{
+  &.global-subtitle {
     color: $greydark;
     display: block;
     font-size: 30px;
@@ -48,6 +48,10 @@ h2 {
     @include breakpoint($tablet) {
       font-size:20px;
       line-height: 26px;
+    }
+    @include breakpoint($mobile) {
+      font-size:24px;
+      line-height: 28px;
     }
   }
 }
@@ -187,6 +191,18 @@ table {
 .pink {
   color:$pink;
 }
+.treinta {
+  font-size: 30px;
+}
+.twenty {
+  font-size: 20px;
+}
+.bold {
+  font-weight: bold;
+}
+.grey-medium {
+  color: $greymedium;
+}
 a {
   text-decoration: none;
   color: $pink;
@@ -198,9 +214,10 @@ a {
     display: inline;
     font-size:16px;
     font-weight: bold;
-    //line-height: 30px;
-    padding: 6px 22px;
+    line-height: 32px;
+    padding: 3px 22px;
     text-transform: uppercase;
+    text-align: center;
     &.bp-w-auto{
       width: auto;
       word-break: keep-all;
@@ -213,23 +230,67 @@ a {
     }
     @include breakpoint($tablet) {
       font-size:14px;
-      line-height: 18px;
+      line-height: 22px;
+    }
+  }
+  &.button-active {
+    background-color: $greymedium;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 3px 11px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+    &:hover {
+      background-color: black;
+    }
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 22px;
+    }
+    @include breakpoint($mobile) {
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
+  &.button-disabled {
+    background-color: #cfd1d2;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 3px 11px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 22px;
+    }
+    @include breakpoint($mobile) {
+      margin: 10px 0;
+      width: 100%;
     }
   }
   &.underlined {
     text-decoration: underline;
   }
-  &.button-black{
+  &.button-black {
     background-color: black;
     border-radius: 3px;
     color: $white;
     display: inline;
     font-size:16px;
     font-weight: bold;
-    height: 32px;
-    line-height: 20px;
+    line-height: 32px;
     margin: 0 auto;
-    padding: 6px 16px;
+    padding: 3px 16px;
     position: relative;
     text-transform: uppercase;
     width: 180px;
@@ -248,7 +309,7 @@ a {
       line-height: 18px;
     }
   }
-  &.button-action{
+  &.button-action {
     background-color: $pinkdark;
     border-radius: 3px;
     color: $white;
@@ -256,7 +317,7 @@ a {
     font-size: 12px;
     line-height: 36px;
     font-weight: bold;
-    padding: 6px 16px;
+    padding: 3px 16px;
     text-transform: uppercase;
     width: auto;
     &:hover{
@@ -269,6 +330,33 @@ a {
       font-size: 18px;
       vertical-align: text-bottom;
       padding-right: 5px;
+    }
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 18px;
+    }
+    @include breakpoint($mobile) {
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
+  &.button-clean {
+    background-color: transparent;
+    border-radius: 0;
+    color: $pink;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 3px 11px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 22px;
+    }
+    @include breakpoint($mobile) {
+      margin: 10px 0;
+      width: 100%;
     }
   }
 }
@@ -299,6 +387,9 @@ p{
     overflow: hidden;
     padding: 0 10px;
     position: relative;
+    @include breakpoint ($mobile) {
+      padding: 0 18px;
+    }
     &.content-big{
       max-width: 1280px;
       padding: 0;
@@ -410,6 +501,26 @@ p{
   width: 70%;
   @include breakpoint($mobile) {
     width: 100%;
+  }
+}
+.readmore {
+  text-decoration: none;
+  &:after {
+    content: '\e919';
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'atelecom-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    top: 2px;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 .hard {

@@ -95,9 +95,12 @@
                                         </div>
                                     </div>
                                     <div class="services-container">
-                                        <div class="services-big"><span class="pin-element">Codi PUK</span>
+                                        <div class="services-big"><span
+                                                    class="pin-element">Codi PUK</span>
                                         </div>
-                                        <div class="services-small"><span class="right pink">42882022</span></div>
+                                        <div class="services-small"><span
+                                                    class="right pink">42882022</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="content-ws">
@@ -107,7 +110,7 @@
                                         <ul class="switch-checks-list">
                                             <li>
                                                 <div class="info-check">
-                                                    <span>Activar/Desactivar targeta SIM </span>
+                                                    <span>Activar targeta SIM </span>
                                                     <span class="little-info-check">En cas de pèrdua de la targeta SIM, desactiva aquesta opció</span>
                                                 </div>
                                                 <label class="checkbox-custom-switch">
@@ -117,16 +120,17 @@
                                             </li>
                                             <li>
                                                 <div class="info-check">
-                                                    <span>Activar/Desactivar bústia de veu</span>
+                                                    <span>Desactivar bústia de veu</span>
                                                 </div>
                                                 <label class="checkbox-custom-switch">
-                                                    <input type="checkbox">
+                                                    <input type="checkbox"
+                                                           checked>
                                                     <div class="switch"></div>
                                                 </label>
                                             </li>
                                             <li>
                                                 <div class="info-check">
-                                                    <span>Activar/Desactivar identificació del número</span>
+                                                    <span>Activar identificació del número</span>
                                                     <span class="little-info-check">Permet la visualització del teu número quan facis trucades</span>
                                                 </div>
                                                 <label class="checkbox-custom-switch">
@@ -136,17 +140,18 @@
                                             </li>
                                             <li>
                                                 <div class="info-check">
-                                                    <span>Activar/Desactivar itinerància</span>
+                                                    <span>Desactivar itinerància</span>
                                                     <span class="little-info-check">Si desactives aquesta opció, el mòbil no agafarà cobertura en itinerància, no podràs fer ni rebre trucades, ni SMS, ni dades.</span>
                                                 </div>
                                                 <label class="checkbox-custom-switch">
-                                                    <input type="checkbox">
+                                                    <input type="checkbox"
+                                                           checked>
                                                     <div class="switch"></div>
                                                 </label>
                                             </li>
                                             <li>
                                                 <div class="info-check">
-                                                    <span>Activar/Desactivar internet nacional</span>
+                                                    <span>Activar internet nacional</span>
                                                     <span class="little-info-check">Permet connectar-te a internet des del mòbil només sota cobertura nacional</span>
                                                 </div>
                                                 <label class="checkbox-custom-switch">
@@ -156,11 +161,12 @@
                                             </li>
                                             <li>
                                                 <div class="info-check">
-                                                    <span>Activar/Desactivar internet nacional i en itinerància</span>
+                                                    <span>Desactivar internet nacional i en itinerància</span>
                                                     <span class="little-info-check">Permet connectar-te a internet des del mòbil només sota cobertura nacional i en itinerància</span>
                                                 </div>
                                                 <label class="checkbox-custom-switch">
-                                                    <input type="checkbox">
+                                                    <input type="checkbox"
+                                                           checked>
                                                     <div class="switch"></div>
                                                 </label>
                                             </li>
@@ -168,18 +174,98 @@
                                     </div>
 
                                     <div class="config-box">
-                                        <h4 class="title-config-box">Necessites un forfet superior?</h4>
+                                        <h4 class="title-config-box">Necessites
+                                            un forfet superior?</h4>
                                         <div class="inner-box">
-                                          balblabla
+                                            <div class="custom-item one">
+                                                <div class="message">
+                                                    Amplia a
+                                                </div>
+                                                <div class="big-pink bold">
+                                                    1 GB / Tarifa plana
+                                                </div>
+                                            </div>
+                                            <div class="custom-item two">
+                                                <div class="full-centered">
+                                                    <br><br>
+                                                    <span class="treinta grey-medium bold">29€</span>
+                                                    <span class="grey-medium bold">/mes</span>
+                                                </div>
+                                            </div>
+                                            <div class="custom-item three">
+                                                <div class="actions-container">
+                                                    <a href="#"
+                                                       class="button-pink action-sign-in">Contratar</a>
+                                                    <a href="#"
+                                                       class="button-active">+
+                                                        Info</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="config-box">
-                                        <h4 class="title-config-box">Contracta més GB</h4>
-                                        <div class="inner-box">
-                                            balblabla
+                                        <h4 class="title-config-box">Contracta
+                                            més GB</h4>
+                                        <div class="inner-box trans">
+                                            <div class="gallery-item">
+                                                <div class="product-promo">
+                                                    <div class="big-pink bold">
+                                                        500 MB
+                                                    </div>
+                                                    <div class="entry-price">
+                                                        <span class="twenty grey-medium bold">4€</span>
+                                                        /mes
+                                                    </div>
+                                                </div>
+                                                <div class="custom-links">
+                                                    <a href="#"
+                                                       class="button-pink">Contractar</a>
+                                                    <a href="#"
+                                                       class="button-active">+
+                                                        Info</a>
+                                                </div>
+                                            </div>
+                                            <div class="gallery-item">
+                                                <div class="product-promo">
+                                                    <div class="big-pink bold">
+                                                        1 GB
+                                                    </div>
+                                                    <div class="entry-price">
+                                                        <span class="twenty grey-medium bold">6€</span>
+                                                        /mes
+                                                    </div>
+                                                </div>
+                                                <div class="custom-links">
+                                                    <a href="#"
+                                                       class="button-pink">Contractar</a>
+                                                    <a href="#"
+                                                       class="button-active">+
+                                                        Info</a>
+                                                </div>
+                                            </div>
+                                            <div class="gallery-item">
+                                                <div class="product-promo">
+                                                    <div class="big-pink grey-medium bold">
+                                                        2 GB
+                                                    </div>
+                                                    <div class="entry-price">
+                                                        <span class="twenty grey-medium bold">8€</span>
+                                                        /mes
+                                                    </div>
+                                                </div>
+                                                <div class="custom-links">
+                                                    <a href="#"
+                                                       class="button-pink">Contractar</a>
+                                                    <a href="#"
+                                                       class="button-active">+
+                                                        Info</a>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -187,7 +273,7 @@
                 </div>
 
                 <div class="services-selector">
-                <div class="services-element">
+                    <div class="services-element">
                         <div class="services-title">
                             <span class="icons icon-phone"></span>
                             <p>Internet i fixe</p>
@@ -205,7 +291,7 @@
                 </div>
 
                 <div class="services-selector opened">
-                <div class="services-element">
+                    <div class="services-element">
                         <div class="services-title">
                             <span class="icons icon-tv"></span>
                             <p>Televisió</p>
@@ -237,10 +323,12 @@
                                     </div>
 
                                     <div class="services-container">
-                                        <div class="services-big"><span class="pin-element">TV pin</span>
+                                        <div class="services-big"><span
+                                                    class="pin-element">TV pin</span>
                                         </div>
                                         <div class="services-small"><span
-                                                    class="pink">4288</span></div>
+                                                    class="pink">4288</span>
+                                        </div>
                                     </div>
 
                                     <div class="services-container">
@@ -250,25 +338,39 @@
                                         </div>
                                         <ul class="service-items">
                                             <li><a href="#">
-                                                    <div class="service-item">Cine</div>
+                                                    <div class="service-item">
+                                                        Cine
+                                                    </div>
                                                 </a></li>
                                             <li><a href="#">
-                                                    <div class="service-item">Esport</div>
+                                                    <div class="service-item">
+                                                        Esport
+                                                    </div>
                                                 </a></li>
                                             <li><a href="#">
-                                                    <div class="service-item">Natura</div>
+                                                    <div class="service-item">
+                                                        Natura
+                                                    </div>
                                                 </a></li>
                                             <li><a href="#">
-                                                    <div class="service-item">Liga+</div>
+                                                    <div class="service-item">
+                                                        Liga+
+                                                    </div>
                                                 </a></li>
                                             <li><a href="#">
-                                                    <div class="service-item">Cuina</div>
+                                                    <div class="service-item">
+                                                        Cuina
+                                                    </div>
                                                 </a></li>
                                             <li><a href="#">
-                                                    <div class="service-item">Series</div>
+                                                    <div class="service-item">
+                                                        Series
+                                                    </div>
                                                 </a></li>
                                             <li><a href="#">
-                                                    <div class="service-item">CNN+</div>
+                                                    <div class="service-item">
+                                                        CNN+
+                                                    </div>
                                                 </a></li>
                                         </ul>
                                     </div>
@@ -282,8 +384,7 @@
                                                     src="./images/products/movistar-plus.png">
                                         </div>
                                         <div class="services-small tx-right">
-                            <span class="service-status inactive"><a href="#"
-                                                                     class="operation">Activa'l ARA...</a></span>
+                                            <span class="service-status active">Activat</span>
                                         </div>
                                     </div>
 
@@ -291,28 +392,92 @@
                                     <div class="services-container">
                                         <ul class="service-items">
                                             <li><a href="#" class="change-pass">
-                                                    <div class="service-item">Canviar la
+                                                    <div class="service-item">
+                                                        Canviar la
                                                         contrasenya
                                                     </div>
                                                 </a></li>
-                                            <li><a href="#" class="view-channels">
-                                                    <div class="service-item">Veure canals</div>
+                                            <li><a href="#"
+                                                   class="view-channels">
+                                                    <div class="service-item">
+                                                        Veure canals
+                                                    </div>
                                                 </a></li>
                                         </ul>
                                     </div>
 
                                     <div class="config-box">
-                                        <h4 class="title-config-box">Afegeix canals a la teva
-                                            tarifa</h4>
+                                        <h4 class="title-config-box">Afegeix
+                                            canals a la teva tarifa (v1)</h4>
                                         <div class="inner-box">
-                                            <div class="one">
-                                                <a href="#"><img src="./images/products/cine-plus.png"></a>
+                                            <div class="gallery-item">
+
+                                                    <a href="#"><img
+                                                                src="./images/products/cine-plus.png"></a>
                                             </div>
-                                            <div class="two">
-                                                <a href="#"><img src="./images/products/c-plus-liga.png"></a>
+                                            <div class="gallery-item">
+                                                <a href="#"><img
+                                                            src="./images/products/c-plus-liga.png"></a>
                                             </div>
-                                            <div class="three">
-                                                <a href="#"><img src="./images/products/c-plus-golf.png"></a>
+                                            <div class="gallery-item">
+                                                <a href="#"><img
+                                                            src="./images/products/c-plus-golf.png"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="config-box">
+                                        <h4 class="title-config-box">Afegeix
+                                            canals a la teva tarifa (v2)</h4>
+                                        <div class="inner-box trans">
+                                            <div class="product-list-blocks">
+                                                <div class="img-container">
+                                                    <a href="#"><img
+                                                                src="./images/products/cine-plus.png"></a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <span class="big">25€</span>/mes
+                                                    </div>
+                                                    <a href="#"
+                                                       class="button-pink">Contractar</a>
+                                                    <a href="#"
+                                                       class="button-active">+
+                                                        Info</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-list-blocks">
+                                                <div class="img-container">
+                                                    <a href="#"><img
+                                                                src="./images/products/c-plus-liga.png"></a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <span class="big">32€</span>/mes
+                                                    </div>
+                                                    <a href="#"
+                                                       class="button-pink">Contractar</a>
+                                                    <a href="#"
+                                                       class="button-active">+
+                                                        Info</a>
+                                                </div>
+                                            </div>
+                                            <div class="product-list-blocks">
+                                                <div class="img-container">
+                                                    <a href="#"><img
+                                                                src="./images/products/c-plus-golf.png"></a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <span class="big">32€</span>/mes
+                                                    </div>
+                                                    <a href="#"
+                                                       class="button-pink">Contractar</a>
+                                                    <a href="#"
+                                                       class="button-active">+
+                                                        Info</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -334,31 +499,15 @@
             <div class="alert-general-close">
                 <span class="icons icon-close"></span>
             </div>
-            <div class="alert-general-title">
-                <h2>Canals contractats per 123123</h2><img src="/images/products/movistar-plus.png" />
-            </div>
-
+            <div class="alert-general-title"></div>
             <div class="alert-general-body">
-                <div class="inner-box">
-                    <div><a href="#"><img src="./images/products/seleccion-plus.png"></a></div>
-                    <div><a href="#"><img src="./images/products/cine-plus.png"></a></div>
-                    <div><a href="#"><img src="./images/products/deporte-plus.png"></a></div>
-                    <div><a href="#"><img src="./images/products/premium-plus.png"></a></div>
 
-                    <div><a href="#"><img src="./images/products/caza-pesca.png"></a></div>
-                    <div><a href="#"><img src="./images/products/c-plus-liga.png"></a></div>
-                    <div><a href="#"><img src="./images/products/c-plus-golf.png"></a></div>
-                    <div><a href="#"><img src="./images/products/c-plus-liga.png"></a></div>
-                </div>
             </div>
         </div>
 
     </div>
     <!--IMPORTANT:: REQUIRES LOAD src="/js/dinamicglobalalert.js" SCRIPT IN HEAD-->
     <!--END POP-UP GLOBAL ALERT CONTENT-->
-
-
-
 
 
     <script language="JavaScript">
@@ -376,57 +525,11 @@
             });
 
             // ALERTS-ColorBoxes
-            var alertTitle = $('.alert-general-title');
-            var alertBody = $('.alert-general-body');
-
-            // Open ALERT without CONTENT, fill with AJAX callback
-            $('.operation').click(function (e) {
-                e.preventDefault();
-
-                // Call FORM Alta MOVISTAR
-                $.post("includes/fake_api.php", {operation: 'altamovistar'})
-                    .done(function (data) {
-                        alertTitle.html(data.title);
-                        alertBody.html(data.body);
-                    })
-                    .fail(function (data) {
-                        alertTitle.html(data);
-                        alertBody.html(data);
-                    });
-                revealalert();
-
-
-                // AJAX triggers for ALTA
-                $('.clientproducts').on('click', '.activate-mplus', function (){
-                    // altamovistar_validation
-                    $.post("includes/fake_api.php", {operation: 'altamovistar_validation'})
-                        .done(function (data) {
-                            alertTitle.html(data.title);
-                            alertBody.html(data.body);
-                        })
-                        .fail(function (data) {
-                            alertTitle.html('Error...');
-                            alertBody.html('We can\'t process your request now...');
-                        });
-                });
-                $('.clientproducts').on('click', '.mplus-activated', function (){
-                    // altamovistar_validation
-                    $.post("includes/fake_api.php", {operation: 'altamovistar_finished'})
-                        .done(function (data) {
-                            alertTitle.html(data.title);
-                            alertBody.html(data.body);
-                        })
-                        .fail(function (data) {
-                            alertTitle.html('Error...');
-                            alertBody.html('We can\'t process your request now...');
-                        });
-                    $('.service-status').removeClass('inactive').addClass('active');
-                    $('.service-status a').html('Activa');
-                    setTimeout(function () {
-                        closeAlert();
-                    }, 2000);
-                });
-            });
+            var floatingWrapper = $('.general-alert-wrapper'),
+                floatingAlert = $('.content-general-wrapper.clientproducts'),
+                alertTitle = $('.alert-general-title'),
+                alertBody = $('.alert-general-body'),
+                scrollTop = $(window).scrollTop();
 
             // Change PASS
             $('a.change-pass').click(function (cp) {
@@ -442,10 +545,14 @@
                         alertTitle.html(data);
                         alertBody.html(data);
                     });
+                if ($(window).width() < 480) {
+                    floatingWrapper.removeClass('fixedone');
+                    floatingAlert.css({top: scrollTop});
+                }
                 revealalert();
 
                 // Inner navigation
-                $('.clientproducts').on('click', '.cp-trigger', function (){
+                $('.clientproducts').on('click', '.cp-trigger', function () {
                     // change PASS confirmation
                     $.post("includes/fake_api.php", {operation: 'confirm_cp'})
                         .done(function (data) {
@@ -467,6 +574,7 @@
             $('a.view-channels').click(function (vc) {
                 vc.preventDefault();
 
+
                 // Call FORM change PASSWORD
                 $.post("includes/fake_api.php", {operation: 'viewchannels'})
                     .done(function (data) {
@@ -477,11 +585,15 @@
                         alertTitle.html(data);
                         alertBody.html(data);
                     });
+                if ($(window).width() < 480) {
+                    floatingWrapper.removeClass('fixedone');
+                    floatingAlert.css({top: scrollTop});
+                }
                 revealalert();
             });
 
             // Close Alert
-            $('.clientproducts').on('click', '.close-button', function (){
+            $('.clientproducts').on('click', '.close-button', function () {
                 closeAlert();
             });
 

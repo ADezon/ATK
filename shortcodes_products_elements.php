@@ -609,7 +609,7 @@
                 <a href="#" class="button-shortcode button-pink">Botó actiu 1</a>
                 <a href="#" class="button-shortcode button-active">Botó actiu 2</a>
                 <a nohref class="button-shortcode button-disabled">Botó inactiu</a>
-                <a href="#" class="button-shortcode">Link</a>
+                <a href="#" class="button-shortcode button-clean">Link</a>
             </div>
             <!--  END LINKS-LIST SOLO PARA MOSTRARLOS CENTRADOS COMO EN EL DISEÑO... NO SE UTILIZA ESTE CONTENEDOR CUANDO LO USEN SUELTOS -->
             <div class="banner-ads">

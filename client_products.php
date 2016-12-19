@@ -26,7 +26,7 @@
         </div>
         <div class="result-client-products cont-wrapper">
             <div class="content">
-                <div class="services-selector">
+                <div class="services-selector opened">
                     <div class="services-element">
                         <div class="services-title">
                             <span class="icons icon-mobile"></span>
@@ -177,17 +177,80 @@
                                         <h4 class="title-config-box">Necessites
                                             un forfet superior?</h4>
                                         <div class="inner-box">
-                                            balblabla
+                                            <div class="custom-item one">
+                                                <div class="message">
+                                                    Amplia a
+                                                </div>
+                                                <div class="big-pink bold">
+                                                    1 GB / Tarifa plana
+                                                </div>
+                                            </div>
+                                            <div class="custom-item two">
+                                                <div class="full-centered">
+                                                    <br><br>
+                                                    <span class="treinta grey-medium bold">29€</span> <span class="grey-medium bold">/mes</span>
+                                                </div>
+                                            </div>
+                                            <div class="custom-item three">
+                                                <div class="actions-container">
+                                                    <a href="#"
+                                                       class="button-pink action-sign-in">Contratar</a>
+                                                    <a href="#" class="button-active">+ Info</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="config-box">
                                         <h4 class="title-config-box">Contracta
                                             més GB</h4>
-                                        <div class="inner-box">
-                                            balblabla
+                                        <div class="inner-box trans">
+                                            <div class="gallery-item">
+                                                <div class="product-promo">
+                                                    <div class="big-pink bold">
+                                                        500 MB
+                                                    </div>
+                                                    <div class="entry-price">
+                                                        <span class="twenty grey-medium bold">4€</span> /mes
+                                                    </div>
+                                                </div>
+                                                <div class="custom-links">
+                                                <a href="#" class="button-pink">Contractar</a>
+                                                <a href="#" class="button-active">+ Info</a>
+                                                </div>
+                                            </div>
+                                            <div class="gallery-item">
+                                                <div class="product-promo">
+                                                    <div class="big-pink bold">
+                                                        1 GB
+                                                    </div>
+                                                    <div class="entry-price">
+                                                        <span class="twenty grey-medium bold">6€</span> /mes
+                                                    </div>
+                                                </div>
+                                                <div class="custom-links">
+                                                    <a href="#" class="button-pink">Contractar</a>
+                                                    <a href="#" class="button-active">+ Info</a>
+                                                </div>
+                                            </div>
+                                            <div class="gallery-item">
+                                                <div class="product-promo">
+                                                    <div class="big-pink grey-medium bold">
+                                                        2 GB
+                                                    </div>
+                                                    <div class="entry-price">
+                                                        <span class="twenty grey-medium bold">8€</span> /mes
+                                                    </div>
+                                                </div>
+                                                <div class="custom-links">
+                                                    <a href="#" class="button-pink">Contractar</a>
+                                                    <a href="#" class="button-active">+ Info</a>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -253,13 +316,13 @@
                                             <h5>Mira la TV on vulguis i quan
                                                 vulguis</h5>
 
-                                            <div class="cuarenta"><img
+                                            <div class="custom-item one"><img
                                                         src="./images/products/movistar-plus.png">
                                             </div>
-                                            <div class="treinta"><img
+                                            <div class="custom-item two"><img
                                                         src="./images/3-devices.png">
                                             </div>
-                                            <div class="treinta">
+                                            <div class="custom-item three">
                                                 <div class="actions-container">
                                                     <a href="#"
                                                        class="button-pink action-activate">Activar</a>
@@ -268,22 +331,34 @@
                                                         Info</a>
                                                 </div>
                                             </div>
-
-
                                         </div>
                                     </div>
+
                                     <div class="config-box">
                                         <h4 class="title-config-box">Amplia la
                                             teva tarifa</h4>
                                         <div class="inner-box">
-                                            <h5>Mira la TV on vulguis i quan
-                                                vulguis</h5>
+                                            <div class="custom-item one">
+                                                <img src="./images/products/movistar-plus.png">
+                                                <div class="big-pink bold">
+                                                    Movistar+ Familiar y cine
+                                                </div>
 
-                                            <img src="./images/products/movistar-plus.png">
-                                            <div class="actions-container">
+                                            </div>
+                                            <div class="custom-item two">
+                                                <div class="full-centered">
+                                                    <br><br>
+                                                    <span class="treinta grey-medium bold">29€</span> <span class="grey-medium bold">/mes</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="custom-item three">
+                                                <div class="actions-container">
+
                                                 <a href="#"
-                                                   class="button-pink action-sing-in">Contratar</a>
-                                                <a href="#">+ Info</a>
+                                                   class="button-pink action-sign-in">Contratar</a>
+                                                <a href="#" class="button-active">+ Info</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -330,13 +405,15 @@
             });
 
             // ALERTS-ColorBoxes
-            var alertTitle = $('.alert-general-title');
-            var alertBody = $('.alert-general-body');
+            var floatingWrapper = $('.general-alert-wrapper'),
+                floatingAlert = $('.content-general-wrapper.clientproducts'),
+                alertTitle = $('.alert-general-title'),
+                alertBody = $('.alert-general-body'),
+                scrollTop = $(window).scrollTop();
 
             // Open ALERT without CONTENT, fill with AJAX callback
-            $('.operation').click(function (e) {
+            $('.action-activate').click(function (e) {
                 e.preventDefault();
-
                 // Call FORM Alta MOVISTAR
                 $.post("includes/fake_api.php", {operation: 'altamovistar'})
                     .done(function (data) {
@@ -347,8 +424,64 @@
                         alertTitle.html(data);
                         alertBody.html(data);
                     });
+                if($(window).width() < 480) {
+                    floatingWrapper.removeClass('fixedone');
+                    floatingAlert.css({ top: scrollTop });
+                }
                 revealalert();
 
+                // AJAX triggers for ALTA
+                $('.clientproducts').on('click', '.activate-mplus', function () {
+                    // altamovistar_validation
+                    $.post("includes/fake_api.php", {operation: 'altamovistar_validation'})
+                        .done(function (data) {
+                            alertTitle.html(data.title);
+                            alertBody.html(data.body);
+                        })
+                        .fail(function (data) {
+                            alertTitle.html('Error...');
+                            alertBody.html('We can\'t process your request now...');
+                        });
+                });
+                $('.clientproducts').on('click', '.mplus-activated', function () {
+                    // altamovistar_validation
+                    $.post("includes/fake_api.php", {operation: 'altamovistar_finished'})
+                        .done(function (data) {
+                            alertTitle.html(data.title);
+                            alertBody.html(data.body);
+                        })
+                        .fail(function (data) {
+                            alertTitle.html('Error...');
+                            alertBody.html('We can\'t process your request now...');
+                        });
+
+                    setTimeout(function () {
+                        closeAlert();
+                    }, 2000);
+                    window.location.replace("http://www.at.dev/client_products_tvactiva.php");
+
+                });
+            });
+
+
+            // NOTE: THIS IS THE SAME/Identical as before, but for "CONTRATAR"
+            $('.action-sign-in').click(function (e) {
+                e.preventDefault();
+                // Call FORM Alta MOVISTAR
+                $.post("includes/fake_api.php", {operation: 'altamovistar'})
+                    .done(function (data) {
+                        alertTitle.html(data.title);
+                        alertBody.html(data.body);
+                    })
+                    .fail(function (data) {
+                        alertTitle.html(data);
+                        alertBody.html(data);
+                    });
+                if($(window).width() < 480) {
+                    floatingWrapper.removeClass('fixedone');
+                    floatingAlert.css({ top: scrollTop });
+                }
+                revealalert();
 
                 // AJAX triggers for ALTA
                 $('.clientproducts').on('click', '.activate-mplus', function () {
@@ -379,59 +512,9 @@
                     setTimeout(function () {
                         closeAlert();
                     }, 2000);
+                    window.location.replace("http://www.at.dev/client_products_tvactiva.php");
+
                 });
-            });
-
-            // Change PASS
-            $('a.change-pass').click(function (cp) {
-                cp.preventDefault();
-
-                // Call FORM change PASSWORD
-                $.post("includes/fake_api.php", {operation: 'changepass'})
-                    .done(function (data) {
-                        alertTitle.html(data.title);
-                        alertBody.html(data.body);
-                    })
-                    .fail(function (data) {
-                        alertTitle.html(data);
-                        alertBody.html(data);
-                    });
-                revealalert();
-
-                // Inner navigation
-                $('.clientproducts').on('click', '.cp-trigger', function () {
-                    // change PASS confirmation
-                    $.post("includes/fake_api.php", {operation: 'confirm_cp'})
-                        .done(function (data) {
-                            alertTitle.html(data.title);
-                            alertBody.html(data.body);
-                        })
-                        .fail(function (data) {
-                            alertTitle.html('Error...');
-                            alertBody.html('We can\'t process your request now...');
-                        });
-                    setTimeout(function () {
-                        closeAlert();
-                    }, 5000);
-                });
-            });
-
-
-            // View Channels
-            $('a.view-channels').click(function (vc) {
-                vc.preventDefault();
-
-                // Call FORM change PASSWORD
-                $.post("includes/fake_api.php", {operation: 'viewchannels'})
-                    .done(function (data) {
-                        alertTitle.html(data.title);
-                        alertBody.html(data.body);
-                    })
-                    .fail(function (data) {
-                        alertTitle.html(data);
-                        alertBody.html(data);
-                    });
-                revealalert();
             });
 
             // Close Alert
