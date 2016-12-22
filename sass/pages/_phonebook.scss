@@ -9,7 +9,7 @@
     overflow: hidden;
     padding: 20px 0;
     position: relative;
-    a{
+    a {
       color: $greydark;
       display: block;
       float: left;
@@ -22,19 +22,27 @@
       position: relative;
       text-decoration: none;
       width: 100%;
-      &:before{
-        background: transparent url("../images/i-dropdown-close.png") no-repeat scroll center center;
-        content: "";
-        display: block;
-        float: left;
-        height: 15px;
-        padding-right: 40px;
-        position: relative;
-        width: 15px;
+      &:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        content: "\e92f";
+        font-family: 'atelecom-icons' !important;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        line-height: 1;
+        text-transform: none;
+        color: $pink;
+        font-size: 16px;
+        margin-right: 6px;
+        font-weight: normal;
+        /* Better Font Rendering =========== */
+        speak: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
       &:after{
         /* use !important to prevent issues with browser extensions that change fonts */
-        content: "\e916";
+        content: "\e915";
         font-family: 'atelecom-icons' !important;
         font-style: normal;
         font-variant: normal;
@@ -46,6 +54,14 @@
         speak: none;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+      }
+    }
+    &.closed {
+      a:before {
+        content: '\e931';
+      }
+      a:after  {
+        content: "\e916";
       }
     }
   }

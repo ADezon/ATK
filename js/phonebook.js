@@ -7,8 +7,10 @@ $(document).ready(function () {
     $('.capsa_cerca a').click(function (e) {
         e.preventDefault();
         $('.cerca_avancada_section').slideToggle();
-        $('.aui-field-select ul').hide();
+        $('.capsa_cerca').toggleClass('closed');
     });
+
+
 
     // Open/Close items
     $('a.jqTransformSelectOpen').click(function (e) {

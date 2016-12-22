@@ -1,4 +1,27 @@
-/*global $ */
+// Auxiliary functions
+function SetCookie(cookieName,cookieValue,nHours) {
+    var today = new Date();
+    var expire = new Date();
+    if (nHours==null || nHours==0) nHours=1;
+    expire.setTime(today.getTime() + 3600000*nHours);
+    document.cookie = cookieName+"="+ cookieValue + ";expires="+expire.toUTCString();
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+
 $(document).ready(function() {
 
 "use strict";

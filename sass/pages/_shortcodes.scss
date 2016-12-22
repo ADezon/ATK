@@ -28,6 +28,16 @@
 */
 .shortcode-container {
   margin-bottom: 40px;
+  &.main-menu-shortcode {
+    margin-top: 50px;
+  }
+  &.w-menu .content {
+    padding: 0 10px 0 260px;
+    @include breakpoint($mobile) {
+      padding: 0 10px;
+    }
+
+  }
 }
 
 .w-bottomline {
@@ -249,7 +259,7 @@
       position: relative;
       width: 85%;
       @include breakpoint($mobile) {
-        width: 75%;
+        width: 100%;
       }
       .two-columns-title {
         clear: both;
@@ -313,7 +323,7 @@
     font-size: 22px;
     position: absolute;
     right: 10px;
-    top: 38%;
+    top: 26%;
     transition: all 1s ease-in;
     @include breakpoint($tablet) {
       top: 22%;
@@ -633,6 +643,22 @@ ul.menu-list {
     margin-bottom: 15px;
     overflow: hidden;
     position: relative;
+    &:after {
+      float: right;
+      /* use !important to prevent issues with browser extensions that change fonts */
+      content: "\e919";
+      font-family: 'atelecom-icons' !important;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      line-height: 1;
+      text-transform: none;
+      /* Better Font Rendering =========== */
+      speak: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
     &:hover, &.active {
       span, a {
         color: $pink;
@@ -656,10 +682,26 @@ ul.menu-list {
         line-height: 22px;
         text-align: right;
       }
+      &.nav-active {
+        color: $pink;
+        font-weight: bold;
+      }
     }
   }
 }
 
+// Sticky MENU
+ul.stick {
+  width: 160px;
+  position: fixed;
+  top: 20px;
+  z-index: 50;
+}
+ul.floating-menu {
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
 /*
 * 9. SHORTCODE PRODUCTS
 */
@@ -775,6 +817,8 @@ ul.menu-list {
   display: block;
   overflow: hidden;
   position: relative;
+  margin-top: 15px;
+
   .product-features-element {
     display: block;
     margin-bottom: 20px;
@@ -908,7 +952,21 @@ ul.menu-list {
     }
   }
 }
+.cont-wrapper.w-menu {
+  .content.sliders .slider-multiple-desktop {
+    padding-left: 4px;
 
+    .slider-deskt .six-items {
+      margin: 0 20px 20px 0;
+    }
+    .flex-direction-nav .flex-prev {
+      left: 210px;
+    }
+    .flex-direction-nav .flex-next {
+      right: -28px;
+    }
+  }
+}
 /*
 * 11. SHORTCODE LIST HELP
 */
@@ -983,6 +1041,13 @@ ul.menu-list {
 .shortcode-container {
   /* BUTTONS/LINKS */
   /* BEGIN SOLO PARA MOSTRARLOS CENTRADOS COMO EN EL DISEÑO... NO SE UTILIZA ESTE CONTENEDOR CUANDO LO USEN SUELTOS */
+  &.last {
+    margin-bottom: 140px;
+    @include breakpoint ($mobile) {
+      margin-bottom: inherit;
+    }
+  }
+
   .links-list {
     display: block;
     margin: 0 auto;

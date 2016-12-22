@@ -27,22 +27,21 @@
   <!--************************************-->
   <!--BEGIN GLOBAL-->
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
   <script src="./js/enquire.min.js"></script>
-  <script src="./js/tooltipster/js/jquery.tooltipster.min.js"></script>
   <script src="./js/main.js"></script>
-  
-  <script>
-    var timering = 7000;
-  </script>
+
   <!--END GLOBAL-->
 
   <!--BEGIN INYECTED AS REQUIRED-->
   <script src="./js/flexslider/jquery.flexslider-min.js"></script>
   <script src="./js/slick-1.6.0/slick/slick.min.js"></script>
+
+  <!-- // Next three ONLY if sticky MENU is enabled -->
+  <script src="./js/scrollto/jquery.scrollto.js"></script>
+
   <!--END INYECTED AS REQUIRED-->
 
   <!--END SCRIPTS -->
@@ -51,7 +50,7 @@
 </head>
 <body>
 <!--[if lt IE 8]><p class="browser-upgrade">Estas usando un navegador <strong>desactualizado</strong>. Por favor, <a
-  href="http://browsehappy.com/">actualiza tu navegador</a> para mejorar tu experiencia.</p><![endif]-->
+    href="http://browsehappy.com/">actualiza tu navegador</a> para mejorar tu experiencia.</p><![endif]-->
 <!-- BEGIN HEADER-->
 <div id="header">
   <!-- BEGIN REGION TOPBAR -->
@@ -87,8 +86,9 @@
         <div class="languages">
           <ul>
             <li>
-              <div class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language"
-                   id="p_p_id_82_">
+              <div
+                  class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language"
+                  id="p_p_id_82_">
                 <span id="p_82"></span>
                 <div class="portlet-borderless-container" style="">
                   <div class="portlet-body">
@@ -135,7 +135,8 @@
           <span class="icons icon-alerts"></span>
           <span class="counter-alerts">99</span>
         </a>
-        <div class="button-login-client" href="#" title=""><span class="icons icon-client"></span><span>ACCÉS CLIENT</span></div>
+        <div class="button-login-client" href="#" title=""><span
+              class="icons icon-client"></span><span>ACCÉS CLIENT</span></div>
       </div>
     </div>
   </div>
@@ -149,7 +150,7 @@
         </div>
         <fieldset class="box-name-client">
           <span class="title-field">Nom d'usuari</span>
-          <input name="name-client" type="text" />
+          <input name="name-client" type="text"/>
           <a href="#" class="message-remember">Has oblidat el nom d’usuari?</a>
         </fieldset>
         <fieldset class="box-pass-client">
@@ -157,7 +158,7 @@
           <input name="pass-client" type="password"/>
           <a href="#" class="message-remember">Has oblidat la contrasenya?</a>
         </fieldset>
-        <input value="Entrar" class="login-send button-pink" type="submit" />
+        <input value="Entrar" class="login-send button-pink" type="submit"/>
       </form>
       <div class="goto-register">
         <span>No ets client d’Andorra Telecom?</span>

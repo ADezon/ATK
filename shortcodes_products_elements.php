@@ -307,25 +307,12 @@
         <div class="content">
             <h2 class="global-subtitle">Títol secció</h2>
             <ul class="menu-list">
-                <li class="active">
-                    <a href="#">Preu</a>
-                    <span class="icons icon-right"></span>
-                </li>
-                <li>
-                    <a href="#">Característiques</a>
-                    <span class="icons icon-right"></span></li>
-                <li>
-                    <a href="#">Avantatges</a>
-                    <span class="icons icon-right"></span></li>
-                <li>
-                    <a href="#">Canals</a>
-                    <span class="icons icon-right"></span></li>
-                <li>
-                    <a href="#">Requeriments</a>
-                    <span class="icons icon-right"></span></li>
-                <li>
-                    <a href="#">T’ajudem</a>
-                    <span class="icons icon-right"></span></li>
+                <li class="active"><a href="#">Preu</a></li>
+                <li><a href="#">Característiques</a></li>
+                <li><a href="#">Avantatges</a></li>
+                <li><a href="#">Canals</a></li>
+                <li><a href="#">Requeriments</a></li>
+                <li><a href="#">T’ajudem</a></li>
             </ul>
         </div>
     </div>
