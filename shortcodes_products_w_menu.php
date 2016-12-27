@@ -31,7 +31,7 @@
       <div class="sidebar">
         <!-- BEGIN SECTION LIST -->
         <div id="nav-anchor"></div>
-        <ul class="menu-list floating-menu">
+        <ul class="menu-list floating-menu stick">
           <li><a class="nav-active" href="#preu">Preu</a></li>
           <li><a href="#caracteristics">Característiques</a></li>
           <li><a href="#advantatges">Avantatges</a></li>
@@ -167,7 +167,7 @@
             <span class="three-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
           </div>
           <div class="three-columns-element last">
-            <span class="three-columns-icon"><span class="icons icon-offer"></span></span>
+<span class="three-columns-icon"><span class="icons icon-offer"></span></span>
             <span class="three-columns-title">Lorem Ipsum</span>
             <span class="three-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
           </div>
@@ -455,20 +455,9 @@
       $(window).load(function () { // BEGIN OnLoad
 
           // Altura de nuestro FOOTER.
-          var footerHeight = $('#footer').height();
-          var floatingMenuHeight = $('.menu-list.floating-menu').height() +18; // We ADD the TOP pixels
-
-          var heightFooterIsShown = window.innerHeight - footerHeight,
-              heightMenuTouchFooter = window.innerHeight - floatingMenuHeight,
-              whereToStop = window.innerHeight - floatingMenuHeight - footerHeight;
-
-          console.log('NO Scroll - window.innerHeight: ' + window.innerHeight);
-          console.log('NO Scroll - floatingMenuHeight: ' + floatingMenuHeight);
-          console.log('NO Scroll - heightFooterIsShown: ' + heightFooterIsShown);
-          console.log('NO Scroll - heightMenuTouchFooter: ' + heightMenuTouchFooter);
-          console.log('NO Scroll - where to STOP: ' + whereToStop);
-
-
+          var footerHeight = $('#footer').height() + 140, // Add puixels of margin-bottom from LAST ShortCode to FOOTER.
+              floatingMenu = document.querySelector('.menu-list.floating-menu'), // Menu flotante container
+              bottomSpaceMenu = innerHeight - floatingMenu.offsetTop - floatingMenu.offsetHeight;
           /**
            * This part does the "fixed navigation after scroll" functionality
            * We use the jQuery function scroll() to recalculate our variables as the
@@ -477,22 +466,20 @@
           $(window).scroll(function () {
               var window_top = $(window).scrollTop() + 18; // should equal the margin-top value for nav.stick
               var div_top = $('#nav-anchor').offset().top; // Maintains the value of height for positioning.
+              var distanceUntilBottom = document.body.scrollHeight - window.innerHeight - window.scrollY;
+//              console.log('Distance until (DOCUMENT) reach bottom: ' + distanceUntilBottom);
 
-              // REV => http://jsfiddle.net/VwZKc/
+              // We want avoid the menu touching the FOOTER (for small screens less than 1024px height,
+              // but programmed for ANY screen height.
+              // Whe the distance until BOTTOM is less than FOOTER's height, implies FOOTER ENTERS.
+              if (distanceUntilBottom < footerHeight) {
+                  if ((footerHeight - distanceUntilBottom) > bottomSpaceMenu) {
+                      $('.floating-menu').hide();
+                  } else { $('.floating-menu').show(); }
+              }
 
-              // Need Work
-              var floatingMenu = document.querySelector('.menu-list.floating-menu'),
-                  distanceUntilBottom = document.body.scrollHeight - window.innerHeight - window.scrollY;
-
-              var bottomSpace = innerHeight - floatingMenu.offsetTop + floatingMenu.offsetHeight;
-
-
-              console.log(distanceUntilBottom);
-              console.log(heightMenuTouchFooter - heightFooterIsShown);
-
-
-              // Works OK
-              if ((window_top > div_top) && (distanceUntilBottom > heightMenuTouchFooter)) {
+              // ADD Sticky CLASS (to fix-position the menu)
+              if ((window_top > div_top)) {
                   $('.floating-menu').addClass('stick');
               } else {
                   $('.floating-menu').removeClass('stick');
