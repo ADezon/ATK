@@ -6,7 +6,7 @@ $received = $_POST;
 if (array_key_exists('operation', $received)) {
 
   if($received['operation'] == 'altamovistar') {
-    $title = '<h2>Activa Movistar+</h2><img src="/images/products/movistar-plus.png" />';
+    $title = '<h2>Activa Movistar+</h2><img src="./images/products/movistar-plus.png" />';
     $body = '<form method="post"><label for="select-phone">Selecciona el teu telèfon</label>';
     $body .= '<select id="select-phone" name="select-phone"><option value="zero" selected>123123</option>';
     $body .= '<option value="one">123124</option><option value="two">123125</option></select>';
@@ -52,7 +52,7 @@ if (array_key_exists('operation', $received)) {
   }
 
   elseif ($received['operation'] == 'changepass') {
-  $title = '<h2 class="half">Canvi de contrasenya per 123123</h2><img src="/images/products/movistar-plus.png" />';
+  $title = '<h2 class="half">Canvi de contrasenya per 123123</h2><img src="./images/products/movistar-plus.png" />';
     $body = '<form method="post">';
     $body .= '<label for="user_name">Nom d’usuari Movistar+</label><input type="text" id="user_name">';
     $body .= '<label for="user_pass">Contrasenya Movistar+</label><input type="text" id="user_pass">';
@@ -82,7 +82,7 @@ if (array_key_exists('operation', $received)) {
   }
 
   elseif ($received['operation'] == 'viewchannels') {
-    $title = '<h2 class="half">Canals contractats per 123123</h2><img src="/images/products/movistar-plus.png" />';
+    $title = '<h2 class="half">Canals contractats per 123123</h2><img src="./images/products/movistar-plus.png" />';
     $body = '<div class="inner-box">';
     $body .= '<div><a href="/"><img src="./images/products/seleccion-plus.png"></a></div>';
     $body .= '<div><a href="/"><img src="./images/products/cine-plus.png"></a></div>';

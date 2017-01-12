@@ -14,7 +14,7 @@
           <ul class="breadcrumb breadcrumb-horizontal">
 
             <!-- BEGIN Este lo he añadido para que cuadre con diseño que tiene "inicio".-->
-            <li class="not-link"><a href="http://dliwebbe02.inf.sta:8082/web/comercial">Inicio</a></li>
+            <li><a href="http://dliwebbe02.inf.sta:8082/web/comercial">Inicio</a></li>
               <!--END Este lo he añadido para que cuadre con diseño que tiene "inicio".-->
 
             <li><a href="http://dliwebbe02.inf.sta:8082/web/comercial">ATComercial</a></li>

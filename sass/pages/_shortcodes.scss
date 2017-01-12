@@ -30,13 +30,17 @@
   margin-bottom: 40px;
   &.main-menu-shortcode {
     margin-top: 50px;
+    @include breakpoint($tablet) {
+      .content-ws {
+        padding: 0 10px 0 260px;
+      }
+    }
   }
   &.w-menu .content {
     padding: 0 10px 0 260px;
     @include breakpoint($mobile) {
       padding: 0 10px;
     }
-
   }
 }
 
@@ -168,9 +172,9 @@
   }
   .content-ti-img {
     display: block;
-    max-width: 302px;
+    max-width: 270px;
     overflow: hidden;
-    padding: 0 15px;
+    padding: 0;
     position: relative;
     width: 30%;
     @include breakpoint($tablet) {
@@ -241,6 +245,7 @@
       position: relative;
       text-align: left;
       width: 15%;
+      min-height: 40px;
       @include breakpoint($tablet) {
         text-align: center;
       }
@@ -289,13 +294,56 @@
       }
     }
   }
+  .two-columns-item {
+    float: left;
+    width: 50%;
+    text-align: center;
+    .highlighted {
+      color: #D30572;
+      font-size: 80px;
+      line-height: 114px;
+      font-weight: bold;
+    }
+    .highlight-info {
+      color: #D30572;
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+  }
 }
+.four-columns-row {
+  clear: both;
+  display: block;
+  margin: 20px 0;
+  overflow: hidden;
+  .four-columns-item {
+    float: left;
+    width: 25%;
+    text-align: center;
 
+    .highlighted {
+      color: #D30572;
+      font-size: 64px;
+      line-height: 90px;
+      font-weight: bold;
+    }
+    .highlight-info {
+      color: #D30572;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+  }
+}
 /*
 * 4. SHORTCODE ACCORDION
 */
 .ui-state-active {
   background-color: $products-bggrey;
+  &.transbg-item {
+    background-color: transparent;
+  }
 }
 
 .ui-corner-all, .ui-corner-top, .ui-corner-bottom, .ui-corner-right, .ui-corner-tr {
@@ -304,6 +352,9 @@
   border-radius: 0;
   color: $products-fontcolor;
   outline: none;
+  &.transbg-item {
+    background-color: transparent;
+  }
 }
 
 .ui-accordion-header-icon {
@@ -344,6 +395,12 @@
 
 .cont-wrapper .ui-accordion-content p {
   font-size: 14px;
+}
+.ui-widget-content a {
+  color: $pink;
+  &.button-pink {
+    color: white;
+  }
 }
 
 /*
@@ -516,6 +573,30 @@ h3.title-step {
         line-height: 22px;
       }
     }
+  }
+  &.bg-grey {
+    /* ADDs BACK-Office configs to Styles HERE */
+    .ui-tabs .ui-tabs-nav .ui-tabs-tab {
+    background-color: white; /* <= INYECTAR AQUI EL COLOR de fondo TAB inactiva */
+  }
+
+    .ui-state-default a, .ui-state-default a:link {
+      //color: black;
+    }
+
+    .ui-tabs .ui-tabs-nav .ui-tabs-tab.ui-tabs-active {
+      //background-color: #D30572; /* <= INYECTAR AQUI EL COLOR de fondo TAB Activa */
+    }
+
+    .ui-tabs .ui-tabs-nav .ui-tabs-tab.ui-tabs-active a {
+      //color: #FFFFFF; /* <= INYECTAR AQUI EL COLOR del enlace de TAB Activa */
+    }
+
+    /* TAB ITEM content background */
+    .ui-tabs .ui-tabs-panel {
+      background-color: white;
+    }
+
   }
 }
 
@@ -1060,11 +1141,7 @@ ul.floating-menu {
   }
   /* END SOLO PARA MOSTRARLOS CENTRADOS COMO EN EL DISEÑO... NO SE UTILIZA ESTE CONTENEDOR CUANDO LO USEN SUELTOS */
   a.button-shortcode {
-    display: block;
-    float: left;
     margin: 0 10px;
-    position: relative;
-    line-height: 32px;
     @include breakpoint($mobile) {
       display: block;
       width: 100%;
@@ -1213,5 +1290,14 @@ ul.floating-menu {
     @include breakpoint($tablet) {
       text-align: center;
     }
+  }
+}
+.section-content-ti.item-bgrey {
+  background-color: $grey;
+  .content-ti-text {
+    padding: 10px;
+  }
+  .content-ti-img {
+    padding: 0;
   }
 }

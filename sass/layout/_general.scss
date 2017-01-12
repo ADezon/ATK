@@ -11,7 +11,7 @@ h1 {
   display: block;
   font-size: 30px;
   line-height: 34px;
-  margin: 25px 0;
+  margin: 50px 0 25px 0;
   position: relative;
 }
 h2 {
@@ -85,23 +85,18 @@ ul {
       content: '- ';
     }
   }
-
-}
-li.bullets-rosa {
-  margin-bottom: 8px;
-  &:before {
-    content: "\e923";
-    font-family: 'atelecom-icons' !important;
-    font-size: 12px;
-    color: $pink;
-    padding-right: 8px;
-  }
-  &.no-bullets {
+  &.bullets-rosa li {
+    margin-bottom: 8px;
     &:before {
-      display: none;
+      content: "\e923";
+      font-family: 'atelecom-icons' !important;
+      font-size: 12px;
+      color: $pink;
+      padding-right: 8px;
     }
   }
 }
+
 .full-centered {
   float: left;
   width: 100%;
@@ -211,11 +206,11 @@ a {
     background-color: $pink;
     border-radius: 3px;
     color: $white;
-    display: inline;
+    display: inline-block;
     font-size:16px;
     font-weight: bold;
-    line-height: 32px;
-    padding: 3px 22px;
+    line-height: 24px;
+    padding: 4px 16px;
     text-transform: uppercase;
     text-align: center;
     &.bp-w-auto{
@@ -234,13 +229,14 @@ a {
     }
   }
   &.button-active {
+    display: inline-block;
     background-color: $greymedium;
     border-radius: 3px;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
-    line-height: 32px;
-    padding: 3px 11px;
+    line-height: 24px;
+    padding: 4px 16px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -258,13 +254,14 @@ a {
     }
   }
   &.button-disabled {
+    display: inline-block;
     background-color: #cfd1d2;
     border-radius: 3px;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
-    line-height: 32px;
-    padding: 3px 11px;
+    line-height: 24px;
+    padding: 4px 16px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -285,12 +282,12 @@ a {
     background-color: black;
     border-radius: 3px;
     color: $white;
-    display: inline;
+    display: inline-block;
     font-size:16px;
     font-weight: bold;
-    line-height: 32px;
+    line-height: 24px;
     margin: 0 auto;
-    padding: 3px 16px;
+    padding: 4px 16px;
     position: relative;
     text-transform: uppercase;
     width: 180px;
@@ -313,11 +310,11 @@ a {
     background-color: $pinkdark;
     border-radius: 3px;
     color: $white;
-    display: inline;
+    display: inline-block;
     font-size: 12px;
-    line-height: 36px;
+    line-height: 24px;
     font-weight: bold;
-    padding: 3px 16px;
+    padding: 4px 16px;
     text-transform: uppercase;
     width: auto;
     &:hover{
@@ -341,12 +338,13 @@ a {
     }
   }
   &.button-clean {
+    display: inline-block;
     background-color: transparent;
     border-radius: 0;
     color: $pink;
     font-size: 16px;
-    line-height: 32px;
-    padding: 3px 11px;
+    line-height: 24px;
+    padding: 4px 16px;
     text-align: center;
     text-decoration: none;
     width: auto;
@@ -391,7 +389,7 @@ p{
       padding: 0 18px;
     }
     &.content-big{
-      max-width: 1280px;
+      max-width: 1024px;
       padding: 0;
     }
     /* Page with sidebar */
@@ -451,8 +449,9 @@ p{
           &:first-child:before {
             content: '';
           }
+          &.not-link,
           &.not-link a {
-            font-weight: 400;
+            font-weight: bold;
           }
         }
       }
@@ -460,7 +459,7 @@ p{
       a{
         color: #9c9e9f;
         font-size: 12px;
-        font-weight: bold;
+        //font-weight: bold;
         line-height: 15px;
         margin: 15px 0 25px 0;
         &:hover{
@@ -573,4 +572,224 @@ p{
   p {
     font-size: 14px;
   }
+}
+
+
+.config-box {
+  float: left;
+  width: 100%;
+  position: relative;
+  display: block;
+  background-color: $greysoft;
+  padding: 20px;
+  margin: 20px 0 0 0;
+  @include breakpoint($mobile) {
+    margin: 6px 0;
+  }
+  .title-config-box {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    color: $greydark;
+    margin: 0 0 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .inner-box {
+    @include span(12 of 12);
+    background-color: white;
+    padding: 10px;
+    &.trans {
+      background-color: transparent;
+    }
+    @include breakpoint ($mobile) {
+      padding: 0;
+      background-color: transparent;
+    }
+
+    .product-promo {
+      float: left;
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 20px;
+      background-color: white;
+      text-align: center;
+      @include breakpoint ($mobile) {
+        .big-pink {
+          font-size: 24px;
+        }
+      }
+    }
+    h5 {
+      color: $pink;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-top: 15px;
+      @include breakpoint ($mobile) {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+
+    > .gallery-item {
+      @include gallery(4 of 12);
+      @include breakpoint ($mobile) {
+        width: 100% !important;
+        margin: 0 0 16px 0 !important;
+        padding: 0 10px;
+        border: 2px solid white;
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.7);
+      }
+    }
+    > .product-list-blocks {
+      width: 100%;
+      background-color: white;
+      margin-bottom: 16px;
+      @include clearfix();
+      @include breakpoint ($mobile) {
+        margin-bottom: 10px;
+        padding: 12px;
+      }
+
+      .img-container {
+        float: left;
+        width: 40%;
+        padding: 26px;
+        @include breakpoint ($mobile) {
+          padding: 0;
+        }
+      }
+      .product-description {
+        float: left;
+        width: 60%;
+        padding: 25px 10px;
+        @include breakpoint ($mobile) {
+          width: 55%;
+          padding: 0 0 0 5%;
+        }
+        .product-title {
+          font-size: 26px;
+          @include breakpoint ($mobile) {
+            font-size: 14px;
+          }
+          .big {
+            font-size: 36px;
+            @include breakpoint ($mobile) {
+              font-size: 20px;
+            }
+          }
+        }
+        a.button-pink,
+        a.button-active {
+          float: left;
+          width: 100%;
+          clear: none;
+          margin-top: 16px;
+          @include breakpoint ($mobile) {
+            padding: 3px 0;
+            line-height: 14px;
+            margin-bottom: 0;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+    .custom-links a {
+      display: block;
+      width: 100%;
+      float: left;
+      margin-bottom: 3px;
+
+    }
+    > .custom-item {
+      width: 33%;
+      float: left;
+
+      &.one {
+        width: 40%;
+      }
+      &.two {
+        width: 30%;
+      }
+      &.three {
+        width: 30%;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      @include breakpoint ($mobile) {
+
+        &.one {
+          margin: 20px 0;
+          width: 50%;
+        }
+        &.two {
+          margin: 20px 0;
+          width: 50%;
+        }
+        &.three {
+          margin: 10px 0 0 0;
+          width: 100%;
+        }
+      }
+      .actions-container {
+        float: left;
+        padding: 6px 0 0 30px;
+        @include breakpoint ($mobile) {
+          width: 100%;
+          padding: 0;
+        }
+        a {
+          text-align: center;
+          width: 100%;
+          float: left;
+          margin-bottom: 3px;
+          @include breakpoint ($mobile) {
+            margin: 3px 0;
+          }
+        }
+      }
+    }
+    .big-pink {
+      color: $pink;
+      font-size: 26px;
+      line-height: 26px;
+      @include breakpoint ($mobile) {
+        font-size: 14px;
+      }
+    }
+    img {
+      vertical-align: middle;
+      width: 100%;
+    }
+    .prod-description {
+      color: $pink;
+      font-size: 21px;
+      font-weight: bold;
+    }
+  }
+}
+
+// BAR STRENGTH
+meter {
+  background-color: $grey;
+  margin: 0;
+  height: 14px;
+}
+//
+meter::-webkit-meter-bar {
+  background: none;
+  background-color: $grey;
+}
+/* Webkit based browsers */
+meter::-webkit-meter-optimum-value {
+  background: $pink;
+}
+
+/* Gecko based browsers */
+meter::-moz-meter-bar {
+  background: $grey;
 }

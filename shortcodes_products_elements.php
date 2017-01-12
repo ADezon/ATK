@@ -225,10 +225,10 @@
 
             <div id="tabs">
                 <ul>
-                    <li><a href="#tabs-1">Tab 1</a></li>
-                    <li><a href="#tabs-2">Tab 2</a></li>
-                    <li><a href="#tabs-3">Tab 3</a></li>
-                    <li><a href="#tabs-4">Tab 4</a></li>
+                    <li><a href="#tabs-1">Tab 1 (titulo largo prueba)</a></li>
+                    <li><a href="#tabs-2">Tab 2 (titulo largo prueba)</a></li>
+                    <li><a href="#tabs-3">Tab 3 (titulo largo prueba)</a></li>
+                    <li><a href="#tabs-4">Tab 4 (titulo largo prueba)</a></li>
                 </ul>
                 <div id="tabs-1">
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
@@ -256,6 +256,10 @@
                 $( function() {
                     $( "#tabs" ).tabs();
                 } );
+
+                // @TODO Mechanism to change TABS to SELECT in Mobile
+                // REV => https://css-tricks.com/transformer-tabs/
+                // http://jsfiddle.net/Gajotres/aX7L9/
             </script>
         </div>
     </div>

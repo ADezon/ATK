@@ -31,7 +31,7 @@
       <div class="sidebar">
         <!-- BEGIN SECTION LIST -->
         <div id="nav-anchor"></div>
-        <ul class="menu-list floating-menu stick">
+        <ul class="menu-list floating-menu">
           <li><a class="nav-active" href="#preu">Preu</a></li>
           <li><a href="#caracteristics">Característiques</a></li>
           <li><a href="#advantatges">Avantatges</a></li>

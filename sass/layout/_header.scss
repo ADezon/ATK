@@ -404,6 +404,11 @@
         }
       }
     }
+    &.cont-wrapper {
+      .content {
+        padding: 0 6px;
+      }
+    }
   }
   #head{
     background: $pink; /* For browsers that do not support gradients */
@@ -653,6 +658,12 @@
         &:nth-child(4) {
           top: 16px;
         }
+      }
+    }
+
+    &.cont-wrapper {
+      .content {
+        padding: 0;
       }
     }
   }
