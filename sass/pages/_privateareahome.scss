@@ -1,0 +1,232 @@
+.shortcode-container .ui-tabs.tabs-vertical .ui-tabs-nav{
+  position: relative;
+  display: block;
+  float: left;
+  width: 40%;
+}
+
+.shortcode-container .ui-tabs.tabs-vertical .ui-tabs-nav .ui-tabs-tab {
+  width: 100%;
+
+}
+.shortcode-container .ui-tabs.tabs-vertical .ui-tabs-nav .ui-tabs-tab a {
+  width: 100%;
+}
+
+.shortcode-container .ui-tabs.tabs-vertical .ui-tabs-panel {
+  border: 2px solid $products-bggrey;
+  background-color: transparent;
+  display: block;
+  float: right;
+  width: 60%;
+  padding: 20px 30px;
+}
+
+.shortcode-container .ui-tabs.tabs-vertical .ui-tabs-nav .ui-tabs-tab:before {
+  display: none;
+}
+
+.shortcode-container .ui-tabs.tabs-vertical .ui-tabs-nav .ui-tabs-tab.ui-tabs-active {
+   background-color: #f7f7f7;
+   border-right: none;
+   margin: 0;
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 0px 14px 14px;
+    border-color: transparent transparent transparent #f7f7f7;
+    -webkit-transform: rotate(360deg);
+    position: absolute;
+    top: 30%;
+    z-index: 5;
+  }
+ }
+
+.shortcode-container .ui-tabs.tabs-vertical .ui-tabs-nav .ui-tabs-tab.ui-tabs-active .ui-tabs-anchor{
+ color: $black;
+}
+
+.shortcode-container .ui-tabs.tabs-vertical .ui-tabs-nav .ui-tabs-tab .ui-tabs-anchor {
+  border-bottom: 1px solid $products-bggrey;
+  outline: none;
+  padding: 15px 10px;
+  margin: 0 2%;
+  width: 96%;
+  line-height: 25px;
+  color: $black;
+}
+.shortcode-container .ui-tabs.tabs-vertical .ui-tabs-nav .ui-tabs-tab .ui-tabs-anchor .icons{
+ font-size: 25px;
+  padding-right: 10px;
+  color: $pink;
+}
+
+.shortcode-container .ui-tabs.tabs-vertical .ui-tabs-nav .link-in-tab{
+  background-color: transparent;
+}
+.shortcode-container .ui-tabs.tabs-vertical .ui-tabs-nav a.link-in-tab {
+  position: relative;
+  display: block;
+  float: left;
+  overflow: hidden;
+  padding: 0;
+  margin: 15px 0;
+  text-decoration: underline;
+  color: $pink;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.link-to-consumption {
+  position: relative;
+  display: block;
+  clear: both;
+  padding-left: 38px;
+  text-decoration: underline;
+}
+
+//
+.cont-wrapper.private-area {
+
+  // Left
+  .slider {
+    width: 640px;
+    margin-left: 80px;
+    @include breakpoint($mobile) {
+      margin: 0;
+      width: 100%;
+    }
+    .main-image {
+      background: grey;
+      width: 124px;
+      height: 172px;
+    }
+
+    // Reflection CROSS Broser
+    .image-block {
+      width:124px;
+      height: 276px;
+      overflow: hidden;
+      outline: none;
+      //margin: 0 7px;
+
+      &[aria-hidden="true"] .main-image {
+        a { pointer-events: none; cursor: default; }
+        img { opacity: 0.4; }
+      }
+    }
+
+    .reflection { position:relative; }
+    .reflection img {
+      -webkit-transform: scaleY(-1);
+      -moz-transform: scaleY(-1);
+      -ms-transform: scaleY(-1);
+      -o-transform: scaleY(-1);
+      transform: scaleY(-1);
+      filter: flipv; opacity:0.20;
+      filter: alpha(opacity='20');
+    }
+    .overlay { position:absolute; top:0px; left:0px; width:428px; height:432px;
+      background-image: -moz-linear-gradient( center bottom, rgb(255,255,255) 60%, rgba(255,255,255,0) 75%);
+      background-image:   -o-linear-gradient( rgba(255,255,255,0) 25%, rgb(255,255,255) 40%);
+      background-image:     -webkit-gradient( linear, left bottom, left top, color-stop(0.60, rgb(255,255,255)), color-stop(0.75, rgba(255,255,255,0)));
+      filter: progid:DXImageTransform.Microsoft.Gradient( gradientType=0, startColor=0, EndColorStr=#ffffff);
+      height: 130px;
+    }
+
+    // Sport-Slider
+    .text-info {
+      width: 164px;
+      a {
+        font-size: 18px;
+        line-height: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color: $greydark;
+      }
+    }
+
+    button {
+      position: absolute;
+      z-index: 5;
+      font-size: 0;
+      background: none transparent;
+      border: medium none;
+      outline: none;
+      cursor: pointer;
+
+      &.slick-prev {
+        left: 20px;
+        &:before {
+          content: "\e930";
+          font-family: 'atelecom-icons' !important;
+          font-size: 28px;
+          color: white;
+          padding-right: 8px;
+        }
+      }
+      &.slick-next {
+        right: 20px;
+        &:before {
+          content: "\e92e";
+          font-family: 'atelecom-icons' !important;
+          font-size: 28px;
+          color: white;
+          padding-right: 8px;
+        }
+      }
+    }
+    .slider-premiere {
+      img {
+        width: 124px;
+        height: 172px;
+      }
+      button {
+        top: 28%;
+      }
+    }
+
+    .slider-sports {
+      button {
+        top: 20%;
+      }
+    }
+
+
+  } /* End Slider*/
+
+  // Right
+  .sidebar {
+    padding-right: 0;
+    padding-left: 4%;
+  }
+
+
+  #banner-app {
+    background: url("../images/GetAppBannerBG.png") no-repeat scroll right center $pink;
+    float: left;
+    margin-bottom: 40px;
+    color: white;
+    font-weight: bold;
+    width: 220px;
+    height: 470px;
+
+    .block-title {
+      width: 100%;
+      padding: 22px;
+      font-size: 21px;
+      line-height: 28px;
+      margin-bottom: 190px;
+    }
+    .block-cta {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .full-centered img {
+      width: 60%;
+    }
+  }
+}

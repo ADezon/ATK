@@ -7,6 +7,7 @@
 @import "compass/utilities/general/clearfix";
 @import "variables";
 @import "fonts";
+@import "corporate";
 
 @import "layout/general";
 @import "layout/header";
@@ -28,6 +29,7 @@
 @import "pages/productforfets";
 @import "pages/prepagament";
 @import "pages/consumption";
+@import "pages/privateareahome";
 
 @import "items/alerts";
 @import "items/sliders";
@@ -35,3 +37,4 @@
 @import "items/paginator";
 @import "items/form";
 @import "items/call_me_back";
+

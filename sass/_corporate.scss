@@ -1,0 +1,123 @@
+body.corporate{
+  #header{
+    #head{
+      background: $white;
+      .logo{
+        width: auto;
+        img{
+          width: auto;
+          margin: 19px 0;
+        }
+      }
+      #nav-main{
+        li{
+          padding: 27px 0;
+          &:hover{
+            a{
+              &:after{
+                display: none;
+              }
+            }
+          }
+          &:after{
+            display: none;
+          }
+          &:first-child{
+            a{
+              border-left: 0;
+            }
+          }
+          a{
+            color: $products-fontcolor;
+            font-size: 14px;
+            line-height: 18px;
+            border-left: 1px solid $products-fontcolor;
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+    #nav-private{
+      background-color: $greymedium;
+    }
+    .menu{
+      .button-client-area{
+        width: auto;
+        text-align: center;
+        padding: 14px 40px;
+        &:hover{
+          background-color: $pink;
+          color: $white;
+        }
+        &.active{
+          background-color: $pink;
+          color: $white;
+        }
+      }
+      > ul{
+        > li{
+          width: auto;
+          &.active{
+            .title-level-1{
+              font-weight: bold;
+              color: $white;
+            }
+          ;
+          }
+          .title-level-1{
+            padding: 17px 25px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+  #footer{
+    #footer-links{
+      background-color: $grey;
+      .column-footer{
+        @include span(4 of 12);
+
+        @include breakpoint($tablet) {
+          @include span(4 of 12 last);
+          padding: 0 20px;
+        }
+
+        @include breakpoint($mobile) {
+          display: none;
+        }
+
+        &.last{
+          @include last;
+          @include breakpoint($tablet) {
+            display: block;
+            @include span(12 of 12);
+          }
+        }
+        h3{
+          color: $greymedium;
+        }
+        ul{
+          li{
+            a{
+              color: $products-fontcolor;
+              .icons{
+                color: $greymedium;
+              }
+            }
+          }
+        }
+        a{
+          &.button-action{
+            background-color: $greymedium;
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+    #legal{
+      background-color: $gris3;
+    }
+  }
+}

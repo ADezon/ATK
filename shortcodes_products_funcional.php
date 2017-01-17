@@ -647,19 +647,6 @@
         </div>
         <script language="JavaScript">
             $(document).ready(function () {
-                var timering = 7000;
-                // SINGLE FLEXSLIDER.
-//                        $('.slider-mob').flexslider({
-//                            animation: "slide",
-//                            slideshowSpeed: timering,
-//                            itemWidth: 410,
-//                            itemMargin: 10,
-//                            minItems: 1,
-//                            maxItems: 1,
-//                            directionNav: false,
-//                            controlNav: false
-//                        });
-
                 // http://kenwheeler.github.io/slick/
                 $('.slider-mob').slick({
                     centerMode: true,
