@@ -440,6 +440,7 @@ p{
         display: none;
       }
       .breadcrumb {
+        background: none transparent;
         li {
           float: left;
           margin-right: 4px;
@@ -453,9 +454,6 @@ p{
           &.not-link a {
             font-weight: bold;
           }
-        }
-        &.breadcrumb-horizontal>li+li:before {
-          background: none transparent;
         }
       }
 
@@ -496,6 +494,18 @@ p{
     padding: 40px 0;
     a {
       text-decoration: underline;
+    }
+  }
+  &.only-mobile {
+    display: none;
+    @include breakpoint($mobile) {
+      display: block;
+    }
+  }
+  &.only-desktop {
+    display: block;
+    @include breakpoint($mobile) {
+      display: none;
     }
   }
 }

@@ -224,3 +224,12 @@
     text-decoration: underline;
   }
 }
+.only-mobile .link-to-consumption {
+  margin-top: 40px;
+}
+.cont-wrapper.slider-container .content {
+
+  @include breakpoint($mobile) {
+    padding: 0;
+  }
+}

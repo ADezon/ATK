@@ -17,11 +17,17 @@
         </div>
     </div>
     <!--END SPECIFIC PAGE PRIVATE AREA HOME-->
+  <div class="cont-wrapper">
+    <div class="content">
+      <h2 class="global-subtitle">Novembre, 2016</h2>
+    </div>
+  </div>
 
-    <!-- BEGIN SECTION TABS -->
-    <div class="cont-wrapper shortcode-container">
+
+
+    <!-- BEGIN SECTION TABS (For Desktop) -->
+    <div class="cont-wrapper shortcode-container only-desktop">
         <div class="content">
-            <h2 class="global-subtitle">Novembre, 2016</h2>
             <div class="consumption-product-left half-page">
                 <h3>Els meus productes</h3>
             </div>
@@ -364,7 +370,246 @@
     </div>
     <!-- END SECTION TABS -->
 
-    <div class="cont-wrapper private-area">
+
+  <!-- BEGIN SECTION TABS (For Mobile) -->
+  <div class="cont-wrapper shortcode-container only-mobile">
+    <div class="content">
+      <div id="accordion">
+        <h3><span class="icons icon-mobile"></span>
+          <span>Forfet 5</span></h3>
+        <div class="transbg-item">
+          <!-- BEGIN DATA CELL -->
+          <h4>El meu consum</h4>
+          <div class="current-consumption">
+            <div class="product-consumption">
+              <span class="icons icon-call pink">&nbsp;</span>
+              <span class="product-consumption-title">Trucades (Minuts)</span>
+            </div>
+            <ul class="info-list-product-consumption">
+              <li>
+                <span>Nacionals</span>
+                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed">135</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included">240</span>
+                                </span>
+                <meter value=".75"></meter>
+              </li>
+
+            </ul>
+          </div>
+          <div class="current-consumption">
+            <div class="product-consumption">
+              <span class="icons icon-web pink">&nbsp;</span>
+              <span class="product-consumption-title">Dades</span>
+            </div>
+            <ul class="info-list-product-consumption">
+              <li>
+                <span>Nacionals</span>
+                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed">450</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included"> 2 GB</span>
+                                </span>
+                <meter value=".25"></meter>
+              </li>
+              <li>
+                <span>En itinerància</span>
+                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed">0</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included">15 GB</span>
+                                </span>
+                <meter value=".25"></meter>
+              </li>
+            </ul>
+          </div>
+          <div class="current-consumption">
+            <div class="product-consumption">
+              <span class="icons icon-email pink">&nbsp;</span>
+              <span class="product-consumption-title">SMS</span>
+            </div>
+            <ul class="info-list-product-consumption">
+              <li>
+                <span>Nacionals</span>
+                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed excess">12</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included">0</span>
+                                </span>
+                <span class="not-included">Fuera del forfet</span>
+              </li>
+
+            </ul>
+          </div>
+          <!-- END DATA CELL -->
+        </div>
+
+        <h3><span class="icons icon-phone"></span>
+          <span>Lorem ipsum</span></h3>
+        <div class="transbg-item">
+          <!-- BEGIN DATA CELL -->
+          <h4>El meu consum</h4>
+          <div class="current-consumption">
+            <div class="product-consumption">
+              <span class="icons icon-call pink">&nbsp;</span>
+              <span class="product-consumption-title">Trucades (Minuts)</span>
+            </div>
+            <ul class="info-list-product-consumption">
+              <li>
+                <span>Nacionals</span>
+                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed">135</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included">240</span>
+                                </span>
+                <meter value=".75"></meter>
+              </li>
+
+            </ul>
+          </div>
+          <div class="current-consumption">
+            <div class="product-consumption">
+              <span class="icons icon-web pink">&nbsp;</span>
+              <span class="product-consumption-title">Dades</span>
+            </div>
+            <ul class="info-list-product-consumption">
+              <li>
+                <span>Nacionals</span>
+                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed">450</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included"> 2 GB</span>
+                                </span>
+                <meter value=".25"></meter>
+              </li>
+              <li>
+                <span>En itinerància</span>
+                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed">0</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included">15 GB</span>
+                                </span>
+                <meter value=".25"></meter>
+              </li>
+            </ul>
+          </div>
+          <div class="current-consumption">
+            <div class="product-consumption">
+              <span class="icons icon-email pink">&nbsp;</span>
+              <span class="product-consumption-title">SMS</span>
+            </div>
+            <ul class="info-list-product-consumption">
+              <li>
+                <span>Nacionals</span>
+                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed excess">12</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included">0</span>
+                                </span>
+                <span class="not-included">Fuera del forfet</span>
+              </li>
+
+            </ul>
+          </div>
+          <!-- END DATA CELL -->
+        </div>
+        <h3><span class="icons icon-tv"></span>
+          <span>Movistar + Familiar</span></h3>
+        <div class="transbg-item">
+          <!-- BEGIN DATA CELL -->
+          <h4>El meu consum</h4>
+          <div class="current-consumption">
+            <div class="product-consumption">
+              <span class="icons icon-call pink">&nbsp;</span>
+              <span class="product-consumption-title">Trucades (Minuts)</span>
+            </div>
+            <ul class="info-list-product-consumption">
+              <li>
+                <span>Nacionals</span>
+                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed">135</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included">240</span>
+                                </span>
+                <meter value=".75"></meter>
+              </li>
+
+            </ul>
+          </div>
+          <div class="current-consumption">
+            <div class="product-consumption">
+              <span class="icons icon-web pink">&nbsp;</span>
+              <span class="product-consumption-title">Dades</span>
+            </div>
+            <ul class="info-list-product-consumption">
+              <li>
+                <span>Nacionals</span>
+                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed">450</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included"> 2 GB</span>
+                                </span>
+                <meter value=".25"></meter>
+              </li>
+              <li>
+                <span>En itinerància</span>
+                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed">0</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included">15 GB</span>
+                                </span>
+                <meter value=".25"></meter>
+              </li>
+            </ul>
+          </div>
+          <div class="current-consumption">
+            <div class="product-consumption">
+              <span class="icons icon-email pink">&nbsp;</span>
+              <span class="product-consumption-title">SMS</span>
+            </div>
+            <ul class="info-list-product-consumption">
+              <li>
+                <span>Nacionals</span>
+                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed excess">12</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included">0</span>
+                                </span>
+                <span class="not-included">Fuera del forfet</span>
+              </li>
+
+            </ul>
+          </div>
+          <!-- END DATA CELL -->
+        </div>
+      </div>
+
+      <div class="full-centered">
+        <a href="#" class="link-to-consumption underlined">Veure el detall de consum</a>
+      </div>
+
+    </div>
+    <script>
+        // See: http://api.jqueryui.com/accordion/ for options
+        $(function () {
+            // change the heigh for display on mobile to content height, in desktop, set the taller one.
+            function getFillType() {
+                return ( (window.innerWidth || document.documentElement.clientWidth) < 720) ? 'content' : 'auto';
+            }
+
+            $("#accordion").accordion({
+                collapsible: true,
+                heightStyle: 'content'
+            });
+        });
+    </script>
+  </div>
+  <!-- END SECTION ACCORDION (For Mobile) -->
+
+
+
+    <div class="cont-wrapper private-area slider-container">
         <div class="content">
             <div class="content-ws">
                 <h2 class="global-subtitle">Estrenes</h2>
@@ -448,7 +693,7 @@
                                     settings: {
                                         arrows: false,
                                         centerMode: true,
-                                        centerPadding: '90px',
+                                        centerPadding: '112px',
                                         slidesToShow: 1
                                     }
                                 },
@@ -539,7 +784,7 @@
                                     settings: {
                                         arrows: false,
                                         centerMode: true,
-                                        centerPadding: '140px',
+                                        centerPadding: '90px',
                                         slidesToShow: 1
                                     }
                                 }
