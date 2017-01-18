@@ -561,6 +561,62 @@
   </div>
   <!-- END SECTION 3 COLUMNS VARIATION (more text below)-->
 
+
+  <!-- BEGIN SECTION 3 COLUMNS VARIATION (more text below) -->
+  IDEM as Icono + título + texto (FOUR COLUMNS)
+  <div class="cont-wrapper bg-grey shortcode-container three-cols-variation">
+    <div class="content">
+      <h2 class="global-subtitle">Four Columns</h2>
+      <div class="four-columns-row">
+        <div class="four-columns-item">
+          <span class="four-columns-icon"><span class="icons icon-offer"></span></span>
+          <span class="four-columns-title">Lorem Ipsum</span>
+          <span class="four-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+        </div>
+        <div class="four-columns-item">
+          <span class="four-columns-icon"><span class="icons icon-offer"></span></span>
+          <span class="four-columns-title">Lorem Ipsum</span>
+          <!--                    <span class="four-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>-->
+        </div>
+        <div class="four-columns-item">
+          <span class="four-columns-icon"><span class="icons icon-offer"></span></span>
+          <span class="four-columns-title">Lorem Ipsum</span>
+          <!--                    <span class="four-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>-->
+        </div>
+        <div class="four-columns-item last">
+          <span class="four-columns-icon"><span class="icons icon-offer"></span></span>
+          <span class="four-columns-title">Lorem Ipsum</span>
+          <span class="four-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+        </div>
+      </div>
+
+      <div class="four-columns-row">
+        <div class="four-columns-item">
+          <span class="four-columns-icon"><span class="icons icon-offer"></span></span>
+          <span class="four-columns-title">Lorem Ipsum</span>
+          <span class="four-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+        </div>
+        <div class="four-columns-item">
+          <span class="four-columns-icon"><span class="icons icon-offer"></span></span>
+          <span class="four-columns-title">Lorem Ipsum</span>
+          <span class="four-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+        </div>
+        <div class="four-columns-item">
+          <span class="four-columns-icon"><span class="icons icon-offer"></span></span>
+          <span class="four-columns-title">Lorem Ipsum</span>
+          <span class="four-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+        </div>
+        <div class="four-columns-item">
+          <span class="four-columns-icon"><span class="icons icon-offer"></span></span>
+          <span class="four-columns-title">Lorem Ipsum</span>
+          <span class="four-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- END SECTION 3 COLUMNS VARIATION (more text below)-->
+
   <!-- BEGIN SECTION SLIDER PRODUCTS -->
   Background color can be changed to Grey With bg-color class in cont-wrapper<br>
   If only have ONE "page" (slide with 12 images or less) slider will NOT show "pager".

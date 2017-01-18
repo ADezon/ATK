@@ -60,12 +60,12 @@
                         <ul class="info-list-product-consumption">
                             <li>
                                 <span>Nacionals</span>
-                                <meter value=".75"></meter>
                                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed">135</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">240</span>
                                 </span>
+                                <meter value=".75"></meter>
                             </li>
 
                         </ul>
@@ -78,21 +78,21 @@
                         <ul class="info-list-product-consumption">
                             <li>
                                 <span>Nacionals</span>
-                                <meter value=".25"></meter>
-                                  <span class="info-detail-product-consumption">
+                                <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed">450</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included"> 2 GB</span>
                                 </span>
+                                <meter value=".25"></meter>
                             </li>
                             <li>
                                 <span>En itinerància</span>
-                                <meter value=".25"></meter>
-                                  <span class="info-detail-product-consumption">
+                                <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed">0</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">15 GB</span>
                                 </span>
+                                <meter value=".25"></meter>
                             </li>
                         </ul>
                     </div>
@@ -104,12 +104,12 @@
                         <ul class="info-list-product-consumption">
                             <li>
                                 <span>Nacionals</span>
-                                <span class="not-included">Fuera del forfet</span>
                                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed excess">12</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">0</span>
                                 </span>
+                                <span class="not-included">Fuera del forfet</span>
                             </li>
 
                         </ul>
@@ -125,39 +125,39 @@
                         <ul class="info-list-product-consumption">
                             <li>
                                 <span>Nacionals</span>
-                                <meter value=".75"></meter>
                                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed">135</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">240</span>
                                 </span>
+                                <meter value=".75"></meter>
                             </li>
                             <li>
                                 <span>Internacionals</span>
-                                <meter value="1"></meter>
                                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed excess">125</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">100</span>
                                 </span>
+                                <meter value="1"></meter>
                             </li>
                             <li>
                                 <span>En itinerància</span>
-                                <meter value="0"></meter>
                                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed">0</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">100</span>
                                 </span>
+                                <meter value="0"></meter>
                             </li>
                             <li>
                                 <span>Fora d’itinerància</span>
-                                <meter value="0"></meter>
-                                <span class="info-detail-product-consumption">
+                               <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed">0</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">100</span>
                                 </span>
+                                <meter value="0"></meter>
                             </li>
                         </ul>
                     </div>
@@ -169,30 +169,30 @@
                         <ul class="info-list-product-consumption">
                             <li>
                                 <span>Nacionals</span>
-                                <meter value=".25"></meter>
-                                  <span class="info-detail-product-consumption">
+                               <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed">450</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included"> 2 GB</span>
                                 </span>
+                                <meter value=".25"></meter>
                             </li>
                             <li>
                                 <span>Internacionals</span>
-                                <meter value=".05"></meter>
-                                  <span class="info-detail-product-consumption">
+                                <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed">30</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">500 MB</span>
                                 </span>
+                                <meter value=".05"></meter>
                             </li>
                             <li>
                                 <span>En itinerància</span>
-                                <meter value=".25"></meter>
-                                  <span class="info-detail-product-consumption">
+                                <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed">0</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">15 GB</span>
                                 </span>
+                                <meter value=".25"></meter>
                             </li>
                         </ul>
                     </div>
@@ -204,30 +204,30 @@
                         <ul class="info-list-product-consumption">
                             <li>
                                 <span>Nacionals</span>
-                                <span class="not-included">Fuera del forfet</span>
                                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed excess">12</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">0</span>
                                 </span>
+                                <span class="not-included">Fuera del forfet</span>
                             </li>
                             <li>
                                 <span>En itinerància</span>
-                                <span class="not-included">Fuera del forfet</span>
                                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed excess">10</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">0</span>
                                 </span>
+                                <span class="not-included">Fuera del forfet</span>
                             </li>
                             <li>
                                 <span>Forfet de Dades 15 GB</span>
-                                <span class="not-included">Fuera del forfet</span>
                                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed excess">2</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">0</span>
                                 </span>
+                                <span class="not-included">Fuera del forfet</span>
                             </li>
                         </ul>
                     </div>
@@ -321,30 +321,30 @@
                         <ul class="info-list-product-consumption">
                             <li>
                                 <span>Nacionals</span>
-                                <span class="not-included">Fuera del forfet</span>
                                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed excess">12</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">0</span>
                                 </span>
+                                <span class="not-included">Fuera del forfet</span>
                             </li>
                             <li>
                                 <span>En itinerància</span>
-                                <span class="not-included">Fuera del forfet</span>
                                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed excess">10</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">0</span>
                                 </span>
+                                <span class="not-included">Fuera del forfet</span>
                             </li>
                             <li>
                                 <span>Forfet de Dades 15 GB</span>
-                                <span class="not-included">Fuera del forfet</span>
                                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed excess">2</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">0</span>
                                 </span>
+                                <span class="not-included">Fuera del forfet</span>
                             </li>
                         </ul>
                     </div>

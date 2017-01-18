@@ -1,7 +1,7 @@
 <?php include 'includes/header_loged.php'; ?>
 
 
-    <!-- BEGIN SPECIFIC PAGE CONSUMPTION MOBILE -->
+    <!-- BEGIN SPECIFIC PAGE CONSUMPTION FIXED -->
     <div class="basic-page page-consumption cont-wrapper" xmlns="http://www.w3.org/1999/html">
         <div class="cont-wrapper bg-grey">
             <div class="content">
@@ -34,7 +34,7 @@
         <div class="cont-wrapper">
             <div class="content">
                 <h2 class="global-subtitle">Setembre, 2016</h2>
-                <div class="title-consumption-product">Tarifa Forfet Mobiland 29</div>
+                <div class="title-consumption-product">Tarifa telefonia i internet residencial</div>
                 <div class="consumption-product-left half-page">
                     <h3>Consum del mes actual</h3>
                     <div class="current-consumption">
@@ -53,7 +53,7 @@
                                 <meter value=".75"></meter>
                             </li>
                             <li>
-                                <span>Internacionals</span>
+                                <span>Nacionals a mòbil</span>
                                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed excess">125</span>
                                     <span>/</span>
@@ -62,18 +62,36 @@
                                 <meter value="1"></meter>
                             </li>
                             <li>
-                                <span>En itinerància</span>
+                                <span>Internacionals fixos <br />Horari normal</span>
                                 <span class="info-detail-product-consumption">
-                                    <span class="info-detail-consumed">0</span>
+                                    <span class="info-detail-consumed excess">50</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">100</span>
                                 </span>
-                                <meter value="0"></meter>
+                                <meter value="0.5"></meter>
                             </li>
                             <li>
-                                <span>Fora d’itinerància</span>
+                                <span>Internacionals fixos <br />Horari reduït</span>
                                 <span class="info-detail-product-consumption">
-                                    <span class="info-detail-consumed">0</span>
+                                    <span class="info-detail-consumed excess">20</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included">100</span>
+                                </span>
+                                <meter value="0.2"></meter>
+                            </li>
+                            <li>
+                                <span>Internacionals mòbil <br />Horari normal</span>
+                                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed excess">50</span>
+                                    <span>/</span>
+                                    <span class="info-detail-consumption-included">100</span>
+                                </span>
+                                <meter value="0.5"></meter>
+                            </li>
+                            <li>
+                                <span>Internacionals mòbil <br />Horari reduït</span>
+                                <span class="info-detail-product-consumption">
+                                    <span class="info-detail-consumed excess">0</span>
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">100</span>
                                 </span>
@@ -105,129 +123,35 @@
                                 </span>
                                 <meter value=".05"></meter>
                             </li>
-                            <li>
-                                <span>En itinerància</span>
-                                <span class="info-detail-product-consumption">
-                                    <span class="info-detail-consumed">0</span>
-                                    <span>/</span>
-                                    <span class="info-detail-consumption-included">15 GB</span>
-                                </span>
-                                <meter value=".25"></meter>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="current-consumption">
-                        <div class="product-consumption">
-                            <span class="icons icon-email pink">&nbsp;</span>
-                            <span class="product-consumption-title">SMS</span>
-                        </div>
-                        <ul class="info-list-product-consumption">
-                            <li>
-                                <span>Nacionals</span>
-                                <span class="info-detail-product-consumption">
-                                    <span class="info-detail-consumed excess">12</span>
-                                    <span>/</span>
-                                    <span class="info-detail-consumption-included">0</span>
-                                </span>
-                                <span class="not-included">Fuera del forfet</span>
-                            </li>
-                            <li>
-                                <span>En itinerància</span>
-                                <span class="info-detail-product-consumption">
-                                    <span class="info-detail-consumed excess">10</span>
-                                    <span>/</span>
-                                    <span class="info-detail-consumption-included">0</span>
-                                </span>
-                                <span class="not-included">Fuera del forfet</span>
-                            </li>
-                            <li>
-                                <span>Forfet de Dades 15 GB</span>
-                                <span class="info-detail-product-consumption">
-                                    <span class="info-detail-consumed excess">2</span>
-                                    <span>/</span>
-                                    <span class="info-detail-consumption-included">0</span>
-                                </span>
-                                <span class="not-included">Fuera del forfet</span>
-                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="consumption-product-right half-page">
                     <h3>Vull ampliar la meva tarifa</h3>
                     <div class="config-box">
-                        <h4 class="title-config-box">Necessites
-                            un forfet superior?</h4>
+                        <h4 class="title-config-box">Amplia la teva tarifa</h4>
                         <div class="inner-box">
                             <div class="custom-item one">
                                 <div class="message">
                                     Amplia a
                                 </div>
                                 <div class="big-pink bold">
-                                    1 GB / Tarifa plana
+                                    Tarifa plana
                                 </div>
                             </div>
                             <div class="custom-item two">
                                 <div class="full-centered">
                                     <br><br>
-                                    <span class="treinta grey-medium bold">29€</span> <span class="grey-medium bold">/mes</span>
+                                    <span class="treinta grey-medium bold">50€</span> <span class="grey-medium bold">/mes</span>
                                 </div>
                             </div>
                             <div class="custom-item three">
                                 <div class="actions-container">
                                     <a href="#"
-                                       class="button-pink action-sign-in">Contratar</a>
+                                       class="button-pink action-sign-in">Contractar</a>
                                     <a href="#" class="button-active">+ Info</a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="config-box">
-                        <h4 class="title-config-box">Contracta
-                            més GB</h4>
-                        <div class="inner-box trans">
-                            <div class="gallery-item">
-                                <div class="product-promo">
-                                    <div class="big-pink bold">
-                                        500 MB
-                                    </div>
-                                    <div class="entry-price">
-                                        <span class="twenty grey-medium bold">4€</span> /mes
-                                    </div>
-                                </div>
-                                <div class="custom-links">
-                                    <a href="#" class="button-pink">Contractar</a>
-                                    <a href="#" class="button-active">+ Info</a>
-                                </div>
-                            </div>
-                            <div class="gallery-item">
-                                <div class="product-promo">
-                                    <div class="big-pink bold">
-                                        1 GB
-                                    </div>
-                                    <div class="entry-price">
-                                        <span class="twenty grey-medium bold">6€</span> /mes
-                                    </div>
-                                </div>
-                                <div class="custom-links">
-                                    <a href="#" class="button-pink">Contractar</a>
-                                    <a href="#" class="button-active">+ Info</a>
-                                </div>
-                            </div>
-                            <div class="gallery-item">
-                                <div class="product-promo">
-                                    <div class="big-pink grey-medium bold">
-                                        2 GB
-                                    </div>
-                                    <div class="entry-price">
-                                        <span class="twenty grey-medium bold">8€</span> /mes
-                                    </div>
-                                </div>
-                                <div class="custom-links">
-                                    <a href="#" class="button-pink">Contractar</a>
-                                    <a href="#" class="button-active">+ Info</a>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -235,51 +159,12 @@
         </div>
         <div class="cont-wrapper">
             <div class="content">
-                <h2 class="global-subtitle">Trucades / Dades / SMS (Cambiar por tabs)</h2>
+                <h2 class="global-subtitle">Trucades / Dades / (Cambiar por tabs)</h2>
                 <div class="chart-call-consumption">
                     AQUI VA EL CHART DE LLAMADAS
                 </div>
                 <div class="chart-data-consumption">
                     AQUI VA EL CHART DE DATOS
-                    <!--<script>
-                        google.charts.load('current', {'packages':['corechart']});
-                        google.charts.setOnLoadCallback(drawVisualization);
-
-
-                        function drawVisualization() {
-                            // Some raw data (not necessarily accurate)
-                            var data = google.visualization.arrayToDataTable([
-                                ['Month', 'Internet Nacional', 'Internet Internacional'],
-                                ['2015/10',  25,      21],
-                                ['2015/11',  11,      14],
-                                ['2015/12',  20,      7],
-                                ['2016/01',  27,      13],
-                                ['2016/02',  23,      14],
-                                ['2016/03',  30,      19],
-                                ['2016/04',  17,      20],
-                                ['2016/05',  19,      27],
-                                ['2016/06',  24,      21],
-                                ['2016/07',  30,      21],
-                                ['2016/08',  26,      16],
-                                ['2016/09',  12,      8],
-                            ]);
-
-                            var options = {
-                                colors: ['#D30572', '#8D0E57'],
-                                vAxis: {format: 'decimal'},
-                                hAxis: {},
-                                seriesType: 'bars',
-                                series: {2: {type: 'line'}}
-                            };
-
-                            var chart = new google.visualization.ComboChart(document.getElementById('chart_internet'));
-                            chart.draw(data, options);
-                        }
-                    </script>
-                    <div id="chart_internet" style="width: 1024px; height: 500px;"></div>-->
-                </div>
-                <div class="chart-sms-consumption">
-                    AQUI VA EL CHART DE SMS
                 </div>
             </div>
         </div>
@@ -516,7 +401,7 @@
             </div>
         </div>
     </div>
-    <!-- END SPECIFIC PAGE CONSUMPTION MOBILE -->
+    <!-- END SPECIFIC PAGE CONSUMPTION FIXED -->
 
 
 <?php include 'includes/footer.php'; ?>
