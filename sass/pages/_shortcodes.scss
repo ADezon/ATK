@@ -635,6 +635,114 @@ h3.title-step {
     }
 
   }
+
+  .ui-tabs-nav {
+    @include breakpoint ($mobile) {
+      display: none;
+    }
+  }
+
+  /* TABS Beautifyer */
+  .tabs-mobile-selector {
+
+    .atSelect {
+      width: 100%;
+      text-align: center;
+
+      .selectBox {
+        font-size: 20px;
+        height: 58px;
+        &:after {
+          border-bottom: 2px solid #D30572;
+          content: "";
+          display: block;
+          height: 2px;
+          margin: 0 auto;
+          padding-top: 15px;
+          position: relative;
+          text-align: center;
+          width: 130px;
+        }
+      }
+    }
+
+    .atSelect .selectBox:hover,
+    .atSelect .selectBox.expanded{
+      background-position:0 -170px, right -238px, 50% -102px, 0 -34px;
+      color:#2c5667;
+      text-shadow:1px 1px 0 #9bc2d0;
+    }
+
+    .atSelect .dropDown{
+      position:absolute;
+      top:70px;
+      left:0;
+      width:100%;
+      list-style:none;
+
+      -moz-box-sizing:border-box;
+      -webkit-box-sizing:border-box;
+      box-sizing:border-box;
+
+      -moz-box-shadow:0 0 4px #111;
+      -webkit-box-shadow:0 0 4px #111;
+      box-shadow:0 0 4px #111;
+
+      z-index: 20;
+    }
+
+
+    .atSelect li {
+      color: black;
+      cursor:pointer;
+      position:relative;
+      background-color: $products-bggrey;
+      z-index: 10;
+      padding: 16px 0;
+      line-height: 22px;
+    }
+
+    .atSelect li:hover{
+      background-position: 50% -256px, 0 -85px, 0 0;
+    }
+
+    .atSelect li span{
+      left:88px;
+      position:absolute;
+      top:27px;
+    }
+
+    .atSelect li i{
+      color:#999999;
+      display:block;
+      font-size:12px;
+    }
+
+    .atSelect li img{
+      left:9px;
+      position:absolute;
+      top:13px;
+    }
+
+    //a, a:visited {
+    //  text-decoration:none;
+    //  outline:none;
+    //  border-bottom:1px dotted #97cae6;
+    //  color:#97cae6;
+    //}
+
+    a:hover{
+      border-bottom:1px dashed transparent;
+    }
+
+    .clear{
+      clear:both;
+    }
+
+    &.only-mobile {
+
+    }
+  }
 }
 
 /*

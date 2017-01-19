@@ -282,7 +282,16 @@
 
   <div class="cont-wrapper shortcode-container bg-grey">
     <div class="content">
-      <h2 class="global-subtitle">TABS Title</h2>
+      <h2 class="global-subtitle only-desktop">TABS Title</h2>
+
+      <div class="tabs-mobile-selector only-mobile">
+        <select class="make-me-styled">
+          <option value="0" selected>Tab 1 (titulo largo prueba)</option>
+          <option value="1">Tab 2 (titulo largo prueba)</option>
+          <option value="2">Tab 3 (titulo largo prueba)</option>
+          <option value="3">Tab 4 (titulo largo prueba)</option>
+        </select>
+      </div>
 
       <div id="tabs">
         <ul>
@@ -292,7 +301,7 @@
           <li><a href="#tabs-4">Tab 4 (titulo largo prueba)</a></li>
         </ul>
         <div id="tabs-1">
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          <p>Content FIRST tab. <strong>Sed ut perspiciatis unde omnis iste </strong>natus error sit voluptatem accusantium doloremque laudantium, totam rem
             aperiam, eaque ipsa quae ab illo inventore veritatis
             et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
             aspernatur aut odit aut fugit, sed quia consequuntur magni
@@ -305,7 +314,7 @@
             fugiat quo voluptas nulla pariatur.</p>
         </div>
         <div id="tabs-2">
-          <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc.
+          <p><strong>Content SECOND tab.</strong> Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc.
             Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut
             tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam.
             Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc.
@@ -314,7 +323,7 @@
             consectetur tortor et purus.</p>
         </div>
         <div id="tabs-3">
-          <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula
+          <p>03 TAB !!!<br />Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula
             accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti
             sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel
             enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium
@@ -327,7 +336,7 @@
             Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
         </div>
         <div id="tabs-4">
-          <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula
+          <p><strong>444444</strong>. Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula
             accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti
             sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel
             enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium
@@ -347,9 +356,107 @@
               $("#tabs").tabs();
           });
 
-          // @TODO Mechanism to change TABS to SELECT in Mobile
-          // REV => https://css-tricks.com/transformer-tabs/
-          // http://jsfiddle.net/Gajotres/aX7L9/
+          $(document).ready(function(){
+
+              // REV Original: http://tutorialzine.com/2010/11/better-select-jquery-css3/
+              // The select element to be replaced:
+              var select = $('select.make-me-styled');
+              var selectBoxContainer = $('<div>',{
+                  width		: select.outerWidth(),
+                  class	: 'atSelect',
+                  html		: '<div class="selectBox">' + select.find(":selected").text() + '</div>'
+              });
+
+              var dropDown = $('<ul>',{class:'dropDown'});
+              var selectBox = selectBoxContainer.find('.selectBox');
+
+              // Set FIRST item in selector.
+
+
+              // Looping though the options of the original select element
+
+              select.find('option').each(function(i){
+                  var option = $(this);
+
+                  if(i==select.attr('selectedIndex')){
+                      selectBox.html(option.text());
+                  }
+
+                  // As of jQuery 1.4.3 we can access HTML5
+                  // data attributes with the data() method.
+
+                  if(option.data('skip')){
+                      return true;
+                  }
+
+                  // Creating a dropdown item according to the
+                  // data-icon and data-html-text HTML5 attributes:
+
+                  // <img src="'+option.data('icon')+'" /> removed
+                  var li = $('<li>',{
+                      html:	option.text()
+                  });
+
+                  li.click(function(){
+
+                      selectBox.html(option.text());
+                      dropDown.trigger('hide');
+
+                      // When a click occurs, we are also reflecting
+                      // the change on the original select element:
+                      select.val(option.val());
+                      $("#tabs").tabs( "option", "active", option.val());
+
+
+                      return false;
+                  });
+
+                  dropDown.append(li);
+              });
+
+              selectBoxContainer.append(dropDown.hide());
+              select.hide().after(selectBoxContainer);
+
+              // Binding custom show and hide events on the dropDown:
+
+              dropDown.bind('show',function(){
+
+                  if(dropDown.is(':animated')){
+                      return false;
+                  }
+
+                  selectBox.addClass('expanded');
+                  dropDown.slideDown();
+
+              }).bind('hide',function(){
+
+                  if(dropDown.is(':animated')){
+                      return false;
+                  }
+
+                  selectBox.removeClass('expanded');
+                  dropDown.slideUp();
+
+              }).bind('toggle',function(){
+                  if(selectBox.hasClass('expanded')){
+                      dropDown.trigger('hide');
+                  }
+                  else dropDown.trigger('show');
+              });
+
+              selectBox.click(function(){
+                  dropDown.trigger('toggle');
+                  return false;
+              });
+
+              // If we click anywhere on the page, while the
+              // dropdown is shown, it is going to be hidden:
+
+              $(document).click(function(){
+                  dropDown.trigger('hide');
+              });
+          });
+
       </script>
     </div>
   </div>
