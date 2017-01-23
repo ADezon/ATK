@@ -87,7 +87,7 @@ ul {
     &:before {
       content: "\e923";
       font-family: 'atelecom-icons' !important;
-      font-size: 12px;
+      font-size: 8px;
       color: $pink;
       padding-right: 8px;
     }
@@ -201,7 +201,7 @@ a {
   width: auto;
   &.button-pink {
     background-color: $pink;
-    border-radius: 3px;
+    border-radius: 4px;
     color: $white;
     display: inline-block;
     font-size:16px;
@@ -228,7 +228,7 @@ a {
   &.button-active {
     display: inline-block;
     background-color: $greymedium;
-    border-radius: 3px;
+    border-radius: 4px;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
@@ -253,7 +253,7 @@ a {
   &.button-disabled {
     display: inline-block;
     background-color: #cfd1d2;
-    border-radius: 3px;
+    border-radius: 4px;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
@@ -277,7 +277,7 @@ a {
   }
   &.button-black {
     background-color: black;
-    border-radius: 3px;
+    border-radius: 4px;
     color: $white;
     display: inline-block;
     font-size:16px;
@@ -305,7 +305,7 @@ a {
   }
   &.button-action {
     background-color: $pinkdark;
-    border-radius: 3px;
+    border-radius: 4px;
     color: $white;
     display: inline-block;
     font-size: 12px;
@@ -409,8 +409,13 @@ p{
         content: "";
         display: none;
       }
+      &.righted {
+        width: 32%;
+        padding-right: 0;
+        @include breakpoint($tablet) { width: 100%; }
+      }
     }
-    .content-ws{
+    .content-ws {
       position: relative;
       display: block;
       float: left;
@@ -422,6 +427,14 @@ p{
       @include breakpoint($tablet) {
         width: 100%;
         margin-bottom: 20px;
+      }
+      &.righted {
+        width: 68%;
+        padding-right: 2%;
+        @include breakpoint($tablet) {
+          padding-right: 0;
+          width: 100%;
+        }
       }
     }
     /* Breadcrumb & Title */

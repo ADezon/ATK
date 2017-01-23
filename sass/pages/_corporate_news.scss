@@ -1,0 +1,213 @@
+//NEWS DETAIL
+.news-detail{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-top: 50px;
+  //CONTENT NEWS DETAIL
+  .content-ws{
+    padding-right: 10% !important;
+    @include breakpoint($mobile) {
+      padding: 0 !important;
+      clear: both;
+    }
+    .news-data {
+      font-family: Roboto, SansSerif;
+      color: $gris3;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 300;
+    }
+    .news-title {
+      color: $pink;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 400;
+      margin: 10px 0;
+    }
+    .news-intro {
+      font-family: Roboto, SansSerif;
+      font-weight: 300;
+      color: $greydark;
+      font-size: 18px;
+      line-height: 28px;
+
+      &:after {
+        border-bottom: 2px solid #D30572;
+        content: "";
+        display: block;
+        height: 2px;
+        padding-top: 15px;
+        position: relative;
+        text-align: center;
+        width: 130px;
+        margin-bottom: 36px;
+        margin-top: 15px;
+      }
+    }
+    .slider-gallery{
+      img{
+        width: 100%;
+      }
+    }
+    .content-inner-container{
+      margin-top: 50px;
+      @include breakpoint($mobile) {
+        margin-top: 20px;
+      }
+      .vertical-social {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        float: left;
+        width: 10%;
+        text-align: center;
+        padding-left: 15px;
+        @include breakpoint($mobile) {
+          width: 100%;
+          padding: 0;
+          float: none;
+          clear: both;
+          margin: 0 0 20px 0;
+        }
+        ul {
+          width: 100%;
+        }
+        li {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          margin-bottom: 10px;
+          @include breakpoint($mobile) {
+            float: left;
+            margin: 0 10px;
+          }
+        }
+        .icons:before{
+          font-size: 30px;
+        }
+        .icon-goto:before{
+          font-size: 15px;
+          color:$greymedium;
+        }
+      }
+      .full-content {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        float: left;
+        width: 90%;
+        padding-left: 40px;
+        @include breakpoint($mobile) {
+          width: 100%;
+          padding: 0;
+          float: none;
+          clear: both;
+        }
+        h3{
+          color: $greydark;
+        }
+        p {
+          color: #greydark;
+          font-size: 14px;
+          line-height: 18px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .tags {
+      font-size: 14px;
+      h5 {
+        text-transform: uppercase;
+        color: $greydark;
+        margin-top: 30px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      li {
+        position: relative;
+        display: block;
+        float: left;
+        color: $greydark;
+        background-color: $grey;
+        padding: 8px 12px;
+        margin-right: 12px;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 10px;
+        a {
+          text-decoration: none;
+          color: $greydark;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+  //SIDEBAR NEWS DETAIL
+  .sidebar{
+    padding-right: 0 !important;
+    @include breakpoint($mobile) {
+      width: 100%;
+      padding: 0;
+      float: none;
+      clear: both;
+    }
+    h5 {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      text-transform: uppercase;
+      color: $greydark;
+      font-size: 14px;
+      line-height: 18px;
+      padding:30px 0;
+      margin: 0;
+      border-top: 1px solid $grey;
+    }
+    ul.list{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0 0 20px 0;
+      li{
+        position: relative;
+        display: block;
+        clear: both;
+        margin-bottom: 20px;
+        color: $greydark;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    ul.list-tags{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0 0 20px 0;
+      li{
+        position: relative;
+        display: block;
+        float: left;
+        margin-bottom: 10px;
+        color: $greydark;
+        background-color: $grey;
+        padding: 8px 12px;
+        margin-right: 12px;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 16px;
+        a {
+          text-decoration: none;
+          color: $greydark;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+

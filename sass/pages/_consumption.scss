@@ -27,7 +27,7 @@
     font-size: 21px;
     font-weight: bold;
     line-height: 32px;
-    margin: 20px 0;
+    margin: 50px 0 0 0;
     padding: 5px 20px;
     text-align: center;
     width: 100%;
@@ -42,7 +42,7 @@
   .result-table-consumption{
     clear: both;
     display: block;
-    margin: 40px 0 0 0;
+    margin: 0;
     position: relative;
     @include breakpoint($tablet) {
       margin: 10px 0;
@@ -50,6 +50,11 @@
     .content{
       @include breakpoint($tablet) {
         padding: 0;
+      }
+    }
+    .select-w-title{
+      @include breakpoint($tablet) {
+        padding: 0 18px;
       }
     }
     .consumption-counter-paginator{
@@ -61,7 +66,7 @@
       width: 75%;
       @include breakpoint($tablet) {
         float: none;
-        padding-top: 0;
+        padding: 5px 18px;
         width: 100%;
       }
       .counter-resultsperpage {
@@ -76,8 +81,8 @@
         @include breakpoint($tablet) {
           clear: both;
           float: left;
-          padding: 0 10px;
           width: 100%;
+          padding: 0;
         }
       }
     }
@@ -153,6 +158,7 @@
           border-left: none;
           border-right: none;
           border-top: 1px solid #cfd1d2;
+          height: 70px;
         }
         span, a{
           color: $greydark;
@@ -164,7 +170,7 @@
           text-align: left;
           text-transform: uppercase;
           @include breakpoint($tablet) {
-            text-align: center;
+            text-align: left;
           }
         }
         .consumption-list-column{
@@ -176,9 +182,38 @@
           @include breakpoint($intermedio) {
             width: 20%;
           }
+          @include breakpoint($tablet) {
+            width: 40%;
+          }
           a{
             color: $pink;
             text-decoration: underline;
+          }
+          &.column-date {
+            @include breakpoint($tablet) {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 50%;
+            }
+            span{
+              @include breakpoint($tablet) {
+                text-align: left;
+              }
+            }
+          }
+          &.column-time {
+            @include breakpoint($tablet) {
+              position: absolute;
+              width: 50%;
+              right: 0;
+              bottom: 0;
+            }
+            span{
+              @include breakpoint($tablet) {
+                text-align: right;
+              }
+            }
           }
           &.column-amount{
             display: block;
@@ -199,8 +234,335 @@
       }
     }
   }
-}
+  .consumption-period {
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #979797;
+    background-color: #FBFBFB;
+    padding: 40px 0;
+    .calendar-container {
+      float: left;
+      width: 370px;
+    }
+    #date-ranges {
+      border: 1px solid #ccc;
+      font-size: 16px;
+      color: $greydark;
+      background: url("../images/icons/calendar.png") no-repeat 8px center white;
+      padding-left: 40px;
+    }
 
+    input[type=submit], input[type=button] {
+      float: left;
+      clear: none;
+      margin: 10px 8px;
+    }
+    a.button-active {
+      float: left;
+      margin: 10px;
+    }
+    .message {
+      float: left;
+      width: 250px;
+      text-transform: none;
+      font-style: italic;
+      line-height: 20px;
+      margin: 5px 0 0 14px;
+    }
+  }
+
+  // TABLE / GRAPHIC
+  .graphic-table-list{
+    clear: both;
+    display: block;
+    float: left;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    @include breakpoint($tablet) {
+      display: none;
+    }
+    .graphic-table-title{
+      background-color: $gris3;
+      clear: both;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      padding: 10px 0;
+      span, a{
+        color: $white;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        padding: 5px 0;
+        position: relative;
+        text-align: right;
+        text-transform: uppercase;
+      }
+      .graphic-table-column{
+        display: block;
+        float: left;
+        padding: 0 2%;
+        position: relative;
+        width: 14%;
+        text-align: right;
+        &.first-column{
+          width: 16%;
+          span, a{
+            text-align: left;
+          }
+        }
+      }
+    }
+    .graphic-table-row{
+      background-color: $white;
+      border-bottom: 1px solid #cfd1d2;
+      border-left: 1px solid #cfd1d2;
+      border-right: 1px solid #cfd1d2;
+      clear: both;
+      display: block;
+      overflow: hidden;
+      padding:10px 0;
+      position: relative;
+      span, a{
+        color: $greymedium;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 5px 0;
+        position: relative;
+        text-align: right;
+        text-transform: uppercase;
+      }
+      .graphic-table-column{
+        display: block;
+        float: left;
+        padding: 0 2%;
+        position: relative;
+        width: 14%;
+        text-align: right;
+        &.first-column{
+          width: 16%;
+          span, a{
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .graphic-table-list{
+    &.graphic-table-list-mobile{
+      display: none;
+      @include breakpoint($tablet) {
+        display: block;
+      }
+      .graphic-table-title{
+        .graphic-table-column{
+          padding: 0 2%;
+          width: 33%;
+          &.first-column{
+            width: 33%;
+          }
+        }
+      }
+      .graphic-table-row{
+        .graphic-table-column{
+          padding: 0 2%;
+          width: 33%;
+          &.first-column{
+            width: 33%;
+          }
+        }
+      }
+    }
+  }
+  // TABS EXCEPTION FOR PAGES CONSUMPTION
+  .shortcode-container{
+    .tabs-mobile-selector{
+      .atSelect {
+        width: 100% !important;
+        text-align: center;
+        margin-top: 40px;
+      }
+    }
+    .ui-tabs{
+      // TABS FIRST LEVEL
+      &.tabs-first-level{
+        > .ui-tabs-nav .ui-tabs-tab {
+          margin-top: 40px;
+          width: 33%;
+          &:before {
+            height: 40px;
+          }
+          &.ui-tabs-active {
+            background-color: transparent;
+            &:before {
+              display: block;
+            }
+            & + .ui-tabs-tab {
+              &:before {
+                display: block;
+              }
+            }
+            a{
+              h2.global-subtitle{
+                &:after {
+                  display: block;
+                }
+              }
+            }
+          }
+          &:first-child {
+            &:before {
+              display: none;
+            }
+          }
+          a{
+            padding: 0;
+            text-align: center;
+            width: 99%;
+            h2.global-subtitle{
+              margin: 0;
+              font-weight: normal;
+              &:after {
+                display: none;
+              }
+            }
+          }
+        }
+        > .ui-tabs-panel{
+          background-color: transparent;
+          padding: 30px 0;
+        }
+
+      }
+    }
+    // TABS SECOND LEVEL
+    .tabs-second-level{
+      .ui-tabs-nav{
+        overflow: hidden;
+        float: right;
+        position: relative;
+        display: block;
+        clear: both;
+        @include breakpoint ($mobile) {
+          float:none;
+          width: 100%;
+        }
+        .ui-tabs-tab{
+          @include breakpoint ($mobile) {
+            width: 50%;
+            float: left;
+            text-align: center;
+          }
+          a{
+            @include breakpoint ($mobile) {
+              width: 100%;
+              text-align: center;
+            }
+            .icons{
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+      .ui-tabs-panel{
+        clear: both;
+        display: block;
+        background-color: transparent;
+        position: relative;
+        overflow: hidden;
+        float: none;
+        padding: 30px 0;
+      }
+    }
+  }
+}
+/*
+ * DateRangePicker CSS
+ */
+
+.daterangepicker {
+  font-family: "Titillium Web", sans-serif !important;
+  .ranges li {
+    font-size: 14px;
+    background: #f3f3f3;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+    color: $pink;
+    padding: 3px 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+
+  .ranges li.active {
+    font-weight: bold;
+  }
+  .btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .btn-success {
+    background-color: $pink;
+    border-color: $pink;
+  }
+  .btn-success:hover {
+    background-color: $pink;
+    border-color: $pink;
+  }
+  .cancelBtn {
+    color: white;
+    background-color: #58585a;
+  }
+
+  td.active,
+  td.active:hover {
+    background-color: $pink !important;
+  }
+  td.in-range {
+    background-color: #f3dbe8;
+  }
+  .calendar th {
+    background-color: white;
+  }
+  .input-mini.form-control {
+    background: url("../images/icons/calendar.png") no-repeat 96% center white;
+  }
+}
+#tabs-call-chart {
+  width: 100%;
+
+  #chart_calls {
+    width: 100%;
+    height: 400px;
+    margin-top: -60px;
+  }
+}
+#tabs-data-chart {
+  width: 100%;
+
+  #chart_data {
+    width: 100%;
+    height: 400px;
+    margin-top: -60px;
+    > .ltr {
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+#tabs-sms-chart {
+  width: 100%;
+
+  #chart_sms {
+    width: 100%;
+    height: 400px;
+    margin-top: -60px;
+  }
+}
 //CSS GLOBAL
 .current-consumption {
   float: left;

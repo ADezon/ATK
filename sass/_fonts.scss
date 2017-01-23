@@ -25,6 +25,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-goto:before {
+  content: "\e93c";
+}
+.icon-table:before {
+  content: "\e93a";
+}
+.icon-graphic-bar:before {
+  content: "\e93b";
+}
+.icon-calendar:before {
+  content: "\e939";
+}
 .icon-timer:before {
   content: "\e938";
 }

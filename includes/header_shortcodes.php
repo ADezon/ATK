@@ -17,6 +17,11 @@
 
   <!--BEGIN GLOBAL-->
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+
+  <!-- // NEEDED FOR DATEPICKER !!!! -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/latest/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
   <link rel="stylesheet" type="text/css" href="./css/at-styles.css">
   <!--BEGIN GLOBAL-->
 
@@ -29,8 +34,15 @@
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- // NEEDED FOR DATEPICKER !!!! -->
+  <script type="text/javascript" src="./js/daterangepicker/moment-with-locales.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
   <script src="./js/enquire.min.js"></script>
+  <script type="text/javascript"
+          src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="./js/main.js"></script>
 
   <!--END GLOBAL-->
