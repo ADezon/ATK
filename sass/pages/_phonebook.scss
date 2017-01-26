@@ -364,6 +364,12 @@
           font-style: italic;
           color: $greymedium;
           margin-bottom: 30px;
+          .results-paginator {
+            li a {
+              text-decoration: none;
+              font-size: 26px;
+            }
+          }
         }
         .table-search-iterator{
           background-color: $white;
