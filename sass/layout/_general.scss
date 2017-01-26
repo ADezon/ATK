@@ -93,6 +93,23 @@ ul {
     }
   }
 }
+#main-content ul {
+  list-style: none;
+  li {
+    color: #58585A;
+    margin-bottom: 10px;
+    &:before {
+      content: "\e923";
+      font-family: 'atelecom-icons' !important;
+      font-size: 8px;
+      color: $pink;
+      padding-right: 6px;
+      position: relative;
+      top: -2px;
+
+    }
+  }
+}
 
 .full-centered {
   float: left;
@@ -196,7 +213,7 @@ table {
   color: $greymedium;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: $pink;
   width: auto;
   &.button-pink {
@@ -368,7 +385,6 @@ p{
   padding: 0;
 }
 // END OVERRIDE LR defaults
-
 .cont-wrapper{
   display: block;
   overflow: hidden;
@@ -519,6 +535,25 @@ p{
     }
   }
 }
+#main-content .breadcrumb {
+  background: none transparent;
+  li {
+    float: left;
+    margin-right: 4px;
+    &:before {
+      content: " / ";
+    }
+    &:first-child:before {
+      content: '';
+    }
+    &.not-link,
+    &.not-link a {
+      font-weight: bold;
+    }
+  }
+}
+
+
 .only-mobile {
   display: none;
   @include breakpoint($mobile) {

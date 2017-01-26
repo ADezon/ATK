@@ -1,7 +1,7 @@
 <?php include 'includes/header_shortcodes.php'; ?>
 
-  <!-- BEGIN SPECIFIC PAGE CONSUMPTION MOBILE -->
-  <div class="basic-page page-consumption cont-wrapper" xmlns="http://www.w3.org/1999/html">
+<!-- BEGIN SPECIFIC PAGE CONSUMPTION MOBILE -->
+<div class="basic-page page-consumption cont-wrapper" xmlns="http://www.w3.org/1999/html">
     <div class="cont-wrapper bg-grey">
       <div class="content">
           <?php include 'includes/breadcrumb.php'; ?>
@@ -11,7 +11,6 @@
         <div class="select-w-title">
           <h3>Selecciona el teu compte</h3>
           <select>
-            <option>Tots els comptes</option>
             <option>123456790</option>
             <option>123456791</option>
             <option>123456792</option>
@@ -23,18 +22,15 @@
         <div class="select-w-title">
           <h3>Selecciona el teu producte</h3>
           <select>
-            <option>Telefonia mòbil</option>
-            <option>Telefonia i internet residencial</option>
-            <option>Televisió</option>
+            <option>45-343444</option>
+            <option>56-345345</option>
+            <option>56-546456</option>
           </select>
         </div>
       </div>
     </div>
     <div class="cont-wrapper">
       <div class="content">
-
-        Pendiente de resolver inicialización de los CHARTS dentro de TABLAS:<br />
-        http://stackoverflow.com/questions/20290314/google-charts-in-tabs-chart-size-and-position-incorrect-in-hidden-tab
 
         <div class="title-consumption-product">Tarifa Forfet Mobiland 29</div>
         <h2 class="global-subtitle">Setembre, 2016</h2>
@@ -100,7 +96,7 @@
                 <meter value=".25"></meter>
               </li>
               <li>
-                <span>Internacionals</span>
+                <span>En itinerància</span>
                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed">30</span>
                                     <span>/</span>
@@ -109,7 +105,7 @@
                 <meter value=".05"></meter>
               </li>
               <li>
-                <span>En itinerància</span>
+                <span>Forfet de Dades 15 GB</span>
                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed">0</span>
                                     <span>/</span>
@@ -135,7 +131,7 @@
                 <span class="not-included">Fuera del forfet</span>
               </li>
               <li>
-                <span>En itinerància</span>
+                <span>Internacionals</span>
                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed excess">10</span>
                                     <span>/</span>
@@ -144,7 +140,7 @@
                 <span class="not-included">Fuera del forfet</span>
               </li>
               <li>
-                <span>Forfet de Dades 15 GB</span>
+                <span>En itinerància</span>
                 <span class="info-detail-product-consumption">
                                     <span class="info-detail-consumed excess">2</span>
                                     <span>/</span>
@@ -236,7 +232,7 @@
         </div>
       </div>
     </div>
-    <div class="cont-wrapper shortcode-container">
+    <div class="tabs-graphic-table cont-wrapper shortcode-container">
       <div class="content">
         <div class="tabs-mobile-selector only-mobile">
           <select class="make-me-styled">
@@ -259,11 +255,11 @@
                   <li><a href="#tabs-call-table"><span class="icons icon-table"></span>Taula</a></li>
                 </ul>
                 <div id="tabs-call-chart">
+                    <h4>Trucades (Min)</h4>
                   <div id="chart_calls" style="width: 100%;"></div>
                   <script>
                       google.charts.load('current', {'packages': ['corechart']});
                       google.charts.setOnLoadCallback(drawVisualization);
-
 
                       function drawVisualization() {
                           // Some raw data (not necessarily accurate)
@@ -287,8 +283,8 @@
                               colors: ['#D30572', '#8D0E57', '#9c9e9f'],
                               vAxis: {format: 'decimal'},
                               hAxis: {},
-                              chartArea: {width: '90%', height: '60%'},
-                              legend: { position: 'bottom',  textStyle: { color: '#58585a', fontSize: 16, fontStyle: 'italic' } },
+                              chartArea: {width: '90%', height: '65%', left:'7%', top:'3%'},
+                              legend: { position: 'bottom', alignment:'start', textStyle: { color: '#58585a', fontSize: 14, italic: true, bold: true } },
                               seriesType: 'bars',
                               series: {3: {type: 'line'}}
                           };
@@ -299,7 +295,7 @@
                   </script>
                 </div>
                 <div id="tabs-call-table">
-                    <h3>Trucades (Min)</h3>
+                    <h4>Trucades (Min)</h4>
                     <div class="graphic-table-list">
                         <div class="graphic-table-title">
                             <div class="graphic-table-column first-column">
@@ -458,29 +454,29 @@
           <div id="tabs-2">
             <div class="tabs-second-level">
               <ul>
-                <li><a href="#tabs-data-chart"><span class="icons icon-phone"></span>Gráfic</a></li>
-                <li><a href="#tabs-data-table"><span class="icons icon-phone"></span>Taula</a></li>
+                <li><a href="#tabs-data-chart"><span class="icons icon-graphic-bar"></span>Gráfic</a></li>
+                <li><a href="#tabs-data-table"><span class="icons icon-table"></span>Taula</a></li>
               </ul>
               <div id="tabs-data-chart">
+                  <h4>Dades (MB)</h4>
                 <div id="chart_data" style="width: 100%;"></div>
                 <script>
                     google.charts.load('current', {'packages': ['corechart']});
                     google.charts.setOnLoadCallback(drawVisualization);
 
-
                     function drawVisualization() {
                         // Some raw data (not necessarily accurate)
                         var data = google.visualization.arrayToDataTable([
                             ['Month', 'Trucades nacionals', 'Internet internacionals', 'Trucades en itinerància'],
-                            ['10/15', 25, 21, 0],
-                            ['11/15', 11, 14, 25],
+                            ['10/15', 6, 14, 20],
+                            ['11/15', 11, 14, 16],
                             ['12/15', 20, 7, 11],
-                            ['01/16', 27, 13, 0],
-                            ['02/16', 23, 14, 0],
-                            ['03/16', 30, 19, 0],
-                            ['04/16', 17, 20, 0],
+                            ['01/16', 11, 13, 0],
+                            ['02/16', 23, 14, 8],
+                            ['03/16', 12, 19, 0],
+                            ['04/16', 17, 20, 4],
                             ['05/16', 19, 27, 0],
-                            ['06/16', 24, 21, 0],
+                            ['06/16', 14, 0, 22],
                             ['07/16', 30, 21, 0],
                             ['08/16', 26, 16, 0],
                             ['09/16', 12, 8, 0]
@@ -490,19 +486,21 @@
                             colors: ['#D30572', '#8D0E57', '#9c9e9f'],
                             vAxis: {format: 'decimal'},
                             hAxis: {},
-                            chartArea: {width: '90%', height: '60%'},
-                            legend: { position: 'bottom',  textStyle: { color: '#58585a', fontSize: 16, fontStyle: 'italic' } },
+                            chartArea: {width: '90%', height: '65%', left:'7%', top:'3%'},
+                            legend: { position: 'bottom', alignment:'start', textStyle: { color: '#58585a', fontSize: 14, italic: true, bold: true } },
                             seriesType: 'bars',
                             series: {3: {type: 'line'}}
                         };
 
                         var chart = new google.visualization.ComboChart(document.getElementById('chart_data'));
+                        $('#tabs-2').show();
                         chart.draw(data, options);
+                        $('#tabs-2').hide();
                     }
                 </script>
               </div>
               <div id="tabs-data-table">
-                <h3>Trucades (Min)</h3>
+                  <h4>Dades (MB)</h4>
                 <div class="graphic-table-list">
                   <div class="graphic-table-title">
                     <div class="graphic-table-column first-column">
@@ -660,51 +658,54 @@
           <div id="tabs-3">
             <div class="tabs-second-level">
               <ul>
-                <li><a href="#tabs-sms-chart"><span class="icons icon-phone"></span>Gráfic</a></li>
-                <li><a href="#tabs-sms-table"><span class="icons icon-phone"></span>Taula</a></li>
+                <li><a href="#tabs-sms-chart"><span class="icons icon-graphic-bar"></span>Gráfic</a></li>
+                <li><a href="#tabs-sms-table"><span class="icons icon-table"></span>Taula</a></li>
               </ul>
               <div id="tabs-sms-chart">
+                  <h4>SMS (Nº de SMS)</h4>
                 <div id="chart_sms" style="width: 100%;"></div>
                 <script>
                     google.charts.load('current', {'packages': ['corechart']});
                     google.charts.setOnLoadCallback(drawVisualization);
 
-
                     function drawVisualization() {
                         // Some raw data (not necessarily accurate)
                         var data = google.visualization.arrayToDataTable([
                             ['Month', 'Trucades nacionals', 'Internet internacionals', 'Trucades en itinerància'],
-                            ['10/15', 25, 21, 0],
-                            ['11/15', 11, 14, 25],
-                            ['12/15', 20, 7, 11],
-                            ['01/16', 27, 13, 0],
-                            ['02/16', 23, 14, 0],
-                            ['03/16', 30, 19, 0],
-                            ['04/16', 17, 20, 0],
-                            ['05/16', 19, 27, 0],
-                            ['06/16', 24, 21, 0],
-                            ['07/16', 30, 21, 0],
-                            ['08/16', 26, 16, 0],
-                            ['09/16', 12, 8, 0]
+                            ['10/15', 25, 21, 10],
+                            ['11/15', 11, 32, 36],
+                            ['12/15', 20, 20, 11],
+                            ['01/16', 30, 5, 0],
+                            ['02/16', 23, 4, 14],
+                            ['03/16', 30, 29, 10],
+                            ['04/16', 17, 10, 5],
+                            ['05/16', 19, 17, 14],
+                            ['06/16', 24, 11, 10],
+                            ['07/16', 30, 11, 6],
+                            ['08/16', 26, 26, 2],
+                            ['09/16', 12, 18, 1]
                         ]);
 
                         var options = {
                             colors: ['#D30572', '#8D0E57', '#9c9e9f'],
                             vAxis: {format: 'decimal'},
                             hAxis: {},
-                            chartArea: {width: '90%', height: '60%'},
-                            legend: { position: 'bottom',  textStyle: { color: '#58585a', fontSize: 16, fontStyle: 'italic' } },
+                            chartArea: {width: '90%', height: '65%', left:'7%', top:'3%'},
+                            legend: { position: 'bottom', alignment:'start', textStyle: { color: '#58585a', fontSize: 14, italic: true, bold: true } },
                             seriesType: 'bars',
                             series: {3: {type: 'line'}}
                         };
 
                         var chart = new google.visualization.ComboChart(document.getElementById('chart_sms'));
+
+                        $('#tabs-3').show();
                         chart.draw(data, options);
+                        $('#tabs-3').hide();
                     }
                 </script>
-
               </div>
               <div id="tabs-sms-table">
+                <h4>SMS (Nº de SMS)</h4>
                 <div class="graphic-table-list">
                   <div class="graphic-table-title">
                     <div class="graphic-table-column first-column">
@@ -776,7 +777,6 @@
                     </div>
                   </div>
                 </div>
-
                 <!-- STRUCTURE FOR MOBILE -->
                 <div class="graphic-table-list graphic-table-list-mobile">
                   <div class="graphic-table-title">
@@ -857,7 +857,6 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -970,43 +969,29 @@
             });
 
         </script>
-
-
-        <div class="linea_cerca">
-          <div class="capsa_cerca closed">
-            <a href="#periodes-consum" title="Detall de consum">Detall de consum</a>
-          </div>
-        </div>
-
-        <script language="JavaScript">
-            $(document).ready(function () {
-
-                // This is ONLY JS.
-                // WithOut JS it WILL work (as normal ANCHOR)
-                $('.consumption-period.cont-wrapper').hide();
-                $('.result-table-consumption.cont-wrapper').hide();
-
-                $('.capsa_cerca').click(function (e) {
-
-                    $('.capsa_cerca').toggleClass('closed');
-                    e.preventDefault();
-                    $('.consumption-period.cont-wrapper').slideToggle();
-                    $('.result-table-consumption.cont-wrapper').slideToggle();
-
-                })
-            });
-
-        </script>
       </div>
-
     </div>
+    <div class="linea_cerca">
+      <div class="capsa_cerca">
+          <a href="#periodes-consum" title="Detall de consum">Detall de consum</a>
+      </div>
+    </div>
+    <script language="JavaScript">
+      $(document).ready(function () {
 
+          $('.capsa_cerca').click(function (e) {
+              $('.capsa_cerca').toggleClass('closed');
+              e.preventDefault();
+              $('.consumption-period.cont-wrapper').slideToggle();
+              $('.result-table-consumption.cont-wrapper').slideToggle();
 
+          })
+      });
 
+    </script>
     <div class="consumption-period cont-wrapper">
       <div class="content" id="periodes-consum">
         <h3>Període</h3>
-
         <form action="#">
           <div class="calendar-container">
             <div id="reportrange" class="date-picker-main">
@@ -1057,13 +1042,13 @@
                     $('#reportrange #date-ranges').val(start.format(localeConfigs[lang]['format']) + ' - ' + end.format(localeConfigs[lang]['format']));
 
                     // Aqui llamamos el CALLBACK de la operación con AJAX (en caso de MAX X => LOAD MORE?)
-//            $.getJSON('/functions.php', { get_param: 'value' }, function(data) {
-//                $.each(data, function(index, element) {
-//                    $('body').append($('<div>', {
-//                        text: element.name
-//                    }));
-//                });
-//            });
+    //            $.getJSON('/functions.php', { get_param: 'value' }, function(data) {
+    //                $.each(data, function(index, element) {
+    //                    $('body').append($('<div>', {
+    //                        text: element.name
+    //                    }));
+    //                });
+    //            });
                 }
 
                 // Range TEXTs can't be translated has they are static strings
@@ -1080,7 +1065,7 @@
                         'Mes pasado': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
                     },
                     locale: {
-//                format: 'MM/DD/YYYY h:mm A'
+    //                format: 'MM/DD/YYYY h:mm A'
                         format: 'DD/MM/YYYY',
                         applyLabel: "Aplicar",
                         cancelLabel: "Cancelar",
@@ -1096,7 +1081,6 @@
         </script>
       </div>
     </div>
-
     <div class="result-table-consumption cont-wrapper bg-grey">
       <div class="content">
         <div class="select-w-title">
@@ -1329,8 +1313,7 @@
         </ul>
       </div>
     </div>
-  </div>
-  <!-- END SPECIFIC PAGE CONSUMPTION MOBILE -->
-
+</div>
+<!-- END SPECIFIC PAGE CONSUMPTION MOBILE -->
 
 <?php include 'includes/footer.php'; ?>

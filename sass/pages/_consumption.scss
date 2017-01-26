@@ -33,6 +33,132 @@
     width: 100%;
 
   }
+  .films-consumption{
+    .consumption-current-month{
+      position: relative;
+      display: block;
+      clear: both;
+      overflow: hidden;
+      margin-bottom: 25px;
+      .title-consumption-current-month{
+        position: relative;
+        display: block;
+        float:left;
+        padding-right: 30px;
+        font-size: 21px;
+        line-height: 35px;
+        color: $greydark;
+        font-weight: bold;
+      }
+      .amount-consumption-current-month{
+        position: relative;
+        display: block;
+        float:left;
+        font-size: 30px;
+        line-height: 35px;
+        color: $greydark;
+        font-weight: bold;
+      }
+    }
+    .title-films-list{
+      position: relative;
+      display: block;
+      float: left;
+      text-align: left;
+      font-size: 16px;
+      line-height: 21px;
+      color: $greydark;
+      .icon{
+        color: $pink;
+        font-size: 20px;
+        padding-right: 10px;
+      }
+    }
+    .list-films{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      clear: both;
+      .film-row{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        clear: both;
+        margin-top:20px;
+      }
+      .element-film{
+        @include span(2 of 12);
+        @include breakpoint($tablet) {
+          @include span(4 of 12);
+          margin-bottom: 20px;
+        }
+        @include breakpoint($mobile) {
+          @include span(12 of 12);
+        }
+        &.last{
+          @include last;
+        }
+        &.last-tablet{
+          @include breakpoint($tablet) {
+            @include last;
+          }
+        }
+        .film-image{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          img{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            width: 100%;
+          }
+        }
+        .film-title{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          text-align: center;
+          color: $greydark;
+          font-size: 16px;
+          line-height: 21px;
+          margin-top:5px;
+        }
+        .film-info{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          text-transform: uppercase;
+          margin-top:5px;
+          .film-quality{
+            position: relative;
+            display: block;
+            float: left;
+            width: 50%;
+            text-align: right;
+            color: $greydark;
+            font-size: 16px;
+            line-height: 25px;
+            padding-right: 5px;
+          }
+          .film-price{
+            position: relative;
+            display: block;
+            float: left;
+            width: 50%;
+            font-weight: bold;
+            text-align: left;
+            color: $greydark;
+            font-size: 21px;
+            line-height: 25px;
+            padding-left:5px;
+          }
+        }
+      }
+    }
+  }
+
+
   .consumption-product-left{
     padding-right: 20px;
   }
@@ -61,7 +187,7 @@
       display: block;
       float: right;
       overflow: hidden;
-      padding-top: 61px;
+      padding-top: 56px;
       position: relative;
       width: 75%;
       @include breakpoint($tablet) {
@@ -239,6 +365,11 @@
     border-bottom: 1px solid #979797;
     background-color: #FBFBFB;
     padding: 40px 0;
+    #periodes-consum{
+      > h3{
+        margin-bottom: 0;
+      }
+    }
     .calendar-container {
       float: left;
       width: 370px;
@@ -275,7 +406,7 @@
     clear: both;
     display: block;
     float: left;
-    margin: 20px 0;
+    margin: 0 0 20px 0;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -379,7 +510,8 @@
     }
   }
   // TABS EXCEPTION FOR PAGES CONSUMPTION
-  .shortcode-container{
+  .tabs-graphic-table{
+    margin-bottom: 0;
     .tabs-mobile-selector{
       .atSelect {
         width: 100% !important;
@@ -434,9 +566,16 @@
         }
         > .ui-tabs-panel{
           background-color: transparent;
-          padding: 30px 0;
+          padding: 30px 0 0 0;
         }
-
+      }
+      &.two-tabs{
+        > .ui-tabs-nav{
+          margin: 0 25%;
+          .ui-tabs-tab {
+            width: 50%;
+          }
+        }
       }
     }
     // TABS SECOND LEVEL
@@ -450,6 +589,7 @@
         @include breakpoint ($mobile) {
           float:none;
           width: 100%;
+          margin-bottom: 20px;
         }
         .ui-tabs-tab{
           @include breakpoint ($mobile) {
@@ -475,7 +615,14 @@
         position: relative;
         overflow: hidden;
         float: none;
-        padding: 30px 0;
+        padding: 0;
+        h4{
+          margin-top: 0;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: bold;
+          color: $greydark;
+        }
       }
     }
   }
@@ -534,20 +681,16 @@
 }
 #tabs-call-chart {
   width: 100%;
-
   #chart_calls {
     width: 100%;
     height: 400px;
-    margin-top: -60px;
   }
 }
 #tabs-data-chart {
   width: 100%;
-
   #chart_data {
     width: 100%;
     height: 400px;
-    margin-top: -60px;
     > .ltr {
       width: 100%;
       height: 400px;
@@ -556,11 +699,17 @@
 }
 #tabs-sms-chart {
   width: 100%;
-
   #chart_sms {
     width: 100%;
     height: 400px;
-    margin-top: -60px;
+  }
+}
+
+#tabs-tv-chart {
+  width: 100%;
+  #chart_tv {
+    width: 100%;
+    height: 400px;
   }
 }
 //CSS GLOBAL

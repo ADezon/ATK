@@ -99,11 +99,23 @@
             </ul>
           </div>
           <div class="sidebar-last-news">
-            <h5>Etiquetes</h5>
-            <ul class="list-last-news">
-              <li>NEWS 1</li>
-              <li>NEWS 2</li>
-              <li>NEWS 3</li>
+            <h5>DARRERES NOTÍCIES</h5>
+            <ul class="list-last-new">
+              <li>
+                <div class="image-block"><a href="#"><img src="uploaded_files/test-last-news.jpg"/></a></div>
+                <div class="date-new">8 DECEMBRE, 2016</div>
+                <a href="#">Lorem ipsum dolor sit amet consectetur</a>
+              </li>
+              <li>
+                <div class="image-block"><a href="#"><img src="uploaded_files/test-last-news.jpg"/></a></div>
+                <div class="date-new">8 DECEMBRE, 2016</div>
+                <a href="#">Lorem ipsum dolor sit amet consectetur</a>
+              </li>
+              <li>
+                <div class="image-block"><a href="#"><img src="uploaded_files/test-last-news.jpg"/></a></div>
+                <div class="date-new">8 DECEMBRE, 2016</div>
+                <a href="#">Lorem ipsum dolor sit amet consectetur</a>
+              </li>
             </ul>
           </div>
           <div class="sidebar-archive">
