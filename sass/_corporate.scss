@@ -1,13 +1,32 @@
 body.corporate{
   #header{
+    #topbar{
+      .links-topbar{
+        display: none;
+        @include breakpoint($tablet) {
+          display: block;
+        }
+      }
+    }
     #head{
       background: $white;
       .logo{
         width: auto;
+        @include breakpoint($tablet) {
+         padding: 0 10px;
+        }
         img{
           width: auto;
           margin: 19px 0;
+          @include breakpoint($tablet) {
+            width: 150px;
+            margin: 21px 0;
+          }
         }
+      }
+      .button-login-client{
+        background-color: $pink;
+        color: $white;
       }
       #nav-main{
         li{
@@ -34,6 +53,12 @@ body.corporate{
             border-left: 1px solid $products-fontcolor;
             padding: 0 15px;
           }
+        }
+      }
+      .menu-mobile{
+        color: $pink;
+        span{
+         background-color: $pink;
         }
       }
     }

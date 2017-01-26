@@ -87,6 +87,8 @@
             }
           }
           .search-form{
+            clear: none;
+            margin: 0;
             background-color: transparent;
             border: none;
             color: $greymedium;
@@ -1000,15 +1002,21 @@
           }
         }
         a {
+          color: white;
           display: block;
-          padding: 1.5em 3em;
           text-decoration: none;
+          font-size: 14px;
+          padding: 0;
+          &:hover {
+            color: black;
+          }
         }
         &:hover {
           background: #f0f0f0;
           @include breakpoint($tablet) {
             background-color: $greydark;
           }
+          a { color: black; }
         }
         .container-submenu{
           background-color: $grey;
@@ -1234,7 +1242,7 @@
   Mobile style's
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-  @media only screen and (max-width: 720px) {
+  @media only screen and (max-width: 768px) {
     .menu-container {
       width: 100%;
     }

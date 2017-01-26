@@ -58,6 +58,17 @@
     <div id="topbar" class="cont-wrapper">
         <div class="content">
             <div class="right">
+                <ul class="links-topbar">
+                    <li>
+                        <a href="#" title="">Contacte</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Prensa</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Bloc</a>
+                    </li>
+                </ul>
                 <div class="search">
                     <form>
                         <span class="icons icon-right"></span>
@@ -224,7 +235,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="title-level-1"><span>INNOVACIÓ</span>
+                  <div class="title-level-1"><span><a href="https://www.google.es" target="_blank">INNOVACIÓ</a></span>
                     </div>
                 </li>
                 <li>
