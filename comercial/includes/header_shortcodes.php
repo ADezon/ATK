@@ -11,11 +11,18 @@
   <!--BEGIN INYECTED AS REQUIRED-->
   <link rel="stylesheet" type="text/css" href="./js/flexslider/flexslider.css">
   <link rel="stylesheet" type="text/css" href="./js/slick-1.6.0/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./js/tooltipster/css/tooltipster.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <!--END INYECTED AS REQUIRED-->
 
   <!--BEGIN GLOBAL-->
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+
+  <!-- BEGIN FOR DATEPICKER !!!! -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/latest/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+  <!-- END FOR DATEPICKER !!!! -->
+
   <link rel="stylesheet" type="text/css" href="./css/at-styles.css">
   <!--BEGIN GLOBAL-->
 
@@ -29,9 +36,14 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-  <!-- // NEEDED FOR DATEPICKER !!!! -->
+  <!-- BEGIN FOR DATEPICKER !!!! -->
+  <script type="text/javascript" src="./js/daterangepicker/moment-with-locales.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+  <!-- BEGIN FOR DATEPICKER !!!! -->
+
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
   <script src="./js/enquire.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="./js/main.js"></script>
 
   <!--END GLOBAL-->
