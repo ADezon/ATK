@@ -1,0 +1,919 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: $webfont;
+  position: relative;
+}
+h1 {
+  clear: both;
+  color: $black;
+  font-size: 30px;
+  line-height: 34px;
+  margin: 50px 0 25px 0;
+  position: relative;
+}
+h2 {
+  font-size: 21px;
+  line-height: 28px;
+
+  &.main-subtitle{
+    clear: both;
+    color: $greymedium;
+    position: relative;
+    font-weight: bold;
+    margin: 0 0 25px 0;
+  }
+  &.global-subtitle {
+    color: $greydark;
+    font-size: 30px;
+    line-height: 46px;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+    &:after{
+      border-bottom: 2px solid $pink;
+      content:"";
+      display: block;
+      height: 2px;
+      margin: 0 auto;
+      padding-top: 15px;
+      position: relative;
+      text-align: center;
+      width: 130px;
+    }
+    @include breakpoint($tablet) {
+      font-size:20px;
+      line-height: 26px;
+    }
+    @include breakpoint($mobile) {
+      font-size:24px;
+      line-height: 28px;
+    }
+  }
+}
+h3{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28px;
+  margin: 15px 0;
+  @include breakpoint ($tablet) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+h4 {
+  margin: 15px 0;
+}
+h5 {
+  margin: 15px 0;
+}
+h6 {
+  margin: 15px 0;
+}
+ul {
+  list-style: none;
+  &.line-bullet li {
+    color: #58585A;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    &:before {
+      content: '- ';
+    }
+  }
+  &.bullets-rosa li {
+    margin-bottom: 8px;
+    &:before {
+      content: "\e923";
+      font-family: 'atelecom-icons' !important;
+      font-size: 8px;
+      color: $pink;
+      padding-right: 8px;
+    }
+  }
+}
+#main-content ul {
+  list-style: none;
+  li {
+    color: #58585A;
+    margin-bottom: 10px;
+    &:before {
+      content: "\e923";
+      font-family: 'atelecom-icons' !important;
+      font-size: 8px;
+      color: $pink;
+      padding-right: 6px;
+      position: relative;
+      top: -2px;
+
+    }
+  }
+}
+
+.full-centered {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.tx-right {
+  text-align: right;
+}
+.separador {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+table {
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  caption {
+    color: white;
+    font-size: 28px;
+    background-color: $pinklight;
+    text-align: center;
+    padding: 2%;
+
+  }
+  thead {
+    background-color: #cfd1d2;
+    td {
+      padding: 1% 2%;
+      box-sizing: border-box;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: auto;
+    }
+  }
+  tbody {
+    tr {
+      border: 1px solid #cfd1d2;
+
+      td {
+        padding: 1% 2%;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+      }
+    }
+  }
+  &.tres-columnas {
+    td {
+      vertical-align: top;
+    }
+    td:nth-child(1) {
+      width: 16%;
+    }
+    td:nth-child(2) {
+      width: 30%;
+    }
+    td:nth-child(3) {
+      width: 54%;
+    }
+  }
+}
+
+.half-page {
+  float: left;
+  width: 50%;
+  @include breakpoint($tablet) {
+    width: 100%;
+  }
+}
+// GENERAL CLASSES AND TAGS
+.left{
+  display: block;
+  float: left;
+  position: relative;
+}
+.right{
+  display: block;
+  float: right;
+  position: relative;
+}
+.clear {
+  clear: both;
+}
+.pink {
+  color:$pink;
+}
+.treinta {
+  font-size: 30px;
+}
+.twenty {
+  font-size: 20px;
+}
+.bold {
+  font-weight: bold;
+}
+.grey-medium {
+  color: $greymedium;
+}
+a {
+  text-decoration: none !important;
+  color: $pink;
+  width: auto;
+  &.button-pink {
+    background-color: $pink;
+    border-radius: 4px;
+    color: $white;
+    display: inline-block;
+    font-size:16px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 4px 16px;
+    text-transform: uppercase;
+    text-align: center;
+    &.bp-w-auto{
+      width: auto;
+      word-break: keep-all;
+    }
+    &:hover{
+      background-color: $pinklight;
+    }
+    &:active{
+      background-color: $pinkdark;
+    }
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 22px;
+    }
+  }
+  &.button-active {
+    display: inline-block;
+    background-color: $greymedium;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+    &:hover {
+      background-color: black;
+    }
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 22px;
+    }
+    @include breakpoint($mobile) {
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
+  &.button-disabled {
+    display: inline-block;
+    background-color: #cfd1d2;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: auto;
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 22px;
+    }
+    @include breakpoint($mobile) {
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
+  &.underlined {
+    text-decoration: underline;
+  }
+  &.button-black {
+    background-color: black;
+    border-radius: 4px;
+    color: $white;
+    display: inline-block;
+    font-size:16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0 auto;
+    padding: 4px 16px;
+    position: relative;
+    text-transform: uppercase;
+    width: 180px;
+    &.bp-w-auto{
+      width: auto;
+      word-break: keep-all;
+    }
+    &:hover{
+      background-color: grey;
+    }
+    &:active{
+      background-color: $gris2;
+    }
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 18px;
+    }
+  }
+  &.button-action {
+    background-color: $pinkdark;
+    border-radius: 4px;
+    color: $white;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: bold;
+    padding: 4px 16px;
+    text-transform: uppercase;
+    width: auto;
+    &:hover{
+      background-color: $pinklight;
+    }
+    &:active{
+      background-color: $pinkdark;
+    }
+    .icons{
+      font-size: 18px;
+      vertical-align: text-bottom;
+      padding-right: 5px;
+    }
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 18px;
+    }
+    @include breakpoint($mobile) {
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
+  &.button-clean {
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 0;
+    color: $pink;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 22px;
+    }
+    @include breakpoint($mobile) {
+      margin: 10px 0;
+      width: 100%;
+    }
+  }
+}
+p{
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+// BEGIN OVERRIDE LR defaults
+#wrapper {
+  padding-top: 0;
+}
+.container-fluid {
+  padding: 0;
+}
+// END OVERRIDE LR defaults
+.cont-wrapper{
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  .content{
+    @include clearfix();
+    display: block;
+    margin:0 auto;
+    max-width: 1024px;
+    overflow: hidden;
+    padding: 0 10px;
+    position: relative;
+    @include breakpoint ($mobile) {
+      padding: 0 18px;
+    }
+    &.content-big{
+      max-width: 1024px;
+      padding: 0;
+    }
+    /* Page with sidebar */
+    .sidebar{
+      position: relative;
+      display: block;
+      float: left;
+      width: 25%;
+      padding-right: 5%;
+      margin-bottom: 40px;
+      @include breakpoint($medium) {
+        width: 35%;
+      }
+      @include breakpoint($tablet) {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+      }
+      li:before {
+        content: "";
+        display: none;
+      }
+      &.righted {
+        width: 32%;
+        padding-right: 0;
+        @include breakpoint($tablet) { width: 100%; }
+      }
+    }
+    .content-ws {
+      position: relative;
+      display: block;
+      float: left;
+      width: 75%;
+      margin-bottom: 40px;
+      @include breakpoint($medium) {
+        width: 65%;
+      }
+      @include breakpoint($tablet) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      &.righted {
+        width: 68%;
+        padding-right: 2%;
+        @include breakpoint($tablet) {
+          padding-right: 0;
+          width: 100%;
+        }
+      }
+    }
+    /* Breadcrumb & Title */
+    .breadcrumb-container{
+      color: #9c9e9f;
+      font-size: 12px;
+      line-height: 15px;
+      margin: 15px 0 25px 0;
+      height: 12px;
+
+      .portlet-title-text,
+      .hide-accessible {
+        display: none;
+      }
+      .breadcrumb {
+        background: none transparent;
+        li {
+          float: left;
+          margin-right: 4px;
+          &:before {
+            content: " / ";
+          }
+          &:first-child:before {
+            content: '';
+          }
+          &.not-link,
+          &.not-link a {
+            font-weight: bold;
+          }
+        }
+      }
+
+      a{
+        color: #9c9e9f;
+        font-size: 12px;
+        //font-weight: bold;
+        line-height: 15px;
+        margin: 15px 0 25px 0;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+
+    /* Field Body */
+    .field-body{
+      position: relative;
+      display: block;
+      margin-bottom: 25px;
+    }
+  }
+  p{
+    color:$greymedium;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    @include breakpoint($tablet) {
+      font-size:14px;
+      line-height: 18px;
+    }
+    strong{
+      font-weight: bold;
+    }
+  }
+  &.bg-lightpink {
+    background-color: $pink_superlight;
+    padding: 40px 0;
+    a {
+      text-decoration: underline;
+    }
+  }
+  &.only-mobile {
+    display: none;
+    @include breakpoint($mobile) {
+      display: block;
+    }
+  }
+  &.only-desktop {
+    display: block;
+    @include breakpoint($mobile) {
+      display: none;
+    }
+  }
+}
+#main-content .breadcrumb {
+  background: none transparent;
+  li {
+    float: left;
+    margin-right: 4px;
+    &:before {
+      content: " / ";
+    }
+    &:first-child:before {
+      content: '';
+    }
+    &.not-link,
+    &.not-link a {
+      font-weight: bold;
+    }
+  }
+}
+
+
+.only-mobile {
+  display: none;
+  @include breakpoint($mobile) {
+    display: block;
+  }
+}
+.only-desktop {
+  display: block;
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+.seventy {
+  width: 70%;
+  @include breakpoint($mobile) {
+    width: 100%;
+  }
+}
+.readmore {
+  text-decoration: none;
+  &:after {
+    content: '\e919';
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'atelecom-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    top: 2px;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+.hard {
+  font-weight: bold;
+}
+// AVISO LEGAL
+.numbered-lists {
+  counter-reset: this-list-counter;
+  display: block;
+  margin-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+  dt {
+    padding: 0 15px 0 0;
+    &:first-child{
+      &:before{
+        margin-top: 0;
+      }
+    }
+    &:before {
+      border: 3px solid $pink;
+      border-radius: 50%;
+      clear: both;
+      color: $pink;
+      content: counter(this-list-counter);
+      counter-increment: this-list-counter;
+      display: block;
+      float:left;
+      font-size: 20px;
+      font-weight: bold;
+      height: 41px;
+      line-height: 35px;
+      margin-bottom: 20px;
+      margin-top:25px;
+      position: relative;
+      text-align: center;
+      width: 41px;
+    }
+    p{
+      clear: both;
+      a{
+        color: $pink;
+      }
+    }
+  }
+}
+.small-item-info {
+  width: 100%;
+  float: left;
+  p {
+    font-size: 14px;
+  }
+}
+
+
+.config-box {
+  float: left;
+  width: 100%;
+  position: relative;
+  display: block;
+  background-color: $greysoft;
+  padding: 20px;
+  margin: 20px 0 0 0;
+  @include breakpoint($mobile) {
+    margin: 6px 0;
+  }
+  .title-config-box {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    color: $greydark;
+    margin: 0 0 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .inner-box {
+    @include span(12 of 12);
+    background-color: white;
+    padding: 10px;
+    &.trans {
+      background-color: transparent;
+    }
+    @include breakpoint ($mobile) {
+      padding: 0;
+      background-color: transparent;
+    }
+
+    .product-promo {
+      float: left;
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 20px;
+      background-color: white;
+      text-align: center;
+      @include breakpoint ($mobile) {
+        .big-pink {
+          font-size: 24px;
+        }
+      }
+    }
+    h5 {
+      color: $pink;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-top: 15px;
+      @include breakpoint ($mobile) {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+
+    > .gallery-item {
+      @include gallery(4 of 12);
+      @include breakpoint ($mobile) {
+        width: 100% !important;
+        margin: 0 0 16px 0 !important;
+        padding: 0 10px;
+        border: 2px solid white;
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.7);
+      }
+    }
+    > .product-list-blocks {
+      width: 100%;
+      background-color: white;
+      margin-bottom: 16px;
+      @include clearfix();
+      @include breakpoint ($mobile) {
+        margin-bottom: 10px;
+        padding: 12px;
+      }
+
+      .img-container {
+        float: left;
+        width: 40%;
+        padding: 26px;
+        @include breakpoint ($mobile) {
+          padding: 0;
+        }
+      }
+      .product-description {
+        float: left;
+        width: 60%;
+        padding: 25px 10px;
+        @include breakpoint ($mobile) {
+          width: 55%;
+          padding: 0 0 0 5%;
+        }
+        .product-title {
+          font-size: 26px;
+          @include breakpoint ($mobile) {
+            font-size: 14px;
+          }
+          .big {
+            font-size: 36px;
+            @include breakpoint ($mobile) {
+              font-size: 20px;
+            }
+          }
+        }
+        a.button-pink,
+        a.button-active {
+          float: left;
+          width: 100%;
+          clear: none;
+          margin-top: 16px;
+          @include breakpoint ($mobile) {
+            padding: 3px 0;
+            line-height: 14px;
+            margin-bottom: 0;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+    .custom-links a {
+      display: block;
+      width: 100%;
+      float: left;
+      margin-bottom: 3px;
+
+    }
+    > .custom-item {
+      width: 33%;
+      float: left;
+
+      &.one {
+        width: 40%;
+      }
+      &.two {
+        width: 30%;
+      }
+      &.three {
+        width: 30%;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      @include breakpoint ($mobile) {
+
+        &.one {
+          margin: 20px 0;
+          width: 50%;
+        }
+        &.two {
+          margin: 20px 0;
+          width: 50%;
+        }
+        &.three {
+          margin: 10px 0 0 0;
+          width: 100%;
+        }
+      }
+      .actions-container {
+        float: left;
+        padding: 6px 0 0 30px;
+        @include breakpoint ($mobile) {
+          width: 100%;
+          padding: 0;
+        }
+        a {
+          text-align: center;
+          width: 100%;
+          float: left;
+          margin-bottom: 3px;
+          @include breakpoint ($mobile) {
+            margin: 3px 0;
+          }
+        }
+      }
+    }
+    .big-pink {
+      color: $pink;
+      font-size: 26px;
+      line-height: 26px;
+      @include breakpoint ($mobile) {
+        font-size: 14px;
+      }
+    }
+    img {
+      vertical-align: middle;
+      width: 100%;
+    }
+    .prod-description {
+      color: $pink;
+      font-size: 21px;
+      font-weight: bold;
+    }
+  }
+}
+
+// BAR STRENGTH
+meter {
+  background-color: $grey;
+  margin: 0;
+  height: 14px;
+}
+//
+meter::-webkit-meter-bar {
+  background: none;
+  background-color: $grey;
+}
+/* Webkit based browsers */
+meter::-webkit-meter-optimum-value {
+  background: $pink;
+}
+
+/* Gecko based browsers */
+meter::-moz-meter-bar {
+  background: $grey;
+}
+
+
+.alert-invoice-unpaid{
+  background-color: $pink_superlight;
+  display: block;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 8px 35px;
+  position: relative;
+  @include breakpoint($tablet) {
+    padding: 15px 20px;
+  }
+  p{
+    color: $pink;
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    padding: 5px 0;
+    position: relative;
+    text-align: left;
+    width: 75%;
+    strong{
+      font-weight: bold;
+    }
+    @include breakpoint($tablet) {
+      clear: both;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+  }
+  .button-pay-invoice{
+    background-color: $pink;
+    border-radius: 3px;
+    color:$white;
+    display: block;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 22px;
+    padding: 5px 10px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 150px;
+    @include breakpoint($tablet) {
+      clear: both;
+      float: none;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,8 +1,7 @@
-LR/*
-.sass-cache/*
-css/*
+GarbageTests/*
+*/.sass-cache/*
+*/css/*
 .idea
 .editorconfig
 .htaccess
 *.sql
-

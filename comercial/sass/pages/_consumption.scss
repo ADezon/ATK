@@ -1,0 +1,819 @@
+// CSS ONLY FOR PAGES CONSUMPTION
+.page-consumption{
+  .select-w-title{
+    @include breakpoint($tablet) {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+    }
+    @include breakpoint($mobile) {
+      width: 100%;
+    }
+    select{
+      @include breakpoint($tablet) {
+        width: 85%;
+      }
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
+    }
+  }
+  h2.global-subtitle{
+    margin-top: 40px;
+  }
+  .title-consumption-product{
+    background-color: $products-bggrey;
+    color: $greydark;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 32px;
+    margin: 50px 0 0 0;
+    padding: 5px 20px;
+    text-align: center;
+    width: 100%;
+
+  }
+  .films-consumption{
+    .consumption-current-month{
+      position: relative;
+      display: block;
+      clear: both;
+      overflow: hidden;
+      margin-bottom: 25px;
+      .title-consumption-current-month{
+        position: relative;
+        display: block;
+        float:left;
+        padding-right: 30px;
+        font-size: 21px;
+        line-height: 35px;
+        color: $greydark;
+        font-weight: bold;
+      }
+      .amount-consumption-current-month{
+        position: relative;
+        display: block;
+        float:left;
+        font-size: 30px;
+        line-height: 35px;
+        color: $greydark;
+        font-weight: bold;
+      }
+    }
+    .title-films-list{
+      position: relative;
+      display: block;
+      float: left;
+      text-align: left;
+      font-size: 16px;
+      line-height: 21px;
+      color: $greydark;
+      .icon{
+        color: $pink;
+        font-size: 20px;
+        padding-right: 10px;
+      }
+    }
+    .list-films{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      clear: both;
+      .film-row{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        clear: both;
+        margin-top:20px;
+      }
+      .element-film{
+        @include span(2 of 12);
+        @include breakpoint($tablet) {
+          @include span(4 of 12);
+          margin-bottom: 20px;
+        }
+        @include breakpoint($mobile) {
+          @include span(12 of 12);
+        }
+        &.last{
+          @include last;
+        }
+        &.last-tablet{
+          @include breakpoint($tablet) {
+            @include last;
+          }
+        }
+        .film-image{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          img{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            width: 100%;
+          }
+        }
+        .film-title{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          text-align: center;
+          color: $greydark;
+          font-size: 16px;
+          line-height: 21px;
+          margin-top:5px;
+        }
+        .film-info{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          text-transform: uppercase;
+          margin-top:5px;
+          .film-quality{
+            position: relative;
+            display: block;
+            float: left;
+            width: 50%;
+            text-align: right;
+            color: $greydark;
+            font-size: 16px;
+            line-height: 25px;
+            padding-right: 5px;
+          }
+          .film-price{
+            position: relative;
+            display: block;
+            float: left;
+            width: 50%;
+            font-weight: bold;
+            text-align: left;
+            color: $greydark;
+            font-size: 21px;
+            line-height: 25px;
+            padding-left:5px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .consumption-product-left{
+    padding-right: 20px;
+    h3 {
+      font-size: 20px;
+    }
+    &.centered {
+      padding: 0 0 0 38px;
+      width: 85%;
+      margin: 0 auto;
+    }
+  }
+  .consumption-product-right{
+    padding-left: 20px;
+  }
+  .result-table-consumption{
+    clear: both;
+    display: block;
+    margin: 0;
+    position: relative;
+    @include breakpoint($tablet) {
+      margin: 10px 0;
+    }
+    .content{
+      @include breakpoint($tablet) {
+        padding: 0;
+      }
+    }
+    .select-w-title{
+      @include breakpoint($tablet) {
+        padding: 0 18px;
+      }
+    }
+    .consumption-counter-paginator{
+      display: block;
+      float: right;
+      overflow: hidden;
+      padding-top: 56px;
+      position: relative;
+      width: 75%;
+      @include breakpoint($tablet) {
+        float: none;
+        padding: 5px 18px;
+        width: 100%;
+      }
+      .counter-resultsperpage {
+        color: #58585A;
+        display: block;
+        float: right;
+        font-size: 16px;
+        font-style: italic;
+        line-height: 24px;
+        padding-right: 20px;
+        position: relative;
+        @include breakpoint($tablet) {
+          clear: both;
+          float: left;
+          width: 100%;
+          padding: 0;
+        }
+      }
+    }
+    .results-paginator-mobile{
+      @include breakpoint($tablet) {
+        margin: 20px 10px;
+      }
+    }
+    .consumption-list{
+      clear: both;
+      display: block;
+      float: left;
+      margin: 20px 0;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      .consumption-list-title{
+        background-color: #cfd1d2;
+        clear: both;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        @include breakpoint($tablet) {
+          display: none;
+        }
+        span{
+          color: $white;
+          display: block;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 20px;
+          padding: 5px 0;
+          position: relative;
+          text-align: left;
+          text-transform: uppercase;
+        }
+        .consumption-list-column{
+          display: block;
+          float: left;
+          padding: 0 2%;
+          position: relative;
+          width: 18%;
+          @include breakpoint($intermedio) {
+            width: 20%;
+          }
+          &.column-amount{
+            display: block;
+            float: right;
+            padding: 0 2%;
+            position: relative;
+            width: 28%;
+            @include breakpoint($intermedio) {
+              width: 20%;
+            }
+            span{
+              text-align: right;
+            }
+          }
+        }
+      }
+      .consumption-list-row{
+        background-color: $white;
+        border-bottom: 1px solid #cfd1d2;
+        border-left: 1px solid #cfd1d2;
+        border-right: 1px solid #cfd1d2;
+        clear: both;
+        display: block;
+        overflow: hidden;
+        padding: 3px 0;
+        position: relative;
+        @include breakpoint($tablet) {
+          border-bottom: 1px solid #cfd1d2;
+          border-left: none;
+          border-right: none;
+          border-top: 1px solid #cfd1d2;
+          height: 70px;
+        }
+        span, a{
+          color: $greydark;
+          display: block;
+          font-size: 14px;
+          line-height: 20px;
+          padding: 5px 0;
+          position: relative;
+          text-align: left;
+          text-transform: uppercase;
+          @include breakpoint($tablet) {
+            text-align: left;
+          }
+        }
+        .consumption-list-column{
+          display: block;
+          float: left;
+          padding: 0 2%;
+          position: relative;
+          width: 18%;
+          @include breakpoint($intermedio) {
+            width: 20%;
+          }
+          @include breakpoint($tablet) {
+            width: 40%;
+          }
+          a{
+            color: $pink;
+            text-decoration: underline;
+          }
+          &.column-date {
+            @include breakpoint($tablet) {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 50%;
+            }
+            span{
+              @include breakpoint($tablet) {
+                text-align: left;
+              }
+            }
+          }
+          &.column-time {
+            @include breakpoint($tablet) {
+              position: absolute;
+              width: 50%;
+              right: 0;
+              bottom: 0;
+            }
+            span{
+              @include breakpoint($tablet) {
+                text-align: right;
+              }
+            }
+          }
+          &.column-amount{
+            display: block;
+            float: right;
+            padding: 0 2%;
+            position: relative;
+            width: 28%;
+            @include breakpoint($intermedio) {
+              width: 20%;
+            }
+            span{
+              font-weight: bold;
+              text-align: right;
+            }
+          }
+        }
+
+      }
+    }
+  }
+  .consumption-period {
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #979797;
+    background-color: #FBFBFB;
+    padding: 40px 0;
+    #periodes-consum{
+      > h3{
+        margin-bottom: 0;
+      }
+    }
+    .calendar-container {
+      float: left;
+      width: 370px;
+    }
+    #date-ranges {
+      border: 1px solid #ccc;
+      font-size: 16px;
+      color: $greydark;
+      background: url("../images/icons/calendar.png") no-repeat 8px center white;
+      padding-left: 40px;
+    }
+
+    input[type=submit], input[type=button] {
+      float: left;
+      clear: none;
+      margin: 10px 8px;
+    }
+    a.button-active {
+      float: left;
+      margin: 10px;
+    }
+    .message {
+      float: left;
+      width: 250px;
+      text-transform: none;
+      font-style: italic;
+      line-height: 20px;
+      margin: 5px 0 0 14px;
+    }
+  }
+
+  // TABLE / GRAPHIC
+  .graphic-table-list{
+    clear: both;
+    display: block;
+    float: left;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    @include breakpoint($tablet) {
+      display: none;
+    }
+    .graphic-table-title{
+      background-color: $gris3;
+      clear: both;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      padding: 10px 0;
+      span, a{
+        color: $white;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        padding: 5px 0;
+        position: relative;
+        text-align: right;
+        text-transform: uppercase;
+      }
+      .graphic-table-column{
+        display: block;
+        float: left;
+        padding: 0 2%;
+        position: relative;
+        width: 14%;
+        text-align: right;
+        &.first-column{
+          width: 16%;
+          span, a{
+            text-align: left;
+          }
+        }
+      }
+    }
+    .graphic-table-row{
+      background-color: $white;
+      border-bottom: 1px solid #cfd1d2;
+      border-left: 1px solid #cfd1d2;
+      border-right: 1px solid #cfd1d2;
+      clear: both;
+      display: block;
+      overflow: hidden;
+      padding:10px 0;
+      position: relative;
+      span, a{
+        color: $greymedium;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 5px 0;
+        position: relative;
+        text-align: right;
+        text-transform: uppercase;
+      }
+      .graphic-table-column{
+        display: block;
+        float: left;
+        padding: 0 2%;
+        position: relative;
+        width: 14%;
+        text-align: right;
+        &.first-column{
+          width: 16%;
+          span, a{
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .graphic-table-list{
+    &.graphic-table-list-mobile{
+      display: none;
+      @include breakpoint($tablet) {
+        display: block;
+      }
+      .graphic-table-title{
+        .graphic-table-column{
+          padding: 0 2%;
+          width: 33%;
+          &.first-column{
+            width: 33%;
+          }
+        }
+      }
+      .graphic-table-row{
+        .graphic-table-column{
+          padding: 0 2%;
+          width: 33%;
+          &.first-column{
+            width: 33%;
+          }
+        }
+      }
+    }
+  }
+  // TABS EXCEPTION FOR PAGES CONSUMPTION
+  .tabs-graphic-table{
+    margin-bottom: 0;
+    .tabs-mobile-selector{
+      .atSelect {
+        width: 100% !important;
+        text-align: center;
+        margin-top: 40px;
+      }
+    }
+    .ui-tabs{
+      // TABS FIRST LEVEL
+      &.tabs-first-level{
+        > .ui-tabs-nav .ui-tabs-tab {
+          margin-top: 40px;
+          width: 33%;
+          &:before {
+            height: 40px;
+          }
+          &.ui-tabs-active {
+            background-color: transparent;
+            &:before {
+              display: block;
+            }
+            & + .ui-tabs-tab {
+              &:before {
+                display: block;
+              }
+            }
+            a{
+              h2.global-subtitle{
+                &:after {
+                  display: block;
+                }
+              }
+            }
+          }
+          &:first-child {
+            &:before {
+              display: none;
+            }
+          }
+          a{
+            padding: 0;
+            text-align: center;
+            width: 99%;
+            h2.global-subtitle{
+              margin: 0;
+              font-weight: normal;
+              &:after {
+                display: none;
+              }
+            }
+          }
+        }
+        > .ui-tabs-panel{
+          background-color: transparent;
+          padding: 30px 0 0 0;
+        }
+      }
+      &.two-tabs{
+        > .ui-tabs-nav{
+          margin: 0 25%;
+          .ui-tabs-tab {
+            width: 50%;
+          }
+        }
+      }
+    }
+    // TABS SECOND LEVEL
+    .tabs-second-level{
+      .ui-tabs-nav{
+        overflow: hidden;
+        float: right;
+        position: relative;
+        display: block;
+        clear: both;
+        @include breakpoint ($mobile) {
+          float:none;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .ui-tabs-tab{
+          @include breakpoint ($mobile) {
+            width: 50%;
+            float: left;
+            text-align: center;
+          }
+          a{
+            @include breakpoint ($mobile) {
+              width: 100%;
+              text-align: center;
+            }
+            .icons{
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+      .ui-tabs-panel{
+        clear: both;
+        display: block;
+        background-color: transparent;
+        position: relative;
+        overflow: hidden;
+        float: none;
+        padding: 0;
+        h4{
+          margin-top: 0;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: bold;
+          color: $greydark;
+        }
+      }
+    }
+  }
+}
+/*
+ * DateRangePicker CSS
+ */
+
+.daterangepicker {
+  font-family: "Titillium Web", sans-serif !important;
+  .ranges li {
+    font-size: 14px;
+    background: #f3f3f3;
+    border: 1px solid #f5f5f5;
+    border-radius: 4px;
+    color: $pink;
+    padding: 3px 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+
+  .ranges li.active {
+    font-weight: bold;
+  }
+  .btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .btn-success {
+    background-color: $pink;
+    border-color: $pink;
+  }
+  .btn-success:hover {
+    background-color: $pink;
+    border-color: $pink;
+  }
+  .cancelBtn {
+    color: white;
+    background-color: #58585a;
+  }
+
+  td.active,
+  td.active:hover {
+    background-color: $pink !important;
+  }
+  td.in-range {
+    background-color: #f3dbe8;
+  }
+  .calendar th {
+    background-color: white;
+  }
+  .input-mini.form-control {
+    background: url("../images/icons/calendar.png") no-repeat 96% center white;
+  }
+}
+#tabs-call-chart {
+  width: 100%;
+  #chart_calls {
+    width: 100%;
+    height: 400px;
+  }
+}
+#tabs-data-chart {
+  width: 100%;
+  #chart_data {
+    width: 100%;
+    height: 400px;
+    > .ltr {
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+#tabs-sms-chart {
+  width: 100%;
+  #chart_sms {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+#tabs-tv-chart {
+  width: 100%;
+  #chart_tv {
+    width: 100%;
+    height: 400px;
+  }
+}
+//CSS GLOBAL
+.current-consumption {
+  float: left;
+  margin-top: 22px;
+  width: 100%;
+  @include breakpoint ($mobile) {
+    margin-top: 12px;
+  }
+  .product-consumption {
+    margin-bottom: 24px;
+    .icons {
+      float: left;
+      font-size: 24px;
+    }
+  }
+  .info-list-product-consumption {
+    clear: both;
+    display: block;
+    padding-left: 38px;
+    position: relative;
+    li {
+      clear: both;
+      display: block;
+      margin-bottom: 15px;
+      overflow: hidden;
+      position: relative;
+      span{
+        display: block;
+        float: left;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 26px;
+        position: relative;
+        text-align: left;
+        width: 30%;
+        @include breakpoint($mobile) {
+          width: 50%;
+        }
+      }
+      meter{
+        display: block;
+        float: right;
+        margin: 6px 2%;
+        position: relative;
+        width: 36%;
+        @include breakpoint($mobile) {
+          clear: both;
+          float: none;
+          margin:6px 0;
+          width: 100%;
+        }
+      }
+      .not-included{
+        color: $pink;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bold;
+        padding: 0 5px;
+        @include breakpoint($mobile) {
+          clear: both;
+          float: none;
+          padding: 0;
+          width: 100%;
+        }
+      }
+      .info-detail-product-consumption {
+        color: $pink;
+        float: right;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right:0;
+        text-align: right;
+        @include breakpoint($mobile) {
+          padding: 0;
+          text-align: right;
+          width: auto;
+        }
+        span{
+          color: $greydark;
+          width: auto;
+        }
+        .info-detail-consumed{
+          font-size: 21px;
+          font-weight: bold;
+          line-height: 26px;
+          padding-right: 5px;
+          &.excess{
+            color: $pink;
+          }
+        }
+        .info-detail-consumption-included{
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}

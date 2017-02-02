@@ -1,0 +1,132 @@
+#footer {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 80px;
+  li:before {
+    content: "";
+    display: none;
+  }
+  //a.button-pink,
+  //a.button-action {
+  //  display: block;
+  //}
+  #footer-links{
+    background: $pink url("../images/bg-pattern-footer.png") no-repeat 100% 100%;
+    padding: 70px 0 60px 0;
+    .column-footer{
+      @include span(3 of 12);
+      @include breakpoint($tablet) {
+        @include span(4 of 12 last);
+        padding: 0 20px;
+      }
+      @include breakpoint($mobile) {
+        display: none;
+      }
+      &.last{
+        @include last;
+        @include breakpoint($tablet) {
+          display: block;
+          @include span(12 of 12);
+        }
+      }
+      h3{
+        clear: both;
+        color: $white;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        margin:10px 0;
+      }
+      ul{
+        margin-bottom: 20px;
+        li{
+          display: block;
+          margin-bottom:10px;
+          overflow: hidden;
+          position: relative;
+          a{
+            color: white;
+            font-size: 14px;
+            line-height: 20px;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+          &:before {
+            content: "";
+            display: none;
+          }
+        }
+      }
+      .social-links{
+        li{
+          display: block;
+          float:left;
+          margin-right:10px;
+          position: relative;
+          a{
+            color: $white;
+            font-size: 35px;
+          }
+        }
+      }
+      .phone-callcenter{
+        color: $white;
+        font-size: 36px;
+        line-height: 40px;
+      }
+    }
+  }
+  #legal{
+    background-color: $greydark;
+    color: $white;
+    font-size:12px;
+    line-height: 15px;
+    padding: 8px 0;
+    .copyright{
+      display: block;
+      float: left;
+      padding-right: 10px;
+      position:relative;
+      @include breakpoint($mobile) {
+        clear: both;
+        float:none;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }
+    ul{
+      display: block;
+      float: left;
+      position:relative;
+      @include breakpoint($mobile) {
+        @include span(12 of 12 last);
+        float: left;
+      }
+      li{
+        border-left: 1px solid $white;
+        display: block;
+        float: left;
+        padding:0 10px;
+        position:relative;
+        @include breakpoint($mobile) {
+          @include span(6 of 12 last);
+          float: left;
+          margin-bottom: 10px;
+          text-align: center;
+          &:nth-child(2n+1){
+            border-left: none;
+          }
+        }
+        a{
+          color: $white;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

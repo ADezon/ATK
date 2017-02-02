@@ -1,0 +1,9 @@
+.numbered-lists {
+  counter-reset: this-list-counter;
+  dt {
+    &:before {
+      content: counter(this-list-counter);
+      counter-increment: this-list-counter;
+    }
+  }
+}

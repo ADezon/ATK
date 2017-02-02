@@ -1,0 +1,13 @@
+.tooltipster-default{
+  background: $fadepinkright;
+  border: 2px solid $fadepinkright;
+  border-radius: 5px;
+  color: $fadepinkright;
+  .tooltipster-content {
+    background-color: $white;
+    color: $pink;
+    a {
+      color: $pinkdark;
+    }
+  }
+}

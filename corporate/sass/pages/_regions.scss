@@ -1,0 +1,215 @@
+/* FAKE REGION PACK */
+#region-pack{
+  background-color: $white;
+  .i-region-pack{
+    display: block;
+    margin: 0 auto;
+    max-width: 1440px;
+    position: relative;
+    width:100%;
+  }
+}
+
+/* REGION TV */
+#region-tv{
+  .bg-region{
+    height: 100%;
+    position: absolute;
+    width:100%;
+  }
+  .content{
+    padding: 65px 0;
+    .i-yomvi{
+      display: block;
+      margin: 0 auto;
+      max-width: 1092px;
+      padding: 0 20px;
+      position: relative;
+      width:100%;
+    }
+    .info-tv{
+      @include push(2 of 12);
+      @include span(5 of 12);
+      color: $white;
+      text-align: left;
+      @include breakpoint($tablet) {
+        @include span(12 of 12 last);
+        text-align: center;
+      }
+      .title{
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 53px;
+        margin-bottom: 10px;
+        @include breakpoint($tablet) {
+          font-size: 30px;
+          line-height: 35px;
+        }
+        @include breakpoint($mobile) {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      .subtitle{
+        font-size: 24px;
+        line-height: 30px;
+        @include breakpoint($tablet) {
+          font-size: 20px;
+          line-height: 25px;
+        }
+        @include breakpoint($mobile) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    .info-tv-price{
+      @include push(1 of 12);
+      @include span(3 of 12);
+      @include breakpoint($tablet) {
+        @include span(12 of 12);
+        margin-top: 30px;
+        text-align: center;
+      }
+      span{
+        color: $white;
+        display: block;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 34px;
+        position: relative;
+        text-align: center;
+      }
+      .price{
+        display: block;
+        font-size: 52px;
+        line-height: 60px;
+        margin-bottom:20px;
+        position: relative;
+        text-align: center;
+      }
+      .price-text{
+        color: $white;
+        display: inline-block;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 34px;
+        position: relative;
+        text-align: center;
+      }
+    }
+    .button-pink{
+      margin-top: 10px;
+      @include breakpoint($tablet) {
+        margin-top: 0;
+      }
+    }
+  }
+
+}
+
+/* FAKE REGION TVPROGRAM */
+#region-tvprogram{
+  background-color: #eee;
+  .i-region-tvprogram{
+    display: block;
+    margin: 0 auto;
+    max-width: 1440px;
+    position: relative;
+    width:100%;
+  }
+}
+
+/* REGION SIGNUP */
+#region-signup{
+  background-color: $greydark;
+  padding: 52px 0;
+  h2{
+    color: $white;
+    display:block;
+    font-size: 30px;
+    line-height: 46px;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+    @include breakpoint($tablet) {
+      font-size:20px;
+      line-height: 26px;
+    }
+  }
+  ul{
+    margin-top: 20px;
+    li{
+      &:before {
+        content: "";
+        display: none;
+      }
+      @include span(3 of 12);
+      float:left;
+      margin-bottom: 20px;
+      @include breakpoint($tablet) {
+        @include span(6 of 12 last);
+        float:left;
+      }
+      @include breakpoint($mobile) {
+        @include span(12 of 12 last);
+      }
+      &.last{
+        @include last;
+        div{
+          border:none;
+        }
+      }
+      .element-signup{
+        border-right: 1px solid #cfd1d2;
+        color: $white;
+        display: block;
+        font-size: 21px;
+        line-height: 24px;
+        overflow: hidden;
+        padding: 0 15px;
+        position: relative;
+        text-align: center;
+        @include breakpoint($mobile) {
+          border:none;
+        }
+        .icons{
+          color: #cfd1d2;
+          font-size: 60px;
+          padding-right: 10px;
+          text-align: center;
+          @include breakpoint($tablet) {
+            font-size: 30px;
+          }
+        }
+        span{
+          display: block;
+          margin-top: 20px;
+          position: relative;
+          text-align:center;
+          @include breakpoint($tablet) {
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+      &:nth-child(2) .element-signup {
+        @include breakpoint ($tablet) {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+/* FAKE REGION HELP */
+#region-help{
+  background-color: $white;
+  .i-region-help{
+    display: block;
+    margin: 50px auto 110px;
+    max-width: 892px;
+    position: relative;
+    width:100%;
+  }
+}
