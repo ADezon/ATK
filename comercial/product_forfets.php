@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="forfets-element even">
+                <li class="forfets-element even highlighted">
                     <div class="content">
                         <div class="forfets-element-column title-forfet">
                             <span>Forfet</span><span class="number-forfet">15</span>
@@ -90,6 +90,13 @@
                             <p class="price-forfet-price">15€<span class="price-month">/mes</span></p>
                             <a class="button-pink" href="#">M'interessa</a>
                         </div>
+
+                      <div class="highlight-message">
+                        <div class="one">20%</div>
+                        <div class="two">de descompte</div>
+                        <div class="three">en Forfets Mobiland i superiors</div>
+                      </div>
+
                     </div>
                 </li>
 

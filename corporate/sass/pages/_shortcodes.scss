@@ -617,8 +617,8 @@ h3.title-step {
   &.bg-grey {
     /* ADDs BACK-Office configs to Styles HERE */
     .ui-tabs .ui-tabs-nav .ui-tabs-tab {
-    background-color: white; /* <= INYECTAR AQUI EL COLOR de fondo TAB inactiva */
-  }
+      background-color: white; /* <= INYECTAR AQUI EL COLOR de fondo TAB inactiva */
+    }
 
     .ui-state-default a, .ui-state-default a:link {
       //color: black;
@@ -1313,6 +1313,83 @@ ul.floating-menu {
     }
   }
 
+  .items-container {
+    @include span(12);
+
+    > div {
+      @include gallery(4 of 12);
+      text-align: center;
+      margin-bottom: 6%;
+      @include breakpoint ($mobile){
+        width: 100%;
+        margin: 0 0 15px 0 !important;
+      }
+
+      > div {
+        margin-bottom: 6px;
+      }
+      .person {
+        margin-top: 14px;
+        color: $pink;
+        font-size: 18px;
+      }
+      .department {
+        color: $products-fontcolor;
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+      .social {
+        color: $products-fontcolor;
+        font-size: 14px;
+        line-height: 18px;
+        .linkedin:before {
+          content: "\e937";
+          /* use !important to prevent issues with browser extensions that change fonts */
+          font-family: 'atelecom-icons' !important;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          /* Better Font Rendering =========== */
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          margin-right: 4px;
+        }
+        .email:before {
+          content: '@';
+          font-weight: bold;
+          margin-right: 4px;
+        }
+      }
+
+      // For Optional CHANNELS
+      .price {
+        margin-top: 14px;
+        color: $greymedium;
+        font-size: 16px;
+        font-weight: 600;
+        .big {
+          font-size: 22px;
+        }
+      }
+      .description {
+        color: $products-fontcolor;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 10px;
+      }
+      .link {
+        margin-top: 20px;
+        @include breakpoint ($mobile) {
+          margin-top: 10px;
+          margin-bottom: 26px;
+        }
+      }
+
+    }
+  }
   // Seccion WEB CORPORATIVA
   &.corporative {
 
@@ -1325,60 +1402,6 @@ ul.floating-menu {
       margin-bottom: 6%;
       @include breakpoint ($mobile){
         text-align: center;
-      }
-    }
-
-    .items-container {
-      @include span(12);
-
-      > div {
-        @include gallery(4 of 12);
-        text-align: center;
-        margin-bottom: 6%;
-        @include breakpoint ($mobile){
-          width: 100%;
-          margin: 0 0 15px 0 !important;
-        }
-
-        > div {
-          margin-bottom: 6px;
-        }
-        .person {
-          margin-top: 14px;
-          color: $pink;
-          font-size: 18px;
-        }
-        .department {
-          color: $products-fontcolor;
-          font-size: 16px;
-          margin-bottom: 12px;
-        }
-        .social {
-          color: $products-fontcolor;
-          font-size: 14px;
-          line-height: 18px;
-          .linkedin:before {
-            content: "\e937";
-            /* use !important to prevent issues with browser extensions that change fonts */
-            font-family: 'atelecom-icons' !important;
-            speak: none;
-            font-style: normal;
-            font-weight: normal;
-            font-variant: normal;
-            text-transform: none;
-            line-height: 1;
-            /* Better Font Rendering =========== */
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            margin-right: 4px;
-          }
-          .email:before {
-            content: '@';
-            font-weight: bold;
-            margin-right: 4px;
-          }
-        }
-
       }
     }
   }
@@ -1453,5 +1476,21 @@ ul.floating-menu {
   }
   .content-ti-img {
     padding: 0;
+  }
+}
+
+// optional Channels
+.optional-channels {
+  .content {
+    margin-bottom: 60px;
+    @include breakpoint ($mobile) { margin-bottom: 20px; }
+  }
+  h2.global-subtitle {
+    margin-bottom: 60px;
+    @include breakpoint ($mobile) { margin-bottom: 28px; }
+  }
+
+  .items-container {
+    margin-bottom: 40px;
   }
 }

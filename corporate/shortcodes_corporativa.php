@@ -844,6 +844,70 @@
         </div>
         <!-- END SECTION SLIDER PRODUCTS -->
 
+      <!-- BEGIN SECTION OPTIONAL CHANNELS -->
+      <div class="cont-wrapper shortcode-container optional-channels">
+        <div class="content">
+          <h2 class="global-subtitle">Canals opcionals</h2>
+          <div class="items-container">
+            <div>
+              <img src="https://dummyimage.com/110x110/d8d8d8/000.jpg">
+              <div class="price"><span class="big">6€</span>/mes</div>
+              <div class="description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </div>
+              <div class="link"><a href="" class="button-pink">Contractar</a></div>
+            </div>
+
+            <div>
+              <img src="https://dummyimage.com/110x110/d8d8d8/000.jpg">
+              <div class="price"><span class="big">6€</span>/mes</div>
+              <div class="description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </div>
+              <div class="link"><a href="" class="button-pink">Contractar</a></div>
+            </div>
+
+            <div>
+              <img src="https://dummyimage.com/110x110/d8d8d8/000.jpg">
+              <div class="price"><span class="big">6€</span>/mes</div>
+              <div class="description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </div>
+              <div class="link"><a href="" class="button-pink">Contractar</a></div>
+            </div>
+
+            <div>
+              <img src="https://dummyimage.com/110x110/d8d8d8/000.jpg">
+              <div class="price"><span class="big">6€</span>/mes</div>
+              <div class="description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </div>
+              <div class="link"><a href="" class="button-pink">Contractar</a></div>
+            </div>
+
+            <div>
+              <img src="https://dummyimage.com/110x110/d8d8d8/000.jpg">
+              <div class="price"><span class="big">6€</span>/mes</div>
+              <div class="description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </div>
+              <div class="link"><a href="" class="button-pink">Contractar</a></div>
+            </div>
+
+            <div>
+              <img src="https://dummyimage.com/110x110/d8d8d8/000.jpg">
+              <div class="price"><span class="big">6€</span>/mes</div>
+              <div class="description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </div>
+              <div class="link"><a href="" class="button-pink">Contractar</a></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- END SECTION OPTIONAL CHANNELS -->
+
         <!-- BEGIN SECTION BOTONS i LINKS -->
         <div class="cont-wrapper shortcode-container corporative">
             <div class="content">
