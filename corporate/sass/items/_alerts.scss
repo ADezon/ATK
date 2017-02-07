@@ -637,6 +637,41 @@
         }
       }
     }
+    .request-failed {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 20px 0;
+      width: 100%;
+      box-sizing: border-box;
+      .icon-request {
+        float: left;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        .icons {
+          font-size: 34px;
+          line-height: 35px;
+          color: $pink;
+          text-align: center;
+        }
+      }
+      .text-request {
+        position: relative;
+        display: block;
+        float: left;
+        font-size: 18px;
+        line-height: 35px;
+        padding-left: 20px;
+        font-weight: bold;
+        color: $black;
+        margin: 0;
+        @include breakpoint($tablet) {
+          width: 80%;
+          line-height: 22px;
+        }
+      }
+    }
     .title-w-icon {
       position: relative;
       display: block;

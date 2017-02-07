@@ -276,15 +276,74 @@
       }
     }
   }
+
+  /* contratación PAGE */
+  &.contract-content {
+    color: $greydark;
+
+    &.bg-grey {
+      padding: 10px 0;
+    }
+
+    .field-body {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .item-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .item-content {
+      margin-bottom: 20px;
+      margin-top: 4px;
+    }
+
+    .product-name {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .config-box {
+      margin: 0;
+      .item-title,
+      .item-content {
+        padding-left: 20px;
+        margin-bottom: 5px;
+      }
+    }
+
+    // Legal conditions
+    .checkbox-custom {
+      float: left;
+      margin-top: 30px;
+      label {
+        font-size: 16px;
+        a {
+          font-weight: 300;
+          color: $pink;
+          font-size: 16px;
+        }
+      }
+    }
+
+    select {
+      font-size: 16px;
+      color: $greydark;
+
+      &.big { width: 240px; }
+    }
+  }
 }
 
 .general-alert-wrapper .content-general-wrapper.clientproducts {
-  width: 470px;
+  width: 610px;
   margin: 4% auto;
   @include breakpoint($mobile) {
     width: 98%;
   }
   .alert-general-title {
+    padding: 0 30px;
     h2 {
       float: left;
       line-height: 34px;
@@ -323,7 +382,7 @@
   }
   .alert-general-body {
     @include clearfix();
-    padding: 10px 25px;
+    padding: 10px 30px;
 
     .checkbox-custom label a {
       color: $pink;
@@ -445,6 +504,9 @@
   }
 }
 
+.incompatible-product .button-pink {
+  margin: 20px 0;
+}
 .message {
   float: left;
   width: 100%;
@@ -454,4 +516,202 @@
   text-transform: uppercase;
   color: $greymedium;
 
+}
+
+
+.result-table-products {
+  clear: both;
+  display: block;
+  margin: 0;
+  position: relative;
+  @include breakpoint($tablet) {
+    margin: 10px 0;
+  }
+  .content{
+    @include breakpoint($tablet) {
+      padding: 0;
+    }
+  }
+  .select-w-title{
+    @include breakpoint($tablet) {
+      padding: 0 18px;
+    }
+  }
+  .products-counter-paginator {
+    display: block;
+    float: right;
+    overflow: hidden;
+    padding-top: 56px;
+    position: relative;
+    width: 75%;
+    @include breakpoint($tablet) {
+      float: none;
+      padding: 5px 18px;
+      width: 100%;
+    }
+    .counter-resultsperpage {
+      color: #58585A;
+      display: block;
+      float: right;
+      font-size: 16px;
+      font-style: italic;
+      line-height: 24px;
+      padding-right: 20px;
+      position: relative;
+      @include breakpoint($tablet) {
+        clear: both;
+        float: left;
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+  .results-paginator-mobile{
+    @include breakpoint($tablet) {
+      margin: 20px 10px;
+    }
+  }
+  .products-list {
+    clear: both;
+    display: block;
+    float: left;
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    .products-list-title {
+      background-color: $gris3;
+      color: white;
+      clear: both;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      @include breakpoint($tablet) {
+        display: none;
+      }
+      span{
+        color: $white;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        padding: 5px 0;
+        position: relative;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      .products-list-column{
+        display: block;
+        float: left;
+        padding: 10px 2%;
+        position: relative;
+        width: 18%;
+        @include breakpoint($intermedio) {
+          width: 20%;
+        }
+        &.column-amount{
+          display: block;
+          float: right;
+          padding: 0 2%;
+          position: relative;
+          width: 28%;
+          @include breakpoint($intermedio) {
+            width: 20%;
+          }
+          span{
+            text-align: right;
+          }
+        }
+      }
+    }
+    .products-list-row{
+      background-color: $white;
+      border-bottom: 1px solid #cfd1d2;
+      border-left: 1px solid #cfd1d2;
+      border-right: 1px solid #cfd1d2;
+      clear: both;
+      display: block;
+      overflow: hidden;
+      padding: 3px 0;
+      position: relative;
+      @include breakpoint($tablet) {
+        border-bottom: 1px solid #cfd1d2;
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid #cfd1d2;
+        height: 70px;
+      }
+      span, a{
+        color: $greydark;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 5px 0;
+        position: relative;
+        text-align: left;
+        text-transform: uppercase;
+        @include breakpoint($tablet) {
+          text-align: left;
+        }
+      }
+      .products-list-column{
+        display: block;
+        float: left;
+        padding: 0 2%;
+        position: relative;
+        width: 18%;
+        @include breakpoint($intermedio) {
+          width: 20%;
+        }
+        @include breakpoint($tablet) {
+          width: 40%;
+        }
+        a{
+          color: $pink;
+          text-decoration: underline;
+        }
+        &.column-date {
+          @include breakpoint($tablet) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+          }
+          span{
+            @include breakpoint($tablet) {
+              text-align: left;
+            }
+          }
+        }
+        &.column-time {
+          @include breakpoint($tablet) {
+            position: absolute;
+            width: 50%;
+            right: 0;
+            bottom: 0;
+          }
+          span{
+            @include breakpoint($tablet) {
+              text-align: right;
+            }
+          }
+        }
+        &.column-amount{
+          display: block;
+          float: right;
+          padding: 0 2%;
+          position: relative;
+          width: 28%;
+          @include breakpoint($intermedio) {
+            width: 20%;
+          }
+          span{
+            font-weight: bold;
+            text-align: right;
+          }
+        }
+      }
+
+    }
+  }
 }

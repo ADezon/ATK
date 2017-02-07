@@ -260,7 +260,8 @@ textarea {
 
 // SEND BUTTON
 input[type=submit],
-input[type=button] {
+input[type=button],
+button {
   background-color: $pink;
   border: none;
   border-radius: 4px;
@@ -271,10 +272,10 @@ input[type=button] {
   float: left;
   font-size: 16px;
   font-weight: bold;
-  height: 32px;
+  height: 38px;
   line-height: 16px;
   margin: 20px 0;
-  padding: 8px 22px;
+  padding: 10px 22px;
   position: relative;
   font-family: "Titillium Web", sans-serif;
   text-align: center;
@@ -282,6 +283,13 @@ input[type=button] {
   //width: 111px;
   &.button-black {
     background-color: black;
+  }
+  &.button-active {
+    background-color: #58585A;
+  }
+  &.button-disabled {
+    color: $greydark;
+    background-color: #cfd1d2;
   }
   @include breakpoint($mobile) {
     width: 100%;

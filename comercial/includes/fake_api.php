@@ -102,7 +102,7 @@ if (array_key_exists('operation', $received)) {
   elseif ($received['operation'] == 'call-me-now') {
     $body = '<div class="mini-header">Gràcies! Ens posarem en contacte amb tu el més aviat possible.</div>';
 
-    $body .= '<div class="horaris"><span class="icons icon-timer"></span><br>Horari d\'atenció al client<br>';
+    $body .= '<div class="horaris"><i class="icons icon-timer"></i><br>Horari d\'atenció al client<br>';
     $body .= '<span class="twenty bold">Dilluns a divendres de 9h a 18h</span></div>';
     $body .= '<div class="full-centered"><a href="#" class="button-pink dimiss">Acceptar</a></div>';
     $body .= '</div>';

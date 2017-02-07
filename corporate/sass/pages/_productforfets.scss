@@ -264,7 +264,7 @@
             clear: both;
             text-align: center;
             @include breakpoint($tablet) {
-              width: 50%;
+              //width: 50%;
               margin: 0 auto;
             }
             @include breakpoint($mobile) {
@@ -279,4 +279,85 @@
   }
 }
 
+// HIGHLIGHTLED
+.list-product-forfets ul .forfets-element.highlighted .content {
+  background-color: $pink;
+  max-width: 1152px;
+  padding: 20px 64px;
+  position: relative;
 
+  @include breakpoint ($intermedio) {
+    min-height: 224px;
+  }
+
+  .forfets-element-column.title-forfet {
+    color: white;
+    span.number-forfet {
+      font-weight: 600;
+    }
+  }
+
+  .forfets-element-column.data-forfet .icons {
+    color: white;
+  }
+
+
+
+  .data-forfet-info {
+    .data-forfet-title { color: white;  }
+    .data-forfet-content { color: white; }
+  }
+
+  .forfets-element-column.calls-forfet {
+    .icons { color: white; }
+    .calls-forfet-info {
+      color: white;
+      .calls-forfet-title { color: white; }
+      .calls-forfet-content { color: white; }
+    }
+  }
+
+  .forfets-element-column.sms-forfet {
+    .icons { color: white; }
+    .sms-forfet-content { color: white; }
+  }
+
+  .forfets-element-column.price-forfet {
+
+    .price-forfet-price { color: white; }
+    .button-pink {
+      background-color: #f8e81c;
+      color: $pink;
+    }
+  }
+
+  // Destacado
+  .highlight-message {
+    position: absolute;
+    background: url('../images/icons/highlighted-forfeit.png') no-repeat scroll 0 top transparent;
+    bottom: 0;
+    color: $pink;
+    line-height: 21px;
+    font-weight: 600;
+    padding: 9px 12px;
+    min-width: 220px;
+
+    @include breakpoint ($tablet) {
+      right: 8%;
+    }
+    @include breakpoint ($mobile) {
+      display: none;
+    }
+
+    .one {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    .two {
+      font-size: 20px;
+    }
+    .three {
+      font-size: 14px;
+    }
+  }
+}

@@ -26,7 +26,7 @@
         </div>
         <div class="result-client-products cont-wrapper">
             <div class="content">
-                <div class="services-selector">
+                <div class="services-selector opened">
                     <div class="services-element">
                         <div class="services-title">
                             <span class="icons icon-mobile"></span>
@@ -188,17 +188,14 @@
                                             <div class="custom-item two">
                                                 <div class="full-centered">
                                                     <br><br>
-                                                    <span class="treinta grey-medium bold">29€</span>
-                                                    <span class="grey-medium bold">/mes</span>
+                                                    <span class="treinta grey-medium bold">29€</span> <span class="grey-medium bold">/mes</span>
                                                 </div>
                                             </div>
                                             <div class="custom-item three">
                                                 <div class="actions-container">
                                                     <a href="#"
                                                        class="button-pink action-sign-in">Contratar</a>
-                                                    <a href="#"
-                                                       class="button-active">+
-                                                        Info</a>
+                                                    <a href="#" class="button-active">+ Info</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -214,16 +211,12 @@
                                                         500 MB
                                                     </div>
                                                     <div class="entry-price">
-                                                        <span class="twenty grey-medium bold">4€</span>
-                                                        /mes
+                                                        <span class="twenty grey-medium bold">4€</span> /mes
                                                     </div>
                                                 </div>
                                                 <div class="custom-links">
-                                                    <a href="#"
-                                                       class="button-pink">Contractar</a>
-                                                    <a href="#"
-                                                       class="button-active">+
-                                                        Info</a>
+                                                <a href="#" class="button-pink">Contractar</a>
+                                                <a href="#" class="button-active">+ Info</a>
                                                 </div>
                                             </div>
                                             <div class="gallery-item">
@@ -232,16 +225,12 @@
                                                         1 GB
                                                     </div>
                                                     <div class="entry-price">
-                                                        <span class="twenty grey-medium bold">6€</span>
-                                                        /mes
+                                                        <span class="twenty grey-medium bold">6€</span> /mes
                                                     </div>
                                                 </div>
                                                 <div class="custom-links">
-                                                    <a href="#"
-                                                       class="button-pink">Contractar</a>
-                                                    <a href="#"
-                                                       class="button-active">+
-                                                        Info</a>
+                                                    <a href="#" class="button-pink">Contractar</a>
+                                                    <a href="#" class="button-active">+ Info</a>
                                                 </div>
                                             </div>
                                             <div class="gallery-item">
@@ -250,16 +239,12 @@
                                                         2 GB
                                                     </div>
                                                     <div class="entry-price">
-                                                        <span class="twenty grey-medium bold">8€</span>
-                                                        /mes
+                                                        <span class="twenty grey-medium bold">8€</span> /mes
                                                     </div>
                                                 </div>
                                                 <div class="custom-links">
-                                                    <a href="#"
-                                                       class="button-pink">Contractar</a>
-                                                    <a href="#"
-                                                       class="button-active">+
-                                                        Info</a>
+                                                    <a href="#" class="button-pink">Contractar</a>
+                                                    <a href="#" class="button-active">+ Info</a>
                                                 </div>
                                             </div>
 
@@ -312,171 +297,67 @@
                                     <div class="services-big">
 
                                         <div class="prod-description">
-                                            Movistar +
-                                        </div>
-                                        <div class="prod-description">
-                                            Familiar i Cine
+                                            Mini
                                         </div>
                                     </div>
                                     <div class="services-small">
-                                        <span class="big">29€</span>
+                                        <span class="big">15€</span>
                                     </div>
 
-                                    <div class="services-container">
-                                        <div class="services-big"><span
-                                                    class="pin-element">TV pin</span>
-                                        </div>
-                                        <div class="services-small"><span
-                                                    class="pink">4288</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="services-container">
-                                        <div class="producte">
-                                            <span class="icons icon-tv pink">&nbsp;</span>
-                                            <span class="contactat">Canals contractats</span>
-                                        </div>
-                                        <ul class="service-items">
-                                            <li><a href="#">
-                                                    <div class="service-item">
-                                                        Cine
-                                                    </div>
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="service-item">
-                                                        Esport
-                                                    </div>
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="service-item">
-                                                        Natura
-                                                    </div>
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="service-item">
-                                                        Liga+
-                                                    </div>
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="service-item">
-                                                        Cuina
-                                                    </div>
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="service-item">
-                                                        Series
-                                                    </div>
-                                                </a></li>
-                                            <li><a href="#">
-                                                    <div class="service-item">
-                                                        CNN+
-                                                    </div>
-                                                </a></li>
-                                        </ul>
-                                    </div>
                                 </div>
 
                                 <div class="content-ws">
                                     <h3>Configuració</h3>
 
-                                    <div class="services-container">
-                                        <div class="services-big"><img
-                                                    src="./images/products/movistar-plus.png">
-                                        </div>
-                                        <div class="services-small tx-right">
-                                            <span class="service-status active">Activat</span>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="services-container">
-                                        <ul class="service-items">
-                                            <li><a href="#" class="change-pass">
-                                                    <div class="service-item">
-                                                        Canviar la
-                                                        contrasenya
-                                                    </div>
-                                                </a></li>
-                                            <li><a href="#"
-                                                   class="view-channels">
-                                                    <div class="service-item">
-                                                        Veure canals
-                                                    </div>
-                                                </a></li>
-                                        </ul>
-                                    </div>
-
                                     <div class="config-box">
-                                        <h4 class="title-config-box">Afegeix
-                                            canals a la teva tarifa (v1)</h4>
+                                        <h4 class="title-config-box">Activa
+                                            Movistar+ als teus dispositius</h4>
                                         <div class="inner-box">
-                                            <div class="gallery-item">
+                                            <h5>Mira la TV on vulguis i quan
+                                                vulguis</h5>
 
-                                                    <a href="#"><img
-                                                                src="./images/products/cine-plus.png"></a>
+                                            <div class="custom-item one"><img
+                                                        src="./images/products/movistar-plus.png">
                                             </div>
-                                            <div class="gallery-item">
-                                                <a href="#"><img
-                                                            src="./images/products/c-plus-liga.png"></a>
+                                            <div class="custom-item two"><img
+                                                        src="./images/3-devices.png">
                                             </div>
-                                            <div class="gallery-item">
-                                                <a href="#"><img
-                                                            src="./images/products/c-plus-golf.png"></a>
+                                            <div class="custom-item three">
+                                                <div class="actions-container">
+                                                    <a href="#"
+                                                       class="button-pink action-activate">Activar</a>
+                                                    <a href="#"
+                                                       class="button-active">+
+                                                        Info</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-
                                     <div class="config-box">
-                                        <h4 class="title-config-box">Afegeix
-                                            canals a la teva tarifa (v2)</h4>
-                                        <div class="inner-box trans">
-                                            <div class="product-list-blocks">
-                                                <div class="img-container">
-                                                    <a href="#"><img
-                                                                src="./images/products/cine-plus.png"></a>
+                                        <h4 class="title-config-box">Amplia la
+                                            teva tarifa</h4>
+                                        <div class="inner-box">
+                                            <div class="custom-item one">
+                                                <img src="./images/products/movistar-plus.png">
+                                                <div class="big-pink bold">
+                                                    Movistar+ Familiar y cine
                                                 </div>
-                                                <div class="product-description">
-                                                    <div class="product-title">
-                                                        <span class="big">25€</span>/mes
-                                                    </div>
-                                                    <a href="#"
-                                                       class="button-pink">Contractar</a>
-                                                    <a href="#"
-                                                       class="button-active">+
-                                                        Info</a>
+
+                                            </div>
+                                            <div class="custom-item two">
+                                                <div class="full-centered">
+                                                    <br><br>
+                                                    <span class="treinta grey-medium bold">29€</span> <span class="grey-medium bold">/mes</span>
+
                                                 </div>
                                             </div>
-                                            <div class="product-list-blocks">
-                                                <div class="img-container">
-                                                    <a href="#"><img
-                                                                src="./images/products/c-plus-liga.png"></a>
-                                                </div>
-                                                <div class="product-description">
-                                                    <div class="product-title">
-                                                        <span class="big">32€</span>/mes
-                                                    </div>
-                                                    <a href="#"
-                                                       class="button-pink">Contractar</a>
-                                                    <a href="#"
-                                                       class="button-active">+
-                                                        Info</a>
-                                                </div>
-                                            </div>
-                                            <div class="product-list-blocks">
-                                                <div class="img-container">
-                                                    <a href="#"><img
-                                                                src="./images/products/c-plus-golf.png"></a>
-                                                </div>
-                                                <div class="product-description">
-                                                    <div class="product-title">
-                                                        <span class="big">32€</span>/mes
-                                                    </div>
-                                                    <a href="#"
-                                                       class="button-pink">Contractar</a>
-                                                    <a href="#"
-                                                       class="button-active">+
-                                                        Info</a>
+                                            <div class="custom-item three">
+                                                <div class="actions-container">
+
+                                                <a href="#"
+                                                   class="button-pink action-sign-in">Contratar</a>
+                                                <a href="#" class="button-active">+ Info</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -494,24 +375,27 @@
     <!-- END SPECIFIC PAGE CLIENT PRODUCTS -->
 
     <!--ALERT FOR FLOATING DATA-->
-    <div class="general-alert-wrapper fixedone">
-        <div class="content-general-wrapper clientproducts"> <!---->
-            <div class="alert-general-close">
-                <i class="icons icon-close"></i>
-            </div>
-            <div class="alert-general-title"></div>
-            <div class="alert-general-body">
-
-            </div>
+  <div class="general-alert-wrapper fixedone">
+    <div class="content-general-wrapper clientproducts"> <!---->
+      <div class="alert-general-close">
+        <i class="icons icon-close"></i>
+      </div>
+      <div class="alert-general-title"><i class="icons icon-attention"></i>Ho sentim!</div>
+      <div class="alert-general-body">
+        <div class="incompatible-product">Estimada Alexandra, abans de poder efectuar qualsevol canvi és necessari que efectuïs
+          el pagament de les factures endarrerides. Moltes gràcies i disculpa les molèsties.
+          <div class="full-centered"><a href="#" class="button-pink">Anar a factures</a></div>
         </div>
-
+      </div>
     </div>
+  </div>
     <!--IMPORTANT:: REQUIRES LOAD src="/js/dinamicglobalalert.js" SCRIPT IN HEAD-->
-    <!--END POP-UP GLOBAL ALERT CONTENT-->
 
 
     <script language="JavaScript">
         $(document).ready(function () {
+
+            revealalert();
 
             // Fold-Unfold ITEMS
             // We start closing ALL (on load PAGE) not marked has "opened"
@@ -531,12 +415,11 @@
                 alertBody = $('.alert-general-body'),
                 scrollTop = $(window).scrollTop();
 
-            // Change PASS
-            $('a.change-pass').click(function (cp) {
-                cp.preventDefault();
-
-                // Call FORM change PASSWORD
-                $.post("includes/fake_api.php", {operation: 'changepass'})
+            // Open ALERT without CONTENT, fill with AJAX callback
+            $('.action-activate').click(function (e) {
+                e.preventDefault();
+                // Call FORM Alta MOVISTAR
+                $.post("includes/fake_api.php", {operation: 'altamovistar'})
                     .done(function (data) {
                         alertTitle.html(data.title);
                         alertBody.html(data.body);
@@ -545,16 +428,15 @@
                         alertTitle.html(data);
                         alertBody.html(data);
                     });
-                if ($(window).width() < 480) {
+                if($(window).width() < 480) {
                     floatingWrapper.removeClass('fixedone');
-                    floatingAlert.css({top: scrollTop});
+                    floatingAlert.css({ top: scrollTop });
                 }
-                revealalert();
 
-                // Inner navigation
-                $('.clientproducts').on('click', '.cp-trigger', function () {
-                    // change PASS confirmation
-                    $.post("includes/fake_api.php", {operation: 'confirm_cp'})
+                // AJAX triggers for ALTA
+                $('.clientproducts').on('click', '.activate-mplus', function () {
+                    // altamovistar_validation
+                    $.post("includes/fake_api.php", {operation: 'altamovistar_validation'})
                         .done(function (data) {
                             alertTitle.html(data.title);
                             alertBody.html(data.body);
@@ -563,20 +445,33 @@
                             alertTitle.html('Error...');
                             alertBody.html('We can\'t process your request now...');
                         });
+                });
+                $('.clientproducts').on('click', '.mplus-activated', function () {
+                    // altamovistar_validation
+                    $.post("includes/fake_api.php", {operation: 'altamovistar_finished'})
+                        .done(function (data) {
+                            alertTitle.html(data.title);
+                            alertBody.html(data.body);
+                        })
+                        .fail(function (data) {
+                            alertTitle.html('Error...');
+                            alertBody.html('We can\'t process your request now...');
+                        });
+
                     setTimeout(function () {
                         closeAlert();
-                    }, 5000);
+                    }, 2000);
+                    window.location.replace("http://www.at.dev/client_products_tvactiva.php");
+
                 });
             });
 
 
-            // View Channels
-            $('a.view-channels').click(function (vc) {
-                vc.preventDefault();
-
-
-                // Call FORM change PASSWORD
-                $.post("includes/fake_api.php", {operation: 'viewchannels'})
+            // NOTE: THIS IS THE SAME/Identical as before, but for "CONTRATAR"
+            $('.action-sign-in').click(function (e) {
+                e.preventDefault();
+                // Call FORM Alta MOVISTAR
+                $.post("includes/fake_api.php", {operation: 'altamovistar'})
                     .done(function (data) {
                         alertTitle.html(data.title);
                         alertBody.html(data.body);
@@ -585,11 +480,44 @@
                         alertTitle.html(data);
                         alertBody.html(data);
                     });
-                if ($(window).width() < 480) {
+                if($(window).width() < 480) {
                     floatingWrapper.removeClass('fixedone');
-                    floatingAlert.css({top: scrollTop});
+                    floatingAlert.css({ top: scrollTop });
                 }
                 revealalert();
+
+                // AJAX triggers for ALTA
+                $('.clientproducts').on('click', '.activate-mplus', function () {
+                    // altamovistar_validation
+                    $.post("includes/fake_api.php", {operation: 'altamovistar_validation'})
+                        .done(function (data) {
+                            alertTitle.html(data.title);
+                            alertBody.html(data.body);
+                        })
+                        .fail(function (data) {
+                            alertTitle.html('Error...');
+                            alertBody.html('We can\'t process your request now...');
+                        });
+                });
+                $('.clientproducts').on('click', '.mplus-activated', function () {
+                    // altamovistar_validation
+                    $.post("includes/fake_api.php", {operation: 'altamovistar_finished'})
+                        .done(function (data) {
+                            alertTitle.html(data.title);
+                            alertBody.html(data.body);
+                        })
+                        .fail(function (data) {
+                            alertTitle.html('Error...');
+                            alertBody.html('We can\'t process your request now...');
+                        });
+                    $('.service-status').removeClass('inactive').addClass('active');
+                    $('.service-status a').html('Activa');
+                    setTimeout(function () {
+                        closeAlert();
+                    }, 2000);
+                    window.location.replace("http://www.at.dev/client_products_tvactiva.php");
+
+                });
             });
 
             // Close Alert

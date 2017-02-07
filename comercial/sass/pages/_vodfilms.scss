@@ -224,6 +224,8 @@
   }
   .element-film{
     @include span(2 of 12);
+    margin-bottom: 40px;
+
     @include breakpoint($tablet) {
       @include span(4 of 12);
       margin-bottom: 20px;
@@ -337,7 +339,7 @@
   height: 100%;
 }
 
-.video-film{
+.video-film {
   position: relative;
   display: block;
   overflow: hidden;
@@ -353,14 +355,14 @@
       z-index: auto;
     }
   }
-  .overlay-video-info{
-    position: absolute;
-    bottom:0;
+  .overlay-video-info {
+    //position: absolute;
+    //bottom:0;
     width: 100%;
     height: auto;
     display: block;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $greydark;
     z-index: 2;
     @include breakpoint($tablet) {
       background-color: $black;

@@ -877,11 +877,24 @@
     <div class="content">
       <h2 class="global-subtitle">Botons i links</h2>
       <!--  BEGIN LINKS-LIST SOLO PARA MOSTRARLOS CENTRADOS COMO EN EL DISEÑO... NO SE UTILIZA ESTE CONTENEDOR CUANDO LO USEN SUELTOS -->
-      <div class="links-list">
+      <div class="links-list full-centered">
         <a href="#" class="button-shortcode button-pink">Botó actiu 1</a>
         <a href="#" class="button-shortcode button-active">Botó actiu 2</a>
         <a nohref class="button-shortcode button-disabled">Botó inactiu</a>
         <a href="#" class="button-shortcode button-clean">Link</a>
+      </div>
+
+      <!--NOW with BUTTONS (for forms)-->
+      <div class="links-list full-centered">
+        <input type="button" class="button-shortcode button-pink" value="Botó actiu 1">
+        <input type="button" class="button-shortcode button-active" value="Botó actiu 2">
+        <input type="button" class="button-shortcode button-disabled" value="Botó inactiu">
+      </div>
+
+      <div class="links-list full-centered">
+        <button class="button-shortcode button-pink">Normal "pink"</button>
+        <button class="button-shortcode button-active">Active button</button>
+        <button class="button-shortcode button-disabled">Botó inactiu</button>
       </div>
       <!--  END LINKS-LIST SOLO PARA MOSTRARLOS CENTRADOS COMO EN EL DISEÑO... NO SE UTILIZA ESTE CONTENEDOR CUANDO LO USEN SUELTOS -->
       <div class="banner-ads">

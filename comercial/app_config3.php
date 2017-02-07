@@ -2,7 +2,7 @@
 
 
     <!--BEGIN SPECIFIC PAGE APP CONFIG-->
-    <div id="config-app-text" class="cont-wrapper">
+    <div class="cont-wrapper config-app-text">
         <div class="content">
             <?php include 'includes/breadcrumb.php'; ?>
             <h1 class="main-title">Configura l’app</h1>
@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div id="config-app-content" class="cont-wrapper">
+    <div class="cont-wrapper config-app-text">
         <div class="content">
             <h2 class="global-subtitle">Permisos usuaris</h2>
             <div class="sidebar">
