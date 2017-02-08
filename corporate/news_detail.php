@@ -6,7 +6,7 @@
 
         <?php include 'includes/breadcrumb.php'; ?>
 
-      <div class="main-page-content news-detail">
+      <div id="main-content" class="main-page-content news-detail">
         <div class="content-ws righted">
           <div class="news-data">
             8 DECEMBRE, 2016

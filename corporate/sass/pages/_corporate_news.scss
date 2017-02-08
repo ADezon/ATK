@@ -135,7 +135,7 @@
 
 
 //NEWS DETAIL
-.news-detail{
+.news-detail {
   position: relative;
   display: block;
   overflow: hidden;
@@ -214,6 +214,10 @@
           display: block;
           overflow: hidden;
           margin-bottom: 10px;
+          &:before {
+            content: '';
+            display: none;
+          }
           @include breakpoint($mobile) {
             float: left;
             margin: 0 10px;
@@ -317,7 +321,7 @@
       }
 
     }
-    ul.list-tags{
+    ul.list-tags {
       position: relative;
       display: block;
       overflow: hidden;
@@ -344,7 +348,8 @@
     }
   }
 }
-.tags {
+.tags,
+.categories {
   font-size: 14px;
   h5 {
     text-transform: uppercase;
@@ -365,6 +370,10 @@
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 10px;
+    &:before {
+      content: '' !important;
+      display: none !important;
+    }
     a {
       text-decoration: none;
       color: $greydark;

@@ -15,6 +15,7 @@
     }
   }
   &.result-client-products {
+
     .services-selector {
       position: relative;
       display: block;
@@ -23,6 +24,72 @@
       @include breakpoint ($mobile) {
         margin: 5px 0;
       }
+
+      .half-page {
+        &.izq {
+          padding-right: 15px;
+          @include breakpoint($mobile) { padding: 0; }
+        }
+        &.der {
+          padding-left: 15px;
+          @include breakpoint($mobile) { padding: 0; }
+        }
+
+        .config-box {
+          &.limited {
+            height: 256px;
+            @include breakpoint($mobile) { height: auto; }
+            .inner-box > .custom-item.two {
+              width: 48%;
+              padding-top: 52px;
+              text-align: center;
+              @include breakpoint($mobile) { padding-top: 15px; }
+            }
+          }
+
+          .inner-box > .custom-item.one {
+            width: 52%;
+            @include breakpoint($mobile) { margin: 0; }
+
+            .message {
+              margin: 16px 0;
+              @include breakpoint($mobile) { margin: 0; }
+            }
+          }
+
+          .inner-box > .custom-item.two {
+            @include breakpoint($mobile) { margin: 0; }
+          }
+
+          .inner-box > .custom-item.three {
+            width: 100%;
+            @include breakpoint($mobile) { margin: 0; }
+
+          }
+          .inner-box > .custom-item .actions-container {
+            padding: 6px 0;
+            width: 100%;
+
+            a {
+              width: 46%;
+              margin: 10px 2%;
+            }
+          }
+        }
+
+      }
+      .add-channels {
+        .gallery-item {
+          margin-bottom: 24px;
+          a.button-pink {
+            width: 100%;
+            margin-top: 6px;
+            cursor: pointer;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
 
       .services-element {
         position: relative;
@@ -81,7 +148,8 @@
           display: block;
           float: right;
           width: 50%;
-          p {
+          p,
+          .clickunfold {
             position: relative;
             display: block;
             float: right;
@@ -93,7 +161,7 @@
             font-weight: bold;
             @include breakpoint($mobile) {
               font-size: 32px;
-              margin-top: 16px;
+              //margin-top: 16px;
             }
 
             &:after {
@@ -128,13 +196,22 @@
               }
             }
           }
+          .clickunfold {
+            float: right;
+          }
         }
 
       }
       &.opened {
-        .services-price p:after {
+        .services-price p:after,
+        .services-price .clickunfold:after {
           content: '\e92f';
         }
+      }
+
+      .services-full-info {
+        margin-bottom: 30px;
+        float: left;
       }
     }
   }
@@ -225,6 +302,7 @@
       li {
         border-top: 1px solid $gris2;
         padding: 14px 0;
+        &:before { display: none !important; }
         &:last-child {
           border-bottom: 1px solid $gris2;
         }
@@ -243,6 +321,9 @@
           line-height: 1;
           -webkit-font-smoothing: antialiased;
         }
+      }
+      .change-pass {
+        color: $greydark;
       }
     }
 
@@ -579,69 +660,70 @@
     overflow: hidden;
     position: relative;
     width: 100%;
+
     .products-list-title {
       background-color: $gris3;
       color: white;
-      clear: both;
+      clear: none;
+      float: left;
+      width: 100%;
       display: block;
-      overflow: hidden;
-      position: relative;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 20px;
+      padding: 5px 0;
+      text-transform: uppercase;
+
       @include breakpoint($tablet) {
         display: none;
       }
-      span{
-        color: $white;
-        display: block;
-        font-size: 14px;
-        font-weight: bold;
-        line-height: 20px;
-        padding: 5px 0;
-        position: relative;
-        text-align: left;
-        text-transform: uppercase;
-      }
-      .products-list-column{
+
+      .products-list-column {
         display: block;
         float: left;
         padding: 10px 2%;
         position: relative;
-        width: 18%;
+        width: 16%;
         @include breakpoint($intermedio) {
           width: 20%;
         }
-        &.column-amount{
-          display: block;
-          float: right;
-          padding: 0 2%;
-          position: relative;
-          width: 28%;
-          @include breakpoint($intermedio) {
-            width: 20%;
-          }
-          span{
-            text-align: right;
-          }
+        &.column-product {
+          width: 24%;
+        }
+        &.column-number {
+          width: 14%;
+        }
+        &.column-state {
+          width: 10%;
+        }
+        &.column-request {
+          padding: 10px 1%;
+        }
+        &.column-active {
+          padding: 10px 1%;
+        }
+        &.column-link {
+          width: 18%;
         }
       }
     }
-    .products-list-row{
+    .products-list-row {
+      color: $greydark;
       background-color: $white;
-      border-bottom: 1px solid #cfd1d2;
-      border-left: 1px solid #cfd1d2;
-      border-right: 1px solid #cfd1d2;
-      clear: both;
-      display: block;
-      overflow: hidden;
-      padding: 3px 0;
+      border-bottom: 1px solid #979797;
+      clear: none;
+      float: left;
+      width: 100%;
+      padding: 8px 0 0 0;
       position: relative;
+
       @include breakpoint($tablet) {
         border-bottom: 1px solid #cfd1d2;
         border-left: none;
         border-right: none;
         border-top: 1px solid #cfd1d2;
-        height: 70px;
       }
-      span, a{
+      span, a {
         color: $greydark;
         display: block;
         font-size: 14px;
@@ -649,17 +731,17 @@
         padding: 5px 0;
         position: relative;
         text-align: left;
-        text-transform: uppercase;
         @include breakpoint($tablet) {
           text-align: left;
         }
       }
-      .products-list-column{
+      .products-list-column {
         display: block;
         float: left;
-        padding: 0 2%;
+        padding: 0 0 8px 2%;
         position: relative;
-        width: 18%;
+        width: 16%;
+
         @include breakpoint($intermedio) {
           width: 20%;
         }
@@ -670,9 +752,28 @@
           color: $pink;
           text-decoration: underline;
         }
-        &.column-date {
+
+        // Each field
+        &.column-product {
+          font-weight: bold;
+          width: 24%;
+          padding-top: 8px;
+          @include breakpoint($tablet) { width: 50%; }
+          &.with-image {
+            padding-top: 0;
+          }
+          img {
+            width: 40px;
+            vertical-align: middle;
+            margin-right: 6px;
+          }
+        }
+        &.column-number {
+          width: 14%;
+          padding-top: 8px;
+
           @include breakpoint($tablet) {
-            position: absolute;
+            //position: absolute;
             bottom: 0;
             left: 0;
             width: 50%;
@@ -683,35 +784,40 @@
             }
           }
         }
-        &.column-time {
-          @include breakpoint($tablet) {
-            position: absolute;
-            width: 50%;
-            right: 0;
-            bottom: 0;
-          }
-          span{
-            @include breakpoint($tablet) {
-              text-align: right;
-            }
+        &.column-state {
+          font-weight: bold;
+          width: 12%;
+          padding: 12px 20px;
+          @include breakpoint($mobile) { padding: 0 2%; width: 50%; }
+          &.pending {
+            color: $pink;
           }
         }
-        &.column-amount{
-          display: block;
+        &.column-request {
+          font-size: 14px;
+          padding: 12px 0;
+          @include breakpoint($mobile) { display: none; }
+        }
+
+        &.column-active {
+          font-size: 14px;
+          padding: 12px 0;
+          @include breakpoint($mobile) { display: none; }
+        }
+        &.column-link {
           float: right;
-          padding: 0 2%;
-          position: relative;
-          width: 28%;
-          @include breakpoint($intermedio) {
-            width: 20%;
+          width: 18%;
+          padding-top: 8px;
+          @include breakpoint($mobile) { float:left; width: 50%; }
+
+          a {
+            font-size: 14px;
+            text-decoration: underline !important;
+            padding: 0;
           }
-          span{
-            font-weight: bold;
-            text-align: right;
-          }
+
         }
       }
-
     }
   }
 }
