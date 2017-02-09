@@ -67,9 +67,9 @@
                 </ul>
                 <div class="search">
                     <form>
-                        <span class="icons icon-right"></span>
+                        <div class="icons icon-right"></div>
                         <input class="search-form" type="text" name="search" placeholder="Cercar">
-                        <span class="icons icon-search"></span>
+                        <div class="icons icon-search"></div>
                     </form>
                 </div>
                 <div class="languages">
@@ -78,10 +78,10 @@
                             <div
                                 class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language"
                                 id="p_p_id_82_">
-                                <span id="p_82"></span>
+                                <div id="p_82"></div>
                                 <div class="portlet-borderless-container" style="">
                                     <div class="portlet-body">
-                                        <span class="taglib-language-list-text" lang="es-CA">Cat</span>
+                                        <div class="taglib-language-list-text" lang="es-CA">Cat</div>
                                         <div id="sub-menu-lang">
                                             <a href="http://172.17.2.9:8080/es/web/guest/home"
                                                class="taglib-language-list-text last"
@@ -123,7 +123,7 @@
                         <a href="#" title="">Bloc</a>
                     </li>
                 </ul>
-                <div class="button-login-client" href="#" title=""><span>CLIENT</span></div>
+                <div class="button-login-client" href="#" title=""><div>CLIENT</div></div>
             </div>
         </div>
     </div>
@@ -136,19 +136,19 @@
                     <p>Missatge d'error de login</p>
                 </div>
                 <fieldset class="box-name-client">
-                    <span class="title-field">Nom d'usuari</span>
+                    <div class="title-field">Nom d'usuari</div>
                     <input name="name-client" type="text"/>
                     <a href="#" class="message-remember">Has oblidat el nom d’usuari?</a>
                 </fieldset>
                 <fieldset class="box-pass-client">
-                    <span class="title-field">Contrasenya</span>
+                    <div class="title-field">Contrasenya</div>
                     <input name="pass-client" type="password"/>
                     <a href="#" class="message-remember">Has oblidat la contrasenya?</a>
                 </fieldset>
                 <input value="Entrar" class="login-send button-pink" type="submit"/>
             </form>
             <div class="goto-register">
-                <span>No ets client d’Andorra Telecom?</span>
+                <div>No ets client d’Andorra Telecom?</div>
                 <a href="#">Enregistra’t</a>
             </div>
         </div>
@@ -160,7 +160,7 @@
         <div class="menu content content-big">
             <ul>
                 <li class="active">
-                    <div class="title-level-1"><span>QUI SOM</span>
+                    <div class="title-level-1"><div>QUI SOM</div>
                     </div>
                     <div class="container-submenu">
                         <ul>
@@ -231,28 +231,28 @@
                     </div>
                 </li>
                 <li>
-                  <div class="title-level-1"><span><a href="https://www.google.es" target="_blank">INNOVACIÓ</a></span>
+                  <div class="title-level-1"><div><a href="https://www.google.es" target="_blank">INNOVACIÓ</a></div>
                     </div>
                 </li>
                 <li>
-                    <div class="title-level-1"><span>ESDEVENIMENTS</span>
+                    <div class="title-level-1"><div>ESDEVENIMENTS</div>
                     </div>
                 </li>
                 <li>
-                    <div class="title-level-1"><span>ACCIÓ SOCIAL</span>
+                    <div class="title-level-1"><div>ACCIÓ SOCIAL</div>
                     </div>
                 </li>
                 <li>
-                    <div class="title-level-1"><span>NOTÍCIES</span>
+                    <div class="title-level-1"><div>NOTÍCIES</div>
                     </div>
                 </li>
                 <li>
-                    <div class="title-level-1"><span>AGENDA</span>
+                    <div class="title-level-1"><div>AGENDA</div>
                     </div>
                 </li>
             </ul>
             <div class="button-client-area">
-                <span>Client</span>
+                <div>Client</div>
             </div>
         </div>
     </div>

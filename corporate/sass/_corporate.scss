@@ -80,14 +80,16 @@ body.corporate{
         }
       }
       > ul{
-        > li{
+        > li {
           width: auto;
-          &.active{
+          &.active {
             .title-level-1{
               font-weight: bold;
               color: $white;
             }
-          ;
+            &:hover {
+              .title-level-1 { color: $greydark; }
+            }
           }
           .title-level-1{
             padding: 17px 25px;

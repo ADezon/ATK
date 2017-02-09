@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
 
-
   <link rel="apple-touch-icon" sizes="57x57" href="./images/icons/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="./images/icons/favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="./images/icons/favicons/apple-icon-72x72.png">
@@ -91,15 +90,15 @@
       <div class="left">
         <ul class="links-topbar">
           <li>
-            <span class="icons icon-mobile"></span><a href="#" title="">Mobiland
+            <div class="icons icon-mobile"></div><a href="#" title="">Mobiland
               clic</a>
           </li>
           <li>
-            <span class="icons icon-phone"></span><a href="#" title="">Guia
+            <div class="icons icon-phone"></div><a href="#" title="">Guia
               Telefònica</a>
           </li>
           <li>
-            <span class="icons icon-tv"></span> <a href="#" title="">Programació
+            <div class="icons icon-tv"></div> <a href="#" title="">Programació
               TV</a>
           </li>
           <li>
@@ -113,10 +112,10 @@
       <div class="right">
         <div class="search">
           <form>
-            <span class="icons icon-right"></span>
+            <div class="icons icon-right"></div>
             <input class="search-form" type="text" name="search"
                    placeholder="Cercar">
-            <span class="icons icon-search"></span>
+            <div class="icons icon-search"></div>
           </form>
         </div>
         <div class="languages">
@@ -125,11 +124,11 @@
               <div
                 class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language"
                 id="p_p_id_82_">
-                <span id="p_82"></span>
+                <div id="p_82"></div>
                 <div class="portlet-borderless-container" style="">
                   <div class="portlet-body">
-                    <span class="taglib-language-list-text"
-                          lang="es-CA">Cat</span>
+                    <div class="taglib-language-list-text"
+                          lang="es-CA">Cat</div>
                     <div id="sub-menu-lang">
                       <a href="http://172.17.2.9:8080/es/web/guest/home"
                          class="taglib-language-list-text last"
@@ -169,8 +168,8 @@
       </div>
       <div class="right">
         <a class="button-alerts" href="#" title="">
-          <span class="icons icon-alerts"></span>
-          <span class="counter-alerts">99</span>
+          <div class="icons icon-alerts"></div>
+          <div class="counter-alerts">99</div>
         </a>
         <div class="button-login-client active-logged" href="#" title="">
             <div class="client-full-name">Hola, RAMIS KHALIKOV</div>
@@ -198,7 +197,7 @@
                     <a href="#">Configura la App</a>
                 </li>
                 <li class="logout">
-                    <a href="#"><span>Desconectar</span><span class="icons icon-logout"></span></a>
+                    <a href="#"><div>Desconectar</div><div class="icons icon-logout"></div></a>
                 </li>
             </ul>
         </div>
@@ -209,11 +208,11 @@
   <div id="button-alerts-mobile" class="cont-wrapper">
     <div class="content">
       <a class="button-alerts" href="#" title="">
-        <span class="icons icon-alerts"></span>
-        <span class="counter-alerts">99</span>
+        <div class="icons icon-alerts"></div>
+        <div class="counter-alerts">99</div>
       </a>
       <div class="text-alerts-mobile">Hi ha noves alertes</div>
-      <span class="icons icon-close"></span>
+      <div class="icons icon-close"></div>
     </div>
   </div>
   <!-- END REGION BUTTON ALERTS MOBILE -->
@@ -238,8 +237,8 @@
     <div class="menu content content-big">
       <ul>
         <li class="active">
-          <div class="title-level-1"><span
-              class="icons icon-mobile"></span><span>SOM Telefonia Mòbil</span>
+          <div class="title-level-1"><div
+              class="icons icon-mobile"></div><div>SOM Telefonia Mòbil</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -314,8 +313,8 @@
           </div>
         </li>
         <li>
-          <div class="title-level-1"><span
-              class="icons icon-phone"></span><span>SOM Internet i Fixa</span>
+          <div class="title-level-1"><div
+              class="icons icon-phone"></div><div>SOM Internet i Fixa</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -390,7 +389,7 @@
           </div>
         </li>
         <li>
-          <div class="title-level-1"><span class="icons icon-tv"></span><span>SOM Televisió</span>
+          <div class="title-level-1"><div class="icons icon-tv"></div><div>SOM Televisió</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -466,7 +465,7 @@
         </li>
       </ul>
       <div class="button-client-area active-logged">
-<!--        <span class="icons icon-client"></span>-->
+<!--        <div class="icons icon-client"></div>-->
         <div class="client-full-name">Hola, RAMIS KHALIKOV</div>
       </div>
     </div>

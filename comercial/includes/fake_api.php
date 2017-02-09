@@ -1,5 +1,6 @@
 <?php
 
+$destiny = (gethostbyname() == 'G750JX') ? 'http://www.at.dev/comercial/' : 'http://clientes.king-eclient.com/landing/comercial/';
 
 $received = $_POST;
 
@@ -31,7 +32,7 @@ if (array_key_exists('operation', $received)) {
     $body = 'T\'has donat d\'alta amb el número 123123.';
     $body .= '<div class="download-app">';
     $body .= 'Descarrega\'t l\'App';
-    $body .= '<div class="app-icons"><img src="./images/icons/get-in-google.png"><img src="./images/icons/down-app-store.png"></div>';
+    $body .= '<div class="app-icons"><img src="' . $destiny . '/images/icons/get-in-google.png"><img src="' . $destiny . '/images/icons/down-app-store.png"></div>';
     $body .= '</div>';
     $body .= '<div class="full-centered"><input type="button" class="pink-button mplus-activated centered" value="Continuar"></div>';
 
@@ -84,14 +85,14 @@ if (array_key_exists('operation', $received)) {
   elseif ($received['operation'] == 'viewchannels') {
     $title = '<h2 class="half">Canals contractats per 123123</h2><img src="./images/products/movistar-plus.png" />';
     $body = '<div class="inner-box">';
-    $body .= '<div><a href="/"><img src="./images/products/seleccion-plus.png"></a></div>';
-    $body .= '<div><a href="/"><img src="./images/products/cine-plus.png"></a></div>';
-    $body .= '<div><a href="/"><img src="./images/products/deporte-plus.png"></a></div>';
-    $body .= '<div><a href="/"><img src="./images/products/premium-plus.png"></a></div>';
-    $body .= '<div><a href="/"><img src="./images/products/caza-pesca.png"></a></div>';
-    $body .= '<div><a href="/"><img src="./images/products/c-plus-liga.png"></a></div>';
-    $body .= '<div><a href="/"><img src="./images/products/c-plus-golf.png"></a></div>';
-    $body .= '<div><a href="/"><img src="./images/products/c-plus-liga.png"></a></div>';
+    $body .= '<div><a href="/"><img src="' . $destiny . '/images/products/seleccion-plus.png"></a></div>';
+    $body .= '<div><a href="/"><img src="' . $destiny . '/images/products/cine-plus.png"></a></div>';
+    $body .= '<div><a href="/"><img src="' . $destiny . '/images/products/deporte-plus.png"></a></div>';
+    $body .= '<div><a href="/"><img src="' . $destiny . '/images/products/premium-plus.png"></a></div>';
+    $body .= '<div><a href="/"><img src="' . $destiny . '/images/products/caza-pesca.png"></a></div>';
+    $body .= '<div><a href="/"><img src="' . $destiny . '/images/products/c-plus-liga.png"></a></div>';
+    $body .= '<div><a href="/"><img src="' . $destiny . '/images/products/c-plus-golf.png"></a></div>';
+    $body .= '<div><a href="/"><img src="' . $destiny . '/images/products/c-plus-liga.png"></a></div>';
     $body .= '</div>';
     $response = array(
       'title' => $title,

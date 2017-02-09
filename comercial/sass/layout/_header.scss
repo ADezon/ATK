@@ -11,7 +11,7 @@
     @include breakpoint($tablet) {
       display: none;
     }
-    &.show-on-mobile{
+    &.show-on-mobile {
       clear: both;
       display: block;
       float:none;
@@ -35,22 +35,20 @@
           position: relative;
           width: 100%;
         }
-        .links-topbar{
+        .links-topbar {
           clear: both;
           display: block;
           float:none;
           overflow: hidden;
           position: relative;
-          li{
+          li {
             clear: both;
             display: block;
             float:none;
             padding:0;
             position: relative;
-            span{
-              display: none;
-            }
-            a{
+            span, div { display: none; }
+            a {
               color: $greymedium;
               display: block;
               float: left;
@@ -201,16 +199,22 @@
         }
       }
     }
-    .content{
+    .content {
       overflow: visible;
       padding: 0 20px;
       .links-topbar{
-        li{
+        li {
           display: block;
           float: left;
           padding-right: 22px;
           position: relative;
-          span{
+
+          .icons {
+            float: left;
+            padding-right: 8px;
+          }
+          div,
+          span {
             color:$greymedium;
             display: block;
             float: left;
@@ -224,7 +228,7 @@
             display: block;
             float: left;
             font-size: 13px;
-            padding-top:5px;
+            padding-top: 4px;
             position: relative;
             text-align: left;
             &:hover{
@@ -519,6 +523,7 @@
         display: block;
         font-size: 12px;
         padding: 8px 5px;
+        width: 126px;
       }
       &:hover{
         background-color: #FFFFFF;
@@ -564,7 +569,11 @@
 
       .client-full-name {
         text-align: center;
+        line-height: 14px;
         &:before {
+          position: absolute;
+          left: 5px;
+          top: 36%;
           content: "\e905";
           font-family: 'atelecom-icons' !important;
           font-size: 20px;
@@ -673,7 +682,7 @@
   .container-client-area{
     position: relative;
     display: none;
-    max-width: 1280px;
+    max-width: 1024px;
     margin: 0 auto;
     z-index: 20;
     @include breakpoint($tablet) {
@@ -783,6 +792,7 @@
           max-width: 1280px;
           margin: 0 auto;
           overflow: hidden;
+          max-height: 50px;
           li{
             position: relative;
             display: block;
@@ -922,7 +932,7 @@
     }
   }
 
-  #nav-private, #nav-business{
+  #nav-private, #nav-business {
     background-color: $greydark;
     overflow: visible;
     height: 50px;
@@ -963,7 +973,7 @@
         padding: 0;
         @include span(3 of 12);
         &.active{
-          .title-level-1{
+          .title-level-1 {
             color: $pink;
           }
         }
@@ -986,7 +996,7 @@
           font-size: 14px;
           font-weight: bold;
           line-height: 16px;
-          padding: 14px 0;
+          padding: 17px 0;
           position: relative;
           text-align: center;
           &:hover{
@@ -995,11 +1005,20 @@
               color: $white;
             }
           }
-          .icons{
+          .icons {
+            float: left;
             color: $pink;
             font-size: 20px;
-            padding-right: 5px;
+            padding-right: 10px;
+            margin-left: 30px;
+            @include breakpoint ($mobile) {
+              margin-left: 0;
+            }
           }
+          div {
+            text-align: left;
+          }
+          div:not(icons) { margin-left: 6px; }
         }
         a {
           color: white;
@@ -1173,7 +1192,7 @@
       font-weight: bold;
       font-size: 14px;
       line-height: 26px;
-      padding: 14px 0;
+      padding: 10px 0;
       &.active, &.active-logged {
         color: $greydark;
         background-color: $white;
