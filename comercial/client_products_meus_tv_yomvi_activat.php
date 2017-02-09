@@ -1,8 +1,9 @@
 <?php include 'includes/header_loged.php'; ?>
 
+  <div id="main-content">
 
   <!-- BEGIN SPECIFIC PAGE CLIENT PRODUCTS -->
-  <div id="main-content" class="basic-page cont-wrapper" xmlns="http://www.w3.org/1999/html">
+  <div class="basic-page cont-wrapper" xmlns="http://www.w3.org/1999/html">
     <div class="page-client-products cont-wrapper">
       <div class="content">
           <?php include 'includes/breadcrumb.php'; ?>
@@ -636,5 +637,7 @@
 
       });
   </script>
+
+  </div>
 
 <?php include 'includes/footer.php'; ?>

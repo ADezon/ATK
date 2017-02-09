@@ -1,5 +1,6 @@
 <?php include 'includes/header_loged.php'; ?>
 
+  <div id="main-content">
 
   <!--BEGIN SPECIFIC PAGE CONTRACTACIO -->
   <div class="cont-wrapper contract-content bg-grey with-bottom">
@@ -48,12 +49,19 @@
         </div>
 
 
-      </div>
+        <div class="content shortcode-container">
+          <div class="links-list">
+            <input type="button" class="button-shortcode button-active" value="Cancelar">
+            <input type="button" class="button-shortcode button-pink" value="Confirmar">
+          </div>
+        </div>
 
+      </div>
 
     </div>
   </div>
   <!-- END SPECIFIC CONTRACTACIO -->
 
+  </div>
 
 <?php include 'includes/footer.php'; ?>

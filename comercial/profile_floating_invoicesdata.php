@@ -1,5 +1,6 @@
 <?php include 'includes/header_loged_profile.php'; ?>
 
+  <div id="main-content">
 
   <!--BEGIN SPECIFIC PAGE PROFILE-->
   <div id="profile-text" class="cont-wrapper">
@@ -176,5 +177,7 @@
     $( document ).ready(function() {
       revealalert();
     });</script>
+
+  </div>
 
 <?php include 'includes/footer.php'; ?>

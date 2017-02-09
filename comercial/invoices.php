@@ -1,5 +1,6 @@
 <?php include 'includes/header_loged.php'; ?>
 
+  <div id="main-content">
 
   <!--BEGIN SPECIFIC PAGE INVOICES-->
   <div class="basic-page cont-wrapper">
@@ -467,5 +468,6 @@
   </div>
   <!--END SPECIFIC PAGE ON SOM-->
 
+  </div>
 
 <?php include 'includes/footer.php'; ?>

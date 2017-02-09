@@ -1,5 +1,6 @@
 <?php include 'includes/header_loged.php'; ?>
 
+  <div id="main-content">
 
     <!--BEGIN SPECIFIC PAGE APP CONFIG-->
     <div class="cont-wrapper config-app-text">
@@ -123,5 +124,6 @@
     </div>
     <!--END SPECIFIC PAGE APP CONFIG-->
 
+  </div>
 
 <?php include 'includes/footer.php'; ?>

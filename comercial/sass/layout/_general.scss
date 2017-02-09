@@ -830,7 +830,7 @@ p{
       }
       .actions-container {
         float: left;
-        padding: 6px 0 0 30px;
+        //padding: 6px 0 0 30px;
         @include breakpoint ($mobile) {
           width: 100%;
           padding: 0;

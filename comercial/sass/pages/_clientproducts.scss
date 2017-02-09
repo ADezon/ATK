@@ -251,6 +251,10 @@
           }
         }
       }
+      li:before {
+        content: '' !important;
+        display: none !important;
+      }
     }
     .services-big {
       float: left;

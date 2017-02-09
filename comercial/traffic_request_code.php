@@ -1,5 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
+  <div id="main-content">
+
     <!--BEGIN SPECIFIC PAGE TRAFFIC REQUEST CODE-->
     <div class="basic-page cont-wrapper">
         <div class="content">
@@ -27,28 +29,24 @@
                 <ul>
                     <li>
                         <div class="element-banner-h">
-                            <!--<span class="icons icon-road-accidents"></span>-->
                             <span class="icons icon-mobile"></span>
                             <span>Accidents viàris</span>
                         </div>
                     </li>
                     <li>
                         <div class="element-banner-h">
-                            <!--<span class="icons icon-snow-chains"></span>-->
                             <span class="icons icon-wheel"></span>
                             <span>Ús de cadenes (neu)</span>
                         </div>
                     </li>
                     <li>
                         <div class="element-banner-h">
-                            <!--<span class="icons icon-road-retentions"></span>-->
                             <span class="icons icon-cars"></span>
                             <span>Retencions</span>
                         </div>
                     </li>
                     <li class="last">
                         <div class="element-banner-h">
-                            <!--<span class="icons icon-road-cuts"></span>-->
                             <span class="icons icon-attention"></span>
                             <span>Talls a la xarxa viària Andorrana</span>
                         </div>
@@ -58,5 +56,7 @@
         </div>
     </div>
     <!--END SPECIFIC PAGE TRAFFIC REQUEST CODE-->
+
+  </div>
 
 <?php include 'includes/footer.php'; ?>

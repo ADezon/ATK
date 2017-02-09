@@ -602,7 +602,7 @@ button {
   display: block;
   overflow: hidden;
   margin-top: 25px;
-    li{
+    li {
       padding: 8px 0;
       clear: both;
       width: 100%;
@@ -610,6 +610,10 @@ button {
       display: block;
       overflow: hidden;
       border-bottom: 1px solid #cfd1d2;
+      &:before {
+        content: '' !important;
+        display: none !important;
+      }
       .info-check{
         position: relative;
         display: block;

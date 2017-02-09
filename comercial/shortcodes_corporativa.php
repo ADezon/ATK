@@ -1,5 +1,6 @@
 <?php include 'includes/header_shortcodes.php'; ?>
 
+  <div id="main-content">
 
     <!--BEGIN SPECIFIC PAGE SHORTCODE-->
     <div class="basic-page cont-wrapper shortcode-container">
@@ -355,6 +356,12 @@
                     <h3>Morbi rhoncus dolor non purus molestie, a blandit lorem
                         condimentum.</h3>
                     <div>
+                      <ul>
+                        <li>Item One</li>
+                        <li>Item Two</li>
+                        <li>Item Three</li>
+                        <li>Item Four</li>
+                      </ul>
                         <p>
                             Mauris mauris ante, blandit et, ultrices a, suscipit
                             eget, quam. Integer
@@ -867,5 +874,6 @@
         </div>
         <!-- END SECTION BOTONS i LINKS -->
 
+    </div>
 
 <?php include 'includes/footer.php'; ?>

@@ -1,5 +1,6 @@
 <?php include 'includes/header_loged_profile.php'; ?>
 
+  <div id="main-content">
 
     <!--BEGIN SPECIFIC PAGE PROFILE-->
     <div id="profile-text" class="cont-wrapper">
@@ -100,5 +101,6 @@
     </div>
     <!--END SPECIFIC PAGE PROFILE-->
 
+  </div>
 
 <?php include 'includes/footer.php'; ?>

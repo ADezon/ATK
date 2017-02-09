@@ -1,5 +1,6 @@
-<?php include 'includes/header_consumption.php'; ?>
 <?php include 'includes/header_shortcodes.php'; ?>
+
+  <div id="main-content">
 
     <!-- BEGIN SPECIFIC PAGE VOD FILMS CATEGORY DETAIL -->
     <div class="cont-wrapper">
@@ -229,5 +230,7 @@
         </div>
     </div>
     <!-- END SPECIFIC PAGE VOD FILMS CATEGORY DETAI -->
+
+  </div>
 
 <?php include 'includes/footer.php'; ?>

@@ -1,5 +1,6 @@
 <?php include 'includes/header_loged.php'; ?>
 
+  <div id="main-content">
 
   <!--BEGIN SPECIFIC PAGE CONTRACTACIO -->
   <div class="cont-wrapper contract-content bg-grey with-bottom">
@@ -48,5 +49,6 @@
 
   <!-- END SPECIFIC CONTRACTACIO -->
 
+  </div>
 
 <?php include 'includes/footer.php'; ?>

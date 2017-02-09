@@ -1,5 +1,6 @@
 <?php include 'includes/header_onsom.php'; ?>
 
+  <div id="main-content">
 
 <!--BEGIN SPECIFIC PAGE ON SOM-->
 <div class="basic-page cont-wrapper">
@@ -288,5 +289,6 @@
 </div>
 <!--END SPECIFIC PAGE ON SOM-->
 
+  </div>
 
 <?php include 'includes/footer.php'; ?>

@@ -1,5 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
+  <div id="main-content">
+
     <!--BEGIN SPECIFIC PAGE RECOVER PASS CONFIRM-->
     <div class="basic-page cont-wrapper">
         <div class="content">
@@ -26,5 +28,7 @@
         </div>
     </div>
     <!--END SPECIFIC PAGE RECOVER PASS CONFIRM-->
+
+  </div>
 
 <?php include 'includes/footer.php'; ?>

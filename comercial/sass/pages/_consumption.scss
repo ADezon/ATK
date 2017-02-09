@@ -551,6 +551,10 @@
       margin-bottom: 15px;
       overflow: hidden;
       position: relative;
+      &:before {
+        content: '' !important;
+        display: none !important;
+      }
       span{
         display: block;
         float: left;

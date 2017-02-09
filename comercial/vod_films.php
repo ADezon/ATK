@@ -1,5 +1,7 @@
 <?php include 'includes/header_shortcodes.php'; ?>
 
+  <div id="main-content">
+
     <!-- BEGIN SPECIFIC PAGE VOD FILMS -->
     <div class="cont-wrapper vod-films">
         <div class="content">
@@ -688,5 +690,7 @@
             </div>
     </div>
     <!-- END SPECIFIC PAGE VOD FILMS -->
+
+  </div>
 
 <?php include 'includes/footer.php'; ?>

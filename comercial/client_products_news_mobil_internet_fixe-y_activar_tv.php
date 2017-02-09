@@ -1,5 +1,6 @@
 <?php include 'includes/header_loged.php'; ?>
 
+  <div id="main-content">
 
   <!-- BEGIN SPECIFIC PAGE CLIENT PRODUCTS -->
   <div class="basic-page cont-wrapper" xmlns="http://www.w3.org/1999/html">
@@ -620,5 +621,7 @@
 
       });
   </script>
+
+  </div>
 
 <?php include 'includes/footer.php'; ?>

@@ -1,5 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
+  <div id="main-content">
+
   <!--BEGIN SPECIFIC PAGE TRAFFIC CONFIG-->
   <div class="basic-page cont-wrapper">
     <div class="content">
@@ -234,5 +236,7 @@
       $('input[type="checkbox"]').attr('checked', false);
     });
   </script>
+
+  </div>
 
 <?php include 'includes/footer.php'; ?>

@@ -1,5 +1,6 @@
 <?php include 'includes/header_shortcodes.php'; ?>
 
+  <div id="main-content">
 
   <!--BEGIN SPECIFIC PAGE SHORTCODE-->
   <div class="basic-page cont-wrapper shortcode-container">
@@ -1150,4 +1151,7 @@ DEFAULT 3 columns (actual)
     </div>
   </div>
   <!-- END SECTION 3 COLUMNS ALARM -->
+
+  </div>
+
 <?php include 'includes/footer.php'; ?>

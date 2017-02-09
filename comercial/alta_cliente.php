@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
-
-<!--BEGIN SPECIFIC PAGE FORMULARI ALTA AREA PRIVADA-->
+<div id="main-content">
+  <!--BEGIN SPECIFIC PAGE FORMULARI ALTA AREA PRIVADA-->
 <div class="basic-page cont-wrapper">
   <div class="content">
 
@@ -69,6 +69,6 @@
   </div>
 </div>
 
-
+</div>
 
 <?php include 'includes/footer.php'; ?>
