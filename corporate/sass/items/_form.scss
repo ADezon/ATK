@@ -162,6 +162,8 @@ input[type=text], input[type=password] {
   line-height: 18px;
   padding: 10px;
   color: $gris3;
+  box-shadow: none;
+  border-radius: 0;
   &.field-error {
     border: 1px solid $pink;
   }
@@ -252,10 +254,60 @@ textarea {
 
 // CAPTCHA
 .captcha {
-  clear: both;
+  float: left;
+  clear: none;
+  width: 100%;
   display: block;
   margin: 20px 0;
   position: relative;
+
+  img {
+    width: inherit;
+    margin: 0 15px 10px 0;
+  }
+
+  .refresh {
+    padding-bottom: 6px;
+    display: inherit;
+  }
+  input.field { width: 100%; }
+  .control-label {
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+  .text-warning {
+    color: #333333;
+
+    svg {
+      display: none;
+    }
+  }
+  .hide-accessible { display: none; }
+  .icon-refresh:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'atelecom-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    content: '\e93e';
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .required {
+
+  }
+  .help-block {
+    font-style: italic;
+    color: $pink;
+    font-size: 14px;
+  }
 }
 
 // SEND BUTTON
@@ -602,7 +654,7 @@ button {
   display: block;
   overflow: hidden;
   margin-top: 25px;
-    li{
+    li {
       padding: 8px 0;
       clear: both;
       width: 100%;
@@ -610,6 +662,10 @@ button {
       display: block;
       overflow: hidden;
       border-bottom: 1px solid #cfd1d2;
+      &:before {
+        content: '' !important;
+        display: none !important;
+      }
       .info-check{
         position: relative;
         display: block;

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'atelecom-icons';
-  src:  url('fonts/atelecom-icons.eot?26b3tr');
-  src:  url('fonts/atelecom-icons.eot?26b3tr#iefix') format('embedded-opentype'),
-    url('fonts/atelecom-icons.ttf?26b3tr') format('truetype'),
-    url('fonts/atelecom-icons.woff?26b3tr') format('woff'),
-    url('fonts/atelecom-icons.svg?26b3tr#atelecom-icons') format('svg');
+  src:  url('fonts/atelecom-icons.eot?kw5ewu');
+  src:  url('fonts/atelecom-icons.eot?kw5ewu#iefix') format('embedded-opentype'),
+    url('fonts/atelecom-icons.ttf?kw5ewu') format('truetype'),
+    url('fonts/atelecom-icons.woff?kw5ewu') format('woff'),
+    url('fonts/atelecom-icons.svg?kw5ewu#atelecom-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-asterisk:before {
+  content: "\e93d";
+}
+.icon-refresh:before {
+  content: "\e93e";
+}
+.icon-device-message:before {
+  content: "\e93f";
+}
+.icon-add-people .path1:before {
+  content: "\e940";
+  color: rgb(0, 0, 0);
+}
+.icon-add-people .path2:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-add-people .path3:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
 .icon-goto:before {
   content: "\e93c";
 }

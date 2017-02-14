@@ -15,7 +15,7 @@
   #footer-links{
     background: $pink url("../images/bg-pattern-footer.png") no-repeat 100% 100%;
     padding: 70px 0 60px 0;
-    .column-footer{
+    .column-footer {
       @include span(3 of 12);
       @include breakpoint($tablet) {
         @include span(4 of 12 last);
@@ -59,6 +59,9 @@
             display: none;
           }
         }
+      }
+      a.button-action {
+        margin-bottom: 14px;
       }
       .social-links{
         li{

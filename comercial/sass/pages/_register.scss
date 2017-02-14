@@ -125,16 +125,30 @@
   fieldset {
     &.big-fieldset {
       width: 60%;
+      &.box-email {
+        width: 30%;
+      }
     }
+
     &.small-fieldset {
       width: 40%;
     }
   }
   input[type=submit].alta-client-send {
-    width: 111px;
+    width: 112px;
     @include breakpoint($mobile) {
       width: 100%;
     }
+  }
+}
+
+.recover-user-form {
+  width: 400px;
+
+  fieldset { width: 100%; }
+  h4 { margin: 0; }
+  @include breakpoint($tablet) {
+    width: 100%;
   }
 }
 
