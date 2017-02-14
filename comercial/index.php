@@ -21,11 +21,11 @@
 
               <!--BEGIN from here the USER decides-->
               <div class="position-left">
-                <div class="field-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="field-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                 <div class="field-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  <div>
-                    <span style="font-size: 72px; color: #D30572;">15€</span>&nbsp;<span style="color:#D30572; font-size: 32px;">/mes</span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <div style="margin-top: 38px;">
+                    <span style="font-size: 72px; color: #D30572; font-weight: bold;">15€</span>&nbsp;<span style="color:#D30572; font-size: 32px;">/mes</span>
                   </div>
                 </div>
               </div>
@@ -43,11 +43,11 @@
           <div class="inner-container">
             <div class="custom-htmlfree">
               <div class="position-right">
-                <div class="field-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="field-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                 <div class="field-body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  <div style="margin-top: 10px">
-                    <span style="font-size: 72px; color: #D30572;">20€</span>&nbsp;<span style="color:#D30572; font-size: 32px;">/mes</span>
+                  <div style="margin-top: 20px">
+                    <span style="font-size: 72px; color: #D30572; font-weight: bold;">20€</span>&nbsp;<span style="color:#D30572; font-size: 32px;">/mes</span>
                   </div>
                 </div>
               </div>
@@ -66,8 +66,8 @@
                 <div class="field-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                 <div class="field-body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  <div>
-                    <span style="font-size: 72px; color: #D30572;">34€</span>&nbsp;<span style="color:#D30572; font-size: 32px;">/mes</span>
+                  <div style="margin-top: 38px;">
+                    <span style="font-size: 72px; color: #D30572; font-weight: bold;">34€</span>&nbsp;<span style="color:#D30572; font-size: 32px;">/mes</span>
                   </div>
                 </div>
               </div>
@@ -137,42 +137,6 @@
 
               <div class="item picture"><img src="./uploaded_files/som-televisio.png" /></div>
               <div class="item title">SOM Televisió</div>
-              <!--END until here the USER decides-->
-
-              <!--from here are INJECTED CODE FROM PLATTFORM again-->
-            </div>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="block-container">
-          <div class="inner-container">
-            <div class="custom-htmlfree">
-              <!--until here are INJECTED CODE FROM PLATTFORM-->
-
-              <!--BEGIN from here the USER decides-->
-
-              <div class="item picture"><img src="./uploaded_files/wellsom.png" /></div>
-              <div class="item title">WellSom</div>
-              <!--END until here the USER decides-->
-
-              <!--from here are INJECTED CODE FROM PLATTFORM again-->
-            </div>
-          </div>
-        </div>
-      </li>
-
-      <li>
-        <div class="block-container">
-          <div class="inner-container">
-            <div class="custom-htmlfree">
-              <!--until here are INJECTED CODE FROM PLATTFORM-->
-
-              <!--BEGIN from here the USER decides-->
-
-              <div class="item picture"><img src="https://dummyimage.com/56x46/000/fff.jpg"/></div>
-              <div class="item title"><a href="#">a title is with LINK</a></div>
               <!--END until here the USER decides-->
 
               <!--from here are INJECTED CODE FROM PLATTFORM again-->

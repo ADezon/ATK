@@ -91,27 +91,413 @@
         <div class="languages">
           <ul>
             <li>
-              <div
-                class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language"
-                id="p_p_id_82_">
-                <div id="p_82"></div>
-                <div class="portlet-borderless-container" style="">
-                  <div class="portlet-body">
-                    <div class="taglib-language-list-text"
-                          lang="es-CA">Cat</div>
-                    <div id="sub-menu-lang">
-                      <a href="http://172.17.2.9:8080/es/web/guest/home"
-                         class="taglib-language-list-text last"
-                         lang="es-ES">Esp</a>
-                      <a href="http://172.17.2.9:8080/es/web/guest/home"
-                         class="taglib-language-list-text last"
-                         lang="en-EN">Eng</a>
-                      <a href="http://172.17.2.9:8080/en/web/guest/home"
-                         class="taglib-language-list-text last" lang="fr-FR">Fra</a>
+              <div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-decorate portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_languageProperties_">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_languageProperties">
+
+
+                  <div class="portlet-content">
+
+                    <h2 class="portlet-title-text">Language Selector</h2>
+
+
+                    <div class=" portlet-content-container">
+
+
+
+                      <div class="portlet-body">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="text-right user-tool-asset-addon-entries">
+
+                        </div>
+
+                        <div class="journal-content-article">
+                          <script>
+                              var path = window.location.pathname;
+                              var plid = "34684";
+                              var locale = "ca_ES";
+                          </script>
+
+                          <ul>
+                            <li>
+                              <div class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language" id="p_p_id_82_">
+                                <span id="p_82"></span>
+                                <div class="portlet-borderless-container">
+                                  <div class="portlet-body" style="background-color:#e4e4e4">
+					<span class="taglib-language-list-text">
+                      Cat
+					</span>
+
+                                    <div id="sub-menu-lang">
+                                      <a onclick="location.href='/c/portal/update_language?p_l_id=' + plid + '&amp;redirect=' + path + '&amp;languageId=es_ES'" class="taglib-language-list-text">
+                                        Esp</a>
+                                      <a onclick="location.href='/c/portal/update_language?p_l_id=' + plid + '&amp;redirect=' + path + '&amp;languageId=fr_FR'" class="taglib-language-list-text">
+                                        Fra</a>
+                                      <a onclick="location.href='/c/portal/update_language?p_l_id=' + plid + '&amp;redirect=' + path + '&amp;languageId=en_US'" class="taglib-language-list-text">
+                                        Eng</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="content-metadata-asset-addon-entries">
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      </div>
+
                     </div>
+
                   </div>
-                </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               </div>
+
+
+
             </li>
           </ul>
         </div>
@@ -142,7 +528,7 @@
           <div class="counter-alerts">99</div>
         </a>
         <div class="button-login-client active-logged" href="#" title="">
-            <div class="client-full-name">Hola, Ramis KHALIKOV</div>
+            <div class="client-full-name">Hola, Ramis Khalikov</div>
         </div>
       </div>
     </div>
@@ -437,7 +823,7 @@
         </li>
       </ul>
       <div class="button-client-area active-logged">
-          <div class="client-full-name">Hola, Ramis KHALIKOV</div>
+          <div class="client-full-name">Hola, Ramis Khalikov</div>
       </div>
     </div>
   </div>

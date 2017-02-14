@@ -1,9 +1,15 @@
 * {
   box-sizing: border-box;
 }
-body{
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
   font-family: $webfont;
   position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
 h1 {
   clear: both;

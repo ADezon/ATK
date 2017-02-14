@@ -65,7 +65,6 @@
           <a class="button-action" href="#" title="">TREBALLA AMB NOSALTRES</a>
         </div>
 
-        <h3>Subscriu-te a la nostra newsletter!</h3>
         <!-- FORM INPUT -->
         <!-- FORM SUBMIT -->
         <h3>Segueix-nos a les nostres xarxes</h3>

@@ -172,7 +172,7 @@
           <div class="counter-alerts">99</div>
         </a>
         <div class="button-login-client active-logged" href="#" title="">
-            <div class="client-full-name">Hola, RAMIS KHALIKOV</div>
+            <div class="client-full-name">Hola, Ramis Khalikov</div>
             </div>
       </div>
     </div>
@@ -466,7 +466,7 @@
       </ul>
       <div class="button-client-area active-logged">
 <!--        <div class="icons icon-client"></div>-->
-        <div class="client-full-name">Hola, RAMIS KHALIKOV</div>
+        <div class="client-full-name">Hola, Ramis Khalikov</div>
       </div>
     </div>
   </div>

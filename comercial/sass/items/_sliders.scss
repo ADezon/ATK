@@ -10,6 +10,7 @@
       }
       img {
         width: 100%;
+        float: left;
         @include breakpoint($intermedio) {
           object-fit: cover;
           width: 100%;
@@ -54,7 +55,10 @@
               }
             }
             .position-left { float: left; }
-            .position-right { float: right; }
+            .position-right {
+              float: right;
+              text-align: right;
+            }
 
             .position-center {
               background-color: white;
@@ -70,13 +74,14 @@
             .field-title {
               color: $pink;
               font-size: 21px;
+              line-height: 28px;
               font-weight: 600;
               margin-bottom:16px;
             }
             .field-body {
               color: $greymedium;
               font-size: 18px;
-
+              line-height: 24px;
             }
 
           }
@@ -225,4 +230,12 @@
 .flex-control-nav li:before {
   content: "";
   display: none;
+}
+
+.flex-viewport .slides li {
+  border-left: 1px solid #9C9E9F;
+  &:first-child {
+    border: medium none;
+  }
+
 }

@@ -30,7 +30,6 @@
 * 0. SHORTCODE LAYOUT
 */
 .shortcode-container {
-  margin-bottom: 40px;
   &.main-menu-shortcode {
     margin-top: 50px;
     @include breakpoint($tablet) {

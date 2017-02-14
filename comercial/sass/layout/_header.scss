@@ -1,9 +1,9 @@
-#header{
+#header {
   display: block;
   overflow: visible;
   position: relative;
   width: 100%;
-  #topbar{
+  #topbar {
     background-color: $grey;
     height: 39px;
     overflow: visible;
@@ -11,26 +11,30 @@
     @include breakpoint($tablet) {
       display: none;
     }
+    .right {
+      margin-right: -16px;
+    }
+
     &.show-on-mobile {
       clear: both;
       display: block;
-      float:none;
+      float: none;
       height: auto;
       overflow: visible;
       position: relative;
-      .content{
-        .left{
+      .content {
+        .left {
           clear: both;
           display: block;
-          float:none;
+          float: none;
           overflow: hidden;
           position: relative;
           width: 100%;
         }
-        .right{
+        .right {
           clear: both;
           display: block;
-          float:none;
+          float: none;
           overflow: visible;
           position: relative;
           width: 100%;
@@ -38,25 +42,27 @@
         .links-topbar {
           clear: both;
           display: block;
-          float:none;
+          float: none;
           overflow: hidden;
           position: relative;
           li {
             clear: both;
             display: block;
-            float:none;
-            padding:0;
+            float: none;
+            padding: 0;
             position: relative;
-            span, div { display: none; }
+            span, div {
+              display: none;
+            }
             a {
               color: $greymedium;
               display: block;
               float: left;
               font-size: 14px;
-              padding:15px 0;
+              padding: 15px 0;
               position: relative;
               text-align: left;
-              &:hover{
+              &:hover {
                 text-decoration: underline;
                 text-decoration-color: $greymedium;
               }
@@ -67,24 +73,24 @@
             }
           }
         }
-        .search{
+        .search {
           border-bottom: 1px solid $whitealt;
           border-top: 1px solid $whitealt;
           clear: both;
           display: block;
-          float:none;
+          float: none;
           margin: 0;
           overflow: hidden;
           padding: 10px 0;
           position: relative;
-          &:hover{
-            .search-form{
+          &:hover {
+            .search-form {
               float: right;
               margin-left: 2%;
-              width:78%;
+              width: 78%;
             }
           }
-          .search-form{
+          .search-form {
             clear: none;
             margin: 0;
             background-color: transparent;
@@ -92,10 +98,10 @@
             color: $greymedium;
             display: block;
             float: right;
-            height:30px;
+            height: 30px;
             margin-left: 2%;
             position: relative;
-            width:78%;
+            width: 78%;
             &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
               color: $gris3;
             }
@@ -109,7 +115,7 @@
               color: $gris3;
             }
           }
-          .icon-search{
+          .icon-search {
             color: $greymedium;
             display: block;
             float: left;
@@ -130,46 +136,47 @@
             width: 10%;
           }
         }
-        .languages{
+        .languages {
           clear: both;
           display: block;
-          float:none;
+          float: none;
           overflow: visible;
           position: relative;
           height: 38px;
-          ul{
+          ul {
             display: block;
             position: relative;
-            li{
+            li {
               display: block;
               position: relative;
-              .portlet-language{
+              .portlet-language {
                 display: block;
                 position: relative;
-                .portlet-body{
+                .portlet-body {
                   display: block;
                   position: relative;
-                  &:hover{
-                    span{
-                      &:after{
+                  &:hover {
+                    span,
+                    div {
+                      &:after {
                         display: none;
                       }
                     }
-                    a{
+                    a {
                       display: block;
                     }
                   }
-                  .taglib-language-list-text{
+                  .taglib-language-list-text {
                     background-color: transparent;
                     color: $greydark;
                     cursor: pointer;
                     display: block;
-                    float:left;
+                    float: left;
                     font-size: 13px;
                     line-height: 20px;
                     padding: 10px;
                     position: relative;
-                    right:0;
+                    right: 0;
                     text-align: center;
                     text-transform: uppercase;
                     top: 0;
@@ -179,12 +186,12 @@
                       text-transform: none;
                       font-weight: bold;
                     }
-                    &:first-child{
-                      &:before{
+                    &:first-child {
+                      &:before {
                         display: none;
                       }
                     }
-                    &:after{
+                    &:after {
                       display: none;
                     }
                   }
@@ -202,7 +209,7 @@
     .content {
       overflow: visible;
       padding: 0 20px;
-      .links-topbar{
+      .links-topbar {
         li {
           display: block;
           float: left;
@@ -215,7 +222,7 @@
           }
           div,
           span {
-            color:$greymedium;
+            color: $greymedium;
             display: block;
             float: left;
             font-size: 18px;
@@ -223,15 +230,15 @@
             position: relative;
             text-align: left;
           }
-          a{
+          a {
             color: $greymedium;
             display: block;
             float: left;
-            font-size: 13px;
+            font-size: 14px;
             padding-top: 4px;
             position: relative;
             text-align: left;
-            &:hover{
+            &:hover {
               text-decoration: underline;
               text-decoration-color: $greymedium;
             }
@@ -242,17 +249,17 @@
           }
         }
       }
-      .search{
+      .search {
         display: block;
         float: left;
         margin-right: 10px;
         position: relative;
-        .search-form{
+        .search-form {
           background-color: transparent;
           border-bottom: 1px solid $gris3;
-          border-left:none;
-          border-right:none;
-          border-top:none;
+          border-left: none;
+          border-right: none;
+          border-top: none;
           position: relative;
           color: $greymedium;
           display: none;
@@ -274,12 +281,12 @@
             color: $gris3;
           }
         }
-        &:hover{
-          .search-form{
+        &:hover {
+          .search-form {
             display: block;
           }
         }
-        .icon-search{
+        .icon-search {
           color: $greymedium;
           display: block;
           float: left;
@@ -288,7 +295,7 @@
           position: relative;
           cursor: pointer;
         }
-        .icon-right{
+        .icon-right {
           color: $greymedium;
           cursor: pointer;
           display: none;
@@ -298,36 +305,37 @@
           position: relative;
         }
       }
-      .languages{
+      .languages {
         display: block;
         float: left;
         position: relative;
-        ul{
+        ul {
           display: block;
           position: relative;
-          li{
+          li {
             display: block;
             position: relative;
-            .portlet-language{
+            .portlet-language {
               display: block;
               position: relative;
-              .portlet-body{
+              .portlet-body {
                 display: block;
                 position: relative;
-                &:hover{
+                &:hover {
                   #sub-menu-lang {
                     display: block;
                   }
-                  span{
-                    &:after{
+                  span {
+                    &:after {
                       content: "\e915";
                     }
                   }
-                  a{
+                  a {
                     display: block;
                   }
                 }
-                span{
+                div.taglib-language-list-text,
+                span {
                   color: $greydark;
                   cursor: pointer;
                   display: block;
@@ -337,7 +345,7 @@
                   position: relative;
                   text-align: left;
                   text-transform: uppercase;
-                  &:after{
+                  &:after {
                     /* use !important to prevent issues with browser extensions that change fonts */
                     content: "\e916";
                     font-family: 'atelecom-icons' !important;
@@ -358,7 +366,7 @@
                   display: none;
                   padding: 0 10px;
                   position: absolute;
-                  left:0;
+                  left: 0;
                   height: auto;
                   text-align: center;
                   text-transform: uppercase;
@@ -381,7 +389,7 @@
                     }
                   }
                 }
-                a{
+                a {
                   background-color: $grey;
                   color: $greymedium;
                   cursor: pointer;
@@ -393,10 +401,7 @@
                     padding: 10px 0;
                   }
 
-
-
-
-                  &:hover{
+                  &:hover {
                     font-weight: bold;
                   }
                 }
@@ -416,43 +421,43 @@
       }
     }
   }
-  #head{
+  #head {
     background: $pink; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, $fadepinkleft , $fadepinkright); /* For Safari 5.1 to 6.0 */
+    background: -webkit-linear-gradient(left, $fadepinkleft, $fadepinkright); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, $fadepinkleft, $fadepinkright); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, $fadepinkleft, $fadepinkright); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, $fadepinkleft , $fadepinkright); /* Standard syntax */
+    background: linear-gradient(to right, $fadepinkleft, $fadepinkright); /* Standard syntax */
     height: 72px;
     padding: 0;
-    .logo{
+    .logo {
       display: block;
       float: left;
       overflow: hidden;
       position: relative;
-      width: 100px;
-      img{
+      width: 130px;
+      img {
         padding: 9px 0;
         display: block;
-        width: 100px;
+        width: 128px;
         position: relative;
       }
     }
-    #nav-main{
+    #nav-main {
       display: block;
       float: left;
       position: relative;
       @include breakpoint($tablet) {
         display: none;
       }
-      li{
+      li {
         display: block;
         float: left;
         padding: 0;
         position: relative;
-        &:hover, &.current{
-          a{
+        &:hover, &.current {
+          a {
             font-weight: bold;
-            &:after{
+            &:after {
               content: "";
               height: 8px;
               background-color: $greydark;
@@ -466,7 +471,7 @@
             }
           }
         }
-        &:first-child{
+        &:first-child {
           &:after {
             content: "";
             height: 20px;
@@ -478,11 +483,11 @@
             margin: 26px 0;
             float: left;
           }
-          a{
-            border-left:0;
+          a {
+            border-left: 0;
           }
         }
-        a{
+        a {
           color: $white;
           display: block;
           font-size: 18px;
@@ -498,12 +503,12 @@
         }
       }
     }
-    .button-alerts{
+    .button-alerts {
       @include breakpoint($tablet) {
         display: none;
       }
     }
-    .button-login-client{
+    .button-login-client {
       background-color: #FFFFFF;
       border-radius: 3px;
       color: $greydark;
@@ -514,7 +519,7 @@
       height: 36px;
       cursor: pointer;
       line-height: 20px;
-      margin:18px 5px;
+      margin: 18px 5px;
       padding: 8px 11px;
       position: relative;
       text-align: left;
@@ -525,23 +530,23 @@
         padding: 8px 5px;
         width: 126px;
       }
-      &:hover{
+      &:hover {
         background-color: #FFFFFF;
       }
-      &:active{
+      &:active {
         background-color: #FFFFFF;
       }
-      &.active{
+      &.active {
         margin-bottom: 0;
         height: 54px;
         background-color: #FFFFFF;
         color: $greydark;
         border-radius: 3px 3px 0 0;
-        .icons{
+        .icons {
           color: $pink;
         }
       }
-      &.active-logged{
+      &.active-logged {
         background-color: #FFFFFF;
         color: $greydark;
         height: auto;
@@ -552,11 +557,11 @@
           border-radius: 6px;
           padding: 5px;
         }
-        .icons{
+        .icons {
           color: $pink;
         }
       }
-      .icons{
+      .icons {
         color: $greydark;
         display: block;
         float: left;
@@ -594,7 +599,7 @@
         }
       }
     }
-    .menu-mobile{
+    .menu-mobile {
       color: $white;
       display: none;
       padding: 0;
@@ -615,8 +620,8 @@
       @include breakpoint($tablet) {
         display: block;
       }
-      &.open{
-        span{
+      &.open {
+        span {
           &:nth-child(1) {
             top: 18px;
             width: 0%;
@@ -679,7 +684,7 @@
     }
   }
 
-  .container-client-area{
+  .container-client-area {
     position: relative;
     display: none;
     max-width: 1024px;
@@ -691,11 +696,11 @@
       padding: 0 15px 30px 15px;
       background-color: #808080;
     }
-    .box-client-area{
+    .box-client-area {
       border-radius: 0 0 3px 3px;
-      box-shadow:  0 1px 2px 1px rgba(50, 50, 50, 0.25);
+      box-shadow: 0 1px 2px 1px rgba(50, 50, 50, 0.25);
       -webkit-box-shadow: 0 1px 2px 1px rgba(50, 50, 50, 0.25);
-      -moz-box-shadow:    0 1px 2px 1px rgba(50, 50, 50, 0.25);
+      -moz-box-shadow: 0 1px 2px 1px rgba(50, 50, 50, 0.25);
       position: absolute;
       top: 50px;
       right: 0;
@@ -708,29 +713,29 @@
         box-shadow: none;
         width: 100%;
         padding: 30px 25px 80px 25px;
-        top:auto;
+        top: auto;
         right: auto;
       }
-      form.login-client{
+      form.login-client {
         position: relative;
         display: block;
         overflow: hidden;
-        fieldset{
+        fieldset {
           width: 100%;
           clear: none;
           margin-bottom: 10px;
           padding: 0;
         }
       }
-      .goto-register{
+      .goto-register {
         position: absolute;
         bottom: 0;
         left: 0;
-        width:100%;
+        width: 100%;
         height: 90px;
         padding: 17px 20px;
         background-color: #f5f5f5;
-        span{
+        span {
           position: relative;
           display: block;
           float: none;
@@ -743,7 +748,7 @@
           font-weight: bold;
           margin-bottom: 5px;
         }
-        a{
+        a {
           position: relative;
           display: block;
           float: left;
@@ -767,7 +772,7 @@
         padding: 0 15px 30px 15px;
         background-color: #808080;
       }
-      .box-client-logged{
+      .box-client-logged {
         border-radius: 0 0 3px 3px;
         //box-shadow:  0 1px 2px 1px rgba(50, 50, 50, 0.25);
         //-webkit-box-shadow: 0 1px 2px 1px rgba(50, 50, 50, 0.25);
@@ -779,7 +784,7 @@
         display: block;
         width: 100%;
         background-color: $white;
-        padding:10px 0;
+        padding: 10px 0;
         @include breakpoint($tablet) {
           position: relative;
           display: block;
@@ -793,7 +798,7 @@
           margin: 0 auto;
           overflow: hidden;
           max-height: 50px;
-          li{
+          li {
             position: relative;
             display: block;
             float: left;
@@ -805,20 +810,21 @@
               border: none;
               width: 100%;
             }
-            &.logout{
+            &.logout {
               width: 20%;
               border: none;
               @include breakpoint($tablet) {
                 width: 100%;
                 background-color: #f5f5f5;
               }
-              a{
+              a {
                 position: relative;
                 display: block;
                 float: right;
                 color: $pink;
                 text-decoration: none;
-                span{
+                width: 100%;
+                div {
                   position: relative;
                   display: block;
                   float: left;
@@ -829,7 +835,7 @@
                     line-height: 21px;
                   }
                 }
-                .icons{
+                .icons {
                   position: relative;
                   display: block;
                   float: left;
@@ -839,7 +845,7 @@
                 }
               }
             }
-            a{
+            a {
               position: relative;
               display: block;
               text-align: center;
@@ -854,7 +860,7 @@
                 line-height: 21px;
                 text-align: left;
               }
-              &:hover{
+              &:hover {
                 font-weight: bold;
                 @include breakpoint($tablet) {
                   background-color: #f5f5f5;
@@ -867,22 +873,21 @@
     }
   }
 
-
-  #nav-main-mobile{
+  #nav-main-mobile {
     background-color: $grey;
     display: none;
     @include breakpoint($tablet) {
       display: block;
     }
-    ul{
-      li{
+    ul {
+      li {
         @include span(6 of 12 last);
-        float:left;
+        float: left;
         padding: 0;
-        &:hover, &.current{
-          a{
+        &:hover, &.current {
+          a {
             font-weight: bold;
-            &:after{
+            &:after {
               content: "";
               height: 8px;
               background-color: $greydark;
@@ -896,7 +901,7 @@
             }
           }
         }
-        &:first-child{
+        &:first-child {
           &:after {
             content: "";
             height: 20px;
@@ -908,11 +913,11 @@
             margin: 26px 0;
             float: left;
           }
-          a{
-            border-left:0;
+          a {
+            border-left: 0;
           }
         }
-        a{
+        a {
           color: $greymedium;
           display: block;
           font-size: 18px;
@@ -942,7 +947,7 @@
     @include breakpoint($tablet) {
       height: auto;
     }
-    .content{
+    .content {
       overflow: visible;
     }
   }
@@ -972,15 +977,15 @@
         margin: 0;
         padding: 0;
         @include span(3 of 12);
-        &.active{
+        &.active {
           .title-level-1 {
             color: $pink;
           }
         }
-        &.last{
+        &.last {
           @include last;
         }
-        &:hover{
+        &:hover {
           color: black;
           background-color: $grey;
           span {
@@ -990,7 +995,7 @@
             background-color: $greydark;
           }
         }
-        .title-level-1{
+        .title-level-1 {
           color: $white;
           display: block;
           font-size: 14px;
@@ -999,11 +1004,14 @@
           padding: 17px 0;
           position: relative;
           text-align: center;
-          &:hover{
+          &:hover {
             color: $greydark;
             @include breakpoint($tablet) {
               color: $white;
             }
+          }
+          @include breakpoint ($mobile) {
+            background-color: #333333;
           }
           .icons {
             float: left;
@@ -1018,7 +1026,9 @@
           div {
             text-align: left;
           }
-          div:not(icons) { margin-left: 6px; }
+          div:not(icons) {
+            margin-left: 6px;
+          }
         }
         a {
           color: white;
@@ -1035,9 +1045,11 @@
           @include breakpoint($tablet) {
             background-color: $greydark;
           }
-          a { color: black; }
+          a {
+            color: black;
+          }
         }
-        .container-submenu{
+        .container-submenu {
           background-color: $grey;
           box-sizing: border-box;
           -moz-box-sizing: border-box;
@@ -1072,13 +1084,13 @@
               margin: 0;
               padding: 0 5%;
               width: 25%;
-              &.banners-mmenu{
+              &.banners-mmenu {
                 clear: both;
                 display: block;
                 float: left;
                 position: relative;
                 width: 100%;
-                ul{
+                ul {
                   li {
                     display: block;
                     float: left;
@@ -1102,25 +1114,25 @@
                 }
               }
               a {
-                color:$greydark;
+                color: $greydark;
                 display: block;
                 padding: 0;
                 @include breakpoint($tablet) {
                   color: $white;
                 }
-                .menu-title{
-                  color:$greydark;
+                .menu-title {
+                  color: $greydark;
                   display: block;
                   font-size: 14px;
                   font-weight: bold;
                   line-height: 20px;
                   position: relative;
                   text-align: left;
-                  width:100%;
+                  width: 100%;
                   @include breakpoint($tablet) {
                     color: $white;
                   }
-                  &:hover{
+                  &:hover {
                     text-decoration: underline;
                   }
                 }
@@ -1155,9 +1167,9 @@
                     line-height: 18px;
                     position: relative;
                     text-align: left;
-                    width:100%;
-                    &:hover{
-                      text-decoration:underline;
+                    width: 100%;
+                    &:hover {
+                      text-decoration: underline;
                     }
                   }
                 }
@@ -1186,9 +1198,9 @@
       display: block;
       float: right;
       height: 50px;
-      text-transform: uppercase;
+      //text-transform: uppercase;
       background-color: $pink;
-      color:$white;
+      color: $white;
       font-weight: bold;
       font-size: 14px;
       line-height: 26px;
@@ -1196,7 +1208,7 @@
       &.active, &.active-logged {
         color: $greydark;
         background-color: $white;
-        .icons{
+        .icons {
           color: $pink;
         }
       }
@@ -1223,22 +1235,23 @@
       }
     }
     &.five-items {
-      >ul > li {
+      > ul > li {
         margin: 0 !important;
         padding: 0;
         @include span(20%);
-        }
+        @include breakpoint($mobile) { width: 100%; }
+      }
       .button-client-area {
         margin: 0 !important;
         @include span(20%);
       }
     }
     &.six-items {
-      >ul > li {
+      > ul > li {
         margin: 0 !important;
         padding: 0;
         @include span(2 of 12);
-        @include breakpoint($tablet){
+        @include breakpoint($tablet) {
           width: 100%;
           float: none;
           display: block;
@@ -1247,7 +1260,7 @@
       .button-client-area {
         margin: 0 !important;
         @include span(2 of 12);
-        @include breakpoint($tablet){
+        @include breakpoint($tablet) {
           width: 100%;
           float: none;
           display: block;
@@ -1255,7 +1268,6 @@
       }
     }
   }
-
 
   /* ––––––––––––––––––––––––––––––––––––––––––––––––––
   Mobile style's
@@ -1288,7 +1300,7 @@
             text-align: left;
             cursor: pointer;
           }
-          .container-submenu{
+          .container-submenu {
             position: relative;
             padding: 0;
             background-color: $greymedium;
@@ -1306,7 +1318,7 @@
                   margin: 0;
                   border: none;
                 }
-                &.banners-mmenu{
+                &.banners-mmenu {
                   display: none;
                 }
                 > ul {

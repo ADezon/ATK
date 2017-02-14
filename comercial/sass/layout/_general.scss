@@ -1,9 +1,15 @@
 * {
   box-sizing: border-box;
 }
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
 body{
   font-family: $webfont;
   position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
 h1 {
   clear: both;
@@ -331,7 +337,7 @@ a {
     border-radius: 4px;
     color: $white;
     display: inline-block;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: bold;
     padding: 4px 16px;
@@ -344,7 +350,7 @@ a {
       background-color: $pinkdark;
     }
     .icons{
-      font-size: 18px;
+      font-size: 24px;
       vertical-align: text-bottom;
       padding-right: 5px;
     }

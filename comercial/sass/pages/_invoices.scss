@@ -347,7 +347,7 @@
             width: 20%;
           }
         }
-        .invoices-list-amount{
+        .invoices-list-amount {
           display: block;
           float: left;
           padding-right: 2%;
@@ -357,12 +357,12 @@
             width: 20%;
           }
         }
-        .invoices-list-downloads{
+        .invoices-list-downloads {
           display: block;
           float: right;
           padding: 0 2%;
           position: relative;
-          width: 12%;
+          width: 14%;
           @include breakpoint($intermedio) {
             width: 20%;
           }

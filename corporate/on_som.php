@@ -46,7 +46,7 @@
             </ul>
         </form>
 
-        <div id="map"></div>
+        <div id="map" style="height: 440px;"></div>
 
         <script language="JavaScript">
 

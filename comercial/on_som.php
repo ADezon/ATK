@@ -1,293 +1,207 @@
-<?php include 'includes/header_onsom.php'; ?>
+<?php include 'includes/header_onsom.php';
+
+$destiny = (gethostbyname() == 'G750JX') ? 'http://www.at.dev/comercial/' : 'http://clientes.king-eclient.com/landing/comercial/';
+
+?>
 
   <div id="main-content">
 
-<!--BEGIN SPECIFIC PAGE ON SOM-->
-<div class="basic-page cont-wrapper">
-    <div class="content">
-        <?php include 'includes/breadcrumb.php'; ?>
+    <!--BEGIN SPECIFIC PAGE ON SOM-->
+    <div class="basic-page cont-wrapper">
+      <div class="content">
+          <?php include 'includes/breadcrumb.php'; ?>
 
         <h1 class="main-title">On som</h1>
 
         <div class="field-body">
-            <p>Andorra Telecom disposa d’una àmplia xarxa de punts d’atenció al públic per facilitar les gestions dels nostres clients.<br />A l’agència comercial, situada al carrer Prat de la Creu número 2 d’Andorra la Vella, se sumen els punts d’atenció a la Massana (Comú de la Massana), Sant Julià (plaça Germandat) i el Pas de la Casa (oficina del Comú d’Encamp) així com l’espai Connectem a la mateixa agència comercial.</p>
+          <p>Andorra Telecom disposa d’una àmplia xarxa de punts d’atenció al públic per facilitar les gestions dels
+            nostres clients.<br/>A l’agència comercial, situada al carrer Prat de la Creu número 2 d’Andorra la Vella,
+            se sumen els punts d’atenció a la Massana (Comú de la Massana), Sant Julià (plaça Germandat) i el Pas de la
+            Casa (oficina del Comú d’Encamp) així com l’espai Connectem a la mateixa agència comercial.</p>
         </div>
-    </div>
-    <div class="map-container">
+      </div>
+      <div class="map-container">
         <form class="legend">
-            <ul>
-                <li>
-                    <div class="checkbox-custom">
-                        <input type="checkbox" id="cb-option-1" name="cb-selector" onclick="toggleGroup('seu')" checked="checked">
-                        <label for="cb-option-1"><span class="circle black"></span>Seu Social</label>
-                        <div class="checkbox-css"></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="checkbox-custom">
-                        <input type="checkbox" id="cb-option-2" name="cb-selector" onclick="toggleGroup('agencia')" checked="checked">
-                        <label for="cb-option-2"><span class="circle pinkdark"></span>Agència Comercial</label>
-                        <div class="checkbox-css"></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="checkbox-custom">
-                        <input type="checkbox" id="cb-option-3" name="cb-selector" onclick="toggleGroup('punts_atencio')" checked="checked">
-                        <label for="cb-option-3"><span class="circle pink"></span>Punts d'atenció al client</label>
-                        <div class="checkbox-css"></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="checkbox-custom">
-                        <input type="checkbox" id="cb-option-4" name="cb-selector" onclick="toggleGroup('espais')" checked="checked">
-                        <label for="cb-option-4"><span class="circle greymedium"></span>Espais Connectem</label>
-                        <div class="checkbox-css"></div>
-                    </div>
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <div class="checkbox-custom">
+                <input type="checkbox" id="cb-option-1" name="seu" onclick="setMarkers()" checked="checked">
+                <label for="cb-option-1"><span class="circle black"></span>Seu Social</label>
+                <div class="checkbox-css"></div>
+              </div>
+            </li>
+            <li>
+              <div class="checkbox-custom">
+                <input type="checkbox" id="cb-option-2" name="agencia" onclick="setMarkers()" checked="checked">
+                <label for="cb-option-2"><span class="circle pinkdark"></span>Agència Comercial</label>
+                <div class="checkbox-css"></div>
+              </div>
+            </li>
+            <li>
+              <div class="checkbox-custom">
+                <input type="checkbox" id="cb-option-3" name="punts" onclick="setMarkers()" checked="checked">
+                <label for="cb-option-3"><span class="circle pink"></span>Punts d'atenció al client</label>
+                <div class="checkbox-css"></div>
+              </div>
+            </li>
+            <!--                <li>-->
+            <!--                    <div class="checkbox-custom">-->
+            <!--                        <input type="checkbox" id="cb-option-4" name="espais" onclick="setMarkers()" checked="checked">-->
+            <!--                        <label for="cb-option-4"><span class="circle greymedium"></span>Espais Connectem</label>-->
+            <!--                        <div class="checkbox-css"></div>-->
+            <!--                    </div>-->
+            <!--                </li>-->
+          </ul>
         </form>
 
-        <div id="map" style="width: 100%; height: 400px;"></div>
+        <div id="map" style="height: 440px;"></div>
 
-        <script>
-            function xmlParse(str) {
-                if (typeof ActiveXObject != 'undefined' && typeof GetObject != 'undefined') {
-                    var doc = new ActiveXObject('Microsoft.XMLDOM');
-                    doc.loadXML(str);
-                    return doc;
-                }
+        <script language="JavaScript">
 
-                if (typeof DOMParser != 'undefined') {
-                    return (new DOMParser()).parseFromString(str, 'text/xml');
-                }
+          /* PREPARE VARS */
+          //arrays to populate map with
+          // title | lat | lon| URL | address | timetables | image
+          var arrays = {};
+          arrays.seu = [
+              ['Seu Social', 42.4973607, 1.4989885, 'https://www.google.com',
+                  'Mn. Lluis Pujol, 8-14 - AD500 Santa Coloma - Principat d\'Andorra',
+                  'De dilluns a divendres de 8:30 a 20 hores<br />Dissabte de 8:30 a 13:30 hores.<br />Tràmits ràpids de les 16 a 20 hores',
+                  'https://dummyimage.com/93x112/000/fff.jpg'
+              ]
+          ];
+          arrays.agencia = [
+              ['Agencia Comercial', 42.5087435, 1.5264895, 'https://www.google.com',
+                  'Carrer Prat de la Creu, 2, d’Andorra la Vella',
+                  'De dilluns a divendres de 8:30 a 20 hores<br />Dissabte de 8:30 a 13:30 hores.<br />Tràmits ràpids de les 16 a 20 hores',
+                  'https://dummyimage.com/93x112/000/fff.jpg'
+              ]
+          ];
+          arrays.punts = [
+              ['La Massana', 42.5448609, 1.5133166, 'https://www.google.com',
+                  'Avinguda de Sant Antoni núm. 29, a l\'oficina de Tramits del Comú de la Massana.',
+                  'Divendres de 8:00h a 14:30h<br />Oficina de Tràmits del Comú de la Massana<br />Tel. 838 280',
+                  'https://dummyimage.com/93x112/000/fff.jpg'],
+              ['Pas de la Casa', 42.542435, 1.731218, 'https://www.google.com',
+                  'Carrer Sant Jordi, núm.2, El Pas de la Casa',
+                  'Dijous de 8:45h a 14:45h<br />Oficina de Tràmits del Comú d\'Encamp<br />Tel. 855810 - 321189',
+                  'https://dummyimage.com/93x112/000/fff.jpg'],
+              ['Sant Julià de Lòria', 42.4651228, 1.4886004, 'https://www.google.com',
+                  'Plaça de la Germandat AD600',
+                  'Dimarts i dimecres de 8:30h a 15:00h<br />Fax. 842 900',
+                  'https://dummyimage.com/93x112/000/fff.jpg']
+          ];
 
-                return createElement('div', null);
-            }
-            var customIcons = {
-                seu: {
-                    icon: '../images/icons/seu.png'
-                },
-                agencia: {
-                    icon: '../images/icons/agencia.png'
-                },
-                punts_atencio: {
-                    icon: '../images/icons/atencio.png'
-                },
-                espais: {
-                    icon: '../images/icons/espais.png'
-                }
-            };
+          var customIcons = {
+              seu: {
+                  icon: '<?php echo $destiny;?>/images/icons/seu.png'
+              },
+              agencia: {
+                  icon: '<?php echo $destiny;?>/images/icons/agencia.png'
+              },
+              punts: {
+                  icon: '<?php echo $destiny;?>/images/icons/atencio.png'
+              },
+              espais: {
+                  icon: '<?php echo $destiny;?>/images/icons/espais.png'
+              }
+          };
 
-            var markerGroups = {
-                "seu": [],
-                "agencia": [],
-                "punts_atencio": [],
-                "espais": []
-            };
+          var lang = 'es'; // Allowed Values: ca, es, en. // LRC <= Change LANGUAGE variable as indicated
+          var localeConfigs = {
+              ca: {adreca: 'Adreça', horaris: 'Horaris'},
+              es: {adreca: 'Dirección', horaris: 'Horarios'},
+              en: {adreca: 'Address', horaris: 'Timetables'}
+          };
 
-            function load() {
-                var map = new google.maps.Map(document.getElementById("map"), {
-                    center: new google.maps.LatLng(42.510165, 1.516373),
-                    zoom: 12,
-                    scrollwheel: false,
-                    mapTypeId: 'roadmap'
-                });
-                var infoWindow = new google.maps.InfoWindow();
+          /* INITIALIZE MAP */
+          var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 12,
+              center: new google.maps.LatLng(44.501813, 1.838125),
+              scrollwheel: false,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          });
 
+          var infowindow = new google.maps.InfoWindow();
+          var bounds = new google.maps.LatLngBounds();
+          var marker, i, markers = [];
+          function setMarkers() {
+              setAllMap(null);
+              $('input[type="checkbox"]:checked').each(function () {
+                  for (i = 0; i < arrays[this.name].length; i++) {
+                      createMarker(arrays[this.name][i], this.name);
+                  }
+                  map.fitBounds(bounds);
+              });
+          }
+          function createMarker(oficina, type) {
+              var icon = customIcons[type] || {};
+              marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(oficina[1], oficina[2]),
+                  icon: icon.icon,
+                  map: map
+              });
+              // tooltips from arrays prepopulated
+              // title | lat | lon | URL | address | timetables | image
+              //    0  |  1  |  2  |  3  |   4     |     5      |  6
+              var address = "<label>" + localeConfigs[lang]['adreca'] + "</label><div class=\"horaris-infowindow\">" + oficina[4] + "</div>";
+              var horari = "<label>" + localeConfigs[lang]['horaris'] + "</label><div class=\"horaris-infowindow\">" + oficina[5] + "</div>";
+              var ttimage = "<div class=\"infowindow-image\"><img src=\"" + oficina[6] + "\" /></div>";
+              var linkedTitle = "<a href=\"" + oficina[3] + "\">" + oficina[0] + "</a>";
+              var html = "<div class=\"info-wrapper\">" + ttimage + "<div class=\"infowindow-infocontainer\">" + linkedTitle + address + horari + "</div></div>";
 
-                map.set('styles', [{
-                    zoomControl: false
-                }, {
-                    featureType: "road.highway",
-                    elementType: "geometry.fill",
-                    stylers: [{
-                        color: "#ffd986"
-                    }]
-                }, {
-                    featureType: "road.arterial",
-                    elementType: "geometry.fill",
-                    stylers: [{
-                        color: "#9e574f"
-                    }]
-                }, {
-                    featureType: "road.local",
-                    elementType: "geometry.fill",
-                    stylers: [{
-                        color: "#d0cbc0"
-                    }, {
-                        weight: 1.1
-                    }
-
-                    ]
-                }, {
-                    featureType: 'road',
-                    elementType: 'labels',
-                    stylers: [{
-                        saturation: -100
-                    }]
-                }, {
-                    featureType: 'landscape',
-                    elementType: 'geometry',
-                    stylers: [{
-                        hue: '#ffff00'
-                    }, {
-                        gamma: 1.4
-                    }, {
-                        saturation: 82
-                    }, {
-                        lightness: 96
-                    }]
-                }, {
-                    featureType: 'poi.school',
-                    elementType: 'geometry',
-                    stylers: [{
-                        hue: '#fff700'
-                    }, {
-                        lightness: -15
-                    }, {
-                        saturation: 99
-                    }]
-                }]);
-
-
-                var lang = 'es'; // Allowed Values: ca, es, en. // LRC <= Change LANGUAGE variable as indicated
-                var localeConfigs = {
-                    ca:{adreca: 'Adreça', horaris: 'Horaris'},
-                    es:{adreca: 'Dirección', horaris: 'Horarios'},
-                    en:{adreca: 'Address', horaris: 'Timetables'}
-                };
-
-                var url = document.location['origin'] + '/xml/markers.xml'; // LRC <= Change URL where the XML files comes from.
-                var  xmlContent;
-                downloadUrl(url, function(data, responseCode) {
-                    if(responseCode == 200 && typeof data.responseText !== "undefined") {
-                        xmlContent = data.responseText;
-                    } else {
-                        xmlContent = '<markers><marker name="Castelo" address="Rua da Condessa de Valença" lat="38.64351973190569" lng="-8.216521812152905" type="monumento" /><marker name="Anta 1 de Tourais" address="Estrada Nacional 114" lat="38.64260059929888" lng="-8.159376865959189" type="monumento" /><marker name="Hotel da Ameira" address="Herdade da Ameira" lat="38.64109640475479" lng="-8.180432206726096" type="hotel" /><marker name="Hotel Montemor" address="Avenida Gago Coutinho 8, 7050-248 Montemor-o-Novo" lat="38.64925541964039" lng="-8.216489625644726" type="hotel" /><marker name="Restaurante Monte Alentejano" address="Av. Gago Coutinho 8" lat="38.6492329" lng="-8.216665" type="restaurantes" /><marker name="Restaurante A Ribeira" address="Rua de São Domingos" lat="38.6347498199708" lng="-8.206468892765088" type="restaurantes" /><marker name="Núcleo Museológico do Convento de S. Domingos" address="" lat="38.643139" lng="-8.212732" type="museus" /><marker name="Centro Interpretativo do Castelo de Montemor-o-Novo" address="Rua Condessa de Valença" lat="38.64258748216167" lng="-8.21467108793263" type="museus" /></markers>';
-                    }
-                    var xml = xmlParse(xmlContent);
-
-                    var total = xml.documentElement.getElementsByTagName("marker");
-                    var types = xml.documentElement.getElementsByTagName("type");
-                    var titles = xml.documentElement.getElementsByTagName("title");
-                    var images = xml.documentElement.getElementsByTagName("image");
-                    var addresses = xml.documentElement.getElementsByTagName("address");
-                    var timetables = xml.documentElement.getElementsByTagName("timetables");
-                    var lats = xml.documentElement.getElementsByTagName("lat");
-                    var longs = xml.documentElement.getElementsByTagName("long");
-                    var links = xml.documentElement.getElementsByTagName("link");
-
-                    for (var i = 0; i < total.length; i++) {
-                        var type = types[i].innerHTML;
-                        var title = titles[i].innerHTML;
-                        var address = "<label>"+ localeConfigs[lang]['adreca'] + "</label><div class=\"horaris-infowindow\">" + addresses[i].innerHTML + "</div>";
-
-                        var horari = '';
-                        if(timetables[i].innerHTML.length > 0) {
-                            horari = timetables[i].innerHTML;
-                            horari = "<label>"+ localeConfigs[lang]['horaris'] + "</label><div class=\"horaris-infowindow\">" + horari.replace(/(?:\r\n|\r|\n)/g, '<br />') + "</div>";
-                        }
-                        var image = "<div class=\"infowindow-image\"><img src=\"" + images[i].innerHTML + "\" /></div>";
-                        var lat = lats[i].innerHTML;
-                        var long = longs[i].innerHTML;
-                        var link = links[i].innerHTML;
-                        var target = links[i].getAttribute("target");
-
-                        var linkedTitle = "<a href=\"" + link + "\" target=\"" + target + "\">" + title + "</a>";
-
-                        var point = new google.maps.LatLng(
-                                parseFloat(lat),
-                                parseFloat(long));
-
-                        var html = "<div class=\"info-wrapper\">" + image + "<div class=\"infowindow-infocontainer\">" + linkedTitle + address + horari + "</div></div>";
-                        var marker = createMarker(point, type, map);
-                        bindInfoWindow(marker, map, infoWindow, html);
-                    }
-                });
-            }
-
-            function createMarker(point, type, map) {
-                var icon = customIcons[type] || {};
-                var marker = new google.maps.Marker({
-                    map: map,
-                    position: point,
-                    icon: icon.icon,
-                    shadow: icon.shadow,
-                    type: type
-                });
-                if (!markerGroups[type]) markerGroups[type] = [];
-                markerGroups[type].push(marker);
-                return marker;
-            }
-
-            function toggleGroup(type) {
-                for (var i = 0; i < markerGroups[type].length; i++) {
-                    var marker = markerGroups[type][i];
-                    if (!marker.getVisible()) {
-                        marker.setVisible(true);
-                    } else {
-                        marker.setVisible(false);
-                    }
-                }
-            }
-
-            function bindInfoWindow(marker, map, infoWindow, html) {
-                google.maps.event.addListener(marker, 'click', function () {
-                    infoWindow.setContent(html);
-                    infoWindow.open(map, marker);
-                });
-            }
-
-            function downloadUrl(url, callback) {
-                var request = window.ActiveXObject ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest();
-
-                request.onreadystatechange = function () {
-                    if (request.readyState == 4) {
-                        request.onreadystatechange = doNothing;
-                        callback(request, request.status);
-                    }
-                };
-
-                request.open('GET', url, true);
-                request.send(null);
-            }
-
-            function doNothing() {}
-            google.maps.event.addDomListener(window, 'load', load);
+              google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                  return function () {
+                      infowindow.setContent(html);
+                      infowindow.open(map, marker);
+                  }
+              })(marker, i));
+              bounds.extend(new google.maps.LatLng(oficina[1], oficina[2]));
+              markers.push(marker);
+          }
+          function setAllMap(val) {
+              for (var i = 0; i < markers.length; i++) {
+                  markers[i].setMap(val);
+              }
+          }
+          setMarkers();
         </script>
-    </div>
-    
-    <div class="content">
+      </div>
+
+      <div class="content">
         <h2 class="global-subtitle">Telèfons de contacte</h2>
         <div class="contact_phone">
-            <div class="half-page">
-                <div class="contact_phone_element">
-                    <div class="phone_number">115</div>
-                    <div class="phone_name">Servei d’atenció al client</div>
-                    <div class="phone_info"><p>De 8h a 24h (dilluns a divendres) i de 9h a 23h (dissabtes i diumenges).</p><p>Per pèrdua o robatori d'un terminal mòbil, l'horari és de 24hrs tots els dies de la setmana.</p></div>
-                </div>
-                <div class="contact_phone_element">
-                    <div class="phone_number">111</div>
-                    <div class="phone_name">Informació telefònica nacional i internacional</div>
-                    <div class="phone_info"><p>Horari: de 7h a 24h. 365 dies a l'any.</p></div>
-                </div>
+          <div class="half-page">
+            <div class="contact_phone_element">
+              <div class="phone_number">115</div>
+              <div class="phone_name">Servei d’atenció al client</div>
+              <div class="phone_info"><p>De 8h a 24h (dilluns a divendres) i de 9h a 23h (dissabtes i diumenges).</p>
+                <p>Per pèrdua o robatori d'un terminal mòbil, l'horari és de 24hrs tots els dies de la setmana.</p>
+              </div>
             </div>
-            <div class="half-page">
-                <div class="contact_phone_element">
-                    <div class="phone_number">00376 301115</div>
-                    <div class="phone_name">Servei d'atenció al client, des de l'estranger</div>
-                    <div class="phone_info"><p>De 8h a 24h (dilluns a divendres) i de 9h a 23h (dissabtes i diumenges).</p><p>Per pèrdua o robatori d'un terminal mòbil, l'horari és de 24hrs tots els dies de la setmana.</p></div>
-                </div>
-                <div class="contact_phone_element">
-                    <div class="phone_number">875 000</div>
-                    <div class="phone_name">Servei d'atenció al client, des de l'estranger</div>
-                    <div class="phone_info"><p>Horari: de 8h a 18h.</p></div>
-                </div>
+            <div class="contact_phone_element">
+              <div class="phone_number">111</div>
+              <div class="phone_name">Informació telefònica nacional i internacional</div>
+              <div class="phone_info"><p>Horari: de 7h a 24h. 365 dies a l'any.</p></div>
             </div>
+          </div>
+          <div class="half-page">
+            <div class="contact_phone_element">
+              <div class="phone_number">00376 301115</div>
+              <div class="phone_name">Servei d'atenció al client, des de l'estranger</div>
+              <div class="phone_info"><p>De 8h a 24h (dilluns a divendres) i de 9h a 23h (dissabtes i diumenges).</p>
+                <p>Per pèrdua o robatori d'un terminal mòbil, l'horari és de 24hrs tots els dies de la setmana.</p>
+              </div>
+            </div>
+            <div class="contact_phone_element">
+              <div class="phone_number">875 000</div>
+              <div class="phone_name">Servei d'atenció al client, des de l'estranger</div>
+              <div class="phone_info"><p>Horari: de 8h a 18h.</p></div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!--END SPECIFIC PAGE ON SOM-->
+    <!--END SPECIFIC PAGE ON SOM-->
 
   </div>
 

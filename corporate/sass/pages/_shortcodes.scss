@@ -30,7 +30,6 @@
 * 0. SHORTCODE LAYOUT
 */
 .shortcode-container {
-  margin-bottom: 40px;
   &.main-menu-shortcode {
     margin-top: 50px;
     @include breakpoint($tablet) {
@@ -541,13 +540,17 @@ h3.title-step {
   .ui-tabs {
     background-color: transparent;
     border: none;
-    border-radius: none;
+    border-radius: 0;
     margin: 0;
     padding: 0;
+    li:before {
+      content: '' !important;
+      display: none !important;
+    }
     .ui-tabs-nav {
       background-color: transparent;
       border: none;
-      border-radius: none;
+      border-radius: 0;
       margin: 0;
       padding: 0;
       .ui-tabs-tab {
@@ -678,7 +681,7 @@ h3.title-step {
       text-shadow:1px 1px 0 #9bc2d0;
     }
 
-    .atSelect .dropDown{
+    .atSelect .dropDown {
       position:absolute;
       top:70px;
       left:0;
@@ -705,6 +708,10 @@ h3.title-step {
       z-index: 10;
       padding: 16px 0;
       line-height: 22px;
+      &:before {
+        content: '' !important;
+        display: none !important;
+      }
     }
 
     .atSelect li:hover{
@@ -874,6 +881,10 @@ ul.menu-list {
     margin-bottom: 15px;
     overflow: hidden;
     position: relative;
+    &:before {
+      content: '';
+      display: none !important;
+    }
     &:after {
       float: right;
       /* use !important to prevent issues with browser extensions that change fonts */
@@ -1086,6 +1097,10 @@ ul.floating-menu {
   .slider-multiple-desktop {
     margin-top: 40px;
 
+    li:before {
+      content: '' !important;
+      display: none !important;
+    }
     .slider-deskt {
 
       .six-items {
