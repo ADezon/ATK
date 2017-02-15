@@ -1,6 +1,10 @@
 .list-product-forfets{
   ul{
-    .forfets-element{
+    li:before {
+      content: '';
+      display: none;
+    }
+    .forfets-element {
       position: relative;
       display: block;
       overflow: hidden;
@@ -70,12 +74,12 @@
           padding: 0 40px;
         }
       }
-      .forfets-element-column{
+      .forfets-element-column {
         position: relative;
         display: block;
         float: left;
         width: 20%;
-        padding: 22px 15px;
+        padding: 22px 6px;
         @include breakpoint($tablet) {
           width: 33.3% !important;
         }
@@ -84,7 +88,7 @@
           float: none;
           clear: both;
         }
-        &.title-forfet{
+        &.title-forfet {
           position: relative;
           display: block;
           float: left;
@@ -108,19 +112,23 @@
               text-align: center;
               display: inline-block;
             }
+            &.big-lonely-title {
+              font-size: 50px;
+              font-weight: bold;
+            }
             &.number-forfet{
               font-size: 72px;
+              font-weight: 600;
               line-height: 75px;
               margin-top: 0;
               padding-left: 20px;
             }
           }
         }
-        &.data-forfet{
+        &.data-forfet {
           position: relative;
           display: block;
           overflow: hidden;
-          width: 15%;
           .icons{
             position: relative;
             display: block;
@@ -131,10 +139,11 @@
             line-height: 30px;
           }
           .data-forfet-info{
+            width: 144px;
             position: relative;
             display: block;
             float: left;
-            margin-top: -8px;
+            //margin-top: -8px;
             .data-forfet-title{
               position: relative;
               display: block;
@@ -148,14 +157,13 @@
               display: block;
               clear: both;
               color: $greydark;
-              font-weight: bold;
-              font-size: 22px;
-              line-height: 26px;
+              font-size: 16px;
+              line-height: 18px;
+              margin-bottom: 10px;
             }
           }
         }
-        &.calls-forfet{
-          width: 25%;
+        &.calls-forfet {
           position: relative;
           display: block;
           overflow: hidden;
@@ -172,6 +180,8 @@
             position: relative;
             display: block;
             float: left;
+            width: 144px;
+
             .calls-forfet-title{
               position: relative;
               display: block;
@@ -186,7 +196,8 @@
               clear: both;
               color: $greydark;
               font-size: 16px;
-              line-height: 21px;
+              line-height: 18px;
+              margin-bottom: 10px;
               strong{
                 font-weight: bold;
               }
@@ -206,7 +217,8 @@
             font-size: 34px;
             line-height: 30px;
           }
-          .sms-forfet-info{
+          .sms-forfet-info {
+            width: 144px;
             position: relative;
             display: block;
             float: left;
@@ -224,8 +236,9 @@
               clear: both;
               color: $greydark;
               font-weight: bold;
-              font-size: 22px;
-              line-height: 26px;
+              font-size: 16px;
+              line-height: 18px;
+              margin-bottom: 10px;
             }
           }
         }
@@ -233,7 +246,8 @@
           position: relative;
           display: block;
           overflow: hidden;
-          text-align: center;
+          color: $pink;
+          padding-left: 40px;
 
           @include breakpoint($tablet) {
             width: 100%;
@@ -283,7 +297,7 @@
 .list-product-forfets ul .forfets-element.highlighted .content {
   background-color: $pink;
   max-width: 1152px;
-  padding: 20px 64px;
+  padding: 20px 40px 0 40px;
   position: relative;
 
   @include breakpoint ($intermedio) {
@@ -292,6 +306,7 @@
 
   .forfets-element-column.title-forfet {
     color: white;
+    padding-top: 26px;
     span.number-forfet {
       font-weight: 600;
     }
@@ -299,31 +314,49 @@
 
   .forfets-element-column.data-forfet .icons {
     color: white;
+    color: rgba(255, 255, 255, 0.8);
   }
 
-
-
   .data-forfet-info {
-    .data-forfet-title { color: white;  }
+    .data-forfet-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 10px;
+    }
     .data-forfet-content { color: white; }
   }
 
   .forfets-element-column.calls-forfet {
-    .icons { color: white; }
+    .icons { color: white; color: rgba(255, 255, 255, 0.8); }
     .calls-forfet-info {
       color: white;
-      .calls-forfet-title { color: white; }
+      .calls-forfet-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 10px;
+      }
       .calls-forfet-content { color: white; }
     }
   }
 
   .forfets-element-column.sms-forfet {
-    .icons { color: white; }
-    .sms-forfet-title { color: white; }
+    .icons { color: white; color: rgba(255, 255, 255, 0.8); }
+    .sms-forfet-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 10px;
+    }
     .sms-forfet-content { color: white; }
   }
 
   .forfets-element-column.price-forfet {
+    color: white;
 
     .price-forfet-price { color: white; }
     .button-pink {
@@ -337,6 +370,7 @@
     position: absolute;
     background: url('../images/icons/highlighted-forfeit.png') no-repeat scroll 0 top transparent;
     bottom: 0;
+    left: 58px;
     color: $pink;
     line-height: 21px;
     font-weight: 600;

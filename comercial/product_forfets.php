@@ -1,4 +1,4 @@
-<?php include 'includes/header_onsom.php'; ?>
+<?php include 'includes/header.php'; ?>
 
   <div id="main-content">
 
@@ -68,17 +68,18 @@
                 <div class="forfets-element-column data-forfet">
                   <span class="icons icon-web"></span>
                   <div class="data-forfet-info">
-                    <span class="data-forfet-title">Dades</span>
-                    <span class="data-forfet-content">100 MB</span>
+                    <span class="data-forfet-title">Internet</span>
+                    <span class="data-forfet-content">Velocitat simètrica fins a <strong>100 Mbps</strong></span>
+                    <span class="data-forfet-content"><strong>200 GB</strong> de tràfic <strong>internacional</strong></span>
                   </div>
                 </div>
                 <div class="forfets-element-column calls-forfet">
                   <span class="icons icon-call"></span>
                   <div class="calls-forfet-info">
                     <span class="calls-forfet-title">Trucades</span>
-                    <span class="calls-forfet-content">Nacionals <strong>100’</strong></span>
-                    <span class="calls-forfet-content">Internacionals <strong>10’</strong></span>
-                    <span class="calls-forfet-content"> En itinerància <strong>0’</strong></span>
+                    <span class="calls-forfet-content"><strong>Trf. Plana</strong> a fixes nacionals</span>
+                    <span class="calls-forfet-content"><strong>30 min.</strong> a mobils <strong>nacionals</strong></span>
+                    <span class="calls-forfet-content"><strong>300 min.</strong> a fixes <strong>europeus</strong></span>
                   </div>
                 </div>
                 <div class="forfets-element-column sms-forfet">
@@ -103,10 +104,10 @@
             </div>
           </li>
 
-          <li class="forfets-element odd">
+          <li class="forfets-element even highlighted">
             <div class="content">
               <div class="forfets-element-column title-forfet">
-                <span>Forfet</span><span class="number-forfet">29</span>
+                <span class="big-lonely-title">Òptima</span>
               </div>
 
               <div class="reveal-info">Mes informació</div>
@@ -114,25 +115,70 @@
                 <div class="forfets-element-column data-forfet">
                   <span class="icons icon-web"></span>
                   <div class="data-forfet-info">
-                    <span class="data-forfet-title">Dades</span>
-                    <span class="data-forfet-content">1 GB</span>
+                    <div class="data-forfet-title">Internet</div>
+                    <span class="data-forfet-content">Velocitat simètrica fins a <strong>100mbps</strong></span>
+                    <span class="data-forfet-content"><strong>200 GB</strong> de tràfic <strong>internacional</strong></span>
                   </div>
                 </div>
                 <div class="forfets-element-column calls-forfet">
                   <span class="icons icon-call"></span>
                   <div class="calls-forfet-info">
                     <span class="calls-forfet-title">Trucades</span>
-                    <span class="calls-forfet-content">Nacionals <strong>Tarifa plana</strong></span>
-                    <span class="calls-forfet-content">Internacionals <strong>20’</strong></span>
-                    <span class="calls-forfet-content"> En itinerància <strong>0’</strong></span>
+                    <span class="calls-forfet-content"><strong>Trf. Plana</strong> a fixes nacionals</span>
+                    <span class="calls-forfet-content"><strong>30 min.</strong> a mobils <strong>nacionals</strong></span>
+                    <span class="calls-forfet-content"><strong>300 min.</strong> a fixes <strong>europeus</strong></span>
                   </div>
                 </div>
                 <div class="forfets-element-column sms-forfet">
-                  <span class="icons icon-email"></span>
+                  <span class="icons icon-tv"></span>
                   <div class="sms-forfet-info">
-                    <span class="sms-forfet-title">SMS</span>
-                    <span class="sms-forfet-content">Tarifa plana</span>
+                    <span class="sms-forfet-title">Televisió</span>
+                    <span class="sms-forfet-content"><strong>Paquet Movistar+ Familiar i Cine</strong></span>
                   </div>
+                </div>
+              </div>
+              <div class="forfets-element-column price-forfet">
+                <strong>A partir de</strong>
+                <p class="price-forfet-price">15€<span class="price-month">/mes</span></p>
+                <a class="button-pink" href="#">M'interessa</a>
+              </div>
+
+              <div class="highlight-message">
+                <div class="one">20%</div>
+                <div class="two">de descompte</div>
+                <div class="three">en Forfets Mobiland i superiors</div>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="forfets-element odd">
+            <div class="content">
+              <div class="forfets-element-column title-forfet">
+                <span>Paquet</span><span class="number-forfet">69</span>
+              </div>
+
+              <div class="reveal-info">Mes informació</div>
+              <div class="expandible-info">
+                <div class="forfets-element-column data-forfet">
+                  <span class="icons icon-web"></span>
+                  <div class="data-forfet-info">
+                    <span class="data-forfet-title">Internet</span>
+                    <span class="data-forfet-content">Velocitat simètrica fins a <strong>100mbps</strong></span>
+                    <span class="data-forfet-content"><strong>200 GB</strong> de tràfic <strong>internacional</strong></span>
+                  </div>
+                </div>
+                <div class="forfets-element-column calls-forfet">
+                  <span class="icons icon-call"></span>
+                  <div class="calls-forfet-info">
+                    <span class="calls-forfet-title">Trucades</span>
+                    <span class="calls-forfet-content"><strong>Trf. Plana</strong> a fixes nacionals</span>
+                    <span class="calls-forfet-content"><strong>30 min.</strong> a mobils <strong>nacionals</strong></span>
+                    <span class="calls-forfet-content"><strong>300 min.</strong> a fixes <strong>europeus</strong></span>
+                  </div>
+                </div>
+                <div class="forfets-element-column sms-forfet">
+
                 </div>
               </div>
               <div class="forfets-element-column price-forfet">

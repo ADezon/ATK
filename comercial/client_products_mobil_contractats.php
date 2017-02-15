@@ -77,7 +77,7 @@
                       123456
                     </div>
                     <div class="forfeit-actions">
-                      <a href="#" class="button-pink action-ampliar-forfeit">Ampliar forfeit</a> <a href="#" class="button-pink action-dades-extra">Dades extra</a>
+                      <a href="#" class="button-pink action-ampliar-forfeit">Ampliar forfet</a> <a href="#" class="button-pink action-dades-extra">Dades extra</a>
                     </div>
                   </div>
 
@@ -94,7 +94,7 @@
                       <h4>+ Forfet de dades 3 GB</h4>
                     </div>
                     <div class="forfeit-actions">
-                      <a href="#" class="button-pink action-ampliar-forfeit">Ampliar forfeit</a> <a href="#" class="button-pink action-dades-extra">Dades extra</a>
+                      <a href="#" class="button-pink action-ampliar-forfeit">Ampliar forfet</a> <a href="#" class="button-pink action-dades-extra">Dades extra</a>
                     </div>
                   </div>
 
