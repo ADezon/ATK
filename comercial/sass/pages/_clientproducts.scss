@@ -16,6 +16,11 @@
   }
   &.result-client-products {
 
+    h2 {
+      font-size: 21px;
+      line-height: 32px;
+      font-weight: bold;
+    }
     .services-selector {
       position: relative;
       display: block;
@@ -213,6 +218,84 @@
         margin-bottom: 30px;
         float: left;
       }
+      .forfeits-container {
+        float: left;
+        width: 100%;
+        margin-top: 22px;
+        margin-bottom: 26px;
+        padding-left: 20px;
+
+        @include breakpoint ($mobile) { padding: 0; }
+        .products-block-forfeit {
+          float: left;
+          width: 454px;
+          margin: 0 28px 30px 0;
+          border: 2px solid #f4f4f4;
+          min-height: 200px;
+          padding-top: 10px;
+          @include breakpoint ($mobile) { width: 100%; margin: 0 10px 20px 10px; }
+
+          .forfeit-info {
+            float: left;
+            width: 45%;
+            color: $pink;
+            text-align: center;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 19px;
+            @include breakpoint ($mobile) {
+              width: 100%;
+            }
+
+              .forfeit-name {
+              float: left;
+              width: 40%;
+              text-align: right;
+              padding-top: 30px;
+            }
+            .big-info {
+              float: left;
+              width: 60%;
+              font-size: 72px;
+              line-height: 100px;
+              text-align: left;
+              padding-left: 12px;
+            }
+            h4 {
+              line-height: 22px;
+              font-weight: bold;
+              margin: 20px 0 0 0;
+            }
+          }
+          .forfeit-dades {
+            float: left;
+            width: 55%;
+            @include breakpoint ($mobile) {
+              width: 100%;
+              text-align: center;
+            }
+
+            }
+          .forfeit-actions {
+            float: left;
+            width: 100%;
+            color: #9c9e9f;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 20px 0;
+            a.button-pink {
+              margin-right: 18px;
+              @include breakpoint ($mobile) {
+                margin-right: 0;
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+
     }
   }
   &.config-client-products {
@@ -444,6 +527,18 @@
           top: 8px;
         }
       }
+      &.alert-title {
+        margin-bottom: 16px;
+        &:before {
+          content: "\e926";
+          font-family: 'atelecom-icons' !important;
+          font-size: 46px;
+          color: $pink;
+          padding-right: 12px;
+          position: relative;
+          top: 10px;
+        }
+      }
       &.half {
         width: 50%;
         @include breakpoint($mobile) {
@@ -597,9 +692,10 @@
   width: 100%;
   margin-bottom: 10px;
   font-size: 16px;
+  font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  color: $greymedium;
+  color: #9c9e9f;
 
 }
 
@@ -824,4 +920,44 @@
       }
     }
   }
+}
+.general-alert-wrapper .content-general-wrapper.clientproducts .alert-general-body .products-floating-box {
+  margin: 0 36px;
+  min-height: 220px;
+
+  .config-box {
+    margin: 20px 0 20px 0;
+  }
+  .inner-box {
+
+    &.trans {
+      padding: 0;
+    }
+
+    &> div {
+      float: left;
+      clear: none;
+      width: 33%;
+      margin: 0;
+      &.custom-item.one {
+        padding-left: 14px;
+      }
+      &.custom-item.two {
+        padding-top: 28px;
+      }
+      &.gallery-item {
+        width: 30%;
+        margin-right: 5%;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+.alert-two-buttons {
+  margin: 30px 0;
+  a {
+    padding: 8px 38px;
+    margin-right: 20px; }
 }

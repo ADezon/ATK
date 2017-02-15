@@ -112,6 +112,56 @@ if (array_key_exists('operation', $received)) {
     );
   }
 
+  elseif ($received['operation'] == 'action_dades_extra') {
+      $title = 'Contractar dades extra';
+      $body = '<div class="products-floating-box"><div class="config-box"><div class="inner-box trans">';
+      $body .= '<div class="gallery-item"><div class="product-promo"><div class="big-pink bold">1 GB</div>';
+      $body .= '<div class="entry-price"><span class="twenty grey-medium bold">10€</span> /mes</div></div>';
+      $body .= '<div class="custom-links"><a href="#" class="button-pink">Contractar</a><a href="#" class="button-active">+ Info</a>';
+      $body .= '</div></div>';
+      $body .= '<div class="gallery-item"><div class="product-promo"><div class="big-pink bold">3 GB</div><div class="entry-price">';
+      $body .= '<span class="twenty grey-medium bold">19€</span> /mes</div></div><div class="custom-links"><a href="#" class="button-pink">Contractar</a>';
+      $body .= '<a href="#" class="button-active">+ Info</a></div></div><div class="gallery-item"><div class="product-promo">';
+      $body .= '<div class="big-pink grey-medium bold">5 GB</div><div class="entry-price"><span class="twenty grey-medium bold">25€</span> /mes';
+      $body .= '</div></div><div class="custom-links"><a href="#" class="button-pink">Contractar</a><a href="#" class="button-active">+ Info</a>';
+      $body .= '</div></div></div></div></div>';
+
+      $response = array(
+          'title' => $title,
+          'body'  => $body
+      );
+  }
+
+  elseif ($received['operation'] == 'action_ampliar_forfeit') {
+      $title = 'Ampliar forfet';
+
+      $body = '<div class="products-floating-box"><div class="config-box">';
+      $body .= '<div class="inner-box"><div class="custom-item one"><div class="message">Amplia a </div>';
+      $body .= '<div class="big-pink bold">Forfet 29</div></div>';
+      $body .= '<div class="custom-item two"><span class="treinta grey-medium bold">29€</span>&nbsp;<span class="grey-medium bold">/mes</span>';
+      $body .= '</div><div class="custom-item three"><div class="actions-container"><a href="#" class="button-pink action-sign-in">Contratar</a>';
+      $body .= '<a href="#" class="button-active">+ Info</a></div></div></div></div></div>';
+
+      $response = array(
+          'title' => $title,
+          'body'  => $body
+      );
+  }
+
+  elseif ($received['operation'] == 'cancel_operation') {
+      $title = '<h2 class="alert-title">Atenció</h2>';
+
+      $body = 'Estas segur de voler cancel·lar l\'ordre pendent?';
+      $body .= '<div class="full-centered alert-two-buttons"><a href="#" class="button-active">NO</a> <a href="#" class="button-pink">SI</a></div>';
+
+      $response = array(
+          'title' => $title,
+          'body'  => $body
+      );
+  }
+
+
+  // Resturn...
   header('Content-Type: application/json');
   echo json_encode($response);
 
