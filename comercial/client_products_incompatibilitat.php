@@ -38,7 +38,7 @@
             </div>
           </div>
           <div class="services-full-info">
-            <div class="config-client-products cont-wrapper">
+            <div class="config-client-products">
               <div class="content">
                 <div class="sidebar">
                   <div class="prod-title">
@@ -255,7 +255,6 @@
                   </div>
 
                 </div>
-              </div>
             </div>
           </div>
         </div>

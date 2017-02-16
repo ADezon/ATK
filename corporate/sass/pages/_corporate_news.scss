@@ -304,6 +304,9 @@
         .image-block {
           float: left;
           margin-right: 14px;
+          img {
+            width: 95px;
+          }
         }
         .date-new{
           font-family: Roboto, SansSerif;

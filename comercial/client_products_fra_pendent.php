@@ -38,8 +38,7 @@
                         </div>
                     </div>
                     <div class="services-full-info">
-                        <div class="config-client-products cont-wrapper">
-                            <div class="content">
+                        <div class="config-client-products">
                                 <div class="sidebar">
                                     <div class="prod-title">
                                         Serveis inclosos
@@ -253,7 +252,6 @@
                                     </div>
 
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>

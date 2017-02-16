@@ -218,12 +218,19 @@
         margin-bottom: 30px;
         float: left;
       }
-      .forfeits-container {
+      .products-inner-container {
         float: left;
         width: 100%;
         margin-top: 22px;
         margin-bottom: 26px;
         padding-left: 20px;
+
+        h2 { margin-bottom: 30px; }
+        h4 { margin: 15px 0 4px 0;
+          .bigger {
+            font-size: 21px;
+          }
+        }
 
         @include breakpoint ($mobile) { padding: 0; }
         .products-block-forfeit {
@@ -233,7 +240,7 @@
           border: 2px solid #f4f4f4;
           min-height: 200px;
           padding-top: 10px;
-          @include breakpoint ($mobile) { width: 100%; margin: 0 10px 20px 10px; }
+          @include breakpoint ($mobile) { width: 100%; margin: 0 0 20px 0; }
 
           .forfeit-info {
             float: left;
@@ -251,7 +258,7 @@
               float: left;
               width: 40%;
               text-align: right;
-              padding-top: 30px;
+              padding-top: 24px;
             }
             .big-info {
               float: left;
@@ -270,8 +277,10 @@
           .forfeit-dades {
             float: left;
             width: 55%;
+            margin-top: 4px;
             @include breakpoint ($mobile) {
               width: 100%;
+              margin-top: 0;
               text-align: center;
             }
 
@@ -284,7 +293,12 @@
             font-weight: bold;
             text-align: center;
             text-transform: uppercase;
-            margin: 20px 0;
+            margin: 30px 0 20px 0;
+
+            .only-info {
+              padding-top: 8px;
+            }
+
             a.button-pink {
               margin-right: 18px;
               @include breakpoint ($mobile) {
@@ -298,7 +312,10 @@
 
     }
   }
-  &.config-client-products {
+  .config-client-products {
+    content {
+     padding: 0;
+    }
     .sidebar {
       width: 40%;
       @include breakpoint($tablet) {
@@ -557,12 +574,13 @@
       margin-top: 0;
     }
     @include breakpoint($mobile) {
-      margin-top: -32px;
+      margin-top: -26px;
     }
   }
   .alert-general-body {
     @include clearfix();
     padding: 10px 30px;
+    @include breakpoint ($mobile) { padding: 22px; }
 
     .checkbox-custom label a {
       color: $pink;
@@ -705,9 +723,14 @@
   display: block;
   margin: 0;
   position: relative;
-  @include breakpoint($tablet) {
-    margin: 10px 0;
+
+  &.align-forced {
+    padding-right: 28px;
+    @include breakpoint($mobile) { padding: 0; }
   }
+
+  @include breakpoint($tablet) { margin: 10px 0; }
+  @include breakpoint($mobile) { padding: 0; }
   .content{
     @include breakpoint($tablet) {
       padding: 0;
@@ -754,11 +777,7 @@
   }
   .products-list {
     clear: both;
-    display: block;
     float: left;
-    margin: 20px 0;
-    overflow: hidden;
-    position: relative;
     width: 100%;
 
     .products-list-title {
@@ -818,10 +837,11 @@
       position: relative;
 
       @include breakpoint($tablet) {
-        border-bottom: 1px solid #cfd1d2;
         border-left: none;
         border-right: none;
-        border-top: 1px solid #cfd1d2;
+        &:first-child {
+          border-top: 1px solid #979797;
+        }
       }
       span, a {
         color: $greydark;
@@ -888,20 +908,24 @@
           font-weight: bold;
           width: 12%;
           padding: 12px 20px;
-          @include breakpoint($mobile) { padding: 0 2%; width: 50%; }
-          &.pending {
+          @include breakpoint($mobile) {
+            padding: 0 2%;
+            width: 50%;
+            margin-bottom: 10px;
+          }
+          .pending & {
             color: $pink;
           }
         }
         &.column-request {
           font-size: 14px;
-          padding: 12px 0;
+          padding: 12px 16px;
           @include breakpoint($mobile) { display: none; }
         }
 
         &.column-active {
           font-size: 14px;
-          padding: 12px 0;
+          padding: 12px 16px;
           @include breakpoint($mobile) { display: none; }
         }
         &.column-link {
@@ -918,6 +942,16 @@
 
         }
       }
+      &.pending {
+
+        .column-product {
+          padding-left: 4%;
+        }
+        .column-state {
+          color: $pink;
+        }
+      }
+
     }
   }
 }
@@ -925,13 +959,34 @@
   margin: 0 36px;
   min-height: 220px;
 
+  @include breakpoint ($mobile) { margin: 0; }
+
   .config-box {
     margin: 20px 0 20px 0;
+    @include breakpoint ($mobile) {
+      margin: 0;
+      .inner-box .product-promo {
+        float: left;
+        width: 40%;
+      }
+      .inner-box .custom-links {
+        width: 60%;
+        margin-top: 18px;
+        float: left;
+      }
+
+    }
+
   }
   .inner-box {
+    @include breakpoint ($mobile) {
+      background-color: white;
+      padding: 8px 10px;
+    }
 
     &.trans {
       padding: 0;
+      background-color: transparent;
     }
 
     &> div {
@@ -941,15 +996,37 @@
       margin: 0;
       &.custom-item.one {
         padding-left: 14px;
+        @include breakpoint ($mobile) {
+          padding-left: 0;
+          width: 50%;
+          .message {
+            margin-bottom: 0;
+          }
+          .big-pink {
+            font-size: 26px;
+          }
+        }
       }
       &.custom-item.two {
         padding-top: 28px;
+        @include breakpoint ($mobile) {
+          padding-top: 22px;
+          width: 50%;
+        }
+      }
+      &.custom-item.three {
+        @include breakpoint ($mobile) {
+          width: 100%;
+        }
       }
       &.gallery-item {
         width: 30%;
         margin-right: 5%;
+        box-shadow: none;
+        background-color: white;
         &:last-child {
           margin-right: 0;
+          margin-bottom: 0 !important;
         }
       }
     }

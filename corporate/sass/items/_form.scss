@@ -250,6 +250,11 @@ textarea {
   font-size: 14px;
   line-height: 21px;
   color: $pink;
+  text-decoration: underline;
+}
+
+.hide-field {
+  display: none;
 }
 
 // CAPTCHA
@@ -258,7 +263,7 @@ textarea {
   clear: none;
   width: 100%;
   display: block;
-  margin: 20px 0;
+  margin: 20px 0 30px;
   position: relative;
 
   img {

@@ -110,7 +110,7 @@ strong {
     &:before {
       content: "\e923";
       font-family: 'atelecom-icons' !important;
-      font-size: 8px;
+      font-size: 5px;
       color: $pink;
       padding-right: 6px;
       position: relative;
@@ -702,6 +702,7 @@ p{
       background-color: white;
       text-align: center;
       @include breakpoint ($mobile) {
+        padding: 14px;
         .big-pink {
           font-size: 24px;
         }

@@ -253,6 +253,7 @@
             width: 100%;
             float: none;
             clear: both;
+            padding-left: 0;
           }
           .price-forfet-price{
             color: $greydark;
@@ -296,13 +297,24 @@
 // HIGHLIGHTLED
 .list-product-forfets ul .forfets-element.highlighted .content {
   background-color: $pink;
-  max-width: 1152px;
-  padding: 20px 40px 0 40px;
+  max-width: 1104px;
+  padding: 20px 50px 0 50px;
   position: relative;
-
   @include breakpoint ($intermedio) {
     min-height: 224px;
   }
+  @include breakpoint ($mobile) {
+    min-height: 224px;
+  }
+
+  .reveal-info {
+    color: white;
+    font-weight: bold;
+    &:before {
+      color: white;
+    }
+  }
+
 
   .forfets-element-column.title-forfet {
     color: white;

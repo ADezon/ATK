@@ -134,7 +134,6 @@ if (array_key_exists('operation', $received)) {
 
   elseif ($received['operation'] == 'action_ampliar_forfeit') {
       $title = 'Ampliar forfet';
-
       $body = '<div class="products-floating-box"><div class="config-box">';
       $body .= '<div class="inner-box"><div class="custom-item one"><div class="message">Amplia a </div>';
       $body .= '<div class="big-pink bold">Forfet 29</div></div>';

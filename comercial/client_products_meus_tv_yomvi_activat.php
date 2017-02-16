@@ -43,8 +43,7 @@
 
 
           <div class="services-full-info">
-            <div class="config-client-products cont-wrapper">
-              <div class="content">
+            <div class="config-client-products">
                 <!--                /* BEGIN TABLE HERE */-->
                 <div class="result-table-products">
                   <div class="products-list">
@@ -220,7 +219,6 @@
                   </div>
                 </div>
 
-              </div>
             </div>
           </div>
         </div>

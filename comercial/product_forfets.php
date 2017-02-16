@@ -25,7 +25,7 @@
                 <span>Forfet</span><span class="number-forfet">5</span>
               </div>
 
-              <div class="reveal-info">Mes informació</div>
+              <div class="reveal-info">Més informació</div>
               <div class="expandible-info">
                 <div class="forfets-element-column data-forfet">
                   <span class="icons icon-web"></span>
@@ -63,7 +63,7 @@
                 <span>Forfet</span><span class="number-forfet">15</span>
               </div>
 
-              <div class="reveal-info">Mes informació</div>
+              <div class="reveal-info">Més informació</div>
               <div class="expandible-info">
                 <div class="forfets-element-column data-forfet">
                   <span class="icons icon-web"></span>
@@ -110,7 +110,7 @@
                 <span class="big-lonely-title">Òptima</span>
               </div>
 
-              <div class="reveal-info">Mes informació</div>
+              <div class="reveal-info">Més informació</div>
               <div class="expandible-info">
                 <div class="forfets-element-column data-forfet">
                   <span class="icons icon-web"></span>
@@ -158,7 +158,7 @@
                 <span>Paquet</span><span class="number-forfet">69</span>
               </div>
 
-              <div class="reveal-info">Mes informació</div>
+              <div class="reveal-info">Més informació</div>
               <div class="expandible-info">
                 <div class="forfets-element-column data-forfet">
                   <span class="icons icon-web"></span>
@@ -194,7 +194,7 @@
                 <span>Forfet</span><span class="number-forfet">49</span>
               </div>
 
-              <div class="reveal-info">Mes informació</div>
+              <div class="reveal-info">Més informació</div>
               <div class="expandible-info">
                 <div class="forfets-element-column data-forfet">
                   <span class="icons icon-web"></span>
@@ -232,7 +232,7 @@
                 <span>Forfet</span><span class="number-forfet">69</span>
               </div>
 
-              <div class="reveal-info">Mes informació</div>
+              <div class="reveal-info">Més informació</div>
               <div class="expandible-info">
                 <div class="forfets-element-column data-forfet">
                   <span class="icons icon-web"></span>
@@ -270,7 +270,7 @@
                 <span>Forfet</span><span class="number-forfet">99</span>
               </div>
 
-              <div class="reveal-info">Mes informació</div>
+              <div class="reveal-info">Més informació</div>
               <div class="expandible-info">
                 <div class="forfets-element-column data-forfet">
                   <span class="icons icon-web"></span>

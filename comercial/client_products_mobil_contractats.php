@@ -43,11 +43,11 @@
 
 
           <div class="services-full-info">
-            <div class="config-client-products cont-wrapper">
-              <div class="content">
+            <div class="config-client-products">
 
-                <h2>Els meus productes</h2>
-                <div class="forfeits-container">
+                <div class="products-inner-container">
+                  <h2>Els meus productes</h2>
+
                   <div class="products-block-forfeit">
                     <div class="forfeit-info">
                       <div class="forfeit-name">
@@ -58,10 +58,10 @@
                     <div class="forfeit-dades">
                       <h4>Número de línia</h4>
                       123456
-                      <h4>+ Forfet de dades 1 GB</h4>
+                      <h4>+ Forfet de dades <span class="bigger">1 GB</span></h4>
                     </div>
                     <div class="forfeit-actions">
-                      Acció en curs
+                      <div class="only-info">Acció en curs</div>
                     </div>
                   </div>
 
@@ -74,7 +74,7 @@
                     </div>
                     <div class="forfeit-dades">
                       <h4>Número de línia</h4>
-                      123456
+                      456789
                     </div>
                     <div class="forfeit-actions">
                       <a href="#" class="button-pink action-ampliar-forfeit">Ampliar forfet</a> <a href="#" class="button-pink action-dades-extra">Dades extra</a>
@@ -90,154 +90,73 @@
                     </div>
                     <div class="forfeit-dades">
                       <h4>Número de línia</h4>
-                      123456
-                      <h4>+ Forfet de dades 3 GB</h4>
+                      789456
+                      <h4>+ Forfet de dades <span class="bigger">3 GB</span></h4>
                     </div>
                     <div class="forfeit-actions">
-                      <a href="#" class="button-pink action-ampliar-forfeit">Ampliar forfet</a> <a href="#" class="button-pink action-dades-extra">Dades extra</a>
+                      <a href="#" class="button-pink action-ampliar-forfeit">Ampliar forfet</a> <a href="#" class="button-pink action-dades-extra">Ampliar dades</a>
                     </div>
                   </div>
 
                 </div>
 
+                <div class="products-inner-container">
+                  <h2>Productes amb ordres pendents</h2>
+                  <!--                /* BEGIN TABLE HERE */-->
+                  <div class="result-table-products align-forced">
+                    <div class="products-list">
+                      <div class="products-list-title">
+                        <div class="products-list-column column-product">Producte</div>
+                        <div class="products-list-column column-number">Número</div>
+                        <div class="products-list-column column-state">Estat</div>
+                        <div class="products-list-column column-request">Data sol·licitud</div>
+                        <div class="products-list-column column-active">Data aplicació</div>
+                        <div class="products-list-column column-link">&nbsp;</div>
+                      </div>
 
-                <h2>Productes amb ordres pendents</h2>
-                <!--                /* BEGIN TABLE HERE */-->
-                <div class="result-table-products">
-                  <div class="products-list">
-                    <div class="products-list-title">
-                      <div class="products-list-column column-product">Producte</div>
-                      <div class="products-list-column column-number">Número</div>
-                      <div class="products-list-column column-state">Estat</div>
-                      <div class="products-list-column column-request">Data sol·licitud</div>
-                      <div class="products-list-column column-active">Data aplicació</div>
-                      <div class="products-list-column column-link">&nbsp;</div>
-                    </div>
+                      <div class="products-list-row">
+                        <div class="products-list-column column-product">
+                          Forfet Mobiland 5
+                        </div>
+                        <div class="products-list-column column-number">
+                          123456
+                        </div>
+                        <div class="products-list-column column-state">
+                          Actiu
+                        </div>
+                        <div class="products-list-column column-request">
+                        </div>
+                        <div class="products-list-column column-active">
+                        </div>
+                        <div class="products-list-column column-link">
+                        </div>
+                      </div>
 
-                    <div class="products-list-row">
-                      <div class="products-list-column column-product">
-                        Forfet Mobiland 5
-                      </div>
-                      <div class="products-list-column column-number">
-                        12344546645
-                      </div>
-                      <div class="products-list-column column-state">
-                        Actiu
-                      </div>
-                      <div class="products-list-column column-request">
-                      </div>
-                      <div class="products-list-column column-active">
-                      </div>
-                      <div class="products-list-column column-link">
-                        <a href="#">Veure el meu consum</a>
-                      </div>
-                    </div>
-
-                    <div class="products-list-row">
-                      <div class="products-list-column column-product">
-                        Forfet Mobiland 15
-                      </div>
-                      <div class="products-list-column column-number">
-                        643435563455
-                      </div>
-                      <div class="products-list-column column-state">
-                        Actiu
-                      </div>
-                      <div class="products-list-column column-request">
-                      </div>
-                      <div class="products-list-column column-active">
-                      </div>
-                      <div class="products-list-column column-link">
-                        <a href="#" class="cancel-operation">Cancel·lar</a>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-                <!--                /*  END TABLE HERE */-->
-
-                <div class="half-page izq">
-                  <div class="config-box limited">
-                    <h4 class="title-config-box">Necessites
-                      un forfet superior?</h4>
-                    <div class="inner-box">
-                      <div class="custom-item one">
-                        <div class="message">
-                          Amplia a
+                      <div class="products-list-row pending">
+                        <div class="products-list-column column-product">
+                          Forfet Mobiland 15
                         </div>
-                        <div class="big-pink bold">
-                          1 GB / Tarifa plana
+                        <div class="products-list-column column-number">
+                          123456
                         </div>
-                      </div>
-                      <div class="custom-item two">
-                        <div class="custom-preu">
-                          <span class="treinta grey-medium bold">29€</span> <span class="grey-medium bold">/mes</span>
+                        <div class="products-list-column column-state">
+                          En curs
                         </div>
-                      </div>
-                      <div class="custom-item three">
-                        <div class="actions-container">
-                          <a href="#"
-                             class="button-pink action-sign-in">Contratar</a>
-                          <a href="#" class="button-active">+ Info</a>
+                        <div class="products-list-column column-request">
+                          25/01/2017
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="half-page der">
-                  <div class="config-box limited">
-                    <h4 class="title-config-box">Contracta
-                      més GB</h4>
-                    <div class="inner-box trans">
-                      <div class="gallery-item">
-                        <div class="product-promo">
-                          <div class="big-pink bold">
-                            500 MB
-                          </div>
-                          <div class="entry-price">
-                            <span class="twenty grey-medium bold">4€</span> /mes
-                          </div>
+                        <div class="products-list-column column-active">
+                          28/02/2017
                         </div>
-                        <div class="custom-links">
-                          <a href="#" class="button-pink">Contractar</a>
-                          <a href="#" class="button-active">+ Info</a>
-                        </div>
-                      </div>
-                      <div class="gallery-item">
-                        <div class="product-promo">
-                          <div class="big-pink bold">
-                            1 GB
-                          </div>
-                          <div class="entry-price">
-                            <span class="twenty grey-medium bold">6€</span> /mes
-                          </div>
-                        </div>
-                        <div class="custom-links">
-                          <a href="#" class="button-pink">Contractar</a>
-                          <a href="#" class="button-active">+ Info</a>
-                        </div>
-                      </div>
-                      <div class="gallery-item">
-                        <div class="product-promo">
-                          <div class="big-pink grey-medium bold">
-                            2 GB
-                          </div>
-                          <div class="entry-price">
-                            <span class="twenty grey-medium bold">8€</span> /mes
-                          </div>
-                        </div>
-                        <div class="custom-links">
-                          <a href="#" class="button-pink">Contractar</a>
-                          <a href="#" class="button-active">+ Info</a>
+                        <div class="products-list-column column-link">
+                          <a href="#" class="cancel-operation">Cancel·lar</a>
                         </div>
                       </div>
 
                     </div>
                   </div>
+                  <!--                /*  END TABLE HERE */-->
                 </div>
-
-              </div>
             </div>
           </div>
         </div>
@@ -503,7 +422,7 @@
 
   <script language="JavaScript">
       $(document).ready(function () {
-
+          
           // Fold-Unfold ITEMS
           // We start closing ALL (on load PAGE) not marked has "opened"
           $('.services-selector:not(".opened")').children('.services-full-info').hide();

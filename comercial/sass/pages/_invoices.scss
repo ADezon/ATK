@@ -84,6 +84,7 @@
       float: left;
       clear: none;
       margin: 2px 32px;
+      @include breakpoint($mobile) { margin: 20px 0; }
     }
   }
   &.result-invoices{

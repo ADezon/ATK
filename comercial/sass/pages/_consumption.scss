@@ -525,6 +525,19 @@
     height: 400px;
   }
 }
+
+#tabs-chart-1, #tabs-chart-2, #tabs-chart-3, #tabs-chart-4 {
+  width: 100%;
+  #chart_data-1, #chart_data-2, #chart_data-3, #chart_data-4 {
+    width: 100%;
+    height: 400px;
+    > .ltr {
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+
 //CSS GLOBAL
 .current-consumption {
   float: left;

@@ -1,0 +1,507 @@
+.work-page{
+  h1{
+    color: #4a4a4a;
+  }
+  // LANDING WORK
+  #main-content.work-landing{
+    //CONTENT WORK LANDING
+    .content-ws{
+      padding-right: 10% !important;
+      width: 77%;
+      @include breakpoint($medium) {
+        width: 67%;
+        padding-right: 5% !important;
+      }
+      @include breakpoint($tablet) {
+        padding-right: 0 !important;
+        width: 100%;
+      }
+      @include breakpoint($mobile) {
+        padding: 0 !important;
+        clear: both;
+      }
+      .work-paginator{
+        position: relative;
+        display: block;
+        clear: both;
+        overflow: hidden;
+      }
+      .work-loop{
+        position: relative;
+        display: block;
+        clear: both;
+        overflow: hidden;
+        .work-loop-item{
+          position: relative;
+          display: block;
+          clear: both;
+          overflow: hidden;
+          padding: 35px 0;
+          border-top: 1px solid $grey;
+          &:first-child{
+            border-top: none;
+          }
+          .work-item-content{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            float: left;
+            width: 100%;
+            padding-left: 75px;
+            @include breakpoint($tablet) {
+              width: 100%;
+              float: none;
+              clear: both;
+              padding-left: 0;
+            }
+            .work-item-date{
+              position: relative;
+              display: block;
+              overflow: hidden;
+              clear: both;
+              color: $gris3;
+              font-size: 14px;
+              line-height: 18px;
+              text-transform: uppercase;
+              span{
+                color: $gris3;
+                font-size: 14px;
+                line-height: 18px;
+                text-transform: uppercase;
+              }
+            }
+            .work-item-title{
+              position: relative;
+              display: block;
+              overflow: hidden;
+              clear: both;
+              color: $pink;
+              font-size: 18px;
+              line-height: 22px;
+              text-transform: uppercase;
+              h3{
+                color: $pink;
+                font-size: 18px;
+                line-height: 22px;
+                text-transform: uppercase;
+                font-weight: normal;
+              }
+            }
+            .work-item-excerpt{
+              position: relative;
+              display: block;
+              overflow: hidden;
+              clear: both;
+              color: $products-fontcolor;
+              font-size: 14px;
+              line-height: 18px;
+              p{
+                color: $products-fontcolor;
+                font-size: 14px;
+                line-height: 18px;
+              }
+            }
+            .work-item-readmore{
+              position: relative;
+              display: block;
+              overflow: hidden;
+              clear: both;
+              color: $pink;
+              font-size: 16px;
+              line-height: 20px;
+              a{
+                color: $pink;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+    // SIDEBAR WORK LANDING
+    .sidebar{
+      h5{
+        padding-top: 0;
+      }
+    }
+  }
+  // DETAIL WORK
+  #main-content.work-detail {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-top: 50px;
+    //CONTENT WORK DETAIL
+    .content-ws{
+      padding-right: 10% !important;
+      width: 77%;
+      @include breakpoint($medium) {
+        width: 67%;
+        padding-right: 5% !important;
+      }
+      @include breakpoint($tablet) {
+        padding-right: 0 !important;
+        width: 100%;
+      }
+      @include breakpoint($mobile) {
+        padding: 0 !important;
+        clear: both;
+      }
+      .work-data {
+        font-family: Roboto, SansSerif;
+        color: $gris3;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+      }
+      .work-title {
+        color: $pink;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 300;
+        margin: 10px 0;
+      }
+      .content-inner-container{
+        margin-top: 50px;
+        @include breakpoint($mobile) {
+          margin-top: 20px;
+        }
+        .vertical-social {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          float: left;
+          width: 10%;
+          text-align: center;
+          padding-left: 15px;
+          @include breakpoint($mobile) {
+            width: 100%;
+            padding: 0;
+            float: none;
+            clear: both;
+            margin: 0 0 20px 0;
+          }
+          ul {
+            width: 100%;
+          }
+          li {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin-bottom: 10px;
+            &:before {
+              content: '';
+              display: none;
+            }
+            @include breakpoint($mobile) {
+              float: left;
+              margin: 0 10px;
+            }
+          }
+          .icons:before{
+            font-size: 30px;
+          }
+          .icon-goto:before{
+            font-size: 15px;
+            color:$greymedium;
+          }
+        }
+        .full-content {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          float: left;
+          width: 90%;
+          padding-left: 40px;
+          @include breakpoint($mobile) {
+            width: 100%;
+            padding: 0;
+            float: none;
+            clear: both;
+          }
+          h3{
+            color: $greydark;
+            font-weight: normal;
+          }
+          p {
+            color: $greydark;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 10px;
+          }
+          ul{
+            padding-left: 10px;
+            li{
+              color: $greydark;
+              font-size: 14px;
+              line-height: 18px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //SIDEBAR WORK GENERAL
+  #main-content .sidebar{
+    width: 23%;
+    padding-right: 0 !important;
+    @include breakpoint($medium) {
+      width: 33%;
+    }
+    @include breakpoint($tablet) {
+      width: 100%;
+    }
+    @include breakpoint($mobile) {
+      width: 100%;
+      padding: 0;
+      float: none;
+      clear: both;
+    }
+    h5 {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      text-transform: uppercase;
+      color: $greydark;
+      font-size: 14px;
+      line-height: 18px;
+      padding:30px 0;
+      margin: 0;
+    }
+    ul.list{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0 0 20px 0;
+      li{
+        position: relative;
+        display: block;
+        clear: both;
+        margin-bottom: 20px;
+        color: $greydark;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    .work-sidebar-information{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      background-color: $products-bggrey;
+      padding: 30px 20px;
+      .button-send-cv{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        @include breakpoint($tablet) {
+          max-width: 190px;
+          width: auto;
+          float: none;
+          clear: both;
+        }
+        @include breakpoint($mobile) {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      .sidebar-info-section{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin-top: 20px;
+        @include breakpoint($tablet) {
+          width: 50%;
+          float: left;
+        }
+        @include breakpoint($mobile) {
+          width: 100%;
+          float: none;
+          clear: both;
+        }
+        .title-info-cv{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          color:$greydark;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 400;
+        }
+        .content-info-cv{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          color:$greydark;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 300;
+        }
+      }
+    }
+    .work-sidebar-banner{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      background: transparent url("./../images/bg-banner-cv.png") no-repeat 0 0;
+      background-size: cover;
+      padding: 60px 20px;
+      .title-banner-cv{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        color:$white;
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 400;
+        margin-bottom: 25px;
+      }
+      .content-banner-cv{
+        p{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          color:$white;
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 400;
+          margin-bottom: 40px;
+          strong{
+            font-weight: bold;
+          }
+        }
+      }
+      .button-send-cv{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        @include breakpoint($tablet) {
+          max-width: 190px;
+          width: auto;
+          float: none;
+          clear: both;
+        }
+        @include breakpoint($mobile) {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  // FORM CV WORK
+  #main-content.work-form{
+    .cv-form {
+      width: 50%;
+      @include breakpoint($tablet) {
+        width: 100%;
+        float: none;
+        clear: both;
+      }
+      .info-form p {
+        color: $greydark;
+        font-size: 12px;
+      }
+      fieldset{
+        &.small-field{
+          position: relative;
+          display: block;
+          float: left;
+          box-sizing: border-box;
+          padding-right: 30px;
+          width: 45%;
+          @include breakpoint($tablet) {
+            width: 50%;
+          }
+          @include breakpoint($mobile) {
+            width: 100%;
+            float: none;
+            clear: both;
+            padding: 0;
+          }
+        }
+        &.big-field{
+          position: relative;
+          display: block;
+          float: left;
+          width: 55%;
+          @include breakpoint($tablet) {
+            width: 50%;
+          }
+          @include breakpoint($mobile) {
+            width: 100%;
+            float: none;
+            clear: both;
+            padding: 0;
+          }
+        }
+        .title-field {
+          color: $greydark;
+          font-weight: 400;
+        }
+      }
+      .captcha img {
+        width: auto;
+      }
+      .checkbox-custom label a {
+        color: $pink;
+      }
+    }
+  }
+
+  .hide-field {
+    display: none;
+  }
+  .box-upload-cv {
+
+    #uploadfake {
+      float: left;
+      width: 60%;
+      margin-right: 2%;
+      @include breakpoint ($mobile) { width: 100%; margin-right: 0; }
+    }
+    label {
+      width: 38%;
+      background-color: white;
+      border: 1px solid $pink;
+      border-radius: 4px;
+      clear: none;
+      color: $pink;
+      cursor: pointer;
+      display: block;
+      float: left;
+      font-size: 16px;
+      line-height: 15px;
+      font-weight: bold;
+      height: 36px;
+      margin: 8px 0;
+      padding: 10px 0;
+      position: relative;
+      font-family: "Titillium Web", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      @include breakpoint ($mobile) { width: 100%; }
+    }
+  }
+
+
+  //.box-upload-cv {
+  //  position: relative;
+  //  overflow: hidden;
+  //  margin: 10px;
+  //}
+  //.box-upload-cv input {
+  //  position: absolute;
+  //  top: 0;
+  //  right: 0;
+  //  margin: 0;
+  //  padding: 0;
+  //  font-size: 20px;
+  //  cursor: pointer;
+  //  opacity: 0;
+  //  filter: alpha(opacity=0);
+  //}
+}

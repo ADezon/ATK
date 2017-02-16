@@ -74,13 +74,14 @@
             .field-title {
               color: $pink;
               font-size: 21px;
+              line-height: 28px;
               font-weight: 600;
               margin-bottom:16px;
             }
             .field-body {
               color: $greymedium;
               font-size: 18px;
-
+              line-height: 24px;
             }
 
           }
@@ -229,4 +230,12 @@
 .flex-control-nav li:before {
   content: "";
   display: none;
+}
+
+.flex-viewport .slides li {
+  border-left: 1px solid #9C9E9F;
+  &:first-child {
+    border: medium none;
+  }
+
 }
