@@ -70,7 +70,8 @@
                   <div class="data-forfet-info">
                     <span class="data-forfet-title">Internet</span>
                     <span class="data-forfet-content">Velocitat simètrica fins a <strong>100 Mbps</strong></span>
-                    <span class="data-forfet-content"><strong>200 GB</strong> de tràfic <strong>internacional</strong></span>
+                    <span
+                        class="data-forfet-content"><strong>200 GB</strong> de tràfic <strong>internacional</strong></span>
                   </div>
                 </div>
                 <div class="forfets-element-column calls-forfet">
@@ -78,8 +79,10 @@
                   <div class="calls-forfet-info">
                     <span class="calls-forfet-title">Trucades</span>
                     <span class="calls-forfet-content"><strong>Trf. Plana</strong> a fixes nacionals</span>
-                    <span class="calls-forfet-content"><strong>30 min.</strong> a mobils <strong>nacionals</strong></span>
-                    <span class="calls-forfet-content"><strong>300 min.</strong> a fixes <strong>europeus</strong></span>
+                    <span
+                        class="calls-forfet-content"><strong>30 min.</strong> a mobils <strong>nacionals</strong></span>
+                    <span
+                        class="calls-forfet-content"><strong>300 min.</strong> a fixes <strong>europeus</strong></span>
                   </div>
                 </div>
                 <div class="forfets-element-column sms-forfet">
@@ -117,7 +120,8 @@
                   <div class="data-forfet-info">
                     <div class="data-forfet-title">Internet</div>
                     <span class="data-forfet-content">Velocitat simètrica fins a <strong>100mbps</strong></span>
-                    <span class="data-forfet-content"><strong>200 GB</strong> de tràfic <strong>internacional</strong></span>
+                    <span
+                        class="data-forfet-content"><strong>200 GB</strong> de tràfic <strong>internacional</strong></span>
                   </div>
                 </div>
                 <div class="forfets-element-column calls-forfet">
@@ -125,8 +129,10 @@
                   <div class="calls-forfet-info">
                     <span class="calls-forfet-title">Trucades</span>
                     <span class="calls-forfet-content"><strong>Trf. Plana</strong> a fixes nacionals</span>
-                    <span class="calls-forfet-content"><strong>30 min.</strong> a mobils <strong>nacionals</strong></span>
-                    <span class="calls-forfet-content"><strong>300 min.</strong> a fixes <strong>europeus</strong></span>
+                    <span
+                        class="calls-forfet-content"><strong>30 min.</strong> a mobils <strong>nacionals</strong></span>
+                    <span
+                        class="calls-forfet-content"><strong>300 min.</strong> a fixes <strong>europeus</strong></span>
                   </div>
                 </div>
                 <div class="forfets-element-column sms-forfet">
@@ -165,7 +171,8 @@
                   <div class="data-forfet-info">
                     <span class="data-forfet-title">Internet</span>
                     <span class="data-forfet-content">Velocitat simètrica fins a <strong>100mbps</strong></span>
-                    <span class="data-forfet-content"><strong>200 GB</strong> de tràfic <strong>internacional</strong></span>
+                    <span
+                        class="data-forfet-content"><strong>200 GB</strong> de tràfic <strong>internacional</strong></span>
                   </div>
                 </div>
                 <div class="forfets-element-column calls-forfet">
@@ -173,8 +180,10 @@
                   <div class="calls-forfet-info">
                     <span class="calls-forfet-title">Trucades</span>
                     <span class="calls-forfet-content"><strong>Trf. Plana</strong> a fixes nacionals</span>
-                    <span class="calls-forfet-content"><strong>30 min.</strong> a mobils <strong>nacionals</strong></span>
-                    <span class="calls-forfet-content"><strong>300 min.</strong> a fixes <strong>europeus</strong></span>
+                    <span
+                        class="calls-forfet-content"><strong>30 min.</strong> a mobils <strong>nacionals</strong></span>
+                    <span
+                        class="calls-forfet-content"><strong>300 min.</strong> a fixes <strong>europeus</strong></span>
                   </div>
                 </div>
                 <div class="forfets-element-column sms-forfet">
@@ -308,10 +317,12 @@
     <!--END SPECIFIC PAGE ON SOM-->
 
     <script language="JavaScript">
-        $('.reveal-info').click(function () {
-            $(this).parent().find('.expandible-info').slideToggle();
-            $(this).toggleClass('opened');
-        })
+        $(document).ready(function () {
+            $('.reveal-info').click(function () {
+                $(this).parent().find('.expandible-info').slideToggle();
+                $(this).toggleClass('opened');
+            });
+        });
     </script>
 
   </div>

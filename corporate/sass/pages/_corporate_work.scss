@@ -1,3 +1,4 @@
+// WORK Ready for desacople
 .work-page{
   h1{
     color: #4a4a4a;
@@ -504,4 +505,409 @@
   //  opacity: 0;
   //  filter: alpha(opacity=0);
   //}
+}
+
+// PUBLIC OFFER
+.public-offer-page{
+  h1{
+    color: #4a4a4a;
+  }
+  // LANDING PUBLIC OFFER
+  #main-content.public-offer-landing{
+    .public-offer-paginator{
+      position: relative;
+      display: block;
+      clear: both;
+      overflow: hidden;
+    }
+    .public-offer-loop{
+      position: relative;
+      display: block;
+      clear: both;
+      overflow: hidden;
+      .public-offer-loop-item{
+        position: relative;
+        display: block;
+        clear: both;
+        overflow: hidden;
+        padding: 35px 0;
+        border-top: 1px solid $grey;
+        &:first-child{
+          border-top: none;
+        }
+        .public-offer-item-content{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          float: left;
+          width: 100%;
+          padding-left: 75px;
+          @include breakpoint($tablet) {
+            width: 100%;
+            float: none;
+            clear: both;
+            padding-left: 0;
+          }
+          .public-offer-item-tags{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            clear: both;
+          }
+          .public-offer-item-date{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            clear: both;
+            color: $gris3;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            span{
+              color: $gris3;
+              font-size: 14px;
+              line-height: 18px;
+              text-transform: uppercase;
+            }
+          }
+          .public-offer-item-title{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            clear: both;
+            color: $pink;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            h3{
+              color: $pink;
+              font-size: 18px;
+              line-height: 22px;
+              text-transform: uppercase;
+              font-weight: normal;
+            }
+          }
+          .public-offer-item-excerpt{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            clear: both;
+            color: $products-fontcolor;
+            font-size: 14px;
+            line-height: 18px;
+            p{
+              color: $products-fontcolor;
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+          .public-offer-item-readmore{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            clear: both;
+            color: $pink;
+            font-size: 16px;
+            line-height: 20px;
+            a{
+              color: $pink;
+              font-size: 16px;
+              line-height: 20px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  // PUBLIC OFFER DETAIL
+  #main-content.public-offer-detail {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-top: 50px;
+    //CONTENT NEWS DETAIL
+    .content-ws{
+      padding-right: 10% !important;
+      @include breakpoint($mobile) {
+        padding: 0 !important;
+        clear: both;
+      }
+      .public-offer-data {
+        font-family: Roboto, SansSerif;
+        color: $gris3;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+      }
+      .public-offer-title {
+        color: $pink;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 400;
+        margin: 10px 0;
+      }
+      .public-offer-intro {
+        font-family: Roboto, SansSerif;
+        font-weight: 300;
+        color: $greydark;
+        font-size: 18px;
+        line-height: 28px;
+
+        &:after {
+          border-bottom: 2px solid #D30572;
+          content: "";
+          display: block;
+          height: 2px;
+          padding-top: 15px;
+          position: relative;
+          text-align: center;
+          width: 130px;
+          margin-bottom: 36px;
+          margin-top: 15px;
+        }
+      }
+      .content-inner-container{
+        margin-top: 50px;
+        @include breakpoint($mobile) {
+          margin-top: 20px;
+        }
+        .vertical-social {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          float: left;
+          width: 10%;
+          text-align: center;
+          padding-left: 15px;
+          @include breakpoint($mobile) {
+            width: 100%;
+            padding: 0;
+            float: none;
+            clear: both;
+            margin: 0 0 20px 0;
+          }
+          ul {
+            width: 100%;
+          }
+          li {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            margin-bottom: 10px;
+            &:before {
+              content: '';
+              display: none;
+            }
+            @include breakpoint($mobile) {
+              float: left;
+              margin: 0 10px;
+            }
+          }
+          .icons:before{
+            font-size: 30px;
+          }
+          .icon-goto:before{
+            font-size: 15px;
+            color:$greymedium;
+          }
+        }
+        .full-content {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          float: left;
+          width: 90%;
+          padding-left: 40px;
+          @include breakpoint($mobile) {
+            width: 100%;
+            padding: 0;
+            float: none;
+            clear: both;
+          }
+          h3{
+            color: $greydark;
+          }
+          p {
+            color: #greydark;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    //SIDEBAR NEWS DETAIL
+    .sidebar{
+      padding-right: 0 !important;
+      @include breakpoint($mobile) {
+        width: 100%;
+        padding: 0;
+        float: none;
+        clear: both;
+      }
+      h5 {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        text-transform: uppercase;
+        color: $greydark;
+        font-size: 14px;
+        line-height: 18px;
+        padding:30px 0;
+        margin: 0;
+        border-top: 1px solid $grey;
+      }
+      ul.list{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0 0 20px 0;
+        li{
+          position: relative;
+          display: block;
+          clear: both;
+          margin-bottom: 20px;
+          color: $greydark;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+      ul.list-tags {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0 0 20px 0;
+        li{
+          position: relative;
+          display: block;
+          float: left;
+          margin-bottom: 10px;
+          color: $greydark;
+          background-color: $grey;
+          padding: 8px 12px;
+          margin-right: 12px;
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 16px;
+          a {
+            text-decoration: none;
+            color: $greydark;
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//CONTRACTS
+.contracts-page{
+  // LANDING CONTRACTS
+  #main-content.contracts-landing{
+    .contracts-paginator{
+      position: relative;
+      display: block;
+      clear: both;
+      overflow: hidden;
+    }
+    .contracts-loop{
+      position: relative;
+      display: block;
+      clear: both;
+      overflow: hidden;
+      .contracts-loop-item{
+        position: relative;
+        display: block;
+        clear: both;
+        overflow: hidden;
+        padding: 35px 0;
+        border-top: 1px solid $grey;
+        &:first-child{
+          border-top: none;
+        }
+        .contracts-item-content{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          float: left;
+          width: 60%;
+          padding-left: 75px;
+          @include breakpoint($tablet) {
+            width: 100%;
+            float: none;
+            clear: both;
+            padding-left: 0;
+          }
+          .contracts-item-date{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            clear: both;
+            color: $gris3;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+            span{
+              color: $gris3;
+              font-size: 14px;
+              line-height: 18px;
+              text-transform: uppercase;
+            }
+          }
+          .contracts-item-title{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            clear: both;
+            color: $pink;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            h3{
+              color: $pink;
+              font-size: 18px;
+              line-height: 22px;
+              text-transform: uppercase;
+              font-weight: normal;
+            }
+          }
+          .contracts-item-excerpt{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            clear: both;
+            color: $products-fontcolor;
+            font-size: 14px;
+            line-height: 18px;
+            p{
+              color: $products-fontcolor;
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+        }
+        .contracts-item-doc{
+          position: relative;
+          display: block;
+          overflow: hidden;
+          float: left;
+          width: 40%;
+          padding-left: 45px;
+          @include breakpoint($tablet) {
+            width: 100%;
+            float: none;
+            clear: both;
+            padding-left: 0;
+          }
+          a{
+            .button-pink{
+
+            }
+          }
+        }
+      }
+    }
+  }
 }

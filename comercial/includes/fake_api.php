@@ -133,14 +133,36 @@ if (array_key_exists('operation', $received)) {
   }
 
   elseif ($received['operation'] == 'action_ampliar_forfeit') {
-      $title = 'Ampliar forfet';
+      $title = 'Canviar forfet de dades';
       $body = '<div class="products-floating-box"><div class="config-box">';
-      $body .= '<div class="inner-box"><div class="custom-item one"><div class="message">Amplia a </div>';
-      $body .= '<div class="big-pink bold">Forfet 29</div></div>';
-      $body .= '<div class="custom-item two"><span class="treinta grey-medium bold">29€</span>&nbsp;<span class="grey-medium bold">/mes</span>';
+      $body .= '<h3>Ampliar forfet de dades</h3>';
+      $body .= '<div class="info-forfet-message">Aquesta acció s’aplicarà de forma inmediata.</div>';
+      $body .= '<div class="inner-box"><div class="custom-item one">';
+      $body .= '<div class="title-forfet">Forfet <span class="treinta bold">29</span></div></div>';
+      $body .= '<div class="custom-item two"><span class="treinta grey-medium bold">49€</span>&nbsp;<span class="grey-medium bold">/mes</span>';
       $body .= '</div><div class="custom-item three"><div class="actions-container"><a href="#" class="button-pink action-sign-in">Contratar</a>';
       $body .= '<a href="#" class="button-active">+ Info</a></div></div></div></div></div>';
 
+      $body .= '<div class="products-floating-box"><div class="config-box">';
+      $body .= '<h3>Reduïr forfet</h3>';
+      $body .= '<div class="info-forfet-message">Aquesta acció s’aplicarà a partir del dia 1 del mes següent.</div>';
+      $body .= '<div class="inner-box"><div class="custom-item one">';
+      $body .= '<div class="title-forfet">Forfet <span class="treinta bold">5</span></div></div>';
+      $body .= '<div class="custom-item two"><span class="treinta grey-medium bold">5€</span>&nbsp;<span class="grey-medium bold">/mes</span>';
+      $body .= '</div><div class="custom-item three"><div class="actions-container"><a href="#" class="button-pink action-sign-in">Contratar</a>';
+      $body .= '<a href="#" class="button-active">+ Info</a></div></div></div></div></div>';
+
+
+      $response = array(
+          'title' => $title,
+          'body'  => $body
+      );
+  }
+
+  elseif ($received['operation'] == 'cancel_dades') {
+      $title = '<h2 class="alert-title">Atenció</h2>';
+      $body = 'Estas segur de voler cancel·lar les dades?';
+      $body .= '<div class="full-centered alert-two-buttons"><a href="#" class="button-active">NO</a> <a href="#" class="button-pink">SI</a></div>';
       $response = array(
           'title' => $title,
           'body'  => $body
@@ -149,10 +171,8 @@ if (array_key_exists('operation', $received)) {
 
   elseif ($received['operation'] == 'cancel_operation') {
       $title = '<h2 class="alert-title">Atenció</h2>';
-
       $body = 'Estas segur de voler cancel·lar l\'ordre pendent?';
       $body .= '<div class="full-centered alert-two-buttons"><a href="#" class="button-active">NO</a> <a href="#" class="button-pink">SI</a></div>';
-
       $response = array(
           'title' => $title,
           'body'  => $body

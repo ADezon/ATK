@@ -33,42 +33,58 @@
       .half-page {
         &.izq {
           padding-right: 15px;
-          @include breakpoint($mobile) { padding: 0; }
+          @include breakpoint($mobile) {
+            padding: 0;
+          }
         }
         &.der {
           padding-left: 15px;
-          @include breakpoint($mobile) { padding: 0; }
+          @include breakpoint($mobile) {
+            padding: 0;
+          }
         }
 
         .config-box {
           &.limited {
             height: 256px;
-            @include breakpoint($mobile) { height: auto; }
+            @include breakpoint($mobile) {
+              height: auto;
+            }
             .inner-box > .custom-item.two {
               width: 48%;
               padding-top: 52px;
               text-align: center;
-              @include breakpoint($mobile) { padding-top: 15px; }
+              @include breakpoint($mobile) {
+                padding-top: 15px;
+              }
             }
           }
 
           .inner-box > .custom-item.one {
             width: 52%;
-            @include breakpoint($mobile) { margin: 0; }
+            @include breakpoint($mobile) {
+              margin: 0;
+            }
 
             .message {
               margin: 16px 0;
-              @include breakpoint($mobile) { margin: 0; }
+              @include breakpoint($mobile) {
+                margin: 0;
+              }
             }
           }
 
           .inner-box > .custom-item.two {
-            @include breakpoint($mobile) { margin: 0; }
+            @include breakpoint($mobile) {
+              margin: 0;
+            }
           }
 
           .inner-box > .custom-item.three {
             width: 100%;
-            @include breakpoint($mobile) { margin: 0; }
+            @include breakpoint($mobile) {
+              margin: 0;
+            }
 
           }
           .inner-box > .custom-item .actions-container {
@@ -94,7 +110,6 @@
           }
         }
       }
-
 
       .services-element {
         position: relative;
@@ -218,45 +233,166 @@
         margin-bottom: 30px;
         float: left;
       }
+
+      /* Basic Layout for INNER content */
       .products-inner-container {
         float: left;
         width: 100%;
         margin-top: 22px;
         margin-bottom: 26px;
-        padding-left: 20px;
+        padding: 0 20px;
 
-        h2 { margin-bottom: 30px; }
-        h4 { margin: 15px 0 4px 0;
+        @include breakpoint ($mobile) { padding: 0; }
+
+        &.internet {
+          .products-block-forfeit {
+            min-height: inherit;
+
+            .forfeit-info {
+
+              h4 { margin-bottom: 20px; }
+              .forfeit-name {
+                width: auto;
+                @include breakpoint ($mobile) {
+                  width: 100%;
+                  text-align: center;
+                }
+              }
+            }
+
+            .forfeit-dades {
+              @include breakpoint ($mobile) {
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+
+        .config-box {
+          margin: 0;
+        }
+        .product-tv-item {
+          float: left;
+          width: 100%;
+          border: 2px solid $greysoft;
+          padding: 12px 20px;
+          margin-bottom: 30px;
+
+          .product-detail {
+            float: left;
+            width: 35%;
+            @include breakpoint ($mobile) { width: 50%; }
+
+            .main-title {
+              margin-top: 12px;
+              font-size: 21px;
+              color: $pink;
+              line-height: 26px;
+              font-weight: 600;
+            }
+          }
+          .product-info {
+            float: left;
+            width: 30%;
+            @include breakpoint ($mobile) {
+              width: 50%;
+              padding-left: 18px;
+            }
+
+            .do-not-remove {
+              margin-top: 4px;
+            }
+            a { text-decoration: underline; }
+          }
+          .product-actions {
+            float: left;
+            width: 35%;
+            @include breakpoint ($mobile) { width: 100%; }
+            margin-top: 30px;
+            text-align: center;
+            color: $gris3;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+          .products-gallery {
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+
+            .products-gallery-item {
+              text-align: center;
+
+              @include gallery(2 of 10);
+              @include breakpoint ($tablet) { @include gallery(5 of 10); }
+              @include breakpoint ($mobile) { 
+                margin: 0 !important;
+                width: 50%;
+                clear: none;
+                float: left;
+              }
+
+              .gallery-item-title {
+                font-size: 16px;
+                line-height: 24px;
+                color: $rosa2;
+                font-weight: 600;
+                margin-bottom: 10px;
+              }
+              a { text-decoration: underline; line-height: 22px; }
+            }
+          }
+        }
+        h2 {
+          margin-bottom: 30px;
+          float: left;
+          width: 100%;
+        }
+        h4 {
+          margin: 15px 0 4px 0;
           .bigger {
             font-size: 21px;
           }
         }
 
-        @include breakpoint ($mobile) { padding: 0; }
         .products-block-forfeit {
           float: left;
-          width: 454px;
-          margin: 0 28px 30px 0;
+          width: 468px;
           border: 2px solid #f4f4f4;
-          min-height: 200px;
+          min-height: 214px;
           padding-top: 10px;
-          @include breakpoint ($mobile) { width: 100%; margin: 0 0 20px 0; }
+
+          &.odd { margin: 0 28px 30px 0; }
+          &.even { margin: 0 0 30px 0; }
+          @include breakpoint ($mobile) {
+            width: 100%;
+            &.odd { margin: 0 0 20px 0; }
+            &.even { margin: 0 0 20px 0; }
+          }
 
           .forfeit-info {
             float: left;
-            width: 45%;
+            width: 50%;
             color: $pink;
-            text-align: center;
-            font-size: 21px;
-            font-weight: 700;
-            line-height: 19px;
+            padding-left: 42px;
+
             @include breakpoint ($mobile) {
               width: 100%;
+              padding-left: 0;
+              text-align: center;
             }
 
-              .forfeit-name {
+            a {
+              font-size: 14px;
+              font-weight: 500;
+              text-decoration: underline;
+            }
+
+            .forfeit-name {
+              font-size: 21px;
+              font-weight: 700;
+              line-height: 19px;
               float: left;
-              width: 40%;
+              width: 26%;
               text-align: right;
               padding-top: 24px;
             }
@@ -264,11 +400,14 @@
               float: left;
               width: 60%;
               font-size: 72px;
-              line-height: 100px;
+              line-height: 72px;
               text-align: left;
               padding-left: 12px;
+              padding-top: 10px;
             }
             h4 {
+              float: left;
+              width: 100%;
               line-height: 22px;
               font-weight: bold;
               margin: 20px 0 0 0;
@@ -276,7 +415,8 @@
           }
           .forfeit-dades {
             float: left;
-            width: 55%;
+            width: 50%;
+            padding: 0 20px;
             margin-top: 4px;
             @include breakpoint ($mobile) {
               width: 100%;
@@ -284,7 +424,7 @@
               text-align: center;
             }
 
-            }
+          }
           .forfeit-actions {
             float: left;
             width: 100%;
@@ -300,13 +440,18 @@
             }
 
             a.button-pink {
-              margin-right: 18px;
+              width: 100%;
+              margin-bottom: 6px;
+
               @include breakpoint ($mobile) {
-                margin-right: 0;
                 margin-bottom: 20px;
               }
             }
           }
+        }
+
+        .half-page {
+          margin-bottom: 40px;
         }
       }
 
@@ -314,7 +459,7 @@
   }
   .config-client-products {
     content {
-     padding: 0;
+      padding: 0;
     }
     .sidebar {
       width: 40%;
@@ -406,7 +551,9 @@
       li {
         border-top: 1px solid $gris2;
         padding: 14px 0;
-        &:before { display: none !important; }
+        &:before {
+          display: none !important;
+        }
         &:last-child {
           border-bottom: 1px solid $gris2;
         }
@@ -430,7 +577,6 @@
         color: $greydark;
       }
     }
-
 
     .service-status {
       font-weight: bold;
@@ -516,7 +662,9 @@
       font-size: 16px;
       color: $greydark;
 
-      &.big { width: 240px; }
+      &.big {
+        width: 240px;
+      }
     }
   }
 }
@@ -580,7 +728,9 @@
   .alert-general-body {
     @include clearfix();
     padding: 10px 30px;
-    @include breakpoint ($mobile) { padding: 22px; }
+    @include breakpoint ($mobile) {
+      padding: 22px;
+    }
 
     .checkbox-custom label a {
       color: $pink;
@@ -685,7 +835,7 @@
 
     .inner-box {
       @include span(12 of 12);
-      padding: 16px 4px;
+      padding: 8px 4px;
 
       img {
         vertical-align: middle;
@@ -705,6 +855,7 @@
 .incompatible-product .button-pink {
   margin: 20px 0;
 }
+
 .message {
   float: left;
   width: 100%;
@@ -717,26 +868,24 @@
 
 }
 
-
 .result-table-products {
   clear: both;
   display: block;
   margin: 0;
   position: relative;
 
-  &.align-forced {
-    padding-right: 28px;
-    @include breakpoint($mobile) { padding: 0; }
+  @include breakpoint($tablet) {
+    margin: 10px 0;
   }
-
-  @include breakpoint($tablet) { margin: 10px 0; }
-  @include breakpoint($mobile) { padding: 0; }
-  .content{
+  @include breakpoint($mobile) {
+    padding: 0;
+  }
+  .content {
     @include breakpoint($tablet) {
       padding: 0;
     }
   }
-  .select-w-title{
+  .select-w-title {
     @include breakpoint($tablet) {
       padding: 0 18px;
     }
@@ -770,7 +919,7 @@
       }
     }
   }
-  .results-paginator-mobile{
+  .results-paginator-mobile {
     @include breakpoint($tablet) {
       margin: 20px 10px;
     }
@@ -800,20 +949,26 @@
       .products-list-column {
         display: block;
         float: left;
-        padding: 10px 2%;
+        padding: 10px 0 8px 2%;
         position: relative;
         width: 16%;
         @include breakpoint($intermedio) {
           width: 20%;
         }
         &.column-product {
+          width: 20%;
+        }
+        &.column-actions {
           width: 24%;
         }
         &.column-number {
-          width: 14%;
+          width: 12%;
         }
         &.column-state {
           width: 10%;
+        }
+        &.column-new-product {
+          width: 20%;
         }
         &.column-request {
           padding: 10px 1%;
@@ -858,7 +1013,7 @@
       .products-list-column {
         display: block;
         float: left;
-        padding: 0 0 8px 2%;
+        padding: 8px 0 8px 2%;
         position: relative;
         width: 16%;
 
@@ -868,7 +1023,7 @@
         @include breakpoint($tablet) {
           width: 40%;
         }
-        a{
+        a {
           color: $pink;
           text-decoration: underline;
         }
@@ -876,9 +1031,11 @@
         // Each field
         &.column-product {
           font-weight: bold;
-          width: 24%;
+          width: 20%;
           padding-top: 8px;
-          @include breakpoint($tablet) { width: 50%; }
+          @include breakpoint($tablet) {
+            width: 50%;
+          }
           &.with-image {
             padding-top: 0;
           }
@@ -889,7 +1046,7 @@
           }
         }
         &.column-number {
-          width: 14%;
+          width: 12%;
           padding-top: 8px;
 
           @include breakpoint($tablet) {
@@ -898,7 +1055,7 @@
             left: 0;
             width: 50%;
           }
-          span{
+          span {
             @include breakpoint($tablet) {
               text-align: left;
             }
@@ -917,22 +1074,46 @@
             color: $pink;
           }
         }
+        &.column-new-product {
+          font-weight: bold;
+          width: 20%;
+          padding: 12px 20px;
+          @include breakpoint($mobile) {
+            padding: 0 2%;
+            width: 50%;
+            margin-bottom: 10px;
+          }
+          .pending & {
+            color: $pink;
+          }
+        }
+        &.column-actions {
+          width: 24%;
+          font-weight: 600;
+        }
         &.column-request {
           font-size: 14px;
-          padding: 12px 16px;
-          @include breakpoint($mobile) { display: none; }
+          padding: 12px 30px;
+          @include breakpoint($mobile) {
+            display: none;
+          }
         }
 
         &.column-active {
           font-size: 14px;
-          padding: 12px 16px;
-          @include breakpoint($mobile) { display: none; }
+          padding: 12px 30px;
+          @include breakpoint($mobile) {
+            display: none;
+          }
         }
         &.column-link {
           float: right;
-          width: 18%;
+          width: 16%;
           padding-top: 8px;
-          @include breakpoint($mobile) { float:left; width: 50%; }
+          @include breakpoint($mobile) {
+            float: left;
+            width: 50%;
+          }
 
           a {
             font-size: 14px;
@@ -955,16 +1136,39 @@
     }
   }
 }
+
 .general-alert-wrapper .content-general-wrapper.clientproducts .alert-general-body .products-floating-box {
   margin: 0 36px;
   min-height: 220px;
 
-  @include breakpoint ($mobile) { margin: 0; }
+  @include breakpoint ($mobile) {
+    margin: 0;
+  }
 
   .config-box {
     margin: 20px 0 20px 0;
+    font-size: 14px;
+    text-align: center;
+
+    h3 { margin: 0; }
+    .info-forfet-message {
+      width: 80%;
+      margin: 0 auto;
+      line-height: 16px;
+      padding-bottom: 10px;
+      text-align: center;    }
+    .title-forfet {
+      color: #D30572;
+      font-size: 26px;
+      line-height: 64px;
+      font-weight: bold;
+      @include breakpoint ($mobile) {
+        line-height: 54px;
+      }
+    }
+
     @include breakpoint ($mobile) {
-      margin: 0;
+      margin: 0 0 20px 0;
       .inner-box .product-promo {
         float: left;
         width: 40%;
@@ -989,7 +1193,7 @@
       background-color: transparent;
     }
 
-    &> div {
+    & > div {
       float: left;
       clear: none;
       width: 33%;
@@ -1008,9 +1212,9 @@
         }
       }
       &.custom-item.two {
-        padding-top: 28px;
+        padding-top: 16px;
         @include breakpoint ($mobile) {
-          padding-top: 22px;
+          padding-top: 12px;
           width: 50%;
         }
       }
@@ -1032,9 +1236,11 @@
     }
   }
 }
+
 .alert-two-buttons {
   margin: 30px 0;
   a {
     padding: 8px 38px;
-    margin-right: 20px; }
+    margin-right: 20px;
+  }
 }

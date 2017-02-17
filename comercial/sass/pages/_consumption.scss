@@ -255,6 +255,7 @@
           width: 16%;
           span, a{
             text-align: left;
+            @include breakpoint ($mobile) { text-align: center; }
           }
         }
       }
@@ -277,6 +278,7 @@
         padding: 5px 0;
         position: relative;
         text-align: right;
+        @include breakpoint ($mobile) { text-align: center; }
         text-transform: uppercase;
       }
       .graphic-table-column{
@@ -290,6 +292,7 @@
           width: 16%;
           span, a{
             text-align: left;
+            @include breakpoint ($mobile) { text-align: center; }
           }
         }
       }
@@ -297,7 +300,7 @@
   }
 
   .graphic-table-list{
-    &.graphic-table-list-mobile{
+    &.graphic-table-list-mobile {
       display: none;
       @include breakpoint($tablet) {
         display: block;
@@ -307,7 +310,7 @@
           padding: 0 2%;
           width: 33%;
           &.first-column{
-            width: 33%;
+            width: 28%;
           }
         }
       }
@@ -316,7 +319,7 @@
           padding: 0 2%;
           width: 33%;
           &.first-column{
-            width: 33%;
+            width: 28%;
           }
         }
       }

@@ -1,10 +1,6 @@
 /* GENERAL */
 .bg-grey {
   background-color: $products-bggrey;
-  padding: 40px 0;
-  &.corporative {
-    padding: 30px 0;
-  }
 }
 .bg-soft-grey {
   background-color: $products-bggrey;
@@ -30,6 +26,10 @@
 * 0. SHORTCODE LAYOUT
 */
 .shortcode-container {
+  padding: 60px 0;
+  @include breakpoint($tablet) {
+    padding: 24px 0;
+  }
   &.main-menu-shortcode {
     margin-top: 50px;
     @include breakpoint($tablet) {
@@ -50,7 +50,6 @@
 
 .w-bottomline {
   border-bottom: 1px solid #979797;
-  padding-bottom: 35px;
 }
 
 /*
@@ -767,6 +766,8 @@ h3.title-step {
   padding: 0;
   table-layout: fixed;
   width: 100%;
+  background-color: transparent;
+
   > li {
     color: $gris3;
     display: table-cell;

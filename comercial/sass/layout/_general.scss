@@ -34,7 +34,7 @@ h2 {
     color: $greydark;
     font-size: 30px;
     line-height: 46px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     position: relative;
     text-align: center;
     &:after{
@@ -225,7 +225,7 @@ table {
   color: $greymedium;
 }
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: $pink;
   width: auto;
   &.button-pink {

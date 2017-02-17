@@ -131,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="news-paginator">
+                    <div class="work-paginator">
                         <ul class="results-paginator">
                             <li><a href="#"><span class="icons icon-left"></span></a></li>
                             <li class="active"><a href="#">1</a></li>
