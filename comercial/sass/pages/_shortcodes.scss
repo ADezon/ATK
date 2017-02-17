@@ -542,16 +542,20 @@ h3.title-step {
     border-radius: 0;
     margin: 0;
     padding: 0;
-    li:before {
-      content: '' !important;
-      display: none !important;
-    }
+
     .ui-tabs-nav {
       background-color: transparent;
       border: none;
       border-radius: 0;
       margin: 0;
       padding: 0;
+
+      /* Evitamos "Bullets" en las Tabs */
+      li:before {
+        content: '' !important;
+        display: none !important;
+      }
+
       .ui-tabs-tab {
         background-color: transparent;
         border: none;
