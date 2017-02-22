@@ -738,36 +738,37 @@
 
 
           <script type="text/javascript">
+              $(document).ready(function () {
 
-              var lang = 'es'; // Allowed Values: ca, es, en.
-              var engFormat = 'MMMM D, YYYY';
-              var aceFormat = 'D MMMM, YYYY';
-              var localeConfigs = {
-                  ca: {
-                      format: aceFormat,
-                      labels: ['Avui', 'Ahir', 'Últims 7 dies', 'Últims 30 dies', 'Aquest mes', 'Mes passat']
-                  },
-                  es: {
-                      format: aceFormat,
-                      labels: ['Hoy', 'Ayer', 'Últimos 7 dias', 'Últimos 30 dies', 'Este mes', 'Mes pasado']
-                  },
-                  en: {
-                      format: engFormat,
-                      labels: ['Today', 'Yesterday', 'Last 7 Days', 'Last 30 Days', 'This Month', 'Last Month']
-                  }
-              };
+                  var lang = 'es'; // Allowed Values: ca, es, en.
+                  var engFormat = 'MMMM D, YYYY';
+                  var aceFormat = 'D MMMM, YYYY';
+                  var localeConfigs = {
+                      ca: {
+                          format: aceFormat,
+                          labels: ['Avui', 'Ahir', 'Últims 7 dies', 'Últims 30 dies', 'Aquest mes', 'Mes passat']
+                      },
+                      es: {
+                          format: aceFormat,
+                          labels: ['Hoy', 'Ayer', 'Últimos 7 dias', 'Últimos 30 dies', 'Este mes', 'Mes pasado']
+                      },
+                      en: {
+                          format: engFormat,
+                          labels: ['Today', 'Yesterday', 'Last 7 Days', 'Last 30 Days', 'This Month', 'Last Month']
+                      }
+                  };
 
-              $(function () {
-                  var start = moment().subtract(29, 'days');
-                  var end = moment();
-                  moment.locale(lang);
-                  start.locale(false);
-                  end.locale(false);
+                  $(function () {
+                      var start = moment().subtract(29, 'days');
+                      var end = moment();
+                      moment.locale(lang);
+                      start.locale(false);
+                      end.locale(false);
 
-                  function cb(start, end) {
-                      $('#reportrange #date-ranges').val(start.format(localeConfigs[lang]['format']) + ' - ' + end.format(localeConfigs[lang]['format']));
+                      function cb(start, end) {
+                          $('#reportrange #date-ranges').val(start.format(localeConfigs[lang]['format']) + ' - ' + end.format(localeConfigs[lang]['format']));
 
-                      // Aqui llamamos el CALLBACK de la operación con AJAX (en caso de MAX X => LOAD MORE?)
+                          // Aqui llamamos el CALLBACK de la operación con AJAX (en caso de MAX X => LOAD MORE?)
 //            $.getJSON('/functions.php', { get_param: 'value' }, function(data) {
 //                $.each(data, function(index, element) {
 //                    $('body').append($('<div>', {
@@ -775,35 +776,37 @@
 //                    }));
 //                });
 //            });
-                  }
-
-                  // Range TEXTs can't be translated has they are static strings
-                  // LRC Has to translate this.
-                  $('#reportrange').daterangepicker({
-                      startDate: start,
-                      endDate: end,
-                      ranges: {
-                          'Hoy': [moment(), moment()],
-                          'Ayer': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                          'últimos 7 dias': [moment().subtract(6, 'days'), moment()], // Last 7 Days
-                          'últimos 30 dias': [moment().subtract(29, 'days'), moment()],
-                          'Mes actual': [moment().startOf('month'), moment().endOf('month')],
-                          'Mes pasado': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-                      },
-                      locale: {
-//                format: 'MM/DD/YYYY h:mm A'
-                          format: 'DD/MM/YYYY',
-                          applyLabel: "Aplicar",
-                          cancelLabel: "Cancelar",
-                          fromLabel: "Desde",
-                          toLabel: "Hasta",
-                          customRangeLabel: "Personalizado"
                       }
-                  }, cb);
 
-                  cb(start, end);
+                      // Range TEXTs can't be translated has they are static strings
+                      // LRC Has to translate this.
+                      $('#reportrange').daterangepicker({
+                          startDate: start,
+                          endDate: end,
+                          ranges: {
+                              'Hoy': [moment(), moment()],
+                              'Ayer': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                              'últimos 7 dias': [moment().subtract(6, 'days'), moment()], // Last 7 Days
+                              'últimos 30 dias': [moment().subtract(29, 'days'), moment()],
+                              'Mes actual': [moment().startOf('month'), moment().endOf('month')],
+                              'Mes pasado': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                          },
+                          locale: {
+//                format: 'MM/DD/YYYY h:mm A'
+                              format: 'DD/MM/YYYY',
+                              applyLabel: "Aplicar",
+                              cancelLabel: "Cancelar",
+                              fromLabel: "Desde",
+                              toLabel: "Hasta",
+                              customRangeLabel: "Personalizado"
+                          }
+                      }, cb);
 
-              });
+                      cb(start, end);
+
+                  });
+                });
+
           </script>
         </div>
       </div>

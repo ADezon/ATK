@@ -236,9 +236,9 @@
   <div id="nav-private" class="cont-wrapper">
     <div class="menu content content-big">
       <ul>
-        <li class="active">
+        <li class="active" id="forfets-mobiland">
           <div class="title-level-1"><div
-              class="icons icon-mobile"></div><div>SOM Telefonia Mòbil</div>
+              class="icons icon-mobile"></div><div class="menu-title">SOM Telefonia Mòbil</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -312,9 +312,9 @@
             </ul>
           </div>
         </li>
-        <li>
+        <li id="internet-fixa">
           <div class="title-level-1"><div
-              class="icons icon-phone"></div><div>SOM Internet i Fixa</div>
+              class="icons icon-phone"></div><div class="menu-title">SOM Internet i Fixa</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -323,12 +323,13 @@
                   <div class="menu-title">Forfets Mobiland</div>
                 </a>
                 <ul>
-                  <li><a href="#">Forfet Mobiland 5</a></li>
-                  <li><a href="#">Forfet Mobiland 15</a></li>
-                  <li><a href="#">Forfet Mobiland 29</a></li>
-                  <li><a href="#">Forfet Mobiland 49</a></li>
-                  <li><a href="#">Forfet Mobiland 69</a></li>
-                  <li><a href="#">Forfet Mobiland 99</a></li>
+                  <li><a href="#">Internet i Fixa 01</a></li>
+                  <li><a href="#">Internet i Fixa 02</a></li>
+                  <li><a href="#">Internet i Fixa 03</a></li>
+                  <li><a href="#">Internet i Fixa 04</a></li>
+                  <li><a href="#">Internet i Fixa 05</a></li>
+                  <li><a href="#">Internet i Fixa 06</a></li>
+
                 </ul>
               </li>
               <li>
@@ -388,8 +389,8 @@
             </ul>
           </div>
         </li>
-        <li>
-          <div class="title-level-1"><div class="icons icon-tv"></div><div>SOM Televisió</div>
+        <li id="som-televisio">
+          <div class="title-level-1"><div class="icons icon-tv"></div><div class="menu-title">SOM Televisió</div>
           </div>
           <div class="container-submenu">
             <ul>

@@ -197,8 +197,8 @@
   <div id="nav-private" class="cont-wrapper">
     <div class="menu content content-big">
       <ul>
-        <li class="active">
-          <div class="title-level-1"><div class="icons icon-mobile"></div><div>SOM Telefonia Mòbil</div>
+        <li id="som-telefonia" class="active">
+          <div class="title-level-1"><div class="icons icon-mobile"></div><div class="menu-title">SOM Telefonia Mòbil</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -268,8 +268,8 @@
             </ul>
           </div>
         </li>
-        <li>
-          <div class="title-level-1"><div class="icons icon-phone"></div><div>SOM Internet i Fixa</div>
+        <li  id="som-internet">
+          <div class="title-level-1"><div class="icons icon-phone"></div><div class="menu-title">SOM Internet i Fixa</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -339,8 +339,8 @@
             </ul>
           </div>
         </li>
-        <li>
-          <div class="title-level-1"><div class="icons icon-tv"></div><div>SOM Televisió</div></div>
+        <li id="som-televisio">
+          <div class="title-level-1"><div class="icons icon-tv"></div><div class="menu-title">SOM Televisió</div></div>
           <div class="container-submenu">
             <ul>
               <li>
