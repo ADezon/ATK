@@ -155,8 +155,8 @@
     <div id="nav-private" class="cont-wrapper">
         <div class="menu content content-big">
             <ul>
-                <li class="active">
-                    <div class="title-level-1"><div>QUI SOM</div>
+                <li id="pot-anar-qualsevol-id-unico" class="active">
+                    <div class="title-level-1"><div class="menu-title">QUI SOM</div>
                     </div>
                     <div class="container-submenu">
                         <ul>
@@ -226,24 +226,24 @@
                         </ul>
                     </div>
                 </li>
-                <li>
-                  <div class="title-level-1"><div><a href="https://www.google.es" target="_blank">INNOVACIÓ</a></div>
+                <li id="two-menu-list-id">
+                  <div class="title-level-1"><div class="menu-title"><a href="https://www.google.es" target="_blank">INNOVACIÓ</a></div>
                     </div>
                 </li>
-                <li>
-                    <div class="title-level-1"><div>ESDEVENIMENTS</div>
+                <li id="three-menu-any-id-here">
+                    <div class="title-level-1"><div class="menu-title">ESDEVENIMENTS</div>
                     </div>
                 </li>
-                <li>
-                    <div class="title-level-1"><div>ACCIÓ SOCIAL</div>
+                <li id="four-menu-any-id-here">
+                    <div class="title-level-1"><div class="menu-title">ACCIÓ SOCIAL</div>
                     </div>
                 </li>
-                <li>
-                    <div class="title-level-1"><div>NOTÍCIES</div>
+                <li id="five-menu-any-id-here">
+                    <div class="title-level-1"><div class="menu-title">NOTÍCIES</div>
                     </div>
                 </li>
-                <li>
-                    <div class="title-level-1"><div>AGENDA</div>
+                <li id="seven-menu-any-id-here">
+                    <div class="title-level-1"><div class="menu-title">AGENDA</div>
                     </div>
                 </li>
             </ul>

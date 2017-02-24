@@ -53,16 +53,12 @@ $(document).ready(function () {
         console.log(e.target);
 
         if ($(window).width() > 768) {
-
-            e.stopPropagation();
             var miPadre = $(this).closest('li').attr('id');
-
             // Close any OTHER Child (except OURs >> if Opened, of course!!!)
             $(".menu > ul > li").not(document.getElementById(miPadre)).children(".container-submenu").hide();
 
             // Affect OUR Children (Sub-Menu)
             $(this).children(".container-submenu").stop(true, false).fadeToggle(250);
-            e.preventDefault();
         }
     });
 

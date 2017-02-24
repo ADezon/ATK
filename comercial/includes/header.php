@@ -197,7 +197,7 @@
   <div id="nav-private" class="cont-wrapper">
     <div class="menu content content-big">
       <ul>
-        <li id="som-telefonia" class="active">
+        <li id="pot-anar-qualsevol-id-unico" class="active">
           <div class="title-level-1"><div class="icons icon-mobile"></div><div class="menu-title">SOM Telefonia Mòbil</div>
           </div>
           <div class="container-submenu">
@@ -207,8 +207,8 @@
                   <div class="menu-title">Forfets Mobiland</div>
                 </a>
                 <ul>
-                  <li><a href="#">Forfet Mobiland 5</a></li>
-                  <li><a href="#">Forfet Mobiland 15</a></li>
+                  <li><a href="http://www.google.es">Forfet Mobiland 5 linked TEST</a></li>
+                  <li><a href="http://www.google.es">Forfet Mobiland 15 linked TEST</a></li>
                   <li><a href="#">Forfet Mobiland 29</a></li>
                   <li><a href="#">Forfet Mobiland 49</a></li>
                   <li><a href="#">Forfet Mobiland 69</a></li>

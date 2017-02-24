@@ -21,7 +21,7 @@ $destiny = (gethostbyname() == 'G750JX') ? 'http://www.at.dev/comercial/' : 'htt
         </div>
       </div>
       <div class="map-container">
-        <form class="legend">
+        <div id="custom-control">
           <ul>
             <li>
               <div class="checkbox-custom">
@@ -52,7 +52,7 @@ $destiny = (gethostbyname() == 'G750JX') ? 'http://www.at.dev/comercial/' : 'htt
             <!--                    </div>-->
             <!--                </li>-->
           </ul>
-        </form>
+        </div>
 
         <div id="map" style="height: 440px;"></div>
 
@@ -114,12 +114,14 @@ $destiny = (gethostbyname() == 'G750JX') ? 'http://www.at.dev/comercial/' : 'htt
           };
 
           /* INITIALIZE MAP */
+          var control = document.getElementById('custom-control');
           var map = new google.maps.Map(document.getElementById('map'), {
               zoom: 12,
               center: new google.maps.LatLng(44.501813, 1.838125),
               scrollwheel: false,
               mapTypeId: google.maps.MapTypeId.ROADMAP
           });
+          map.controls[google.maps.ControlPosition.TOP_LEFT].push(control);
 
           var infowindow = new google.maps.InfoWindow();
           var bounds = new google.maps.LatLngBounds();
@@ -152,6 +154,7 @@ $destiny = (gethostbyname() == 'G750JX') ? 'http://www.at.dev/comercial/' : 'htt
               google.maps.event.addListener(marker, 'click', (function (marker, i) {
                   return function () {
                       infowindow.setContent(html);
+                      infowindow.setZIndex(40);
                       infowindow.open(map, marker);
                   }
               })(marker, i));

@@ -238,7 +238,7 @@
       <ul>
         <li class="active" id="forfets-mobiland">
           <div class="title-level-1"><div
-              class="icons icon-mobile"></div><div class="menu-title">SOM Telefonia Mòbil</div>
+              class="icons icon-mobile"></div><div>SOM Telefonia Mòbil</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -314,7 +314,7 @@
         </li>
         <li id="internet-fixa">
           <div class="title-level-1"><div
-              class="icons icon-phone"></div><div class="menu-title">SOM Internet i Fixa</div>
+              class="icons icon-phone"></div><div>SOM Internet i Fixa</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -390,7 +390,7 @@
           </div>
         </li>
         <li id="som-televisio">
-          <div class="title-level-1"><div class="icons icon-tv"></div><div class="menu-title">SOM Televisió</div>
+          <div class="title-level-1"><div class="icons icon-tv"></div><div>SOM Televisió</div>
           </div>
           <div class="container-submenu">
             <ul>

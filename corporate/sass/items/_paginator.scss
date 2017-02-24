@@ -55,7 +55,7 @@
 }
 
 //PAGINATOR MOBILE
-.results-paginator-mobile{
+#main-content .results-paginator-mobile {
   background-color: $grey;
   color: $greydark;
   display: none;
@@ -70,11 +70,12 @@
   @include breakpoint($tablet) {
     display: block;
   }
-  li{
+  li {
     display: block;
     float: left;
     position: relative;
     width:10%;
+    margin-bottom: 0;
     &.number-page{
       display: block;
       float: left;

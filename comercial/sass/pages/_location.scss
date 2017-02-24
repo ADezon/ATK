@@ -1,5 +1,5 @@
-.cont-wrapper{
-  .map-container{
+.cont-wrapper {
+  .map-container {
     display: block;
     height: 400px;
     margin: 40px 0 60px 0;
@@ -8,14 +8,28 @@
     @include breakpoint($mobile) {
       height: 490px;
     }
-    .legend{
+
+    #custom-control {
+      display: block;
+      padding: 40px 0 0 0;
+      ul {
+        background-color: $white;
+        padding: 26px;
+      }
+      li:before {
+        content: '';
+        display: none;
+      }
+    }
+
+    .legend {
       margin: 0 auto;
       max-width: 1280px;
       overflow: visible;
       position: relative;
       width: 100%;
       z-index: 2;
-      ul{
+      ul {
         background-color: $white;
         display: block;
         float: left;
@@ -31,7 +45,7 @@
           padding: 10px;
           width: 100%;
         }
-        li{
+        li {
           &:before {
             content: "";
             display: none;
@@ -46,12 +60,12 @@
           @include breakpoint($tablet) {
             clear: none;
             float: left;
-            width:50%;
+            width: 50%;
           }
           @include breakpoint($mobile) {
             clear: both;
             float: none;
-            width:100%;
+            width: 100%;
           }
           .checkboxCSS {
             margin: 0;
@@ -81,8 +95,8 @@
             span {
 
             }
-            input[type=checkbox]{
-              &:checked + label{
+            input[type=checkbox] {
+              &:checked + label {
                 background-color: #3b95ff;
                 border: 1px solid #538dce;
               }
@@ -93,9 +107,9 @@
               }
             }
           }
-          .circle{
+          .circle {
             border-radius: 50%;
-            content:"";
+            content: "";
             display: block;
             float: left;
             height: 12px;
@@ -103,23 +117,23 @@
             margin: 5px;
             position: relative;
             width: 12px;
-            &.black{
+            &.black {
               background-color: $black;
             }
-            &.pink{
+            &.pink {
               background-color: $pinkdark;
             }
-            &.pinkdark{
+            &.pinkdark {
               background-color: $pink;
             }
-            &.greymedium{
+            &.greymedium {
               background-color: $greymedium;
             }
           }
         }
       }
     }
-    #map{
+    #map {
       display: block;
       height: 400px;
       left: 0;
@@ -137,69 +151,69 @@
         position: relative;
         width: 100%;
       }
-      .info-wrapper{
+      .info-wrapper {
         position: relative;
         width: 350px;
         display: block;
         overflow: hidden;
-        .infowindow-image{
+        .infowindow-image {
           position: relative;
           display: block;
           float: left;
           width: 93px;
           margin-right: 20px;
         }
-        .infowindow-infocontainer{
+        .infowindow-infocontainer {
           position: relative;
           display: block;
           float: left;
           width: 220px;
-          a{
+          a {
             position: relative;
             display: block;
             clear: both;
             font-size: 18px;
             line-height: 22px;
-            color:$pink;
+            color: $pink;
             margin-bottom: 15px;
             text-decoration: none;
           }
-          label{
+          label {
             position: relative;
             display: block;
             clear: both;
             font-size: 11px;
             line-height: 16px;
-            color:$black;
+            color: $black;
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 2px;
           }
-          .horaris-infowindow{
+          .horaris-infowindow {
             position: relative;
             display: block;
             clear: both;
             font-size: 12px;
             line-height: 19px;
-            color:$greymedium;
+            color: $greymedium;
             margin-bottom: 10px;
           }
         }
       }
     }
   }
-  .contact_phone{
+  .contact_phone {
     display: block;
     margin: 40px 0;
     overflow: hidden;
     position: relative;
-    .contact_phone_element{
+    .contact_phone_element {
       display: block;
       margin-bottom: 60px;
       overflow: hidden;
       padding: 0 20px;
       position: relative;
-      .phone_number{
+      .phone_number {
         color: $pink;
         display: block;
         font-size: 60px;
@@ -207,23 +221,23 @@
         position: relative;
         text-align: center;
       }
-      .phone_name{
+      .phone_name {
         color: $greydark;
         display: block;
         font-size: 20px;
-        line-height:30px;
+        line-height: 30px;
         padding: 20px 0;
         position: relative;
         text-align: center;
       }
-      .phone_info{
+      .phone_info {
         color: #4a4a4a;
         display: block;
         font-size: 14px;
         line-height: 20px;
         position: relative;
         text-align: center;
-        p{
+        p {
           margin-bottom: 0;
         }
       }
