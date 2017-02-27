@@ -139,8 +139,8 @@
             <div class="checkbox-custom">
               <input type="checkbox" id="tas-option-12"
                      name="traffic-alerts-sector">
-              <label for="tas-option-12"></label>
-              <div class="checkbox-css">Túnel de Pont Pla</div>
+              <label for="tas-option-12">Túnel de Pont Pla</label>
+              <div class="checkbox-css"></div>
             </div>
             <div class="checkbox-custom">
               <input type="checkbox" id="tas-option-13"

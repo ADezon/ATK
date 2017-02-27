@@ -1,5 +1,9 @@
-#profile-text{
+.profile-text {
   background-color: #f5f5f5;
+
+  .field-body {
+    padding-bottom: 10px;
+  }
 }
 #profile-info{
   .profile-info-element{
@@ -7,13 +11,20 @@
       margin-bottom: 0;
       color: $greymedium;
       padding-bottom: 25px;
+      @include breakpoint ($mobile) {
+        font-size: 26px;
+        margin-bottom: 16px;
+      }
+
       .icons{
         padding: 0 22px;
         color: $pink;
+        @include breakpoint ($mobile) { padding: 0 10px 0 0; }
       }
     }
-    .profile-info-data{
+    .profile-info-data {
       padding-left: 74px;
+      @include breakpoint ($mobile) { padding-left: 0; }
       h4{
         margin: 0 0 5px 0;
         font-size: 16px;
@@ -29,6 +40,7 @@
         &.info-small{
           color:#9c9e9f;
           font-weight: bold;
+          font-style: italic;
           font-size: 12px;
           line-height: 15px;
           width: 250px;
@@ -46,6 +58,9 @@
         width: auto;
         min-width: 190px;
         margin-bottom: 25px;
+      }
+      &.switcher {
+        p { padding-bottom: 0; }
       }
     }
   }

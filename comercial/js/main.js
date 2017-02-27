@@ -125,7 +125,7 @@ $(document).ready(function () {
             // console.log('pasados los 720');
             // Abre el MENU Logueado
             $('#header .container-client-area.logged-area').addClass('active').show();
-            $('.logged-in #nav-private').css('margin-bottom', '60px');
+            $('.logged-in #nav-private').css('margin-bottom', '52px');
 
         },
 
@@ -158,7 +158,7 @@ $(document).ready(function () {
     if ($(window).width() > 768) {
         // Abre el MENU Logueado
         $('#header .container-client-area.logged-area').addClass('active').show();
-        $('.logged-in #nav-private').css('margin-bottom', '60px');
+        $('.logged-in #nav-private').css('margin-bottom', '52px');
     } else {
     }
 

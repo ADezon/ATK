@@ -169,7 +169,9 @@ $destiny = (gethostbyname() == 'G750JX') ? 'http://www.at.dev/comercial/' : 'htt
           setMarkers();
         </script>
       </div>
+    </div>
 
+    <div class="cont-wrapper shortcode-container bg-grey">
       <div class="content">
         <h2 class="global-subtitle">Telèfons de contacte</h2>
         <div class="contact_phone">
@@ -178,7 +180,7 @@ $destiny = (gethostbyname() == 'G750JX') ? 'http://www.at.dev/comercial/' : 'htt
               <div class="phone_number">115</div>
               <div class="phone_name">Servei d’atenció al client</div>
               <div class="phone_info"><p>De 8h a 24h (dilluns a divendres) i de 9h a 23h (dissabtes i diumenges).</p>
-                <p>Per pèrdua o robatori d'un terminal mòbil, l'horari és de 24hrs tots els dies de la setmana.</p>
+                <p>Per pèrdua o robatori d'un terminal mòbil, l'horari és de 24hrs <br>tots els dies de la setmana.</p>
               </div>
             </div>
             <div class="contact_phone_element">
@@ -192,7 +194,7 @@ $destiny = (gethostbyname() == 'G750JX') ? 'http://www.at.dev/comercial/' : 'htt
               <div class="phone_number">00376 301115</div>
               <div class="phone_name">Servei d'atenció al client, des de l'estranger</div>
               <div class="phone_info"><p>De 8h a 24h (dilluns a divendres) i de 9h a 23h (dissabtes i diumenges).</p>
-                <p>Per pèrdua o robatori d'un terminal mòbil, l'horari és de 24hrs tots els dies de la setmana.</p>
+                <p>Per pèrdua o robatori d'un terminal mòbil, l'horari és de 24hrs <br>tots els dies de la setmana.</p>
               </div>
             </div>
             <div class="contact_phone_element">

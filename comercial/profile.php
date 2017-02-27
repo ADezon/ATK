@@ -3,7 +3,7 @@
   <div id="main-content">
 
     <!--BEGIN SPECIFIC PAGE PROFILE-->
-    <div id="profile-text" class="cont-wrapper">
+    <div class="cont-wrapper profile-text">
         <div class="content">
             <?php include 'includes/breadcrumb.php'; ?>
             <h1 class="main-title">Perfil</h1>
@@ -75,9 +75,9 @@
                 </div>
                 <div class="half-page">
                     <h1 class="main-title"><span class="icons icon-alerts"></span>Alertes de facturació</h1>
-                    <div class="profile-info-data">
+                    <div class="profile-info-data switcher">
                         <p>Vols rebre una notificació quan tinguis disponible la teva factura?</p>
-                        <h4>Factures</h4>
+
                         <ul class="switch-checks-list">
                             <li>
                                 <span>Activar/Descativar alertes SMS</span>

@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="./images/icons/favicons/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="./images/icons/favicons/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="./images/icons/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/icons/favicons/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="./images/icons/favicons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicons/favicon-16x16.png">
@@ -35,8 +35,8 @@
 
   <!--BEGIN GLOBAL-->
   <link
-    href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700"
-    rel="stylesheet">
+      href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700"
+      rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/at-styles.css">
   <!--BEGIN GLOBAL-->
 
@@ -54,14 +54,14 @@
   <!--  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCYW42M0aJDKz-ayDZywdTDJAmd3Kfvq90"></script>-->
   <!--THIS IS A PRIVATE-PERSONAL API KEY. YOU MUST PROVIDE THE CORRECT ONE-->
   <script
-    src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
+      src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
   <script src="./js/enquire.min.js"></script>
   <script src="./js/tooltipster/js/jquery.tooltipster.min.js"></script>
   <script type="text/javascript"
           src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="./js/main.js"></script>
   <script>
-    var timering = 7000;
+      var timering = 7000;
   </script>
   <!--END GLOBAL-->
 
@@ -80,7 +80,7 @@
 <body class="logged-in">
 <!--[if lt IE 8]><p class="browser-upgrade">Estas usando un navegador <strong>desactualizado</strong>.
   Por favor, <a
-    href="http://browsehappy.com/">actualiza tu navegador</a> para mejorar tu
+      href="http://browsehappy.com/">actualiza tu navegador</a> para mejorar tu
   experiencia.</p><![endif]-->
 <!-- BEGIN HEADER-->
 <div id="header">
@@ -90,15 +90,18 @@
       <div class="left">
         <ul class="links-topbar">
           <li>
-            <div class="icons icon-mobile"></div><a href="#" title="">Mobiland
+            <div class="icons icon-mobile"></div>
+            <a href="#" title="">Mobiland
               clic</a>
           </li>
           <li>
-            <div class="icons icon-phone"></div><a href="#" title="">Guia
+            <div class="icons icon-phone"></div>
+            <a href="#" title="">Guia
               Telefònica</a>
           </li>
           <li>
-            <div class="icons icon-tv"></div> <a href="#" title="">Programació
+            <div class="icons icon-tv"></div>
+            <a href="#" title="">Programació
               TV</a>
           </li>
           <li>
@@ -122,13 +125,14 @@
           <ul>
             <li>
               <div
-                class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language"
-                id="p_p_id_82_">
+                  class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language"
+                  id="p_p_id_82_">
                 <div id="p_82"></div>
                 <div class="portlet-borderless-container" style="">
                   <div class="portlet-body">
                     <div class="taglib-language-list-text"
-                          lang="es-CA">Cat</div>
+                         lang="es-CA">Cat
+                    </div>
                     <div id="sub-menu-lang">
                       <a href="http://172.17.2.9:8080/es/web/guest/home"
                          class="taglib-language-list-text last"
@@ -172,36 +176,42 @@
           <div class="counter-alerts">99</div>
         </a>
         <div class="button-login-client active-logged" href="#" title="">
-            <div class="client-full-name">Hola, Ramis Khalikov</div>
-            </div>
+          <div class="client-full-name">Hola, Ramis Khalikov</div>
+        </div>
       </div>
     </div>
   </div>
   <!-- END REGION HEAD -->
-    <div class="container-client-area logged-area">
-        <div class="box-client-logged">
-            <ul class="menu-pages-client">
-                <li>
-                    <a href="#">Perfil</a>
-                </li>
-                <li>
-                    <a href="#">Productes</a>
-                </li>
-                <li>
-                    <a href="#">Factures</a>
-                </li>
-                <li>
-                    <a href="#">Consum</a>
-                </li>
-                <li>
-                    <a href="#">Configura la App</a>
-                </li>
-                <li class="logout">
-                    <a href="#"><div>Desconectar</div><div class="icons icon-logout"></div></a>
-                </li>
-            </ul>
-        </div>
+  <div class="container-client-area logged-area">
+    <div class="box-client-logged">
+      <ul class="menu-pages-client">
+        <li>
+          <a href="#">Inici</a>
+        </li>
+        <li>
+          <a href="#">Perfil</a>
+        </li>
+        <li>
+          <a href="#">Productes</a>
+        </li>
+        <li>
+          <a href="#">Factures</a>
+        </li>
+        <li>
+          <a href="#">Consum</a>
+        </li>
+        <li>
+          <a href="#">Configura l'app</a>
+        </li>
+        <li class="logout">
+          <a href="#">
+            <div>Desconectar</div>
+            <div class="icons icon-logout"></div>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
 
 
   <!-- BEGIN REGION BUTTON ALERTS MOBILE -->
@@ -237,8 +247,10 @@
     <div class="menu content content-big">
       <ul>
         <li class="active" id="forfets-mobiland">
-          <div class="title-level-1"><div
-              class="icons icon-mobile"></div><div>SOM Telefonia Mòbil</div>
+          <div class="title-level-1">
+            <div
+                class="icons icon-mobile"></div>
+            <div>SOM Telefonia Mòbil</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -293,19 +305,19 @@
                 <ul>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                 </ul>
               </li>
@@ -313,8 +325,10 @@
           </div>
         </li>
         <li id="internet-fixa">
-          <div class="title-level-1"><div
-              class="icons icon-phone"></div><div>SOM Internet i Fixa</div>
+          <div class="title-level-1">
+            <div
+                class="icons icon-phone"></div>
+            <div>SOM Internet i Fixa</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -370,19 +384,19 @@
                 <ul>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                 </ul>
               </li>
@@ -390,7 +404,9 @@
           </div>
         </li>
         <li id="som-televisio">
-          <div class="title-level-1"><div class="icons icon-tv"></div><div>SOM Televisió</div>
+          <div class="title-level-1">
+            <div class="icons icon-tv"></div>
+            <div>SOM Televisió</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -445,19 +461,19 @@
                 <ul>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                 </ul>
               </li>
@@ -466,7 +482,7 @@
         </li>
       </ul>
       <div class="button-client-area active-logged">
-<!--        <div class="icons icon-client"></div>-->
+        <!--        <div class="icons icon-client"></div>-->
         <div class="client-full-name">Hola, Ramis Khalikov</div>
       </div>
     </div>

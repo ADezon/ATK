@@ -3,8 +3,8 @@
   <div id="main-content">
 
     <!-- BEGIN SPECIFIC PAGE CONSUMPTION MOBILE -->
-    <div class="basic-page page-consumption cont-wrapper" xmlns="http://www.w3.org/1999/html">
-      <div class="cont-wrapper bg-grey">
+    <div class="basic-page page-consumption cont-wrapper bg-grey" xmlns="http://www.w3.org/1999/html">
+      <div class="cont-wrapper">
         <div class="content">
             <?php include 'includes/breadcrumb.php'; ?>
 

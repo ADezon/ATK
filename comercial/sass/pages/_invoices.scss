@@ -7,6 +7,8 @@
       padding-bottom: 10px;
     }
     .content{
+      .field-body { margin-bottom: 0; }
+      .field-body p { margin-bottom: 0; }
       .alert-invoice-unpaid{
         background-color: $pink_superlight;
         display: block;
@@ -83,7 +85,7 @@
     input[type="submit"] {
       float: left;
       clear: none;
-      margin: 2px 32px;
+      margin: 0 32px;
       @include breakpoint($mobile) { margin: 20px 0; }
     }
   }
@@ -411,9 +413,10 @@
           width: 6%;
           @include breakpoint($intermedio) {
             width: 10%;
+            margin: 6px 0;
           }
           @include breakpoint($tablet) {
-            display: none,;
+            width: 5%;
           }
         }
         .invoices-list-number{
@@ -423,11 +426,10 @@
           position: relative;
           width: 16%;
           @include breakpoint($intermedio) {
-            width: 20%;
+            width: 28%;
           }
           @include breakpoint($tablet) {
             padding: 0;
-            width: 33.3%;
           }
           a{
             color: $pink;
@@ -441,11 +443,10 @@
           position: relative;
           width: 12%;
           @include breakpoint($intermedio) {
-            width: 20%;
+            width: 22%;
           }
           @include breakpoint($tablet) {
             padding: 0;
-            width: 33.3%;
           }
         }
         .invoices-list-amount{
@@ -459,7 +460,6 @@
           }
           @include breakpoint($tablet) {
             padding: 0;
-            width: 33.3%;
           }
           span{
            font-weight: bold;
@@ -472,10 +472,10 @@
           position: relative;
           width: 12%;
           @include breakpoint($intermedio) {
-            width: 20%;
+            width: 25%;
           }
           @include breakpoint($tablet) {
-            display: none,;
+
           }
           a{
             display: block;

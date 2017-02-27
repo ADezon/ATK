@@ -802,7 +802,7 @@
             position: relative;
             display: block;
             float: left;
-            width: 16%;
+            width: 13%;
             border-right: 1px solid #9b9b9b;
             @include breakpoint($tablet) {
               float: none;
@@ -824,6 +824,7 @@
                 color: $pink;
                 text-decoration: none;
                 width: 100%;
+                padding: 5px 10px;
                 div {
                   position: relative;
                   display: block;
@@ -852,7 +853,7 @@
               padding: 10px;
               color: $greydark;
               font-size: 16px;
-              line-height: 21px;
+              line-height: 10px;
               text-decoration: none;
               @include breakpoint($tablet) {
                 font-size: 16px;

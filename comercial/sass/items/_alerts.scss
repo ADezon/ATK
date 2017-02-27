@@ -980,6 +980,7 @@
 
       fieldset {
         float: none;
+        margin-bottom: 4px;
         @include breakpoint ($tablet) {
           margin-bottom: 0;
         }
@@ -1014,7 +1015,7 @@
         text-transform: none;
         color: $pink;
         background-color: transparent;
-        margin-left: 60px;
+        margin-left: 20px;
       }
       .centered {
         text-align: center;

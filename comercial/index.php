@@ -151,13 +151,13 @@
 <!--END SMALL SLIDER-->
 
 <!-- BEGIN REGION PACK-->
-<div id="region-pack" class="cont-wrapper">
+<div class="cont-wrapper region-pack">
   <img class="i-region-pack" src="./images/i-region-pack-temp.png" alt="Dissenya el teu pack"/>
 </div>
 <!-- END REGION PACK-->
 
 <!-- BEGIN REGION TV-->
-<div id="region-tv" class="cont-wrapper">
+<div class="cont-wrapper region-tv">
   <img class="bg-region" src="./images/bg-banner-yomvi.png" alt=""/>
   <div class="content content-big">
     <img class="i-yomvi" src="./images/i-yomvi.png" alt=""/>
@@ -179,14 +179,14 @@
 <!-- END REGION PACK-->
 
 <!-- BEGIN REGION CONTENT-->
-<div id="region-tvprogram" class="cont-wrapper">
+<div class="cont-wrapper region-tvprogram">
   <img class="i-region-tvprogram" src="./images/i-region-content-temp.png"
        alt="Propers partits | Estrenes | Les nostres sèries"/>
 </div>
 <!-- END REGION CONTENT-->
 
 <!-- BEGIN REGION SIGNUP-->
-<div id="region-signup" class="cont-wrapper">
+<div class="cont-wrapper region-signup">
   <div class="content content-big">
     <h2>Avantatges de registrar-te a l’àrea clients:</h2>
     <div class="full-centered"><a class="button-pink" href="#" title="">Registra't ara</a></div>
@@ -214,9 +214,31 @@
 <!-- END REGION SIGNUP-->
 
 <!-- BEGIN REGION HELP-->
-<div id="region-help" class="cont-wrapper">
+<div class="cont-wrapper shortcode-container region-help">
   <div class="content">
-    <img class="i-region-help" src="./images/i-region-help-temp.png" alt="En què podem ajudar-te?"/>
+
+    <h2 class="global-subtitle">En què podem ajudar-te?</h2>
+
+    <div class="half-page">
+      <div class="header-callcenter">
+      <i class="icons icon-callcenter"></i>
+      <h3 class="title-callcenter">Top 5 preguntes</h3>
+      </div>
+
+      <h4 class="faq-question">Has trobat el que necessitaves?</h4>
+      <input type="text" value="" name="consulta" placeholder="Escriu aquí la teva consulta.">
+      <div class="full-centered"><input type="submit" value="Cercar" class="button-pink"></div>
+    </div>
+    <div class="half-page">
+      <dl class="numbered-lists">
+        <dt><div class="home-faq-item"><a href="#">Quins són les tarifes Mobiland roaming?</a></div></dt>
+        <dt><div class="home-faq-item"><a href="#">Com puc configurar el meu mòbil?</a></div></dt>
+        <dt><div class="home-faq-item"><a href="#">Què és Mobiland?</a></div></dt>
+        <dt><div class="home-faq-item"><a href="#">Com contractar?</a></div></dt>
+        <dt><div class="home-faq-item"><a href="#">Campanya Descatalogació Coure</a></div></dt>
+      </dl>
+    </div>
+<!--    <img class="i-region-help" src="./images/i-region-help-temp.png" alt="En què podem ajudar-te?"/>-->
   </div>
 </div>
 <!-- END REGION HELP-->
@@ -239,7 +261,7 @@
           <input type="checkbox" id="cb-conditions"
                  name="cb-selector">
           <label for="cb-conditions">Accepto les <a href="#">condicions
-              legals</a></label>
+              legals</a> *</label>
           <div class="checkbox-css"></div>
         </div>
         <div class="full-centered">

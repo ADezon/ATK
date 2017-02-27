@@ -24,14 +24,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-asterisk:before {
   content: "\e93d";
 }
 .icon-refresh:before {
   content: "\e93e";
 }
-
-
+.icon-device-message:before {
+  content: "\e93f";
+}
+.icon-add-people:before {
+  content: "\e940";
+}
 .icon-goto:before {
   content: "\e93c";
 }

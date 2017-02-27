@@ -115,7 +115,7 @@
         <span class="icons icon-close"></span>
       </div>
       <div class="alert-general-title">
-        <span class="icons icon-client"></span>
+        <span class="icons icon-invoices"></span>
         Facturació
       </div>
 

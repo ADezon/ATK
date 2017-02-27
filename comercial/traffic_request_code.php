@@ -15,7 +15,7 @@
                     Si ja estàs donat d’alta al servei, també pots configurar les teves alertes afegint el teu número a continuació.</p>
             </div>
 
-            <form id="traffic-request-code-form">
+            <form class="traffic-request-code-form">
                 <h4>Número mòbil</h4>
                 <fieldset class="box-number-mobile first">
                     <span>+376</span>
@@ -29,7 +29,7 @@
                 <ul>
                     <li>
                         <div class="element-banner-h">
-                            <span class="icons icon-mobile"></span>
+                            <span class="icons icon-cone"></span>
                             <span>Accidents viàris</span>
                         </div>
                     </li>

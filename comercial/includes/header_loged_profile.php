@@ -15,7 +15,7 @@
 
   <!--BEGIN GLOBAL-->
   <link
-    href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
+      href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/at-styles.css">
   <!--BEGIN GLOBAL-->
 
@@ -26,16 +26,17 @@
   <!--************************************-->
   <!--BEGIN GLOBAL-->
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <!--THIS IS A PRIVATE-PERSONAL API KEY. YOU MUST PROVIDE THE CORRECT ONE-->
   <!--  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCYW42M0aJDKz-ayDZywdTDJAmd3Kfvq90"></script>-->
   <!--THIS IS A PRIVATE-PERSONAL API KEY. YOU MUST PROVIDE THE CORRECT ONE-->
   <script
-    src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
+      src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.1/cookieconsent.min.js"></script>
   <script src="./js/enquire.min.js"></script>
   <script src="./js/main.js"></script>
   <script>
-    var timering = 7000;
+      var timering = 7000;
   </script>
   <!--END GLOBAL-->
 
@@ -50,7 +51,7 @@
 <body class="logged-in">
 <!--[if lt IE 8]><p class="browser-upgrade">Estas usando un navegador <strong>desactualizado</strong>.
   Por favor, <a
-    href="http://browsehappy.com/">actualiza tu navegador</a> para mejorar tu
+      href="http://browsehappy.com/">actualiza tu navegador</a> para mejorar tu
   experiencia.</p><![endif]-->
 <!-- BEGIN HEADER-->
 <div id="header">
@@ -60,15 +61,18 @@
       <div class="left">
         <ul class="links-topbar">
           <li>
-            <div class="icons icon-mobile"></div><a href="#" title="">Mobiland
+            <div class="icons icon-mobile"></div>
+            <a href="#" title="">Mobiland
               clic</a>
           </li>
           <li>
-            <div class="icons icon-phone"></div><a href="#" title="">Guia
+            <div class="icons icon-phone"></div>
+            <a href="#" title="">Guia
               Telefònica</a>
           </li>
           <li>
-            <div class="icons icon-tv"></div> <a href="#" title="">Programació
+            <div class="icons icon-tv"></div>
+            <a href="#" title="">Programació
               TV</a>
           </li>
           <li>
@@ -91,67 +95,13 @@
         <div class="languages">
           <ul>
             <li>
-              <div class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-decorate portlet-journal-content " id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_languageProperties_">
+              <div
+                  class="portlet-boundary portlet-boundary_com_liferay_journal_content_web_portlet_JournalContentPortlet_  portlet-static portlet-static-end portlet-decorate portlet-journal-content "
+                  id="p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_languageProperties_">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_languageProperties">
+                <section class="portlet"
+                         id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_languageProperties">
 
 
                   <div class="portlet-content">
@@ -162,248 +112,7 @@
                     <div class=" portlet-content-container">
 
 
-
                       <div class="portlet-body">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                         <div class="text-right user-tool-asset-addon-entries">
@@ -419,7 +128,9 @@
 
                           <ul>
                             <li>
-                              <div class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language" id="p_p_id_82_">
+                              <div
+                                  class="portlet-boundary portlet-boundary_82_ portlet-static portlet-static-end portlet-borderless portlet-language"
+                                  id="p_p_id_82_">
                                 <span id="p_82"></span>
                                 <div class="portlet-borderless-container">
                                   <div class="portlet-body" style="background-color:#e4e4e4">
@@ -428,11 +139,14 @@
 					</span>
 
                                     <div id="sub-menu-lang">
-                                      <a onclick="location.href='/c/portal/update_language?p_l_id=' + plid + '&amp;redirect=' + path + '&amp;languageId=es_ES'" class="taglib-language-list-text">
+                                      <a onclick="location.href='/c/portal/update_language?p_l_id=' + plid + '&amp;redirect=' + path + '&amp;languageId=es_ES'"
+                                         class="taglib-language-list-text">
                                         Esp</a>
-                                      <a onclick="location.href='/c/portal/update_language?p_l_id=' + plid + '&amp;redirect=' + path + '&amp;languageId=fr_FR'" class="taglib-language-list-text">
+                                      <a onclick="location.href='/c/portal/update_language?p_l_id=' + plid + '&amp;redirect=' + path + '&amp;languageId=fr_FR'"
+                                         class="taglib-language-list-text">
                                         Fra</a>
-                                      <a onclick="location.href='/c/portal/update_language?p_l_id=' + plid + '&amp;redirect=' + path + '&amp;languageId=en_US'" class="taglib-language-list-text">
+                                      <a onclick="location.href='/c/portal/update_language?p_l_id=' + plid + '&amp;redirect=' + path + '&amp;languageId=en_US'"
+                                         class="taglib-language-list-text">
                                         Eng</a>
                                     </div>
                                   </div>
@@ -443,31 +157,9 @@
                         </div>
 
 
-
-
-
-
-
-
-
-
                         <div class="content-metadata-asset-addon-entries">
 
                         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                       </div>
@@ -478,24 +170,7 @@
                 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
               </div>
-
 
 
             </li>
@@ -528,7 +203,7 @@
           <div class="counter-alerts">99</div>
         </a>
         <div class="button-login-client active-logged" href="#" title="">
-            <div class="client-full-name">Hola, Ramis Khalikov</div>
+          <div class="client-full-name">Hola, Ramis Khalikov</div>
         </div>
       </div>
     </div>
@@ -536,30 +211,36 @@
   <!-- END REGION HEAD -->
 
 
-    <div class="container-client-area logged-area">
-        <div class="box-client-logged">
-            <ul class="menu-pages-client">
-                <li>
-                    <a href="#">Perfil</a>
-                </li>
-                <li>
-                    <a href="#">Productes</a>
-                </li>
-                <li>
-                    <a href="#">Factures</a>
-                </li>
-                <li>
-                    <a href="#">Consum</a>
-                </li>
-                <li>
-                    <a href="#">Configura la App</a>
-                </li>
-                <li class="logout">
-                    <a href="#"><div>Desconectar</div><div class="icons icon-logout"></div></a>
-                </li>
-            </ul>
-        </div>
+  <div class="container-client-area logged-area">
+    <div class="box-client-logged">
+      <ul class="menu-pages-client">
+        <li>
+          <a href="#">Inici</a>
+        </li>
+        <li>
+          <a href="#">Perfil</a>
+        </li>
+        <li>
+          <a href="#">Productes</a>
+        </li>
+        <li>
+          <a href="#">Factures</a>
+        </li>
+        <li>
+          <a href="#">Consum</a>
+        </li>
+        <li>
+          <a href="#">Configura l'app</a>
+        </li>
+        <li class="logout">
+          <a href="#">
+            <div>Desconectar</div>
+            <div class="icons icon-logout"></div>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
 
 
   <!-- BEGIN REGION BUTTON ALERTS MOBILE -->
@@ -595,8 +276,10 @@
     <div class="menu content content-big">
       <ul>
         <li class="active">
-          <div class="title-level-1"><div
-              class="icons icon-mobile"></div><div>SOM Telefonia Mòbil</div>
+          <div class="title-level-1">
+            <div
+                class="icons icon-mobile"></div>
+            <div>SOM Telefonia Mòbil</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -651,19 +334,19 @@
                 <ul>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                 </ul>
               </li>
@@ -671,8 +354,10 @@
           </div>
         </li>
         <li>
-          <div class="title-level-1"><div
-              class="icons icon-phone"></div><div>SOM Internet i Fixa</div>
+          <div class="title-level-1">
+            <div
+                class="icons icon-phone"></div>
+            <div>SOM Internet i Fixa</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -727,19 +412,19 @@
                 <ul>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                 </ul>
               </li>
@@ -747,7 +432,9 @@
           </div>
         </li>
         <li>
-          <div class="title-level-1"><div class="icons icon-tv"></div><div>SOM Televisió</div>
+          <div class="title-level-1">
+            <div class="icons icon-tv"></div>
+            <div>SOM Televisió</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -802,19 +489,19 @@
                 <ul>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                   <li>
                     <a href="#" title=""><img
-                        src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
+                          src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
                   </li>
                 </ul>
               </li>
@@ -823,7 +510,7 @@
         </li>
       </ul>
       <div class="button-client-area active-logged">
-          <div class="client-full-name">Hola, Ramis Khalikov</div>
+        <div class="client-full-name">Hola, Ramis Khalikov</div>
       </div>
     </div>
   </div>

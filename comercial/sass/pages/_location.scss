@@ -2,7 +2,7 @@
   .map-container {
     display: block;
     height: 400px;
-    margin: 40px 0 60px 0;
+    margin: 40px 0 0 0;
     overflow: hidden;
     position: relative;
     @include breakpoint($mobile) {
@@ -202,6 +202,7 @@
       }
     }
   }
+
   .contact_phone {
     display: block;
     margin: 40px 0;
@@ -239,6 +240,8 @@
         text-align: center;
         p {
           margin-bottom: 0;
+          font-size: 15px;
+          line-height: 22px;
         }
       }
     }

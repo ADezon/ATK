@@ -1,5 +1,5 @@
 /* FAKE REGION PACK */
-#region-pack{
+.region-pack{
   background-color: $white;
   .i-region-pack{
     display: block;
@@ -11,13 +11,13 @@
 }
 
 /* REGION TV */
-#region-tv{
-  .bg-region{
+.cont-wrapper.region-tv {
+  .bg-region {
     height: 100%;
     position: absolute;
     width:100%;
   }
-  .content{
+  .content {
     padding: 65px 0;
     .i-yomvi{
       display: block;
@@ -28,8 +28,8 @@
       width:100%;
     }
     .info-tv{
-      @include push(2 of 12);
-      @include span(5 of 12);
+      //@include push(2 of 12);
+      @include span(6 of 12);
       color: $white;
       text-align: left;
       @include breakpoint($tablet) {
@@ -37,6 +37,8 @@
         text-align: center;
       }
       .title{
+        float: right;
+        width: 84%;
         font-size: 48px;
         font-weight: bold;
         line-height: 53px;
@@ -51,6 +53,8 @@
         }
       }
       .subtitle{
+        float: right;
+        width: 80%;
         font-size: 24px;
         line-height: 30px;
         @include breakpoint($tablet) {
@@ -78,7 +82,8 @@
         font-weight: bold;
         line-height: 34px;
         position: relative;
-        text-align: center;
+        text-align: left;
+        margin-left: 46px;
       }
       .price{
         display: block;
@@ -86,19 +91,22 @@
         line-height: 60px;
         margin-bottom:20px;
         position: relative;
-        text-align: center;
+        text-align: left;
+        margin-left: 0;
       }
       .price-text{
         color: $white;
         display: inline-block;
         font-size: 30px;
+        font-weight: 600;
         line-height: 34px;
         position: relative;
-        text-align: center;
+        text-align: left;
+        margin-left: 0;
       }
     }
     .button-pink{
-      margin-top: 10px;
+      margin-left: 6px;
       @include breakpoint($tablet) {
         margin-top: 0;
       }
@@ -108,7 +116,7 @@
 }
 
 /* FAKE REGION TVPROGRAM */
-#region-tvprogram{
+.region-tvprogram {
   background-color: #eee;
   .i-region-tvprogram{
     display: block;
@@ -120,7 +128,7 @@
 }
 
 /* REGION SIGNUP */
-#region-signup{
+.region-signup {
   background-color: $greydark;
   padding: 52px 0;
   h2{
@@ -155,12 +163,13 @@
       }
       &.last{
         @include last;
-        div{
-          border:none;
+        .element-signup:after {
+          content: '';
+          display: none;
+          border: medium none;
         }
       }
-      .element-signup{
-        border-right: 1px solid #cfd1d2;
+      .element-signup {
         color: $white;
         display: block;
         font-size: 21px;
@@ -169,8 +178,18 @@
         padding: 0 15px;
         position: relative;
         text-align: center;
+        &:after {
+          content: '';
+          border-right: 1px solid #cfd1d2;
+          height: 55px;
+          position: absolute;
+          right: 2px;
+          top: 16%;
+        }
         @include breakpoint($mobile) {
-          border:none;
+          &:after {
+            border:medium none;
+          }
         }
         .icons{
           color: #cfd1d2;
@@ -194,7 +213,9 @@
       }
       &:nth-child(2) .element-signup {
         @include breakpoint ($tablet) {
-          border: none;
+          &:after {
+            display: none;
+          }
         }
       }
     }
@@ -202,13 +223,97 @@
 }
 
 /* FAKE REGION HELP */
-#region-help{
+.region-help {
   background-color: $white;
+
+  .half-page {
+    padding-right: 40px;
+    @include breakpoint ($tablet) {
+      padding: 0 5%;
+    }
+  }
+
   .i-region-help{
     display: block;
     margin: 50px auto 110px;
     max-width: 892px;
     position: relative;
     width:100%;
+  }
+  .icon-callcenter {
+    float: left;
+    color: $pink;
+    font-size: 80px;
+    @include breakpoint ($mobile) {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .header-callcenter {
+    width: 100%;
+    float: left;
+  }
+  .title-callcenter {
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10%;
+    line-height: 56px;
+
+  }
+  .faq-question {
+    float: left;
+    color: $pink;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    width: 100%;
+    @include breakpoint ($mobile) { text-align: center; }
+
+  }
+
+  input[type="text"] {
+    float: left;
+    width: 86%;
+    @include breakpoint ($tablet) { width: 100%; }
+  }
+  input[type=submit] {
+    margin: 12px 0 0 30%;
+    @include breakpoint ($tablet) { margin: 12px 0 18px 0; }
+  }
+
+  // Right
+  .numbered-lists dt:before {
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    line-height: 44px;
+    @include breakpoint ($mobile) {
+      height: 30px;
+      width: 30px;
+      line-height: 24px;
+    }
+  }
+  .numbered-lists dt {
+    padding: 0;
+    height: 52px;
+    margin-bottom: 10px;
+  }
+  .home-faq-item {
+    font-size: 20px;
+    line-height: 44px;
+    float: left;
+    padding-left: 3%;
+    @include breakpoint ($mobile) {
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 6%;
+      width: 80%;
+    }
+    a {
+      color: $products-fontcolor;
+      &:hover { text-decoration: underline; }
+    }
   }
 }

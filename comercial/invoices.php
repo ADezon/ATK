@@ -27,7 +27,7 @@
         </div>
         <h1 class="main-title">Factures</h1>
 
-        <div class="field-body">
+        <div class="field-body dieciseis">
           <p>A continuació, et mostrem el llistat de les teves últimes factures,
             on podràs consultar-les en detall i descarregar-te-les.
             Si vols veure les factures associades a un altre dels teus comptes,
@@ -38,7 +38,7 @@
 
     <div class="period-selector cont-wrapper">
       <div class="content">
-        <p>Descarrega les factures d’un període, de tots el teus comptes.</p>
+        <p class="dieciseis">Descarrega les factures d’un període, de tots el teus comptes.</p>
         <div class="periode-select">
           <h3>Període</h3>
           <form>

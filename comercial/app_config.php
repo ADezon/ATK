@@ -3,7 +3,7 @@
   <div id="main-content">
 
     <!--BEGIN SPECIFIC PAGE APP CONFIG-->
-    <div class="cont-wrapper config-app-text">
+    <div class="cont-wrapper config-app-text bg-grey">
       <div class="content">
           <?php include 'includes/breadcrumb.php'; ?>
         <h1 class="main-title">Configura l’app</h1>

@@ -1,3 +1,31 @@
+.register-user {
+  .captcha {
+    width: 90%;
+
+    .control-label {
+      color: #9C9E9F;
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 24px;
+    }
+    .required {
+      color: #9c9e9f;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 11px;
+      line-height: 16px;
+    }
+  }
+  .info-message {
+    color: #9c9e9f;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 40px;
+  }
+}
 .register-form {
   display: block;
   margin: 0;
