@@ -796,6 +796,7 @@
         font-size: 16px;
         line-height: 21px;
       }
+      p { font-size: 21px; }
       .icons {
         color: $pink;
         display: block;
@@ -980,6 +981,7 @@
 
       fieldset {
         float: none;
+        margin-bottom: 4px;
         @include breakpoint ($tablet) {
           margin-bottom: 0;
         }
@@ -1014,7 +1016,7 @@
         text-transform: none;
         color: $pink;
         background-color: transparent;
-        margin-left: 60px;
+        margin-left: 20px;
       }
       .centered {
         text-align: center;
@@ -1051,10 +1053,10 @@
   position: absolute;
   right: 0;
   top: 0;
-  transition: all .15s ease-in; // CHANGE OPACITY to "1" in order to TEST
-  visibility: visible; // hidden
+  transition: all .15s ease-in;
+  visibility: visible; // CHANGE VISIBILITY to "visible" in order to TEST
   width: 100%;
-  z-index: 25; // CHANGE VISIBILITY to "visible" in order to TEST
+  z-index: 25;
 
   .ajax-general-wrapper {
     margin: 18% auto;
@@ -1078,6 +1080,51 @@
       width: 100%;
     }
     .loader-message {
+      animation: fadeIn 0.8s infinite alternate;
+      width: 100%;
+      text-align: center;
+      font-style: italic;
+      text-shadow: 0 0 6px white;
+    }
+  }
+}
+// Small AJAX Loader
+.small-data-ajax {
+  float: left;
+  position: relative;
+  background-color: white;
+  height: 150px;
+  margin: 0;
+  opacity: 1; // 0
+  transition: all .15s ease-in;
+  visibility: visible; // CHANGE VISIBILITY to "visible" in order to TEST
+  width: 100%;
+  z-index: 25;
+  text-align: center;
+
+  .small-ajax-wrapper {
+    margin: 0 48%;
+    position: relative;
+    width: 66px;
+    float: left;
+    z-index: 10;
+    @include breakpoint($tablet) {
+      margin: 40% auto;
+      width: 30%;
+    }
+    @include breakpoint($mobile) {
+      width: 40%;
+      margin: 70% auto;
+    }
+    &:target {
+      animation: .6s both action;
+      opacity: 1;
+      visibility: visible;
+    }
+    img {
+      width: 100%;
+    }
+    .small-loader-message {
       animation: fadeIn 0.8s infinite alternate;
       width: 100%;
       text-align: center;

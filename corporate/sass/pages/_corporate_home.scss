@@ -10,12 +10,16 @@
   position: relative;
   margin-bottom: 80px;
 
+  .slide-item {
+    background-color: #f4f4f4;
+  }
   .img-slider {
     width: 100%;
-    background-color: #f4f4f4;
-
     img {
       margin: 0 auto;
+      &.righted {
+        margin: 0 36%;
+      }
     }
   }
 
@@ -30,10 +34,18 @@
   .left-block {
     position: absolute;
     left: 0;
+    width: 320px;
+    top: 6%;
+    padding: 2%;
+    line-height: 22px;
   }
   .right-block {
     position: absolute;
     right: 0;
+    width: 320px;
+    top: 6%;
+    padding: 2%;
+    line-height: 22px;
   }
   ul.slick-dots {
     width: 100%;
@@ -49,11 +61,13 @@
         width: 50px;
         height: 10px;
         border: medium none;
-        margin-right: 5px;
+        margin: 0 5px 0 0;
+        padding: 6px 20px;
         color: transparent;
         font-size: 0;
         line-height: 0;
         outline: none;
+        border-radius: 0;
       }
       &.slick-active {
         button {
@@ -66,8 +80,8 @@
   .left-block .left-block-content {
     a.button-pink {
       font-size: 18px;
-      margin-left: 40px;
-      margin-top: 236px;
+      margin-left: 24px;
+      margin-top: 194px;
       padding: 10px 20px;
     }
   }
@@ -84,7 +98,21 @@
         margin-bottom: 15px;
       }
     }
+  }
 
+  // All kind of SLIDES
+  .slide-title {
+    color: $pink;
+    font-family: Roboto, SansSerif;
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+  .slide-message {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 }
 
@@ -106,19 +134,18 @@
 
 /* NEWS */
 .news-featured {
-  width: 50%;
+  width: 32%;
+  margin-right: 2%;
   float: left;
-  img {
-    width: 100%;
-  }
-  .date-home {
-    margin: 14px 0;
-  }
+  @include breakpoint ($tablet) { width: 100%; margin: 0 0 2% 0; }
+  img { width: 100%; }
+  .date-home { margin: 14px 0; }
 }
+
 .news-list {
-  width: 46%;
-  margin-left: 4%;
+  width: 32%;
   float: left;
+  @include breakpoint ($tablet) { width: 100%; }
 
   .item-list {
     float: left;
@@ -227,13 +254,18 @@
 
   .home-subtile {
     margin-bottom: 60px;
+    @include breakpoint($tablet) {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
   }
 }
 
 /* Slider Sponsors */
 .slider-sponsors {
   img {
-    height: 320px;
+    height: 340px;
+    width: 100%;
     @include breakpoint($tablet) {
       height: inherit;
     }
@@ -251,3 +283,13 @@
     }
   }
 }
+.frontpage .shortcode-container {
+  padding: 10px 0;
+}
+#main-content ul.slick-dots li {
+  margin-bottom: 0;
+  &:before {
+    display: none;
+  }
+}
+

@@ -47,7 +47,12 @@
     }
   }
 
-
+  &.shortcode-padding-sup-0 {
+    padding-top: 0px;
+  }
+  &.shortcode-padding-inf-0 {
+    padding-bottom: 0px;
+  }
   &.shortcode-padding-sup-10 {
     padding-top: 10px ;
   }
@@ -156,6 +161,87 @@
       position: relative;
       text-align: center;
     }
+    .highlighted {
+      color: $pink;
+      font-size: 80px;
+      line-height: 114px;
+      font-weight: bold;
+      @include breakpoint($mobile) {
+        font-size: 60px;
+        line-height: 74px;
+      }
+    }
+    .highlight-info {
+      color: $pink;
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: uppercase;
+      @include breakpoint($mobile) {
+        font-size: 20px;
+      }
+    }
+  }
+  .three-columns-element-lefted {
+    @include span(4 of 12);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0 20px;
+    position: relative;
+    text-align: left;
+    @include breakpoint($tablet) {
+      margin-right: 0;
+      width: 100%;
+    }
+    &.last {
+      margin-right: 0;
+    }
+    .three-columns-icon {
+      display: block;
+      float: left;
+      position: relative;
+      text-align: left;
+      width: 20%;
+      min-height: 40px;
+
+      @include breakpoint($tablet) {
+        text-align: center;
+      }
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
+      .icons {
+        color: $pink;
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+    .three-columns-info {
+      display: block;
+      float: left;
+      position: relative;
+      width: 80%;
+      .three-columns-title {
+        clear: both;
+        color: #333333;
+        display: block;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        position: relative;
+        text-align: left;
+      }
+      .three-columns-description {
+        clear: both;
+        color: #4a4a4a;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+        position: relative;
+        text-align: left;
+      }
+    }
+
     .highlighted {
       color: $pink;
       font-size: 80px;
@@ -577,7 +663,7 @@ h3.title-step {
 /*
 * 6.  SHORTCODE TABS
 */
-.shortcode-container {
+#main-content .shortcode-container {
   .ui-tabs {
     background-color: transparent;
     border: none;
@@ -592,11 +678,20 @@ h3.title-step {
       margin: 0;
       padding: 0;
 
-      /* Evitamos "Bullets" en las Tabs */
-      li:before {
-        content: '' !important;
-        display: none !important;
+      li {
+        margin-bottom: 0;
+        padding: 8px 0;
+        &:before {
+          content: '' !important;
+          display: none !important;
+        }
+        a { border-right: 1px solid #9b9b9b; }
+        &.ui-state-active a { border: medium none; }
+        &:last-child a { border: medium none; }
+
       }
+      /* Evitamos "Bullets" en las Tabs */
+
 
       .ui-tabs-tab {
         background-color: transparent;
@@ -647,14 +742,14 @@ h3.title-step {
         }
         .ui-tabs-anchor {
           outline: none;
-          padding: 9px 20px;
+          padding: 4px 20px;
         }
       }
     }
     .ui-tabs-panel {
       background-color: $greysoft;
       border: none;
-      border-radius: none;
+      border-radius: 0;
       margin: 0;
       padding: 30px 8%;
       p {
@@ -667,7 +762,7 @@ h3.title-step {
   &.bg-grey {
     /* ADDs BACK-Office configs to Styles HERE */
     .ui-tabs .ui-tabs-nav .ui-tabs-tab {
-    background-color: white; /* <= INYECTAR AQUI EL COLOR de fondo TAB inactiva */
+    background-color: transparent; /* <= INYECTAR AQUI EL COLOR de fondo TAB inactiva */
   }
 
     .ui-state-default a, .ui-state-default a:link {
@@ -675,11 +770,11 @@ h3.title-step {
     }
 
     .ui-tabs .ui-tabs-nav .ui-tabs-tab.ui-tabs-active {
-      //background-color: #D30572; /* <= INYECTAR AQUI EL COLOR de fondo TAB Activa */
+      background-color: #ffffff; /* <= INYECTAR AQUI EL COLOR de fondo TAB Activa */
     }
 
     .ui-tabs .ui-tabs-nav .ui-tabs-tab.ui-tabs-active a {
-      //color: #FFFFFF; /* <= INYECTAR AQUI EL COLOR del enlace de TAB Activa */
+      color: $pink; /* <= INYECTAR AQUI EL COLOR del enlace de TAB Activa */
     }
 
     /* TAB ITEM content background */
@@ -918,7 +1013,7 @@ h3.title-step {
 */
 ul.menu-list {
   display: block;
-  max-width: 160px;
+  max-width: 166px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -940,7 +1035,7 @@ ul.menu-list {
       font-style: normal;
       font-variant: normal;
       font-weight: normal;
-      line-height: 1;
+      line-height: 22px;
       text-transform: none;
       /* Better Font Rendering =========== */
       speak: none;

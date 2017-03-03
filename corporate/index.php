@@ -1,5 +1,6 @@
 <?php include 'includes/header.php'; ?>
 
+<div id="main-content" class="frontpage"> <!-- ADD Class "frontpage" to the top level of the DOM in fornt page-->
 
   <div class="cont-wrapper">
     <div class="slider-corporate-home">
@@ -16,8 +17,8 @@
           <div class="right-block">
             <div class="right-block-content">
               <div class="appstore">
-                <a href="#" title=""><img src="./images/icons/apps/App_Store_black.png" /></a>
-                <a href="#" title=""><img src="./images/icons/apps/logo-google-play-vetor.png" /></a>
+                <a href="#" title=""><img src="./images/icons/apps/App_Store_black.png"/></a>
+                <a href="#" title=""><img src="./images/icons/apps/logo-google-play-vetor.png"/></a>
               </div>
 
             </div>
@@ -25,16 +26,37 @@
         </div>
       </div>
 
-      <div class="slide-item">
-        <div class="img-slider"><img src="https://dummyimage.com/1900x400/f4f4f4/333.jpg"/></a></div>
+      <div class="slide-item" style="background-color: black;">
+        <div class="img-slider"><img src="./uploaded_files/main-home.jpg" /></div>
         <div class="width-limiter">
-          <div class="left-block"><a href="#" title=""> Aqui va el ENLACE LEFT TWO</a></div>
-          <div class="right-block"><a href="#" title=""> Aqui va el ENLACE RIGHT TWO</a></div>
+          <div class="left-block">
+            <div class="slide-title">El nou edifici d'Andorra Telecom serà <strong>un núvol de vidre</strong></div>
+            <div class="slide-message">
+             "The Cloud" guanya el concurs d'idees per refer l'illa d'edificis que inclou Andorra Telecom i la caserna de Bombers a Andorra la Vella
+            </div>
+            <a href="#" class="button-pink">Llegir més</a>
+
+          </div>
+
         </div>
       </div>
 
       <div class="slide-item">
-        <div class="img-slider"><img src="https://dummyimage.com/1900x400/f4f4f4/333.jpg"/></a></div>
+        <div class="img-slider"><img src="https://dummyimage.com/1900x412/f4f4f4/333.jpg"/></a></div>
+        <div class="width-limiter">
+          <div class="left-block">
+            Aqui puede ir TEXTO (como el SLIDER de la COMERCIAL). En este sentido,
+            el BACKGROUND se debería poder escoger desde "BACK", ya que algunas imágenes requieren fondo transparente.
+            <a href="#" title=""> Aqui va el ENLACE LEFT One</a>
+          </div>
+          <div class="right-block" style="background-color: white;">
+            Aqui puede ir TEXTO (como el SLIDER de la COMERCIAL). Se ha escogido un fondo BLANCO.
+            <a href="#" title=""> Aqui va el ENLACE RIGHT Two</a></div>
+        </div>
+      </div>
+
+      <div class="slide-item">
+        <div class="img-slider"><img src="https://dummyimage.com/1900x412/f4f4f4/333.jpg"/></a></div>
         <div class="width-limiter">
           <div class="left-block"><a href="#" title=""> Aqui va el ENLACE LEFT THREE</a></div>
           <div class="right-block"><a href="#" title=""> Aqui va el ENLACE RIGHT THREE</a></div>
@@ -65,85 +87,65 @@
   <div class="cont-wrapper shortcode-container corporative with-margin-bottom">
     <div class="content">
 
-      <!--      // Left content-->
-      <div class="content-ws righted">
-        <div class="block-header">
-          <h2 class="home-subtile">Notícies</h2> <a href="#" class="readmore">Veure totes</a>
-        </div>
-
-        <div class="news-featured">
-          <a href="#">
-            <img src="./uploaded_files/vgp-slide2.png">
-          </a>
-          <div class="date-home">22/06/2016</div>
-          <div class="new-featured-title"><a href="#">ANDORRA TELECOM INCORPORA 19 TREBALLADORS EVENTUALS DURANT
-              L'ESTIU</a></div>
-          <div class="excerpt">
-            Les incorporacions donaran suport principalment als departaments tècnic i d'atenció al client. <a href="#"
-                                                                                                              class="readmore">Llegir
-              més</a>
-          </div>
-
-        </div>
-        <div class="news-list">
-
-          <div class="item-list">
-            <div class="image-block"><a href="#"><img src="./uploaded_files/thumb-new-home01.png"/></a></div>
-            <div class="date-home">22/06/2016</div>
-            <a href="#">Andorra Telecom entra a Másmóvil</a>
-          </div>
-
-          <div class="item-list">
-            <div class="image-block"><a href="#"><img src="./uploaded_files/thumb-new-home02.png"/></a></div>
-            <div class="date-home">22/06/2016</div>
-            <a href="#">Andorra Telecom abonarà 77.400 euros als afectats per l'avaria del…</a>
-          </div>
-
-          <div class="item-list">
-            <div class="date-home">22/06/2016</div>
-            <a href="#">Andorra Telecom entra a Másmóvil</a>
-          </div>
-
-          <div class="item-list">
-            <div class="date-home">22/06/2016</div>
-            <a href="#">Andorra Telecom abonarà 77.400 euros als afectats per l'avaria del…</a>
-          </div>
-
-        </div>
+      <div class="block-header">
+        <h2 class="home-subtile">Notícies</h2> <a href="#" class="readmore">Veure totes</a>
       </div>
 
-      <!--      // Sidebar-->
-      <div class="sidebar righted">
-
-        <div class="block-header">
-          <h2 class="home-subtile">Agenda</h2> <a href="#" class="readmore">Veure totes</a>
+      <div class="news-featured">
+        <a href="#">
+          <img src="./uploaded_files/vgp-slide2.png">
+        </a>
+        <div class="date-home">22/06/2016</div>
+        <div class="new-featured-title"><a href="#">ANDORRA TELECOM INCORPORA 19 TREBALLADORS EVENTUALS DURANT
+            L'ESTIU</a></div>
+        <div class="excerpt">
+          Les incorporacions donaran suport principalment als departaments tècnic i d'atenció al client. <a href="#"
+                                                                                                            class="readmore">Llegir
+            més</a>
         </div>
-        <div class="agenda-item featured">
-          <div class="agenda-date">
-            <div class="data-day">11</div>
-            <div class="data-month">jul</div>
-          </div>
-          <div class="agenda-info">2N TORNEIG LA WORLD ROBOTIC OLYMPIAD (WRO) ANDORRA TELECOM</div>
+
+      </div>
+
+      <div class="news-featured">
+        <a href="#">
+          <img src="./uploaded_files/vgp-slide2.png">
+        </a>
+        <div class="date-home">22/06/2016</div>
+        <div class="new-featured-title"><a href="#">ANDORRA TELECOM INCORPORA 19 TREBALLADORS EVENTUALS DURANT
+            L'ESTIU</a></div>
+        <div class="excerpt">
+          Les incorporacions donaran suport principalment als departaments tècnic i d'atenció al client. <a href="#"
+                                                                                                            class="readmore">Llegir
+            més</a>
         </div>
 
-        <div class="agenda-item">
-          <div class="agenda-date">
-            <div class="data-day">12</div>
-            <div class="data-month">jul</div>
-          </div>
-          <div class="agenda-info">7È SALÓ DEL VIDEOJOC I INTERNET ANDORRA TELECOM</div>
+      </div>
 
 
+      <div class="news-list">
+
+        <div class="item-list">
+          <div class="image-block"><a href="#"><img src="./uploaded_files/thumb-new-home01.png"/></a></div>
+          <div class="date-home">22/06/2016</div>
+          <a href="#">Andorra Telecom entra a Másmóvil</a>
         </div>
-        <div class="agenda-item">
-          <div class="agenda-date">
-            <div class="data-day">5</div>
-            <div class="data-month">ago</div>
-          </div>
-          <div class="agenda-info">2N TORNEIG LA WORLD ROBOTIC OLYMPIAD (WRO) ANDORRA TELECOM</div>
 
-
+        <div class="item-list">
+          <div class="image-block"><a href="#"><img src="./uploaded_files/thumb-new-home02.png"/></a></div>
+          <div class="date-home">22/06/2016</div>
+          <a href="#">Andorra Telecom abonarà 77.400 euros als afectats per l'avaria del…</a>
         </div>
+
+        <div class="item-list">
+          <div class="date-home">22/06/2016</div>
+          <a href="#">Andorra Telecom entra a Másmóvil</a>
+        </div>
+
+        <div class="item-list">
+          <div class="date-home">22/06/2016</div>
+          <a href="#">Andorra Telecom abonarà 77.400 euros als afectats per l'avaria del…</a>
+        </div>
+
       </div>
 
     </div>
@@ -237,49 +239,32 @@
   <div class="cont-wrapper shortcode-container corporative last">
     <div class="content">
 
-      <!--      // Left content-->
-      <div class="content-ws righted">
-        <div class="block-header">
-          <h2 class="home-subtile">Els nostres patrocinis</h2> <a href="#" class="readmore">Veure totes</a>
-        </div>
-
-        <div class="slider-sponsors">
-          <!-- IMAGE has to be 672x320 -->
-          <div class="sponsor-slide"><a href="#" title=""><img src="./uploaded_files/andorrasax.jpg"/></a></div>
-          <div class="sponsor-slide"><a href="#" title=""><img
-                  src="https://dummyimage.com/672x320/d30573/fff.jpg&text=imatge+slide"/></a></div>
-          <div class="sponsor-slide"><a href="#" title=""><img
-                  src="https://dummyimage.com/672x320/000000/fff.jpg&text=imatge+slide"/></a></div>
-        </div>
-        <script language="JavaScript">
-            // Slider Sponsros
-            $(document).ready(function () {
-                $('.slider-sponsors').slick({
-                    arrows: false,
-                    dots: true,
-                    focusOnSelect: true
-                });
-            });
-
-        </script>
+      <div class="block-header">
+        <h2 class="home-subtile">Els nostres patrocinis</h2> <a href="#" class="readmore">Veure totes</a>
       </div>
 
-      <!--      // Sidebar-->
-      <div class="sidebar righted">
-        <div class="block-header">
-          <h2 class="home-subtile">Bloc</h2> <a href="#" class="readmore">Veure totes</a>
-        </div>
-        <div class="bloc-exceprt">
-          <a href="#"><img src="./uploaded_files/vgp-slide2.png" height="194px"></a>
-          <div class="date-home">22/06/2016</div>
-          <div class="excerpt">LA NOSTRA CRÒNICA EN FOTOS DE L'SPARTAN RACE. AROO!</div>
-          <a href="#" class="readmore">Llegir més</a>
-        </div>
-
+      <div class="slider-sponsors">
+        <!-- IMAGE has to be 672x320 -->
+        <div class="sponsor-slide"><a href="#" title=""><img src="./uploaded_files/andorrasax.jpg"/></a></div>
+        <div class="sponsor-slide"><a href="#" title=""><img
+                src="https://dummyimage.com/1028x340/d30573/fff.jpg&text=imatge+slide"/></a></div>
+        <div class="sponsor-slide"><a href="#" title=""><img
+                src="https://dummyimage.com/1028x340/000000/fff.jpg&text=imatge+slide"/></a></div>
       </div>
+      <script language="JavaScript">
+          // Slider Sponsros
+          $(document).ready(function () {
+              $('.slider-sponsors').slick({
+                  arrows: false,
+                  dots: true,
+                  focusOnSelect: true
+              });
+          });
+
+      </script>
 
     </div>
   </div>
-  <!-- END SECTION 2 COLUMNS (+2 inner-responsive) -->
+</div>
 
 <?php include 'includes/footer.php'; ?>

@@ -20,7 +20,7 @@
   <!-- BEGIN SECTION 3 COLUMNS -->
   <div class="cont-wrapper bg-grey shortcode-container">
     <div class="content">
-      <h2 class="global-subtitle">Títol secció</h2>
+      <h2 class="global-subtitle">Títol secció (3 columns)</h2>
       <div class="three-columns-row">
         <div class="three-columns-element">
           <span class="three-columns-icon"><span class="icons icon-offer"></span></span>
@@ -140,6 +140,67 @@
   </div>
   <!-- END SECTION 2 COLUMNS -->
 
+    <!-- BEGIN SECTION 3 COLUMNS -->
+    <div class="cont-wrapper bg-grey shortcode-container">
+      <div class="content">
+        <h2 class="global-subtitle">ICONS (left) + TEXT (a 3 Columnes)</h2>
+
+        <div class="three-columns-row">
+          <div class="three-columns-element-lefted">
+            <span class="three-columns-icon"><span class="icons icon-offer"></span></span>
+            <div class="three-columns-info">
+              <span class="three-columns-title">Lorem Ipsum</span>
+              <span class="three-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+            </div>
+          </div>
+
+          <div class="three-columns-element-lefted">
+            <span class="three-columns-icon"><span class="icons icon-offer"></span></span>
+            <div class="three-columns-info">
+              <span class="three-columns-title">Lorem Ipsum</span>
+              <span class="three-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+            </div>
+          </div>
+
+          <div class="three-columns-element-lefted last">
+            <span class="three-columns-icon"><span class="icons icon-offer"></span></span>
+            <div class="three-columns-info">
+              <span class="three-columns-title">Lorem Ipsum</span>
+              <span class="three-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="three-columns-row">
+          <div class="three-columns-element-lefted">
+            <span class="three-columns-icon"><span class="icons icon-offer"></span></span>
+            <div class="three-columns-info">
+              <span class="three-columns-title">Lorem Ipsum</span>
+              <span class="three-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+            </div>
+          </div>
+
+          <div class="three-columns-element-lefted">
+            <span class="three-columns-icon"><span class="icons icon-offer"></span></span>
+            <div class="three-columns-info">
+              <span class="three-columns-title">Lorem Ipsum</span>
+              <span class="three-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+            </div>
+          </div>
+
+          <div class="three-columns-element-lefted last">
+            <span class="three-columns-icon"><span class="icons icon-offer"></span></span>
+            <div class="three-columns-info">
+              <span class="three-columns-title">Lorem Ipsum</span>
+              <span class="three-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- END SECTION 2 COLUMNS -->
+
   <!-- BEGIN SECTION ACCORDION -->
   <div class="cont-wrapper shortcode-container">
     <div class="content">
@@ -254,7 +315,7 @@
   <!-- BEGIN SECTION TABS -->
   <div class="cont-wrapper shortcode-container">
     <div class="content">
-      <h2 class="global-subtitle">TABS Title</h2>
+      <h2 class="global-subtitle">TABS Title (Normal WHITE BG)</h2>
 
       <div class="tabs-mobile-selector only-mobile">
         <select class="make-me-styled">
@@ -441,6 +502,195 @@
   </div>
   <!-- END SECTION TABS -->
 
+    <!-- BEGIN SECTION TABS -->
+    <div class="cont-wrapper shortcode-container bg-grey">
+      <div class="content">
+        <h2 class="global-subtitle">TABS Title (Normal WHITE BG)</h2>
+
+        <div class="tabs-mobile-selector only-mobile">
+          <select class="make-me-styled">
+            <option value="0" selected>Tab 1 (titulo largo prueba)</option>
+            <option value="1">Tab 2 (titulo largo prueba)</option>
+            <option value="2">Tab 3 (titulo largo prueba)</option>
+            <option value="3">Tab 4 (titulo largo prueba)</option>
+          </select>
+        </div>
+
+        <div id="tabs2">
+          <ul>
+            <li><a href="#tabs-5">Tab 1 (titulo largo prueba)</a></li>
+            <li><a href="#tabs-6">Tab 2 (titulo largo prueba)</a></li>
+            <li><a href="#tabs-7">Tab 3 (titulo largo prueba)</a></li>
+            <li><a href="#tabs-8">Tab 4 (titulo largo prueba)</a></li>
+          </ul>
+          <div id="tabs-5">
+            <ul>
+              <li>Prueba de ITEM bullets INSIDE - 01</li>
+              <li>Prueba de ITEM bullets INSIDE - 02</li>
+              <li>Prueba de ITEM bullets INSIDE - 03</li>
+              <li>Prueba de ITEM bullets INSIDE - 04</li>
+              <li>Prueba de ITEM bullets INSIDE - 05</li>
+            </ul>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+              aperiam, eaque ipsa quae ab illo inventore veritatis
+              et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni
+              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+              sit amet, consectetur, adipisci velit, sed quia non numquam
+              eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
+              quis nostrum exercitationem ullam corporis suscipit laboriosam,
+              nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+              esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+              fugiat quo voluptas nulla pariatur.</p>
+          </div>
+          <div id="tabs-6">
+            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc.
+              Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut
+              tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam.
+              Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc.
+              Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat,
+              tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris
+              consectetur tortor et purus.</p>
+          </div>
+          <div id="tabs-7">
+            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula
+              accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti
+              sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel
+              enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium
+              nec, feugiat nec, luctus a, lacus.</p>
+            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla
+              facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec
+              mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam
+              scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor,
+              tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo.
+              Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+          </div>
+          <div id="tabs-8">
+            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula
+              accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti
+              sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel
+              enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium
+              nec, feugiat nec, luctus a, lacus.</p>
+            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla
+              facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec
+              mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam
+              scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor,
+              tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo.
+              Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+          </div>
+        </div>
+
+
+        <script>
+            $(function () {
+                $("#tabs2").tabs();
+            });
+
+            $(document).ready(function () {
+
+                // REV Original: http://tutorialzine.com/2010/11/better-select-jquery-css3/
+                // The select element to be replaced:
+                var select = $('select.make-me-styled');
+                var selectBoxContainer = $('<div>', {
+                    width: select.outerWidth(),
+                    class: 'atSelect',
+                    html: '<div class="selectBox">' + select.find(":selected").text() + '</div>'
+                });
+
+                var dropDown = $('<ul>', {class: 'dropDown'});
+                var selectBox = selectBoxContainer.find('.selectBox');
+
+                // Set FIRST item in selector.
+
+
+                // Looping though the options of the original select element
+
+                select.find('option').each(function (i) {
+                    var option = $(this);
+
+                    if (i == select.attr('selectedIndex')) {
+                        selectBox.html(option.text());
+                    }
+
+                    // As of jQuery 1.4.3 we can access HTML5
+                    // data attributes with the data() method.
+
+                    if (option.data('skip')) {
+                        return true;
+                    }
+
+                    // Creating a dropdown item according to the
+                    // data-icon and data-html-text HTML5 attributes:
+
+                    // <img src="'+option.data('icon')+'" /> removed
+                    var li = $('<li>', {
+                        html: option.text()
+                    });
+
+                    li.click(function () {
+
+                        selectBox.html(option.text());
+                        dropDown.trigger('hide');
+
+                        // When a click occurs, we are also reflecting
+                        // the change on the original select element:
+                        select.val(option.val());
+                        $("#tabs").tabs("option", "active", option.val());
+
+
+                        return false;
+                    });
+
+                    dropDown.append(li);
+                });
+
+                selectBoxContainer.append(dropDown.hide());
+                select.hide().after(selectBoxContainer);
+
+                // Binding custom show and hide events on the dropDown:
+
+                dropDown.bind('show', function () {
+
+                    if (dropDown.is(':animated')) {
+                        return false;
+                    }
+
+                    selectBox.addClass('expanded');
+                    dropDown.slideDown();
+
+                }).bind('hide', function () {
+
+                    if (dropDown.is(':animated')) {
+                        return false;
+                    }
+
+                    selectBox.removeClass('expanded');
+                    dropDown.slideUp();
+
+                }).bind('toggle', function () {
+                    if (selectBox.hasClass('expanded')) {
+                        dropDown.trigger('hide');
+                    }
+                    else dropDown.trigger('show');
+                });
+
+                selectBox.click(function () {
+                    dropDown.trigger('toggle');
+                    return false;
+                });
+
+                // If we click anywhere on the page, while the
+                // dropdown is shown, it is going to be hidden:
+
+                $(document).click(function () {
+                    dropDown.trigger('hide');
+                });
+            });
+
+        </script>
+      </div>
+    </div>
+    <!-- END SECTION TABS -->
 
   <!-- BEGIN SECTION STEPS -->
   <div class="cont-wrapper bg-grey shortcode-container">
