@@ -29,7 +29,6 @@ $(document).ready(function () {
 //
 // 1. MEGAMENU
 // 2. ENQUIRE (RESPONSIVE)
-// 3. LOGUIN System
 //
 
     //
@@ -41,7 +40,7 @@ $(document).ready(function () {
     $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
     //Checks if drodown menu's li elements have anothere level (ul), if not the dropdown is shown as regular dropdown, not a mega menu (thanks Luka Kladaric)
 
-    $(".button-login-client").after("<a href=\"#\" class=\"menu-mobile\"><span></span><span></span><span></span><span></span></a>");
+    $(".button-goto-comercial").after("<a href=\"#\" class=\"menu-mobile\"><span></span><span></span><span></span><span></span></a>");
 
     //Adds menu-mobile class (for mobile toggle menu) before the normal menu
     //Mobile menu is hidden if width is more then 959px, but normal menu is displayed
@@ -108,7 +107,6 @@ $(document).ready(function () {
             $("#topbar").appendTo("#header");
             $('#header .container-client-area.logged-area').removeClass('active').hide();
             // Remove margin MENU logged
-            $('.logged-in #nav-private').css('margin-bottom', '0');
             // console.log('antes de los 720');
         },
 
@@ -151,39 +149,4 @@ $(document).ready(function () {
     //
     // END ENQUIRE (RESPONSIVE)
     //
-
-
-    // 3. LOGUIN System
-    // Pre-RESPONSIVE (Before SCALE)
-    if ($(window).width() > 768) {
-        // Abre el MENU Logueado
-        $('#header .container-client-area.logged-area').addClass('active').show();
-        $('.logged-in #nav-private').css('margin-bottom', '60px');
-    } else {
-    }
-
-    $(function () {
-        var button = $('.button-client-area').not(".active-logged");
-        var buttonMobile = $('.button-login-client');
-        var box = $('.container-client-area');
-        button.mouseup(function () {
-            box.toggle();
-            button.toggleClass('active');
-            buttonMobile.toggleClass('active');
-            box.toggleClass('active');
-        });
-    });
-
-    // LOGIN MOBILE
-    $(function () {
-        var button = $('.button-client-area');
-        var buttonMobile = $('.button-login-client');
-        var box = $('.container-client-area');
-        buttonMobile.mouseup(function () {
-            box.toggle();
-            buttonMobile.toggleClass('active');
-            button.toggleClass('active');
-            box.toggleClass('active');
-        });
-    });
 });

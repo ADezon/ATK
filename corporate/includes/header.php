@@ -102,12 +102,12 @@
     <!-- BEGIN REGION HEAD -->
     <div id="head" class="cont-wrapper">
         <div class="content">
-            <div class="left">
+            <div class="menu-header-item left">
                 <a class="logo" href="#" title="">
                     <img src="./images/logo_at_corp.png" alt="Andorra Telecom"/>
                 </a>
             </div>
-            <div class="right">
+            <div class="menu-header-item right">
                 <ul id="nav-main">
                     <li>
                         <a href="#" title="">Contacte</a>
@@ -119,37 +119,11 @@
                         <a href="#" title="">Bloc</a>
                     </li>
                 </ul>
-                <div class="button-login-client" href="https://www.google.es" target="_blank" title=""><div>Web Comercial</div></div>
+                <div class="button-goto-comercial"><a href="https://www.google.es" target="_blank" title="">Web Comercial</a></div>
             </div>
         </div>
     </div>
     <!-- END REGION HEAD -->
-
-    <div class="container-client-area">
-        <div class="box-client-area">
-            <form class="login-client">
-                <div class="message-error">
-                    <p>Missatge d'error de login</p>
-                </div>
-                <fieldset class="box-name-client">
-                    <div class="title-field">Nom d'usuari</div>
-                    <input name="name-client" type="text"/>
-                    <a href="#" class="message-remember">Has oblidat el nom d’usuari?</a>
-                </fieldset>
-                <fieldset class="box-pass-client">
-                    <div class="title-field">Contrasenya</div>
-                    <input name="pass-client" type="password"/>
-                    <a href="#" class="message-remember">Has oblidat la contrasenya?</a>
-                </fieldset>
-                <input value="Entrar" class="login-send button-pink" type="submit"/>
-            </form>
-            <div class="goto-register">
-                <div>No ets client d’Andorra Telecom?</div>
-                <a href="#">Enregistra’t</a>
-            </div>
-        </div>
-    </div>
-
 
     <!-- BEGIN REGION NAV PRIVATE -->
     <div id="nav-private" class="cont-wrapper">

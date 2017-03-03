@@ -24,9 +24,24 @@ body.corporate{
           }
         }
       }
-      .button-login-client{
+      .menu-header-item.left { width: 58% }
+      .menu-header-item.right { width: 42%; }
+
+      .button-goto-comercial {
+        float: left;
+        margin-top: 12px;
         background-color: $pink;
-        color: $white;
+        color: #FFFFFF;
+        padding: 6px 0;
+        word-wrap: break-word;
+        width: 84px;
+        text-align: center;
+        line-height: 16px;
+        border-radius: 4px;
+        a {
+          color: white;
+          font-weight: 700;
+        }
       }
       #nav-main{
         li{
