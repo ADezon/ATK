@@ -1,7 +1,7 @@
 <!-- -->
 <?php include 'includes/header_loged.php'; ?>
 <!-- -->
-
+<div id="main-content">
 <!--BEGIN BIG BANNER-->
 <!--requires     <link rel="stylesheet" type="text/css" href="js/flexslider/flexslider.css">-->
 <!--requires     <script src="/js/flexslider/jquery.flexslider-min.js"></script>-->
@@ -345,6 +345,6 @@
 
     });
 </script>
-
+</div>
 
 <?php include 'includes/footer.php'; ?>

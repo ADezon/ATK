@@ -1,4 +1,4 @@
-.slider {
+#main-content .slider {
   position: relative;
 
   .slides {
@@ -105,15 +105,19 @@
     transform: scale(1.0);
   }
 
-  .flex-direction-nav {
+  ul.flex-direction-nav {
     margin: 0 auto;
     max-width: 1240px;
     position: relative;
     width: 100%;
-    li:before{
-      content: "";
-      display: none;
+    li {
+      margin-bottom: 0;
+      &:before{
+        content: "";
+        display: none;
+      }
     }
+
   }
 
   .flex-direction-nav a {
@@ -150,7 +154,7 @@
     left: 15px !important;
   }
 }
-.small-banner {
+#main-content .small-banner {
   background-color: $grey;
   padding: 30px 0 26px 0;
   width: 100%;
