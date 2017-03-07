@@ -6,6 +6,11 @@
 
       <?php include 'includes/breadcrumb.php'; ?>
 
+
+      <h2>This is FONT-AWESOME icons. DIRECTLY copy-paste from http://fontawesome.io/icons/</h2>
+      <div class="fa-hover"><a href="http://fontawesome.io/icon/address-book/" target="_blank"><i class="fa fa-address-book" aria-hidden="true"></i> <span class="sr-only">Example of </span>address-book</a></div>
+      <div class="fa-hover"><i class="fa fa-area-chart" aria-hidden="true"></i> <span class="sr-only">Example of </span>area-chart</div>
+
       <h1>Test ALL elements WITHOUT specific classes (HERE H1 => 30px)</h1>
       <h2>H2 Test h2 (21px)</h2>
       <h3>H3 Test h3 (18px)</h3>

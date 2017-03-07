@@ -18,6 +18,7 @@
     <!--BEGIN GLOBAL-->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700"
           rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="./css/at-styles.css">
     <!--BEGIN GLOBAL-->
 
