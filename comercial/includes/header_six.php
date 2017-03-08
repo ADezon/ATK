@@ -221,9 +221,9 @@
     <div id="nav-private" class="cont-wrapper">
         <div class="menu content content-big six-items">
             <ul>
-                <li class="active">
+                <li id="first-uniqueiddd" class="active">
                     <div class="title-level-1"><div
-                                class="icons icon-mobile"></div><div>SOM Telefonia Mòbil</div>
+                                class="icons icon-mobile"></div><div class="menu-title">SOM Telefonia Mòbil</div>
                     </div>
                     <div class="container-submenu">
                         <ul>
@@ -305,9 +305,9 @@
                         </ul>
                     </div>
                 </li>
-                <li>
+                <li id="hlskhfklshfklshflksdhf">
                     <div class="title-level-1"><div
-                                class="icons icon-hands"></div><div>Second ITEM Menu</div>
+                                class="icons icon-hands"></div><div class="menu-title">Second ITEM Menu</div>
                     </div>
                     <div class="container-submenu">
                         <ul>
@@ -389,9 +389,9 @@
                         </ul>
                     </div>
                 </li>
-                <li>
+                <li id="kljsdhlsdhflgfghh">
                     <div class="title-level-1"><div
-                                class="icons icon-cars"></div><div>Second ITEM Menu</div>
+                                class="icons icon-cars"></div><div class="menu-title">Second ITEM Menu</div>
                     </div>
                     <div class="container-submenu">
                         <ul>
@@ -473,9 +473,9 @@
                         </ul>
                     </div>
                 </li>
-                <li>
+                <li id="otro-id-UniCooo">
                     <div class="title-level-1"><div
-                                class="icons icon-phone"></div><div>SOM Internet i Fixa</div>
+                                class="icons icon-phone"></div><div class="menu-title">SOM Internet i Fixa</div>
                     </div>
                     <div class="container-submenu">
                         <ul>
@@ -557,9 +557,9 @@
                         </ul>
                     </div>
                 </li>
-                <li>
+                <li id="unique-againnnnnnnnnn">
                     <div class="title-level-1"><div
-                                class="icons icon-tv"></div><div>SOM Televisió</div>
+                                class="icons icon-tv"></div><div class="menu-title">SOM Televisió</div>
                     </div>
                     <div class="container-submenu">
                         <ul>

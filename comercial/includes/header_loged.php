@@ -250,7 +250,7 @@
           <div class="title-level-1">
             <div
                 class="icons icon-mobile"></div>
-            <div>SOM Telefonia Mòbil</div>
+            <div class="menu-title">SOM Telefonia Mòbil</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -328,7 +328,7 @@
           <div class="title-level-1">
             <div
                 class="icons icon-phone"></div>
-            <div>SOM Internet i Fixa</div>
+            <div class="menu-title">SOM Internet i Fixa</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -406,7 +406,7 @@
         <li id="som-televisio">
           <div class="title-level-1">
             <div class="icons icon-tv"></div>
-            <div>SOM Televisió</div>
+            <div class="menu-title">SOM Televisió</div>
           </div>
           <div class="container-submenu">
             <ul>

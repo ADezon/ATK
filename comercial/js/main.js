@@ -50,15 +50,18 @@ $(document).ready(function () {
 
     $(".menu > ul > li").click(function (e) {
 
-        console.log(e.target);
-
         if ($(window).width() > 768) {
             var miPadre = $(this).closest('li').attr('id');
+
+            console.log($(e.target));
+
             // Close any OTHER Child (except OURs >> if Opened, of course!!!)
             $(".menu > ul > li").not(document.getElementById(miPadre)).children(".container-submenu").hide();
 
+            // console.log($(".menu > ul > li").not(document.getElementById(miPadre)));
             // Affect OUR Children (Sub-Menu)
-            $(this).children(".container-submenu").stop(true, false).fadeToggle(250);
+            $(".menu > ul > li#" + miPadre).children(".container-submenu").fadeToggle(250);
+            // $(this).children(".container-submenu").stop(true, false).fadeToggle(250);
         }
     });
 
@@ -68,6 +71,7 @@ $(document).ready(function () {
             // ALL Clicks OutSide the MENU will close it.
             if ($(e.target).hasClass("menu-title")
                 || $(e.target).hasClass("icons")
+                || $(e.target).hasClass("menu-title")
                 || $(e.target).hasClass("title-level-1")
             ) { letsGoCloseIt = false; }
             var menuContainer = $('.container-submenu');
@@ -81,7 +85,7 @@ $(document).ready(function () {
     //If width is more than 720px dropdowns are displayed on CLICK
     $(".menu > ul > li").click(function () {
         if ($(window).width() <= 768) {
-            $(this).children(".container-submenu").fadeToggle(250);
+            // $(this).children(".container-submenu").fadeToggle(250);
         }
     });
     //If width is less or equal to 720px dropdowns are displayed on click (thanks Aman Jain from stackoverflow)
