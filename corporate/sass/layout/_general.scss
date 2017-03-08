@@ -16,7 +16,7 @@ h1 {
   color: $black;
   font-size: 30px;
   line-height: 34px;
-  margin: 50px 0 20px 0;
+  margin: 30px 0 20px 0;
   position: relative;
 }
 h2 {
@@ -107,15 +107,17 @@ strong {
   li {
     color: #58585A;
     margin-bottom: 10px;
+    margin-left: 12px;
+    position: relative;
+
     &:before {
       content: "\e923";
       font-family: 'atelecom-icons' !important;
       font-size: 5px;
       color: $pink;
-      padding-right: 6px;
-      position: relative;
-      top: -2px;
-
+      position: absolute;
+      top: 2px;
+      left: -12px;
     }
   }
 }
@@ -215,6 +217,9 @@ table {
 .treinta {
   font-size: 30px;
 }
+.dieciseis {
+  font-size: 16px;
+}
 .twenty {
   font-size: 20px;
 }
@@ -224,10 +229,16 @@ table {
 .grey-medium {
   color: $greymedium;
 }
+.w-sesenta { width: 60%;}
+.w-setenta { width: 70%; }
 a {
   text-decoration: none;
   color: $pink;
   width: auto;
+  &:hover{ text-decoration: none; }
+  &:active{ text-decoration: none; }
+  &:visited { text-decoration: none; }
+
   &.button-pink {
     background-color: $pink;
     border-radius: 4px;
@@ -245,10 +256,13 @@ a {
     }
     &:hover{
       background-color: $pinklight;
+      text-decoration: none;
     }
     &:active{
       background-color: $pinkdark;
+      text-decoration: none;
     }
+
     @include breakpoint($tablet) {
       font-size:14px;
       line-height: 22px;
@@ -305,7 +319,7 @@ a {
     text-decoration: underline;
   }
   &.button-black {
-    background-color: black;
+    background-color: $greymedium;
     border-radius: 4px;
     color: $white;
     display: inline-block;
@@ -397,20 +411,25 @@ p{
   padding: 0;
 }
 // END OVERRIDE LR defaults
-.cont-wrapper{
+.cont-wrapper {
   display: block;
   overflow: hidden;
   position: relative;
   width: 100%;
+  font-size: 18px;
+  line-height: 18px;
+
   .content {
     @include clearfix();
     display: block;
     margin:0 auto;
     max-width: 1024px;
     overflow: hidden;
+    padding: 0 10px;
     position: relative;
-    @include breakpoint ($intermedio) { padding: 0 10px; }
-    @include breakpoint ($mobile) { padding: 0 18px; }
+    @include breakpoint ($mobile) {
+      padding: 0 18px;
+    }
     &.content-big{
       max-width: 1024px;
       padding: 0;
@@ -516,11 +535,14 @@ p{
       margin-bottom: 20px;
     }
   }
-  p{
+  p {
     color:$greymedium;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 10px;
+    &.dieciseis {
+      font-size: 16px;
+    }
     @include breakpoint($tablet) {
       font-size:14px;
       line-height: 18px;

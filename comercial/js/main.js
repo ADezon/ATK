@@ -53,8 +53,6 @@ $(document).ready(function () {
         if ($(window).width() > 768) {
             var miPadre = $(this).closest('li').attr('id');
 
-            console.log($(e.target));
-
             // Close any OTHER Child (except OURs >> if Opened, of course!!!)
             $(".menu > ul > li").not(document.getElementById(miPadre)).children(".container-submenu").hide();
 
