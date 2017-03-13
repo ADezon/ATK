@@ -1,700 +1,711 @@
-// ONLY FOR PAGE VOD FILMS
-.cont-wrapper.vod-films {
-  margin-top: 50px;
-
-  .field-input-wrapper {
-    float: left;
-    width: 100%;
+#main-content {
+  // ONLY FOR PAGE VOD FILMS
+  .cont-wrapper.vod-films {
     margin-top: 50px;
 
-    .field-input {
+    .field-input-wrapper {
       float: left;
-      clear: none;
-      width: 40%;
-    }
-    .field-submit-search {
-      background: #D30572 url(../images/i-search.png) no-repeat center center;
-      border: 1px solid #D30572;
-      cursor: pointer;
-      display: block;
-      float: left;
-      clear: none;
-      margin: 6px 15px;
-      border-radius: 0;
-      height: 38px;
-      overflow: hidden;
-      padding: 10px;
-      position: relative;
-      width: 40px;
-    }
-  }
+      width: 100%;
+      margin-top: 50px;
 
-
-  // SLIDERS VOD FILMS
-  .slider {
-    width: 100%;
-    // Reflection CROSS Broser
-    .image-block {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      outline: none;
-      padding: 0 20px;
-
-      @media all and (min-width: 768px) {
-        &[aria-hidden="true"] {
-          opacity: 0.7;
-          .main-image {
-            a { cursor: default; pointer-events: none; }
-            img { opacity: 0.6; }
-          }
-        }
+      .field-input {
+        float: left;
+        clear: none;
+        width: 40%;
       }
+      .field-submit-search {
+        background: #D30572 url(../images/i-search.png) no-repeat center center;
+        border: 1px solid #D30572;
+        cursor: pointer;
+        display: block;
+        float: left;
+        clear: none;
+        margin: 6px 15px;
+        border-radius: 0;
+        height: 38px;
+        overflow: hidden;
+        padding: 10px;
+        position: relative;
+        width: 40px;
+      }
+    }
 
-      .main-image {
+    // SLIDERS VOD FILMS
+    .slider {
+      width: 100%;
+      // Reflection CROSS Broser
+      .image-block {
         position: relative;
         display: block;
         overflow: hidden;
-        max-width: 300px;
-        background-color: #0b0b0b;
-        a{
+        outline: none;
+        padding: 0 20px;
+
+        @media all and (min-width: 768px) {
+          &[aria-hidden="true"] {
+            opacity: 0.7;
+            .main-image {
+              a {
+                cursor: default;
+                pointer-events: none;
+              }
+              img {
+                opacity: 0.6;
+              }
+            }
+          }
+        }
+
+        .main-image {
           position: relative;
           display: block;
           overflow: hidden;
-          img{
+          max-width: 300px;
+          background-color: #0b0b0b;
+          a {
             position: relative;
             display: block;
             overflow: hidden;
-            margin: 0 auto;
-            color: grey;
-            width: 100%;
-            height: 445px;
+            img {
+              position: relative;
+              display: block;
+              overflow: hidden;
+              margin: 0 auto;
+              color: grey;
+              width: 100%;
+              height: 445px;
+            }
           }
-        }
 
+        }
       }
-    }
-    .reflection {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      height: 120px;
-      max-width: 300px;
-      img {
-        width: 100%;
+      .reflection {
         position: relative;
         display: block;
         overflow: hidden;
-        margin: 0 auto;
-        filter: flipv;
-        filter: alpha(opacity='20');
-        opacity:0.20;
-        transform: scaleY(-1);
-        -moz-transform: scaleY(-1);
-        -ms-transform: scaleY(-1); -o-transform: scaleY(-1);
-        -webkit-transform: scaleY(-1);
-      }
-      .overlay {
-        display: block;
-        overflow: hidden;
-        margin: 0 auto;
-        height: 100%;
-        width: 100%;
-        background-image: -moz-linear-gradient( center bottom, rgb(255,255,255) 60%, rgba(255,255,255,0) 75%);
-        background-image:   -o-linear-gradient( rgba(255,255,255,0) 25%, rgb(255,255,255) 40%);
-        background-image:     -webkit-gradient( linear, left bottom, left top, color-stop(0.60, rgb(255,255,255)), color-stop(0.75, rgba(255,255,255,0)));
-        filter: progid:DXImageTransform.Microsoft.Gradient( gradientType=0, startColor=0, EndColorStr=#ffffff);
-        left:0;
-        position:absolute;
-        top:0;
-      }
-      .overlay-info{
-        position: absolute;
-        display: block;
-        overflow: hidden;
-        top: 0;
-        padding: 10px 0 20px;
-        width: 100%;
-      }
-    }
-    button {
-      background: none transparent;
-      border: medium none;
-      cursor: pointer;
-      font-size: 0;
-      outline: none;
-      position: absolute;
-      top: 38%;
-      z-index: 5;
-
-      &.slick-prev {
-        left: 10%;
-        @include breakpoint ($large) { left: 2%; }
-
-        &:before {
-          color: white;
-          content: "\e930";
-          font-family: 'atelecom-icons' !important;
-          font-size: 48px;
-          @include breakpoint ($large) {
-            font-size: 30px;
-          }
-          @include breakpoint ($tablet) {
-            font-size: 28px;
-          }
-          padding-right: 8px;
+        height: 120px;
+        max-width: 300px;
+        img {
+          width: 100%;
+          position: relative;
+          display: block;
+          overflow: hidden;
+          margin: 0 auto;
+          filter: flipv;
+          filter: alpha(opacity='20');
+          opacity: 0.20;
+          transform: scaleY(-1);
+          -moz-transform: scaleY(-1);
+          -ms-transform: scaleY(-1);
+          -o-transform: scaleY(-1);
+          -webkit-transform: scaleY(-1);
+        }
+        .overlay {
+          display: block;
+          overflow: hidden;
+          margin: 0 auto;
+          height: 100%;
+          width: 100%;
+          background-image: -moz-linear-gradient(center bottom, rgb(255, 255, 255) 60%, rgba(255, 255, 255, 0) 75%);
+          background-image: -o-linear-gradient(rgba(255, 255, 255, 0) 25%, rgb(255, 255, 255) 40%);
+          background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.60, rgb(255, 255, 255)), color-stop(0.75, rgba(255, 255, 255, 0)));
+          filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColor=0, EndColorStr=#ffffff);
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+        .overlay-info {
+          position: absolute;
+          display: block;
+          overflow: hidden;
+          top: 0;
+          padding: 10px 0 20px;
+          width: 100%;
         }
       }
-      &.slick-next {
-        right: 10%;
-        @include breakpoint ($large) { right: 2%; }
-        &:before {
-          color: white;
-          content: "\e92e";
-          font-family: 'atelecom-icons' !important;
-          font-size: 48px;
-          @include breakpoint ($large) {
-            font-size: 30px;
-          }
-          @include breakpoint ($tablet) {
-            font-size: 28px;
-          }
-          padding-right: 8px;
-        }
-      }
-    }
-    .slider-premiere {
       button {
-        top: 28%;
+        background: none transparent;
+        border: medium none;
+        cursor: pointer;
+        font-size: 0;
+        outline: none;
+        position: absolute;
+        top: 38%;
+        z-index: 5;
+
+        &.slick-prev {
+          left: 10%;
+          @include breakpoint ($large) {
+            left: 2%;
+          }
+
+          &:before {
+            color: white;
+            content: "\e930";
+            font-family: 'atelecom-icons' !important;
+            font-size: 48px;
+            @include breakpoint ($large) {
+              font-size: 30px;
+            }
+            @include breakpoint ($tablet) {
+              font-size: 28px;
+            }
+            padding-right: 8px;
+          }
+        }
+        &.slick-next {
+          right: 10%;
+          @include breakpoint ($large) {
+            right: 2%;
+          }
+          &:before {
+            color: white;
+            content: "\e92e";
+            font-family: 'atelecom-icons' !important;
+            font-size: 48px;
+            @include breakpoint ($large) {
+              font-size: 30px;
+            }
+            @include breakpoint ($tablet) {
+              font-size: 28px;
+            }
+            padding-right: 8px;
+          }
+        }
+      }
+      .slider-premiere {
+        button {
+          top: 28%;
+        }
       }
     }
-  }
 
-  .vod-film-category{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin-bottom: 40px;
-    .vod-film-category-title{
+    .vod-film-category {
       position: relative;
       display: block;
       overflow: hidden;
-      h2.global-subtitle{
-        @include breakpoint($tablet) {
-          margin-bottom: 10px;
+      margin-bottom: 40px;
+      .vod-film-category-title {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        h2.global-subtitle {
+          @include breakpoint($tablet) {
+            margin-bottom: 10px;
+          }
         }
-      }
-      a.all-vod-category{
-        color: $pink;
-        text-align: right;
-        font-size: 16px;
-        line-height: 46px;
-        margin-bottom: 25px;
-        position: absolute;
-        top:0;
-        right: 10px;
-        text-decoration: underline !important;
-        @include breakpoint($tablet) {
-          position: relative;
-          display: block;
-          text-align: center;
-          margin: 0;
-          float: none;
-          clear: both;
-          top: auto;
-          right: auto;
+        a.all-vod-category {
+          color: $pink;
+          text-align: right;
+          font-size: 16px;
+          line-height: 46px;
+          margin-bottom: 25px;
+          position: absolute;
+          top: 0;
+          right: 10px;
+          text-decoration: underline !important;
+          @include breakpoint($tablet) {
+            position: relative;
+            display: block;
+            text-align: center;
+            margin: 0;
+            float: none;
+            clear: both;
+            top: auto;
+            right: auto;
+          }
         }
       }
     }
   }
-}
 
-.list-vod-films{
-  position: relative;
-  display: block;
-  overflow: hidden;
-  clear: both;
-  margin-bottom: 20px;
-  .film-row{
+  .list-vod-films {
     position: relative;
     display: block;
     overflow: hidden;
     clear: both;
-    margin-top:20px;
-  }
-  .element-film{
-    @include span(2 of 12);
-    margin-bottom: 40px;
-
-    @include breakpoint($tablet) {
-      @include span(4 of 12);
-      margin-bottom: 20px;
-    }
-    @include breakpoint($mobile) {
-      @include span(12 of 12);
-      margin: 30px 0;
-    }
-    &.last{
-      @include last;
-    }
-    &.last-tablet{
-      @include breakpoint($tablet) {
-        @include last;
-      }
-    }
-    .film-image{
+    margin-bottom: 20px;
+    .film-row {
       position: relative;
       display: block;
       overflow: hidden;
-      img{
+      clear: both;
+      margin-top: 20px;
+    }
+    .element-film {
+      @include span(2 of 12);
+      margin-bottom: 40px;
+
+      @include breakpoint($tablet) {
+        @include span(4 of 12);
+        margin-bottom: 20px;
+      }
+      @include breakpoint($mobile) {
+        @include span(12 of 12);
+        margin: 30px 0;
+      }
+      &.last {
+        @include last;
+      }
+      &.last-tablet {
+        @include breakpoint($tablet) {
+          @include last;
+        }
+      }
+      .film-image {
         position: relative;
         display: block;
         overflow: hidden;
-        width: 100%;
+        img {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          width: 100%;
+        }
       }
     }
   }
-}
-.film-title{
-  position: relative;
-  display: block;
-  overflow: hidden;
-  text-align: center;
-  color: $greydark;
-  font-size: 16px;
-  line-height: 21px;
-  margin-top:5px;
-  font-weight: bold;
-  clear: both;
-}
-.film-genre{
-  position: relative;
-  display: block;
-  overflow: hidden;
-  text-align: center;
-  color: $greydark;
-  font-size: 16px;
-  line-height: 21px;
-  margin-top:5px;
-  font-weight: normal;
-  clear: both;
-}
-.film-info{
-  position: relative;
-  display: block;
-  overflow: hidden;
-  text-transform: uppercase;
-  margin-top:5px;
-  width: 50%;
-  float: left;
-  .film-quality{
+  .film-title {
     position: relative;
     display: block;
-    float: left;
+    overflow: hidden;
+    text-align: center;
+    color: $greydark;
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 5px;
+    font-weight: bold;
+    clear: both;
+  }
+  .film-genre {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    color: $greydark;
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 5px;
+    font-weight: normal;
+    clear: both;
+  }
+  .film-info {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-transform: uppercase;
+    margin-top: 5px;
     width: 50%;
-    text-align: right;
+    float: left;
+    .film-quality {
+      position: relative;
+      display: block;
+      float: left;
+      width: 50%;
+      text-align: right;
+      color: $greydark;
+      font-size: 16px;
+      line-height: 25px;
+      padding-right: 5px;
+    }
+    .film-price {
+      position: relative;
+      display: block;
+      float: left;
+      width: 50%;
+      font-weight: bold;
+      text-align: left;
+      color: $greydark;
+      font-size: 21px;
+      line-height: 25px;
+      padding-left: 5px;
+    }
+  }
+  .film-quality-price {
+    position: relative;
+    display: block;
+    clear: both;
+    width: 100%;
+    text-align: center;
     color: $greydark;
     font-size: 16px;
     line-height: 25px;
-    padding-right: 5px;
+    strong {
+      font-weight: bold;
+    }
   }
-  .film-price{
+
+  .videoWrapper {
     position: relative;
-    display: block;
-    float: left;
-    width: 50%;
-    font-weight: bold;
-    text-align: left;
-    color: $greydark;
-    font-size: 21px;
-    line-height: 25px;
-    padding-left:5px;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
   }
-}
-.film-quality-price{
-  position: relative;
-  display: block;
-  clear: both;
-  width: 100%;
-  text-align: center;
-  color: $greydark;
-  font-size: 16px;
-  line-height: 25px;
-  strong{
-    font-weight: bold;
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
-}
 
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.video-film {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin-top: 50px;
-  min-height: 75px;
-  img{
+  .video-film {
     position: relative;
     display: block;
     overflow: hidden;
-    width: 100%;
-    z-index: 1;
-    @include breakpoint($tablet) {
-      z-index: auto;
-    }
-  }
-  .overlay-video-info {
-    //position: absolute;
-    //bottom:0;
-    width: 100%;
-    height: auto;
-    display: block;
-    overflow: hidden;
-    background-color: $greydark;
-    z-index: 2;
-    @include breakpoint($tablet) {
-      background-color: $black;
+    margin-top: 50px;
+    min-height: 75px;
+    img {
       position: relative;
       display: block;
       overflow: hidden;
-      z-index: auto;
-    }
-    .video-title-film{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      float: left;
-      width: 50%;
-      color: $white;
-      font-size: 30px;
-      line-height: 35px;
-      padding: 20px 50px;
+      width: 100%;
+      z-index: 1;
       @include breakpoint($tablet) {
-        width: 100%;
-        clear: both;
-        float: none;
-        padding: 10px 20px;
+        z-index: auto;
       }
     }
-    .video-more-info{
-      position: relative;
+    .overlay-video-info {
+      //position: absolute;
+      //bottom:0;
+      width: 100%;
+      height: auto;
       display: block;
       overflow: hidden;
-      float: right;
-      width: auto;
-      color: $white;
+      background-color: $greydark;
+      z-index: 2;
       @include breakpoint($tablet) {
-        width: 100%;
-        clear: both;
-        float: none;
-        padding: 10px 20px;
+        background-color: $black;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        z-index: auto;
       }
-      .video-film-age{
+      .video-title-film {
         position: relative;
         display: block;
         overflow: hidden;
         float: left;
-        margin: 20px 25px;
-        font-size: 14px;
-        line-height: 25px;
-        background-color: #f6a623;
-        font-weight: bold;
-        color: #333333;
-        width: 25px;
-        height: 25px;
-        border-radius: 25%;
-        text-align: center;
-        @include breakpoint($tablet) {
-          margin-left: 0;
-          margin-top: 0;
-          margin-bottom: 0;
-        }
-      }
-      .video-film-duration{
-        position: relative;
-        display: block;
-        overflow: hidden;
-        float: left;
-        margin: 15px 25px;
+        width: 50%;
+        color: $white;
         font-size: 30px;
         line-height: 35px;
+        padding: 20px 50px;
         @include breakpoint($tablet) {
-          margin-top: 0;
-          margin-bottom: 0;
+          width: 100%;
+          clear: both;
+          float: none;
+          padding: 10px 20px;
         }
       }
-      .video-film-genre{
+      .video-more-info {
         position: relative;
         display: block;
         overflow: hidden;
-        float: left;
-        margin: 15px 25px;
-        font-size: 16px;
-        line-height: 35px;
+        float: right;
+        width: auto;
+        color: $white;
         @include breakpoint($tablet) {
-          margin-top: 0;
-          margin-bottom: 0;
+          width: 100%;
+          clear: both;
+          float: none;
+          padding: 10px 20px;
         }
-      }
-      .video-film-year{
-        position: relative;
-        display: block;
-        overflow: hidden;
-        float: left;
-        margin: 15px 25px;
-        font-size: 16px;
-        line-height: 35px;
-        @include breakpoint($tablet) {
-          margin-top: 0;
-          margin-bottom: 0;
+        .video-film-age {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          float: left;
+          margin: 20px 25px;
+          font-size: 14px;
+          line-height: 25px;
+          background-color: #f6a623;
+          font-weight: bold;
+          color: #333333;
+          width: 25px;
+          height: 25px;
+          border-radius: 25%;
+          text-align: center;
+          @include breakpoint($tablet) {
+            margin-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+        }
+        .video-film-duration {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          float: left;
+          margin: 15px 25px;
+          font-size: 30px;
+          line-height: 35px;
+          @include breakpoint($tablet) {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+        }
+        .video-film-genre {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          float: left;
+          margin: 15px 25px;
+          font-size: 16px;
+          line-height: 35px;
+          @include breakpoint($tablet) {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+        }
+        .video-film-year {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          float: left;
+          margin: 15px 25px;
+          font-size: 16px;
+          line-height: 35px;
+          @include breakpoint($tablet) {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
         }
       }
     }
   }
-}
-.info-detail-film{
-  position: relative;
-  display: block;
-  overflow: hidden;
-  clear: both;
-  margin-top: 35px;
-  .info-detail-img{
+  .info-detail-film {
     position: relative;
     display: block;
     overflow: hidden;
-    float: left;
-    width: 30%;
-    @include breakpoint($mobile) {
-      width: 100%;
-      float: none;
-      clear: both;
-    }
-    img{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      width: 100%;
-    }
-  }
-  .more-info{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    float: left;
-    width: 70%;
-    padding-left: 50px;
-    @include breakpoint($tablet) {
-      padding-left: 20px;
-    }
-    @include breakpoint($mobile) {
-      width: 100%;
-      float: none;
-      clear: both;
-      padding: 0;
-      margin-top: 20px;
-    }
-    .more-info-price-quality{
+    clear: both;
+    margin-top: 35px;
+    .info-detail-img {
       position: relative;
       display: block;
       overflow: hidden;
       float: left;
-      font-size: 21px;
-      line-height: 25px;
-      color: $greydark;
-      @include breakpoint($tablet) {
-        clear: both;
+      width: 30%;
+      @include breakpoint($mobile) {
+        width: 100%;
         float: none;
-      }
-      strong{
-        font-weight: bold;
-        color: $pink;
-      }
-    }
-    .more-info-available-until{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      float: right;
-      text-align: right;
-      font-size: 16px;
-      line-height: 25px;
-      color: $greydark;
-      font-weight: bold;
-      @include breakpoint($tablet) {
         clear: both;
-        float: none;
-        text-align: left;
       }
-    }
-    .more-info-description{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      clear: both;
-      p{
+      img {
         position: relative;
         display: block;
         overflow: hidden;
-        text-align:left;
+        width: 100%;
+      }
+    }
+    .more-info {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      float: left;
+      width: 70%;
+      padding-left: 50px;
+      @include breakpoint($tablet) {
+        padding-left: 20px;
+      }
+      @include breakpoint($mobile) {
+        width: 100%;
+        float: none;
+        clear: both;
+        padding: 0;
+        margin-top: 20px;
+      }
+      .more-info-price-quality {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        float: left;
+        font-size: 21px;
+        line-height: 25px;
+        color: $greydark;
+        @include breakpoint($tablet) {
+          clear: both;
+          float: none;
+        }
+        strong {
+          font-weight: bold;
+          color: $pink;
+        }
+      }
+      .more-info-available-until {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        float: right;
+        text-align: right;
+        font-size: 16px;
+        line-height: 25px;
+        color: $greydark;
+        font-weight: bold;
+        @include breakpoint($tablet) {
+          clear: both;
+          float: none;
+          text-align: left;
+        }
+      }
+      .more-info-description {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        clear: both;
+        p {
+          position: relative;
+          display: block;
+          overflow: hidden;
+          text-align: left;
+          font-size: 16px;
+          line-height: 21px;
+          color: $greydark;
+          margin-bottom: 20px;
+        }
+      }
+      h2 {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        clear: both;
+        font-weight: bold;
+        margin: 15px 0;
+      }
+      .separator {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        clear: both;
+        width: 100%;
+        content: "";
+        margin: 20px 0;
+        border: 1px solid $gris3;
+      }
+      h4.title-more-info {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        float: left;
+        font-size: 16px;
+        line-height: 21px;
+        color: $gris3;
+        margin: 0 30px 0 0;
+        width: 130px;
+        @include breakpoint($tablet) {
+          clear: both;
+          float: none;
+        }
+      }
+      .content-more-info {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        float: left;
         font-size: 16px;
         line-height: 21px;
         color: $greydark;
-        margin-bottom: 20px;
+        @include breakpoint($tablet) {
+          clear: both;
+          float: none;
+        }
       }
-    }
-    h2{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      clear: both;
-      font-weight: bold;
-      margin: 15px 0;
-    }
-    .separator{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      clear: both;
-      width: 100%;
-      content: "";
-      margin: 20px 0;
-      border: 1px solid $gris3;
-    }
-    h4.title-more-info{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      float:left;
-      font-size: 16px;
-      line-height: 21px;
-      color: $gris3;
-      margin: 0 30px 0 0;
-      width: 130px;
-      @include breakpoint($tablet) {
+      .more-info-director {
+        position: relative;
+        display: block;
+        overflow: hidden;
         clear: both;
-        float: none;
+        margin-bottom: 10px;
       }
-    }
-    .content-more-info{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      float:left;
-      font-size: 16px;
-      line-height: 21px;
-      color: $greydark;
-      @include breakpoint($tablet) {
+      .more-info-cast {
+        position: relative;
+        display: block;
+        overflow: hidden;
         clear: both;
-        float: none;
+        margin-bottom: 10px;
       }
-    }
-    .more-info-director{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      clear: both;
-      margin-bottom: 10px;
-    }
-    .more-info-cast{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      clear: both;
-      margin-bottom: 10px;
-    }
-    .more-info-genre{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      clear: both;
-      margin-bottom: 10px;
-    }
-    .more-info-audio{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      clear: both;
-      margin-bottom: 10px;
-    }
-    .more-info-subtitle{
-      position: relative;
-      display: block;
-      overflow: hidden;
-      clear: both;
-      margin-bottom: 10px;
+      .more-info-genre {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        clear: both;
+        margin-bottom: 10px;
+      }
+      .more-info-audio {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        clear: both;
+        margin-bottom: 10px;
+      }
+      .more-info-subtitle {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        clear: both;
+        margin-bottom: 10px;
+      }
     }
   }
-}
 
-.intro-three-quarters{
-  position: relative;
-  display: block;
-  float: left;
-  width: 70%;
-  padding-right: 30px;
-  margin-top: 50px;
-  h1.main-title{
-    margin-top: 0;
-  }
-  @include breakpoint($tablet) {
-    width: 100%;
-  }
-}
-.intro-one-quarter{
-  position: relative;
-  display: block;
-  float: left;
-  width: 30%;
-  margin-top: 50px;
-  @include breakpoint($tablet) {
-    width: 100%;
-    margin-top: 20px;
-  }
-  img{
+  .intro-three-quarters {
     position: relative;
     display: block;
-    margin: 0 auto;
+    float: left;
+    width: 70%;
+    padding-right: 30px;
+    margin-top: 50px;
+    h1.main-title {
+      margin-top: 0;
+    }
     @include breakpoint($tablet) {
-      width: 150px;
+      width: 100%;
     }
   }
-}
-
-.film-buy{
-  margin-top: 70px;
-  h2{
+  .intro-one-quarter {
+    position: relative;
+    display: block;
+    float: left;
+    width: 30%;
+    margin-top: 50px;
     @include breakpoint($tablet) {
-     text-align: center;
+      width: 100%;
+      margin-top: 20px;
+    }
+    img {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      @include breakpoint($tablet) {
+        width: 150px;
+      }
     }
   }
-  .three-columns-row .three-columns-element .three-columns-description {
-    font-size: 16px;
-    padding: 0 38px;
+
+  .film-buy {
+    margin-top: 70px;
+    h2 {
+      @include breakpoint($tablet) {
+        text-align: center;
+      }
+    }
+    .three-columns-row .three-columns-element .three-columns-description {
+      font-size: 16px;
+      padding: 0 38px;
+    }
   }
-}
 
-// All NEWS
-.vod-films-all-news {
-  @include span(12);
+  // All NEWS
+  .vod-films-all-news {
+    @include span(12);
 
-  >div {
-    @include gallery(2 of 12);
-    margin-bottom: 60px;
-    .main-image {
-      img {
-        width: 100%;
+    > div {
+      @include gallery(2 of 12);
+      margin-bottom: 60px;
+      .main-image {
+        img {
+          width: 100%;
+        }
       }
     }
   }
