@@ -28,6 +28,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-download:before {
+  content: "\e942";
+}
+.icon-folder:before {
+  content: "\e941";
+}
 .icon-asterisk:before {
   content: "\e93d";
 }

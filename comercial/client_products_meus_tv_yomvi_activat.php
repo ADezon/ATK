@@ -491,6 +491,7 @@
         <span class="icons icon-close"></span>
       </div>
       <div class="alert-general-title">
+        <h2 class="half">Canals contractats per 123123</h2><img src="./images/products/movistar-plus.png" />
       </div>
       <div class="alert-general-body">
       </div>
@@ -502,6 +503,9 @@
 
   <script language="JavaScript">
       $(document).ready(function () {
+
+          revealalert();
+
 
           // Fold-Unfold ITEMS
           // We start closing ALL (on load PAGE) not marked has "opened"

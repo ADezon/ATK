@@ -605,7 +605,7 @@ button {
   label {
     display: block;
     position: relative;
-    font-size: 13px;
+    font-size: 16px;
     color: $greymedium;
     line-height: 19px;
     padding: 0 0 0 25px;
@@ -613,8 +613,8 @@ button {
     cursor: pointer;
     -webkit-transition: all 0.25s linear;
     a {
-      color: $gris3;
-      font-size: 13px;
+      color: $pink;
+      font-size: 16px;
       font-weight: bold;
       line-height: 19px;
       text-decoration: underline !important;

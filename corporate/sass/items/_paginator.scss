@@ -81,6 +81,7 @@
       float: left;
       position: relative;
       width: 80%;
+      @include breakpoint ($mobile) { width: 60%; }
     }
     .icon-left{
       color:$pink;

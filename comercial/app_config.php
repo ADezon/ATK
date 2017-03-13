@@ -16,8 +16,7 @@
       <div class="content">
         <h2 class="global-subtitle">Permisos usuaris</h2>
         <div class="sidebar">
-          <p class="full-centered"><span class="icons icon-client"></span><span
-                class="icons icon-arrow-rightleft"></span><span class="icons icon-mobile"></span></p>
+          <p class="full-centered"><span class="icons icon-communicate"></span></p>
           <p class="full-centered">Desactiva les línies a les que vols treure l’accés.</p>
         </div>
         <div class="content-ws">
