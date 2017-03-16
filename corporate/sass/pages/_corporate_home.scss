@@ -122,6 +122,9 @@
   height: 80px;
   .readmore {
     line-height: 40px;
+    @include breakpoint ($mobile) {
+      margin-bottom: 14px;
+    }
   }
 }
 .home-subtile {
@@ -129,6 +132,11 @@
   font-size: 36px;
   font-weight: 300;
   margin-right: 20px;
+  @include breakpoint ($mobile) {
+    font-size: 24px;
+    float: none;
+    width: 100%;
+  }
 }
 
 

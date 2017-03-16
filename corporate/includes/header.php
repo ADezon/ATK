@@ -124,9 +124,7 @@
             <a href="#" title="">Bloc</a>
           </li>
         </ul>
-        <div class="button-login-client" href="https://www.google.es" target="_blank" title="">
-          <div>Goto commercial</div>
-        </div>
+        <div class="append-button-mobile">&nbsp;</div>
       </div>
     </div>
   </div>

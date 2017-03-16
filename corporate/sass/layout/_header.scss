@@ -412,6 +412,7 @@
       }
     }
   }
+
   #head{
     background: $pink; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left, $fadepinkleft , $fadepinkright); /* For Safari 5.1 to 6.0 */
@@ -420,6 +421,9 @@
     background: linear-gradient(to right, $fadepinkleft , $fadepinkright); /* Standard syntax */
     height: 72px;
     padding: 0;
+
+    .append-button-mobile { float: left; }
+
     .logo{
       display: block;
       float: left;

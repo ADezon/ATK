@@ -1044,8 +1044,10 @@
         &:hover {
           background: #f0f0f0;
           .menu-title { color: #333333; }
+
           @include breakpoint($tablet) {
             background-color: $greydark;
+            .menu-title { color: #ffffff; }
           }
           a {
             color: black;

@@ -83,7 +83,7 @@ $(document).ready(function () {
     //If width is more than 720px dropdowns are displayed on CLICK
     $(".menu > ul > li").click(function () {
         if ($(window).width() <= 768) {
-            // $(this).children(".container-submenu").fadeToggle(250);
+            $(this).children(".container-submenu").fadeToggle(250);
         }
     });
     //If width is less or equal to 720px dropdowns are displayed on click (thanks Aman Jain from stackoverflow)
