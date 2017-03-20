@@ -6,6 +6,12 @@
       width: 100%;
     }
   }
+  .slider-corporate-home {
+    @include breakpoint ($mobile) {
+      height: 404px;
+    }
+  }
+
   .slider-corporate-home,
   .slider-sponsors {
     width: 100%;
