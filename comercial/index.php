@@ -255,7 +255,37 @@
         <label for="call-cack-phone">Telèfon</label>
         <input type="text" id="call-cack-phone">
         <div class="captcha">
-          <img src="./images/captcha.png">
+          <div class="captcha">
+            <div class="taglib-captcha"><img alt="Text per identificar" class="captcha"
+                                             id="_ad_at_portal_login_portlet_LoginPortlet_INSTANCE_menuLogin_captcha"
+                                             src="uploaded_files/captcha.jpg">
+              <span class="refresh lfr-portal-tooltip" data-title="Refresca CAPTCHA"> <a href="javascript:;"
+                                                                                         target="_self"
+                                                                                         class=" lfr-icon-item taglib-icon"
+                                                                                         id="_ad_at_portal_login_portlet_LoginPortlet_INSTANCE_menuLogin_refreshCaptcha"> <i
+                      class="icon-refresh"></i> <span
+                      class="taglib-text hide-accessible">Refresca CAPTCHA</span> </a> </span>
+              <div class="form-group input-text-wrapper has-error"><label class="control-label"
+                                                                          for="_ad_at_portal_login_portlet_LoginPortlet_INSTANCE_menuLogin_captchaText">
+                  Verificació del text <span class="text-warning"> <svg class="lexicon-icon lexicon-icon-asterisk"
+                                                                        role="img" title="" viewBox="0 0 512 512">
+<path class="lexicon-icon-outline" d="M323.6,190l146.7-48.8L512,263.9l-149.2,47.6l93.6,125.2l-104.9,76.3l-96.1-126.4l-93.6,126.4L56.9,435.3l92.3-123.9
+	L0,263.8l40.4-122.6L188.4,190v-159h135.3L323.6,190L323.6,190z"></path>
+</svg> </span> <span class="hide-accessible">Obligatori</span> </label> <input class="field form-control error-field"
+                                                                               id="_ad_at_portal_login_portlet_LoginPortlet_INSTANCE_menuLogin_captchaText"
+                                                                               name="_ad_at_portal_login_portlet_LoginPortlet_INSTANCE_menuLogin_captchaText"
+                                                                               type="text" value="" size="10"
+                                                                               aria-required="true"
+                                                                               aria-describedby="_ad_at_portal_login_portlet_LoginPortlet_INSTANCE_menuLogin_captchaTextHelper"
+                                                                               aria-invalid="true">
+                <div class="form-validator-stack help-block"
+                     id="_ad_at_portal_login_portlet_LoginPortlet_INSTANCE_menuLogin_captchaTextHelper">
+                  <div role="alert" class="required">Aquest camp és obligatori.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--          <img src="./images/captcha.png">-->
         </div>
         <div class="checkbox-custom">
           <input type="checkbox" id="cb-conditions"

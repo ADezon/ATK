@@ -77,6 +77,7 @@
       <a href="#" class="button-pink">Test with class</a>
     </div>
   </div>
+
   <!--END GENRRAL ITEMS-->
 </div>
 <?php include 'includes/footer.php'; ?>
