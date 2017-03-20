@@ -11,6 +11,9 @@
     width: 100%;
     position: relative;
     margin-bottom: 80px;
+    @include breakpoint ($mobile) {
+      margin-bottom: 10px;
+    }
 
     .slide-item {
       background-color: #f4f4f4;
