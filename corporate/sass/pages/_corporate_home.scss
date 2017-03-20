@@ -1,303 +1,313 @@
-.content-wide {
-  width: 100%;
-  img {
-    width: 100%;
-  }
-}
-.slider-corporate-home,
-.slider-sponsors {
-  width: 100%;
-  position: relative;
-  margin-bottom: 80px;
+#main-content {
 
-  .slide-item {
-    background-color: #f4f4f4;
-  }
-  .img-slider {
+  .content-wide {
     width: 100%;
     img {
-      margin: 0 auto;
-      &.righted {
-        margin: 0 36%;
-      }
+      width: 100%;
     }
   }
-
-  .width-limiter {
-    position: absolute;
-    width: 1900px; /* CHANGE to WIDHT in JS */
-    margin: 0 auto;
-    z-index: 600;
-    height: 400px;
-    top: 0;
-  }
-  .left-block {
-    position: absolute;
-    left: 0;
-    width: 320px;
-    top: 6%;
-    padding: 2%;
-    line-height: 22px;
-  }
-  .right-block {
-    position: absolute;
-    right: 0;
-    width: 320px;
-    top: 6%;
-    padding: 2%;
-    line-height: 22px;
-  }
-  ul.slick-dots {
+  .slider-corporate-home,
+  .slider-sponsors {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
+    position: relative;
+    margin-bottom: 80px;
 
-    li {
-      display: inline-block;
-      width: fit-content;
-      button {
-        background-color: $grey;
-        width: 50px;
-        height: 10px;
-        border: medium none;
-        margin: 0 5px 0 0;
-        padding: 6px 20px;
-        color: transparent;
-        font-size: 0;
-        line-height: 0;
-        outline: none;
-        border-radius: 0;
-      }
-      &.slick-active {
-        button {
-          background-color: $gris3;
+    .slide-item {
+      background-color: #f4f4f4;
+    }
+    .img-slider {
+      width: 100%;
+      img {
+        margin: 0 auto;
+        &.righted {
+          margin: 0 36%;
         }
       }
     }
-  }
-  // Excepciones
-  .left-block .left-block-content {
-    a.button-pink {
-      font-size: 18px;
-      margin-left: 24px;
-      margin-top: 194px;
-      padding: 10px 20px;
+
+    .width-limiter {
+      position: absolute;
+      width: 1900px; /* CHANGE to WIDHT in JS */
+      margin: 0 auto;
+      z-index: 600;
+      height: 400px;
+      top: 0;
     }
-  }
+    .left-block {
+      position: absolute;
+      left: 0;
+      width: 320px;
+      top: 6%;
+      padding: 2%;
+      line-height: 22px;
+    }
+    .right-block {
+      position: absolute;
+      right: 0;
+      width: 320px;
+      top: 6%;
+      padding: 2%;
+      line-height: 22px;
+    }
+    ul.slick-dots {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
 
-  .right-block {
-
-    .appstore {
-      width: 126px;
-      margin-top: 56px;
-      margin-right: 48px;
-
-      img {
-        width: 100%;
-        margin-bottom: 15px;
+      li {
+        display: inline-block;
+        width: fit-content;
+        button {
+          background-color: $grey;
+          width: 50px;
+          height: 10px;
+          border: medium none;
+          margin: 0 5px 0 0;
+          padding: 6px 20px;
+          color: transparent;
+          font-size: 0;
+          line-height: 0;
+          outline: none;
+          border-radius: 0;
+        }
+        &.slick-active {
+          button {
+            background-color: $gris3;
+          }
+        }
       }
     }
-  }
+    // Excepciones
+    .left-block .left-block-content {
+      a.button-pink {
+        font-size: 18px;
+        margin-left: 24px;
+        margin-top: 194px;
+        padding: 10px 20px;
+      }
+    }
 
-  // All kind of SLIDES
-  .slide-title {
-    color: $pink;
-    font-family: Roboto, SansSerif;
-    font-size: 26px;
-    line-height: 28px;
-    margin-bottom: 20px;
-  }
-  .slide-message {
-    color: white;
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-}
+    .right-block {
 
-.block-header {
-  clear: both;
-  float: none;
-  height: 80px;
-  .readmore {
-    line-height: 40px;
-    @include breakpoint ($mobile) {
-      margin-bottom: 14px;
+      .appstore {
+        width: 126px;
+        margin-top: 56px;
+        margin-right: 48px;
+
+        img {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    // All kind of SLIDES
+    .slide-title {
+      color: $pink;
+      font-family: Roboto, SansSerif;
+      font-size: 26px;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+    .slide-message {
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 20px;
     }
   }
-}
-.home-subtile {
-  float: left;
-  font-size: 36px;
-  font-weight: 300;
-  margin-right: 20px;
-  @include breakpoint ($mobile) {
-    font-size: 24px;
+
+  .block-header {
+    clear: both;
     float: none;
-    width: 100%;
-  }
-}
-
-
-/* NEWS */
-.news-featured {
-  width: 32%;
-  margin-right: 2%;
-  float: left;
-  @include breakpoint ($tablet) { width: 100%; margin: 0 0 2% 0; }
-  img { width: 100%; }
-  .date-home { margin: 14px 0; }
-}
-
-.news-list {
-  width: 32%;
-  float: left;
-  @include breakpoint ($tablet) { width: 100%; }
-
-  .item-list {
-    float: left;
-    width: 100%;
-    margin-bottom: 20px;
-    color: $products-fontcolor;
-    a {
-      color: $products-fontcolor;
-    }
-
-    .image-block {
-      float: left;
-      margin-right: 14px;
-      img {
-        width: 80px;
+    height: 80px;
+    .readmore {
+      line-height: 40px;
+      @include breakpoint ($mobile) {
+        margin-bottom: 14px;
       }
     }
   }
-
-}
-
-/* AGENDA */
-.agenda-item {
-  width: 100%;
-  float: left;
-  margin-bottom: 26px;
-
-  .agenda-date {
+  .home-subtile {
     float: left;
-    width: 98px;
-    margin-right: 16px;
-    background-color: #f4f4f4;
-    color: $pink;
-    padding: 10px;
-
-    .data-day {
+    font-size: 36px;
+    font-weight: 300;
+    margin-right: 20px;
+    @include breakpoint ($mobile) {
+      font-size: 24px;
+      float: none;
       width: 100%;
-      font-size: 48px;
-      line-height: 48px;
-      text-align: center;
-      font-weight: bold;
-    }
-    .data-month {
-      width: 100%;
-      font-size: 30px;
-      text-align: center;
-      font-weight: 400;
-      text-transform: uppercase;
     }
   }
-  .agenda-info {
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 18px;
-    margin-top: 14px;
-    color: $products-fontcolor;
+
+  /* NEWS */
+  .news-featured {
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+    @include breakpoint ($tablet) {
+      width: 100%;
+      margin: 0 0 2% 0;
+    }
+    img {
+      width: 100%;
+    }
+    .date-home {
+      margin: 14px 0;
+    }
   }
 
-  &.featured {
-    background-color: #f4f4f4;
+  .news-list {
+    width: 32%;
+    float: left;
+    @include breakpoint ($tablet) {
+      width: 100%;
+    }
+
+    .item-list {
+      float: left;
+      width: 100%;
+      margin-bottom: 20px;
+      color: $products-fontcolor;
+      a {
+        color: $products-fontcolor;
+      }
+
+      .image-block {
+        float: left;
+        margin-right: 14px;
+        img {
+          width: 80px;
+        }
+      }
+    }
+
+  }
+
+  /* AGENDA */
+  .agenda-item {
+    width: 100%;
+    float: left;
+    margin-bottom: 26px;
+
     .agenda-date {
-      width: 120px;
-      padding: 20px;
+      float: left;
+      width: 98px;
+      margin-right: 16px;
+      background-color: #f4f4f4;
+      color: $pink;
+      padding: 10px;
+
       .data-day {
         width: 100%;
-        font-size: 60px;
-        line-height: 50px;
+        font-size: 48px;
+        line-height: 48px;
         text-align: center;
         font-weight: bold;
       }
+      .data-month {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
     }
     .agenda-info {
-      margin-top: 26px;
-    }
-  }
-}
-
-.date-home {
-  font-family: Roboto, SansSerif;
-  color: $gris3;
-  font-size: 12px;
-  font-weight: 300;
-  margin: 10px 0;
-}
-.new-featured-title a {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 300;
-}
-.excerpt {
-  color: $products-fontcolor;
-  font-family: Roboto, SansSerif;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 300;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  width: 90%;
-}
-.corporate .content-wide {
-  margin-bottom: 90px;
-}
-
-/* La nostra activitat */
-.home-activity {
-
-  .home-subtile {
-    margin-bottom: 60px;
-    @include breakpoint($tablet) {
-      margin-bottom: 20px;
-      margin-right: 0;
-    }
-  }
-}
-
-/* Slider Sponsors */
-.slider-sponsors {
-  img {
-    height: 340px;
-    width: 100%;
-    @include breakpoint($tablet) {
-      height: inherit;
-    }
-  }
-}
-.bloc-exceprt {
-  .excerpt {
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-    .readmore {
+      text-transform: uppercase;
       font-size: 14px;
-      text-transform: none;
+      line-height: 18px;
+      margin-top: 14px;
+      color: $products-fontcolor;
+    }
+
+    &.featured {
+      background-color: #f4f4f4;
+      .agenda-date {
+        width: 120px;
+        padding: 20px;
+        .data-day {
+          width: 100%;
+          font-size: 60px;
+          line-height: 50px;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+      .agenda-info {
+        margin-top: 26px;
+      }
+    }
+  }
+
+  .date-home {
+    font-family: Roboto, SansSerif;
+    color: $gris3;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 10px 0;
+  }
+  .new-featured-title a {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 300;
+  }
+  .excerpt {
+    color: $products-fontcolor;
+    font-family: Roboto, SansSerif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 90%;
+  }
+  .corporate .content-wide {
+    margin-bottom: 90px;
+  }
+
+  /* La nostra activitat */
+  .home-activity {
+
+    .home-subtile {
+      margin-bottom: 60px;
+      @include breakpoint($tablet) {
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  /* Slider Sponsors */
+  .slider-sponsors {
+    img {
+      height: 340px;
+      width: 100%;
+      @include breakpoint($tablet) {
+        height: inherit;
+      }
+    }
+  }
+  .bloc-exceprt {
+    .excerpt {
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      .readmore {
+        font-size: 14px;
+        text-transform: none;
+      }
+    }
+  }
+  .frontpage .shortcode-container {
+    padding: 10px 0;
+  }
+  #main-content ul.slick-dots li {
+    margin-bottom: 0;
+    &:before {
+      display: none;
     }
   }
 }
-.frontpage .shortcode-container {
-  padding: 10px 0;
-}
-#main-content ul.slick-dots li {
-  margin-bottom: 0;
-  &:before {
-    display: none;
-  }
-}
-

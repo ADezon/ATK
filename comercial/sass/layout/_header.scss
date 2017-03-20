@@ -434,12 +434,18 @@
       float: left;
       overflow: hidden;
       position: relative;
-      width: 130px;
+      width: 244px;
+      @include breakpoint ($mobile) { width: 130px; }
+
       img {
-        padding: 9px 0;
+        padding: 15px 0;
         display: block;
-        width: 128px;
+        width: 228px;
         position: relative;
+        @include breakpoint ($mobile) {
+          width: 128px;
+          padding: 26px 0;
+        }
       }
     }
     #nav-main {

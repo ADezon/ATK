@@ -1,319 +1,331 @@
-/* FAKE REGION PACK */
-.region-pack{
-  background-color: $white;
-  .i-region-pack{
-    display: block;
-    margin: 0 auto;
-    max-width: 1440px;
-    position: relative;
-    width:100%;
-  }
-}
-
-/* REGION TV */
-.cont-wrapper.region-tv {
-  .bg-region {
-    height: 100%;
-    position: absolute;
-    width:100%;
-  }
-  .content {
-    padding: 65px 0;
-    .i-yomvi{
+#main-content {
+  /* FAKE REGION PACK */
+  .region-pack {
+    background-color: $white;
+    .i-region-pack {
       display: block;
       margin: 0 auto;
-      max-width: 1092px;
-      padding: 0 20px;
+      max-width: 1440px;
       position: relative;
-      width:100%;
+      width: 100%;
     }
-    .info-tv{
-      //@include push(2 of 12);
-      @include span(6 of 12);
-      color: $white;
-      text-align: left;
-      @include breakpoint($tablet) {
-        @include span(12 of 12 last);
-        text-align: center;
+  }
+
+  /* REGION TV */
+  .cont-wrapper.region-tv {
+    .bg-region {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+    .content {
+      padding: 65px 0;
+      .i-yomvi {
+        display: block;
+        margin: 0 auto;
+        max-width: 1092px;
+        padding: 0 20px;
+        position: relative;
+        width: 100%;
       }
-      .title{
-        float: right;
-        width: 84%;
-        font-size: 48px;
-        font-weight: bold;
-        line-height: 53px;
-        margin-bottom: 10px;
+      .info-tv {
+        //@include push(2 of 12);
+        @include span(6 of 12);
+        color: $white;
+        text-align: left;
         @include breakpoint($tablet) {
-          font-size: 30px;
-          line-height: 35px;
-        }
-        @include breakpoint($mobile) {
-          font-size: 20px;
-          line-height: 25px;
-        }
-      }
-      .subtitle{
-        float: right;
-        width: 80%;
-        font-size: 24px;
-        line-height: 30px;
-        @include breakpoint($tablet) {
-          font-size: 20px;
-          line-height: 25px;
-        }
-        @include breakpoint($mobile) {
-          font-size: 16px;
-          line-height: 22px;
-        }
-      }
-    }
-    .info-tv-price{
-      @include push(1 of 12);
-      @include span(3 of 12);
-      @include breakpoint($tablet) {
-        @include span(12 of 12);
-        margin-top: 30px;
-        text-align: center;
-      }
-      span{
-        color: $white;
-        display: block;
-        font-size: 30px;
-        font-weight: bold;
-        line-height: 34px;
-        position: relative;
-        text-align: left;
-        margin-left: 46px;
-      }
-      .price{
-        display: block;
-        font-size: 72px;
-        line-height: 60px;
-        margin-bottom:20px;
-        position: relative;
-        text-align: left;
-        margin-left: 0;
-      }
-      .price-text{
-        color: $white;
-        display: inline-block;
-        font-size: 30px;
-        font-weight: 600;
-        line-height: 34px;
-        position: relative;
-        text-align: left;
-        margin-left: 0;
-      }
-    }
-    .button-pink{
-      margin-left: 6px;
-      @include breakpoint($tablet) {
-        margin-top: 0;
-      }
-    }
-  }
-
-}
-
-/* FAKE REGION TVPROGRAM */
-.region-tvprogram {
-  background-color: #eee;
-  .i-region-tvprogram{
-    display: block;
-    margin: 0 auto;
-    max-width: 1440px;
-    position: relative;
-    width:100%;
-  }
-}
-
-/* REGION SIGNUP */
-.region-signup {
-  background-color: $greydark;
-  padding: 52px 0;
-  h2{
-    color: $white;
-    display:block;
-    font-size: 30px;
-    line-height: 46px;
-    margin-bottom: 25px;
-    position: relative;
-    text-align: center;
-    @include breakpoint($tablet) {
-      font-size:20px;
-      line-height: 26px;
-    }
-  }
-  ul{
-    margin-top: 20px;
-    li{
-      &:before {
-        content: "";
-        display: none;
-      }
-      @include span(3 of 12);
-      float:left;
-      margin-bottom: 20px;
-      @include breakpoint($tablet) {
-        @include span(6 of 12 last);
-        float:left;
-      }
-      @include breakpoint($mobile) {
-        @include span(12 of 12 last);
-      }
-      &.last{
-        @include last;
-        .element-signup:after {
-          content: '';
-          display: none;
-          border: medium none;
-        }
-      }
-      .element-signup {
-        color: $white;
-        display: block;
-        font-size: 21px;
-        line-height: 24px;
-        overflow: hidden;
-        padding: 0 15px;
-        position: relative;
-        text-align: center;
-        &:after {
-          content: '';
-          border-right: 1px solid #cfd1d2;
-          height: 55px;
-          position: absolute;
-          right: 2px;
-          top: 16%;
-        }
-        @include breakpoint($mobile) {
-          &:after {
-            border:medium none;
-          }
-        }
-        .icons{
-          color: #cfd1d2;
-          font-size: 60px;
-          padding-right: 10px;
+          @include span(12 of 12 last);
           text-align: center;
+        }
+        .title {
+          float: right;
+          width: 84%;
+          font-size: 48px;
+          font-weight: bold;
+          line-height: 53px;
+          margin-bottom: 10px;
           @include breakpoint($tablet) {
             font-size: 30px;
+            line-height: 35px;
+          }
+          @include breakpoint($mobile) {
+            font-size: 20px;
+            line-height: 25px;
           }
         }
-        span{
-          display: block;
-          margin-top: 20px;
-          position: relative;
-          text-align:center;
+        .subtitle {
+          float: right;
+          width: 80%;
+          font-size: 24px;
+          line-height: 30px;
           @include breakpoint($tablet) {
+            font-size: 20px;
+            line-height: 25px;
+          }
+          @include breakpoint($mobile) {
             font-size: 16px;
-            line-height: 20px;
+            line-height: 22px;
           }
         }
       }
-      &:nth-child(2) .element-signup {
-        @include breakpoint ($tablet) {
-          &:after {
-            display: none;
-          }
+      .info-tv-price {
+        @include push(1 of 12);
+        @include span(3 of 12);
+        @include breakpoint($tablet) {
+          @include span(12 of 12);
+          margin-top: 30px;
+          text-align: center;
+        }
+        span {
+          color: $white;
+          display: block;
+          font-size: 30px;
+          font-weight: bold;
+          line-height: 34px;
+          position: relative;
+          text-align: left;
+          margin-left: 46px;
+        }
+        .price {
+          display: block;
+          font-size: 72px;
+          line-height: 60px;
+          margin-bottom: 20px;
+          position: relative;
+          text-align: left;
+          margin-left: 0;
+        }
+        .price-text {
+          color: $white;
+          display: inline-block;
+          font-size: 30px;
+          font-weight: 600;
+          line-height: 34px;
+          position: relative;
+          text-align: left;
+          margin-left: 0;
+        }
+      }
+      .button-pink {
+        margin-left: 6px;
+        @include breakpoint($tablet) {
+          margin-top: 0;
         }
       }
     }
-  }
-}
 
-/* FAKE REGION HELP */
-.region-help {
-  background-color: $white;
-
-  .half-page {
-    padding-right: 40px;
-    @include breakpoint ($tablet) {
-      padding: 0 5%;
-    }
   }
 
-  .i-region-help{
-    display: block;
-    margin: 50px auto 110px;
-    max-width: 892px;
-    position: relative;
-    width:100%;
-  }
-  .icon-callcenter {
-    float: left;
-    color: $pink;
-    font-size: 80px;
-    @include breakpoint ($mobile) {
+  /* FAKE REGION TVPROGRAM */
+  .region-tvprogram {
+    background-color: #eee;
+    .i-region-tvprogram {
+      display: block;
       margin: 0 auto;
+      max-width: 1440px;
+      position: relative;
       width: 100%;
+    }
+  }
+
+  /* REGION SIGNUP */
+  .region-signup {
+    background-color: $greydark;
+    padding: 52px 0;
+    h2 {
+      color: $white;
+      display: block;
+      font-size: 30px;
+      line-height: 46px;
+      margin-bottom: 25px;
+      position: relative;
       text-align: center;
+
+      @include breakpoint($tablet) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+    ul {
+      margin-top: 20px;
+      li {
+        margin-left: 0;
+        &:before {
+          content: "";
+          display: none;
+        }
+        @include span(3 of 12);
+        float: left;
+        margin-bottom: 20px;
+        @include breakpoint($tablet) {
+          @include span(6 of 12 last);
+          float: left;
+        }
+        @include breakpoint($mobile) {
+          @include span(12 of 12 last);
+        }
+        &.last {
+          @include last;
+          .element-signup:after {
+            content: '';
+            display: none;
+            border: medium none;
+          }
+        }
+        .element-signup {
+          color: $white;
+          display: block;
+          font-size: 21px;
+          line-height: 24px;
+          overflow: hidden;
+          padding: 0 15px;
+          position: relative;
+          text-align: center;
+          &:after {
+            content: '';
+            border-right: 1px solid #cfd1d2;
+            height: 55px;
+            position: absolute;
+            right: 2px;
+            top: 16%;
+          }
+          @include breakpoint($mobile) {
+            &:after {
+              border: medium none;
+            }
+          }
+          .icons {
+            color: #cfd1d2;
+            font-size: 60px;
+            padding-right: 10px;
+            text-align: center;
+            @include breakpoint($tablet) {
+              font-size: 30px;
+            }
+          }
+          span {
+            display: block;
+            margin-top: 20px;
+            position: relative;
+            text-align: center;
+            @include breakpoint($tablet) {
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+        }
+        &:nth-child(2) .element-signup {
+          @include breakpoint ($tablet) {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
     }
   }
-  .header-callcenter {
-    width: 100%;
-    float: left;
-  }
-  .title-callcenter {
-    float: left;
-    font-size: 30px;
-    font-weight: bold;
-    padding-left: 10%;
-    line-height: 56px;
 
-  }
-  .faq-question {
-    float: left;
-    color: $pink;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    width: 100%;
-    @include breakpoint ($mobile) { text-align: center; }
+  /* FAKE REGION HELP */
+  .region-help {
+    background-color: $white;
 
-  }
-
-  input[type="text"] {
-    float: left;
-    width: 86%;
-    @include breakpoint ($tablet) { width: 100%; }
-  }
-  input[type=submit] {
-    margin: 12px 0 0 30%;
-    @include breakpoint ($tablet) { margin: 12px 0 18px 0; }
-  }
-
-  // Right
-  .numbered-lists dt:before {
-    margin: 0;
-    height: 50px;
-    width: 50px;
-    line-height: 44px;
-    @include breakpoint ($mobile) {
-      height: 30px;
-      width: 30px;
-      line-height: 24px;
+    .half-page {
+      padding-right: 40px;
+      @include breakpoint ($tablet) {
+        padding: 0 5%;
+      }
     }
-  }
-  .numbered-lists dt {
-    padding: 0;
-    height: 52px;
-    margin-bottom: 10px;
-  }
-  .home-faq-item {
-    font-size: 20px;
-    line-height: 44px;
-    float: left;
-    padding-left: 3%;
-    @include breakpoint ($mobile) {
-      font-size: 16px;
-      line-height: 24px;
-      padding-left: 6%;
-      width: 80%;
+
+    .i-region-help {
+      display: block;
+      margin: 50px auto 110px;
+      max-width: 892px;
+      position: relative;
+      width: 100%;
     }
-    a {
-      color: $products-fontcolor;
-      &:hover { text-decoration: underline; }
+    .icon-callcenter {
+      float: left;
+      color: $pink;
+      font-size: 80px;
+      @include breakpoint ($mobile) {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .header-callcenter {
+      width: 100%;
+      float: left;
+    }
+    .title-callcenter {
+      float: left;
+      font-size: 30px;
+      font-weight: bold;
+      padding-left: 10%;
+      line-height: 56px;
+
+    }
+    .faq-question {
+      float: left;
+      color: $pink;
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      width: 100%;
+      @include breakpoint ($mobile) {
+        text-align: center;
+      }
+
+    }
+
+    input[type="text"] {
+      float: left;
+      width: 86%;
+      @include breakpoint ($tablet) {
+        width: 100%;
+      }
+    }
+    input[type=submit] {
+      margin: 12px 0 0 30%;
+      @include breakpoint ($tablet) {
+        margin: 12px 0 18px 0;
+      }
+    }
+
+    // Right
+    .numbered-lists dt:before {
+      margin: 0;
+      height: 50px;
+      width: 50px;
+      line-height: 44px;
+      @include breakpoint ($mobile) {
+        height: 30px;
+        width: 30px;
+        line-height: 24px;
+      }
+    }
+    .numbered-lists dt {
+      padding: 0;
+      height: 52px;
+      margin-bottom: 10px;
+    }
+    .home-faq-item {
+      font-size: 20px;
+      line-height: 44px;
+      float: left;
+      padding-left: 3%;
+      @include breakpoint ($mobile) {
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 6%;
+        width: 80%;
+      }
+      a {
+        color: $products-fontcolor;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }

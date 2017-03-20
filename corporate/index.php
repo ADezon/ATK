@@ -5,41 +5,39 @@
   <div class="cont-wrapper">
     <div class="slider-corporate-home">
 
-      <div class="slide-item">
-        <div class="img-slider"><img src="uploaded_files/slider-home-corp.jpg"/></a></div>
-        <div class="width-limiter">
-          <div class="left-block">
-            <div class="left-block-content">
-              <a href="#" title="Andorra Go" class="button-pink">Qué es Andorra Go!</a>
-            </div>
-
-          </div>
-          <div class="right-block">
-            <div class="right-block-content">
-              <div class="appstore">
-                <a href="#" title=""><img src="./images/icons/apps/App_Store_black.png"/></a>
-                <a href="#" title=""><img src="./images/icons/apps/logo-google-play-vetor.png"/></a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="slide-item" style="background-color: black;">
         <div class="img-slider"><img src="./uploaded_files/main-home.jpg" /></div>
         <div class="width-limiter">
           <div class="left-block">
             <div class="slide-title">El nou edifici d'Andorra Telecom serà <strong>un núvol de vidre</strong></div>
             <div class="slide-message">
-             "The Cloud" guanya el concurs d'idees per refer l'illa d'edificis que inclou Andorra Telecom i la caserna de Bombers a Andorra la Vella
+              "The Cloud" guanya el concurs d'idees per refer l'illa d'edificis que inclou Andorra Telecom i la caserna de Bombers a Andorra la Vella
             </div>
             <a href="#" class="button-pink">Llegir més</a>
-
           </div>
-
         </div>
       </div>
+
+<!--      <div class="slide-item">-->
+<!--        <div class="img-slider"><img src="uploaded_files/slider-home-corp.jpg"/></a></div>-->
+<!--        <div class="width-limiter">-->
+<!--          <div class="left-block">-->
+<!--            <div class="left-block-content">-->
+<!--              <a href="#" title="Andorra Go" class="button-pink">Qué es Andorra Go!</a>-->
+<!--            </div>-->
+<!---->
+<!--          </div>-->
+<!--          <div class="right-block">-->
+<!--            <div class="right-block-content">-->
+<!--              <div class="appstore">-->
+<!--                <a href="#" title=""><img src="./images/icons/apps/App_Store_black.png"/></a>-->
+<!--                <a href="#" title=""><img src="./images/icons/apps/logo-google-play-vetor.png"/></a>-->
+<!--              </div>-->
+<!---->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
       <div class="slide-item">
         <div class="img-slider"><img src="https://dummyimage.com/1900x412/f4f4f4/333.jpg"/></a></div>
@@ -49,18 +47,16 @@
             el BACKGROUND se debería poder escoger desde "BACK", ya que algunas imágenes requieren fondo transparente.
             <a href="#" title=""> Aqui va el ENLACE LEFT One</a>
           </div>
-          <div class="right-block" style="background-color: white;">
-            Aqui puede ir TEXTO (como el SLIDER de la COMERCIAL). Se ha escogido un fondo BLANCO.
-            <a href="#" title=""> Aqui va el ENLACE RIGHT Two</a></div>
         </div>
       </div>
 
       <div class="slide-item">
         <div class="img-slider"><img src="https://dummyimage.com/1900x412/f4f4f4/333.jpg"/></a></div>
         <div class="width-limiter">
-          <div class="left-block"><a href="#" title=""> Aqui va el ENLACE LEFT THREE</a></div>
-          <div class="right-block"><a href="#" title=""> Aqui va el ENLACE RIGHT THREE</a></div>
-        </div>
+          <div class="right-block" style="background-color: white;">
+            Aqui puede ir TEXTO (como el SLIDER de la COMERCIAL). Se ha escogido un fondo BLANCO.
+            <a href="#" title=""> Aqui va el ENLACE RIGHT Two</a>
+          </div>        </div>
       </div>
 
     </div>
