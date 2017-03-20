@@ -593,9 +593,9 @@
         }
 
         @include breakpoint ($mob_smallest) {
-          width: 128px;
+          width: 118px;
           line-height: 18px;
-
+          word-break: normal;
         }
       }
     }
@@ -798,6 +798,7 @@
           margin: 0 auto;
           overflow: hidden;
           max-height: 50px;
+          @include breakpoint ($mobile) { max-height: inherit; }
           li {
             position: relative;
             display: block;

@@ -490,6 +490,8 @@ p{
       margin: 15px 0 25px 0;
       height: 12px;
 
+      @include breakpoint ($mobile) { display: none; }
+
       .portlet-title-text,
       .hide-accessible {
         display: none;

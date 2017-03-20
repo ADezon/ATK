@@ -752,6 +752,7 @@ h3.title-step {
       border-radius: 0;
       margin: 0;
       padding: 30px 8%;
+      @include breakpoint ($mobile) { padding: 0; }
       p {
         color: #4a4a4a;
         font-size: 14px;
@@ -827,6 +828,7 @@ h3.title-step {
       left:0;
       width:100%;
       list-style:none;
+      background-color: #f5f5f5;
 
       -moz-box-sizing:border-box;
       -webkit-box-sizing:border-box;
@@ -848,6 +850,7 @@ h3.title-step {
       z-index: 10;
       padding: 16px 0;
       line-height: 22px;
+      width: 92%;
       &:before {
         content: '' !important;
         display: none !important;

@@ -193,9 +193,15 @@ table {
 .half-page {
   float: left;
   width: 50%;
+  &.right-pad { padding-right: 4%; }
+  &.left-pad { padding-left: 4%; }
+
   @include breakpoint($tablet) {
     width: 100%;
+    &.right-pad { padding-right: 0; }
+    &.left-pad { padding-left: 0; }
   }
+
 }
 // GENERAL CLASSES AND TAGS
 .left{
@@ -465,7 +471,7 @@ p{
       display: block;
       float: left;
       width: 75%;
-      margin-bottom: 40px;
+      //margin-bottom: 40px;
       @include breakpoint($medium) {
         width: 65%;
       }
@@ -489,6 +495,8 @@ p{
       line-height: 15px;
       margin: 15px 0 25px 0;
       height: 12px;
+
+      @include breakpoint ($mobile) { display: none; }
 
       .portlet-title-text,
       .hide-accessible {

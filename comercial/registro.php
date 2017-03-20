@@ -31,7 +31,7 @@
 
 
     <!-- FORM and INFO -->
-    <div class="half-page">
+    <div class="half-page right-pad">
       <form class="register-form">
 <!--        IN CASE OF ERRORS, SHOW MESSAGE (UNCOMMENT NEXT 3 LINES -->
 <!--        <div class="message-error">-->

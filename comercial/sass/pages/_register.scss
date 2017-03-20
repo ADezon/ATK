@@ -1,198 +1,210 @@
-.register-user {
-  .captcha {
-    width: 90%;
+#main-content {
 
-    .control-label {
-      color: #9C9E9F;
-      display: block;
-      font-size: 16px;
-      font-weight: bold;
-      line-height: 24px;
+  .register-user {
+
+
+    .captcha {
+      width: 90%;
+
+      .control-label {
+        color: #9C9E9F;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+      }
+      .required {
+        color: #9c9e9f;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 16px;
+      }
     }
-    .required {
+    .info-message {
       color: #9c9e9f;
       font-style: italic;
       font-weight: bold;
       font-size: 11px;
       line-height: 16px;
+      margin-bottom: 40px;
     }
   }
-  .info-message {
-    color: #9c9e9f;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 16px;
-    margin-bottom: 40px;
-  }
-}
-.register-form {
-  display: block;
-  margin: 0;
-  overflow: hidden;
-  position: relative;
-  @include breakpoint($tablet) {
-    margin: 20px 0 40px 0;
-  }
-  fieldset {
-    padding: 0;
-    width: 100%;
-    clear: both;
-    .radio-custom {
-      position: relative;
-      display: block;
-      float: left;
-      clear: none;
-      margin: 10px 60px 10px 0;
-    }
-    input[type=text] {
-      width: 90%;
-      float: left;
-      @include breakpoint($tablet) {
-        width: 85%;
-      }
-    }
-    .tooltip-wrapper {
-      cursor: pointer;
-      float: left;
-      margin-left: 10px;
-      margin-top: 15px;
-      .icons {
-        color: $pink;
-        font-size: 22px;
-      }
-    }
-  }
-  .checkbox-custom {
-    clear: none;
-    float: left;
-    margin: 10px 0;
-    padding-right: 20px;
-  }
-  input[type=submit].register-send {
-    width: 200px;
-    @include breakpoint($mobile) {
-      width: 100%;
-    }
-  }
-}
-.info-banner-vertical {
-  background-color: $greysoft;
-  display: block;
-  margin: 20px 0 40px 0;
-  overflow: hidden;
-  padding: 30px 60px;
-  position: relative;
-  h2 {
-    color: $greydark;
+  .register-form {
     display: block;
-    font-size: 30px;
-    line-height: 35px;
-    margin-bottom: 40px;
+    margin: 0;
+    overflow: hidden;
     position: relative;
-    text-align: center;
-  }
-  ul {
-    li {
+    @include breakpoint($tablet) {
+      margin: 20px 0 40px 0;
+    }
+    fieldset {
+      padding: 0;
+      width: 100%;
       clear: both;
-      display: block;
-      margin-bottom: 20px;
-      overflow: hidden;
-      position: relative;
-      @include breakpoint($mobile) {
-        margin-bottom: 40px;
-      }
-      span {
-        color: $greydark;
+      .radio-custom {
+        position: relative;
         display: block;
         float: left;
-        font-size: 21px;
-        line-height: 25px;
-        position: relative;
-        text-align: left;
-        width: 68%;
-        @include breakpoint($mobile) {
-          clear: both;
-          float: none;
-          text-align: center;
-          width: 100%;
+        clear: none;
+        margin: 10px 60px 10px 0;
+      }
+      input[type=text] {
+        width: 90%;
+        float: left;
+        @include breakpoint($tablet) {
+          width: 85%;
         }
-        &.icons {
+      }
+      .tooltip-wrapper {
+        cursor: pointer;
+        float: left;
+        margin-left: 10px;
+        margin-top: 15px;
+        .icons {
           color: $pink;
+          font-size: 22px;
+        }
+      }
+    }
+    .checkbox-custom {
+      clear: none;
+      float: left;
+      margin: 10px 0;
+      padding-right: 20px;
+    }
+    input[type=text] {
+      width: 92%;
+    }
+    input[type=submit].register-send {
+      width: 200px;
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
+    }
+  }
+  .info-banner-vertical {
+    background-color: $greysoft;
+    display: block;
+    margin: 20px 0 40px 0;
+    overflow: hidden;
+    padding: 30px 60px;
+    position: relative;
+    h2 {
+      color: $greydark;
+      display: block;
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 40px;
+      position: relative;
+      text-align: center;
+    }
+    ul {
+      li {
+        clear: both;
+        display: block;
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+        @include breakpoint($mobile) {
+          margin-bottom: 40px;
+        }
+        span {
+          color: $greydark;
           display: block;
           float: left;
-          font-size: 50px;
-          line-height: 55px;
-          margin-bottom: 10px;
-          margin-right: 2%;
+          font-size: 21px;
+          line-height: 25px;
           position: relative;
-          text-align: center;
-          width: 30%;
+          text-align: left;
+          width: 68%;
           @include breakpoint($mobile) {
             clear: both;
             float: none;
             text-align: center;
             width: 100%;
           }
+          &.icons {
+            color: $pink;
+            display: block;
+            float: left;
+            font-size: 50px;
+            line-height: 55px;
+            margin-bottom: 10px;
+            margin-right: 2%;
+            position: relative;
+            text-align: center;
+            width: 30%;
+            @include breakpoint($mobile) {
+              clear: both;
+              float: none;
+              text-align: center;
+              width: 100%;
+            }
+          }
+        }
+        &:before {
+          content: "";
+          display: none;
         }
       }
-      &:before {
-        content: "";
-        display: none;
+    }
+  }
+
+  //PAGE REGISTER CLIENT
+  .alta-client-form {
+    display: block;
+    margin: 20px 0 40px 0;
+    overflow: hidden;
+    position: relative;
+    fieldset {
+      &.big-fieldset {
+        width: 60%;
+        &.box-email {
+          width: 30%;
+        }
+      }
+
+      &.small-fieldset {
+        width: 40%;
+      }
+    }
+    input[type=submit].alta-client-send {
+      width: 112px;
+      @include breakpoint($mobile) {
+        width: 100%;
       }
     }
   }
-}
 
-//PAGE REGISTER CLIENT
-.alta-client-form {
-  display: block;
-  margin: 20px 0 40px 0;
-  overflow: hidden;
-  position: relative;
-  fieldset {
-    &.big-fieldset {
-      width: 60%;
-      &.box-email {
-        width: 30%;
-      }
-    }
+  .recover-user-form {
+    width: 400px;
 
-    &.small-fieldset {
-      width: 40%;
+    fieldset {
+      width: 100%;
     }
-  }
-  input[type=submit].alta-client-send {
-    width: 112px;
-    @include breakpoint($mobile) {
+    h4 {
+      margin: 0;
+    }
+    @include breakpoint($tablet) {
       width: 100%;
     }
   }
-}
 
-.recover-user-form {
-  width: 400px;
-
-  fieldset { width: 100%; }
-  h4 { margin: 0; }
-  @include breakpoint($tablet) {
-    width: 100%;
+  #invoice-wrapper,
+  #mobil-wrapper,
+  #register-info-wrapper {
+    display: none;
   }
-}
 
-#invoice-wrapper,
-#mobil-wrapper,
-#register-info-wrapper {
-  display: none;
-}
-
-input[type=text].register-sms-insert-code {
-  float: left;
-  width: 30%;
-  clear: none;
-}
-input[type=submit].register-sms-send-code {
-  float: left;
-  clear: none;
-  margin: 10px 0 0 20px;
+  input[type=text].register-sms-insert-code {
+    float: left;
+    width: 30%;
+    clear: none;
+  }
+  input[type=submit].register-sms-send-code {
+    float: left;
+    clear: none;
+    margin: 10px 0 0 20px;
+  }
 }

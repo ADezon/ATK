@@ -726,7 +726,7 @@
   }
   .alert-general-body {
     @include clearfix();
-    padding: 10px 30px;
+    padding: 10px 30px 40px 30px;
     @include breakpoint ($mobile) {
       padding: 22px;
     }
@@ -961,7 +961,7 @@
           width: 24%;
         }
         &.column-number {
-          width: 12%;
+          width: 18%;
         }
         &.column-state {
           width: 10%;
@@ -1045,7 +1045,7 @@
           }
         }
         &.column-number {
-          width: 12%;
+          width: 18%;
           padding-top: 8px;
 
           @include breakpoint($tablet) {
