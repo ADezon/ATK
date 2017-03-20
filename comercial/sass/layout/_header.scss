@@ -529,7 +529,7 @@
       padding: 8px 11px;
       position: relative;
       text-align: left;
-      //text-transform: uppercase;
+      text-transform: uppercase;
       @include breakpoint($tablet) {
         display: block;
         font-size: 12px;
@@ -886,9 +886,9 @@
   #nav-main-mobile {
     background-color: $grey;
     display: none;
-    @include breakpoint($tablet) {
-      display: block;
-    }
+    //@include breakpoint($tablet) {
+    //  display: block;
+    //}
     ul {
       li {
         @include span(6 of 12 last);
