@@ -23,6 +23,8 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
   <!-- END FOR DATEPICKER !!!! -->
 
+  <link rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/font-awesome.min.css">
+
   <link rel="stylesheet" type="text/css" href="./css/at-styles.css">
   <!--BEGIN GLOBAL-->
 

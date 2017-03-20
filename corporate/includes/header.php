@@ -16,6 +16,8 @@
   <!--BEGIN GLOBAL-->
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/font-awesome.min.css">
+
   <link rel="stylesheet" type="text/css" href="./css/at-corporate.styles.css">
   <!--BEGIN GLOBAL-->
 

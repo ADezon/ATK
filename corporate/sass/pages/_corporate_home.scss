@@ -58,6 +58,10 @@
       li {
         display: inline-block;
         width: fit-content;
+        &:before {
+          content: '';
+          display: none;
+        }
         button {
           background-color: $grey;
           width: 50px;
