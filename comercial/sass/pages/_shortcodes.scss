@@ -515,7 +515,7 @@
   /*
   * 4. SHORTCODE ACCORDION
   */
-  ..ui-widget {
+  .ui-widget {
     font-family: $webfont !important;
   }
   .ui-state-active {
@@ -576,7 +576,6 @@
     font-size: 14px;
   }
   .ui-widget-content a {
-    color: $pink;
     &.button-pink {
       color: white;
     }
