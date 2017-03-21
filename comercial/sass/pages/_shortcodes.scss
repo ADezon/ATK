@@ -544,7 +544,7 @@
     font-size: 16px;
     padding: 10px 60px 10px 30px;
     font-weight: normal;
-    
+
     @include breakpoint($mobile) {
       padding: 10px 12% 10px 7%;
     }
@@ -816,6 +816,7 @@
 
     /* TABS Beautifyer */
     .tabs-mobile-selector {
+      padding-bottom: 20px;
 
       .atSelect {
         width: 100%;
@@ -825,6 +826,23 @@
           font-size: 20px;
           height: 58px;
           &:after {
+            /* use !important to prevent issues with browser extensions that change fonts */
+            content: '\e916';
+            font-family: 'atelecom-icons' !important;
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            position: relative;
+            top: 3px;
+
+            /* Better Font Rendering =========== */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+          &:before {
             border-bottom: 2px solid #D30572;
             content: "";
             display: block;
@@ -834,15 +852,23 @@
             position: relative;
             text-align: center;
             width: 130px;
+            top: 34px;
+            padding-left: 16px;
+          }
+          &.expanded {
+            background-position: 0 -170px, right -238px, 50% -102px, 0 -34px;
+            color: #000000;
+            text-shadow: 0 0 0 #000000;
+            &:after {
+              content: '\e915';
+            }
+          }
+          &:hover {
+            background-position: 0 -170px, right -238px, 50% -102px, 0 -34px;
+            color: #000000;
+            text-shadow: 0 0 0 #000000;
           }
         }
-      }
-
-      .atSelect .selectBox:hover,
-      .atSelect .selectBox.expanded {
-        background-position: 0 -170px, right -238px, 50% -102px, 0 -34px;
-        color: #2c5667;
-        text-shadow: 1px 1px 0 #9bc2d0;
       }
 
       .atSelect .dropDown {
