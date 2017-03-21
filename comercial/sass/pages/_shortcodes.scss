@@ -543,6 +543,8 @@
   .ui-accordion .ui-accordion-header {
     font-size: 16px;
     padding: 10px 60px 10px 30px;
+    font-weight: normal;
+    
     @include breakpoint($mobile) {
       padding: 10px 12% 10px 7%;
     }
@@ -570,6 +572,10 @@
 
   .ui-accordion .ui-accordion-content {
     font-size: 14px;
+
+    ul li:before {
+      top: 6px;
+    }
   }
 
   .cont-wrapper .ui-accordion-content p {

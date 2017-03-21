@@ -209,26 +209,22 @@
       <div id="accordion">
         <h3>Morbi rhoncus dolor non purus molestie, a blandit lorem condimentum.</h3>
         <div>
-          <p>
-            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-          </p>
-          <p>
-            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </p>
+
+          <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+          </ul>
+
         </div>
         <h3>Phasellus eget quam condimentum, tincidunt erat nec, tempus ex.</h3>
         <div>
-          <p>
+
             Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
             purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
             velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
             suscipit faucibus urna.
-          </p>
+
         </div>
         <h3>Proin molestie erat vel aliquam fermentum.</h3>
         <div>

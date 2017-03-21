@@ -27,7 +27,12 @@
   * 0. SHORTCODE LAYOUT
   */
   .shortcode-container {
+    font-family: $webfont !important;
     padding: 60px 0;
+
+    table {
+      font-family: $webfont !important;
+    }
     @include breakpoint($tablet) {
       padding: 24px 0;
     }
@@ -510,6 +515,9 @@
   /*
   * 4. SHORTCODE ACCORDION
   */
+  .ui-widget {
+    font-family: $webfont !important;
+  }
   .ui-state-active {
     background-color: $products-bggrey;
     &.transbg-item {
@@ -535,6 +543,8 @@
   .ui-accordion .ui-accordion-header {
     font-size: 16px;
     padding: 10px 60px 10px 30px;
+    font-weight: normal;
+    
     @include breakpoint($mobile) {
       padding: 10px 12% 10px 7%;
     }
@@ -562,13 +572,16 @@
 
   .ui-accordion .ui-accordion-content {
     font-size: 14px;
+
+    ul li:before {
+      top: 6px;
+    }
   }
 
   .cont-wrapper .ui-accordion-content p {
     font-size: 14px;
   }
   .ui-widget-content a {
-    color: $pink;
     &.button-pink {
       color: white;
     }
