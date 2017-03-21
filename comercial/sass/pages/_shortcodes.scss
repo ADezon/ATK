@@ -27,7 +27,12 @@
   * 0. SHORTCODE LAYOUT
   */
   .shortcode-container {
+    font-family: $webfont !important;
     padding: 60px 0;
+
+    table {
+      font-family: $webfont !important;
+    }
     @include breakpoint($tablet) {
       padding: 24px 0;
     }
@@ -510,6 +515,9 @@
   /*
   * 4. SHORTCODE ACCORDION
   */
+  ..ui-widget {
+    font-family: $webfont !important;
+  }
   .ui-state-active {
     background-color: $products-bggrey;
     &.transbg-item {

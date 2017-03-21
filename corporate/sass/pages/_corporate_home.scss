@@ -16,7 +16,7 @@
   .slider-sponsors {
     width: 100%;
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 0;
     @include breakpoint ($mobile) {
       margin-bottom: 10px;
     }

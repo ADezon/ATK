@@ -280,7 +280,8 @@
 
             $("#accordion").accordion({
                 collapsible: true,
-                heightStyle: getFillType()
+                heightStyle: 'content',
+                autoHeight: false
             });
         });
     </script>
