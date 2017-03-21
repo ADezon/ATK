@@ -899,6 +899,9 @@
         padding: 16px 0;
         line-height: 22px;
         width: 92%;
+        &:first-child {
+          margin-top: 14px;
+        }
         &:before {
           content: '' !important;
           display: none !important;

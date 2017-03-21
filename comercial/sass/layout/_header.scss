@@ -804,7 +804,7 @@
           max-width: 1024px;
           margin: 0 auto;
           overflow: hidden;
-          max-height: 500px;
+          max-height: 50px;
           @include breakpoint ($mobile) { max-height: inherit; }
           li {
             position: relative;
@@ -886,9 +886,9 @@
   #nav-main-mobile {
     background-color: $grey;
     display: none;
-    //@include breakpoint($tablet) {
-    //  display: block;
-    //}
+    @include breakpoint($tablet) {
+      display: block;
+    }
     ul {
       li {
         @include span(6 of 12 last);
@@ -1350,5 +1350,11 @@
         display: block;
       }
     }
+  }
+}
+
+.logged-in #header #nav-main-mobile {
+  @include breakpoint($tablet) {
+    display: none;
   }
 }
