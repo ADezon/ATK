@@ -280,7 +280,7 @@
 
   <div class="cont-wrapper shortcode-container bg-grey">
     <div class="content">
-      <h2 class="global-subtitle only-desktop">TABS Title</h2>
+      <h2 class="global-subtitle">TABS Title</h2>
 
       <div class="tabs-mobile-selector only-mobile">
         <select class="make-me-styled">
