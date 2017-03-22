@@ -6,7 +6,7 @@ html {
   overflow-x: hidden;
 }
 body{
-  font-family: $webfont;
+  font-family: $titillium;
   position: relative;
   width: 100%;
   overflow-x: hidden;
@@ -587,7 +587,7 @@ p{
     &:before {
       content: " / ";
       top: 0;
-      font-family: $webfont;
+      font-family: $titillium;
       font-size: 10px;
       padding-right: 6px;
     }

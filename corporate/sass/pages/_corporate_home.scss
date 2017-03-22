@@ -174,8 +174,10 @@
   .news-list {
     width: 32%;
     float: left;
+    margin-right: 2%;
     @include breakpoint ($tablet) {
       width: 100%;
+      margin: 0 0 2% 0;
     }
 
     .item-list {
@@ -195,7 +197,17 @@
         }
       }
     }
+  }
 
+  .home-small-banner {
+    width: 32%;
+    float: left;
+    @include breakpoint ($tablet) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
   }
 
   /* AGENDA */
@@ -321,6 +333,31 @@
     margin-bottom: 0;
     &:before {
       display: none;
+    }
+  }
+
+  .highlighted-block-home {
+    margin-top: 80px;
+    @include breakpoint ($mobile) {
+      margin-top: 0;
+    }
+    img {
+      width: 100%;
+    }
+
+    .highlighted-title {
+      font-family: $titillium;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 24px;
+      color: $pink;
+    }
+    .highlighted-description {
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: $products-fontcolor;
     }
   }
 }

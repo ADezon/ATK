@@ -1057,35 +1057,35 @@
               margin: 0;
               padding: 0 5%;
               width: 25%;
-              &.banners-mmenu{
+
+              &.banners-mmenu-corporate {
                 clear: both;
                 display: block;
                 float: left;
-                position: relative;
                 width: 100%;
-                ul{
-                  li {
-                    display: block;
+                margin-top: 2%;
+
+                .banner-item {
+                  width: 50%;
+                  float: left;
+
+                  img,
+                  image {
                     float: left;
-                    position: relative;
-                    width: 25%;
-                    a {
-                      display: block;
-                      margin: 0;
-                      overflow: hidden;
-                      padding: 0;
-                      position: relative;
-                      img {
-                        display: block;
-                        margin: 0 auto;
-                        overflow: hidden;
-                        position: relative;
-                        width: 220px;
-                      }
-                    }
+                    width: 40%;
+                  }
+
+                  .banner-title {
+                    float: left;
+                    width: 40%;
+                    margin-left: 4%;
+                    text-transform: uppercase;
+                    color: $pink;
+                    a { color: $pink; }
                   }
                 }
               }
+
               a {
                 color:$greydark;
                 display: block;

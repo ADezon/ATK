@@ -162,9 +162,11 @@
   <div id="nav-private" class="cont-wrapper">
     <div class="menu content content-big">
       <ul>
-        <li class="active">
+        <!-- SI el item ES PADRE y tiene "SUB-menu DESPLEGABLE", se requiere esta estructura: <li> principal con un ID UNICO
+        y la clase "menu-title" al texto del menu (en este caso "Quisom")-->
+        <li id="pot-anar-qualsevol-id-unico" class="active">
           <div class="title-level-1">
-            <div>QUI SOM</div>
+            <div class="menu-title">QUI SOM</div>
           </div>
           <div class="container-submenu">
             <ul>
@@ -215,25 +217,28 @@
                   <li><a href="#">Duplicat SIM</a></li>
                 </ul>
               </li>
-              <li class="banners-mmenu">
-                <ul>
-                  <li>
-                    <a href="#" title=""><img src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
-                  </li>
-                  <li>
-                    <a href="#" title=""><img src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
-                  </li>
-                  <li>
-                    <a href="#" title=""><img src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
-                  </li>
-                  <li>
-                    <a href="#" title=""><img src="https://dummyimage.com/220x85/000/fff.jpg"/></a>
-                  </li>
-                </ul>
+              <li class="banners-mmenu-corporate">
+                <div class="banner-item fisrt">
+                    <a href="#" title=""><img src="./uploaded_files/example-banner-menu.jpg"/></a>
+                  <div class="banner-title">
+                    EL NOU EDIFICI D'ANDORRA TELECOM SERÀ UN NÚVOL DE VIDRE
+                  </div>
+                </div>
+
+                <div class="banner-item second">
+                  <a href="#" title=""><img src="./uploaded_files/example-banner-menu.jpg"/></a>
+                  <div class="banner-title">
+                    EL NOU EDIFICI D'ANDORRA TELECOM SERÀ UN NÚVOL DE VIDRE
+                  </div>
+                </div>
+
               </li>
             </ul>
           </div>
         </li>
+
+        <!-- SI el ITEM No es PADRE, no debe tener ID (ni submenu). De esta manera,
+         se pueden incorporar enlaces directos -->
         <li>
           <div class="title-level-1">
             <div><a href="https://www.google.es" target="_blank">INNOVACIÓ</a></div>
