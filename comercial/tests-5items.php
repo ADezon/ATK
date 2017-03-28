@@ -18,6 +18,50 @@
       <h5>H5 Test h5 (Not styled)</h5>
       <h6>H6 Test h6 (Not styled)</h6>
 
+
+      <p>
+      Test SELECT con muuuchos items:
+      </p>
+      <select>
+        <option>Jandwsdfgemorrr</option>
+        <option>Jande3morrr</option>
+        <option>434</option>
+        <option>Jandemew3orrr</option>
+        <option selected>Jand43434fgdfgddemorrr</option>
+        <option>Jandemorrr</option>
+        <option>Jandeyrtymorrr</option>
+        <option>Jandeyryrtmorrr</option>
+        <option>Jandrtyrtyemorrr</option>
+        <option>Jandertyrtymorrr</option>
+        <option>Jandemorrr</option>
+        <option>Jandyrtyemorrr</option>
+        <option>Jandrtyrtemorrr</option>
+        <option>Jandemorrr</option>
+        <option>Jandemorrr</option>
+        <option>Jandrtyrtyemorrr</option>
+        <option>Jandemorfdfdfrrr</option>
+        <option>Jandedfmorrr</option>
+        <option>Jandwehjgewrtyemorrr</option>
+        <option>Jandeererermorrr</option>
+        <option>Jandemeredgdfgeorrr</option>
+        <option>Jandedddfmorrr</option>
+        <option>Jandemorrr</option>
+        <option>Janddfsdfsemorrr</option>
+        <option>Jandemorrr</option>
+        <option>Jandeermorrr</option>
+        <option>Jandeeermorrr</option>
+        <option>Jandesdfsfsmorrr</option>
+        <option>Jandemorrr</option>
+        <option>Jandemorrr</option>
+        <option>Jandemorrr</option>
+        <option>Jandemsdfsdforrr</option>
+        <option>Jandemorrr</option>
+        <option>Jandemorrr</option>
+        <option>Jandemodfsdfsfsdfrrr</option>
+        <option>sf</option>
+        <option>sdfsdf</option>
+      </select>
+
       <p>
         Unsorted Lists (UL > LI):
       <ul>

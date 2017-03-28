@@ -42,7 +42,7 @@
         <div class="periode-select">
           <h3>Període</h3>
           <form>
-          <select>
+          <select class="trescientos">
             <option>2016-10</option>
             <option>2016-09</option>
             <option>2016-08</option>

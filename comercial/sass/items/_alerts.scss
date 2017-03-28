@@ -1,1135 +1,1140 @@
-// BUTTON ALERTS DESKTOP
-.button-alerts {
-  background-color: $yellow;
-  border-radius: 3px;
-  color: $pink;
-  display: block;
-  float: left;
-  font-weight: bold;
-  height: 36px;
-  margin: 18px 14px;
-  padding: 8px;
-  position: relative;
-  text-align: left;
-  text-transform: uppercase;
-  @include breakpoint($tablet) {
-    font-size: 12px;
-    padding: 8px 5px;
-  }
-  .icons {
+#main-content {
+  // BUTTON ALERTS DESKTOP
+  .button-alerts {
+    background-color: $yellow;
+    border-radius: 3px;
     color: $pink;
     display: block;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 22px;
-    position: relative;
-    text-align: center;
-  }
-  .counter-alerts {
-    background-color: $pink;
-    border-radius: 50%;
-    color: $white;
-    font-size: 14px;
-    height: 24px;
-    line-height: 24px;
-    position: absolute;
-    right: -12px;
-    text-align: center;
-    top: -10px;
-    width: 24px;
-  }
-}
-
-// BUTTON ALERTS MOBILE
-#button-alerts-mobile {
-  background-color: $greydark;
-  display: none;
-  position: relative;
-  width: 100%;
-  .text-alerts-mobile {
-    color: $yellow;
-    display: block;
     float: left;
-    font-size: 16px;
-    line-height: 20px;
-    margin: 18px 5px;
+    font-weight: bold;
+    height: 36px;
+    margin: 18px 14px;
     padding: 8px;
     position: relative;
     text-align: left;
-  }
-  .icon-close {
-    color: $yellow;
-    cursor: pointer;
-    display: block;
-    float: right;
-    font-size: 25px;
-    font-weight: bold;
-    height: 36px;
-    line-height: 22px;
-    margin: 18px 5px;
-    padding: 8px;
-    position: relative;
-    text-align: center;
-  }
-  @include breakpoint($tablet) {
-    display: block;
-  }
-}
-
-// Flotantes ALERTS
-@keyframes action {
-  0% {
-    transform: scaleX(1)
-  }
-  50% {
-    transform: scale3d(1.02, 1.02, 1.02)
-  }
-  to {
-    transform: scaleX(1)
-  }
-}
-
-.alert-wrapper {
-  background: rgba(0, 0, 0, 0.3);
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  margin: 0;
-  opacity: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  transition: all .15s ease-in; // CHANGE OPACITY to "1" in order to TEST
-  visibility: hidden;
-  width: 100%;
-  z-index: 25; // CHANGE VISIBILITY to "visible" in order to TEST
-
-  .cont-wrapper {
-    background-color: $yellow;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(27, 36, 50, .15);
-    margin: 15% auto;
-    position: relative;
-    width: 610px;
-    z-index: 10;
+    text-transform: uppercase;
     @include breakpoint($tablet) {
-      width: 90%;
+      font-size: 12px;
+      padding: 8px 5px;
     }
-
-    &:target {
-      animation: .6s both action;
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .alert-close {
-      box-sizing: border-box;
+    .icons {
       color: $pink;
-      cursor: pointer;
-      font-size: 35px;
-      padding: 10px 25px;
-      text-align: right;
-      width: 100%;
-      @include breakpoint($tablet) {
-        font-size: 30px;
-      }
-    }
-
-    .alert-title {
-      box-sizing: border-box;
-      color: $pink;
-      font-size: 21px;
+      display: block;
+      font-size: 25px;
       font-weight: bold;
-      line-height: 32px;
-      overflow: hidden;
-      padding: 0 6%;
-      width: 100%;
-      @include breakpoint($tablet) {
-        font-size: 16px;
-        line-height: 21px;
-      }
-      .icons {
-        color: $pink;
-        display: block;
-        float: left;
-        font-size: 36px;
-        font-weight: normal;
-        line-height: 36px;
-        margin-right: 10px;
-        position: relative;
-        text-align: center;
-      }
+      line-height: 22px;
+      position: relative;
+      text-align: center;
     }
-    .alert-body {
-      clear: both;
-      color: $pink;
-      font-size: 21px;
-      font-weight: 400;
-      line-height: 32px;
-      margin: 20px 0 40px 0;
-      padding: 0 6%;
+    .counter-alerts {
+      background-color: $pink;
+      border-radius: 50%;
+      color: $white;
+      font-size: 14px;
+      height: 24px;
+      line-height: 24px;
+      position: absolute;
+      right: -12px;
+      text-align: center;
+      top: -10px;
+      width: 24px;
+    }
+  }
+
+  // BUTTON ALERTS MOBILE
+  #button-alerts-mobile {
+    background-color: $greydark;
+    display: none;
+    position: relative;
+    width: 100%;
+    .text-alerts-mobile {
+      color: $yellow;
+      display: block;
+      float: left;
+      font-size: 16px;
+      line-height: 20px;
+      margin: 18px 5px;
+      padding: 8px;
+      position: relative;
+      text-align: left;
+    }
+    .icon-close {
+      color: $yellow;
+      cursor: pointer;
+      display: block;
+      float: right;
+      font-size: 25px;
+      font-weight: bold;
+      height: 36px;
+      line-height: 22px;
+      margin: 18px 5px;
+      padding: 8px;
+      position: relative;
+      text-align: center;
+    }
+    @include breakpoint($tablet) {
+      display: block;
+    }
+  }
+
+  // Flotantes ALERTS
+  @keyframes action {
+    0% {
+      transform: scaleX(1)
+    }
+    50% {
+      transform: scale3d(1.02, 1.02, 1.02)
+    }
+    to {
+      transform: scaleX(1)
+    }
+  }
+
+  .alert-wrapper {
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all .15s ease-in; // CHANGE OPACITY to "1" in order to TEST
+    visibility: hidden;
+    width: 100%;
+    z-index: 25; // CHANGE VISIBILITY to "visible" in order to TEST
+
+    .cont-wrapper {
+      background-color: $yellow;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(27, 36, 50, .15);
+      margin: 15% auto;
+      position: relative;
+      width: 610px;
+      z-index: 10;
       @include breakpoint($tablet) {
-        font-size: 14px;
-        line-height: 28px;
+        width: 90%;
       }
-      a {
-        text-decoration: underline;
+
+      &:target {
+        animation: .6s both action;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .alert-close {
+        box-sizing: border-box;
         color: $pink;
+        cursor: pointer;
+        font-size: 35px;
+        padding: 10px 25px;
+        text-align: right;
+        width: 100%;
+        @include breakpoint($tablet) {
+          font-size: 30px;
+        }
+      }
+
+      .alert-title {
+        box-sizing: border-box;
+        color: $pink;
+        font-size: 21px;
         font-weight: bold;
+        line-height: 32px;
+        overflow: hidden;
+        padding: 0 6%;
+        width: 100%;
+        @include breakpoint($tablet) {
+          font-size: 16px;
+          line-height: 21px;
+        }
+        .icons {
+          color: $pink;
+          display: block;
+          float: left;
+          font-size: 36px;
+          font-weight: normal;
+          line-height: 36px;
+          margin-right: 10px;
+          position: relative;
+          text-align: center;
+        }
+      }
+      .alert-body {
+        clear: both;
+        color: $pink;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 32px;
+        margin: 20px 0 40px 0;
+        padding: 0 6%;
+        @include breakpoint($tablet) {
+          font-size: 14px;
+          line-height: 28px;
+        }
+        a {
+          text-decoration: underline;
+          color: $pink;
+          font-weight: bold;
+        }
       }
     }
   }
-}
 
-// Alerta de Cookies
-.cc-window {
-  background-color: rgba(51, 51, 51, 0.9);
-  margin: 0 auto;
-  max-width: 1280px;
-  opacity: 1;
-  transition: opacity 1s ease;
-  width: 100%;
-}
-
-.cc-btn {
-  background-color: white;
-  border-radius: 3px;
-}
-
-.cc-window.cc-invisible {
-  opacity: 0
-}
-
-.cc-animate.cc-revoke {
-  transition: transform 1s ease
-}
-
-.cc-animate.cc-revoke.cc-top {
-  transform: translateY(-2em)
-}
-
-.cc-animate.cc-revoke.cc-bottom {
-  transform: translateY(2em)
-}
-
-.cc-animate.cc-revoke.cc-active.cc-bottom, .cc-animate.cc-revoke.cc-active.cc-top, .cc-revoke:hover {
-  transform: translateY(0)
-}
-
-.cc-grower {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 1s
-}
-
-.cc-link, .cc-revoke:hover {
-  text-decoration: underline
-}
-
-.cc-revoke, .cc-window {
-  box-sizing: border-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Helvetica, Calibri, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5em;
-  overflow: hidden;
-  position: fixed;
-  z-index: 9999;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap
-}
-
-.cc-window.cc-static {
-  position: static
-}
-
-.cc-window.cc-floating {
-  color: white;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  padding: 2em
-}
-
-.cc-window.cc-banner {
-  flex-direction: row;
-  -ms-flex-direction: row;
-  padding: 1em 1.8em;
-  width: 100%
-}
-
-.cc-revoke {
-  padding: .5em
-}
-
-.cc-header {
-  font-size: 18px;
-  font-weight: 700
-}
-
-.cc-btn, .cc-close, .cc-link, .cc-revoke {
-  cursor: pointer
-}
-
-.cc-link {
-  color: white;
-  display: inline-block;
-  float: right;
-  font-family: "Titillium Web", Verdana;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  margin-right: 30px;
-  padding: .2em;
-  text-decoration: none;
-  @include breakpoint($intermedio) {
-    float: none;
+  // Alerta de Cookies
+  .cc-window {
+    background-color: rgba(51, 51, 51, 0.9);
+    margin: 0 auto;
+    max-width: 1280px;
+    opacity: 1;
+    transition: opacity 1s ease;
+    width: 100%;
   }
 
-}
-
-.cc-link:hover {
-  opacity: 1
-}
-
-.cc-link:active, .cc-link:visited {
-  color: initial
-}
-
-.cc-btn {
-  border: medium none;
-  color: $pink;
-  display: block;
-  font-size: .9em;
-  font-weight: 700;
-  padding: .4em .8em;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.cc-banner .cc-btn:last-child {
-  min-width: 140px
-}
-
-.cc-highlight .cc-btn:first-child {
-  background-color: transparent;
-  border-color: transparent
-}
-
-.cc-highlight .cc-btn:first-child:hover {
-  background-color: transparent;
-  text-decoration: underline
-}
-
-.cc-close {
-  display: block;
-  font-size: 1.6em;
-  line-height: .75;
-  opacity: .9;
-  position: absolute;
-  right: .5em;
-  top: .5em
-}
-
-.cc-close:hover {
-  opacity: 1
-}
-
-.cc-revoke.cc-top {
-  border-bottom-left-radius: .5em;
-  border-bottom-right-radius: .5em;
-  left: 3em;
-  top: 0
-}
-
-.cc-revoke.cc-bottom {
-  border-top-left-radius: .5em;
-  border-top-right-radius: .5em;
-  bottom: 0;
-  left: 3em
-}
-
-.cc-revoke.cc-left {
-  left: 3em;
-  right: unset
-}
-
-.cc-revoke.cc-right {
-  left: unset;
-  right: 3em
-}
-
-.cc-top {
-  top: 1em
-}
-
-.cc-left {
-  left: 1em
-}
-
-.cc-right {
-  right: 1em
-}
-
-.cc-bottom {
-  bottom: 1em
-}
-
-.cc-floating > .cc-link {
-  margin-bottom: 1em
-}
-
-.cc-floating .cc-message {
-  display: block;
-  margin-bottom: 1em
-}
-
-.cc-window.cc-floating .cc-compliance {
-  -ms-flex: 1;
-  flex: 1
-}
-
-.cc-window.cc-banner {
-  -ms-flex-align: center;
-  -ms-grid-row-align: center;
-  align-items: center
-}
-
-.cc-banner.cc-top {
-  left: 0;
-  right: 0;
-  top: 0
-}
-
-.cc-banner.cc-bottom {
-  bottom: 0;
-  left: 0;
-  right: 0
-}
-
-.cc-banner .cc-message {
-  color: white;
-  font-family: "Titillium Web";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.cc-compliance {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-line-pack: justify;
-  align-content: space-between
-}
-
-.cc-compliance > .cc-btn {
-  -ms-flex: 1;
-  flex: 1
-}
-
-.cc-btn + .cc-btn {
-  margin-left: .5em
-}
-
-@media print {
-  .cc-revoke, .cc-window {
-    display: none
-  }
-}
-
-@media screen and (max-width: 900px) {
   .cc-btn {
-    white-space: normal
+    background-color: white;
+    border-radius: 3px;
   }
-}
 
-@media screen and (max-width: 414px) and (orientation: portrait), screen and (max-width: 736px) and (orientation: landscape) {
-  .cc-window.cc-top {
+  .cc-window.cc-invisible {
+    opacity: 0
+  }
+
+  .cc-animate.cc-revoke {
+    transition: transform 1s ease
+  }
+
+  .cc-animate.cc-revoke.cc-top {
+    transform: translateY(-2em)
+  }
+
+  .cc-animate.cc-revoke.cc-bottom {
+    transform: translateY(2em)
+  }
+
+  .cc-animate.cc-revoke.cc-active.cc-bottom, .cc-animate.cc-revoke.cc-active.cc-top, .cc-revoke:hover {
+    transform: translateY(0)
+  }
+
+  .cc-grower {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s
+  }
+
+  .cc-link, .cc-revoke:hover {
+    text-decoration: underline
+  }
+
+  .cc-revoke, .cc-window {
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Helvetica, Calibri, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
+  }
+
+  .cc-window.cc-static {
+    position: static
+  }
+
+  .cc-window.cc-floating {
+    color: white;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    padding: 2em
+  }
+
+  .cc-window.cc-banner {
+    flex-direction: row;
+    -ms-flex-direction: row;
+    padding: 1em 1.8em;
+    width: 100%
+  }
+
+  .cc-revoke {
+    padding: .5em
+  }
+
+  .cc-header {
+    font-size: 18px;
+    font-weight: 700
+  }
+
+  .cc-btn, .cc-close, .cc-link, .cc-revoke {
+    cursor: pointer
+  }
+
+  .cc-link {
+    color: white;
+    display: inline-block;
+    float: right;
+    font-family: "Titillium Web", Verdana;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-right: 30px;
+    padding: .2em;
+    text-decoration: none;
+    @include breakpoint($intermedio) {
+      float: none;
+    }
+
+  }
+
+  .cc-link:hover {
+    opacity: 1
+  }
+
+  .cc-link:active, .cc-link:visited {
+    color: initial
+  }
+
+  .cc-btn {
+    border: medium none;
+    color: $pink;
+    display: block;
+    font-size: .9em;
+    font-weight: 700;
+    padding: .4em .8em;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .cc-banner .cc-btn:last-child {
+    min-width: 140px
+  }
+
+  .cc-highlight .cc-btn:first-child {
+    background-color: transparent;
+    border-color: transparent
+  }
+
+  .cc-highlight .cc-btn:first-child:hover {
+    background-color: transparent;
+    text-decoration: underline
+  }
+
+  .cc-close {
+    display: block;
+    font-size: 1.6em;
+    line-height: .75;
+    opacity: .9;
+    position: absolute;
+    right: .5em;
+    top: .5em
+  }
+
+  .cc-close:hover {
+    opacity: 1
+  }
+
+  .cc-revoke.cc-top {
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    left: 3em;
     top: 0
   }
-  .cc-window.cc-bottom {
-    bottom: 0
+
+  .cc-revoke.cc-bottom {
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    bottom: 0;
+    left: 3em
   }
-  .cc-window.cc-banner, .cc-window.cc-left, .cc-window.cc-right {
-    left: 0;
-    right: 0
+
+  .cc-revoke.cc-left {
+    left: 3em;
+    right: unset
   }
-  .cc-window.cc-banner {
-    -ms-flex-direction: column;
-    flex-direction: column
+
+  .cc-revoke.cc-right {
+    left: unset;
+    right: 3em
   }
-  .cc-window.cc-banner .cc-compliance {
+
+  .cc-top {
+    top: 1em
+  }
+
+  .cc-left {
+    left: 1em
+  }
+
+  .cc-right {
+    right: 1em
+  }
+
+  .cc-bottom {
+    bottom: 1em
+  }
+
+  .cc-floating > .cc-link {
+    margin-bottom: 1em
+  }
+
+  .cc-floating .cc-message {
+    display: block;
+    margin-bottom: 1em
+  }
+
+  .cc-window.cc-floating .cc-compliance {
     -ms-flex: 1;
     flex: 1
   }
-  .cc-window.cc-floating {
-    max-width: none
-  }
-  .cc-window .cc-message {
-    margin-bottom: 1em;
-    color: white;
-  }
+
   .cc-window.cc-banner {
-    -ms-flex-align: unset;
-    -ms-grid-row-align: unset;
-    align-items: unset
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center
   }
-}
 
-.cc-floating.cc-theme-classic {
-  border-radius: 5px;
-  padding: 1.2em
-}
+  .cc-banner.cc-top {
+    left: 0;
+    right: 0;
+    top: 0
+  }
 
-.cc-floating.cc-type-info.cc-theme-classic .cc-compliance {
-  display: inline;
-  text-align: center;
-  -ms-flex: none;
-  flex: none
-}
+  .cc-banner.cc-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0
+  }
 
-.cc-theme-classic .cc-btn {
-  border-radius: 5px
-}
+  .cc-banner .cc-message {
+    color: white;
+    font-family: "Titillium Web";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    -ms-flex: 1;
+    flex: 1;
+  }
 
-.cc-theme-classic .cc-btn:last-child {
-  min-width: 140px
-}
+  .cc-compliance {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: justify;
+    align-content: space-between
+  }
 
-.cc-floating.cc-type-info.cc-theme-classic .cc-btn {
-  display: inline-block
-}
+  .cc-compliance > .cc-btn {
+    -ms-flex: 1;
+    flex: 1
+  }
 
-.cc-theme-edgeless.cc-window {
-  padding: 0
-}
+  .cc-btn + .cc-btn {
+    margin-left: .5em
+  }
 
-.cc-floating.cc-theme-edgeless .cc-message {
-  margin: 2em 2em 1.5em
-}
-
-.cc-banner.cc-theme-edgeless .cc-btn {
-  height: 100%;
-  margin: 0;
-  padding: .8em 1.8em
-}
-
-.cc-banner.cc-theme-edgeless .cc-message {
-  margin-left: 1em
-}
-
-.cc-floating.cc-theme-edgeless .cc-btn + .cc-btn {
-  margin-left: 0
-}
-
-.cont-wrapper {
-  .content {
-    .reclaim {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      margin: 20px 0;
-      background-color: $pink_superlight;
-      width: 100%;
-      box-sizing: border-box;
-      padding: 30px 36px;
-      @include breakpoint($mobile) {
-        padding: 30px 15px;
-      }
-      .icon-reclaim {
-        position: relative;
-        display: block;
-        float: left;
-        padding-right: 20px;
-        @include breakpoint($tablet) {
-          width: 20%;
-        }
-        .icons {
-          font-size: 50px;
-          line-height: 55px;
-          color: $pink;
-          @include breakpoint($mobile) {
-            font-size: 25px;
-            line-height: 30px;
-          }
-        }
-      }
-      .text-reclaim {
-        position: relative;
-        display: block;
-        float: left;
-        @include breakpoint($tablet) {
-          width: 80%;
-        }
-        h2 {
-          color: $greymedium;
-          font-size: 22px;
-          line-height: 22px;
-          font-weight: bold;
-          @include breakpoint($mobile) {
-            font-size: 14px;
-            line-height: 18px;
-          }
-        }
-
-        a {
-          color: $rosa2;
-          text-decoration: underline;
-          font-size: 16px;
-          line-height: 28px;
-          font-weight: bold;
-          @include breakpoint($mobile) {
-            font-size: 12px;
-            line-height: 16px;
-          }
-          &.button-pink{
-            margin: 25px 0;
-            color: $white;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            float: left;
-          }
-        }
-      }
-    }
-    .request-successfully {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      margin: 20px 0;
-      width: 100%;
-      box-sizing: border-box;
-      .icon-request {
-        position: relative;
-        display: block;
-        float: left;
-        border: 2px solid #71b12a;
-        border-radius: 50%;
-        width: 35px;
-        height: 35px;
-        text-align: center;
-        .icons {
-          font-size: 12px;
-          line-height: 35px;
-          color: #71b12a;
-          text-align: center;
-        }
-      }
-      .text-request {
-        position: relative;
-        display: block;
-        float: left;
-        font-size: 18px;
-        line-height: 35px;
-        padding-left: 20px;
-        font-weight: bold;
-        color: $black;
-        margin: 0;
-        @include breakpoint($tablet) {
-          width: 80%;
-          line-height: 22px;
-        }
-      }
-    }
-    .request-failed {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      margin: 20px 0;
-      width: 100%;
-      box-sizing: border-box;
-      .icon-request {
-        float: left;
-        width: 36px;
-        height: 36px;
-        text-align: center;
-        .icons {
-          font-size: 34px;
-          line-height: 35px;
-          color: $pink;
-          text-align: center;
-        }
-      }
-      .text-request {
-        position: relative;
-        display: block;
-        float: left;
-        font-size: 18px;
-        line-height: 35px;
-        padding-left: 20px;
-        font-weight: bold;
-        color: $black;
-        margin: 0;
-        @include breakpoint($tablet) {
-          width: 80%;
-          line-height: 22px;
-        }
-      }
-    }
-    .title-w-icon {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      margin: 20px 0;
-      width: 100%;
-      box-sizing: border-box;
-      .icon-title {
-        position: relative;
-        display: block;
-        float: left;
-        text-align: center;
-        .icons {
-          font-size: 40px;
-          line-height: 40px;
-          color: $pink;
-          text-align: center;
-        }
-      }
-      .text-title {
-        position: relative;
-        display: block;
-        float: left;
-        font-size: 18px;
-        line-height: 40px;
-        padding-left: 10px;
-        font-weight: bold;
-        color: $black;
-        margin: 0;
-      }
-      .text-subtitle {
-        position: relative;
-        display: block;
-        clear: both;
-        font-size: 18px;
-        line-height: 21px;
-        padding-left: 50px;
-        color: $greymedium;
-        margin: 0;
-      }
+  @media print {
+    .cc-revoke, .cc-window {
+      display: none
     }
   }
-}
 
-// Flotantes LOGIN (pop-up)
-.dinamic-login {
-  color: $pink;
-  cursor: pointer;
-  text-decoration: underline;
-  font-size: 18px;
-  font-weight: bold;
-}
+  @media screen and (max-width: 900px) {
+    .cc-btn {
+      white-space: normal
+    }
+  }
 
-.floating-login-wrapper {
-  background: rgba(0, 0, 0, 0.3);
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  margin: 0;
-  opacity: 0; // 0
-  position: fixed;
-  right: 0;
-  top: 0;
-  transition: all .15s ease-in; // CHANGE OPACITY to "1" in order to TEST
-  visibility: hidden; // hidden
-  width: 100%;
-  z-index: 25; // CHANGE VISIBILITY to "visible" in order to TEST
+  @media screen and (max-width: 414px) and (orientation: portrait), screen and (max-width: 736px) and (orientation: landscape) {
+    .cc-window.cc-top {
+      top: 0
+    }
+    .cc-window.cc-bottom {
+      bottom: 0
+    }
+    .cc-window.cc-banner, .cc-window.cc-left, .cc-window.cc-right {
+      left: 0;
+      right: 0
+    }
+    .cc-window.cc-banner {
+      -ms-flex-direction: column;
+      flex-direction: column
+    }
+    .cc-window.cc-banner .cc-compliance {
+      -ms-flex: 1;
+      flex: 1
+    }
+    .cc-window.cc-floating {
+      max-width: none
+    }
+    .cc-window .cc-message {
+      margin-bottom: 1em;
+      color: white;
+    }
+    .cc-window.cc-banner {
+      -ms-flex-align: unset;
+      -ms-grid-row-align: unset;
+      align-items: unset
+    }
+  }
+
+  .cc-floating.cc-theme-classic {
+    border-radius: 5px;
+    padding: 1.2em
+  }
+
+  .cc-floating.cc-type-info.cc-theme-classic .cc-compliance {
+    display: inline;
+    text-align: center;
+    -ms-flex: none;
+    flex: none
+  }
+
+  .cc-theme-classic .cc-btn {
+    border-radius: 5px
+  }
+
+  .cc-theme-classic .cc-btn:last-child {
+    min-width: 140px
+  }
+
+  .cc-floating.cc-type-info.cc-theme-classic .cc-btn {
+    display: inline-block
+  }
+
+  .cc-theme-edgeless.cc-window {
+    padding: 0
+  }
+
+  .cc-floating.cc-theme-edgeless .cc-message {
+    margin: 2em 2em 1.5em
+  }
+
+  .cc-banner.cc-theme-edgeless .cc-btn {
+    height: 100%;
+    margin: 0;
+    padding: .8em 1.8em
+  }
+
+  .cc-banner.cc-theme-edgeless .cc-message {
+    margin-left: 1em
+  }
+
+  .cc-floating.cc-theme-edgeless .cc-btn + .cc-btn {
+    margin-left: 0
+  }
 
   .cont-wrapper {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(27, 36, 50, .15);
-    margin: 8% auto;
-    position: relative;
-    width: 360px;
-    z-index: 10;
-    @include breakpoint($tablet) {
-      width: 80%;
-    }
-    @include breakpoint($mobile) {
-      width: 90%;
-    }
-
-    &:target {
-      animation: .6s both action;
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .login-close {
-      box-sizing: border-box;
-      color: $pink;
-      cursor: pointer;
-      clear: both;
-      position: relative;
-      text-align: right;
-      width: 100%;
-      display: block;
-      overflow: hidden;
-      padding: 22px 20px 0;
-      .icons {
-        color: $pink;
-        display: block;
-        float: right;
-        font-size: 30px;
-        font-weight: normal;
+    .content {
+      .reclaim {
         position: relative;
-        text-align: center;
-      }
-    }
-
-    .login-title {
-      box-sizing: border-box;
-      color: $black;
-      font-size: 21px;
-      font-weight: bold;
-      line-height: 36px;
-      overflow: hidden;
-      padding: 0 20px;
-      width: 100%;
-      @include breakpoint($tablet) {
-        font-size: 16px;
-        line-height: 21px;
-      }
-      p { font-size: 21px; }
-      .icons {
-        color: $pink;
         display: block;
-        float: left;
-        font-size: 36px;
-        font-weight: normal;
-        line-height: 36px;
-        margin-right: 10px;
-        position: relative;
-        text-align: center;
-      }
-    }
-    .login-body {
-      clear: both;
-      color: $pink;
-      font-size: 21px;
-      font-weight: 400;
-      line-height: 32px;
-      padding: 10px 25px 100px 25px;
-      @include breakpoint($tablet) {
-        font-size: 14px;
-        line-height: 28px;
-      }
-      .box-client-area {
-        form.login-client {
+        overflow: hidden;
+        margin: 20px 0;
+        background-color: $pink_superlight;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px 36px;
+        @include breakpoint($mobile) {
+          padding: 30px 15px;
+        }
+        .icon-reclaim {
           position: relative;
           display: block;
-          overflow: hidden;
-          fieldset {
-            width: 100%;
-            clear: none;
-            margin-bottom: 10px;
-            padding: 0;
+          float: left;
+          padding-right: 20px;
+          @include breakpoint($tablet) {
+            width: 20%;
+          }
+          .icons {
+            font-size: 50px;
+            line-height: 55px;
+            color: $pink;
+            @include breakpoint($mobile) {
+              font-size: 25px;
+              line-height: 30px;
+            }
           }
         }
-        .goto-register {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 100px;
-          padding: 17px 20px;
-          background-color: #f5f5f5;
-          span {
-            position: relative;
-            display: block;
-            float: none;
-            width: 100%;
-            clear: both;
-            color: $greydark;
-            text-decoration: none;
-            font-size: 16px;
-            line-height: 21px;
-            font-weight: bold;
-            margin-bottom: 5px;
+        .text-reclaim {
+          position: relative;
+          display: block;
+          float: left;
+          @include breakpoint($tablet) {
+            width: 80%;
           }
+          h2 {
+            color: $greymedium;
+            font-size: 22px;
+            line-height: 22px;
+            font-weight: bold;
+            @include breakpoint($mobile) {
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+
           a {
-            position: relative;
-            display: block;
-            float: left;
-            color: $pink;
+            color: $rosa2;
             text-decoration: underline;
             font-size: 16px;
-            line-height: 21px;
+            line-height: 28px;
             font-weight: bold;
+            @include breakpoint($mobile) {
+              font-size: 12px;
+              line-height: 16px;
+            }
+            &.button-pink {
+              margin: 25px 0;
+              color: $white;
+              text-decoration: none;
+              font-size: 16px;
+              font-weight: bold;
+              float: left;
+            }
           }
         }
       }
-    }
-  }
-
-}
-
-// Flotantes LOGIN (pop-up)
-.general-alert-wrapper {
-  background: rgba(0, 0, 0, 0.3);
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  margin: 0;
-  opacity: 0; // 0
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: all .15s ease-in; // CHANGE OPACITY to "1" in order to TEST
-  visibility: hidden; // hidden
-  width: 100%;
-  z-index: 25; // CHANGE VISIBILITY to "visible" in order to TEST
-
-  .content-general-wrapper {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(27, 36, 50, .15);
-    margin: 8% auto;
-    position: relative;
-    width: 380px;
-    z-index: 10;
-    @include breakpoint($tablet) {
-      width: 80%;
-    }
-    @include breakpoint($mobile) {
-      width: 90%;
-    }
-
-    &:target {
-      animation: .6s both action;
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .alert-general-close {
-      box-sizing: border-box;
-      color: $pink;
-      cursor: pointer;
-      clear: both;
-      position: relative;
-      text-align: right;
-      width: 100%;
-      display: block;
-      overflow: hidden;
-      padding: 20px 20px 0;
-      .icons {
-        color: $pink;
-        display: block;
-        float: right;
-        font-size: 30px;
-        font-weight: normal;
+      .request-successfully {
         position: relative;
-        text-align: center;
-      }
-    }
-
-    .alert-general-title {
-      box-sizing: border-box;
-      color: $black;
-      font-size: 21px;
-      font-weight: bold;
-      line-height: 36px;
-      overflow: hidden;
-      padding: 0 20px;
-      width: 100%;
-      @include breakpoint($tablet) {
-        margin-top: -22px;
-        font-size: 22px;
-        line-height: 20px;
-      }
-      .icons {
-        color: $pink;
         display: block;
-        float: left;
-        font-size: 36px;
-        font-weight: normal;
-        line-height: 36px;
-        margin-right: 10px;
-        position: relative;
-        text-align: center;
-        @include breakpoint($tablet) {
-          font-size: 22px;
-          line-height: 22px;
+        overflow: hidden;
+        margin: 20px 0;
+        width: 100%;
+        box-sizing: border-box;
+        .icon-request {
+          position: relative;
+          display: block;
+          float: left;
+          border: 2px solid #71b12a;
+          border-radius: 50%;
+          width: 35px;
+          height: 35px;
+          text-align: center;
+          .icons {
+            font-size: 12px;
+            line-height: 35px;
+            color: #71b12a;
+            text-align: center;
+          }
         }
-      }
-    }
-    .alert-general-body {
-      clear: both;
-      color: $greymedium;
-      font-size: 21px;
-      font-weight: 400;
-      line-height: 32px;
-      padding: 10px 25px 100px 25px;
-      @include breakpoint($tablet) {
-        font-size: 14px;
-        line-height: 28px;
-      }
-      h4 {
-        font-size: 20px;
-        color: $greymedium;
-        margin: 10px 0 8px 0;
-      }
-      p {
-        font-size: 16px;
-      }
-
-      fieldset {
-        float: none;
-        margin-bottom: 4px;
-        @include breakpoint ($tablet) {
-          margin-bottom: 0;
-        }
-
-        .radio-custom {
-          margin-bottom: 12px;
-        }
-        .notice-message {
-          color: $pink;
-          font-size: 12px;
-          line-height: 14px;
-          font-style: italic;
+        .text-request {
+          position: relative;
+          display: block;
+          float: left;
+          font-size: 18px;
+          line-height: 35px;
+          padding-left: 20px;
           font-weight: bold;
-          padding-left: 30px;
-          width: 82%;
+          color: $black;
+          margin: 0;
           @include breakpoint($tablet) {
-            padding: 0;
-            width: 100%;
+            width: 80%;
+            line-height: 22px;
           }
         }
       }
-      input[type=text] {
-        font-size: 16px;
+      .request-failed {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 20px 0;
+        width: 100%;
+        box-sizing: border-box;
+        .icon-request {
+          float: left;
+          width: 36px;
+          height: 36px;
+          text-align: center;
+          .icons {
+            font-size: 34px;
+            line-height: 35px;
+            color: $pink;
+            text-align: center;
+          }
+        }
+        .text-request {
+          position: relative;
+          display: block;
+          float: left;
+          font-size: 18px;
+          line-height: 35px;
+          padding-left: 20px;
+          font-weight: bold;
+          color: $black;
+          margin: 0;
+          @include breakpoint($tablet) {
+            width: 80%;
+            line-height: 22px;
+          }
+        }
       }
-      input[type=submit].floating,
-      input[type=button].floating {
-        clear: none;
-      }
-      input[type=button].button-trans {
-        font-size: 14px;
-        font-weight: 400;
-        text-transform: none;
-        color: $pink;
-        background-color: transparent;
-        margin-left: 20px;
-      }
-      .centered {
-        text-align: center;
-      }
-    }
-    // ANCHO Wrapper
-    &.wide-alert {
-      width: 550px;
-      @include breakpoint($mobile) {
-        width: 98%;
+      .title-w-icon {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 20px 0;
+        width: 100%;
+        box-sizing: border-box;
+        .icon-title {
+          position: relative;
+          display: block;
+          float: left;
+          text-align: center;
+          .icons {
+            font-size: 40px;
+            line-height: 40px;
+            color: $pink;
+            text-align: center;
+          }
+        }
+        .text-title {
+          position: relative;
+          display: block;
+          float: left;
+          font-size: 18px;
+          line-height: 40px;
+          padding-left: 10px;
+          font-weight: bold;
+          color: $black;
+          margin: 0;
+        }
+        .text-subtitle {
+          position: relative;
+          display: block;
+          clear: both;
+          font-size: 18px;
+          line-height: 21px;
+          padding-left: 50px;
+          color: $greymedium;
+          margin: 0;
+        }
       }
     }
   }
-  &.fixedone {
+
+  // Flotantes LOGIN (pop-up)
+  .dinamic-login {
+    color: $pink;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .floating-login-wrapper {
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0; // 0
     position: fixed;
+    right: 0;
+    top: 0;
+    transition: all .15s ease-in; // CHANGE OPACITY to "1" in order to TEST
+    visibility: hidden; // hidden
+    width: 100%;
+    z-index: 25; // CHANGE VISIBILITY to "visible" in order to TEST
+
+    .cont-wrapper {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(27, 36, 50, .15);
+      margin: 8% auto;
+      position: relative;
+      width: 360px;
+      z-index: 10;
+      @include breakpoint($tablet) {
+        width: 80%;
+      }
+      @include breakpoint($mobile) {
+        width: 90%;
+      }
+
+      &:target {
+        animation: .6s both action;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .login-close {
+        box-sizing: border-box;
+        color: $pink;
+        cursor: pointer;
+        clear: both;
+        position: relative;
+        text-align: right;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        padding: 22px 20px 0;
+        .icons {
+          color: $pink;
+          display: block;
+          float: right;
+          font-size: 30px;
+          font-weight: normal;
+          position: relative;
+          text-align: center;
+        }
+      }
+
+      .login-title {
+        box-sizing: border-box;
+        color: $black;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 36px;
+        overflow: hidden;
+        padding: 0 20px;
+        width: 100%;
+        @include breakpoint($tablet) {
+          font-size: 16px;
+          line-height: 21px;
+        }
+        p {
+          font-size: 21px;
+        }
+        .icons {
+          color: $pink;
+          display: block;
+          float: left;
+          font-size: 36px;
+          font-weight: normal;
+          line-height: 36px;
+          margin-right: 10px;
+          position: relative;
+          text-align: center;
+        }
+      }
+      .login-body {
+        clear: both;
+        color: $pink;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 32px;
+        padding: 10px 25px 100px 25px;
+        @include breakpoint($tablet) {
+          font-size: 14px;
+          line-height: 28px;
+        }
+        .box-client-area {
+          form.login-client {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            fieldset {
+              width: 100%;
+              clear: none;
+              margin-bottom: 10px;
+              padding: 0;
+            }
+          }
+          .goto-register {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            padding: 17px 20px;
+            background-color: #f5f5f5;
+            span {
+              position: relative;
+              display: block;
+              float: none;
+              width: 100%;
+              clear: both;
+              color: $greydark;
+              text-decoration: none;
+              font-size: 16px;
+              line-height: 21px;
+              font-weight: bold;
+              margin-bottom: 5px;
+            }
+            a {
+              position: relative;
+              display: block;
+              float: left;
+              color: $pink;
+              text-decoration: underline;
+              font-size: 16px;
+              line-height: 21px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
   }
-}
 
+  // Flotantes LOGIN (pop-up)
+  .general-alert-wrapper {
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0; // 0
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .15s ease-in; // CHANGE OPACITY to "1" in order to TEST
+    visibility: hidden; // hidden
+    width: 100%;
+    z-index: 25; // CHANGE VISIBILITY to "visible" in order to TEST
 
-// AJAX RESPONSES
-.cont-wrapper.ajax-loading {
-  min-height: 700px;
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-}
-.loading-data-ajax {
-  background: rgba(0, 0, 0, 0.3);
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  margin: 0;
-  opacity: 1; // 0
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: all .15s ease-in;
-  visibility: visible; // CHANGE VISIBILITY to "visible" in order to TEST
-  width: 100%;
-  z-index: 25;
+    .content-general-wrapper {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(27, 36, 50, .15);
+      margin: 8% auto;
+      position: relative;
+      width: 380px;
+      z-index: 10;
+      @include breakpoint($tablet) {
+        width: 80%;
+      }
+      @include breakpoint($mobile) {
+        width: 90%;
+      }
 
-  .ajax-general-wrapper {
-    margin: 18% auto;
-    position: relative;
-    width: 166px;
-    z-index: 10;
-    @include breakpoint($tablet) {
-      margin: 40% auto;
-      width: 30%;
+      &:target {
+        animation: .6s both action;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .alert-general-close {
+        box-sizing: border-box;
+        color: $pink;
+        cursor: pointer;
+        clear: both;
+        position: relative;
+        text-align: right;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        padding: 20px 20px 0;
+        .icons {
+          color: $pink;
+          display: block;
+          float: right;
+          font-size: 30px;
+          font-weight: normal;
+          position: relative;
+          text-align: center;
+        }
+      }
+
+      .alert-general-title {
+        box-sizing: border-box;
+        color: $black;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 36px;
+        overflow: hidden;
+        padding: 0 20px;
+        width: 100%;
+        @include breakpoint($tablet) {
+          margin-top: -22px;
+          font-size: 22px;
+          line-height: 20px;
+        }
+        .icons {
+          color: $pink;
+          display: block;
+          float: left;
+          font-size: 36px;
+          font-weight: normal;
+          line-height: 36px;
+          margin-right: 10px;
+          position: relative;
+          text-align: center;
+          @include breakpoint($tablet) {
+            font-size: 22px;
+            line-height: 22px;
+          }
+        }
+      }
+      .alert-general-body {
+        clear: both;
+        color: $greymedium;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 32px;
+        padding: 10px 25px 100px 25px;
+        @include breakpoint($tablet) {
+          font-size: 14px;
+          line-height: 28px;
+        }
+        h4 {
+          font-size: 20px;
+          color: $greymedium;
+          margin: 10px 0 8px 0;
+        }
+        p {
+          font-size: 16px;
+        }
+
+        fieldset {
+          float: none;
+          margin-bottom: 4px;
+          @include breakpoint ($tablet) {
+            margin-bottom: 0;
+          }
+
+          .radio-custom {
+            margin-bottom: 12px;
+          }
+          .notice-message {
+            color: $pink;
+            font-size: 12px;
+            line-height: 14px;
+            font-style: italic;
+            font-weight: bold;
+            padding-left: 30px;
+            width: 82%;
+            @include breakpoint($tablet) {
+              padding: 0;
+              width: 100%;
+            }
+          }
+        }
+        input[type=text] {
+          font-size: 16px;
+        }
+        input[type=submit].floating,
+        input[type=button].floating {
+          clear: none;
+        }
+        input[type=button].button-trans {
+          font-size: 14px;
+          font-weight: 400;
+          text-transform: none;
+          color: $pink;
+          background-color: transparent;
+          margin-left: 20px;
+        }
+        .centered {
+          text-align: center;
+        }
+      }
+      // ANCHO Wrapper
+      &.wide-alert {
+        width: 550px;
+        @include breakpoint($mobile) {
+          width: 98%;
+        }
+      }
     }
-    @include breakpoint($mobile) {
-      width: 40%;
-      margin: 70% auto;
-    }
-    &:target {
-      animation: .6s both action;
-      opacity: 1;
-      visibility: visible;
-    }
-    img {
-      width: 100%;
-    }
-    .loader-message {
-      animation: fadeIn 0.8s infinite alternate;
-      width: 100%;
-      text-align: center;
-      font-style: italic;
-      text-shadow: 0 0 6px white;
+    &.fixedone {
+      position: fixed;
     }
   }
-}
-// Small AJAX Loader
-.small-data-ajax {
-  float: left;
-  position: relative;
-  background-color: white;
-  height: 150px;
-  margin: 0;
-  opacity: 1; // 0
-  transition: all .15s ease-in;
-  visibility: visible; // CHANGE VISIBILITY to "visible" in order to TEST
-  width: 100%;
-  z-index: 25;
-  text-align: center;
 
-  .small-ajax-wrapper {
-    margin: 0 48%;
-    position: relative;
-    width: 66px;
+  // AJAX RESPONSES
+  .cont-wrapper.ajax-loading {
+    min-height: 700px;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  }
+  .loading-data-ajax {
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 1; // 0
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .15s ease-in;
+    visibility: visible; // CHANGE VISIBILITY to "visible" in order to TEST
+    width: 100%;
+    z-index: 25;
+
+    .ajax-general-wrapper {
+      margin: 18% auto;
+      position: relative;
+      width: 166px;
+      z-index: 10;
+      @include breakpoint($tablet) {
+        margin: 40% auto;
+        width: 30%;
+      }
+      @include breakpoint($mobile) {
+        width: 40%;
+        margin: 70% auto;
+      }
+      &:target {
+        animation: .6s both action;
+        opacity: 1;
+        visibility: visible;
+      }
+      img {
+        width: 100%;
+      }
+      .loader-message {
+        animation: fadeIn 0.8s infinite alternate;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        text-shadow: 0 0 6px white;
+      }
+    }
+  }
+  // Small AJAX Loader
+  .small-data-ajax {
     float: left;
-    z-index: 10;
-    @include breakpoint($tablet) {
-      margin: 40% auto;
-      width: 30%;
-    }
-    @include breakpoint($mobile) {
-      width: 40%;
-      margin: 70% auto;
-    }
-    &:target {
-      animation: .6s both action;
-      opacity: 1;
-      visibility: visible;
-    }
-    img {
-      width: 100%;
-    }
-    .small-loader-message {
-      animation: fadeIn 0.8s infinite alternate;
-      width: 100%;
-      text-align: center;
-      font-style: italic;
-      text-shadow: 0 0 6px white;
+    position: relative;
+    background-color: white;
+    height: 150px;
+    margin: 0;
+    opacity: 1; // 0
+    transition: all .15s ease-in;
+    visibility: visible; // CHANGE VISIBILITY to "visible" in order to TEST
+    width: 100%;
+    z-index: 25;
+    text-align: center;
+
+    .small-ajax-wrapper {
+      margin: 0 48%;
+      position: relative;
+      width: 66px;
+      float: left;
+      z-index: 10;
+      @include breakpoint($tablet) {
+        margin: 40% auto;
+        width: 30%;
+      }
+      @include breakpoint($mobile) {
+        width: 40%;
+        margin: 70% auto;
+      }
+      &:target {
+        animation: .6s both action;
+        opacity: 1;
+        visibility: visible;
+      }
+      img {
+        width: 100%;
+      }
+      .small-loader-message {
+        animation: fadeIn 0.8s infinite alternate;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        text-shadow: 0 0 6px white;
+      }
     }
   }
 }

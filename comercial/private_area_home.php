@@ -20,16 +20,13 @@
       </div>
     </div>
     <!--END SPECIFIC PAGE PRIVATE AREA HOME-->
-    <div class="cont-wrapper">
-      <div class="content">
-        <h2 class="global-subtitle">Novembre, 2016</h2>
-      </div>
-    </div>
-
 
     <!-- BEGIN SECTION TABS (For Desktop) -->
     <div class="cont-wrapper shortcode-container only-desktop">
       <div class="content">
+
+        <h2 class="global-subtitle">Novembre, 2016</h2>
+
         <div class="consumption-product-left half-page">
           <h3>Els meus productes</h3>
         </div>

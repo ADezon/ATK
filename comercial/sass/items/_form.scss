@@ -184,6 +184,9 @@
     &.field-error {
       border: 1px solid $pink;
     }
+    &.trescientos {
+      width: 380px !important;
+    }
   }
 
   .select-w-title {
@@ -335,15 +338,17 @@
     float: left;
     font-size: 16px;
     font-weight: bold;
-    height: 36px;
-    line-height: 16px;
-    margin: 20px 0;
-    padding: 10px 22px;
+    line-height: 24px;
+    margin: 10px 0;
+    padding: 4px 16px;
     position: relative;
     font-family: "Titillium Web", sans-serif;
     text-align: center;
     text-transform: uppercase;
+
+    //height: 36px;
     //width: 111px;
+
     &.button-black {
       background-color: $greymedium;
     }
