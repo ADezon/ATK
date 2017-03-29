@@ -169,6 +169,10 @@
     &.field-error {
       border: 1px solid $pink;
     }
+    &.white_not_grey {
+      background: white;
+      border: 1px solid $gris2;
+    }
   }
 
   select {
@@ -215,7 +219,7 @@
       margin: 0;
       position: relative;
       width: 190px;
-      padding: 0 8px;
+      padding: 0 0 0 8px;
     }
   }
 

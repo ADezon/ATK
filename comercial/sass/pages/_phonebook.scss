@@ -68,8 +68,6 @@
     }
     .cerca_avancada_section {
       background-color: #fbfbfb;
-      border-bottom: 1px solid #cccccc;
-      border-top: 1px solid #cccccc;
       display: block;
       padding: 40px 0;
       position: relative;
@@ -290,17 +288,17 @@
       display: block;
       float: left;
       height: 37px;
-      margin-left: 1%;
       overflow: hidden;
       padding: 10px;
       position: relative;
       width: 40px;
+      clear: none;
+      margin: 0 0 0 1%;
     }
   }
   // PHONEBOOK RESULTS
   .search-criteria-results {
     background-color: #f5f5f5;
-    border-top: 1px solid #c7c7c7;
     .caixa_criteri {
       display: block;
       margin: 0 auto;
