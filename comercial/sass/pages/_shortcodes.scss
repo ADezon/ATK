@@ -333,9 +333,14 @@
     padding: 30px 7%;
     position: relative;
     width: 100%;
+
+    color: $products-fontcolor;
+    font-size: 16px;
+    line-height: 22px;
+
     p {
       color: $products-fontcolor;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 22px;
     }
   }
@@ -579,7 +584,7 @@
   }
 
   .cont-wrapper .ui-accordion-content p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .ui-widget-content a {
     &.button-pink {
@@ -661,17 +666,21 @@
       padding: 0 15px;
       position: relative;
       width: 80%;
+      color: #4a4a4a;
+      font-size: 16px;
+      line-height: 22px;
+      p {
+        color: #4a4a4a;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
       @include breakpoint($tablet) {
         width: 50%;
       }
       @include breakpoint($mobile) {
         padding: 10px 0;
         width: 100%;
-      }
-      p {
-        color: #4a4a4a;
-        font-size: 14px;
-        line-height: 22px;
       }
     }
   }
@@ -776,9 +785,9 @@
         @include breakpoint ($mobile) {
           padding: 0;
         }
-        p {
+        p, ol li, ul li {
           color: #4a4a4a;
-          font-size: 14px;
+          font-size: 16px;
           line-height: 22px;
         }
       }
@@ -1289,6 +1298,7 @@
   */
   .cont-wrapper .content.sliders {
     overflow: visible;
+    position: relative;
 
     // DESKTOP ONLY
     .slider-multiple-desktop {
@@ -1339,33 +1349,50 @@
       @include breakpoint ($mobile) {
         display: none;
       }
-      .flex-direction-nav .flex-next {
-        font-size: 0;
-        &:before {
-          content: "\e92e";
-          font-family: 'atelecom-icons' !important;
-          font-size: 28px;
-          color: $pink;
-          padding-right: 8px;
+      .flex-direction-nav {
+        position: absolute;
+        top: 58%;
+        width: 100%;
+
+        .flex-nav-prev {
+          position: absolute;
+          left: -4px;
         }
-      }
-      .flex-direction-nav .flex-nav-prev {
-        a.flex-prev {
+
+        .flex-nav-next {
+          position: absolute;
+          right: 4px;
+        }
+        a { opacity: 1 !important; }
+
+        .flex-next {
           font-size: 0;
+          right: -18px;
           &:before {
-            content: "\e930";
+            content: "\e92e";
             font-family: 'atelecom-icons' !important;
             font-size: 28px;
+            line-height: 32px;
             color: $pink;
             padding-right: 8px;
           }
         }
+        .flex-nav-prev {
+          a.flex-prev {
+            font-size: 0;
+            &:before {
+              content: "\e930";
+              font-family: 'atelecom-icons' !important;
+              font-size: 28px;
+              line-height: 32px;
+              color: $pink;
+              padding-right: 8px;
+            }
+          }
+        }
       }
 
-      .flex-direction-nav a {
-        opacity: 1;
-        top: 58%;
-      }
+
     }
 
     // MOBILE ONLY
@@ -1395,21 +1422,7 @@
       }
     }
   }
-  .cont-wrapper.w-menu {
-    .content.sliders .slider-multiple-desktop {
-      padding-left: 4px;
 
-      .slider-deskt .six-items {
-        margin: 0 20px 20px 0;
-      }
-      .flex-direction-nav .flex-prev {
-        left: 210px;
-      }
-      .flex-direction-nav .flex-next {
-        right: -28px;
-      }
-    }
-  }
   /*
   * 11. SHORTCODE LIST HELP
   */

@@ -725,122 +725,181 @@
   <!-- BEGIN SECTION SLIDER PRODUCTS -->
   Background color can be changed to Grey With bg-color class in cont-wrapper<br>
   If only have ONE "page" (slide with 12 images or less) slider will NOT show "pager".
-  <div class="cont-wrapper shortcode-container">
-    <div class="content sliders">
-      <h2 class="global-subtitle">Canals que pots veure</h2>
+    <!-- BEGIN SECTION SLIDER PRODUCTS -->
+    <div class="cont-wrapper shortcode-container">
+      <div class="content sliders">
+        <h2 class="global-subtitle">Canals que pots veure</h2>
 
-      <div class="slider-multiple-desktop">
-        <!-- Slider FOR DESKTOP (multiple items per SLIDE )-->
-        <div class="slider-deskt">
-          <ul class="slides">
-            <li>
-              <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
-              </div>
-              <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
-              </div>
-              <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
-              </div>
-              <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
-              </div>
-              <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
-              </div>
-              <div class="six-items last"><a href="#" title=""><img
-                      src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+        <div class="slider-multiple-desktop">
+          <!-- Slider FOR DESKTOP (multiple items per SLIDE )-->
+          <div class="slider-deskt">
+            <ul class="slides">
+              <li>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
+                </div>
+                <div class="six-items last"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
 
-              <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
-              </div>
-              <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
-              </div>
-              <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
-              </div>
-              <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
-              </div>
-              <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
-              </div>
-              <!--                            <div class="six-items last"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>-->
-            </li>
-          </ul>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
+                </div>
+                <div class="six-items last"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
+              </li>
+              <li>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
+                </div>
+                <div class="six-items last"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/000/fff.jpg"/></a></div>
+
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a>
+                </div>
+                <div class="six-items"><a href="#" title=""><img src="https://dummyimage.com/150x150/000/fff.jpg"/></a>
+                </div>
+                <div class="six-items last"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/d30573/fff.jpg"/></a></div>
+              </li>
+              <li>
+                <div class="six-items"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                <div class="six-items"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/000/fff.jpg&text=imatge+slide"/></a></div>
+                <div class="six-items"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                <div class="six-items"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/000/fff.jpg&text=imatge+slide"/></a></div>
+                <div class="six-items"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                <div class="six-items last"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/000/fff.jpg&text=imatge+slide"/></a></div>
+
+                <div class="six-items"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                <div class="six-items"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/000/fff.jpg&text=imatge+slide"/></a></div>
+                <div class="six-items"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                <div class="six-items"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/000/fff.jpg&text=imatge+slide"/></a></div>
+                <div class="six-items"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/d30573/fff.jpg&text=imatge+slide"/></a></div>
+                <div class="six-items last"><a href="#" title=""><img
+                        src="https://dummyimage.com/150x150/000/fff.jpg&text=imatge+slide"/></a></div>
+              </li>
+
+            </ul>
+          </div>
+
+          <script language="JavaScript">
+              $(document).ready(function () {
+                  var timering = 7000;
+                  // SINGLE FLEXSLIDER.
+                  $('.slider-deskt').flexslider({
+                      animation: "slide",
+                      directionNav: true,
+                      controlNav: false,
+                      slideshowSpeed: timering,
+                      minItems: 1,
+                      maxItems: 1
+                  });
+              });
+          </script>
+        </div>
+        <!-- MOBILE ONLY-->
+        <div class="slider-single-mobile">
+          <!-- Slider FOR MOBILE (one item per SLIDE )-->
+          <div class="slider-mob">
+            <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a>
+            </div>
+            <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a>
+            </div>
+            <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a>
+            </div>
+            <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a>
+            </div>
+            <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a>
+            </div>
+            <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a>
+            </div>
+            <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a>
+            </div>
+            <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a>
+            </div>
+            <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a>
+            </div>
+            <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a>
+            </div>
+            <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a>
+            </div>
+            <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a>
+            </div>
+          </div>
+          <script language="JavaScript">
+              $(document).ready(function () {
+
+                  // http://kenwheeler.github.io/slick/
+                  $('.slider-mob').slick({
+                      centerMode: true,
+                      centerPadding: '10px',
+                      slidesToShow: 3,
+                      responsive: [
+                          {
+                              breakpoint: 720,
+                              settings: {
+                                  arrows: false,
+                                  centerMode: true,
+                                  centerPadding: '40px',
+                                  slidesToShow: 3
+                              }
+                          },
+                          {
+                              breakpoint: 480,
+                              settings: {
+                                  arrows: false,
+                                  centerMode: true,
+                                  centerPadding: '40px',
+                                  slidesToShow: 1
+                              }
+                          }
+                      ]
+                  });
+              });
+          </script>
         </div>
 
-        <script language="JavaScript">
-            $(document).ready(function () {
-                var timering = 7000;
-                // SINGLE FLEXSLIDER.
-                $('.slider-deskt').flexslider({
-                    animation: "slide",
-                    directionNav: true,
-                    controlNav: false,
-                    slideshowSpeed: timering,
-                    minItems: 1,
-                    maxItems: 1
-                });
-            });
-        </script>
       </div>
-      <!-- MOBILE ONLY-->
-      <div class="slider-single-mobile">
-        <!-- Slider FOR MOBILE (one item per SLIDE )-->
-        <div class="slider-mob">
-          <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a>
-          </div>
-          <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a>
-          </div>
-          <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a>
-          </div>
-          <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a>
-          </div>
-          <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a>
-          </div>
-          <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a>
-          </div>
-          <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a>
-          </div>
-          <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a>
-          </div>
-          <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a>
-          </div>
-          <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a>
-          </div>
-          <div><a href="#" title=""><img src="https://dummyimage.com/210x210/d30573/fff.jpg&text=imatge+slide"/></a>
-          </div>
-          <div><a href="#" title=""><img src="https://dummyimage.com/210x210/471732/fff.jpg&text=imatge+slide"/></a>
-          </div>
-        </div>
-        <script language="JavaScript">
-            $(document).ready(function () {
-                // http://kenwheeler.github.io/slick/
-                $('.slider-mob').slick({
-                    centerMode: true,
-                    centerPadding: '10px',
-                    slidesToShow: 3,
-                    responsive: [
-                        {
-                            breakpoint: 720,
-                            settings: {
-                                arrows: false,
-                                centerMode: true,
-                                centerPadding: '40px',
-                                slidesToShow: 3
-                            }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                arrows: false,
-                                centerMode: true,
-                                centerPadding: '40px',
-                                slidesToShow: 1
-                            }
-                        }
-                    ]
-                });
-            });
-        </script>
-      </div>
-
     </div>
-  </div>
-  <!-- END SECTION SLIDER PRODUCTS -->
+    <!-- END SECTION SLIDER PRODUCTS -->
+
 
   <!-- BEGIN SECTION LIST HELP -->
   To choose between ONE or TWO columns, you need 2 templates (HTML structure changes) as in example:
