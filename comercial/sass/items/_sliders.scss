@@ -123,6 +123,12 @@
   .flex-direction-nav a {
     opacity: 1 !important;
     top: -242px;
+    @include breakpoint($x-large) {
+      top: -194px;
+    }
+    @include breakpoint($large) {
+      top: -174px;
+    }
     @include breakpoint($intermedio) {
       top: -90px;
     }

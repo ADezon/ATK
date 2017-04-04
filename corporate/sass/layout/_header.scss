@@ -968,7 +968,7 @@
         @include span(3 of 12);
         &.active{
           .title-level-1{
-            color: $pink;
+            color: black;
           }
         }
         &.last{
@@ -1015,7 +1015,7 @@
             color: black;
           }
         }
-        &:hover {
+        &:hover, &.active {
           background: #f0f0f0;
           @include breakpoint($tablet) {
             background-color: $greydark;
