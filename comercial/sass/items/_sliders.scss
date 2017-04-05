@@ -5,6 +5,7 @@
     li {
       overflow: hidden;
       position: relative;
+      margin: 0;
       @include breakpoint($intermedio) {
         max-height: none;
       }
@@ -54,7 +55,9 @@
                 margin: 0;
               }
             }
-            .position-left { float: left; }
+            .position-left {
+              float: left;
+            }
             .position-right {
               float: right;
               text-align: right;
@@ -76,7 +79,7 @@
               font-size: 21px;
               line-height: 28px;
               font-weight: 600;
-              margin-bottom:16px;
+              margin-bottom: 16px;
             }
             .field-body {
               color: $greymedium;
@@ -112,7 +115,7 @@
     width: 100%;
     li {
       margin-bottom: 0;
-      &:before{
+      &:before {
         content: "";
         display: none;
       }
@@ -159,96 +162,117 @@
     background: url("../images/icon-arrow-l.png") no-repeat 0 0 transparent;
     left: 15px !important;
   }
-}
-#main-content .small-banner {
-  background-color: $grey;
-  padding: 30px 0 26px 0;
-  width: 100%;
 
-  li:before {
+  /* USING INSIDE CONTENT */
+  &.inner-use {
+    position: relative;
+    ul li {
+      margin: 0;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .flex-direction-nav a {
+      top: -144px !important;
+    }
+  }
+}
+
+#main-content {
+  .small-banner {
+    background-color: $grey;
+    padding: 30px 0 26px 0;
+    width: 100%;
+
+    li {
+     margin: 0;
+      &:before {
+        content: "";
+        display: none;
+      }
+    }
+
+    .slider-four.small {
+      margin: 0 auto;
+      max-width: 1240px;
+      width: 100%;
+      @include breakpoint($mobile) {
+        width: 80%;
+      }
+      .item {
+        color: $pink;
+        font-size: 21px;
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+
+        &.picture {
+          margin: 0 auto 10px auto;
+          min-height: 52px;
+          vertical-align: baseline;
+        }
+        a {
+          color: $pink;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .flex-direction-nav {
+      margin: 0 auto;
+      max-width: 1240px;
+      position: relative;
+      width: 100%;
+      li:before {
+        content: "";
+        display: none;
+      }
+    }
+
+    .flex-direction-nav a {
+      opacity: 1 !important;
+      top: -34px;
+    }
+    .flex-direction-nav .flex-next,
+    .flex-direction-nav .flex-prev {
+      color: transparent;
+      opacity: 1 !important;
+      text-shadow: none;
+      &:before {
+        content: '';
+      }
+    }
+    .flex-direction-nav .flex-next {
+      background: url("../images/icon-arrow-r.png") no-repeat 100% 0 transparent;
+      right: 15px !important;
+      @include breakpoint($mobile) {
+        right: -25px !important;
+      }
+    }
+    .flex-direction-nav .flex-prev {
+      background: url("../images/icon-arrow-l.png") no-repeat 0 0 transparent;
+      left: 15px !important;
+      @include breakpoint($mobile) {
+        left: -25px !important;
+      }
+    }
+  }
+
+  .flex-control-nav li:before {
     content: "";
     display: none;
   }
 
-  .slider-four.small {
-    margin: 0 auto;
-    max-width: 1240px;
-    width: 100%;
-    @include breakpoint($mobile) {
-      width: 80%;
+  .small-banner .flex-viewport .slides li {
+    border-left: 1px solid #9C9E9F;
+    &:first-child {
+      border: medium none;
     }
-    .item {
-      color: $pink;
-      font-size: 21px;
-      margin: 0 auto;
-      text-align: center;
-      width: 80%;
 
-      &.picture {
-        margin: 0 auto 10px auto;
-        min-height: 52px;
-        vertical-align: baseline;
-      }
-      a {
-        color: $pink;
-        text-decoration: none;
-      }
-    }
   }
-
-
-  .flex-direction-nav {
-    margin: 0 auto;
-    max-width: 1240px;
-    position: relative;
-    width: 100%;
-    li:before {
-      content: "";
-      display: none;
-    }
+  .flex-viewport ul li {
+    margin: 0;
   }
-
-  .flex-direction-nav a {
-    opacity: 1 !important;
-    top: -34px;
-  }
-  .flex-direction-nav .flex-next,
-  .flex-direction-nav .flex-prev {
-    color: transparent;
-    opacity: 1 !important;
-    text-shadow: none;
-    &:before {
-      content: '';
-    }
-  }
-  .flex-direction-nav .flex-next {
-    background: url("../images/icon-arrow-r.png") no-repeat 100% 0 transparent;
-    right: 15px !important;
-    @include breakpoint($mobile) {
-      right: -25px !important;
-    }
-  }
-  .flex-direction-nav .flex-prev {
-    background: url("../images/icon-arrow-l.png") no-repeat 0 0 transparent;
-    left: 15px !important;
-    @include breakpoint($mobile) {
-      left: -25px !important;
-    }
-  }
-}
-
-.flex-control-nav li:before {
-  content: "";
-  display: none;
-}
-
-.small-banner .flex-viewport .slides li {
-  border-left: 1px solid #9C9E9F;
-  &:first-child {
-    border: medium none;
-  }
-
-}
-#main-content .flex-viewport ul li {
-  margin: 0;
 }
