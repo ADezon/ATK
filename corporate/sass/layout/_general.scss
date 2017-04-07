@@ -102,25 +102,34 @@ ul {
 strong {
   font-weight: bold;
 }
-#main-content ul {
-  list-style: none;
-  li {
-    color: #58585A;
-    margin-bottom: 10px;
-    margin-left: 12px;
-    position: relative;
+#main-content {
 
-    &:before {
-      content: "\e923";
-      font-family: 'atelecom-icons' !important;
-      font-size: 5px;
-      color: $pink;
-      position: absolute;
-      top: 2px;
-      left: -12px;
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  ul {
+    list-style: none;
+    li {
+      color: #58585A;
+      margin-bottom: 10px;
+      margin-left: 12px;
+      position: relative;
+
+      &:before {
+        content: "\e923";
+        font-family: 'atelecom-icons' !important;
+        font-size: 5px;
+        color: $pink;
+        position: absolute;
+        top: 2px;
+        left: -12px;
+      }
     }
   }
 }
+
 
 .full-centered {
   float: left;
@@ -428,7 +437,7 @@ p{
     padding: 0 10px;
     position: relative;
     @include breakpoint ($mobile) {
-      padding: 0 18px;
+      padding: 0 4%;
     }
     &.content-big{
       max-width: 1024px;
