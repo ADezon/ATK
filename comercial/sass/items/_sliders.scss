@@ -1,11 +1,16 @@
 #main-content .slider {
   position: relative;
 
-  .slides {
+  ul.slides {
     li {
       overflow: hidden;
       position: relative;
       margin: 0;
+      display: none;
+      &:first-child {
+        display: block;
+      }
+
       @include breakpoint($intermedio) {
         max-height: none;
       }
@@ -49,6 +54,9 @@
               margin-top: 10%;
               padding: 20px;
               width: 250px;
+              @include breakpoint ($wxga) {
+                margin-top: 6%;
+              }
               @include breakpoint($intermedio) {
                 float: none;
                 width: 100%;

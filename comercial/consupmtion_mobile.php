@@ -196,7 +196,7 @@
                     </div>
                   </div>
                   <div class="custom-links">
-                    <a href="#" class="button-pink">Contractar</a>
+                    <a href="#" class="button-pink action-activate">Activar</a>
                     <a href="#" class="button-active">+ Info</a>
                   </div>
                 </div>
@@ -210,7 +210,7 @@
                     </div>
                   </div>
                   <div class="custom-links">
-                    <a href="#" class="button-pink">Contractar</a>
+                    <a href="#" class="button-pink action-activate">Activar</a>
                     <a href="#" class="button-active">+ Info</a>
                   </div>
                 </div>
@@ -1350,35 +1350,24 @@
                 <div class="custom-item one">
                   <div class="title-forfet">Forfet <span class="treinta bold">29</span></div>
                 </div>
-                <div class="custom-item two"><span class="treinta grey-medium bold">29€</span>&nbsp;<span class="grey-medium bold">/mes</span>
+                <div class="custom-item two"><span class="treinta grey-medium bold">29€</span>&nbsp;<span
+                      class="grey-medium bold">/mes</span>
                 </div>
                 <div class="custom-item three">
                   <div class="actions-container">
 
-                    <a href="/web/comercial/client/contractar?productOfferingId=9135803656513658434&amp;pricePlanId=9136674058213132035&amp;typeUpdate=UP&amp;entityBillingKey={mvccVersion=3, accountId=20118, companyId=20116, userId=0, userName=, createDate=Fri Sep 16 16:28:33 CEST 2016, modifiedDate=Thu Mar 02 08:15:05 CET 2017, parentAccountId=0, name=Liferay, legalName=Liferay, Inc., legalId=, legalType=, sicCode=, tickerSymbol=, industry=, type=, size=}&amp;entityCustomerKey=9140072242413536042&amp;productOldInstanceId=9140072236013686681&amp;productOldOfferingId=9141814228113310775&amp;productOldPricePlan=" class="button-pink action-sign-in">
+                    <a href="/web/comercial/client/contractar?productOfferingId=9135803656513658434&amp;pricePlanId=9136674058213132035&amp;typeUpdate=UP&amp;entityBillingKey={mvccVersion=3, accountId=20118, companyId=20116, userId=0, userName=, createDate=Fri Sep 16 16:28:33 CEST 2016, modifiedDate=Thu Mar 02 08:15:05 CET 2017, parentAccountId=0, name=Liferay, legalName=Liferay, Inc., legalId=, legalType=, sicCode=, tickerSymbol=, industry=, type=, size=}&amp;entityCustomerKey=9140072242413536042&amp;productOldInstanceId=9140072236013686681&amp;productOldOfferingId=9141814228113310775&amp;productOldPricePlan="
+                       class="button-pink action-sign-in">
                       Contratar
                     </a>
 
-                    <a href="/web/comercial/f_9135803656513658434_9136674058213132035" class="button-active">Més informació</a>
+                    <a href="/web/comercial/f_9135803656513658434_9136674058213132035" class="button-active">Més
+                      informació</a>
                   </div>
                 </div>
               </div>
             </div>
-
-
-
           </div>
-
-
-
-          <div class="products-floating-box">
-
-
-
-
-
-          </div>
-
         </div>
       </div>
 
@@ -1393,17 +1382,6 @@
 
           revealalert();
 
-          // Fold-Unfold ITEMS
-          // We start closing ALL (on load PAGE) not marked has "opened"
-          $('.services-selector:not(".opened")').children('.services-full-info').hide();
-
-          // Then we configure actions for fold-unfold
-          $('.services-element').click(function () {
-              var yoSoyTuPadre = $(this).parent('.services-selector');
-              yoSoyTuPadre.toggleClass('opened');
-              yoSoyTuPadre.children('.services-full-info').slideToggle();
-          });
-
           // ALERTS-ColorBoxes
           var floatingWrapper = $('.general-alert-wrapper'),
               floatingAlert = $('.content-general-wrapper.clientproducts'),
@@ -1411,11 +1389,24 @@
               alertBody = $('.alert-general-body'),
               scrollTop = $(window).scrollTop();
 
+
+          // Refrescamos variable cada vez que hagamos WHEEL
+          $(window).bind('mousewheel DOMMouseScroll', function (event) {
+              if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+                  scrollTop = $(window).scrollTop();
+              }
+              else {
+                  scrollTop = $(window).scrollTop();
+              }
+          });
+
+
           // Open ALERT without CONTENT, fill with AJAX callback
           $('.action-activate').click(function (e) {
               e.preventDefault();
+              console.log(scrollTop);
               // Call FORM Alta MOVISTAR
-              $.post("includes/fake_api.php", {operation: 'altamovistar'})
+              $.post("includes/fake_api.php", {operation: 'viewchannels'})
                   .done(function (data) {
                       alertTitle.html(data.title);
                       alertBody.html(data.body);
@@ -1424,10 +1415,10 @@
                       alertTitle.html(data);
                       alertBody.html(data);
                   });
-              if ($(window).width() < 480) {
-                  floatingWrapper.removeClass('fixedone');
-                  floatingAlert.css({top: scrollTop});
-              }
+
+              floatingWrapper.removeClass('fixedone');
+              floatingAlert.css({top: scrollTop});
+
 
               // AJAX triggers for ALTA
               $('.clientproducts').on('click', '.activate-mplus', function () {
@@ -1465,6 +1456,7 @@
 
           // NOTE: THIS IS THE SAME/Identical as before, but for "CONTRATAR"
           $('.action-sign-in').click(function (e) {
+              console.log(scrollTop);
               e.preventDefault();
               // Call FORM Alta MOVISTAR
               $.post("includes/fake_api.php", {operation: 'altamovistar'})
@@ -1476,10 +1468,9 @@
                       alertTitle.html(data);
                       alertBody.html(data);
                   });
-              if ($(window).width() < 480) {
-                  floatingWrapper.removeClass('fixedone');
-                  floatingAlert.css({top: scrollTop});
-              }
+              floatingWrapper.removeClass('fixedone');
+              floatingAlert.css({top: scrollTop});
+
               revealalert();
 
               // AJAX triggers for ALTA
