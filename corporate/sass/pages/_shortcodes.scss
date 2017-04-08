@@ -1665,7 +1665,6 @@
           text-transform: uppercase;
           @include breakpoint($tablet) {
             text-align: left;
-            margin-top: 2%;
           }
         }
         @include breakpoint($mobile) {

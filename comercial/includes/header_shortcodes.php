@@ -56,7 +56,6 @@
 
   <!-- // Next three ONLY if sticky MENU is enabled -->
   <script src="./js/scrollto/jquery.scrollto.js"></script>
-  <script src="./js/dinamicglobalalert.js"></script>
 
   <!--END INYECTED AS REQUIRED-->
 

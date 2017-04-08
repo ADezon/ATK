@@ -169,9 +169,6 @@
     .date-home {
       margin: 14px 0;
     }
-    .new-featured-title {
-      text-transform: uppercase;
-    }
   }
 
   .news-list {
@@ -275,9 +272,6 @@
     font-size: 12px;
     font-weight: 300;
     margin: 10px 0;
-    @include breakpoint($tablet) {
-      margin: 0 0 4px 0;
-    }
   }
   .new-featured-title a {
     font-size: 22px;
@@ -365,9 +359,5 @@
       line-height: 20px;
       color: $products-fontcolor;
     }
-  }
-
-  .portlet-journal-content .journal-content-article .slider-corporate-home img {
-    max-width: inherit;
   }
 }
