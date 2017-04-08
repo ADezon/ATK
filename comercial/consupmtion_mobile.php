@@ -1332,9 +1332,7 @@
 
 
     <!--ALERT FOR FLOATING DATA-->
-    <div class="general-alert-wrapper fixedone">
-
-
+    <div class="general-alert-wrapper">
       <div class="content-general-wrapper clientproducts" id="popup">
         <div class="alert-general-close">
           <span class="icons icon-close"></span>

@@ -1,611 +1,566 @@
-#main-content {
-  .cont-wrapper {
-    &.page-client-products {
-      background-color: #f5f5f5;
-      padding-bottom: 40px;
-      a.button-pink {
-        position: relative;
-        display: block;
-        float: left;
-        width: 111px;
-        margin-left: 10px;
-        margin-top: 58px;
-        @include breakpoint ($mobile) {
-          margin-top: 12px;
-        }
+.cont-wrapper {
+  &.page-client-products {
+    background-color: #f5f5f5;
+    padding-bottom: 40px;
+    a.button-pink {
+      position: relative;
+      display: block;
+      float: left;
+      width: 111px;
+      margin-left: 10px;
+      margin-top: 58px;
+      @include breakpoint ($mobile) {
+        margin-top: 12px;
       }
     }
-    &.result-client-products {
+  }
+  &.result-client-products {
 
-      h2 {
-        font-size: 21px;
-        line-height: 32px;
-        font-weight: bold;
+    h2 {
+      font-size: 21px;
+      line-height: 32px;
+      font-weight: bold;
+    }
+    .services-selector {
+      position: relative;
+      display: block;
+      clear: both;
+      margin: 40px 0;
+      @include breakpoint ($mobile) {
+        margin: 5px 0;
       }
-      .services-selector {
+
+      .half-page {
+        &.izq {
+          padding-right: 15px;
+          @include breakpoint($mobile) {
+            padding: 0;
+          }
+        }
+        &.der {
+          padding-left: 15px;
+          @include breakpoint($mobile) {
+            padding: 0;
+          }
+        }
+
+        .config-box {
+          &.limited {
+            height: 256px;
+            @include breakpoint($mobile) {
+              height: auto;
+            }
+            .inner-box > .custom-item.two {
+              width: 48%;
+              padding-top: 52px;
+              text-align: center;
+              @include breakpoint($mobile) {
+                padding-top: 15px;
+              }
+            }
+          }
+
+          .inner-box > .custom-item.one {
+            width: 52%;
+            @include breakpoint($mobile) {
+              margin: 0;
+            }
+
+            .message {
+              margin: 16px 0;
+              @include breakpoint($mobile) {
+                margin: 0;
+              }
+            }
+          }
+
+          .inner-box > .custom-item.two {
+            @include breakpoint($mobile) {
+              margin: 0;
+            }
+          }
+
+          .inner-box > .custom-item.three {
+            width: 100%;
+            @include breakpoint($mobile) {
+              margin: 0;
+            }
+
+          }
+          .inner-box > .custom-item .actions-container {
+            padding: 6px 0;
+            width: 100%;
+
+            a {
+              width: 46%;
+              margin: 10px 2%;
+            }
+          }
+        }
+
+      }
+      .add-channels {
+        .gallery-item {
+          margin-bottom: 24px;
+          a.button-pink {
+            width: 100%;
+            margin-top: 6px;
+            cursor: pointer;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .services-element {
         position: relative;
         display: block;
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
         clear: both;
-        margin: 40px 0;
+        background-color: $greysoft;
+        padding: 25px 40px;
+        margin-bottom: 20px;
+
         @include breakpoint ($mobile) {
-          margin: 5px 0;
+          padding: 8px;
+        }
+
+        .services-title {
+          position: relative;
+          display: block;
+          float: left;
+          width: 50%;
+          text-align: center;
+          @include breakpoint($mobile) {
+            width: 60%;
+          }
+          .icons {
+            position: relative;
+            display: block;
+            float: left;
+            font-size: 35px;
+            line-height: 40px;
+            color: $pink;
+            margin-right: 20px;
+            @include breakpoint($mobile) {
+              margin: 0;
+            }
+          }
+          p {
+            position: relative;
+            display: block;
+            float: left;
+            padding: 0;
+            margin: 0;
+            line-height: 40px;
+            color: $black;
+            font-size: 18px;
+            font-weight: bold;
+            @include breakpoint($mobile) {
+              float: none;
+              line-height: 40px;
+            }
+          }
+        }
+        .services-price {
+          position: relative;
+          display: block;
+          float: right;
+          width: 50%;
+          p,
+          .clickunfold {
+            position: relative;
+            display: block;
+            float: right;
+            padding: 0;
+            margin: 0;
+            line-height: 40px;
+            color: $black;
+            font-size: 24px;
+            font-weight: bold;
+            @include breakpoint($mobile) {
+              font-size: 32px;
+              //margin-top: 16px;
+            }
+
+            &:after {
+              content: '\e931';
+              color: $pink;
+              font-size: 26px;
+              font-family: 'atelecom-icons' !important;
+              speak: none;
+              font-style: normal;
+              font-weight: normal;
+              font-variant: normal;
+              text-transform: none;
+              line-height: 1;
+              -webkit-font-smoothing: antialiased;
+              margin-left: 24px;
+              position: relative;
+              top: 2px;
+              @include breakpoint($mobile) {
+                margin-left: 10px;
+              }
+            }
+          }
+
+          // for .services-price
+          @include breakpoint($mobile) {
+            width: 40%;
+            p {
+              font-size: 28px;
+              margin: 0;
+              &:after {
+                margin-left: 10px;
+              }
+            }
+          }
+          .clickunfold {
+            float: right;
+          }
+        }
+
+      }
+      &.opened {
+        .services-price p:after,
+        .services-price .clickunfold:after {
+          content: '\e92f';
+        }
+      }
+
+      .services-full-info {
+        margin-bottom: 30px;
+        float: left;
+      }
+
+      /* Basic Layout for INNER content */
+      .products-inner-container {
+        float: left;
+        width: 100%;
+        margin-top: 22px;
+        margin-bottom: 26px;
+        padding: 0 20px;
+
+        @include breakpoint ($mobile) { padding: 0; }
+
+        &.internet {
+          .products-block-forfeit {
+            min-height: inherit;
+
+            .forfeit-info {
+
+              h4 { margin-bottom: 20px; }
+              .forfeit-name {
+                width: auto;
+                @include breakpoint ($mobile) {
+                  width: 100%;
+                  text-align: center;
+                }
+              }
+            }
+
+            .forfeit-dades {
+              @include breakpoint ($mobile) {
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+
+        .config-box {
+          margin: 0;
+        }
+        .product-tv-item {
+          float: left;
+          width: 100%;
+          border: 2px solid $greysoft;
+          padding: 12px 20px;
+          margin-bottom: 30px;
+
+          .product-detail {
+            float: left;
+            width: 35%;
+            @include breakpoint ($mobile) { width: 50%; }
+
+            .main-title {
+              margin-top: 12px;
+              font-size: 21px;
+              color: $pink;
+              line-height: 26px;
+              font-weight: 600;
+            }
+          }
+          .product-info {
+            float: left;
+            width: 30%;
+            @include breakpoint ($mobile) {
+              width: 50%;
+              padding-left: 18px;
+            }
+
+            .do-not-remove {
+              margin-top: 4px;
+            }
+            a { text-decoration: underline; }
+          }
+          .product-actions {
+            float: left;
+            width: 35%;
+            @include breakpoint ($mobile) { width: 100%; }
+            margin-top: 30px;
+            text-align: center;
+            color: $gris3;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+          .products-gallery {
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+
+            .products-gallery-item {
+              text-align: center;
+
+              @include gallery(2 of 10);
+              @include breakpoint ($tablet) { @include gallery(5 of 10); }
+              @include breakpoint ($mobile) { 
+                margin: 0 !important;
+                width: 50%;
+                clear: none;
+                float: left;
+              }
+
+              .gallery-item-title {
+                font-size: 16px;
+                line-height: 24px;
+                color: $rosa2;
+                font-weight: 600;
+                margin-bottom: 10px;
+              }
+              a { text-decoration: underline; line-height: 22px; }
+            }
+          }
+        }
+        h2 {
+          margin-bottom: 30px;
+          float: left;
+          width: 100%;
+        }
+        h4 {
+          margin: 15px 0 4px 0;
+          .bigger {
+            font-size: 21px;
+          }
+        }
+
+        .products-block-forfeit {
+          float: left;
+          width: 468px;
+          border: 2px solid #f4f4f4;
+          min-height: 214px;
+          padding-top: 10px;
+
+          &.odd { margin: 0 28px 30px 0; }
+          &.even { margin: 0 0 30px 0; }
+          @include breakpoint ($mobile) {
+            width: 100%;
+            &.odd { margin: 0 0 20px 0; }
+            &.even { margin: 0 0 20px 0; }
+          }
+
+          .forfeit-info {
+            float: left;
+            width: 50%;
+            color: $pink;
+            padding-left: 42px;
+
+            @include breakpoint ($mobile) {
+              width: 100%;
+              padding-left: 0;
+              text-align: center;
+            }
+
+            a {
+              font-size: 14px;
+              font-weight: 500;
+              text-decoration: underline;
+            }
+
+            .forfeit-name {
+              font-size: 21px;
+              font-weight: 700;
+              line-height: 19px;
+              float: left;
+              width: 32%;
+              text-align: right;
+              padding-top: 24px;
+            }
+            .big-info {
+              float: left;
+              width: 60%;
+              font-size: 72px;
+              line-height: 72px;
+              text-align: left;
+              padding-left: 12px;
+              padding-top: 10px;
+            }
+            h4 {
+              float: left;
+              width: 100%;
+              line-height: 22px;
+              font-weight: bold;
+              margin: 20px 0 0 0;
+            }
+          }
+          .forfeit-dades {
+            float: left;
+            width: 50%;
+            padding: 0 20px;
+            margin-top: 4px;
+            @include breakpoint ($mobile) {
+              width: 100%;
+              margin-top: 0;
+              text-align: center;
+            }
+
+          }
+          .forfeit-actions {
+            float: left;
+            width: 100%;
+            color: #9c9e9f;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 30px 0 20px 0;
+
+            .only-info {
+              padding-top: 8px;
+            }
+
+            a.button-pink {
+              width: 100%;
+              margin-bottom: 6px;
+
+              @include breakpoint ($mobile) {
+                margin-bottom: 20px;
+              }
+            }
+          }
         }
 
         .half-page {
-          &.izq {
-            padding-right: 15px;
-            @include breakpoint($mobile) {
-              padding: 0;
-            }
-          }
-          &.der {
-            padding-left: 15px;
-            @include breakpoint($mobile) {
-              padding: 0;
-            }
-          }
-
-          .config-box {
-            &.limited {
-              height: 256px;
-              @include breakpoint($mobile) {
-                height: auto;
-              }
-              .inner-box > .custom-item.two {
-                width: 48%;
-                padding-top: 52px;
-                text-align: center;
-                @include breakpoint($mobile) {
-                  padding-top: 15px;
-                }
-              }
-            }
-
-            .inner-box > .custom-item.one {
-              width: 52%;
-              @include breakpoint($mobile) {
-                margin: 0;
-              }
-
-              .message {
-                margin: 16px 0;
-                @include breakpoint($mobile) {
-                  margin: 0;
-                }
-              }
-            }
-
-            .inner-box > .custom-item.two {
-              @include breakpoint($mobile) {
-                margin: 0;
-              }
-            }
-
-            .inner-box > .custom-item.three {
-              width: 100%;
-              @include breakpoint($mobile) {
-                margin: 0;
-              }
-
-            }
-            .inner-box > .custom-item .actions-container {
-              padding: 6px 0;
-              width: 100%;
-
-              a {
-                width: 46%;
-                margin: 10px 2%;
-              }
-            }
-          }
-
-        }
-        .add-channels {
-          .gallery-item {
-            margin-bottom: 24px;
-            a.button-pink {
-              width: 100%;
-              margin-top: 6px;
-              cursor: pointer;
-              margin-bottom: 10px;
-            }
-          }
-        }
-
-        .services-element {
-          position: relative;
-          display: block;
-          width: 100%;
-          overflow: hidden;
-          cursor: pointer;
-          clear: both;
-          background-color: $greysoft;
-          padding: 25px 40px;
-          margin-bottom: 20px;
-
-          @include breakpoint ($mobile) {
-            padding: 8px;
-          }
-
-          .services-title {
-            position: relative;
-            display: block;
-            float: left;
-            width: 50%;
-            text-align: center;
-            @include breakpoint($mobile) {
-              width: 60%;
-            }
-            .icons {
-              position: relative;
-              display: block;
-              float: left;
-              font-size: 35px;
-              line-height: 40px;
-              color: $pink;
-              margin-right: 20px;
-              @include breakpoint($mobile) {
-                margin: 0;
-              }
-            }
-            p {
-              position: relative;
-              display: block;
-              float: left;
-              padding: 0;
-              margin: 0;
-              line-height: 40px;
-              color: $black;
-              font-size: 18px;
-              font-weight: bold;
-              @include breakpoint($mobile) {
-                float: none;
-                line-height: 40px;
-              }
-            }
-          }
-          .services-price {
-            position: relative;
-            display: block;
-            float: right;
-            width: 50%;
-            p,
-            .clickunfold {
-              position: relative;
-              display: block;
-              float: right;
-              padding: 0;
-              margin: 0;
-              line-height: 40px;
-              color: $black;
-              font-size: 24px;
-              font-weight: bold;
-              @include breakpoint($mobile) {
-                font-size: 32px;
-                //margin-top: 16px;
-              }
-
-              &:after {
-                content: '\e931';
-                color: $pink;
-                font-size: 26px;
-                font-family: 'atelecom-icons' !important;
-                speak: none;
-                font-style: normal;
-                font-weight: normal;
-                font-variant: normal;
-                text-transform: none;
-                line-height: 1;
-                -webkit-font-smoothing: antialiased;
-                margin-left: 24px;
-                position: relative;
-                top: 2px;
-                @include breakpoint($mobile) {
-                  margin-left: 10px;
-                }
-              }
-            }
-
-            // for .services-price
-            @include breakpoint($mobile) {
-              width: 40%;
-              p {
-                font-size: 28px;
-                margin: 0;
-                &:after {
-                  margin-left: 10px;
-                }
-              }
-            }
-            .clickunfold {
-              float: right;
-            }
-          }
-
-        }
-        &.opened {
-          .services-price p:after,
-          .services-price .clickunfold:after {
-            content: '\e92f';
-          }
-        }
-
-        .services-full-info {
-          margin-bottom: 30px;
-          float: left;
-        }
-
-        /* Basic Layout for INNER content */
-        .products-inner-container {
-          float: left;
-          width: 100%;
-          margin-top: 22px;
-          margin-bottom: 26px;
-          padding: 0 20px;
-
-          @include breakpoint ($mobile) {
-            padding: 0;
-          }
-
-          &.internet {
-            .products-block-forfeit {
-              min-height: inherit;
-
-              .forfeit-info {
-
-                h4 {
-                  margin-bottom: 20px;
-                }
-                .forfeit-name {
-                  width: auto;
-                  @include breakpoint ($mobile) {
-                    width: 100%;
-                    text-align: center;
-                  }
-                }
-              }
-
-              .forfeit-dades {
-                @include breakpoint ($mobile) {
-                  margin-bottom: 20px;
-                }
-              }
-            }
-          }
-
-          .config-box {
-            margin: 0;
-          }
-          .product-tv-item {
-            float: left;
-            width: 100%;
-            border: 2px solid $greysoft;
-            padding: 12px 20px;
-            margin-bottom: 30px;
-
-            .product-detail {
-              float: left;
-              width: 35%;
-              @include breakpoint ($mobile) {
-                width: 50%;
-              }
-
-              .main-title {
-                margin-top: 12px;
-                font-size: 21px;
-                color: $pink;
-                line-height: 26px;
-                font-weight: 600;
-              }
-            }
-            .product-info {
-              float: left;
-              width: 30%;
-              @include breakpoint ($mobile) {
-                width: 50%;
-                padding-left: 18px;
-              }
-
-              .do-not-remove {
-                margin-top: 4px;
-              }
-              a {
-                text-decoration: underline;
-              }
-            }
-            .product-actions {
-              float: left;
-              width: 35%;
-              @include breakpoint ($mobile) {
-                width: 100%;
-              }
-              margin-top: 30px;
-              text-align: center;
-              color: $gris3;
-              text-transform: uppercase;
-              font-weight: bold;
-            }
-            .products-gallery {
-              width: 100%;
-              float: left;
-              margin-top: 20px;
-
-              .products-gallery-item {
-                text-align: center;
-
-                @include gallery(2 of 10);
-                @include breakpoint ($tablet) {
-                  @include gallery(5 of 10);
-                }
-                @include breakpoint ($mobile) {
-                  margin: 0 !important;
-                  width: 50%;
-                  clear: none;
-                  float: left;
-                }
-
-                .gallery-item-title {
-                  font-size: 16px;
-                  line-height: 24px;
-                  color: $rosa2;
-                  font-weight: 600;
-                  margin-bottom: 10px;
-                }
-                a {
-                  text-decoration: underline;
-                  line-height: 22px;
-                }
-              }
-            }
-          }
-          h2 {
-            margin-bottom: 30px;
-            float: left;
-            width: 100%;
-          }
-          h4 {
-            margin: 15px 0 4px 0;
-            .bigger {
-              font-size: 21px;
-            }
-          }
-
-          .products-block-forfeit {
-            float: left;
-            width: 468px;
-            border: 2px solid #f4f4f4;
-            min-height: 214px;
-            padding-top: 10px;
-
-            &.odd {
-              margin: 0 28px 30px 0;
-            }
-            &.even {
-              margin: 0 0 30px 0;
-            }
-            @include breakpoint ($mobile) {
-              width: 100%;
-              &.odd {
-                margin: 0 0 20px 0;
-              }
-              &.even {
-                margin: 0 0 20px 0;
-              }
-            }
-
-            .forfeit-info {
-              float: left;
-              width: 50%;
-              color: $pink;
-              padding-left: 42px;
-
-              @include breakpoint ($mobile) {
-                width: 100%;
-                padding-left: 0;
-                text-align: center;
-              }
-
-              a {
-                font-size: 14px;
-                font-weight: 500;
-                text-decoration: underline;
-              }
-
-              .forfeit-name {
-                font-size: 21px;
-                font-weight: 700;
-                line-height: 19px;
-                float: left;
-                width: 32%;
-                text-align: right;
-                padding-top: 24px;
-              }
-              .big-info {
-                float: left;
-                width: 60%;
-                font-size: 72px;
-                line-height: 72px;
-                text-align: left;
-                padding-left: 12px;
-                padding-top: 10px;
-              }
-              h4 {
-                float: left;
-                width: 100%;
-                line-height: 22px;
-                font-weight: bold;
-                margin: 20px 0 0 0;
-              }
-            }
-            .forfeit-dades {
-              float: left;
-              width: 50%;
-              padding: 0 20px;
-              margin-top: 4px;
-              @include breakpoint ($mobile) {
-                width: 100%;
-                margin-top: 0;
-                text-align: center;
-              }
-
-            }
-            .forfeit-actions {
-              float: left;
-              width: 100%;
-              color: #9c9e9f;
-              font-size: 16px;
-              font-weight: bold;
-              text-align: center;
-              text-transform: uppercase;
-              margin: 30px 0 20px 0;
-
-              .only-info {
-                padding-top: 8px;
-              }
-
-              a.button-pink {
-                width: 100%;
-                margin-bottom: 6px;
-
-                @include breakpoint ($mobile) {
-                  margin-bottom: 20px;
-                }
-              }
-            }
-          }
-
-          .half-page {
-            margin-bottom: 40px;
-          }
+          margin-bottom: 40px;
         }
       }
     }
-    .config-client-products {
-      content {
-        padding: 0;
-      }
-      .sidebar {
-        width: 40%;
-        @include breakpoint($tablet) {
-          width: 100%;
-        }
-      }
-      .content-ws {
-        width: 60%;
-        @include breakpoint($tablet) {
-          width: 100%;
-        }
-      }
-      h3 {
-        color: $greydark;
-      }
-      .services-container {
+  }
+  .config-client-products {
+    content {
+      padding: 0;
+    }
+    .sidebar {
+      width: 40%;
+      @include breakpoint($tablet) {
         width: 100%;
-        float: left;
-        margin-top: 22px;
-        @include breakpoint ($mobile) {
-          margin-top: 12px;
-        }
-        .switch-checks-list {
-          li .info-check span {
-            @include breakpoint ($mobile) {
-              line-height: 21px;
-            }
+      }
+    }
+    .content-ws {
+      width: 60%;
+      @include breakpoint($tablet) {
+        width: 100%;
+      }
+    }
+    h3 {
+      color: $greydark;
+    }
+    .services-container {
+      width: 100%;
+      float: left;
+      margin-top: 22px;
+      @include breakpoint ($mobile) {
+        margin-top: 12px;
+      }
+      .switch-checks-list {
+        li .info-check span {
+          @include breakpoint ($mobile) {
+            line-height: 21px;
           }
-          .checkbox-custom-switch {
-            @include breakpoint ($mobile) {
-              clear: both;
-              float: left;
-            }
+        }
+        .checkbox-custom-switch {
+          @include breakpoint ($mobile) {
+            clear: both;
+            float: left;
           }
         }
-        li:before {
-          content: '' !important;
-          display: none !important;
-        }
       }
-      .services-big {
-        float: left;
-        width: 70%;
+      li:before {
+        content: '' !important;
+        display: none !important;
       }
-      .services-small {
-        float: left;
-        width: 30%;
-        .big {
-          font-size: 32px;
-          line-height: 56px;
-          font-weight: 600;
-        }
-      }
-      .prod-title,
-      .prod-description {
-        font-size: 26px;
-        line-height: 30px;
+    }
+    .services-big {
+      float: left;
+      width: 70%;
+    }
+    .services-small {
+      float: left;
+      width: 30%;
+      .big {
+        font-size: 32px;
+        line-height: 56px;
         font-weight: 600;
       }
-      .producte {
-        margin-bottom: 24px;
+    }
+    .prod-title,
+    .prod-description {
+      font-size: 26px;
+      line-height: 30px;
+      font-weight: 600;
+    }
+    .producte {
+      margin-bottom: 24px;
 
-        .icons {
-          float: left;
-          font-size: 24px;
-        }
-        .contactat {
+      .icons {
+        float: left;
+        font-size: 24px;
+      }
+      .contactat {
 
-        }
       }
-      .info-list-producte {
-        li {
-          margin-bottom: 10px;
-        }
+    }
+    .info-list-producte {
+      li {
+        margin-bottom: 10px;
       }
-      .info-detail-producte {
-        font-weight: bold;
-        float: right;
-        color: $pink;
-      }
-      .pin-element:before {
-        content: '*** ';
-        color: $pink;
-      }
+    }
+    .info-detail-producte {
+      font-weight: bold;
+      float: right;
+      color: $pink;
+    }
+    .pin-element:before {
+      content: '*** ';
+      color: $pink;
+    }
 
-      .service-items {
-        width: 100%;
-        li {
-          border-top: 1px solid $gris2;
-          padding: 14px 0;
-          &:before {
-            display: none !important;
-          }
-          &:last-child {
-            border-bottom: 1px solid $gris2;
-          }
-          .service-item:after {
-            content: '\e933';
-            color: $pink;
-            float: right;
-            margin-right: 14px;
-            font-family: 'atelecom-icons' !important;
-            font-size: 12px;
-            speak: none;
-            font-style: normal;
-            font-weight: normal;
-            font-variant: normal;
-            text-transform: none;
-            line-height: 1;
-            -webkit-font-smoothing: antialiased;
-          }
-        }
-        .change-pass {
-          color: $greydark;
-        }
-      }
-
-      .service-status {
-        font-weight: bold;
+    .service-items {
+      width: 100%;
+      li {
+        border-top: 1px solid $gris2;
+        padding: 14px 0;
         &:before {
-          content: '\e923';
-          margin-right: 6px;
+          display: none !important;
+        }
+        &:last-child {
+          border-bottom: 1px solid $gris2;
+        }
+        .service-item:after {
+          content: '\e933';
+          color: $pink;
+          float: right;
+          margin-right: 14px;
           font-family: 'atelecom-icons' !important;
           font-size: 12px;
           speak: none;
@@ -616,659 +571,676 @@
           line-height: 1;
           -webkit-font-smoothing: antialiased;
         }
-        &.active:before {
-          color: $pink;
-        }
-        &.inactive:before {
-          color: $greymedium;
-        }
-
-        a {
-          color: black;
-          font-size: 18px;
-          font-weight: 600;
-        }
       }
-    }
-
-    /* contratación PAGE */
-    &.contract-content {
-      color: $greydark;
-
-      &.bg-grey {
-        padding: 10px 0;
-      }
-
-      .field-body {
-        font-size: 18px;
-        line-height: 24px;
-      }
-
-      .item-title {
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
-      }
-      .item-content {
-        margin-bottom: 20px;
-        margin-top: 4px;
-      }
-
-      .product-name {
-        font-size: 16px;
-        font-weight: bold;
-      }
-      .config-box {
-        margin: 0;
-        .item-title,
-        .item-content {
-          padding-left: 20px;
-          margin-bottom: 5px;
-        }
-      }
-
-      // Legal conditions
-      .checkbox-custom {
-        clear: both;
-        float: none;
-        margin-top: 30px;
-        label {
-          font-size: 16px;
-          a {
-            font-weight: 300;
-            color: $pink;
-            font-size: 16px;
-          }
-        }
-      }
-
-      select {
-        font-size: 16px;
+      .change-pass {
         color: $greydark;
-
-        &.big {
-          width: 240px;
-        }
       }
     }
-  }
 
-  .general-alert-wrapper .content-general-wrapper.clientproducts {
-    width: 610px;
-    margin: 4% auto;
-    @include breakpoint($mobile) {
-      width: 98%;
-    }
-    .alert-general-title {
-      padding: 0 30px;
-      h2 {
-        float: left;
-        line-height: 34px;
-        &.alta-success {
-          margin-bottom: 16px;
-          &:before {
-            content: "\e934";
-            font-family: 'atelecom-icons' !important;
-            font-size: 30px;
-            color: $green;
-            padding-right: 12px;
-            position: relative;
-            top: 8px;
-          }
-        }
-        &.alert-title {
-          margin-bottom: 16px;
-          &:before {
-            content: "\e926";
-            font-family: 'atelecom-icons' !important;
-            font-size: 46px;
-            color: $pink;
-            padding-right: 12px;
-            position: relative;
-            top: 10px;
-          }
-        }
-        &.half {
-          width: 50%;
-          @include breakpoint($mobile) {
-            width: 100%;
-          }
-        }
+    .service-status {
+      font-weight: bold;
+      &:before {
+        content: '\e923';
+        margin-right: 6px;
+        font-family: 'atelecom-icons' !important;
+        font-size: 12px;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
       }
-      img {
-        float: right;
-        margin-right: 7%;
-        @include breakpoint($mobile) {
-
-        }
-      }
-      @include breakpoint($tablet) {
-        margin-top: 0;
-      }
-      @include breakpoint($mobile) {
-        margin-top: -26px;
-      }
-    }
-    .alert-general-body {
-      @include clearfix();
-      padding: 10px 30px 40px 30px;
-      @include breakpoint ($mobile) {
-        padding: 22px;
-      }
-
-      .checkbox-custom label a {
+      &.active:before {
         color: $pink;
-        font-weight: 400;
-        font-size: 16px;
       }
-      label {
+      &.inactive:before {
+        color: $greymedium;
+      }
+
+      a {
         color: black;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
       }
-      select {
-        width: 50%;
-      }
-
-      input[type=text] {
-        width: 80%;
-        @include breakpoint ($mobile) {
-          width: 100%;
-        }
-      }
-      input[type=submit].centered, input[type=button].centered {
-        display: inline;
-        float: none;
-      }
-
-      #password-strength-text {
-        text-align: right;
-        width: 80%;
-        margin-bottom: 0;
-        .feble {
-          font-weight: bold;
-          color: red;
-        }
-        .mitja {
-          font-weight: bold;
-          color: $orange;
-        }
-        .alta {
-          font-weight: bold;
-          color: $green;
-        }
-      }
-
-      // BAR STRENGTH
-      meter {
-        background-color: rgba(0, 0, 0, 0.1);
-        float: left;
-        margin: 0;
-        width: 80%;
-        height: 10px;
-      }
-      //
-      meter::-webkit-meter-bar {
-        background: none;
-        background-color: rgba(0, 0, 0, 0.1);
-      }
-      /* Webkit based browsers */
-      meter[value=".25"]::-webkit-meter-optimum-value {
-        background: red;
-      }
-      meter[value=".5"]::-webkit-meter-optimum-value {
-        background: $orange;
-      }
-      meter[value=".75"]::-webkit-meter-optimum-value {
-        background: $green;
-      }
-      meter[value="1"]::-webkit-meter-optimum-value {
-        background: $green;
-      }
-
-      /* Gecko based browsers */
-      meter[value=".25"]::-moz-meter-bar {
-        background: red;
-      }
-      meter[value=".5"]::-moz-meter-bar {
-        background: $orange;
-      }
-      meter[value=".75"]::-moz-meter-bar {
-        background: $green;
-      }
-      meter[value="1"]::-moz-meter-bar {
-        background: $green;
-      }
-
-      .success {
-        font-size: 21px;
-      }
-      .download-app {
-        font-size: 16px;
-      }
-      .app-icons {
-        float: none;
-        clear: both;
-        height: 60px;
-        img {
-          float: left;
-          width: 40%;
-          margin: 2% 5% 2%;
-        }
-      }
-
-      .inner-box {
-        @include span(12 of 12);
-        padding: 8px 4px;
-
-        img {
-          vertical-align: middle;
-          width: 100%;
-        }
-
-        > div {
-          @include gallery(3 of 12);
-        }
-        > div {
-          margin-bottom: 2%;
-        }
-      }
     }
   }
 
-  .incompatible-product .button-pink {
-    margin: 20px 0;
+  /* contratación PAGE */
+  &.contract-content {
+    color: $greydark;
+
+    &.bg-grey {
+      padding: 10px 0;
+    }
+
+    .field-body {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .item-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .item-content {
+      margin-bottom: 20px;
+      margin-top: 4px;
+    }
+
+    .product-name {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .config-box {
+      margin: 0;
+      .item-title,
+      .item-content {
+        padding-left: 20px;
+        margin-bottom: 5px;
+      }
+    }
+
+    // Legal conditions
+    .checkbox-custom {
+      clear: both;
+      float: none;
+      margin-top: 30px;
+      label {
+        font-size: 16px;
+        a {
+          font-weight: 300;
+          color: $pink;
+          font-size: 16px;
+        }
+      }
+    }
+
+    select {
+      font-size: 16px;
+      color: $greydark;
+
+      &.big {
+        width: 240px;
+      }
+    }
   }
+}
 
-  .message {
-    float: left;
-    width: 100%;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #9c9e9f;
-
+.general-alert-wrapper .content-general-wrapper.clientproducts {
+  width: 610px;
+  margin: 4% auto;
+  @include breakpoint($mobile) {
+    width: 98%;
   }
+  .alert-general-title {
+    padding: 0 30px;
+    h2 {
+      float: left;
+      line-height: 34px;
+      &.alta-success {
+        margin-bottom: 16px;
+        &:before {
+          content: "\e934";
+          font-family: 'atelecom-icons' !important;
+          font-size: 30px;
+          color: $green;
+          padding-right: 12px;
+          position: relative;
+          top: 8px;
+        }
+      }
+      &.alert-title {
+        margin-bottom: 16px;
+        &:before {
+          content: "\e926";
+          font-family: 'atelecom-icons' !important;
+          font-size: 46px;
+          color: $pink;
+          padding-right: 12px;
+          position: relative;
+          top: 10px;
+        }
+      }
+      &.half {
+        width: 50%;
+        @include breakpoint($mobile) {
+          width: 100%;
+        }
+      }
+    }
+    img {
+      float: right;
+      margin-right: 7%;
+      @include breakpoint($mobile) {
 
-  .result-table-products {
-    clear: both;
-    display: block;
-    margin: 0;
-    position: relative;
-
+      }
+    }
     @include breakpoint($tablet) {
-      margin: 10px 0;
+      margin-top: 0;
     }
     @include breakpoint($mobile) {
+      margin-top: -26px;
+    }
+  }
+  .alert-general-body {
+    @include clearfix();
+    padding: 10px 30px 40px 30px;
+    @include breakpoint ($mobile) {
+      padding: 22px;
+    }
+
+    .checkbox-custom label a {
+      color: $pink;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    label {
+      color: black;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    select {
+      width: 50%;
+    }
+
+    input[type=text] {
+      width: 80%;
+      @include breakpoint ($mobile) {
+        width: 100%;
+      }
+    }
+    input[type=submit].centered, input[type=button].centered {
+      display: inline;
+      float: none;
+    }
+
+    #password-strength-text {
+      text-align: right;
+      width: 80%;
+      margin-bottom: 0;
+      .feble {
+        font-weight: bold;
+        color: red;
+      }
+      .mitja {
+        font-weight: bold;
+        color: $orange;
+      }
+      .alta {
+        font-weight: bold;
+        color: $green;
+      }
+    }
+
+    // BAR STRENGTH
+    meter {
+      background-color: rgba(0, 0, 0, 0.1);
+      float: left;
+      margin: 0;
+      width: 80%;
+      height: 10px;
+    }
+    //
+    meter::-webkit-meter-bar {
+      background: none;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    /* Webkit based browsers */
+    meter[value=".25"]::-webkit-meter-optimum-value {
+      background: red;
+    }
+    meter[value=".5"]::-webkit-meter-optimum-value {
+      background: $orange;
+    }
+    meter[value=".75"]::-webkit-meter-optimum-value {
+      background: $green;
+    }
+    meter[value="1"]::-webkit-meter-optimum-value {
+      background: $green;
+    }
+
+    /* Gecko based browsers */
+    meter[value=".25"]::-moz-meter-bar {
+      background: red;
+    }
+    meter[value=".5"]::-moz-meter-bar {
+      background: $orange;
+    }
+    meter[value=".75"]::-moz-meter-bar {
+      background: $green;
+    }
+    meter[value="1"]::-moz-meter-bar {
+      background: $green;
+    }
+
+    .success {
+      font-size: 21px;
+    }
+    .download-app {
+      font-size: 16px;
+    }
+    .app-icons {
+      float: none;
+      clear: both;
+      height: 60px;
+      img {
+        float: left;
+        width: 40%;
+        margin: 2% 5% 2%;
+      }
+    }
+
+    .inner-box {
+      @include span(12 of 12);
+      padding: 8px 4px;
+
+      img {
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      > div {
+        @include gallery(3 of 12);
+      }
+      > div {
+        margin-bottom: 2%;
+      }
+    }
+  }
+}
+
+.incompatible-product .button-pink {
+  margin: 20px 0;
+}
+
+.message {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #9c9e9f;
+
+}
+
+.result-table-products {
+  clear: both;
+  display: block;
+  margin: 0;
+  position: relative;
+
+  @include breakpoint($tablet) {
+    margin: 10px 0;
+  }
+  @include breakpoint($mobile) {
+    padding: 0;
+  }
+  .content {
+    @include breakpoint($tablet) {
       padding: 0;
     }
-    .content {
-      @include breakpoint($tablet) {
-        padding: 0;
-      }
+  }
+  .select-w-title {
+    @include breakpoint($tablet) {
+      padding: 0 18px;
     }
-    .select-w-title {
-      @include breakpoint($tablet) {
-        padding: 0 18px;
-      }
+  }
+  .products-counter-paginator {
+    display: block;
+    float: right;
+    overflow: hidden;
+    padding-top: 56px;
+    position: relative;
+    width: 75%;
+    @include breakpoint($tablet) {
+      float: none;
+      padding: 5px 18px;
+      width: 100%;
     }
-    .products-counter-paginator {
+    .counter-resultsperpage {
+      color: #58585A;
       display: block;
       float: right;
-      overflow: hidden;
-      padding-top: 56px;
+      font-size: 16px;
+      font-style: italic;
+      line-height: 24px;
+      padding-right: 20px;
       position: relative;
-      width: 75%;
       @include breakpoint($tablet) {
-        float: none;
-        padding: 5px 18px;
+        clear: both;
+        float: left;
         width: 100%;
-      }
-      .counter-resultsperpage {
-        color: #58585A;
-        display: block;
-        float: right;
-        font-size: 16px;
-        font-style: italic;
-        line-height: 24px;
-        padding-right: 20px;
-        position: relative;
-        @include breakpoint($tablet) {
-          clear: both;
-          float: left;
-          width: 100%;
-          padding: 0;
-        }
+        padding: 0;
       }
     }
-    .results-paginator-mobile {
-      @include breakpoint($tablet) {
-        margin: 20px 10px;
-      }
+  }
+  .results-paginator-mobile {
+    @include breakpoint($tablet) {
+      margin: 20px 10px;
     }
-    .products-list {
-      clear: both;
+  }
+  .products-list {
+    clear: both;
+    float: left;
+    width: 100%;
+
+    .products-list-title {
+      background-color: $gris3;
+      color: white;
+      clear: none;
       float: left;
       width: 100%;
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 20px;
+      padding: 5px 0;
+      text-transform: uppercase;
 
-      .products-list-title {
-        background-color: $gris3;
-        color: white;
-        clear: none;
-        float: left;
-        width: 100%;
+      @include breakpoint($tablet) {
+        display: none;
+      }
+
+      .products-list-column {
         display: block;
-        font-size: 16px;
-        font-weight: bold;
+        float: left;
+        padding: 10px 0 8px 2%;
+        position: relative;
+        width: 16%;
+        @include breakpoint($intermedio) {
+          width: 20%;
+        }
+        &.column-product {
+          width: 20%;
+        }
+        &.column-actions {
+          width: 24%;
+        }
+        &.column-number {
+          width: 18%;
+        }
+        &.column-state {
+          width: 10%;
+        }
+        &.column-new-product {
+          width: 20%;
+        }
+        &.column-request {
+          padding: 10px 1%;
+        }
+        &.column-active {
+          padding: 10px 1%;
+        }
+        &.column-link {
+          width: 18%;
+        }
+      }
+    }
+    .products-list-row {
+      color: $greydark;
+      background-color: $white;
+      border-bottom: 1px solid #979797;
+      clear: none;
+      float: left;
+      width: 100%;
+      padding: 8px 0 0 0;
+      position: relative;
+
+      @include breakpoint($tablet) {
+        border-left: none;
+        border-right: none;
+        &:first-child {
+          border-top: 1px solid #979797;
+        }
+      }
+      span, a {
+        color: $greydark;
+        display: block;
+        font-size: 14px;
         line-height: 20px;
         padding: 5px 0;
-        text-transform: uppercase;
-
-        @include breakpoint($tablet) {
-          display: none;
-        }
-
-        .products-list-column {
-          display: block;
-          float: left;
-          padding: 10px 0 8px 2%;
-          position: relative;
-          width: 16%;
-          @include breakpoint($intermedio) {
-            width: 20%;
-          }
-          &.column-product {
-            width: 20%;
-          }
-          &.column-actions {
-            width: 24%;
-          }
-          &.column-number {
-            width: 18%;
-          }
-          &.column-state {
-            width: 10%;
-          }
-          &.column-new-product {
-            width: 20%;
-          }
-          &.column-request {
-            padding: 10px 1%;
-          }
-          &.column-active {
-            padding: 10px 1%;
-          }
-          &.column-link {
-            width: 18%;
-          }
-        }
-      }
-      .products-list-row {
-        color: $greydark;
-        background-color: $white;
-        border-bottom: 1px solid #979797;
-        clear: none;
-        float: left;
-        width: 100%;
-        padding: 8px 0 0 0;
         position: relative;
-
+        text-align: left;
         @include breakpoint($tablet) {
-          border-left: none;
-          border-right: none;
-          &:first-child {
-            border-top: 1px solid #979797;
-          }
-        }
-        span, a {
-          color: $greydark;
-          display: block;
-          font-size: 14px;
-          line-height: 20px;
-          padding: 5px 0;
-          position: relative;
           text-align: left;
-          @include breakpoint($tablet) {
-            text-align: left;
-          }
-        }
-        .products-list-column {
-          display: block;
-          float: left;
-          padding: 8px 0 8px 2%;
-          position: relative;
-          width: 16%;
-
-          @include breakpoint($intermedio) {
-            width: 20%;
-          }
-          @include breakpoint($tablet) {
-            width: 40%;
-          }
-          a {
-            color: $pink;
-            text-decoration: underline;
-          }
-
-          // Each field
-          &.column-product {
-            font-weight: bold;
-            width: 20%;
-            padding-top: 8px;
-            @include breakpoint($tablet) {
-              width: 50%;
-            }
-            &.with-image {
-              padding-top: 0;
-            }
-            img {
-              width: 40px;
-              vertical-align: middle;
-              margin-right: 6px;
-            }
-          }
-          &.column-number {
-            width: 18%;
-            padding-top: 8px;
-
-            @include breakpoint($tablet) {
-              //position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 50%;
-            }
-            span {
-              @include breakpoint($tablet) {
-                text-align: left;
-              }
-            }
-          }
-          &.column-state {
-            font-weight: bold;
-            width: 12%;
-            padding: 12px 20px;
-            @include breakpoint($mobile) {
-              padding: 0 2%;
-              width: 50%;
-              margin-bottom: 10px;
-            }
-            .pending & {
-              color: $pink;
-            }
-          }
-          &.column-new-product {
-            font-weight: bold;
-            width: 20%;
-            padding: 12px 20px;
-            @include breakpoint($mobile) {
-              padding: 0 2%;
-              width: 50%;
-              margin-bottom: 10px;
-            }
-            .pending & {
-              color: $pink;
-            }
-          }
-          &.column-actions {
-            width: 24%;
-            font-weight: 600;
-          }
-          &.column-request {
-            font-size: 14px;
-            padding: 12px 30px;
-            @include breakpoint($mobile) {
-              display: none;
-            }
-          }
-
-          &.column-active {
-            font-size: 14px;
-            padding: 12px 30px;
-            @include breakpoint($mobile) {
-              display: none;
-            }
-          }
-          &.column-link {
-            float: right;
-            width: 16%;
-            padding-top: 8px;
-            @include breakpoint($mobile) {
-              float: left;
-              width: 50%;
-            }
-
-            a {
-              font-size: 14px;
-              text-decoration: underline !important;
-              padding: 0;
-            }
-
-          }
-        }
-        &.pending {
-
-          .column-product {
-            padding-left: 4%;
-          }
-          .column-state {
-            color: $pink;
-          }
-        }
-
-      }
-    }
-  }
-
-  .general-alert-wrapper .content-general-wrapper.clientproducts .alert-general-body .products-floating-box {
-    margin: 0 36px;
-    min-height: 220px;
-
-    @include breakpoint ($mobile) {
-      margin: 0;
-    }
-
-    .config-box {
-      margin: 20px 0 20px 0;
-      font-size: 14px;
-      text-align: center;
-
-      h3 {
-        margin: 0;
-      }
-      .info-forfet-message {
-        width: 80%;
-        margin: 0 auto;
-        line-height: 16px;
-        padding-bottom: 10px;
-        text-align: center;
-      }
-      .title-forfet {
-        color: #D30572;
-        font-size: 26px;
-        line-height: 64px;
-        font-weight: bold;
-        @include breakpoint ($mobile) {
-          line-height: 54px;
         }
       }
+      .products-list-column {
+        display: block;
+        float: left;
+        padding: 8px 0 8px 2%;
+        position: relative;
+        width: 16%;
 
-      @include breakpoint ($mobile) {
-        margin: 0 0 20px 0;
-        .inner-box .product-promo {
-          float: left;
+        @include breakpoint($intermedio) {
+          width: 20%;
+        }
+        @include breakpoint($tablet) {
           width: 40%;
         }
-        .inner-box .custom-links {
-          width: 60%;
-          margin-top: 18px;
-          float: left;
+        a {
+          color: $pink;
+          text-decoration: underline;
         }
 
+        // Each field
+        &.column-product {
+          font-weight: bold;
+          width: 20%;
+          padding-top: 8px;
+          @include breakpoint($tablet) {
+            width: 50%;
+          }
+          &.with-image {
+            padding-top: 0;
+          }
+          img {
+            width: 40px;
+            vertical-align: middle;
+            margin-right: 6px;
+          }
+        }
+        &.column-number {
+          width: 18%;
+          padding-top: 8px;
+
+          @include breakpoint($tablet) {
+            //position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+          }
+          span {
+            @include breakpoint($tablet) {
+              text-align: left;
+            }
+          }
+        }
+        &.column-state {
+          font-weight: bold;
+          width: 12%;
+          padding: 12px 20px;
+          @include breakpoint($mobile) {
+            padding: 0 2%;
+            width: 50%;
+            margin-bottom: 10px;
+          }
+          .pending & {
+            color: $pink;
+          }
+        }
+        &.column-new-product {
+          font-weight: bold;
+          width: 20%;
+          padding: 12px 20px;
+          @include breakpoint($mobile) {
+            padding: 0 2%;
+            width: 50%;
+            margin-bottom: 10px;
+          }
+          .pending & {
+            color: $pink;
+          }
+        }
+        &.column-actions {
+          width: 24%;
+          font-weight: 600;
+        }
+        &.column-request {
+          font-size: 14px;
+          padding: 12px 30px;
+          @include breakpoint($mobile) {
+            display: none;
+          }
+        }
+
+        &.column-active {
+          font-size: 14px;
+          padding: 12px 30px;
+          @include breakpoint($mobile) {
+            display: none;
+          }
+        }
+        &.column-link {
+          float: right;
+          width: 16%;
+          padding-top: 8px;
+          @include breakpoint($mobile) {
+            float: left;
+            width: 50%;
+          }
+
+          a {
+            font-size: 14px;
+            text-decoration: underline !important;
+            padding: 0;
+          }
+
+        }
+      }
+      &.pending {
+
+        .column-product {
+          padding-left: 4%;
+        }
+        .column-state {
+          color: $pink;
+        }
       }
 
     }
-    .inner-box {
+  }
+}
+
+.general-alert-wrapper .content-general-wrapper.clientproducts .alert-general-body .products-floating-box {
+  margin: 0 36px;
+  min-height: 220px;
+
+  @include breakpoint ($mobile) {
+    margin: 0;
+  }
+
+  .config-box {
+    margin: 20px 0 20px 0;
+    font-size: 14px;
+    text-align: center;
+
+    h3 { margin: 0; }
+    .info-forfet-message {
+      width: 80%;
+      margin: 0 auto;
+      line-height: 16px;
+      padding-bottom: 10px;
+      text-align: center;    }
+    .title-forfet {
+      color: #D30572;
+      font-size: 26px;
+      line-height: 64px;
+      font-weight: bold;
       @include breakpoint ($mobile) {
-        background-color: white;
-        padding: 8px 10px;
+        line-height: 54px;
       }
+    }
 
-      &.trans {
-        padding: 0;
-        background-color: transparent;
-      }
-
-      & > div {
+    @include breakpoint ($mobile) {
+      margin: 0 0 20px 0;
+      .inner-box .product-promo {
         float: left;
-        clear: none;
-        width: 33%;
-        margin: 0;
-        &.custom-item.one {
-          padding-left: 14px;
-          @include breakpoint ($mobile) {
-            padding-left: 0;
-            width: 52%;
-            .message {
-              margin-bottom: 0;
-            }
-            .big-pink {
-              font-size: 26px;
-            }
+        width: 40%;
+      }
+      .inner-box .custom-links {
+        width: 60%;
+        margin-top: 18px;
+        float: left;
+      }
+
+    }
+
+  }
+  .inner-box {
+    @include breakpoint ($mobile) {
+      background-color: white;
+      padding: 8px 10px;
+    }
+
+    &.trans {
+      padding: 0;
+      background-color: transparent;
+    }
+
+    & > div {
+      float: left;
+      clear: none;
+      width: 33%;
+      margin: 0;
+      &.custom-item.one {
+        padding-left: 14px;
+        @include breakpoint ($mobile) {
+          padding-left: 0;
+          width: 50%;
+          .message {
+            margin-bottom: 0;
+          }
+          .big-pink {
+            font-size: 26px;
           }
         }
-        &.custom-item.two {
-          padding-top: 16px;
-          @include breakpoint ($mobile) {
-            padding-top: 12px;
-            width: 48%;
-          }
+      }
+      &.custom-item.two {
+        padding-top: 16px;
+        @include breakpoint ($mobile) {
+          padding-top: 12px;
+          width: 50%;
         }
-        &.custom-item.three {
-          @include breakpoint ($mobile) {
-            width: 100%;
-          }
+      }
+      &.custom-item.three {
+        @include breakpoint ($mobile) {
+          width: 100%;
         }
-        &.gallery-item {
-          width: 30%;
-          margin-right: 5%;
-          box-shadow: none;
-          background-color: white;
-          &:last-child {
-            margin-right: 0;
-            margin-bottom: 0 !important;
-          }
+      }
+      &.gallery-item {
+        width: 30%;
+        margin-right: 5%;
+        box-shadow: none;
+        background-color: white;
+        &:last-child {
+          margin-right: 0;
+          margin-bottom: 0 !important;
         }
       }
     }
   }
+}
 
-  .alert-two-buttons {
-    margin: 30px 0;
-    a {
-      padding: 8px 38px;
-      margin-right: 20px;
-    }
+.alert-two-buttons {
+  margin: 30px 0;
+  a {
+    padding: 8px 38px;
+    margin-right: 20px;
   }
 }
