@@ -94,8 +94,7 @@
             <img src="./uploaded_files/vgp-slide2.png">
           </a>
           <div class="date-home">22/06/2016</div>
-          <div class="new-featured-title"><a href="#">ANDORRA TELECOM INCORPORA 19 TREBALLADORS EVENTUALS DURANT
-              L'ESTIU</a></div>
+          <div class="new-featured-title"><a href="#">Andorra Telecom llança el Forfet Roaming Espanya diari</a></div>
           <div class="excerpt">
             Les incorporacions donaran suport principalment als departaments tècnic i d'atenció al client. <a href="#"
                                                                                                               class="readmore">Llegir

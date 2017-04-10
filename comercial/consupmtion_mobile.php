@@ -1417,6 +1417,8 @@
               floatingWrapper.removeClass('fixedone');
               floatingAlert.css({top: scrollTop});
 
+              revealalert();
+
 
               // AJAX triggers for ALTA
               $('.clientproducts').on('click', '.activate-mplus', function () {

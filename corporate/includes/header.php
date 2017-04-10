@@ -168,73 +168,83 @@
           <div class="title-level-1">
             <div class="menu-title">QUI SOM</div>
           </div>
-          <div class="container-submenu">
-            <ul>
-              <li>
-                <a href="#" title="">
-                  <div class="menu-title">Forfets Mobiland</div>
+
+          <div class="container-submenu" style="display: block;">
+            <ul> <!-- globall inner container -->
+              <div class="menu-block">
+                <li><a href="/web/corporativo/qui-som/xifres" title="Les xifres">
+                    <div class="menu-title">Les xifres</div>
+                  </a></li>
+
+              </div>
+
+              <div class="menu-block">
+
+
+              </div>
+
+
+              <div class="menu-block">
+
+
+              </div>
+
+              <div class="menu-block">
+
+
+              </div>
+
+              <li><a href="/web/corporativo/qui-som/misio-visio" title="Misió i visió">
+                  <div class="menu-title">Misió i visió</div>
+                </a></li>
+              <li><a href="/web/corporativo/qui-som/nostra-activitat" title="La nostra activitat">
+                  <div class="menu-title">La nostra activitat</div>
+                </a></li>
+              <li><a href="www.andorratelecom.ad/memoria" title="Memòria">
+                  <div class="menu-title">Memòria</div>
                 </a>
                 <ul>
-                  <li><a href="#">Forfet Mobiland 5</a></li>
-                  <li><a href="#">Forfet Mobiland 15</a></li>
-                  <li><a href="#">Forfet Mobiland 29</a></li>
-                  <li><a href="#">Forfet Mobiland 49</a></li>
-                  <li><a href="#">Forfet Mobiland 69</a></li>
-                  <li><a href="#">Forfet Mobiland 99</a></li>
+                  <li><a href="/web/corporativo/qui-som/estructura-organitzativa/consell-administracio">Consell
+                      d'administració</a></li>
+                  <li><a href="/web/corporativo/qui-som/estructura-organitzativa/comite-executiu">Comité executiu</a>
+                  </li>
                 </ul>
               </li>
-              <li>
-                <a href="#" title="">
-                  <div class="menu-title">Forfets de dades</div>
+              <li><a href="/web/corporativo/qui-som/estructura-organitzativa" title="Estructura organitzativa">
+                  <div class="menu-title">Estructura organitzativa</div>
+                </a></li>
+              <li><a href="/web/corporativo/qui-som/estadistiques-telecomunicacions"
+                     title="Estadístiques de telecomunicacions">
+                  <div class="menu-title">Estadístiques de telecomunicacions</div>
+                </a></li>
+              <li><a href="/web/corporativo/qui-som/legislacio" title="Legislació">
+                  <div class="menu-title">Legislació</div>
                 </a>
                 <ul>
-                  <li><a href="#">Forfet de dades 1 Gb</a></li>
-                  <li><a href="#">Forfet de dades 3 Gb</a></li>
-                  <li><a href="#">Forfet de dades 5 Gb</a></li>
+                  <li><a href="/web/corporativo/qui-som/visio-futur/espic">Espic</a></li>
+                  <li><a href="/web/corporativo/qui-som/visio-futur/masmovil">Másmóvil</a></li>
                 </ul>
               </li>
-              <li>
-                <a href="#" title="">
-                  <div class="menu-title">Prepagament</div>
+              <li><a href="/web/corporativo/qui-som/visio-futur" title="Visió de futur">
+                  <div class="menu-title">Visió de futur</div>
                 </a>
                 <ul>
-                  <li><a href="#">Mobiland Clic</a></li>
-                  <li><a href="#">Forfets de dades</a></li>
-                  <li><a href="#">Recarrega la teva tarjeta</a></li>
+                  <li><a href="/web/corporativo/qui-som/qualitat-seguretat/qualitat">Qualitat</a></li>
+                  <li><a href="/web/corporativo/qui-som/qualitat-seguretat/seguretat">Seguretat</a></li>
                 </ul>
               </li>
-              <li>
-                <a href="#" title="">
-                  <div class="menu-title">Altres serveis</div>
-                </a>
-                <ul>
-                  <li><a href="#">Qué és?</a></li>
-                  <li><a href="#">Bústia de veu</a></li>
-                  <li><a href="#">Restricció de trucada</a></li>
-                  <li><a href="#">Restricció identificació línia</a></li>
-                  <li><a href="#">Fact Paper</a></li>
-                  <li><a href="#">SIM Bessona</a></li>
-                  <li><a href="#">Duplicat SIM</a></li>
-                </ul>
-              </li>
+              <li><a href="/web/corporativo/qui-som/qualitat-seguretat" title="Qualitat i seguretat">
+                  <div class="menu-title">Qualitat i seguretat</div>
+                </a></li>
               <li class="banners-mmenu-corporate">
-                <div class="banner-item fisrt">
-                    <a href="#" title=""><img src="./uploaded_files/example-banner-menu.jpg"/></a>
-                  <div class="banner-title">
-                    EL NOU EDIFICI D'ANDORRA TELECOM SERÀ UN NÚVOL DE VIDRE
-                  </div>
+                <div class="banner-item second"><a href="" title=""> <img src=""> </a>
+                  <div class="banner-title"></div>
                 </div>
-
-                <div class="banner-item second">
-                  <a href="#" title=""><img src="./uploaded_files/example-banner-menu.jpg"/></a>
-                  <div class="banner-title">
-                    EL NOU EDIFICI D'ANDORRA TELECOM SERÀ UN NÚVOL DE VIDRE
-                  </div>
-                </div>
-
               </li>
             </ul>
           </div>
+
+
         </li>
 
         <!-- SI el ITEM No es PADRE, no debe tener ID (ni submenu). De esta manera,
