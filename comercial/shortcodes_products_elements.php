@@ -1236,6 +1236,31 @@
   </div>
   <!-- END SECTION BOTONS i LINKS -->
 
+    <!-- BEGIN SECTION 3 COLUMNS -->
+    <div class="cont-wrapper bg-grey shortcode-container">
+      <div class="content">
+        <h2 class="global-subtitle">Títol secció (3 columns)</h2>
+        <div class="three-columns-row">
+          <div class="three-columns-element">
+            <span class="three-columns-icon"><span class="icons icon-offer"></span></span>
+            <span class="three-columns-title">Lorem Ipsum</span>
+            <span class="three-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+          </div>
+          <div class="three-columns-element">
+            <span class="three-columns-icon"><span class="icons icon-offer"></span></span>
+            <span class="three-columns-title">Lorem Ipsum</span>
+            <span class="three-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+          </div>
+          <div class="three-columns-element last">
+            <span class="three-columns-icon"><span class="icons icon-offer"></span></span>
+            <span class="three-columns-title">Lorem Ipsum</span>
+            <span class="three-columns-description">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SECTION 3 COLUMNS -->
+    
   </div>
 
 <?php include 'includes/footer.php'; ?>
