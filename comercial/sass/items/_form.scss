@@ -190,6 +190,9 @@
     }
     &.trescientos {
       width: 380px !important;
+      @include breakpoint ($mobile) {
+        width: 100% !important;
+      }
     }
   }
 

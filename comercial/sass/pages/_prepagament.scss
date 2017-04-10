@@ -8,6 +8,9 @@
 }
 .align-w-big-icon-container {
   padding-left: 142px;
+  @include breakpoint ($tablet) {
+    padding-left: 4%;
+  }
 }
 
 .h-one-like {

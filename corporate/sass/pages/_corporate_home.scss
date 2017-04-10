@@ -184,11 +184,13 @@
     }
 
     .item-list {
+      font-size: 14px;
       float: left;
       width: 100%;
       margin-bottom: 20px;
       color: $products-fontcolor;
       a {
+        font-size: 14px;
         color: $products-fontcolor;
       }
 
