@@ -1260,7 +1260,7 @@
       </div>
     </div>
     <!-- END SECTION 3 COLUMNS -->
-    
+
   </div>
 
 <?php include 'includes/footer.php'; ?>
