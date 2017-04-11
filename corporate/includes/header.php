@@ -164,7 +164,7 @@
             <ul>
                 <!-- SI el item ES PADRE y tiene "SUB-menu DESPLEGABLE", se requiere esta estructura: <li> principal con un ID UNICO
                 y la clase "menu-title" al texto del menu (en este caso "Quisom")-->
-                <li id="pot-anar-qualsevol-id-unico" class="active">
+                <li id="pot-anar-qualsevol-id-unico" class="xxx">
                     <div class="title-level-1">
                         <div class="menu-title">QUI SOM</div>
                     </div>

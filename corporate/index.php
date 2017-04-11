@@ -5,54 +5,51 @@
     <div class="cont-wrapper">
       <div class="slider-corporate-home">
 
-        <div class="slide-item" style="background-color: black;">
-          <div class="img-slider"><img src="./uploaded_files/main-home.jpg"/></div>
-          <div class="width-limiter">
-            <div class="left-block">
-              <div class="slide-title">El nou edifici d'Andorra Telecom serà <strong>un núvol de vidre</strong></div>
-              <div class="slide-message">
-                "The Cloud" guanya el concurs d'idees per refer l'illa d'edificis que inclou Andorra Telecom i la
-                caserna de Bombers a Andorra la Vella
-              </div>
-              <a href="#" class="button-pink">Llegir més</a>
+        <div class="slide-item">
+          <div class="img-slider">
+            <img src="https://dummyimage.com/600x412/000/333.jpg"/>
+            <div class="difuminador difumina-white">
+              <div class="difuminado-left">&nbsp;</div>
+              <div class="difuminado-right">&nbsp;</div>
             </div>
           </div>
-        </div>
-
-        <!--      <div class="slide-item">-->
-        <!--        <div class="img-slider"><img src="uploaded_files/slider-home-corp.jpg"/></a></div>-->
-        <!--        <div class="width-limiter">-->
-        <!--          <div class="left-block">-->
-        <!--            <div class="left-block-content">-->
-        <!--              <a href="#" title="Andorra Go" class="button-pink">Qué es Andorra Go!</a>-->
-        <!--            </div>-->
-        <!---->
-        <!--          </div>-->
-        <!--          <div class="right-block">-->
-        <!--            <div class="right-block-content">-->
-        <!--              <div class="appstore">-->
-        <!--                <a href="#" title=""><img src="./images/icons/apps/App_Store_black.png"/></a>-->
-        <!--                <a href="#" title=""><img src="./images/icons/apps/logo-google-play-vetor.png"/></a>-->
-        <!--              </div>-->
-        <!---->
-        <!--            </div>-->
-        <!--          </div>-->
-        <!--        </div>-->
-        <!--      </div>-->
-
-        <div class="slide-item">
-          <div class="img-slider"><img src="https://dummyimage.com/1900x412/f4f4f4/333.jpg"/></a></div>
           <div class="width-limiter">
             <div class="left-block">
-              Aqui puede ir TEXTO (como el SLIDER de la COMERCIAL). En este sentido,
+              f4f4f4 Aqui puede ir TEXTO (como el SLIDER de la COMERCIAL). En este sentido,
               el BACKGROUND se debería poder escoger desde "BACK", ya que algunas imágenes requieren fondo transparente.
               <a href="#" title=""> Aqui va el ENLACE LEFT One</a>
             </div>
           </div>
         </div>
 
+        <div class="slide-item" style="background-color: black;">
+          <div class="img-slider">
+            <img src="./uploaded_files/main-home.jpg"/>
+            <div class="difuminador difumina-white">
+              <div class="difuminado-left">&nbsp;</div>
+              <div class="difuminado-right">&nbsp;</div>
+            </div>
+          </div>
+            <div class="width-limiter">
+              <div class="left-block">
+                <div class="slide-title">El nou edifici d'Andorra Telecom serà <strong>un núvol de vidre</strong></div>
+                <div class="slide-message">
+                  "The Cloud" guanya el concurs d'idees per refer l'illa d'edificis que inclou Andorra Telecom i la
+                  caserna de Bombers a Andorra la Vella
+                </div>
+                <a href="#" class="button-pink">Llegir més</a>
+              </div>
+            </div>
+          </div>
+
         <div class="slide-item">
-          <div class="img-slider"><img src="https://dummyimage.com/1900x412/f4f4f4/333.jpg"/></a></div>
+          <div class="img-slider"><img src="./uploaded_files/1900x412.jpg"/>
+            <div class="difuminador difumina-black">
+              <div class="difuminado-left">&nbsp;</div>
+              <div class="difuminado-right">&nbsp;</div>
+            </div>
+          </div>
+
           <div class="width-limiter">
             <div class="right-block" style="background-color: white;">
               Aqui puede ir TEXTO (como el SLIDER de la COMERCIAL). Se ha escogido un fondo BLANCO.
@@ -65,11 +62,18 @@
 
       <script language="JavaScript">
           $(document).ready(function () {
-              $('.img-slider').width(window.innerWidth);
-              $('.width-limiter').width(window.innerWidth);
-              var distance = (window.innerWidth > 1024) ? ((window.innerWidth - 1024) / 2) : 0;
+              var anchoVentana = $(window).width();
+              $('.width-limiter').width(anchoVentana);
+              var distance = (anchoVentana > 1024) ? ((anchoVentana - 1024) / 2) : 0;
               $('.left-block').css({left: distance});
               $('.right-block').css({right: distance});
+              $('.img-slider').each(function () {
+                  $(this).width(anchoVentana);
+                  var anchoImagenReal = $('img', this).width();
+                 var anchoImagen = (anchoVentana - anchoImagenReal) > 0 ? $('img', this).width() : anchoVentana;
+                 var positionDifuminador =  (anchoVentana - anchoImagen) > 0 ? ((anchoVentana - anchoImagen) / 2) : 0;
+                 $('.difuminador', this).width(anchoImagen).css({left: positionDifuminador});
+              });
 
               $('.slider-corporate-home').slick({
                   arrows: false,
@@ -107,13 +111,18 @@
           <div class="item-list">
             <div class="image-block"><a href="#"><img src="./uploaded_files/thumb-new-home01.png"/></a></div>
             <div class="date-home">22/06/2016</div>
+            <div class="news-mini-content">
             <a href="#">Andorra Telecom entra a Másmóvil</a>
+            </div>
           </div>
 
           <div class="item-list">
             <div class="image-block"><a href="#"><img src="./uploaded_files/thumb-new-home02.png"/></a></div>
             <div class="date-home">22/06/2016</div>
-            <a href="#">Andorra Telecom abonarà 77.400 euros als afectats per l'avaria del…</a>
+            <div class="news-mini-content">
+              <a href="#">Andorra Telecom abonarà 77.400 euros als afectats per l'avaria del laksj ñldj kldj dj ñkaj ads
+                ajadkja dd dj dj djs kasdj as das das dkas djas djas djas djñdas dklshfklsdf kljsdf kldjsfh kjsdhf klsdjhf kljsdhf kljsd h j…</a>
+            </div>
           </div>
 
           <div class="item-list">
@@ -123,7 +132,9 @@
 
           <div class="item-list">
             <div class="date-home">22/06/2016</div>
+            <div class="news-mini-content">
             <a href="#">Andorra Telecom abonarà 77.400 euros als afectats per l'avaria del…</a>
+            </div>
           </div>
 
         </div>
