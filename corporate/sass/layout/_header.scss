@@ -1018,10 +1018,14 @@
         }
         &:hover, &.active {
           background: #f0f0f0;
+          color: $greydark;
           @include breakpoint($tablet) {
             background-color: $greydark;
           }
           a { color: black; }
+          .title-level-1 {
+            color: $greydark;
+          }
         }
         .container-submenu{
           background-color: $grey;
