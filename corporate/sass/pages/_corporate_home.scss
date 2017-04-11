@@ -191,7 +191,9 @@
       color: $products-fontcolor;
       a {
         font-size: 14px;
+        line-height: 18px;
         color: $products-fontcolor;
+        font-weight: 300;
       }
 
       .image-block {
@@ -276,7 +278,7 @@
     color: $gris3;
     font-size: 12px;
     font-weight: 300;
-    margin: 10px 0;
+    margin: 0;
     @include breakpoint($tablet) {
       margin: 0 0 4px 0;
     }
@@ -290,7 +292,7 @@
     color: $products-fontcolor;
     font-family: Roboto, SansSerif;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 18px;
     font-weight: 300;
     margin-bottom: 20px;
     margin-top: 10px;
