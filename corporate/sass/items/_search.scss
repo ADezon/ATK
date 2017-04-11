@@ -1,0 +1,182 @@
+#main-content {
+
+  .portlet-search { // BEGIN WRAPPER Force
+    font-family: $titillium !important;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .lfr-ddm-field-group {
+      margin-bottom: 8px;
+    }
+    button {
+      line-height: 26px;
+      margin: 18px 20px;
+    }
+
+    .panel {
+      border: medium none;
+      box-shadow: none;
+
+      .panel-heading {
+        background-color: transparent;
+        border: medium none;
+      }
+      .panel-body {
+        background-color: transparent;
+        border: medium none;
+      }
+    }
+
+    ul.list-unstyled {
+      li {
+        margin: 6px 0;
+        float: left;
+        width: 100%;
+
+        &:before {
+          content: '';
+          display: none;
+        }
+        &:after {
+          float: right;
+          /* use !important to prevent issues with browser extensions that change fonts */
+          content: "\e919";
+          font-family: 'atelecom-icons' !important;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          line-height: 22px;
+          text-transform: none;
+          /* Better Font Rendering =========== */
+          speak: none;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        a {
+          color: #333333;
+          cursor: pointer;
+          display: block;
+          float: left;
+          font-size: 16px;
+          line-height: 22px;
+          position: relative;
+          text-align: left;
+          &:hover {
+            color: $pink;
+            font-weight: bold;
+          }
+          &.text-primary {
+            color: $pink;
+          }
+        }
+      }
+    }
+
+
+    /* Second BOX (Content) */
+    ul.display-style-descriptive {
+      li {
+        font-family: $titillium !important;
+        &:before {
+          content: '';
+          display: none;
+        }
+      }
+
+    }
+    .lfr-search-container-wrapper.main-content-body {
+      margin-top: 0;
+    }
+
+
+    .pagination-bar {
+
+      ul.pagination li:before,
+      ul.dropdown-menu li:before {
+        content: '';
+        display: none;
+      }
+
+      .pagination>.active>a,
+      .pagination>.active>a:hover,
+      .pagination>.active>a:focus,
+      .pagination>.active>span,
+      .pagination>.active>span:hover,
+      .pagination>.active>span:focus {
+        background-color: transparent;
+        border: medium none;
+        color: $greydark;
+      }
+
+      .pagination> li > a {
+        font-size: 14px;
+        height: 22px;
+        line-height: 19px;
+        border: medium none;
+        color: $greydark;
+      }
+      .pagination> li.active > a {
+        border: 1px solid #D30572;
+        border-radius: 50%;
+        font-weight: bold;
+        height: 32px;
+      }
+
+      .icon-sort:before {
+        float: right;
+        /* use !important to prevent issues with browser extensions that change fonts */
+        content: "\e93e";
+        color: $pink;
+        font-family: 'atelecom-icons' !important;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 22px;
+        text-transform: none;
+        /* Better Font Rendering =========== */
+        speak: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .icon-caret-left:before {
+        float: right;
+        /* use !important to prevent issues with browser extensions that change fonts */
+        content: "\e918";
+        color: $pink;
+        font-family: 'atelecom-icons' !important;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 22px;
+        text-transform: none;
+        /* Better Font Rendering =========== */
+        speak: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .icon-caret-right:before {
+        float: right;
+        /* use !important to prevent issues with browser extensions that change fonts */
+        content: "\e919";
+        color: $pink;
+        font-family: 'atelecom-icons' !important;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 22px;
+        text-transform: none;
+        /* Better Font Rendering =========== */
+        speak: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+
+  }  // END WRAPPER Force
+
+}
+.icon-monospaced.portlet-icon-back {
+  display: none;
+}
