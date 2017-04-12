@@ -48,10 +48,23 @@
         }
       }
     }
-    &.w-menu .content {
-      padding: 0 10px 0 260px;
-      @include breakpoint($mobile) {
-        padding: 0 10px;
+    &.w-menu {
+
+      .content {
+        padding: 0 10px 0 260px;
+        @include breakpoint($mobile) {
+          padding: 0 10px;
+        }
+      }
+
+      .content.sliders .slider-multiple-desktop {
+        padding-left: 4px;
+
+        .slider-deskt .six-items {
+          margin: 0 20px 20px 0;
+        }
+        .flex-direction-nav .flex-prev { }
+        .flex-direction-nav .flex-next { right: 240px; }
       }
     }
 
