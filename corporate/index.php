@@ -107,8 +107,9 @@
           <div class="date-home">22/06/2016</div>
           <div class="new-featured-title"><a href="#">Andorra Telecom llança el Forfet Roaming Espanya diari</a></div>
           <div class="excerpt">
-            Les incorporacions donaran suport principalment als departaments tècnic i d'atenció al client. <a href="#"
-                                                                                                              class="readmore">Llegir
+            Les incorporacions donaran suport principalment als departaments tècnic i d'atenció al client.
+            <br/><a href="#"
+                    class="readmore">Llegir
               més</a>
           </div>
 
@@ -173,7 +174,10 @@
             </div>
             <div class="two-columns-info">
               <span class="two-columns-title">5È SALÓ DEL VIDEOJOC I INTERNET</span>
-              <span class="two-columns-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi… <a
+              <span class="two-columns-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incidi…
+                <br/>
+                <a
                     href="#" class="readmore">Llegir més</a></span>
             </div>
           </div>
@@ -183,7 +187,8 @@
             </div>
             <div class="two-columns-info">
               <span class="two-columns-title">MEMÒRIA 2016</span>
-              <span class="two-columns-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi… <a
+              <span class="two-columns-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi…
+                <br/><a
                     href="#" class="readmore">Llegir més</a></span>
             </div>
           </div>
@@ -195,7 +200,8 @@
             </div>
             <div class="two-columns-info">
               <span class="two-columns-title">Lorem Ipsum dolor sit amet</span>
-              <span class="two-columns-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi… <a
+              <span class="two-columns-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi…
+                <br/><a
                     href="#" class="readmore">Llegir més</a></span>
             </div>
           </div>
@@ -205,7 +211,8 @@
             </div>
             <div class="two-columns-info">
               <span class="two-columns-title">Lorem Ipsum dolor sit amet</span>
-              <span class="two-columns-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi… <a
+              <span class="two-columns-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi…
+                <br/><a
                     href="#" class="readmore">Llegir més</a></span>
             </div>
           </div>

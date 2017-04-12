@@ -1,13 +1,13 @@
 .big-icon-container {
   float: left;
-  margin-right: 30px;
+  margin-right: 24px;
   [class^="icon-"], [class*=" icon-"] {
-    font-size: 80px;
+    font-size: 64px;
     color: $pink;
   }
 }
 .align-w-big-icon-container {
-  padding-left: 142px;
+  padding-left: 114px;
   @include breakpoint ($tablet) {
     padding-left: 4%;
   }

@@ -72,7 +72,7 @@
             </div>
             <div class="title-container">
               <div class="h-one-like">Recarregar dades</div>
-              <div class="soft-title">a la tarjeta Mobiland Clic!
+              <div class="soft-title">de la targeta de prepagament!
               </div>
             </div>
           </div>
