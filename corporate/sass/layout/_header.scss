@@ -970,6 +970,7 @@
         &.active{
           .title-level-1{
             color: black;
+            font-weight: bold;
           }
         }
         &.last{
@@ -985,7 +986,7 @@
             background-color: $greydark;
           }
         }
-        .title-level-1{
+        .title-level-1 {
           color: $white;
           display: block;
           font-size: 14px;
@@ -994,6 +995,7 @@
           padding: 14px 0;
           position: relative;
           text-align: center;
+          text-transform: uppercase;
           &:hover{
             color: $greydark;
             @include breakpoint($tablet) {
@@ -1162,6 +1164,14 @@
                 a {
                   border: 0;
                   padding: 1em 0;
+                }
+              }
+            }
+            &.three-rows {
+              > li {
+                width: 33%;
+                &.banners-mmenu-corporate {
+                  width: 100%;
                 }
               }
             }

@@ -164,9 +164,9 @@
             <ul>
                 <!-- SI el item ES PADRE y tiene "SUB-menu DESPLEGABLE", se requiere esta estructura: <li> principal con un ID UNICO
                 y la clase "menu-title" al texto del menu (en este caso "Quisom")-->
-                <li id="pot-anar-qualsevol-id-unico" class="xxx">
+                <li id="pot-anar-qualsevol-id-unico" class="active">
                     <div class="title-level-1">
-                        <div class="menu-title">QUI SOM</div>
+                        <div class="menu-title">Qui som</div>
                     </div>
 
                     <div class="container-submenu">
@@ -255,7 +255,6 @@
                         </ul>
                     </div>
 
-
                 </li>
 
                 <!-- SI el ITEM No es PADRE, no debe tener ID (ni submenu). De esta manera,
@@ -265,10 +264,68 @@
                         <div><a href="https://www.google.es" target="_blank">INNOVACIÓ</a></div>
                     </div>
                 </li>
-                <li>
-                    <div class="title-level-1">
-                        <div>ESDEVENIMENTS</div>
-                    </div>
+                <li id="tercer-id-cualquiera">
+                  <div class="title-level-1">
+                    <div class="menu-title">Esdeveniments</div>
+                  </div>
+
+                  <div class="container-submenu">
+                    <ul class="three-rows"> <!-- globall inner container -->
+                      <li class="menu-block">
+                        <ul>
+                          <li><a href="/web/corporativo/qui-som/xifres" title="Les xifres">
+                              <div class="menu-title">Les xifres</div>
+                            </a></li>
+                          <li><a href="/web/corporativo/qui-som/estructura-organitzativa"
+                                 title="Estructura organitzativa">
+                              <div class="menu-title">Estructura organitzativa</div>
+                            </a></li>
+                          <li><a href="/web/corporativo/qui-som/qualitat-seguretat"
+                                 title="Qualitat i seguretat">
+                              <div class="menu-title">Qualitat i seguretat</div>
+                            </a></li>
+                        </ul>
+                      </li>
+
+                      <li class="menu-block">
+                        <ul>
+                          <li><a href="/web/corporativo/qui-som/misio-visio" title="Misió i visió">
+                              <div class="menu-title">Misió i visió</div>
+                            </a></li>
+                          <li><a href="/web/corporativo/qui-som/estadistiques-telecomunicacions"
+                                 title="Estadístiques de telecomunicacions">
+                              <div class="menu-title">Estadístiques de telecomunicacions</div>
+                            </a></li>
+                        </ul>
+                      </li>
+
+
+                      <li class="menu-block">
+                        <ul>
+                          <li><a href="/web/corporativo/qui-som/nostra-activitat" title="La nostra activitat">
+                              <div class="menu-title">La nostra activitat</div>
+                            </a></li>
+                          <li><a href="/web/corporativo/qui-som/legislacio" title="Legislació">
+                              <div class="menu-title">Legislació</div>
+                            </a>
+                            <ul>
+                              <li><a href="/web/corporativo/qui-som/visio-futur/espic">Espic</a></li>
+                              <li><a href="/web/corporativo/qui-som/visio-futur/masmovil">Másmóvil</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="banners-mmenu-corporate">
+                        <div class="banner-item first"><a href="" title=""> <img src="./uploaded_files/example-banner-menu.jpg"> </a>
+                          <div class="banner-title">El nou edifici d'Andorra Telecom serà un núvol de vidre</div>
+                        </div>
+                        <div class="banner-item second"><a href="" title=""> <img src="./uploaded_files/example-banner-menu.jpg"> </a>
+                          <div class="banner-title">El nou edifici d'Andorra Telecom serà un núvol de vidre</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
                     <div class="title-level-1">

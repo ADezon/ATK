@@ -5,10 +5,10 @@
     <div class="cont-wrapper">
       <div class="slider-corporate-home">
 
-        <div class="slide-item">
+        <div class="slide-item preset-white">
           <div class="img-slider">
-            <img src="https://dummyimage.com/600x412/000/333.jpg"/>
-            <div class="difuminador difumina-white">
+            <img src="./uploaded_files/test-images/1358329247_013644_1358349531_sumario_grande.jpg"/>
+            <div class="difuminador">
               <div class="difuminado-left">&nbsp;</div>
               <div class="difuminado-right">&nbsp;</div>
             </div>
@@ -22,28 +22,29 @@
           </div>
         </div>
 
-        <div class="slide-item" style="background-color: black;">
+        <div class="slide-item preset-black">
           <div class="img-slider">
             <img src="./uploaded_files/main-home.jpg"/>
-            <div class="difuminador difumina-white">
+            <div class="difuminador">
               <div class="difuminado-left">&nbsp;</div>
               <div class="difuminado-right">&nbsp;</div>
             </div>
           </div>
-            <div class="width-limiter">
-              <div class="left-block">
-                <div class="slide-title">El nou edifici d'Andorra Telecom serà <strong>un núvol de vidre</strong></div>
-                <div class="slide-message">
-                  "The Cloud" guanya el concurs d'idees per refer l'illa d'edificis que inclou Andorra Telecom i la
-                  caserna de Bombers a Andorra la Vella
-                </div>
-                <a href="#" class="button-pink">Llegir més</a>
+          <div class="width-limiter">
+            <div class="left-block">
+              <div class="slide-title">El nou edifici d'Andorra Telecom serà <strong>un núvol de vidre</strong></div>
+              <div class="slide-message">
+                "The Cloud" guanya el concurs d'idees per refer l'illa d'edificis que inclou Andorra Telecom i la
+                caserna de Bombers a Andorra la Vella
               </div>
+              <a href="#" class="button-pink">Llegir més</a>
             </div>
           </div>
+        </div>
 
-        <div class="slide-item">
-          <div class="img-slider"><img src="./uploaded_files/1900x412.jpg"/>
+        <div class="slide-item preset-black">
+          <div class="img-slider">
+            <img src="./uploaded_files/test-images/new-york-924680_960_720.jpg"/>
             <div class="difuminador difumina-black">
               <div class="difuminado-left">&nbsp;</div>
               <div class="difuminado-right">&nbsp;</div>
@@ -67,12 +68,18 @@
               var distance = (anchoVentana > 1024) ? ((anchoVentana - 1024) / 2) : 0;
               $('.left-block').css({left: distance});
               $('.right-block').css({right: distance});
+
               $('.img-slider').each(function () {
                   $(this).width(anchoVentana);
                   var anchoImagenReal = $('img', this).width();
-                 var anchoImagen = (anchoVentana - anchoImagenReal) > 0 ? $('img', this).width() : anchoVentana;
-                 var positionDifuminador =  (anchoVentana - anchoImagen) > 0 ? ((anchoVentana - anchoImagen) / 2) : 0;
-                 $('.difuminador', this).width(anchoImagen).css({left: positionDifuminador});
+                  var anchoImagen = (anchoVentana - anchoImagenReal) > 0 ? $('img', this).width() : anchoVentana;
+                  // Ahora sumamos 2 pixeles para compensar pixeles fraccionarios de las divisiones
+                  // Asi, también restamos 1 en la posicion y queda ok en cualquier caso
+                  var positionDifuminador = (anchoVentana - anchoImagen) > 0 ? ((anchoVentana - anchoImagen) / 2) - 1 : 0;
+                  var anchoFinalDifuminador = (anchoVentana - anchoImagen) > 0 ? (anchoImagen + 2) : anchoImagen;
+
+
+                  $('.difuminador', this).width(anchoFinalDifuminador).css({left: positionDifuminador});
               });
 
               $('.slider-corporate-home').slick({
@@ -112,7 +119,7 @@
             <div class="image-block"><a href="#"><img src="./uploaded_files/thumb-new-home01.png"/></a></div>
             <div class="date-home">22/06/2016</div>
             <div class="news-mini-content">
-            <a href="#">Andorra Telecom entra a Másmóvil</a>
+              <a href="#">Andorra Telecom entra a Másmóvil</a>
             </div>
           </div>
 
@@ -121,7 +128,8 @@
             <div class="date-home">22/06/2016</div>
             <div class="news-mini-content">
               <a href="#">Andorra Telecom abonarà 77.400 euros als afectats per l'avaria del laksj ñldj kldj dj ñkaj ads
-                ajadkja dd dj dj djs kasdj as das das dkas djas djas djas djñdas dklshfklsdf kljsdf kldjsfh kjsdhf klsdjhf kljsdhf kljsd h j…</a>
+                ajadkja dd dj dj djs kasdj as das das dkas djas djas djas djñdas dklshfklsdf kljsdf kldjsfh kjsdhf
+                klsdjhf kljsdhf kljsd h j…</a>
             </div>
           </div>
 
@@ -133,7 +141,7 @@
           <div class="item-list">
             <div class="date-home">22/06/2016</div>
             <div class="news-mini-content">
-            <a href="#">Andorra Telecom abonarà 77.400 euros als afectats per l'avaria del…</a>
+              <a href="#">Andorra Telecom abonarà 77.400 euros als afectats per l'avaria del…</a>
             </div>
           </div>
 

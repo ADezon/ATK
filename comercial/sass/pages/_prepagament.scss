@@ -110,4 +110,40 @@
       padding-top: 10px;
     }
   }
+  .gallery-two-items {
+    width: 70%;
+    margin: 0 auto;
+
+    >div {
+      @include gallery(6 of 12);
+      background-color: white;
+      text-align: center;
+    }
+
+    .inner-item {
+      background-color: white;
+      text-align: center;
+      width: 100%;
+    }
+    .pink {
+      color: $pink;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+    .hard {
+      color: $greymedium;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+    .action-message {
+      color: $greymedium;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 16px;
+      border-top: 10px solid $products-bggrey;
+      padding-top: 10px;
+    }
+  }
 }
