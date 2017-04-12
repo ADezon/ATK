@@ -1019,7 +1019,7 @@
           }
         }
         &:hover, &.active {
-          background: #f0f0f0;
+          background: #E4E4E4;
           color: $greydark;
           @include breakpoint($tablet) {
             background-color: $greydark;
@@ -1151,6 +1151,9 @@
                     &:hover{
                       text-decoration:underline;
                     }
+                  }
+                  >ul>li:first-child {
+                    margin-top: 4px;
                   }
                 }
               }
