@@ -92,6 +92,7 @@
             width: 100% !important;
             float: none;
             clear: both;
+            padding: 6% 0;
           }
           &.title-forfet {
             position: relative;
@@ -259,6 +260,7 @@
               float: none;
               clear: both;
               padding-left: 0;
+              text-align: center;
             }
             .price-forfet-price {
               color: $greydark;
@@ -288,7 +290,7 @@
                 margin: 0 auto;
               }
               @include breakpoint($mobile) {
-                width: 100%;
+                width: auto;
                 margin: 0 auto;
               }
             }

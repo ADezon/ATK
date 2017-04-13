@@ -204,6 +204,10 @@
     @include breakpoint($tablet) {
       padding: 10px;
     }
+    @include breakpoint($mobile) {
+      padding: 0;
+      width: 100%;
+    }
     h3 {
       color: $greydark;
       display: block;
@@ -223,6 +227,10 @@
       position: relative;
       width: 190px;
       padding: 0 0 0 8px;
+      @include breakpoint($mobile) {
+        padding: 0;
+        width: 100%;
+      }
     }
   }
 

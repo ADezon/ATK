@@ -22,6 +22,7 @@
           cerca.</p>
       </div>
     </div>
+    </div>
     <!-- BEGIN SEARCH PHONEBOOK FORM-->
     <form method="post">
       <div class="phonebook-search-elements">
@@ -261,9 +262,6 @@
 
                               <span
                                   class="title-field">Imatge de seguretat</span>
-                                <img alt="captcha"
-                                     class="captcha"
-                                     src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_SMS&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aACADEMIA+MASEGOSA_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=2&amp;t=1478419731612 ">
 
                                 <div class="ctrl-holder-text-verification-link">
                                   En cas de no
@@ -298,9 +296,7 @@
                                    title="Email">
 
                             <span class="title-field">Imatge de seguretat</span>
-                            <img alt="captcha"
-                                 class="captcha"
-                                 src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_MAIL&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aLES+CLASSES+MARISOL+NAVARRO_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=3&amp;t=1478495528990 ">
+
                             <div
                                 class="ctrl-holder-text-verification-link">
                               En cas de no reconeixer
@@ -409,9 +405,7 @@
 
                               <span
                                   class="title-field">Imatge de seguretat</span>
-                                <img alt="captcha"
-                                     class="captcha"
-                                     src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_SMS&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aACADEMIA+MASEGOSA_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=2&amp;t=1478419731612 ">
+
 
                                 <div class="ctrl-holder-text-verification-link">
                                   En cas de no
@@ -446,9 +440,7 @@
                                    title="Email">
 
                             <span class="title-field">Imatge de seguretat</span>
-                            <img alt="captcha"
-                                 class="captcha"
-                                 src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_MAIL&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aLES+CLASSES+MARISOL+NAVARRO_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=3&amp;t=1478495528990 ">
+
                             <div
                                 class="ctrl-holder-text-verification-link">
                               En cas de no reconeixer
@@ -556,9 +548,7 @@
 
                               <span
                                   class="title-field">Imatge de seguretat</span>
-                                <img alt="captcha"
-                                     class="captcha"
-                                     src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_SMS&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aACADEMIA+MASEGOSA_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=2&amp;t=1478419731612 ">
+
 
                                 <div class="ctrl-holder-text-verification-link">
                                   En cas de no
@@ -593,9 +583,7 @@
                                    title="Email">
 
                             <span class="title-field">Imatge de seguretat</span>
-                            <img alt="captcha"
-                                 class="captcha"
-                                 src="https://www.andorratelecom.ad/web/guest/la-guia.ad?p_p_id=laguia_WAR_laguiaportlet_INSTANCE_q3El&amp;p_p_lifecycle=2&amp;p_p_state=exclusive&amp;p_p_mode=view&amp;p_p_cacheability=cacheLevelPage&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_cmd=captcha&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_CMD=CMD_AJAX_MAIL&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_id=0&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_rowParameters=%5bname%3aLES+CLASSES+MARISOL+NAVARRO_activityId%3aAB_type%3aempresa_parishId%3anull%5d&amp;_laguia_WAR_laguiaportlet_INSTANCE_q3El_row=3&amp;t=1478495528990 ">
+
                             <div
                                 class="ctrl-holder-text-verification-link">
                               En cas de no reconeixer
