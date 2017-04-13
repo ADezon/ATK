@@ -422,7 +422,6 @@
                 line-height: 20px;
                 float: left;
                 width: 32%;
-                text-align: right;
                 padding-top: 24px;
               }
               .big-info {
@@ -438,7 +437,6 @@
                 float: left;
                 width: 100%;
                 font-size: 28px;
-                padding-left: 4px;
                 margin-top: 10px;
                 font-weight: bold;
               }
@@ -1145,7 +1143,7 @@
           }
           &.column-link {
             float: right;
-            width: 16%;
+            width: 10%;
             padding-top: 8px;
             @include breakpoint($mobile) {
               float: left;
