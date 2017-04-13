@@ -116,19 +116,21 @@
 
 <!-- BEGIN ALERTS CONTENT -->
 <!--PLEASE LOAD  src="/js/alerts.js" SCRIPT IN HEAD-->
-<div class="alert-wrapper">
-  <div class="cont-wrapper">
-    <div class="alert-close">
-      <span class="icons icon-close"></span>
-    </div>
-    <div class="alert-title">
-      <span class="icons icon-alerts"></span>
-      Avís de interrupció del servei.
-    </div>
+<div class="portlet">
+  <div class="alert-wrapper">
+    <div class="cont-wrapper">
+      <div class="alert-close">
+        <span class="icons icon-close"></span>
+      </div>
+      <div class="alert-title">
+        <span class="icons icon-alerts"></span>
+        Avís de interrupció del servei.
+      </div>
 
-    <div class="alert-body">
-      Este es el cuerpo HTML del mensaje. Puede contener <strong>HTML</strong> por ejemplo <a
-        href="www.google.com" target="_blank">un enlace</a>.
+      <div class="alert-body">
+        Este es el cuerpo HTML del mensaje. Puede contener <strong>HTML</strong> por ejemplo <a
+            href="www.google.com" target="_blank">un enlace</a>.
+      </div>
     </div>
   </div>
 </div>
@@ -137,21 +139,21 @@
 <!--You have to INJECT the content (per language) into JS Variables-->
 <!--policyUrl, customMessage, linkTitle AND  dimissTitle-->
 <script>
-  var
-    policyUrl = "http://www.google.com",
-    customMessage = 'Este sitio usa cookies. Si continuas navengando aceptas su uso.',
-    linkTitle = "Mas información",
-    dimissTitle = "Entendido";
+    var
+        policyUrl = "http://www.google.com",
+        customMessage = 'Este sitio usa cookies. Si continuas navengando aceptas su uso.',
+        linkTitle = "Mas información",
+        dimissTitle = "Entendido";
 
-  window.cookieconsent.initialise({
+    window.cookieconsent.initialise({
 //    "palette":{"popup":{"background":"#000"},"button":{"background":"#f1d600"}},
-    "content": {
-      "message": customMessage,
-      "dismiss": dimissTitle,
-      "link": linkTitle,
-      "href": policyUrl
-    }
-  });</script>
+        "content": {
+            "message": customMessage,
+            "dismiss": dimissTitle,
+            "link": linkTitle,
+            "href": policyUrl
+        }
+    });</script>
 <!-- END COOKIES-->
 <!--<script async defer-->
 <!--        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYW42M0aJDKz-ayDZywdTDJAmd3Kfvq90&callback=initialize">-->

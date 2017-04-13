@@ -442,7 +442,7 @@
               width: 28%;
             }
             @include breakpoint($tablet) {
-              padding: 0;
+              padding: 0 0 0 2%;
             }
             a {
               color: $pink;
@@ -487,9 +487,7 @@
             @include breakpoint($intermedio) {
               width: 25%;
             }
-            @include breakpoint($tablet) {
 
-            }
             a {
               display: block;
               float: left;
@@ -498,6 +496,9 @@
               padding: 0;
               position: relative;
               width: 21px;
+              @include breakpoint($mobile) {
+                margin-right: 8%;
+              }
               .icons-download {
                 display: block;
                 height: 26px;
@@ -529,6 +530,7 @@
     position: relative;
     @include breakpoint($tablet) {
       padding: 10px;
+      width: 100%;
     }
     h3 {
       color: $greydark;
@@ -548,6 +550,9 @@
       position: relative;
       width: 190px;
       padding: 0 8px;
+      @include breakpoint ($mobile) {
+        width: 100%;
+      }
     }
   }
 }

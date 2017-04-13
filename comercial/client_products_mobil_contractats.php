@@ -91,7 +91,7 @@
                       <div class="forfeit-name">
                         Forfet
                       </div>
-                      <div class="big-info">30</div>
+                      <div class="big-info-large">Entrepreneur</div>
                       <h4>Forfet de dades <span class="bigger">3 GB</span></h4>
                       <a href="#" class="cancel-dades">Cancel·lar dades</a>
                     </div>
