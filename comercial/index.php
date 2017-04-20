@@ -108,7 +108,7 @@
 
                 <!--BEGIN from here the USER decides-->
 
-                <div class="item picture"><img src="./uploaded_files/telefonia-mobil.png"/></div>
+                <div class="item picture"><i class="fa fa-address-book"></i></div>
                 <div class="item title">SOM Telefonia Mòbil</div>
                 <!--END until here the USER decides-->
 

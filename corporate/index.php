@@ -5,9 +5,9 @@
     <div class="cont-wrapper">
       <div class="slider-corporate-home">
 
-        <div class="slide-item preset-white">
+        <div class="slide-item full-size">
           <div class="img-slider">
-            <img src="./uploaded_files/test-images/1358329247_013644_1358349531_sumario_grande.jpg"/>
+            <img src="./uploaded_files/test-images/1900x412.jpg"/>
             <div class="difuminador">
               <div class="difuminado-left">&nbsp;</div>
               <div class="difuminado-right">&nbsp;</div>
