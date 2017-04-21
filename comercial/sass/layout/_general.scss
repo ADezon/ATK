@@ -921,9 +921,12 @@ p{
 
 // BAR STRENGTH
 meter {
+  /* Firefox */
+  background: none; /* Required to get rid of the default background property */
   background-color: $grey;
   margin: 0;
   height: 14px;
+  -moz-appearance: none;
 }
 //
 meter::-webkit-meter-bar {
@@ -936,8 +939,11 @@ meter::-webkit-meter-optimum-value {
 }
 
 /* Gecko based browsers */
-meter::-moz-meter-bar {
-  background: $grey;
+*::-moz-meter-optimum {
+  background: $pink;
+}
+*::-moz-meter-bar {
+  background: $pink;
 }
 
 

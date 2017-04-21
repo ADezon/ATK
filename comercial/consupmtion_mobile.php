@@ -60,7 +60,9 @@
                                     <span>/</span>
                                     <span class="info-detail-consumption-included">100</span>
                                 </span>
-                  <meter value="1"></meter>
+
+                  <meter low="12.5" high="15.5" min="5" max="20" value="10.2" optimum="14">10.2 g/100 mL</meter>
+
                 </li>
                 <li>
                   <span>En itinerància</span>
@@ -1026,7 +1028,7 @@
 
 
           <script type="text/javascript">
-
+/*
               var lang = 'es'; // Allowed Values: ca, es, en.
               var engFormat = 'MMMM D, YYYY';
               var aceFormat = 'D MMMM, YYYY';
@@ -1091,7 +1093,7 @@
 
                   cb(start, end);
 
-              });
+              });*/
           </script>
         </div>
       </div>
@@ -1378,7 +1380,7 @@
   <script language="JavaScript">
       $(document).ready(function () {
 
-          revealalert();
+//          revealalert();
 
           // ALERTS-ColorBoxes
           var floatingWrapper = $('.general-alert-wrapper'),
