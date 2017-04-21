@@ -70,16 +70,16 @@
         <h3>Segueix-nos a les nostres xarxes</h3>
         <ul class="social-links">
           <li>
-            <a href="#" title=""><span class="icons icon-facebook"></span></a>
+            <a href="#" title=""><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
           </li>
           <li>
-            <a href="#" title=""><span class="icons icon-twitter"></span></a>
+            <a href="#" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
           </li>
           <li>
-            <a href="#" title=""><span class="icons icon-googleplus"></span></a>
+            <a href="#" title=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
           </li>
           <li>
-            <a href="#" title=""><span class="icons icon-instagram"></span></a>
+            <a href="#" title=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </li>
         </ul>
         <h3>Servei d'atenció al client</h3>
