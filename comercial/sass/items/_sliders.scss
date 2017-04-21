@@ -212,12 +212,13 @@
       .item {
         color: $pink;
         font-size: 20px;
+        line-height: 24px;
         margin: 0 auto;
         text-align: center;
-        width: 80%;
+        width: 90%;
 
         &.picture {
-          margin: 0 auto 10px auto;
+          margin: 0 auto 0 auto;
           min-height: 52px;
           vertical-align: baseline;
           .fa {

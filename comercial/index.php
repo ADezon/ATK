@@ -151,6 +151,23 @@
             </div>
           </div>
         </li>
+        <li>
+          <div class="block-container">
+            <div class="inner-container">
+              <div class="custom-htmlfree">
+                <!--until here are INJECTED CODE FROM PLATTFORM-->
+
+                <!--BEGIN from here the USER decides-->
+
+                <div class="item picture"><i class="fa fa-archive"></i></div>
+                <div class="item title">SOM Archives</div>
+                <!--END until here the USER decides-->
+
+                <!--from here are INJECTED CODE FROM PLATTFORM again-->
+              </div>
+            </div>
+          </div>
+        </li>
 
       </ul>
     </div>
