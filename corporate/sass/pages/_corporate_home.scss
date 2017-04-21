@@ -22,10 +22,19 @@
     }
 
     .slide-item {
+      height: 412px;
 
       .img-slider {
         position: relative;
         width: 100%;
+
+        .slider-link {
+          position: absolute;
+          z-index:700;
+          width: 100%;
+          height: 412px;
+        }
+
         img {
           margin: 0 auto;
           height: 412px;

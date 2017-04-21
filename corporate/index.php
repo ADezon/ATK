@@ -7,7 +7,8 @@
 
         <div class="slide-item full-size">
           <div class="img-slider">
-            <img src="./uploaded_files/test-images/1900x412.jpg"/>
+            <a class="slider-link" href="http://www.google.com" target="_blank">
+              <img src="./uploaded_files/test-images/1900x412.jpg"/></a>
             <div class="difuminador">
               <div class="difuminado-left">&nbsp;</div>
               <div class="difuminado-right">&nbsp;</div>
@@ -24,7 +25,8 @@
 
         <div class="slide-item preset-black">
           <div class="img-slider">
-            <img src="./uploaded_files/main-home.jpg"/>
+            <a class="slider-link" href="http://www.google.com" target="_blank">
+            <img src="./uploaded_files/main-home.jpg"/></a>
             <div class="difuminador">
               <div class="difuminado-left">&nbsp;</div>
               <div class="difuminado-right">&nbsp;</div>
@@ -44,7 +46,8 @@
 
         <div class="slide-item preset-black">
           <div class="img-slider">
-            <img src="./uploaded_files/test-images/new-york-924680_960_720.jpg"/>
+            <a href="http://www.google.com" target="_blank">
+              <img src="./uploaded_files/test-images/new-york-924680_960_720.jpg"/></a>
             <div class="difuminador difumina-black">
               <div class="difuminado-left">&nbsp;</div>
               <div class="difuminado-right">&nbsp;</div>
@@ -251,16 +254,16 @@
 
         <div class="content-ws righted">
           <div class="block-header">
-            <h2 class="home-subtile">Els nostres patrocinis</h2> <a href="#" class="readmore">Veure totes</a>
+            <h2 class="home-subtile">Els nostres patrocinis</h2> <a href="http://www.google.com" target="_blank" class="readmore">Veure totes</a>
           </div>
 
           <div class="slider-sponsors">
             <!-- IMAGE has to be 672x320 -->
-            <div class="sponsor-slide"><a href="#" title=""><img src="./uploaded_files/andorrasax.jpg"/></a></div>
+            <div class="sponsor-slide"><a href="http://www.google.com" target="_blank" title=""><img src="./uploaded_files/andorrasax.jpg"/></a></div>
             <div class="sponsor-slide"><a href="#" title=""><img
-                    src="https://dummyimage.com/1028x340/d30573/fff.jpg&text=imatge+slide"/></a></div>
-            <div class="sponsor-slide"><a href="#" title=""><img
-                    src="https://dummyimage.com/1028x340/000000/fff.jpg&text=imatge+slide"/></a></div>
+                    src="https://dummyimage.com/680x340/d30573/fff.jpg&text=imatge+slide"/></a></div>
+            <div class="sponsor-slide"><a href="http://www.google.com" target="_blank" title=""><img
+                    src="https://dummyimage.com/680x340/000000/fff.jpg&text=imatge+slide"/></a></div>
           </div>
           <script language="JavaScript">
               // Slider Sponsros
