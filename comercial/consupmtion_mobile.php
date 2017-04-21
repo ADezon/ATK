@@ -240,7 +240,7 @@
         <div class="content">
           <div class="tabs-mobile-selector only-mobile">
             <select class="make-me-styled">
-              <option value="0" selected>Trucades</option>
+              <option value="0" selected>Trucades titulos muy largos para TABS</option>
               <option value="1">Dades</option>
               <option value="2">SMS</option>
             </select>

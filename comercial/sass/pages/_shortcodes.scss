@@ -797,6 +797,7 @@
         padding: 30px 8%;
         @include breakpoint ($mobile) {
           padding: 0;
+          margin-top: 10px;
         }
         p, ol li, ul li {
           color: #4a4a4a;
@@ -875,7 +876,7 @@
             position: relative;
             text-align: center;
             width: 130px;
-            top: 44px;
+            top: 50px;
             padding-left: 16px;
           }
           &.expanded {
@@ -896,7 +897,7 @@
 
       .atSelect .dropDown {
         position: absolute;
-        top: 80px;
+        top: 110px;
         left: 0;
         width: 100%;
         list-style: none;
