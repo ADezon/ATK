@@ -1077,12 +1077,14 @@
       margin-bottom: 15px;
       overflow: hidden;
       position: relative;
+      margin-left: 0;
       &:before {
         content: '';
         display: none !important;
       }
       &:after {
-        float: right;
+        position: absolute;
+        right: 0;
         /* use !important to prevent issues with browser extensions that change fonts */
         content: "\e919";
         font-family: 'atelecom-icons' !important;

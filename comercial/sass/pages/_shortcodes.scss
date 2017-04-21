@@ -1099,6 +1099,7 @@
       clear: both;
       display: block;
       margin-bottom: 15px;
+      margin-left: 0;
       overflow: hidden;
       position: relative;
       &:before {
@@ -1106,7 +1107,8 @@
         display: none !important;
       }
       &:after {
-        float: right;
+        position: absolute;
+        right: 0;
         /* use !important to prevent issues with browser extensions that change fonts */
         content: "\e919";
         font-family: 'atelecom-icons' !important;
@@ -1136,6 +1138,7 @@
         line-height: 22px;
         position: relative;
         text-align: left;
+        padding-right: 18px;
         &.icons {
           color: black;
           float: right;

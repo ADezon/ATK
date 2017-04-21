@@ -34,7 +34,7 @@
         <div id="nav-anchor"></div>
         <ul class="menu-list floating-menu">
           <li><a class="nav-active" href="#preu">Preu</a></li>
-          <li><a href="#caracteristics">Característiques</a></li>
+          <li><a href="#caracteristics">Característiques test de NOM molt llarg de paquet moooolt llarg...</a></li>
           <li><a href="#advantatges">Avantatges</a></li>
           <li><a href="#channels">Canals</a></li>
           <li><a href="#requeriments">Requeriments</a></li>
