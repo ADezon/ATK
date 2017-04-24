@@ -1031,17 +1031,13 @@
 }
 
 .cc-compliance {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-line-pack: justify;
+  display: block;
+  float: right;
   align-content: space-between
 }
 
 .cc-compliance > .cc-btn {
-  -ms-flex: 1;
-  flex: 1
+
 }
 
 .cc-btn + .cc-btn {
@@ -1050,7 +1046,7 @@
 
 @media print {
   .cc-revoke, .cc-window {
-    display: none
+    display: none;
   }
 }
 

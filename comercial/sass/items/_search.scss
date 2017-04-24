@@ -42,6 +42,7 @@
         &:before {
           content: '';
           display: none;
+          margin-left: 0;
         }
         &:after {
           float: right;
@@ -86,6 +87,7 @@
         &:before {
           content: '';
           display: none;
+          margin-left: 0;
         }
       }
 
@@ -101,6 +103,7 @@
       ul.dropdown-menu li:before {
         content: '';
         display: none;
+        margin-left: 0;
       }
 
       .pagination>.active>a,

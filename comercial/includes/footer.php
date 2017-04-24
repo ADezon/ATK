@@ -142,7 +142,7 @@
 <script>
     var
         policyUrl = "http://www.google.com",
-        customMessage = 'Este sitio usa cookies. Si continuas navengando aceptas su uso.',
+        customMessage = 'Utilitzem galetes pròpies i de tercers per oferir-te una experiència millor en el nostre portal web. Si continues navegant-hi, considerarem que n’acceptes l’ús.',
         linkTitle = "Mas información",
         dimissTitle = "Entendido";
 

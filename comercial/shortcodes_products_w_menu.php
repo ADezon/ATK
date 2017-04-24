@@ -453,7 +453,7 @@
   <!-- END SECTION LIST HELP -->
 
   <script language="JavaScript">
-      $(window).load(function () { // BEGIN OnLoad
+      $(document).ready(function () { // BEGIN OnLoad
 
           // Altura de nuestro FOOTER.
           var footerHeight = $('#footer').height() + 140, // Add puixels of margin-bottom from LAST ShortCode to FOOTER.

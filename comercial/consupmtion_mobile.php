@@ -1404,7 +1404,7 @@
           // Open ALERT without CONTENT, fill with AJAX callback
           $('.action-activate').click(function (e) {
               e.preventDefault();
-              console.log(scrollTop);
+//              console.log(scrollTop);
               // Call FORM Alta MOVISTAR
               $.post("includes/fake_api.php", {operation: 'viewchannels'})
                   .done(function (data) {
@@ -1458,7 +1458,7 @@
 
           // NOTE: THIS IS THE SAME/Identical as before, but for "CONTRATAR"
           $('.action-sign-in').click(function (e) {
-              console.log(scrollTop);
+//              console.log(scrollTop);
               e.preventDefault();
               // Call FORM Alta MOVISTAR
               $.post("includes/fake_api.php", {operation: 'altamovistar'})

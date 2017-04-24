@@ -515,7 +515,7 @@ p{
       .hide-accessible {
         display: none;
       }
-      .breadcrumb {
+      ul.breadcrumb {
         background: none transparent;
         li {
           float: left;
@@ -592,17 +592,24 @@ p{
     }
   }
 }
-#main-content .breadcrumb {
+#main-content ul.breadcrumb {
   background: none transparent;
+
   li {
     float: left;
     margin-right: 4px;
+    margin-left: 0;
+    line-height: 20px;
+    padding-left: 12px;
+
     &:before {
       content: " / ";
-      top: 0;
+      top: 2px;
       font-family: $titillium;
       font-size: 10px;
-      padding-right: 6px;
+      position: absolute;
+      left: 2px;
+      color: #9c9e9f;
     }
     &:first-child:before {
       content: '';

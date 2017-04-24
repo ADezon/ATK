@@ -89,7 +89,7 @@ $(document).ready(function () {
     //If width is less or equal to 720px dropdowns are displayed on click (thanks Aman Jain from stackoverflow)
 
     $(".menu-mobile").click(function (e) {
-        console.log('ready');
+        // console.log('ready');
         $('#header .container-client-area').removeClass('active').hide();
         $(".menu > ul").toggleClass('show-on-mobile');
         $("#topbar").toggleClass('show-on-mobile');

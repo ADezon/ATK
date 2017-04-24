@@ -1086,7 +1086,7 @@
           "alerts"
         ],
         "defaultCode": 59648,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
@@ -1116,7 +1116,7 @@
           "call"
         ],
         "defaultCode": 59649,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
@@ -1148,7 +1148,7 @@
           "callcenter"
         ],
         "defaultCode": 59650,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1176,7 +1176,7 @@
           "client"
         ],
         "defaultCode": 59651,
-        "grid": 0,
+        "grid": 24,
         "attrs": [
           {}
         ],
@@ -1214,7 +1214,7 @@
           "computer"
         ],
         "defaultCode": 59652,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1244,7 +1244,7 @@
           "consumption"
         ],
         "defaultCode": 59653,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1274,7 +1274,7 @@
           "data"
         ],
         "defaultCode": 59654,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1302,7 +1302,7 @@
           "email"
         ],
         "defaultCode": 59655,
-        "grid": 0,
+        "grid": 24,
         "attrs": [
           {}
         ],
@@ -1340,7 +1340,7 @@
           "house"
         ],
         "defaultCode": 59656,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1370,7 +1370,7 @@
           "mobile"
         ],
         "defaultCode": 59657,
-        "grid": 0,
+        "grid": 24,
         "attrs": [
           {},
           {},
@@ -1415,7 +1415,7 @@
           "offer"
         ],
         "defaultCode": 59658,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1452,7 +1452,7 @@
           "phone"
         ],
         "defaultCode": 59659,
-        "grid": 0,
+        "grid": 24,
         "attrs": [
           {},
           {},
@@ -1517,7 +1517,7 @@
           "search"
         ],
         "defaultCode": 59660,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1547,7 +1547,7 @@
           "tv"
         ],
         "defaultCode": 59661,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1578,7 +1578,7 @@
           "instagram"
         ],
         "defaultCode": 59662,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1609,7 +1609,7 @@
           "twitter"
         ],
         "defaultCode": 59663,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1631,25 +1631,23 @@
     {
       "icon": {
         "paths": [
-          "M478.046 7.006c-263.545 0-478.046 222.585-478.046 495.832 0 273.785 214.501 496.101 478.046 496.101 263.815 0 478.316-222.316 478.316-496.101 0-273.246-214.501-495.832-478.316-495.832v0zM597.154 520.354h-77.878v287.798h-115.335v-287.798h-54.703v-101.592h54.703v-65.752c0-47.158 21.558-120.724 116.413-120.724l85.423 0.539v98.627h-61.979c-10.24 0-24.522 5.12-24.522 27.486v59.823h87.848l-9.971 101.592z"
+          "M498.368 52.799c-251.71 0-455.772 204.055-455.772 455.772 0 225.757 164.315 412.717 379.753 448.922v-353.837h-109.944v-127.335h109.944v-93.889c0-108.94 66.535-168.301 163.732-168.301 46.55 0 86.553 3.47 98.171 4.997v113.871l-67.413 0.030c-52.848 0-63.036 25.105-63.036 61.966v81.268h126.095l-16.446 127.335h-109.649v356.945c225.498-27.444 400.325-219.173 400.325-452.097 0-251.584-204.055-455.639-455.766-455.639z"
         ],
         "width": 970,
-        "isMulticolor": false,
-        "isMulticolor2": false,
         "tags": [
           "facebook"
         ],
         "defaultCode": 59664,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
-        "colorPermutations": {
-          "118001111": []
-        }
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "colorPermutations": {}
       },
       "attrs": [],
       "properties": {
         "id": 17,
-        "order": 23,
+        "order": 119,
         "ligatures": "",
         "prevSize": 32,
         "code": 59666,
@@ -1671,7 +1669,7 @@
           "googleplus"
         ],
         "defaultCode": 59665,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1702,7 +1700,7 @@
           "menu"
         ],
         "defaultCode": 59666,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1732,7 +1730,7 @@
           "select_up"
         ],
         "defaultCode": 59667,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1762,7 +1760,7 @@
           "select_down"
         ],
         "defaultCode": 59668,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1792,7 +1790,7 @@
           "close"
         ],
         "defaultCode": 59669,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1822,7 +1820,7 @@
           "left"
         ],
         "defaultCode": 59670,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1852,7 +1850,7 @@
           "right"
         ],
         "defaultCode": 59671,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1883,7 +1881,7 @@
           "landphone"
         ],
         "defaultCode": 59672,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1914,7 +1912,7 @@
           "hands"
         ],
         "defaultCode": 59673,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -1942,7 +1940,7 @@
           "web"
         ],
         "defaultCode": 59674,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
@@ -1975,7 +1973,7 @@
           "fax"
         ],
         "defaultCode": 59675,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -2005,7 +2003,7 @@
           "headphones"
         ],
         "defaultCode": 59676,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -2036,7 +2034,7 @@
           "question"
         ],
         "defaultCode": 59677,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -2066,7 +2064,7 @@
           "close-rounded"
         ],
         "defaultCode": 59678,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -2100,7 +2098,7 @@
           "cars"
         ],
         "defaultCode": 59679,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
@@ -2133,7 +2131,7 @@
           "check"
         ],
         "defaultCode": 59680,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -2163,7 +2161,7 @@
           "point"
         ],
         "defaultCode": 59681,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -2192,7 +2190,7 @@
           "cone"
         ],
         "defaultCode": 59682,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
@@ -2225,7 +2223,7 @@
           "wheel"
         ],
         "defaultCode": 59683,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "colorPermutations": {
           "118001111": []
@@ -2256,7 +2254,7 @@
           "attention"
         ],
         "defaultCode": 59684,
-        "grid": 0,
+        "grid": 24,
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
@@ -2304,16 +2302,22 @@
         "whitespace": 50
       },
       "embed": false,
-      "resetPoint": 59648
+      "resetPoint": 59648,
+      "showMetrics": true
     },
     "imagePref": {
       "prefix": "icon-",
       "png": true,
       "useClassSelector": true,
       "color": 0,
-      "bgColor": 16777215
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "height": 32,
+      "columns": 16,
+      "margin": 16
     },
     "historySize": 100,
-    "gridSize": 16
+    "gridSize": 16,
+    "showGrid": false
   }
 }

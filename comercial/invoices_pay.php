@@ -167,7 +167,7 @@
     $( document ).ready(function() {
       $('input.button-pay').click(function (e) {
         e.preventDefault();
-        console.log('clicked');
+//        console.log('clicked');
         revealalert();
       });
     });
