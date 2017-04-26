@@ -61,7 +61,7 @@
                                     <span class="info-detail-consumption-included">100</span>
                                 </span>
 
-                  <meter low="12.5" high="15.5" min="5" max="20" value="10.2" optimum="14">10.2 g/100 mL</meter>
+                  <meter value=".8"></meter>
 
                 </li>
                 <li>
@@ -1391,20 +1391,19 @@
 
 
           // Refrescamos variable cada vez que hagamos WHEEL
-          $(window).bind('mousewheel DOMMouseScroll', function (event) {
-              if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-                  scrollTop = $(window).scrollTop();
-              }
-              else {
-                  scrollTop = $(window).scrollTop();
-              }
-          });
+//          $(window).bind('mousewheel DOMMouseScroll', function (event) {
+//              if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+//                  scrollTop = $(window).scrollTop();
+//              }
+//              else {
+//                  scrollTop = $(window).scrollTop();
+//              }
+//          });
 
 
           // Open ALERT without CONTENT, fill with AJAX callback
           $('.action-activate').click(function (e) {
               e.preventDefault();
-//              console.log(scrollTop);
               // Call FORM Alta MOVISTAR
               $.post("includes/fake_api.php", {operation: 'viewchannels'})
                   .done(function (data) {
@@ -1458,7 +1457,7 @@
 
           // NOTE: THIS IS THE SAME/Identical as before, but for "CONTRATAR"
           $('.action-sign-in').click(function (e) {
-//              console.log(scrollTop);
+              scrollTop = $(window).scrollTop();
               e.preventDefault();
               // Call FORM Alta MOVISTAR
               $.post("includes/fake_api.php", {operation: 'altamovistar'})
