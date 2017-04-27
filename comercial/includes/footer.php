@@ -84,7 +84,7 @@
         </ul>
         <h3>Servei d'atenció al client</h3>
         <span class="phone-callcenter">115</span>
-        <h3>+376 301115 (des de l’estranger)</h3>
+        <h3><a href="#">+376 301115 (des de l’estranger)</a></h3>
       </div>
     </div>
   </div>
