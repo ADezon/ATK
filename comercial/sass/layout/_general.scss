@@ -592,6 +592,23 @@ p{
     }
   }
 }
+
+// Remove LR BG for breadcrumbs
+.breadcrumb-horizontal>li+li {
+  padding-left: 0;
+}
+.breadcrumb-horizontal>li+li:before {
+  background: none;
+  height: auto;
+  left: 0;
+  float: none;
+  margin-top: 0;
+  padding: 0;
+  position: absolute;
+  top: 2px;
+  width: auto;
+}
+
 #main-content ul.breadcrumb {
   background: none transparent;
 
@@ -600,15 +617,15 @@ p{
     margin-right: 4px;
     margin-left: 0;
     line-height: 20px;
-    padding-left: 12px;
+    padding-left: 16px;
 
     &:before {
       content: " / ";
       top: 2px;
-      font-family: $titillium;
+      font-family: $titillium !important;
       font-size: 10px;
       position: absolute;
-      left: 2px;
+      left: 4px;
       color: #9c9e9f;
     }
     &:first-child:before {
