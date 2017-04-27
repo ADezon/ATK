@@ -966,6 +966,8 @@
         margin: 0;
         padding: 0;
         @include span(3 of 12);
+        @include breakpoint($mobile) { margin-right: 0; }
+
         &.active{
           .title-level-1{
             color: black;
@@ -1022,10 +1024,14 @@
           color: $greydark;
           @include breakpoint($tablet) {
             background-color: $greydark;
+            color: white;
           }
           a { color: black; }
           .title-level-1 {
             color: $greydark;
+            @include breakpoint($tablet) {
+              color: white;
+            }
           }
         }
         .container-submenu{
@@ -1070,6 +1076,9 @@
                 float: left;
                 width: 100%;
                 margin-top: 2%;
+                @include breakpoint($mobile) {
+                  display: none;
+                }
 
                 .banner-item {
                   width: 50%;
@@ -1147,9 +1156,16 @@
                     position: relative;
                     text-align: left;
                     width:100%;
+                    @include breakpoint ($mobile) {
+                      color: white;
+                    }
                     &:hover{
                       text-decoration:underline;
                     }
+                  }
+                  >ul>li {
+                    padding-left: 16px;
+                    margin-bottom: 6px;
                   }
                   >ul>li:first-child {
                     margin-top: 4px;
@@ -1172,8 +1188,14 @@
             &.three-rows {
               > li {
                 width: 33%;
+                @include breakpoint($mobile) {
+                  width: 100%;
+                }
                 &.banners-mmenu-corporate {
                   width: 100%;
+                  @include breakpoint($mobile) {
+                    display: none;
+                  }
                 }
               }
             }
@@ -1301,9 +1323,10 @@
               > li {
                 float: none;
                 width: 100%;
-                padding: 10px 21px 10px 47px;
+                padding: 0 0 0 36px;
                 margin: 0;
-                border-top: 1px solid $gris3;
+                //border-top: 1px solid $gris3;
+
                 &:first-child {
                   margin: 0;
                   border: none;
@@ -1313,7 +1336,7 @@
                 }
                 > ul {
                   position: relative;
-                  display: none;
+                  //display: none;
                   > li {
                     float: none;
                   }

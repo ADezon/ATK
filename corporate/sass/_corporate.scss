@@ -101,9 +101,17 @@ body.corporate{
             .title-level-1{
               font-weight: bold;
               color: black;
+              @include breakpoint($tablet) {
+                color: white;
+              }
             }
             &:hover {
-              .title-level-1 { color: $greydark; }
+              .title-level-1 {
+                color: $greydark;
+                @include breakpoint($tablet) {
+                  color: white;
+                }
+              }
             }
           }
           .title-level-1{
