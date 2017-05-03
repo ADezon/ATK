@@ -52,7 +52,7 @@
 
   <title>Title (VAR TITLE from plattform)</title>
 </head>
-<body>
+<body class="signed-out">
 <!--[if lt IE 8]><p class="browser-upgrade">Estas usando un navegador <strong>desactualizado</strong>. Por favor, <a
   href="http://browsehappy.com/">actualiza tu navegador</a> para mejorar tu experiencia.</p><![endif]-->
 <!-- BEGIN HEADER-->

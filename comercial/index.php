@@ -339,20 +339,19 @@
   <script language="JavaScript">
 
       $(document).ready(function () {
+          // We build the HTML structure at the Desktop behalf,
+          // Then we change the block in the DOM for mobile U.U.E.E.
 
-          // It works OK mobile first, and we need to be "relative" postiion.
-          // But there is needed a change in the DOM to show it absolute positioned in desktop.
-
-          var callMeFullBlockContent = $('#cmb-content').html(),
-              callMeInfoContainer = $('#cmb-content .info-container'),
+          var callMeFullBlockContent = $('#cmb-content').html(), // FULL Contenido para DeskTop
+              callMeInfoContainer = $('#cmb-content .info-container'), // Contenido para MOBILE
               callMeInfoContent = callMeInfoContainer.html(),
               finalContainer = '',
               windowObj = $(window);
 
-          // Vaciamos contenido para evitar repeticiones
-          $('#cmb-content').html('');
-
           function whereItGoes() {
+              // Vaciamos contenido para evitar repeticiones
+              $('#cmb-content').html('');
+
               finalContainer = ((windowObj.width() > 480) ? $('#cmb-content') : $('#mobile-cmb-container'));
               finalContainer.html(callMeFullBlockContent);
           }
@@ -398,6 +397,7 @@
 
 
           windowObj.resize(function () {
+              // console.log('Resized');
               whereItGoes();
           });
           // Inicializamos al arrancar

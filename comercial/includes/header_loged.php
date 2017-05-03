@@ -78,7 +78,7 @@
 
   <title>Title (VAR TITLE from plattform)</title>
 </head>
-<body class="logged-in">
+<body class="logged-in signed-in">
 <!--[if lt IE 8]><p class="browser-upgrade">Estas usando un navegador <strong>desactualizado</strong>.
   Por favor, <a
       href="http://browsehappy.com/">actualiza tu navegador</a> para mejorar tu
@@ -248,6 +248,9 @@
   <div id="nav-private" class="cont-wrapper">
     <div class="menu content content-big">
       <ul>
+
+          <li class="private-on-mobile"></li> <!-- AÑADIR esta clase SIEMPRE en la estructura de CM. Contendrá private menu -->
+
         <li class="active" id="forfets-mobiland">
           <div class="title-level-1">
             <div

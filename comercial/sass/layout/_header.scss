@@ -17,11 +17,27 @@
 
     &.show-on-mobile {
       clear: both;
-      display: block;
+      display: none;
       float: none;
       height: auto;
       overflow: visible;
       position: relative;
+
+      @include breakpoint ($tablet) {
+        display: block;
+      }
+      // Container para embeber MENU Private
+      li.private-on-mobile {
+        display: none;
+        @include breakpoint ($tablet) {
+          display: block;
+
+          .logout div {
+            float: left;
+          }
+        }
+      }
+
       .content {
         .left {
           clear: both;
@@ -813,8 +829,8 @@
             width: 13%;
             border-right: 1px solid #9b9b9b;
             @include breakpoint($tablet) {
-              float: none;
-              clear: both;
+              //float: none;
+              //clear: both;
               border: none;
               width: 100%;
             }
@@ -1329,6 +1345,11 @@
                 &:first-child {
                   margin: 0;
                   border: none;
+                }
+                &.logout {
+                  margin-bottom: 22px;
+                  div { float: left; margin-right: 10px; }
+                  .icons { line-height: 22px; }
                 }
                 &.banners-mmenu {
                   display: none;

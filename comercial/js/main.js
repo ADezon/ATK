@@ -181,7 +181,7 @@ $(document).ready(function () {
     // LOGIN MOBILE
     $(function () {
         var button = $('.button-client-area');
-        var buttonMobile = $('.button-login-client');
+        var buttonMobile = $('body.signed-out .button-login-client');
         var box = $('.container-client-area');
         buttonMobile.mouseup(function () {
             box.toggle();
@@ -189,5 +189,15 @@ $(document).ready(function () {
             button.toggleClass('active');
             box.toggleClass('active');
         });
+    });
+
+
+    // Insert PRIVATE Menu into Menu Mobile
+    $(function () {
+            var private_menu_content = $('.menu-pages-client').html();
+            var full_name = $('.client-full-name').html();
+            var profile_structure =  '<div class="title-level-1"><div class="icons icon-client"></div><div class="menu-title">' + full_name + '</div></div>';
+            $('.private-on-mobile').append(profile_structure + '<div class="container-submenu"><ul>' + private_menu_content + '</ul></div>');
+
     });
 });
