@@ -271,7 +271,7 @@
           </div>
         </li>
         <li  id="som-internet">
-          <div class="title-level-1"><div class="icons icon-phone"></div><div class="menu-title">SOM Internet i Fixa</div>
+          <div class="title-level-1"><div class="icons icon-phone"></div><div class="menu-title">SOM Internet and Landline</div>
           </div>
           <div class="container-submenu">
             <ul>

@@ -224,7 +224,7 @@
             <ul>
                 <li class="active">
                     <div class="title-level-1"><div
-                                class="icons icon-mobile"></div><div>SOM Telefonia Mòbil</div>
+                                class="icons icon-mobile"></div><div>Internet and conectivity</div>
                     </div>
                     <div class="container-submenu">
                         <ul>
@@ -392,7 +392,7 @@
                 </li>
                 <li>
                     <div class="title-level-1"><div
-                                class="icons icon-phone"></div><div>SOM Internet i Fixa</div>
+                                class="icons icon-phone"></div><div>SOM Internet i telefonia fixa</div>
                     </div>
                     <div class="container-submenu">
                         <ul>

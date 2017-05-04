@@ -1029,21 +1029,29 @@
           padding: 17px 0;
           position: relative;
           text-align: center;
+          @include breakpoint ($intermedio) {
+            font-size: 12px;
+          }
+          @include breakpoint ($mobile) {
+            background-color: #333333;
+            font-size: 14px;
+          }
           &:hover {
             color: $greydark;
             @include breakpoint($tablet) {
               color: $white;
             }
           }
-          @include breakpoint ($mobile) {
-            background-color: #333333;
-          }
+
           .icons {
             float: left;
             color: $pink;
             font-size: 20px;
             padding-right: 10px;
-            margin-left: 30px;
+            margin-left: 6%;
+            @include breakpoint ($intermedio) {
+              margin-left: 4%;
+            }
             @include breakpoint ($mobile) {
               margin-left: 0;
             }
