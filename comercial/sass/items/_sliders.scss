@@ -1,194 +1,195 @@
-#main-content .slider {
-  position: relative;
+#main-content {
 
-  ul.slides {
-    li {
-      overflow: hidden;
-      position: relative;
-      margin: 0;
-      display: none;
-      &:first-child {
-        display: block;
-      }
+  .slider {
+    position: relative;
 
-      @include breakpoint($intermedio) {
-        max-height: none;
-      }
-      img {
-        width: 100%;
-        float: left;
-        @include breakpoint($intermedio) {
-          object-fit: cover;
-          width: 100%;
-          height: 320px;
-        }
-      }
-      .block-container {
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        @include breakpoint($intermedio) {
-          position: relative;
+    ul.slides {
+      li {
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        display: none;
+        &:first-child {
           display: block;
-          width: 100%;
-          left: auto;
-          top: auto;
         }
-        .inner-container {
-          background: white;
-          margin: 0 auto;
-          max-width: 1080px;
-          position: relative;
+
+        @include breakpoint($intermedio) {
+          max-height: none;
+        }
+        img {
           width: 100%;
-
-          .custom-htmlfree {
-            float: left;
+          float: left;
+          @include breakpoint($intermedio) {
+            object-fit: cover;
             width: 100%;
-            @include breakpoint($intermedio) {
-              padding: 0 40px;
-            }
-            .position-left,
-            .position-right {
-              background-color: white;
-              margin-top: 10%;
-              padding: 20px;
-              width: 290px;
-              @include breakpoint ($wxga) {
-                margin-top: 6%;
-              }
-              @include breakpoint($intermedio) {
-                float: none;
-                width: 100%;
-                margin: 0;
-              }
-            }
-            .position-left {
-              float: left;
-            }
-            .position-right {
-              float: right;
-              text-align: right;
-            }
-
-            .position-center {
-              background-color: white;
-              padding: 20px;
-              width: 450px;
-              margin: 10% auto 0 auto;
-              @include breakpoint($intermedio) {
-                float: none;
-                width: 100%;
-                margin: 0;
-              }
-            }
-            .field-title {
-              color: $pink;
-              font-size: 21px;
-              line-height: 28px;
-              font-weight: 600;
-              margin-bottom: 16px;
-            }
-            .field-body {
-              color: $greymedium;
-              font-size: 18px;
-              line-height: 24px;
-            }
-
+            height: 320px;
           }
         }
+        .block-container {
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          @include breakpoint($intermedio) {
+            position: relative;
+            display: block;
+            width: 100%;
+            left: auto;
+            top: auto;
+          }
+          .inner-container {
+            background: white;
+            margin: 0 auto;
+            max-width: 1080px;
+            position: relative;
+            width: 100%;
+
+            .custom-htmlfree {
+              float: left;
+              width: 100%;
+              @include breakpoint($intermedio) {
+                padding: 0 40px;
+              }
+              .position-left,
+              .position-right {
+                background-color: white;
+                margin-top: 10%;
+                padding: 20px;
+                width: 290px;
+                @include breakpoint ($wxga) {
+                  margin-top: 6%;
+                }
+                @include breakpoint($intermedio) {
+                  float: none;
+                  width: 100%;
+                  margin: 0;
+                }
+              }
+              .position-left {
+                float: left;
+              }
+              .position-right {
+                float: right;
+                text-align: right;
+              }
+
+              .position-center {
+                background-color: white;
+                padding: 20px;
+                width: 450px;
+                margin: 10% auto 0 auto;
+                @include breakpoint($intermedio) {
+                  float: none;
+                  width: 100%;
+                  margin: 0;
+                }
+              }
+              .field-title {
+                color: $pink;
+                font-size: 21px;
+                line-height: 28px;
+                font-weight: 600;
+                margin-bottom: 16px;
+              }
+              .field-body {
+                color: $greymedium;
+                font-size: 18px;
+                line-height: 24px;
+              }
+
+            }
+          }
+        }
+        &:before {
+          content: "";
+          display: none;
+        }
       }
-      &:before {
-        content: "";
-        display: none;
-      }
-    }
-  }
-
-  // Animate HTML Blocks on entering Slides
-  .slides li .block-container {
-    opacity: 0.0;
-    transform: scale(0.5);
-    transition: transform 1200ms ease, opacity 1200ms ease;
-  }
-  .slides li.flex-active-slide .block-container {
-    opacity: 1.0;
-    transform: scale(1.0);
-  }
-
-  ul.flex-direction-nav {
-    margin: 0 auto;
-    max-width: 1240px;
-    position: relative;
-    width: 100%;
-    li {
-      margin-bottom: 0;
-      &:before {
-        content: "";
-        display: none;
-      }
     }
 
-  }
+    // Animate HTML Blocks on entering Slides
+    .slides li .block-container {
+      opacity: 0.0;
+      transform: scale(0.5);
+      transition: transform 1200ms ease, opacity 1200ms ease;
+    }
+    .slides li.flex-active-slide .block-container {
+      opacity: 1.0;
+      transform: scale(1.0);
+    }
 
-  .flex-direction-nav a {
-    opacity: 1 !important;
-    top: -242px;
-    @include breakpoint($x-large) {
-      top: -194px;
-    }
-    @include breakpoint($large) {
-      top: -174px;
-    }
-    @include breakpoint($intermedio) {
-      top: -90px;
-    }
-    @include breakpoint($medium) {
-      top: -110px;
-    }
-    @include breakpoint($tablet) {
-      top: -130px;
-    }
-    @include breakpoint($mobile) {
-      top: -150px;
-    }
-  }
-  .flex-direction-nav .flex-next,
-  .flex-direction-nav .flex-prev {
-    color: transparent;
-    opacity: 1 !important;
-    text-shadow: none;
-    &:before {
-      content: '';
-    }
-  }
-  .flex-direction-nav .flex-next {
-    background: url("../images/icon-arrow-r.png") no-repeat 100% 0 transparent;
-    right: 15px !important;
-  }
-  .flex-direction-nav .flex-prev {
-    background: url("../images/icon-arrow-l.png") no-repeat 0 0 transparent;
-    left: 15px !important;
-  }
-
-  /* USING INSIDE CONTENT */
-  &.inner-use {
-    position: relative;
-    ul li {
-      margin: 0;
+    ul.flex-direction-nav {
+      margin: 0 auto;
+      max-width: 1240px;
+      position: relative;
       width: 100%;
-      img {
-        width: 100%;
+      li {
+        margin-bottom: 0;
+        &:before {
+          content: "";
+          display: none;
+        }
       }
+
     }
 
     .flex-direction-nav a {
-      top: -144px !important;
+      opacity: 1 !important;
+      top: -242px;
+      @include breakpoint($x-large) {
+        top: -194px;
+      }
+      @include breakpoint($large) {
+        top: -174px;
+      }
+      @include breakpoint($intermedio) {
+        top: -90px;
+      }
+      @include breakpoint($medium) {
+        top: -110px;
+      }
+      @include breakpoint($tablet) {
+        top: -130px;
+      }
+      @include breakpoint($mobile) {
+        top: -150px;
+      }
+    }
+    .flex-direction-nav .flex-next,
+    .flex-direction-nav .flex-prev {
+      color: transparent;
+      opacity: 1 !important;
+      text-shadow: none;
+      &:before {
+        content: '';
+      }
+    }
+    .flex-direction-nav .flex-next {
+      background: url("../images/icon-arrow-r.png") no-repeat 100% 0 transparent;
+      right: 15px !important;
+    }
+    .flex-direction-nav .flex-prev {
+      background: url("../images/icon-arrow-l.png") no-repeat 0 0 transparent;
+      left: 15px !important;
+    }
+
+    /* USING INSIDE CONTENT */
+    &.inner-use {
+      position: relative;
+      ul li {
+        margin: 0;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+
+      .flex-direction-nav a {
+        top: -144px !important;
+      }
     }
   }
-}
 
-#main-content {
   .small-banner {
     background-color: $grey;
     padding: 30px 0 26px 0;
@@ -286,5 +287,21 @@
   }
   .flex-viewport ul li {
     margin: 0;
+  }
+
+  .video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+
+    iframe, object, embed {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
   }
 }
