@@ -1,5 +1,6 @@
 <?php include 'includes/header.php'; ?>
 
+<div id="main-content">
 <!--IMPORTANT:: REQUIRES LOAD src="/js/dinamiclogin.js" SCRIPT IN HEAD-->
 
 <!--BEGIN SPECIFIC PAGE FLOAT LOGUIN EXAMPLE-->
@@ -93,6 +94,6 @@
 </div>
 <!--IMPORTANT:: REQUIRES LOAD src="/js/dinamiclogin.js" SCRIPT IN HEAD-->
 <!--END POP-UP LOGUIN CONTENT-->
-
+</div>
 
 <?php include 'includes/footer.php'; ?>

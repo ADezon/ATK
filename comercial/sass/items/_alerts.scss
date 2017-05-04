@@ -405,6 +405,7 @@
       z-index: 10;
       @include breakpoint($tablet) {
         width: 80%;
+        margin: 2% auto;
       }
       @include breakpoint($mobile) {
         width: 90%;
@@ -450,6 +451,7 @@
         @include breakpoint($tablet) {
           font-size: 16px;
           line-height: 21px;
+          margin-top: -30px;
         }
         p {
           font-size: 21px;
@@ -487,6 +489,19 @@
               clear: none;
               margin-bottom: 10px;
               padding: 0;
+              @include breakpoint ($tablet) {
+                width: 48%;
+                margin-right: 2%;
+              }
+              @include breakpoint ($mobile) {
+                width: 100%;
+                margin-right: 0;
+              }
+            }
+            @include breakpoint ($tablet) {
+              input[type=submit] {
+                margin: 0 0 8px 0;
+              }
             }
           }
           .goto-register {
@@ -519,6 +534,12 @@
               font-size: 16px;
               line-height: 21px;
               font-weight: bold;
+            }
+          }
+          .message-error {
+            @include breakpoint ($tablet) {
+              padding: 1px 15px;
+              margin: 0;
             }
           }
         }
