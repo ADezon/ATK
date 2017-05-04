@@ -71,6 +71,22 @@ if (array_key_exists('operation', $received)) {
     );
   }
 
+  elseif ($received['operation'] == 'cancel_operation') {
+      $title = '<h2 class="alta-success">Confirma la cancel·lació de l\'ordre</h2>';
+      $body = 'Estàs segur de voler cancel·lar l\'ordre pendenet';
+      $body .= '<div class="full-centered">
+                <input type="button" class="pink-button close-button centered" value="No">
+                <input type="button" class="pink-button close-button centered" value="Si">
+                </div>';
+
+      $response = array(
+          'title' => $title,
+          'body'  => $body
+      );
+  }
+
+
+
   elseif ($received['operation'] == 'confirm_cp') {
     $title = '<h2 class="alta-success">Password Changed</h2>';
     $body = 'You can log-in to Andorra Telecom with your new password';

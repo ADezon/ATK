@@ -134,7 +134,7 @@
             width: 50%;
             text-align: center;
             @include breakpoint($mobile) {
-              width: 60%;
+              width: 88%;
             }
             .icons {
               position: relative;
@@ -208,7 +208,7 @@
 
             // for .services-price
             @include breakpoint($mobile) {
-              width: 40%;
+              width: 12%;
               p {
                 font-size: 28px;
                 margin: 0;
@@ -758,6 +758,7 @@
       }
       @include breakpoint($mobile) {
         margin-top: -26px;
+        width: 96%;
       }
     }
     .alert-general-body {

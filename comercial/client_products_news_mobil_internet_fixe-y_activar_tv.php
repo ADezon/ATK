@@ -112,7 +112,7 @@
                         30/01/2016
                       </div>
                       <div class="products-list-column column-link">
-                        <a href="#">Cancel·ar</a>
+                        <a href="#" class="action-cancel-operation">Cancel·ar</a>
                       </div>
                     </div>
 
@@ -230,7 +230,7 @@
           <div class="services-element">
             <div class="services-title">
               <span class="icons icon-phone"></span>
-              <p>Internet i fixe</p>
+              <p>Internet i telefonia fixa</p>
             </div>
             <div class="services-price">
               <div class="clickunfold">&nbsp;</div>
@@ -287,7 +287,7 @@
                     30/01/2016
                   </div>
                   <div class="products-list-column column-link">
-                    <a href="#">Cancel·ar</a>
+                    <a href="#" class="action-cancel-operation">Cancel·ar</a>
                   </div>
                 </div>
 
@@ -610,6 +610,27 @@
 
               });
           });
+
+
+          $('.action-cancel-operation').click(function (e) {
+              e.preventDefault();
+              // Call FORM Cancellation
+              $.post("includes/fake_api.php", {operation: 'cancel_operation'})
+                  .done(function (data) {
+                      alertTitle.html(data.title);
+                      alertBody.html(data.body);
+                  })
+                  .fail(function (data) {
+                      alertTitle.html(data);
+                      alertBody.html(data);
+                  });
+              if ($(window).width() < 480) {
+                  floatingWrapper.removeClass('fixedone');
+                  floatingAlert.css({top: scrollTop});
+              }
+              revealalert();
+          });
+
 
           // Close Alert
           $('.clientproducts').on('click', '.close-button', function () {
