@@ -160,8 +160,8 @@
 
           <li class="forfets-element odd">
             <div class="content">
-              <div class="forfets-element-column title-forfet">
-                <span>Paquet</span><span class="number-forfet">69</span>
+              <div class="forfets-element-column title-forfet big-lonely-title">
+                <span>Paquet 69 Empleado Largo</span>
               </div>
 
               <div class="reveal-info">Més informació</div>
