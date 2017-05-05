@@ -4,10 +4,12 @@
   position: relative;
   width: 100%;
   #topbar {
-    background-color: $grey;
+    background-color: $pink;
     height: 39px;
     overflow: visible;
     padding: 9px 0;
+    border-bottom: 1px solid white;
+
     @include breakpoint($tablet) {
       display: none;
     }
@@ -71,7 +73,7 @@
               display: none;
             }
             a {
-              color: $greymedium;
+              color: white;
               display: block;
               float: left;
               font-size: 14px;
@@ -90,8 +92,8 @@
           }
         }
         .search {
-          border-bottom: 1px solid $whitealt;
-          border-top: 1px solid $whitealt;
+          border-bottom: 1px solid white;
+          border-top: 1px solid white;
           clear: both;
           display: block;
           float: none;
@@ -111,7 +113,7 @@
             margin: 0;
             background-color: transparent;
             border: none;
-            color: $greymedium;
+            color: white;
             display: block;
             float: right;
             height: 30px;
@@ -119,20 +121,20 @@
             position: relative;
             width: 78%;
             &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-              color: $gris3;
+              color: white;
             }
             &::-moz-placeholder { /* Firefox 19+ */
-              color: $gris3;
+              color: white;
             }
             &:-ms-input-placeholder { /* IE 10+ */
-              color: $gris3;
+              color: white;
             }
             &:-moz-placeholder { /* Firefox 18- */
-              color: $gris3;
+              color: white;
             }
           }
           .icon-search {
-            color: $greymedium;
+            color: white;
             display: block;
             float: left;
             font-size: 24px;
@@ -142,7 +144,7 @@
             width: 10%;
           }
           .icon-right {
-            color: $greymedium;
+            color: white;
             display: block;
             float: right;
             font-size: 24px;
@@ -184,7 +186,7 @@
                   }
                   .taglib-language-list-text {
                     background-color: transparent;
-                    color: $greydark;
+                    color: white;
                     cursor: pointer;
                     display: block;
                     float: left;
@@ -238,7 +240,7 @@
           }
           div,
           span {
-            color: $greymedium;
+            color: white;
             display: block;
             float: left;
             font-size: 18px;
@@ -247,11 +249,11 @@
             text-align: left;
           }
           a {
-            color: $greymedium;
+            color: white;
             display: block;
             float: left;
             font-size: 14px;
-            padding-top: 4px;
+            //padding-top: 4px;
             position: relative;
             text-align: left;
             &:hover {
@@ -272,12 +274,12 @@
         position: relative;
         .search-form {
           background-color: transparent;
-          border-bottom: 1px solid $gris3;
+          border-bottom: 1px solid white;
           border-left: none;
           border-right: none;
           border-top: none;
           position: relative;
-          color: $greymedium;
+          color: white;
           display: none;
           margin: 0 10px 0 0;
           float: left;
@@ -285,16 +287,16 @@
           font-size: 12px;
           height: 20px;
           &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            color: $gris3;
+            color: white;
           }
           &::-moz-placeholder { /* Firefox 19+ */
-            color: $gris3;
+            color: white;
           }
           &:-ms-input-placeholder { /* IE 10+ */
-            color: $gris3;
+            color: white;
           }
           &:-moz-placeholder { /* Firefox 18- */
-            color: $gris3;
+            color: white;
           }
         }
         &:hover {
@@ -303,7 +305,7 @@
           }
         }
         .icon-search {
-          color: $greymedium;
+          color: white;
           display: block;
           float: left;
           font-size: 14px;
@@ -312,7 +314,7 @@
           cursor: pointer;
         }
         .icon-right {
-          color: $greymedium;
+          color: white;
           cursor: pointer;
           display: none;
           float: left;
@@ -352,7 +354,7 @@
                 }
                 div.taglib-language-list-text,
                 span {
-                  color: $greydark;
+                  color: white;
                   cursor: pointer;
                   display: block;
                   font-size: 13px;
@@ -377,7 +379,7 @@
                   }
                 }
                 #sub-menu-lang {
-                  background-color: $grey;
+                  background-color: white;
                   cursor: pointer;
                   display: none;
                   padding: 0 10px;
@@ -392,6 +394,7 @@
                   @include breakpoint ($tablet) {
                     display: block !important;
                     position: relative;
+                    background-color: transparent;
                     float: left;
                     padding: 0;
                     top: 8px;
@@ -404,9 +407,12 @@
                       text-transform: none;
                     }
                   }
+                  @include breakpoint ($mobile) {
+                    width: 54%;
+                  }
                 }
                 a {
-                  background-color: $grey;
+                  //background-color: $grey;
                   color: $greymedium;
                   cursor: pointer;
                   font-size: 13px;
