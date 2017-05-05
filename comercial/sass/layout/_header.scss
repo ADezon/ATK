@@ -1013,6 +1013,12 @@
             color: $pink;
           }
         }
+        &.private-on-mobile {
+          display: none;
+          @include breakpoint ($tablet) {
+            display: block;
+          }
+        }
         &.last {
           @include last;
         }
