@@ -882,9 +882,9 @@
               position: relative;
               display: block;
               text-align: center;
-              padding: 10px;
+              padding: 10px 4px;
               color: $greydark;
-              font-size: 16px;
+              font-size: 14px;
               line-height: 10px;
               text-decoration: none;
               @include breakpoint($tablet) {
@@ -1042,6 +1042,7 @@
           padding: 17px 0;
           position: relative;
           text-align: center;
+          cursor: pointer;
           @include breakpoint ($intermedio) {
             font-size: 12px;
           }
@@ -1287,6 +1288,7 @@
       > ul > li {
         margin: 0 !important;
         padding: 0;
+        cursor: pointer;
         @include span(20%);
         @include breakpoint($tablet) {
           width: 100%;
@@ -1300,6 +1302,7 @@
     }
     &.six-items {
       > ul > li {
+        cursor: pointer;
         margin: 0 !important;
         padding: 0;
         @include span(2 of 12);

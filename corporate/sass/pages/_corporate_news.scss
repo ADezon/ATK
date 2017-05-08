@@ -58,7 +58,7 @@
         overflow: hidden;
         float: left;
         width: 62%;
-        @include breakpoint($tablet) {
+        @include breakpoint($mobile) {
           width: 100%;
           float: none;
           clear: both;

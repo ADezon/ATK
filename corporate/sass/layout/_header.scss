@@ -1156,7 +1156,7 @@
                     position: relative;
                     text-align: left;
                     width:100%;
-                    @include breakpoint ($mobile) {
+                    @include breakpoint ($tablet) {
                       color: white;
                     }
                     &:hover{
@@ -1188,12 +1188,12 @@
             &.three-rows {
               > li {
                 width: 33%;
-                @include breakpoint($mobile) {
+                @include breakpoint($tablet) {
                   width: 100%;
                 }
                 &.banners-mmenu-corporate {
                   width: 100%;
-                  @include breakpoint($mobile) {
+                  @include breakpoint($tablet) {
                     display: none;
                   }
                 }

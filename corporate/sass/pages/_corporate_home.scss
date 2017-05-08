@@ -243,10 +243,12 @@
     float: left;
     @include breakpoint ($tablet) {
       width: 100%;
-      margin: 0 0 2% 0;
+      margin: 0 0 4% 0;
     }
     img {
       width: 100%;
+      @include breakpoint ($tablet) {width: 48%; margin-right: 2%; float: left; }
+      @include breakpoint ($mobile) { width: 100%; }
     }
     .date-home {
       margin: 14px 0;
@@ -285,6 +287,9 @@
         img {
           width: 100%;
         }
+        @include breakpoint ($tablet) {
+          width: 24%;
+        }
       }
       .news-mini-content {
         float: left;
@@ -297,11 +302,15 @@
   .home-small-banner {
     width: 32%;
     float: left;
-    @include breakpoint ($tablet) {
-      width: 100%;
-    }
     img {
       width: 100%;
+    }
+
+    @include breakpoint ($tablet) {
+      width: 100%;
+      img {
+        width: auto;
+      }
     }
   }
 
@@ -441,6 +450,15 @@
     }
     img {
       width: 100%;
+      @include breakpoint ($tablet) {
+        float: left;
+        width: 48%;
+        margin-right: 2%;
+      }
+      @include breakpoint ($mobile) {
+        float: left;
+        width: 100%;
+      }
     }
 
     .highlighted-title {
@@ -449,6 +467,8 @@
       font-size: 18px;
       line-height: 24px;
       color: $pink;
+      @include breakpoint ($tablet) { text-align: left; }
+      @include breakpoint ($mobile) { text-align: center; }
     }
     .highlighted-description {
       font-family: $roboto;
@@ -456,6 +476,9 @@
       font-weight: 400;
       line-height: 20px;
       color: $products-fontcolor;
+
+      @include breakpoint ($tablet) { text-align: left; }
+      @include breakpoint ($mobile) { text-align: center; }
     }
   }
 

@@ -437,10 +437,10 @@ p{
     max-width: 1024px;
     overflow: hidden;
     padding: 0 10px;
+    padding: 0 10px;
     position: relative;
-    @include breakpoint ($mobile) {
-      padding: 0 4%;
-    }
+    @include breakpoint ($tablet) { padding: 0 20px; }
+    @include breakpoint ($mobile) { padding: 0 4%; }
     &.content-big{
       max-width: 1024px;
       padding: 0;

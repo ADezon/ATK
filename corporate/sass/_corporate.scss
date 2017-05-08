@@ -18,7 +18,7 @@ body.corporate{
         img{
           width: auto;
           margin: 19px 0;
-          @include breakpoint($tablet) {
+          @include breakpoint($mobile) {
             width: 150px;
             margin: 21px 0;
           }
@@ -128,11 +128,6 @@ body.corporate{
       .column-footer{
         @include span(4 of 12);
 
-        @include breakpoint($tablet) {
-          @include span(4 of 12 last);
-          padding: 0 20px;
-        }
-
         @include breakpoint($mobile) {
           display: none;
         }
@@ -140,7 +135,11 @@ body.corporate{
         &.last{
           @include last;
           @include breakpoint($tablet) {
+            a.button-action { padding: 4px 10px; }
+          }
+          @include breakpoint($mobile) {
             display: block;
+            a.button-action { padding: 4px 18px; }
             @include span(12 of 12);
           }
         }
