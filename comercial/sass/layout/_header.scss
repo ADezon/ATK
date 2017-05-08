@@ -399,6 +399,7 @@
                     padding: 0;
                     top: 8px;
                     text-transform: none;
+                    width: 60%;
 
                     a {
                       border-left: 1px solid grey;
@@ -1287,7 +1288,10 @@
         margin: 0 !important;
         padding: 0;
         @include span(20%);
-        @include breakpoint($mobile) { width: 100%; }
+        @include breakpoint($tablet) {
+          width: 100%;
+          background-color: #333333;
+        }
       }
       .button-client-area {
         margin: 0 !important;
@@ -1301,6 +1305,7 @@
         @include span(2 of 12);
         @include breakpoint($tablet) {
           width: 100%;
+          background-color: #333333;
           float: none;
           display: block;
         }
