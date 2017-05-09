@@ -305,3 +305,9 @@
     }
   }
 }
+.video-ochocincuenta {
+  width: 850px;
+  @include breakpoint ($tablet) {
+    width: 100%;
+  }
+}

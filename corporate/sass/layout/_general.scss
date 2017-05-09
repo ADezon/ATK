@@ -1,16 +1,19 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   width: 100%;
   overflow-x: hidden;
 }
-body{
+
+body {
   font-family: $titillium;
   position: relative;
   width: 100%;
   overflow-x: hidden;
 }
+
 h1 {
   clear: both;
   color: $black;
@@ -19,11 +22,12 @@ h1 {
   margin: 30px 0 20px 0;
   position: relative;
 }
+
 h2 {
   font-size: 21px;
   line-height: 28px;
 
-  &.main-subtitle{
+  &.main-subtitle {
     clear: both;
     color: $greymedium;
     position: relative;
@@ -37,9 +41,9 @@ h2 {
     margin-bottom: 40px;
     position: relative;
     text-align: center;
-    &:after{
+    &:after {
       border-bottom: 2px solid $pink;
-      content:"";
+      content: "";
       display: block;
       height: 2px;
       margin: 0 auto;
@@ -49,16 +53,17 @@ h2 {
       width: 130px;
     }
     @include breakpoint($tablet) {
-      font-size:20px;
+      font-size: 20px;
       line-height: 26px;
     }
     @include breakpoint($mobile) {
-      font-size:24px;
+      font-size: 24px;
       line-height: 28px;
     }
   }
 }
-h3{
+
+h3 {
   font-size: 18px;
   font-weight: bold;
   line-height: 28px;
@@ -68,15 +73,19 @@ h3{
     line-height: 16px;
   }
 }
+
 h4 {
   margin: 15px 0;
 }
+
 h5 {
   margin: 15px 0;
 }
+
 h6 {
   margin: 15px 0;
 }
+
 ul {
   list-style: none;
   &.line-bullet li {
@@ -99,9 +108,11 @@ ul {
     }
   }
 }
+
 strong {
   font-weight: bold;
 }
+
 #main-content {
 
   .row {
@@ -130,20 +141,22 @@ strong {
   }
 }
 
-
 .full-centered {
   float: left;
   width: 100%;
   text-align: center;
   margin-bottom: 12px;
 }
+
 .tx-right {
   text-align: right;
 }
+
 .separador {
   width: 100%;
   margin-bottom: 12px;
 }
+
 .with-bottom {
   margin-bottom: 40px;
 }
@@ -206,74 +219,96 @@ table {
     width: 100%;
   }
 }
+
 // GENERAL CLASSES AND TAGS
-.left{
+.left {
   display: block;
   float: left;
   position: relative;
 }
-.right{
+
+.right {
   display: block;
   float: right;
   position: relative;
 }
+
 .clear {
   clear: both;
 }
+
 .pink {
-  color:$pink;
+  color: $pink;
 }
+
 .treinta {
   font-size: 30px;
 }
+
 .dieciseis {
   font-size: 16px;
 }
+
 .twenty {
   font-size: 20px;
 }
+
 .bold {
   font-weight: bold;
 }
+
 .grey-medium {
   color: $greymedium;
 }
-.w-sesenta { width: 60%;}
-.w-setenta { width: 70%; }
+
+.w-sesenta {
+  width: 60%;
+}
+
+.w-setenta {
+  width: 70%;
+}
+
 a {
   text-decoration: none;
   color: $pink;
   width: auto;
-  &:hover{ text-decoration: none; }
-  &:active{ text-decoration: none; }
-  &:visited { text-decoration: none; }
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
 
   &.button-pink {
     background-color: $pink;
     border-radius: 4px;
     color: $white;
     display: inline-block;
-    font-size:16px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 24px;
     padding: 4px 16px;
     text-transform: uppercase;
     text-align: center;
-    &.bp-w-auto{
+    &.bp-w-auto {
       width: auto;
       word-break: keep-all;
     }
-    &:hover{
+    &:hover {
       background-color: $pinklight;
       text-decoration: none;
     }
-    &:active{
+    &:active {
       background-color: $pinkdark;
       text-decoration: none;
     }
 
     @include breakpoint($tablet) {
-      font-size:14px;
+      font-size: 14px;
       line-height: 22px;
     }
   }
@@ -294,7 +329,7 @@ a {
       background-color: black;
     }
     @include breakpoint($tablet) {
-      font-size:14px;
+      font-size: 14px;
       line-height: 22px;
     }
     @include breakpoint($mobile) {
@@ -316,7 +351,7 @@ a {
     text-transform: uppercase;
     width: auto;
     @include breakpoint($tablet) {
-      font-size:14px;
+      font-size: 14px;
       line-height: 22px;
     }
     @include breakpoint($mobile) {
@@ -332,7 +367,7 @@ a {
     border-radius: 4px;
     color: $white;
     display: inline-block;
-    font-size:16px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 24px;
     margin: 0 auto;
@@ -340,18 +375,18 @@ a {
     position: relative;
     text-transform: uppercase;
     width: 180px;
-    &.bp-w-auto{
+    &.bp-w-auto {
       width: auto;
       word-break: keep-all;
     }
-    &:hover{
+    &:hover {
       background-color: grey;
     }
-    &:active{
+    &:active {
       background-color: $gris2;
     }
     @include breakpoint($tablet) {
-      font-size:14px;
+      font-size: 14px;
       line-height: 18px;
     }
   }
@@ -366,19 +401,19 @@ a {
     padding: 4px 16px;
     text-transform: uppercase;
     width: auto;
-    &:hover{
+    &:hover {
       background-color: $pinklight;
     }
-    &:active{
+    &:active {
       background-color: $pinkdark;
     }
-    .icons{
+    .icons {
       font-size: 24px;
       vertical-align: text-bottom;
       padding-right: 5px;
     }
     @include breakpoint($tablet) {
-      font-size:14px;
+      font-size: 14px;
       line-height: 18px;
     }
     @include breakpoint($mobile) {
@@ -398,7 +433,7 @@ a {
     text-decoration: none;
     width: auto;
     @include breakpoint($tablet) {
-      font-size:14px;
+      font-size: 14px;
       line-height: 22px;
     }
     @include breakpoint($mobile) {
@@ -407,18 +442,22 @@ a {
     }
   }
 }
-p{
+
+p {
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 12px;
 }
+
 // BEGIN OVERRIDE LR defaults
 #wrapper {
   padding-top: 0;
 }
+
 .container-fluid {
   padding: 0;
 }
+
 // END OVERRIDE LR defaults
 .cont-wrapper {
   display: block;
@@ -433,20 +472,24 @@ p{
   .content {
     @include clearfix();
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
     max-width: 1024px;
     overflow: hidden;
     padding: 0 10px;
     padding: 0 10px;
     position: relative;
-    @include breakpoint ($tablet) { padding: 0 20px; }
-    @include breakpoint ($mobile) { padding: 0 4%; }
-    &.content-big{
+    @include breakpoint ($tablet) {
+      padding: 0 20px;
+    }
+    @include breakpoint ($mobile) {
+      padding: 0 4%;
+    }
+    &.content-big {
       max-width: 1024px;
       padding: 0;
     }
     /* Page with sidebar */
-    .sidebar{
+    .sidebar {
       position: relative;
       display: block;
       float: left;
@@ -499,14 +542,16 @@ p{
       }
     }
     /* Breadcrumb & Title */
-    .breadcrumb-container{
+    .breadcrumb-container {
       color: #9c9e9f;
       font-size: 12px;
       line-height: 15px;
       margin: 15px 0 25px 0;
       height: 12px;
 
-      @include breakpoint ($mobile) { display: none; }
+      @include breakpoint ($mobile) {
+        display: none;
+      }
 
       .portlet-title-text,
       .hide-accessible {
@@ -530,20 +575,20 @@ p{
         }
       }
 
-      a{
+      a {
         color: #9c9e9f;
         font-size: 12px;
         //font-weight: bold;
         line-height: 15px;
         margin: 15px 0 25px 0;
-        &:hover{
+        &:hover {
           text-decoration: underline;
         }
       }
     }
 
     /* Field Body */
-    .field-body{
+    .field-body {
       position: relative;
       display: block;
       margin-bottom: 25px;
@@ -554,7 +599,7 @@ p{
     }
   }
   p {
-    color:$greymedium;
+    color: $greymedium;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 10px;
@@ -562,10 +607,10 @@ p{
       font-size: 16px;
     }
     @include breakpoint($tablet) {
-      font-size:14px;
+      font-size: 14px;
       line-height: 18px;
     }
-    strong{
+    strong {
       font-weight: bold;
     }
   }
@@ -589,6 +634,7 @@ p{
     }
   }
 }
+
 #main-content .breadcrumb {
   background: none transparent;
   li {
@@ -607,25 +653,27 @@ p{
   }
 }
 
-
 .only-mobile {
   display: none;
   @include breakpoint($mobile) {
     display: block;
   }
 }
+
 .only-desktop {
   display: block;
   @include breakpoint($mobile) {
     display: none;
   }
 }
+
 .seventy {
   width: 70%;
   @include breakpoint($mobile) {
     width: 100%;
   }
 }
+
 .readmore {
   text-decoration: none;
   &:after {
@@ -646,9 +694,11 @@ p{
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
 .hard {
   font-weight: bold;
 }
+
 // AVISO LEGAL
 .numbered-lists {
   counter-reset: this-list-counter;
@@ -658,8 +708,8 @@ p{
   position: relative;
   dt {
     padding: 0 15px 0 0;
-    &:first-child{
-      &:before{
+    &:first-child {
+      &:before {
         margin-top: 0;
       }
     }
@@ -671,25 +721,26 @@ p{
       content: counter(this-list-counter);
       counter-increment: this-list-counter;
       display: block;
-      float:left;
+      float: left;
       font-size: 20px;
       font-weight: bold;
       height: 41px;
       line-height: 35px;
       margin-bottom: 20px;
-      margin-top:25px;
+      margin-top: 25px;
       position: relative;
       text-align: center;
       width: 41px;
     }
-    p{
+    p {
       clear: both;
-      a{
+      a {
         color: $pink;
       }
     }
   }
 }
+
 .small-item-info {
   width: 100%;
   float: left;
@@ -697,7 +748,6 @@ p{
     font-size: 14px;
   }
 }
-
 
 .config-box {
   float: left;
@@ -776,7 +826,9 @@ p{
           font-size: 16px;
           font-weight: bold;
           padding-top: 6px;
-          .bigger { font-size: 22px; }
+          .bigger {
+            font-size: 22px;
+          }
         }
       }
     }
@@ -920,11 +972,13 @@ meter {
   height: 14px;
   -moz-appearance: none;
 }
+
 //
 meter::-webkit-meter-bar {
   background: none;
   background-color: $grey;
 }
+
 /* Webkit based browsers */
 meter::-webkit-meter-optimum-value {
   background: $pink;
@@ -934,11 +988,12 @@ meter::-webkit-meter-optimum-value {
 *::-moz-meter-optimum {
   background: $pink;
 }
+
 *::-moz-meter-bar {
   background: $pink;
 }
 
-.alert-invoice-unpaid{
+.alert-invoice-unpaid {
   background-color: $pink_superlight;
   display: block;
   margin-bottom: 20px;
@@ -948,7 +1003,7 @@ meter::-webkit-meter-optimum-value {
   @include breakpoint($tablet) {
     padding: 15px 20px;
   }
-  p{
+  p {
     color: $pink;
     display: block;
     float: left;
@@ -959,7 +1014,7 @@ meter::-webkit-meter-optimum-value {
     position: relative;
     text-align: left;
     width: 75%;
-    strong{
+    strong {
       font-weight: bold;
     }
     @include breakpoint($tablet) {
@@ -968,10 +1023,10 @@ meter::-webkit-meter-optimum-value {
       width: 100%;
     }
   }
-  .button-pay-invoice{
+  .button-pay-invoice {
     background-color: $pink;
     border-radius: 3px;
-    color:$white;
+    color: $white;
     display: block;
     float: right;
     font-size: 16px;
@@ -995,4 +1050,16 @@ meter::-webkit-meter-optimum-value {
   float: left;
   width: 100%;
   margin: 0 0 60px 0;
+}
+
+
+/* REMOVE paddings BootsTrap */
+#main-content, #content {
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3,
+  .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
+  .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8,
+  .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
+  .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding: 0;
+  }
 }
