@@ -202,6 +202,9 @@
           width: 10%;
           text-align: center;
           padding-left: 15px;
+          @include breakpoint($tablet) {
+            padding-left: 0;
+          }
           @include breakpoint($mobile) {
             width: 100%;
             padding: 0;
@@ -304,6 +307,7 @@
           float: left;
           width: 100%;
           margin-bottom: 20px;
+          margin-left: 0;
           .image-block {
             float: left;
             margin-right: 14px;
