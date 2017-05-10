@@ -182,8 +182,8 @@
                           </div>
                         </div>
                         <div class="custom-links">
-                          <a href="#" class="button-pink">Contractar</a>
-                          <a href="#" class="button-active">+ Info</a>
+                          <a href="#" class="button-pink">Contracta-ho</a>
+                          <a href="#" class="button-active">Més Informació</a>
                         </div>
                       </div>
                       <div class="gallery-item">
