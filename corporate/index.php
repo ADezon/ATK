@@ -25,8 +25,7 @@
 
         <div class="slide-item preset-black">
           <div class="img-slider">
-            <a class="slider-link" href="http://www.google.com" target="_blank">
-            <img src="./uploaded_files/main-home.jpg"/></a>
+            <img src="./uploaded_files/main-home.jpg"/>
             <div class="difuminador">
               <div class="difuminado-left">&nbsp;</div>
               <div class="difuminado-right">&nbsp;</div>
@@ -46,49 +45,69 @@
 
         <div class="slide-item preset-black">
           <div class="img-slider">
-            <a href="http://www.google.com" target="_blank">
-              <img src="./uploaded_files/test-images/new-york-924680_960_720.jpg"/></a>
+              <img src="./uploaded_files/test-images/new-york-924680_960_720.jpg"/>
             <div class="difuminador difumina-black">
               <div class="difuminado-left">&nbsp;</div>
               <div class="difuminado-right">&nbsp;</div>
             </div>
           </div>
 
+          <a class="slider-link" href="http://www.google.com" target="_blank">
           <div class="width-limiter">
             <div class="right-block" style="background-color: white;">
               Aqui puede ir TEXTO (como el SLIDER de la COMERCIAL). Se ha escogido un fondo BLANCO.
-              <a href="#" title=""> Aqui va el ENLACE RIGHT Two</a>
+              <a href="https://www.yahoo.com" title="yahoo" target="_blank"> Aqui va el ENLACE RIGHT Two</a>
             </div>
           </div>
+          </a>
         </div>
 
       </div>
 
       <script language="JavaScript">
           $(document).ready(function () {
-              var anchoVentana = $(window).width();
-              $('.width-limiter').width(anchoVentana);
-              var distance = (anchoVentana > 1024) ? ((anchoVentana - 1024) / 2) : 0;
-              $('.left-block').css({left: distance});
-              $('.right-block').css({right: distance});
 
-              $('.img-slider').each(function () {
-                  $(this).width(anchoVentana);
-                  var anchoImagenReal = $('img', this).width();
-                  var anchoImagen = (anchoVentana - anchoImagenReal) > 0 ? $('img', this).width() : anchoVentana;
-                  // Ahora sumamos 2 pixeles para compensar pixeles fraccionarios de las divisiones
-                  // Asi, también restamos 1 en la posicion y queda ok en cualquier caso
-                  var positionDifuminador = (anchoVentana - anchoImagen) > 0 ? ((anchoVentana - anchoImagen) / 2) - 1 : 0;
-                  var anchoFinalDifuminador = (anchoVentana - anchoImagen) > 0 ? (anchoImagen + 2) : anchoImagen;
+              var windowObj =$(window);
+
+              function hereWeGo() {
+                  console.log('Resized');
+
+                  if($('.slider-corporate-home').hasClass('slick-initialized')) {
+                      $('.slider-corporate-home').slick('unslick');
+                  }
+
+                  var anchoVentana = windowObj.width(),
+                      distance = (anchoVentana > 1024) ? ((anchoVentana - 1024) / 2) : 0;
+
+                  $('.width-limiter').width(anchoVentana);
+                  $('.left-block').css({left: distance});
+                  $('.right-block').css({right: distance});
+
+                  $('.img-slider').each(function () {
+                      $(this).width(anchoVentana);
+                      var anchoImagenReal = $('img', this).width();
+                      var anchoImagen = (anchoVentana - anchoImagenReal) > 0 ? $('img', this).width() : anchoVentana;
+                      // Ahora sumamos 2 pixeles para compensar pixeles fraccionarios de las divisiones
+                      // Asi, también restamos 1 en la posicion y queda ok en cualquier caso
+                      var positionDifuminador = (anchoVentana - anchoImagen) > 0 ? ((anchoVentana - anchoImagen) / 2) - 1 : 0;
+                      var anchoFinalDifuminador = (anchoVentana - anchoImagen) > 0 ? (anchoImagen + 2) : anchoImagen;
 
 
-                  $('.difuminador', this).width(anchoFinalDifuminador).css({left: positionDifuminador});
-              });
+                      $('.difuminador', this).width(anchoFinalDifuminador).css({left: positionDifuminador});
+                  });
 
-              $('.slider-corporate-home').slick({
-                  arrows: false,
-                  dots: true,
-                  focusOnSelect: true
+                  $('.slider-corporate-home').slick({
+                      arrows: false,
+                      dots: true,
+                      focusOnSelect: true
+                  });
+              }
+
+              // First Start
+              hereWeGo();
+
+              windowObj.resize(function () {
+                  hereWeGo();
               });
           });
 

@@ -969,7 +969,7 @@
         @include breakpoint($mobile) { margin-right: 0; }
 
         &.active{
-          .title-level-1{
+          .title-level-1 {
             color: black;
             font-weight: bold;
           }
@@ -997,6 +997,7 @@
           position: relative;
           text-align: center;
           text-transform: uppercase;
+          cursor: pointer;
           &:hover{
             color: $greydark;
             @include breakpoint($tablet) {
