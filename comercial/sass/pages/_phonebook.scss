@@ -544,20 +544,24 @@
                             overflow: hidden;
                             position: relative;
                             li {
-                              background-color: $pink;
-                              border-radius: 5px;
-                              color: $white;
-                              display: block;
-                              float: left;
-                              font-size: 12px;
-                              line-height: 14px;
-                              margin: 0 2% 0 0;
-                              padding: 5px 10px;
-                              position: relative;
-                              text-align: center;
-                              text-transform: uppercase;
-                              width: 48%;
-                              cursor: pointer;
+                              //background-color: $pink;
+                              //border-radius: 5px;
+                              //color: $white;
+                              //display: block;
+                              //float: left;
+                              //font-size: 12px;
+                              //line-height: 14px;
+                              //margin: 0 2% 0 0;
+                              //padding: 5px 10px;
+                              //position: relative;
+                              //text-align: center;
+                              //text-transform: uppercase;
+                              //width: 48%;
+                              //cursor: pointer;
+                              width: 100%;
+                              color: pink;
+                              text-decoration: underline;
+                              font-size: 14px;
                               &:before {
                                 content: "";
                                 display: none;
@@ -773,6 +777,9 @@
                   .captcha {
                     margin: 10px 10px 0 0;
                     float: left;
+                  }
+                  .taglib-captcha {
+                    img { width: 190px; }
                   }
                   .ctrl-holder-text-verification-link {
                     color: $gris3;
