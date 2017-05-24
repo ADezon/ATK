@@ -89,7 +89,7 @@
             float: left;
             position: relative;
             width: 25%;
-            padding-right: 60px;
+            padding-right: 34px;
             @include breakpoint($tablet) {
               width: 50%;
               padding-right: 30px;
@@ -181,6 +181,10 @@
                 height: auto;
                 overflow: auto;
                 z-index: 10;
+                li {
+                  margin-left: 0;
+                  &:before { content: ''; }
+                }
                 a {
                   display: block;
                   padding: 5px;
@@ -247,6 +251,35 @@
           font-size: 14px;
           line-height: 18px;
           text-decoration: underline;
+        }
+      }
+
+      /* Chosen SELECT */
+      .chosen-container {
+        font-family: $titillium;
+        font-size: 14px;
+        color: black;
+
+        &.chosen-container-single {
+          .chosen-single {
+            background: none white;
+            border: 1px solid #979797;
+            border-radius: 0;
+            line-height: 32px;
+            height: 36px;
+            margin: 8px 0;
+
+            span {
+              background-color: white;
+            }
+          }
+        }
+
+        .chosen-drop {
+          ul li {
+            margin-left: 0;
+            &:before { content: ''; }
+          }
         }
       }
     }
@@ -488,6 +521,7 @@
                           height: 25px;
                           font-size: 14px;
                           padding: 5px 0px 5px 5px;
+                          cursor: pointer;
                         }
                         .mapContainer {
                           width: 100%;

@@ -56,15 +56,21 @@
                </span><span class="aui-field aui-field-select aui-field-menu">
                   <span class="aui-field-content">
                       <label class="aui-field-label" for="activityId">Tipus activitat</label>
-                           <select id="combobox" name="activityId"
-                                   id="activityId">
-                            <option value=" ">Qualsevol </option>
-                              <option value="AB">Academies (all)</option>
-                              <option value="AC">Academies Escoles</option>
-                              <option value="AE">Academies Idiomes</option>
-                              <option value="AG">Academies Hosteleria</option>
+                           <select id="custom_id" name="ertertert">
+                             <option value="">Qualsevol</option>
+                             <option value="AB">ACADEMIES</option><option value="AC">ACADEMIESCONFECCIO</option><option value="AE">ACADEMIESIDIOMES</option>
+                             <option value="AG">ACADEMIESMUSICA</option><option value="AH">ACADEMIESPERRUQUERIA</option>
+                             <option value="XY">ACTIVITATSD'ASSESSORAMENTENDIRECCIÓIGESTIÓEMPRESARIAL</option><option value="ZA">ACTIVITATSDESERVEISPERSONALS</option>
+                             <option value="AK">ACUPUNTURA</option><option value="AL">ADMINISTRADORSDEFINQUES</option><option value="AM">ADOBS</option>
+                             <option value="AP">ADVOCATS</option><option value="XZ">AGENCIESDECOL·LOCACIO</option><option value="61">AGENCIESMATRIMONIALS</option>
+                             <option value="AX">AGENTCOMERCIAL</option><option value="AW">AGENTD'ASSEGURANCES</option><option value="AY">AGENTDEDUANES</option>
                            </select>
+                    <script>
+                      $(document).ready(function () {
+                          $('#custom_id').chosen({max_shown_results: 10});
 
+                      });
+                    </script>
                   </span>
                </span>
                 <span class="aui-field aui-field-select aui-field-menu">

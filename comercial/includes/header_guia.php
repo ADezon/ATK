@@ -16,6 +16,7 @@
   <!--BEGIN GLOBAL-->
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./js/chosen_v1.7.0/chosen.min.css">
   <link rel="stylesheet" type="text/css" href="./css/at-styles.css">
   <!--BEGIN GLOBAL-->
 
@@ -29,6 +30,8 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
+  <script src="./js/chosen_v1.7.0/chosen.jquery.min.js"></script>
+
 
   <!--THIS IS A PRIVATE-PERSONAL API KEY. YOU MUST PROVIDE THE CORRECT ONE-->
 <!--  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCYW42M0aJDKz-ayDZywdTDJAmd3Kfvq90"></script>-->
@@ -37,6 +40,7 @@
   <script src="./js/enquire.min.js"></script>
   <script src="./js/dinamiclogin.js"></script>
   <script src="./js/main.js"></script>
+
 
   <script>
     var timering = 7000;
