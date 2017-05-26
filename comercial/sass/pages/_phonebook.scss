@@ -282,6 +282,29 @@
           }
         }
       }
+
+      // Select 2 JQuery Plugin
+      .select2-container {
+        font-family: $titillium;
+        font-size: 14px;
+        color: black;
+
+        .select2-container--default .select2-selection--single {
+          background: none white;
+          border: 1px solid #979797;
+          border-radius: 0;
+          line-height: 32px;
+          height: 36px;
+          margin: 8px 0 0 0 ;
+          font-size: 18px;
+          padding: 8px 0;
+
+          .select2-selection__arrow {
+            top: 14px;
+          }
+        }
+      }
+
     }
   }
   .rao_social {
@@ -585,14 +608,14 @@
                               float: left;
                               font-size: 12px;
                               line-height: 14px;
-                              margin: 0 2% 0 0;
+                              margin: 0 4% 0 0;
                               padding: 5px 10px;
                               position: relative;
                               text-align: center;
                               text-transform: uppercase;
                               width: 100%;
                               cursor: pointer;
-                              
+
                               &:before {
                                 content: "";
                                 display: none;
