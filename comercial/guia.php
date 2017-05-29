@@ -67,7 +67,7 @@
                            </select>
                     <script>
                       $(document).ready(function () {
-                          $('#custom_id').chosen({max_shown_results: 10});
+                          $('#custom_id').select2();
 
                       });
                     </script>

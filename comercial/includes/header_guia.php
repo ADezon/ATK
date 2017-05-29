@@ -16,7 +16,7 @@
   <!--BEGIN GLOBAL-->
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./fonts/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="./js/chosen_v1.7.0/chosen.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="./css/at-styles.css">
   <!--BEGIN GLOBAL-->
 
@@ -30,7 +30,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
-  <script src="./js/chosen_v1.7.0/chosen.jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
 
   <!--THIS IS A PRIVATE-PERSONAL API KEY. YOU MUST PROVIDE THE CORRECT ONE-->
