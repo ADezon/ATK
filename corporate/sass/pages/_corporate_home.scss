@@ -23,6 +23,12 @@
 
     .slide-item {
       height: 412px;
+      @include breakpoint ($tablet) {
+        height: 300px;
+      }
+      @include breakpoint ($mobile) {
+        height: 400px;
+      }
 
       .img-slider {
         position: relative;
