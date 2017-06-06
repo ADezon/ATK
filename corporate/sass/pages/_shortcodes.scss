@@ -1733,3 +1733,29 @@
     }
   }
 }
+
+/* LISTADOS con Imagen a la Izquierda */
+.listado-fotos {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  @include clearfix;
+  .lista-imagen {
+    float: left;
+    width: 30%;
+    padding-right: 4%;
+    @include breakpoint ($tablet) { width: 40%; }
+    @include breakpoint ($mobile) { width: 100%; padding: 0; }
+
+    img {
+      width: 100%;
+    }
+  }
+  .lista-texto {
+    float: left;
+    width: 70%;
+    @include breakpoint ($tablet) { width: 60%; }
+    @include breakpoint ($mobile) { width: 100%; }
+
+  }
+}

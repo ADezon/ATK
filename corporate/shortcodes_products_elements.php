@@ -1,6 +1,6 @@
 <?php include 'includes/header_shortcodes.php'; ?>
 
-
+<div id="main-content">
     <!--BEGIN SPECIFIC PAGE SHORTCODE-->
     <div class="basic-page cont-wrapper shortcode-container">
         <div class="content">
@@ -718,4 +718,5 @@
     <!-- END SECTION BOTONS i LINKS -->
 
 
+</div>
 <?php include 'includes/footer.php'; ?>

@@ -638,7 +638,7 @@
                           height: 100%;
                           line-height: 18px;
                           overflow: hidden;
-                          padding: 30px 25px 30px 25px;
+                          padding: 30px 20px 30px 20px;
                           position: relative;
                           width: 50%;
                           @include breakpoint($tablet) {
@@ -647,6 +647,13 @@
                           }
                           li {
                             padding: 5px 12px;
+                            &.description {
+                              padding-left: 0px;
+                              margin-left: 0px;
+                              &:before {
+                                content: "";
+                              }
+                            }
                             &.email {
                               &:before {
                                 /* use !important to prevent issues with browser extensions that change fonts */
