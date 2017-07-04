@@ -54,6 +54,8 @@ $(document).ready(function () {
             var miPadre = $(this).closest('li').attr('id');
 
             // Close any OTHER Child (except OURs >> if Opened, of course!!!)
+            $('.button-client-area').removeClass('active');
+            $('.container-client-area').hide();
             $(".menu > ul > li").not(document.getElementById(miPadre)).children(".container-submenu").hide();
 
             // console.log($(".menu > ul > li").not(document.getElementById(miPadre)));
